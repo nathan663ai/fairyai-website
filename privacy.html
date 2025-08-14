@@ -1,117 +1,297 @@
-Last updated: 11th August 2025
-
-1. Who We Are
-FairyAI is operated by Rebel AI Ltd, registered in Scotland, UK (Company Number: SC839626). Contact: legal@fairyai.co.uk.
-
-2. Information We Collect
-We collect:
-
-Account Information: Email, name, age confirmation (13+).
-Generated Content: Stories, characters, images, songs, narrations you create, including prompts and uploaded images.
-Device Information: Device type, operating system, device tokens for push notifications.
-Usage Data: Features used, content viewed, generation history, reading time, completion rates.
-Subscription Data: Transaction IDs and subscription status from App Store/Google Play (we do not receive payment card details).
-Technical Data: Temporary IP addresses for security and rate limiting (retained in server logs for 7 days).
-Uploaded Images: When using photo-to-character feature, images are processed and deleted within 24 hours.
-Analytics: We use PostHog to collect anonymous usage analytics to improve the app. This includes which features are used and general app performance. No personal data is collected or shared.
-
-3. How We Use Your Data
-We use your information to:
-• Provide and personalise the App's features.
-• Generate AI content based on your prompts.
-• Send push notifications about content completion and app updates (with your permission).
-• Manage your account, subscription, and fairy dust credits.
-• Improve the App through internal analytics.
-• Ensure security and prevent abuse.
-• Comply with legal obligations.
-
-Legal Basis for Processing (GDPR):
-We process your data based on:
-• Contract: To provide the services you've requested
-• Legitimate interests: To improve our services and ensure security
-• Consent: For push notifications and marketing (where applicable)
-
-4. Local Storage
-The App stores on your device:
-• Authentication tokens
-• User preferences (language, theme, font size)
-• Draft content and wizard progress
-• Cached content for offline access
-• Onboarding status
-
-This data remains on your device unless you delete the App.
-
-5. Push Notifications
-With your permission, we send notifications for:
-• Content generation completion
-• Subscription and account updates
-• New features and app updates
-
-You can disable notifications in your device settings at any time.
-
-6. Sharing of Data
-We share necessary data with:
-• Supabase – Authentication and database services (UK/EU)
-• AWS S3 – Media storage (encrypted)
-• OpenAI – Story and narration generation (prompts and content)
-• Replicate – Character image generation (character descriptions)
-• Suno – Song generation (song prompts)
-• Firebase – Push notification delivery
-• PostHog – Anonymous analytics (feature usage, app performance)
-• App Store / Google Play – Payment processing
-
-We do not sell your personal data to third parties.
-
-7. International Transfers
-Your data may be processed in the UK, EU, and US by our service providers. We ensure appropriate safeguards are in place for all transfers.
-
-8. Data Security
-We use industry-standard security measures including:
-• Encrypted data transmission (HTTPS)
-• Secure authentication (Supabase Auth)
-• Encrypted media storage (AWS S3)
-• Rate limiting and security monitoring
-
-9. Data Retention
-• Active accounts: Data retained while account is active
-• Deleted accounts: 30-day recovery period, then permanent deletion
-• Server logs: 7 days (may contain IP addresses)
-• Generated content: Deleted with account after 30-day period
-• Uploaded images: Deleted within 24 hours of upload
-
-10. Your Rights (UK GDPR)
-You have the right to:
-• Access your personal data
-• Correct inaccurate information
-• Delete your account and all associated data
-• Export your data in a portable format
-• Object to certain processing
-• Complain to the UK Information Commissioner's Office (ICO)
-
-To exercise these rights, email legal@fairyai.co.uk.
-
-11. Your Rights (California Residents)
-California residents have additional rights under CCPA including the right to opt-out of data sales. We do not sell your personal data.
-
-12. Children's Privacy
-• The App requires users to be 13 or older.
-• We do not knowingly collect data from children under 13.
-• If we discover a user is under 13, we will delete their account.
-
-13. Account Deletion
-• Delete your account via Settings → Privacy → Delete Account
-• Immediate deactivation with 30-day recovery period
-• After 30 days: permanent deletion of all data including media files
-• Email legal@fairyai.co.uk within 30 days to recover a deleted account
-
-14. Data Breach Notification
-If a breach affecting your personal data occurs, we will notify affected users via email and the UK ICO within 72 hours as required by law.
-
-15. Changes to This Policy
-We may update this Privacy Policy. We will notify you of significant changes via the App or email.
-
-16. Contact
-For privacy questions, requests, or concerns:
-Email: legal@fairyai.co.uk
-Data Protection Officer: legal@fairyai.co.uk
-Address: Rebel AI Ltd, Scotland, UK
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FairyAI Privacy Policy</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background-color: #ffffff;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            color: #6366f1;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        
+        .last-updated {
+            color: #6b7280;
+            font-size: 0.95em;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #e5e7eb;
+        }
+        
+        h2 {
+            color: #374151;
+            font-size: 1.5em;
+            margin-top: 35px;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        
+        p, li {
+            color: #4b5563;
+            margin-bottom: 12px;
+            line-height: 1.7;
+        }
+        
+        ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+            list-style-type: disc;
+        }
+        
+        strong {
+            color: #1f2937;
+            font-weight: 600;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+        }
+        
+        .contact-info {
+            background-color: #f3f4f6;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        
+        .contact-info p {
+            margin-bottom: 5px;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            
+            .container {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+            
+            h2 {
+                font-size: 1.3em;
+            }
+        }
+        
+        /* Special styling for bullet points */
+        ul li::marker {
+            color: #6366f1;
+        }
+        
+        /* Hover effect for email links */
+        a {
+            color: #6366f1;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>FairyAI Privacy Policy</h1>
+        <p class="last-updated">Last updated: 11th August 2025</p>
+        
+        <div class="section">
+            <h2>1. Who We Are</h2>
+            <p>FairyAI is operated by Rebel AI Ltd, registered in Scotland, UK (Company Number: SC839626). Contact: <a href="mailto:legal@fairyai.co.uk">legal@fairyai.co.uk</a>.</p>
+        </div>
+        
+        <div class="section">
+            <h2>2. Information We Collect</h2>
+            <p>We collect:</p>
+            <ul>
+                <li><strong>Account Information:</strong> Email, name, age confirmation (13+).</li>
+                <li><strong>Generated Content:</strong> Stories, characters, images, songs, narrations you create, including prompts and uploaded images.</li>
+                <li><strong>Device Information:</strong> Device type, operating system, device tokens for push notifications.</li>
+                <li><strong>Usage Data:</strong> Features used, content viewed, generation history, reading time, completion rates.</li>
+                <li><strong>Subscription Data:</strong> Transaction IDs and subscription status from App Store/Google Play (we do not receive payment card details).</li>
+                <li><strong>Technical Data:</strong> Temporary IP addresses for security and rate limiting (retained in server logs for 7 days).</li>
+                <li><strong>Uploaded Images:</strong> When using photo-to-character feature, images are processed and deleted within 24 hours.</li>
+                <li><strong>Analytics:</strong> We use PostHog to collect anonymous usage analytics to improve the app. This includes which features are used and general app performance. No personal data is collected or shared.</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>3. How We Use Your Data</h2>
+            <p>We use your information to:</p>
+            <ul>
+                <li>Provide and personalise the App's features.</li>
+                <li>Generate AI content based on your prompts.</li>
+                <li>Send push notifications about content completion and app updates (with your permission).</li>
+                <li>Manage your account, subscription, and fairy dust credits.</li>
+                <li>Improve the App through internal analytics.</li>
+                <li>Ensure security and prevent abuse.</li>
+                <li>Comply with legal obligations.</li>
+            </ul>
+            
+            <p><strong>Legal Basis for Processing (GDPR):</strong><br>
+            We process your data based on:</p>
+            <ul>
+                <li><strong>Contract:</strong> To provide the services you've requested</li>
+                <li><strong>Legitimate interests:</strong> To improve our services and ensure security</li>
+                <li><strong>Consent:</strong> For push notifications and marketing (where applicable)</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>4. Local Storage</h2>
+            <p>The App stores on your device:</p>
+            <ul>
+                <li>Authentication tokens</li>
+                <li>User preferences (language, theme, font size)</li>
+                <li>Draft content and wizard progress</li>
+                <li>Cached content for offline access</li>
+                <li>Onboarding status</li>
+            </ul>
+            <p>This data remains on your device unless you delete the App.</p>
+        </div>
+        
+        <div class="section">
+            <h2>5. Push Notifications</h2>
+            <p>With your permission, we send notifications for:</p>
+            <ul>
+                <li>Content generation completion</li>
+                <li>Subscription and account updates</li>
+                <li>New features and app updates</li>
+            </ul>
+            <p>You can disable notifications in your device settings at any time.</p>
+        </div>
+        
+        <div class="section">
+            <h2>6. Sharing of Data</h2>
+            <p>We share necessary data with:</p>
+            <ul>
+                <li><strong>Supabase</strong> – Authentication and database services (UK/EU)</li>
+                <li><strong>AWS S3</strong> – Media storage (encrypted)</li>
+                <li><strong>OpenAI</strong> – Story and narration generation (prompts and content)</li>
+                <li><strong>Replicate</strong> – Character image generation (character descriptions)</li>
+                <li><strong>Suno</strong> – Song generation (song prompts)</li>
+                <li><strong>Firebase</strong> – Push notification delivery</li>
+                <li><strong>PostHog</strong> – Anonymous analytics (feature usage, app performance)</li>
+                <li><strong>App Store / Google Play</strong> – Payment processing</li>
+            </ul>
+            <p>We do not sell your personal data to third parties.</p>
+        </div>
+        
+        <div class="section">
+            <h2>7. International Transfers</h2>
+            <p>Your data may be processed in the UK, EU, and US by our service providers. We ensure appropriate safeguards are in place for all transfers.</p>
+        </div>
+        
+        <div class="section">
+            <h2>8. Data Security</h2>
+            <p>We use industry-standard security measures including:</p>
+            <ul>
+                <li>Encrypted data transmission (HTTPS)</li>
+                <li>Secure authentication (Supabase Auth)</li>
+                <li>Encrypted media storage (AWS S3)</li>
+                <li>Rate limiting and security monitoring</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>9. Data Retention</h2>
+            <ul>
+                <li><strong>Active accounts:</strong> Data retained while account is active</li>
+                <li><strong>Deleted accounts:</strong> 30-day recovery period, then permanent deletion</li>
+                <li><strong>Server logs:</strong> 7 days (may contain IP addresses)</li>
+                <li><strong>Generated content:</strong> Deleted with account after 30-day period</li>
+                <li><strong>Uploaded images:</strong> Deleted within 24 hours of upload</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>10. Your Rights (UK GDPR)</h2>
+            <p>You have the right to:</p>
+            <ul>
+                <li>Access your personal data</li>
+                <li>Correct inaccurate information</li>
+                <li>Delete your account and all associated data</li>
+                <li>Export your data in a portable format</li>
+                <li>Object to certain processing</li>
+                <li>Complain to the UK Information Commissioner's Office (ICO)</li>
+            </ul>
+            <p>To exercise these rights, email <a href="mailto:legal@fairyai.co.uk">legal@fairyai.co.uk</a>.</p>
+        </div>
+        
+        <div class="section">
+            <h2>11. Your Rights (California Residents)</h2>
+            <p>California residents have additional rights under CCPA including the right to opt-out of data sales. We do not sell your personal data.</p>
+        </div>
+        
+        <div class="section">
+            <h2>12. Children's Privacy</h2>
+            <ul>
+                <li>The App requires users to be 13 or older.</li>
+                <li>We do not knowingly collect data from children under 13.</li>
+                <li>If we discover a user is under 13, we will delete their account.</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>13. Account Deletion</h2>
+            <ul>
+                <li>Delete your account via Settings → Privacy → Delete Account</li>
+                <li>Immediate deactivation with 30-day recovery period</li>
+                <li>After 30 days: permanent deletion of all data including media files</li>
+                <li>Email <a href="mailto:legal@fairyai.co.uk">legal@fairyai.co.uk</a> within 30 days to recover a deleted account</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>14. Data Breach Notification</h2>
+            <p>If a breach affecting your personal data occurs, we will notify affected users via email and the UK ICO within 72 hours as required by law.</p>
+        </div>
+        
+        <div class="section">
+            <h2>15. Changes to This Policy</h2>
+            <p>We may update this Privacy Policy. We will notify you of significant changes via the App or email.</p>
+        </div>
+        
+        <div class="section">
+            <h2>16. Contact</h2>
+            <div class="contact-info">
+                <p>For privacy questions, requests, or concerns:</p>
+                <p><strong>Email:</strong> <a href="mailto:legal@fairyai.co.uk">legal@fairyai.co.uk</a></p>
+                <p><strong>Data Protection Officer:</strong> <a href="mailto:legal@fairyai.co.uk">legal@fairyai.co.uk</a></p>
+                <p><strong>Address:</strong> Rebel AI Ltd, Scotland, UK</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
