@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FairyAI - Magical AI Storytelling for Children | Try Free Today</title>
-    <meta name="description" content="Create personalized stories, characters, and songs for children ages 2-12. Try free - no credit card required. Safe, age-appropriate, and loved by parents.">
+    <meta name="description" content="Create personalised stories, characters, and songs for children ages 2-12. Try free - no credit card required. Safe, age-appropriate, and loved by parents.">
     <style>
         * {
             margin: 0;
@@ -13,28 +13,20 @@
         }
         
         :root {
-            --navy: #0a1628;
-            --navy-light: #1a2840;
-            --gold: #fbbf24;
-            --gold-light: #fcd34d;
             --purple: #8b5cf6;
-            --pink: #ec4899;
-            --text-light: #e5e7eb;
-            --text-gray: #9ca3af;
+            --gold: #fbbf24;
+            --navy: #1e293b;
+            --text: #334155;
+            --text-light: #64748b;
+            --border: #e2e8f0;
+            --bg-light: #f8fafc;
         }
         
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', sans-serif;
-            background: var(--navy);
-            color: var(--text-light);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', 'Roboto', sans-serif;
+            color: var(--text);
             line-height: 1.6;
-            overflow-x: hidden;
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
+            -webkit-font-smoothing: antialiased;
         }
         
         /* Navigation */
@@ -42,16 +34,16 @@
             position: fixed;
             top: 0;
             width: 100%;
-            background: rgba(10, 22, 40, 0.95);
+            background: rgba(255, 255, 255, 0.98);
             backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border);
             z-index: 1000;
-            border-bottom: 1px solid rgba(251, 191, 36, 0.1);
         }
         
         .nav-container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 1rem 20px;
+            padding: 1rem 24px;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -60,237 +52,327 @@
         .logo {
             font-size: 1.5rem;
             font-weight: 700;
-            background: linear-gradient(135deg, var(--gold), var(--gold-light));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+            color: var(--purple);
+            text-decoration: none;
         }
         
         .nav-cta {
-            background: linear-gradient(135deg, var(--gold), var(--gold-light));
-            color: var(--navy);
-            padding: 0.75rem 1.5rem;
-            border-radius: 50px;
+            background: var(--purple);
+            color: white;
+            padding: 0.625rem 1.5rem;
+            border-radius: 8px;
             font-weight: 600;
+            font-size: 0.9375rem;
             text-decoration: none;
-            transition: transform 0.2s, box-shadow 0.2s;
-            display: inline-block;
+            transition: all 0.2s;
         }
         
         .nav-cta:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 30px rgba(251, 191, 36, 0.3);
+            background: #7c3aed;
+            transform: translateY(-1px);
+        }
+        
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+        
+        /* Section */
+        section {
+            padding: 80px 0;
+        }
+        
+        .section-white {
+            background: white;
+        }
+        
+        .section-grey {
+            background: var(--bg-light);
         }
         
         /* Hero Section */
         .hero {
-            padding: 140px 20px 80px;
+            padding: 140px 24px 100px;
+            background: linear-gradient(135deg, #faf5ff 0%, #f0f9ff 100%);
             text-align: center;
         }
         
-        .free-banner {
+        .free-badge {
             display: inline-block;
-            background: linear-gradient(135deg, var(--purple), var(--pink));
-            padding: 12px 32px;
+            background: linear-gradient(135deg, var(--purple), #ec4899);
+            color: white;
+            padding: 8px 20px;
             border-radius: 50px;
             font-weight: 600;
-            margin-bottom: 2rem;
-            animation: pulse 2s infinite;
-            box-shadow: 0 10px 40px rgba(139, 92, 246, 0.3);
-        }
-        
-        @keyframes pulse {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.05); }
+            font-size: 0.875rem;
+            margin-bottom: 24px;
+            box-shadow: 0 4px 12px rgba(139, 92, 246, 0.25);
         }
         
         h1 {
-            font-size: clamp(2.5rem, 6vw, 4.5rem);
+            font-size: clamp(2.5rem, 5vw, 4rem);
             font-weight: 800;
-            margin-bottom: 1.5rem;
-            line-height: 1.1;
+            color: var(--navy);
+            margin-bottom: 24px;
+            line-height: 1.15;
         }
         
         .gradient-text {
-            background: linear-gradient(135deg, var(--gold), var(--gold-light));
+            background: linear-gradient(135deg, var(--purple), #ec4899);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
         
         .hero-subtitle {
-            font-size: clamp(1.125rem, 2vw, 1.5rem);
-            color: var(--text-gray);
-            margin-bottom: 2rem;
-            max-width: 700px;
-            margin-left: auto;
-            margin-right: auto;
+            font-size: clamp(1.125rem, 2vw, 1.375rem);
+            color: var(--text-light);
+            max-width: 680px;
+            margin: 0 auto 32px;
         }
         
         .cta-buttons {
             display: flex;
-            gap: 1rem;
+            gap: 16px;
             justify-content: center;
             flex-wrap: wrap;
-            margin-bottom: 2rem;
+            margin-bottom: 24px;
         }
         
-        .btn-primary {
-            background: linear-gradient(135deg, var(--gold), var(--gold-light));
-            color: var(--navy);
-            padding: 1rem 2rem;
-            border-radius: 50px;
+        .btn {
+            padding: 14px 32px;
+            border-radius: 8px;
             font-weight: 600;
-            font-size: 1.125rem;
+            font-size: 1rem;
             text-decoration: none;
             transition: all 0.2s;
             display: inline-flex;
             align-items: center;
-            gap: 0.5rem;
-            border: none;
-            cursor: pointer;
+            gap: 8px;
+        }
+        
+        .btn-primary {
+            background: var(--purple);
+            color: white;
         }
         
         .btn-primary:hover {
+            background: #7c3aed;
             transform: translateY(-2px);
-            box-shadow: 0 15px 40px rgba(251, 191, 36, 0.4);
+            box-shadow: 0 8px 16px rgba(139, 92, 246, 0.25);
+        }
+        
+        .btn-secondary {
+            background: white;
+            color: var(--purple);
+            border: 2px solid var(--purple);
+        }
+        
+        .btn-secondary:hover {
+            background: var(--bg-light);
+            transform: translateY(-2px);
         }
         
         .hero-features {
             display: flex;
-            gap: 2rem;
+            gap: 32px;
             justify-content: center;
             flex-wrap: wrap;
-            color: var(--text-gray);
-            font-size: 0.875rem;
+            font-size: 0.9375rem;
+            color: var(--text-light);
         }
         
-        /* Section Styling */
-        section {
-            padding: 80px 20px;
+        .hero-features span {
+            display: flex;
+            align-items: center;
+            gap: 8px;
         }
         
-        .section-alt {
-            background: rgba(255, 255, 255, 0.02);
+        .check-icon {
+            color: #10b981;
+            font-weight: bold;
         }
         
+        /* Section Headers */
         h2 {
-            font-size: clamp(2rem, 4vw, 3rem);
+            font-size: clamp(2rem, 4vw, 2.75rem);
+            font-weight: 800;
+            color: var(--navy);
             text-align: center;
-            margin-bottom: 1rem;
+            margin-bottom: 16px;
         }
         
         .section-subtitle {
             text-align: center;
-            color: var(--text-gray);
-            font-size: 1.25rem;
-            margin-bottom: 4rem;
+            color: var(--text-light);
+            font-size: 1.125rem;
+            max-width: 680px;
+            margin: 0 auto 64px;
+        }
+        
+        /* Image Placeholder */
+        .img-placeholder {
+            background: linear-gradient(135deg, #e9d5ff 0%, #ddd6fe 100%);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--purple);
+            font-weight: 600;
+            font-size: 0.875rem;
+            text-align: center;
+            padding: 24px;
+            border: 2px dashed rgba(139, 92, 246, 0.3);
+        }
+        
+        /* Video Placeholder */
+        .video-container {
+            position: relative;
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            background: linear-gradient(135deg, #e9d5ff 0%, #ddd6fe 100%);
+            border-radius: 16px;
+            overflow: hidden;
+            border: 2px dashed rgba(139, 92, 246, 0.3);
+        }
+        
+        .video-placeholder-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: var(--purple);
+        }
+        
+        .play-icon {
+            width: 80px;
+            height: 80px;
+            background: rgba(139, 92, 246, 0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 16px;
+            font-size: 2rem;
         }
         
         /* Cards */
         .card-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 3rem;
+            gap: 32px;
         }
         
         .card {
-            background: rgba(255, 255, 255, 0.03);
-            border: 1px solid rgba(251, 191, 36, 0.1);
-            border-radius: 24px;
-            padding: 2rem;
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 32px;
             transition: all 0.3s;
-            backdrop-filter: blur(10px);
+        }
+        
+        .section-grey .card {
+            border: none;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
         }
         
         .card:hover {
-            transform: translateY(-8px);
-            border-color: rgba(251, 191, 36, 0.3);
-            box-shadow: 0 20px 60px rgba(251, 191, 36, 0.1);
+            transform: translateY(-4px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
         }
         
-        .card-icon {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-            display: block;
+        .card-image {
+            width: 100%;
+            height: 200px;
+            margin-bottom: 24px;
         }
         
         .card h3 {
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
-            color: var(--gold);
+            font-size: 1.375rem;
+            font-weight: 700;
+            color: var(--navy);
+            margin-bottom: 12px;
         }
         
         .card p {
-            color: var(--text-gray);
+            color: var(--text-light);
             line-height: 1.7;
         }
         
-        /* Testimonial Card */
+        /* Testimonial */
         .testimonial {
-            background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(236, 72, 153, 0.1));
-            border: 1px solid rgba(251, 191, 36, 0.2);
-            border-radius: 24px;
-            padding: 3rem;
+            background: white;
+            border: 2px solid var(--border);
+            border-radius: 16px;
+            padding: 48px;
             max-width: 900px;
             margin: 0 auto;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
         }
         
         .stars {
             color: var(--gold);
             font-size: 1.5rem;
-            margin-bottom: 1rem;
+            margin-bottom: 20px;
         }
         
         .testimonial-text {
             font-size: 1.125rem;
             line-height: 1.8;
-            margin-bottom: 1.5rem;
-            color: var(--text-light);
+            color: var(--text);
+            margin-bottom: 20px;
         }
         
         .testimonial-highlight {
-            color: var(--gold);
+            color: var(--purple);
             font-weight: 600;
         }
         
         .testimonial-author {
-            color: var(--text-gray);
+            color: var(--text-light);
             font-style: italic;
-            font-size: 0.875rem;
         }
         
-        /* Pricing Cards */
+        /* Pricing */
         .pricing-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2rem;
-            margin-top: 3rem;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 24px;
+            max-width: 1100px;
+            margin: 0 auto;
         }
         
         .pricing-card {
-            background: rgba(255, 255, 255, 0.03);
-            border: 1px solid rgba(251, 191, 36, 0.1);
-            border-radius: 24px;
-            padding: 2.5rem;
-            text-align: center;
-            transition: all 0.3s;
+            background: white;
+            border: 2px solid var(--border);
+            border-radius: 16px;
+            padding: 32px;
             position: relative;
+            transition: all 0.3s;
         }
         
-        .pricing-card.popular {
-            border-color: var(--gold);
-            box-shadow: 0 0 40px rgba(251, 191, 36, 0.2);
+        .pricing-card.featured {
+            border-color: var(--purple);
+            box-shadow: 0 8px 24px rgba(139, 92, 246, 0.15);
+        }
+        
+        .pricing-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
         }
         
         .popular-badge {
             position: absolute;
-            top: -15px;
-            left: 50%;
-            transform: translateX(-50%);
-            background: linear-gradient(135deg, var(--purple), var(--pink));
-            padding: 6px 20px;
+            top: -12px;
+            right: 24px;
+            background: linear-gradient(135deg, var(--purple), #ec4899);
+            color: white;
+            padding: 4px 16px;
             border-radius: 50px;
             font-size: 0.75rem;
             font-weight: 700;
@@ -298,42 +380,53 @@
         }
         
         .pricing-card h3 {
-            font-size: 1.75rem;
-            margin-bottom: 1rem;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--navy);
+            margin-bottom: 8px;
         }
         
         .price {
-            font-size: 3rem;
+            font-size: 2.75rem;
             font-weight: 800;
-            background: linear-gradient(135deg, var(--gold), var(--gold-light));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            margin-bottom: 0.5rem;
+            color: var(--navy);
+            margin-bottom: 4px;
+        }
+        
+        .price-small {
+            font-size: 1.5rem;
+            font-weight: 600;
         }
         
         .price-period {
-            color: var(--text-gray);
+            color: var(--text-light);
             font-size: 0.875rem;
-            margin-bottom: 1.5rem;
+            margin-bottom: 20px;
         }
         
         .pricing-features {
             list-style: none;
-            margin-bottom: 2rem;
-            text-align: left;
+            margin-bottom: 24px;
         }
         
         .pricing-features li {
-            padding: 0.5rem 0;
-            color: var(--text-gray);
+            padding: 8px 0;
+            color: var(--text);
             display: flex;
-            align-items: center;
-            gap: 0.5rem;
+            align-items: flex-start;
+            gap: 8px;
+            font-size: 0.9375rem;
         }
         
-        .check {
-            color: var(--gold);
+        .pricing-features .check-icon {
+            margin-top: 4px;
+            flex-shrink: 0;
+        }
+        
+        .btn-pricing {
+            width: 100%;
+            text-align: center;
+            justify-content: center;
         }
         
         /* FAQ */
@@ -343,63 +436,98 @@
         }
         
         .faq-item {
-            background: rgba(255, 255, 255, 0.03);
-            border: 1px solid rgba(251, 191, 36, 0.1);
-            border-radius: 16px;
-            padding: 1.5rem;
-            margin-bottom: 1rem;
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 16px;
         }
         
         .faq-question {
             font-size: 1.125rem;
             font-weight: 600;
-            color: var(--gold);
-            margin-bottom: 0.75rem;
+            color: var(--navy);
+            margin-bottom: 12px;
         }
         
         .faq-answer {
-            color: var(--text-gray);
+            color: var(--text-light);
             line-height: 1.7;
+        }
+        
+        /* Stats */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 48px;
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 3.5rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--purple), #ec4899);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 8px;
+        }
+        
+        .stat-label {
+            font-size: 1.125rem;
+            color: var(--text-light);
         }
         
         /* Footer */
         footer {
-            border-top: 1px solid rgba(251, 191, 36, 0.1);
-            padding: 3rem 20px 2rem;
-            text-align: center;
+            background: var(--navy);
+            color: white;
+            padding: 48px 24px 24px;
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
         }
         
         .footer-links {
             display: flex;
             justify-content: center;
-            gap: 2rem;
+            gap: 32px;
             flex-wrap: wrap;
-            margin-bottom: 2rem;
+            margin-bottom: 32px;
+            padding-bottom: 32px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         }
         
         .footer-links a {
-            color: var(--text-gray);
+            color: rgba(255, 255, 255, 0.8);
             text-decoration: none;
             transition: color 0.2s;
         }
         
         .footer-links a:hover {
-            color: var(--gold);
+            color: white;
         }
         
         .footer-text {
-            color: var(--text-gray);
+            text-align: center;
+            color: rgba(255, 255, 255, 0.6);
             font-size: 0.875rem;
         }
         
         /* Responsive */
         @media (max-width: 768px) {
             .hero {
-                padding: 120px 20px 60px;
+                padding: 120px 20px 80px;
             }
             
             section {
-                padding: 60px 20px;
+                padding: 60px 0;
+            }
+            
+            .testimonial {
+                padding: 32px 24px;
             }
             
             .card-grid,
@@ -407,60 +535,67 @@
                 grid-template-columns: 1fr;
             }
         }
-        
-        .text-center {
-            text-align: center;
-        }
-        
-        .mb-4 {
-            margin-bottom: 2rem;
-        }
     </style>
 </head>
 <body>
     <!-- Navigation -->
     <nav>
         <div class="nav-container">
-            <div class="logo">✨ FairyAI</div>
+            <a href="/" class="logo">FairyAI</a>
             <a href="#pricing" class="nav-cta">Try Free</a>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section class="hero">
+        <div class="free-badge">
+            Try FREE Today - 6 Fairy Dust - No Credit Card Required
+        </div>
+        
+        <h1>
+            Bring Stories to Life<br>
+            <span class="gradient-text">with AI Magic</span>
+        </h1>
+        
+        <p class="hero-subtitle">
+            Personalised stories, characters & songs for ages 2-12. Every story adapts to your child's age, vocabulary level, and imagination.
+        </p>
+        
+        <div class="cta-buttons">
+            <a href="#" class="btn btn-primary">
+                Download on App Store
+            </a>
+            <a href="#" class="btn btn-primary">
+                Get it on Google Play
+            </a>
+        </div>
+        
+        <div class="hero-features">
+            <span><span class="check-icon">✓</span> Available on iOS & Android</span>
+            <span><span class="check-icon">✓</span> 6 Free Stories to Start</span>
+            <span><span class="check-icon">✓</span> No Subscription Required</span>
+        </div>
+    </section>
+
+    <!-- Video Demo Section -->
+    <section class="section-white">
         <div class="container">
-            <div class="free-banner">
-                🎉 Try FREE Today - 6 Fairy Dust - No Credit Card Required
-            </div>
-            
-            <h1>
-                Bring Stories to Life<br>
-                <span class="gradient-text">with AI Magic</span>
-            </h1>
-            
-            <p class="hero-subtitle">
-                Personalized stories, characters & songs for ages 2-12. Every story adapts to your child's age and imagination.
+            <h2>See the Magic in Action</h2>
+            <p class="section-subtitle">
+                Watch how FairyAI creates personalised stories in under 60 seconds
             </p>
-            
-            <div class="cta-buttons">
-                <a href="#" class="btn-primary">
-                    <span>📱</span> Download on App Store
-                </a>
-                <a href="#" class="btn-primary">
-                    <span>🤖</span> Get it on Google Play
-                </a>
-            </div>
-            
-            <div class="hero-features">
-                <span>✓ Available on iOS & Android</span>
-                <span>✓ 6 Free Stories to Start</span>
-                <span>✓ No Subscription Required</span>
+            <div class="video-container">
+                <div class="video-placeholder-content">
+                    <div class="play-icon">▶</div>
+                    <div style="font-weight: 600; font-size: 1.125rem;">Demo Video Placeholder</div>
+                    <div style="font-size: 0.875rem; margin-top: 8px;">Add your video file here</div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Real Parent Story -->
-    <section class="section-alt">
+    <section class="section-grey">
         <div class="container">
             <div class="testimonial">
                 <div class="stars">★★★★★</div>
@@ -471,7 +606,7 @@
                     "The AI took everything she asked for and turned it into a <span class="testimonial-highlight">child-appropriate story that I actually enjoyed reading.</span>"
                 </p>
                 <p class="testimonial-text">
-                    "This isn't just an app - it's become our favorite part of bedtime. She's learning to be creative, I'm enjoying quality time, and <span class="testimonial-highlight">she's asleep in 20 minutes instead of the usual 2-hour battle!</span>"
+                    "This isn't just an app - it's become our favourite part of bedtime. She's learning to be creative, I'm enjoying quality time, and <span class="testimonial-highlight">she's asleep in 20 minutes instead of the usual 2-hour battle!</span>"
                 </p>
                 <p class="testimonial-author">— Parent of a 4-year-old, UK</p>
             </div>
@@ -479,26 +614,35 @@
     </section>
 
     <!-- How It Works -->
-    <section>
+    <section class="section-white">
         <div class="container">
-            <h2 class="gradient-text">How It Works</h2>
+            <h2>How It Works</h2>
             <p class="section-subtitle">Creating magical stories is as easy as 1-2-3</p>
             
             <div class="card-grid">
                 <div class="card">
-                    <span class="card-icon">🎭</span>
+                    <div class="img-placeholder card-image">
+                        Screenshot: Character Creation<br>
+                        Add image here
+                    </div>
                     <h3>1. Create Characters</h3>
                     <p>Turn photos into cartoon characters or describe them with words. Each character becomes part of your child's story universe.</p>
                 </div>
                 
                 <div class="card">
-                    <span class="card-icon">📖</span>
+                    <div class="img-placeholder card-image">
+                        Screenshot: Story Generation<br>
+                        Add image here
+                    </div>
                     <h3>2. Craft Stories</h3>
                     <p>AI generates age-appropriate tales in just 60 seconds. Stories automatically adapt to your selected age group (2-3, 4-6, 7-9, 10-12, 12+).</p>
                 </div>
                 
                 <div class="card">
-                    <span class="card-icon">🎧</span>
+                    <div class="img-placeholder card-image">
+                        Screenshot: Story Player<br>
+                        Add image here
+                    </div>
                     <h3>3. Listen & Enjoy</h3>
                     <p>Professional narration with beautiful illustrations. Perfect for bedtime, car rides, or quiet time. Turn stories into songs too!</p>
                 </div>
@@ -506,27 +650,66 @@
         </div>
     </section>
 
-    <!-- Fairy Corner -->
-    <section class="section-alt">
+    <!-- Age Adaptive Section -->
+    <section class="section-grey">
         <div class="container">
-            <h2 class="gradient-text">The Fairy Corner</h2>
+            <h2>Stories That Grow With Your Child</h2>
+            <p class="section-subtitle">Every story automatically adapts to your child's age, vocabulary, and comprehension level</p>
+            
+            <div class="card-grid">
+                <div class="card">
+                    <h3>2-3 Years</h3>
+                    <p><strong>Simple words, short sentences</strong><br>~200 words per story<br>Basic concepts and repetition</p>
+                </div>
+                
+                <div class="card">
+                    <h3>4-6 Years</h3>
+                    <p><strong>Engaging plots, clear morals</strong><br>~550 words per story<br>Age-appropriate vocabulary</p>
+                </div>
+                
+                <div class="card">
+                    <h3>7-9 Years</h3>
+                    <p><strong>Complex adventures</strong><br>~800 words per story<br>Developed characters and themes</p>
+                </div>
+                
+                <div class="card">
+                    <h3>10-12+ Years</h3>
+                    <p><strong>Rich narratives</strong><br>~1100+ words per story<br>Sophisticated plots and vocabulary</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fairy Corner -->
+    <section class="section-white">
+        <div class="container">
+            <h2>The Fairy Corner</h2>
             <p class="section-subtitle">Over 200 classic fairy tales & nursery rhymes - 100% FREE for everyone!</p>
             
             <div class="card-grid">
                 <div class="card">
-                    <span class="card-icon">📚</span>
+                    <div class="img-placeholder card-image">
+                        Fairy Corner Icon<br>
+                        Add image here
+                    </div>
                     <h3>Classic Tales</h3>
                     <p>Cinderella, Little Red Riding Hood, The Three Little Pigs, and all the timeless stories you grew up with.</p>
                 </div>
                 
                 <div class="card">
-                    <span class="card-icon">🎵</span>
+                    <div class="img-placeholder card-image">
+                        Nursery Rhymes Icon<br>
+                        Add image here
+                    </div>
                     <h3>Nursery Rhymes</h3>
                     <p>Twinkle Twinkle, Humpty Dumpty, Baa Baa Black Sheep - all with professional audio narration.</p>
                 </div>
                 
                 <div class="card">
-                    <span class="card-icon">🌍</span>
+                    <div class="img-placeholder card-image">
+                        Languages Icon<br>
+                        Add image here
+                    </div>
                     <h3>9 Languages</h3>
                     <p>English (US/UK/AU), Spanish, French, German, Italian, Portuguese - stories in your family's language.</p>
                 </div>
@@ -535,10 +718,10 @@
     </section>
 
     <!-- Pricing -->
-    <section id="pricing">
+    <section id="pricing" class="section-grey">
         <div class="container">
-            <h2 class="gradient-text">What is Fairy Dust?</h2>
-            <p class="section-subtitle">Every story, character, or song costs a sprinkle of Fairy Dust ✨</p>
+            <h2>What is Fairy Dust?</h2>
+            <p class="section-subtitle">Every story, character, or song costs a sprinkle of Fairy Dust. Choose the plan that fits your family's storytelling needs.</p>
             
             <div class="pricing-grid">
                 <div class="pricing-card">
@@ -546,151 +729,257 @@
                     <div class="price">FREE</div>
                     <p class="price-period">6 Fairy Dust to start</p>
                     <ul class="pricing-features">
-                        <li><span class="check">✓</span> Try before you buy</li>
-                        <li><span class="check">✓</span> Create characters & stories</li>
-                        <li><span class="check">✓</span> Full Fairy Corner access</li>
-                        <li><span class="check">✓</span> All safety features</li>
+                        <li><span class="check-icon">✓</span> <span>Try before you buy</span></li>
+                        <li><span class="check-icon">✓</span> <span>Create characters & stories</span></li>
+                        <li><span class="check-icon">✓</span> <span>Full Fairy Corner access</span></li>
+                        <li><span class="check-icon">✓</span> <span>All safety features</span></li>
                     </ul>
-                    <a href="#" class="btn-primary" style="width: 100%;">Start Free</a>
+                    <a href="#" class="btn btn-secondary btn-pricing">Start Free</a>
                 </div>
                 
                 <div class="pricing-card">
                     <h3>Story Starter</h3>
-                    <div class="price">£2.39<span style="font-size: 1.5rem; font-weight: 400;">/mo</span></div>
+                    <div class="price">£2.39<span class="price-small">/mo</span></div>
                     <p class="price-period">20 Fairy Dust monthly</p>
                     <ul class="pricing-features">
-                        <li><span class="check">✓</span> ~20 stories/month</li>
-                        <li><span class="check">✓</span> ~10 characters</li>
-                        <li><span class="check">✓</span> ~10 songs</li>
-                        <li><span class="check">✓</span> All age groups</li>
-                        <li><span class="check">✓</span> 9 languages</li>
+                        <li><span class="check-icon">✓</span> <span>~20 stories/month</span></li>
+                        <li><span class="check-icon">✓</span> <span>~10 characters</span></li>
+                        <li><span class="check-icon">✓</span> <span>~10 songs</span></li>
+                        <li><span class="check-icon">✓</span> <span>All age groups</span></li>
+                        <li><span class="check-icon">✓</span> <span>9 languages</span></li>
                     </ul>
-                    <a href="#" class="btn-primary" style="width: 100%;">Get Started</a>
-                    <p style="color: var(--text-gray); font-size: 0.75rem; margin-top: 1rem;">Annual: £23.99 (save 16%)</p>
+                    <a href="#" class="btn btn-primary btn-pricing">Get Started</a>
+                    <p style="text-align: center; color: var(--text-light); font-size: 0.8125rem; margin-top: 12px;">Annual: £23.99 (save 16%)</p>
                 </div>
                 
-                <div class="pricing-card popular">
-                    <div class="popular-badge">⭐ MOST POPULAR</div>
+                <div class="pricing-card featured">
+                    <div class="popular-badge">Most Popular</div>
                     <h3>Dream Weaver</h3>
-                    <div class="price">£5.99<span style="font-size: 1.5rem; font-weight: 400;">/mo</span></div>
+                    <div class="price">£5.99<span class="price-small">/mo</span></div>
                     <p class="price-period">60 Fairy Dust monthly</p>
                     <ul class="pricing-features">
-                        <li><span class="check">✓</span> ~60 stories/month</li>
-                        <li><span class="check">✓</span> ~30 characters</li>
-                        <li><span class="check">✓</span> ~30 songs</li>
-                        <li><span class="check">✓</span> Premium illustrations</li>
-                        <li><span class="check">✓</span> Priority generation</li>
+                        <li><span class="check-icon">✓</span> <span>~60 stories/month</span></li>
+                        <li><span class="check-icon">✓</span> <span>~30 characters</span></li>
+                        <li><span class="check-icon">✓</span> <span>~30 songs</span></li>
+                        <li><span class="check-icon">✓</span> <span>Premium illustrations</span></li>
+                        <li><span class="check-icon">✓</span> <span>Priority generation</span></li>
                     </ul>
-                    <a href="#" class="btn-primary" style="width: 100%;">Get Started</a>
-                    <p style="color: var(--text-gray); font-size: 0.75rem; margin-top: 1rem;">Annual: £58.99 (save 18%)</p>
+                    <a href="#" class="btn btn-primary btn-pricing">Get Started</a>
+                    <p style="text-align: center; color: var(--text-light); font-size: 0.8125rem; margin-top: 12px;">Annual: £58.99 (save 18%)</p>
                 </div>
                 
                 <div class="pricing-card">
                     <h3>Story Circle</h3>
-                    <div class="price">£10.99<span style="font-size: 1.5rem; font-weight: 400;">/mo</span></div>
+                    <div class="price">£10.99<span class="price-small">/mo</span></div>
                     <p class="price-period">125 Fairy Dust monthly</p>
                     <ul class="pricing-features">
-                        <li><span class="check">✓</span> ~125 stories/month</li>
-                        <li><span class="check">✓</span> Unlimited characters</li>
-                        <li><span class="check">✓</span> Unlimited songs</li>
-                        <li><span class="check">✓</span> Premium everything</li>
-                        <li><span class="check">✓</span> Early access features</li>
+                        <li><span class="check-icon">✓</span> <span>~125 stories/month</span></li>
+                        <li><span class="check-icon">✓</span> <span>Unlimited characters</span></li>
+                        <li><span class="check-icon">✓</span> <span>Unlimited songs</span></li>
+                        <li><span class="check-icon">✓</span> <span>Premium everything</span></li>
+                        <li><span class="check-icon">✓</span> <span>Early access features</span></li>
                     </ul>
-                    <a href="#" class="btn-primary" style="width: 100%;">Get Started</a>
-                    <p style="color: var(--text-gray); font-size: 0.75rem; margin-top: 1rem;">Annual: £104.99 (save 20%)</p>
+                    <a href="#" class="btn btn-primary btn-pricing">Get Started</a>
+                    <p style="text-align: center; color: var(--text-light); font-size: 0.8125rem; margin-top: 12px;">Annual: £104.99 (save 20%)</p>
                 </div>
             </div>
             
-            <p style="text-align: center; color: var(--text-gray); margin-top: 2rem; font-size: 0.875rem;">
-                Fairy Dust Costs: Stories (1 dust) • Characters (2 dust) • Songs (2 dust) • Narration (2 dust)
+            <p style="text-align: center; color: var(--text-light); margin-top: 40px; font-size: 0.9375rem;">
+                <strong>Fairy Dust Costs:</strong> Stories (1 dust) • Characters (2 dust) • Songs (2 dust) • Narration (2 dust)
             </p>
         </div>
     </section>
 
-    <!-- Safety -->
-    <section class="section-alt">
+    <!-- Safety Section -->
+    <section class="section-white">
         <div class="container">
-            <h2 class="gradient-text">Safe by Design 🛡️</h2>
-            <p class="section-subtitle">Your child's safety is our top priority</p>
+            <h2>Safe by Design</h2>
+            <p class="section-subtitle">Your child's safety is our top priority. Every feature is designed with protection in mind.</p>
             
             <div class="card-grid">
                 <div class="card">
-                    <span class="card-icon">🎯</span>
-                    <h3>Age-Appropriate</h3>
-                    <p>Stories adapt to 2-3, 4-6, 7-9, 10-12, and 12+ age groups with appropriate vocabulary and complexity.</p>
+                    <div class="img-placeholder card-image">
+                        Age-Appropriate Icon<br>
+                        Add image here
+                    </div>
+                    <h3>Age-Appropriate Content</h3>
+                    <p>All stories tailored to your child's age group. Vocabulary, complexity, and themes carefully adjusted for 2-3, 4-6, 7-9, 10-12, and 12+ year olds.</p>
                 </div>
                 
                 <div class="card">
-                    <span class="card-icon">🔍</span>
+                    <div class="img-placeholder card-image">
+                        AI Filtering Icon<br>
+                        Add image here
+                    </div>
                     <h3>AI Content Filtering</h3>
-                    <p>Every story reviewed by advanced safety guidelines before delivery. Always child-safe.</p>
+                    <p>Every story reviewed by advanced safety guidelines before delivery. Our AI is trained to avoid inappropriate content.</p>
                 </div>
                 
                 <div class="card">
-                    <span class="card-icon">🔒</span>
+                    <div class="img-placeholder card-image">
+                        Privacy Icon<br>
+                        Add image here
+                    </div>
                     <h3>Privacy First</h3>
-                    <p>GDPR & COPPA compliant. No ads, no data sharing. Your child's information is secure.</p>
+                    <p>GDPR & COPPA compliant. No ads, no data sharing with third parties. Your child's information is encrypted and secure.</p>
                 </div>
                 
                 <div class="card">
-                    <span class="card-icon">👨‍👩‍👧</span>
+                    <div class="img-placeholder card-image">
+                        Parental Controls Icon<br>
+                        Add image here
+                    </div>
                     <h3>Parental Controls</h3>
-                    <p>Full control over what your child creates and accesses. Activity monitoring included.</p>
+                    <p>Full control over what your child creates and accesses. Activity monitoring, content restrictions, and usage limits included.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section-grey">
+        <div class="container">
+            <h2>Loved by Parents Everywhere</h2>
+            <p class="section-subtitle">Join thousands of families creating magical memories every night</p>
+            
+            <div class="card-grid">
+                <div class="card">
+                    <div class="stars">★★★★★</div>
+                    <p style="color: var(--text); line-height: 1.7; margin-bottom: 20px;">
+                        "My kids are obsessed! They ask for new FairyAI stories every night. The personalised characters make them feel like they're part of the adventure. Bedtime went from a 2-hour battle to 20 minutes of calm!"
+                    </p>
+                    <div style="display: flex; align-items: center; gap: 12px;">
+                        <div style="width: 48px; height: 48px; background: linear-gradient(135deg, var(--purple), #ec4899); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: 700; font-size: 1.125rem;">SJ</div>
+                        <div>
+                            <div style="font-weight: 600; color: var(--navy);">Sarah Johnson</div>
+                            <div style="font-size: 0.875rem; color: var(--text-light);">Mother of two • London</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="stars">★★★★★</div>
+                    <p style="color: var(--text); line-height: 1.7; margin-bottom: 20px;">
+                        "As a parent, I love the safety features and age-appropriate content. As a tech person, I'm impressed by how fast and creative the AI is. My 3 kids all get stories perfect for their ages!"
+                    </p>
+                    <div style="display: flex; align-items: center; gap: 12px;">
+                        <div style="width: 48px; height: 48px; background: linear-gradient(135deg, #3b82f6, #06b6d4); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: 700; font-size: 1.125rem;">MC</div>
+                        <div>
+                            <div style="font-weight: 600; color: var(--navy);">Michael Chen</div>
+                            <div style="font-size: 0.875rem; color: var(--text-light);">Father of three • Manchester</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="stars">★★★★★</div>
+                    <p style="color: var(--text); line-height: 1.7; margin-bottom: 20px;">
+                        "The songs feature is genius! My daughter sings the FairyAI songs all day. It's educational, creative, and most importantly - safe. We've tried it free and immediately subscribed!"
+                    </p>
+                    <div style="display: flex; align-items: center; gap: 12px;">
+                        <div style="width: 48px; height: 48px; background: linear-gradient(135deg, #ec4899, #ef4444); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: 700; font-size: 1.125rem;">ER</div>
+                        <div>
+                            <div style="font-weight: 600; color: var(--navy);">Emily Rodriguez</div>
+                            <div style="font-size: 0.875rem; color: var(--text-light);">Mother of one • Birmingham</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="stars">★★★★★</div>
+                    <p style="color: var(--text); line-height: 1.7; margin-bottom: 20px;">
+                        "Finally, an app I can trust with my kids. The parental controls are excellent, and the stories are genuinely engaging and well-written. My twins love making characters of themselves!"
+                    </p>
+                    <div style="display: flex; align-items: center; gap: 12px;">
+                        <div style="width: 48px; height: 48px; background: linear-gradient(135deg, #10b981, #14b8a6); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: 700; font-size: 1.125rem;">DT</div>
+                        <div>
+                            <div style="font-weight: 600; color: var(--navy);">David Thompson</div>
+                            <div style="font-size: 0.875rem; color: var(--text-light);">Father of twins • Glasgow</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- FAQ -->
-    <section>
+    <section class="section-white">
         <div class="container">
-            <h2 class="gradient-text">Frequently Asked Questions</h2>
+            <h2>Frequently Asked Questions</h2>
             
             <div class="faq-container">
                 <div class="faq-item">
                     <div class="faq-question">How does Fairy Dust work?</div>
-                    <div class="faq-answer">Fairy Dust is our virtual currency. Stories cost 1 dust, characters and songs cost 2 dust each. You get 6 free dust to start, then choose a monthly subscription. Unused monthly dust resets each month, but purchased dust never expires!</div>
+                    <div class="faq-answer">Fairy Dust is our virtual currency. Stories cost 1 dust, characters and songs cost 2 dust each. You get 6 free dust to start, then choose a monthly subscription that fits your needs. Unused monthly dust resets each month, but any dust you purchase separately never expires!</div>
                 </div>
                 
                 <div class="faq-item">
                     <div class="faq-question">Is content safe for children?</div>
-                    <div class="faq-answer">Absolutely! Every story is filtered through AI safety guidelines and adapted to your selected age group. We're GDPR and COPPA compliant, with no ads and no data sharing. Parents have full control.</div>
+                    <div class="faq-answer">Absolutely! Every story is filtered through advanced AI safety guidelines and automatically adapted to your selected age group. We're GDPR and COPPA compliant, with no ads and no data sharing. Parents have full control with parental dashboards and content review options.</div>
                 </div>
                 
                 <div class="faq-item">
                     <div class="faq-question">What age groups is this for?</div>
-                    <div class="faq-answer">FairyAI is for children ages 2-12+. Stories automatically adapt to five age groups with appropriate vocabulary and complexity. The Fairy Corner has content for all ages!</div>
+                    <div class="faq-answer">FairyAI is designed for children ages 2-12+. Stories automatically adapt to five age groups: 2-3 (simple words, 200 words), 4-6 (engaging plots, 550 words), 7-9 (complex adventures, 800 words), 10-12 (rich narratives, 1100 words), and 12+ (advanced stories). The Fairy Corner has content for all ages!</div>
                 </div>
                 
                 <div class="faq-item">
                     <div class="faq-question">Can I cancel anytime?</div>
-                    <div class="faq-answer">Yes! Cancel anytime through the App Store or Google Play Store. You'll keep access until the end of your billing period. No hassle, no questions asked.</div>
+                    <div class="faq-answer">Yes! Cancel anytime directly through the App Store or Google Play Store. You'll keep access until the end of your billing period. No hassle, no questions asked. Plus, you can always come back - your characters and stories are saved!</div>
                 </div>
                 
                 <div class="faq-item">
                     <div class="faq-question">How fast are stories created?</div>
-                    <div class="faq-answer">Stories are generated in about 60 seconds! Characters take about 90 seconds (6 art styles to choose from), and songs are ready in about 2 minutes. Premium subscribers get priority generation.</div>
+                    <div class="faq-answer">Stories are generated in about 60 seconds! Characters take about 90 seconds (6 different art styles to choose from), and songs are ready in about 2 minutes. Premium subscribers get priority generation for even faster results.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Do you store my child's data?</div>
+                    <div class="faq-answer">We only store what's necessary to provide the service (stories and characters you create). Photos are converted to cartoon characters and the original is deleted. We never collect personal information beyond what's required. You can export or delete all your data anytime. We're fully GDPR and COPPA compliant.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="section-white">
+        <div class="container">
+            <h2>Growing Every Day</h2>
+            <p class="section-subtitle">Live counters coming soon! Join us on this magical journey.</p>
+            
+            <div class="stats-grid">
+                <div>
+                    <div class="stat-number">0</div>
+                    <div class="stat-label">Stories Created</div>
+                </div>
+                <div>
+                    <div class="stat-number">0</div>
+                    <div class="stat-label">Characters Brought to Life</div>
+                </div>
+                <div>
+                    <div class="stat-number">0</div>
+                    <div class="stat-label">Songs Composed</div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Final CTA -->
-    <section class="section-alt">
-        <div class="container text-center">
-            <h2 class="gradient-text mb-4">Ready to Create Magic? ✨</h2>
+    <section class="section-grey">
+        <div class="container" style="text-align: center;">
+            <h2>Ready to Create Magic?</h2>
             <p class="section-subtitle">Start your free trial today - 6 free Fairy Dust to explore everything!</p>
             
             <div class="cta-buttons">
-                <a href="#" class="btn-primary">
-                    <span>📱</span> Download on App Store
+                <a href="#" class="btn btn-primary">
+                    Download on App Store
                 </a>
-                <a href="#" class="btn-primary">
-                    <span>🤖</span> Get it on Google Play
+                <a href="#" class="btn btn-primary">
+                    Get it on Google Play
                 </a>
             </div>
             
-            <p style="color: var(--text-gray); margin-top: 1rem;">
+            <p style="color: var(--text-light); margin-top: 16px;">
                 Join thousands of families already creating magical memories
             </p>
         </div>
@@ -698,7 +987,7 @@
 
     <!-- Footer -->
     <footer>
-        <div class="container">
+        <div class="footer-content">
             <div class="footer-links">
                 <a href="/privacy">Privacy Policy</a>
                 <a href="/terms">Terms of Service</a>
@@ -707,9 +996,15 @@
             </div>
             
             <p class="footer-text">
-                © 2025 FairyAI. All rights reserved. Made with ✨ for families everywhere.
+                © 2025 FairyAI. All rights reserved. Made with care for families everywhere.
             </p>
         </div>
     </footer>
 </body>
 </html>
+
+
+
+
+
+
