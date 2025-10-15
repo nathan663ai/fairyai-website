@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FairyAI - Magical AI Storytelling for Children | Spark Imagination</title>
-    <meta name="description" content="Create personalised AI stories, characters, and songs for children ages 2-12. A magical solution for bedtime battles. Try free today!">
+    <title>FairyAI - Your Never-Ending AI Storybook for Children</title>
+    <meta name="description" content="Create an ever-evolving story for your child. Continue last night's adventure with a single tap. AI stories, songs, and characters that grow with them.">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,11 +12,7 @@
     
     <style>
         /* CSS Reset */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
 
         /* Variables & Global Styles */
         :root {
@@ -30,9 +26,7 @@
             --border-light: #E2E8F0;
         }
 
-        html {
-            scroll-behavior: smooth;
-        }
+        html { scroll-behavior: smooth; }
 
         body {
             font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
@@ -43,360 +37,139 @@
         }
 
         /* Typography */
-        h1, h2, h3 {
-            font-weight: 800;
-            color: var(--deep-navy);
-            line-height: 1.2;
-        }
-
+        h1, h2, h3 { font-weight: 800; color: var(--deep-navy); line-height: 1.2; }
         h1 { font-size: clamp(2.5rem, 5vw, 4.25rem); }
         h2 { font-size: clamp(2.25rem, 4vw, 3rem); text-align: center; }
         h3 { font-size: clamp(1.25rem, 2.5vw, 1.5rem); }
-
-        .section-subtitle {
-            text-align: center;
-            font-size: 1.125rem;
-            color: var(--text-light);
-            max-width: 680px;
-            margin: 1rem auto 4rem;
-        }
+        .section-subtitle { text-align: center; font-size: 1.125rem; color: var(--text-light); max-width: 680px; margin: 1rem auto 4rem; }
         
         /* Layout */
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 24px;
-        }
-
-        section {
-            padding: 100px 0;
-            position: relative;
-        }
-        
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+        section { padding: 100px 0; position: relative; }
         .section-light { background-color: white; }
         .section-alt { background-color: var(--bg-light); }
 
         /* Navigation */
-        nav {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            background: rgba(255, 255, 255, 0.8);
-            backdrop-filter: blur(10px);
-            border-bottom: 1px solid var(--border-light);
-            z-index: 1000;
-            padding: 1rem 0;
-        }
-
-        .nav-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            font-family: 'Lora', serif;
-            font-weight: 600;
-            font-size: 1.75rem;
-            color: var(--deep-navy);
-            text-decoration: none;
-        }
+        nav { position: fixed; top: 0; width: 100%; background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(10px); border-bottom: 1px solid var(--border-light); z-index: 1000; padding: 1rem 0; }
+        .nav-container { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-family: 'Lora', serif; font-weight: 600; font-size: 1.75rem; color: var(--deep-navy); text-decoration: none; }
         .logo-ai { color: var(--accent-gold); }
-
-        .nav-cta {
-            background: var(--deep-navy);
-            color: white;
-            padding: 0.6rem 1.25rem;
-            border-radius: 50px;
-            font-weight: 600;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
+        .nav-cta { background: var(--deep-navy); color: white; padding: 0.6rem 1.25rem; border-radius: 50px; font-weight: 600; text-decoration: none; transition: all 0.2s; }
         .nav-cta:hover { background: #334155; transform: translateY(-2px); }
 
         /* Hero Section */
-        .hero {
-            padding-top: 160px;
-            padding-bottom: 120px;
-            background: linear-gradient(135deg, #FFF7ED 0%, #F0F9FF 100%);
-        }
-
-        .hero-content {
-            display: grid;
-            grid-template-columns: 1fr;
-            align-items: center;
-            gap: 3rem;
-            text-align: center;
-        }
-        
-        @media (min-width: 992px) {
-            .hero-content {
-                grid-template-columns: 1.1fr 1fr;
-                text-align: left;
-                gap: 5rem;
-            }
-        }
-        
+        .hero { padding-top: 160px; padding-bottom: 120px; background: linear-gradient(135deg, #FFF7ED 0%, #F0F9FF 100%); }
+        .hero-content { display: grid; grid-template-columns: 1fr; align-items: center; gap: 3rem; text-align: center; }
+        @media (min-width: 992px) { .hero-content { grid-template-columns: 1.1fr 1fr; text-align: left; gap: 5rem; } }
         .hero-text h1 { margin-bottom: 1.5rem; }
-        .hero-subtitle {
-            font-size: clamp(1.1rem, 2vw, 1.25rem);
-            color: var(--text-light);
-            margin: 0 0 2rem;
-            max-width: 550px;
-        }
-        .hero-video-placeholder {
-            background: linear-gradient(135deg, var(--sky-blue), var(--soft-pink));
-            border-radius: 30px;
-            min-height: 450px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-weight: 600;
-            text-align: center;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
-            position: relative;
-            overflow: hidden;
-        }
-        
+        .hero-subtitle { font-size: clamp(1.1rem, 2vw, 1.25rem); color: var(--text-light); margin: 0 0 2rem; max-width: 550px; }
+        .hero-video-placeholder { background: linear-gradient(135deg, var(--sky-blue), var(--soft-pink)); border-radius: 30px; min-height: 450px; display: flex; align-items: center; justify-content: center; color: white; font-weight: 600; text-align: center; box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
         .cta-buttons { display: flex; gap: 1rem; flex-wrap: wrap; }
         .hero-content .cta-buttons { justify-content: center; }
         @media (min-width: 992px) { .hero-content .cta-buttons { justify-content: flex-start; } }
-
-        .btn {
-            padding: 14px 28px;
-            border-radius: 50px;
-            font-weight: 600;
-            font-size: 1rem;
-            text-decoration: none;
-            transition: all 0.2s ease;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            gap: 8px;
-            border: 2px solid transparent;
-        }
-
-        .btn-primary {
-            background: var(--accent-gold);
-            color: var(--deep-navy);
-        }
-        .btn-primary:hover {
-            background: #FBBF24;
-            transform: translateY(-3px);
-            box-shadow: 0 8px 16px rgba(245, 158, 11, 0.2);
-        }
-        
+        .btn { padding: 14px 28px; border-radius: 50px; font-weight: 600; font-size: 1rem; text-decoration: none; transition: all 0.2s ease; display: inline-flex; align-items: center; justify-content: center; gap: 8px; border: 2px solid transparent; }
+        .btn-primary { background: var(--accent-gold); color: var(--deep-navy); }
+        .btn-primary:hover { background: #FBBF24; transform: translateY(-3px); box-shadow: 0 8px 16px rgba(245, 158, 11, 0.2); }
         .app-badges { margin-top: 2rem; display: flex; gap: 1rem; align-items: center; }
         .hero-content .app-badges { justify-content: center; }
         @media (min-width: 992px) { .hero-content .app-badges { justify-content: flex-start; } }
         .app-badges img { height: 40px; }
         
-        /* Curved Section Divider */
-        .curved-divider {
-            position: absolute;
-            bottom: -1px; /* To prevent anti-aliasing gaps */
-            left: 0;
-            width: 100%;
-            overflow: hidden;
-            line-height: 0;
-            transform: rotate(180deg);
-        }
-        .curved-divider svg {
-            position: relative;
-            display: block;
-            width: calc(100% + 1.3px);
-            height: 100px;
-        }
+        /* Curved Divider */
+        .curved-divider { position: absolute; bottom: -1px; left: 0; width: 100%; overflow: hidden; line-height: 0; transform: rotate(180deg); }
+        .curved-divider svg { position: relative; display: block; width: calc(100% + 1.3px); height: 100px; }
         .curved-divider .shape-fill { fill: var(--bg-light); }
-        
-        /* How It Works Section */
-        .how-it-works-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2rem;
-            margin-top: 4rem;
-            align-items: flex-start;
-        }
 
+        /* How It Works Section */
+        .how-it-works-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-top: 4rem; align-items: flex-start; }
         .step-card { text-align: center; }
-        .step-number {
-            width: 50px;
-            height: 50px;
-            margin: 0 auto 1.5rem;
-            background: linear-gradient(135deg, var(--sky-blue) 0%, var(--soft-pink) 100%);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: 700;
-            font-size: 1.25rem;
-            color: white;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-        }
+        .step-number { width: 50px; height: 50px; margin: 0 auto 1.5rem; background: linear-gradient(135deg, var(--sky-blue) 0%, var(--soft-pink) 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1.25rem; color: white; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
         .step-card h3 { margin-bottom: 0.5rem; font-size: 1.375rem; }
         .step-card p { color: var(--text-light); max-width: 320px; margin: 0 auto; }
         
-        /* Testimonial Section */
-        .testimonial-bg {
-            background-color: var(--deep-navy);
-            color: white;
-            padding: 80px 24px;
-            border-radius: 40px;
-        }
-        .testimonial-content {
-            max-width: 800px;
-            margin: 0 auto;
-            text-align: center;
-        }
-        .testimonial-quote {
-            font-family: 'Lora', serif;
-            font-size: clamp(1.25rem, 3vw, 1.75rem);
-            line-height: 1.6;
-            font-style: italic;
-            margin-bottom: 2rem;
-            color: rgba(255,255,255,0.9);
-        }
+        /* Stats Counter Section */
+        .stats-section { padding-top: 0; }
+        .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; background: white; padding: 3rem; border-radius: 24px; border: 1px solid var(--border-light); box-shadow: 0 16px 40px rgba(15, 23, 42, 0.05); }
+        .stat-item { text-align: center; }
+        .stat-number { font-size: clamp(3rem, 6vw, 4rem); font-weight: 800; color: var(--accent-gold); line-height: 1; }
+        .stat-label { font-size: 1rem; color: var(--text-light); font-weight: 600; }
+
+        /* Big Testimonial */
+        .testimonial-bg { background-color: var(--deep-navy); color: white; padding: 80px 24px; border-radius: 40px; }
+        .testimonial-content { max-width: 800px; margin: 0 auto; text-align: center; }
+        .testimonial-quote { font-family: 'Lora', serif; font-size: clamp(1.25rem, 3vw, 1.75rem); line-height: 1.6; font-style: italic; margin-bottom: 2rem; color: rgba(255,255,255,0.9); }
         .testimonial-highlight { color: #FBCFE8; }
         .testimonial-author { font-weight: 600; font-size: 1rem; color: rgba(255,255,255,0.7); }
 
-        /* Feature Showcase with Tabs */
+        /* Never-Ending Story Section */
+        .never-ending-story-section .container { display: grid; grid-template-columns: 1fr; gap: 3rem; align-items: center; }
+        @media (min-width: 992px) { .never-ending-story-section .container { grid-template-columns: 1.1fr 1fr; gap: 5rem; } }
+        .never-ending-story-section h2, .never-ending-story-section .section-subtitle { text-align: left; margin-left: 0; margin-right: 0; }
+        .ui-mockup-placeholder { background-color: white; border-radius: 24px; padding: 2rem; box-shadow: 0 20px 50px rgba(15, 23, 42, 0.1); text-align: center; font-weight: 600; color: var(--text-light); }
+        .ui-mockup-placeholder h4 { color: var(--deep-navy); margin-bottom: 1.5rem; }
+        .ui-button-mockup { display: block; width: 100%; padding: 1rem; border-radius: 12px; font-size: 1.1rem; font-weight: 600; text-align: center; margin-bottom: 1rem; }
+        .ui-primary { background: var(--accent-gold); color: var(--deep-navy); }
+        .ui-secondary { background: var(--bg-light); color: var(--text-main); border: 2px solid var(--border-light); }
+        
+        /* Feature Showcase Tabs */
         .features-showcase { max-width: 900px; margin: 0 auto; }
-        .feature-tabs {
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
-            margin-bottom: 3rem;
-            flex-wrap: wrap;
-        }
-        .tab-button {
-            padding: 0.75rem 1.5rem;
-            border: 2px solid var(--border-light);
-            background: white;
-            border-radius: 50px;
-            font-weight: 600;
-            font-size: 1rem;
-            color: var(--text-main);
-            cursor: pointer;
-            transition: all 0.2s ease;
-        }
+        .feature-tabs { display: flex; justify-content: center; gap: 1rem; margin-bottom: 3rem; flex-wrap: wrap; }
+        .tab-button { padding: 0.75rem 1.5rem; border: 2px solid var(--border-light); background: white; border-radius: 50px; font-weight: 600; font-size: 1rem; color: var(--text-main); cursor: pointer; transition: all 0.2s ease; }
         .tab-button:hover { background: var(--bg-light); border-color: var(--accent-gold); }
         .tab-button.active { background: var(--accent-gold); color: var(--deep-navy); border-color: var(--accent-gold); }
         .tab-content { display: none; background: var(--bg-light); padding: 2rem; border-radius: 24px; animation: fadeIn 0.5s; }
         @media (min-width: 768px) { .tab-content { padding: 3rem; } }
         .tab-content.active { display: block; }
-        .tab-content-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 2rem;
-            align-items: center;
-        }
+        .tab-content-grid { display: grid; grid-template-columns: 1fr; gap: 2rem; align-items: center; }
         @media (min-width: 768px) { .tab-content-grid { grid-template-columns: 1fr 1fr; } }
         .tab-content-grid ul { list-style: none; padding-left: 0; }
         .tab-content-grid li { padding-left: 1.5rem; position: relative; margin-bottom: 0.5rem; }
-        .tab-content-grid li::before {
-            content: '✨';
-            position: absolute;
-            left: 0;
-            top: 0;
-        }
-
-        .feature-image-placeholder {
-            height: 300px;
-            background: linear-gradient(135deg, var(--sky-blue), var(--soft-pink));
-            border-radius: 16px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: 600;
-            color: white;
-            text-align: center;
-            padding: 1rem;
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(10px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
+        .tab-content-grid li::before { content: '✨'; position: absolute; left: 0; top: 0; }
+        .feature-image-placeholder { height: 300px; background: linear-gradient(135deg, var(--sky-blue), var(--soft-pink)); border-radius: 16px; display: flex; align-items: center; justify-content: center; font-weight: 600; color: white; text-align: center; padding: 1rem; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+        
+        /* Testimonials Grid */
+        .testimonials-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+        .testimonial-card { background: white; padding: 2rem; border-radius: 16px; border: 1px solid var(--border-light); }
+        .testimonial-card-header { display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem; }
+        .testimonial-avatar { width: 48px; height: 48px; border-radius: 50%; background: var(--deep-navy); color: white; display: flex; align-items: center; justify-content: center; font-weight: 700; flex-shrink: 0; }
+        .testimonial-author-info .name { font-weight: 600; color: var(--deep-navy); }
+        .testimonial-author-info .title { font-size: 0.9rem; color: var(--text-light); }
+        .testimonial-card .stars { color: var(--accent-gold); margin-bottom: 1rem; }
+        .testimonial-card p { color: var(--text-main); line-height: 1.6; }
 
         /* Coming Soon Section */
         .coming-soon-section { text-align: center; }
-        .coming-soon-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 2rem;
-            max-width: 800px;
-            margin: 4rem auto 0;
-        }
+        .coming-soon-grid { display: grid; grid-template-columns: 1fr; gap: 2rem; max-width: 800px; margin: 4rem auto 0; }
         @media (min-width: 768px) { .coming-soon-grid { grid-template-columns: 1fr 1fr; } }
-        .coming-soon-card {
-            background: white;
-            padding: 2rem;
-            border-radius: 16px;
-            border: 1px solid var(--border-light);
-        }
-        .coming-soon-card h3 {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 0.75rem;
-            margin-bottom: 0.5rem;
-        }
+        .coming-soon-card { background: white; padding: 2rem; border-radius: 16px; border: 1px solid var(--border-light); }
+        .coming-soon-card h3 { display: flex; align-items: center; justify-content: center; gap: 0.75rem; margin-bottom: 0.5rem; }
         
         /* Pricing Section */
-        .pricing-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 2rem;
-            max-width: 1100px;
-            margin: 0 auto;
-        }
+        .pricing-grid { display: grid; grid-template-columns: 1fr; gap: 2rem; max-width: 1100px; margin: 0 auto; }
         @media (min-width: 768px) { .pricing-grid { grid-template-columns: repeat(2, 1fr); } }
         @media (min-width: 1200px) { .pricing-grid { grid-template-columns: repeat(4, 1fr); } }
-        
-        .pricing-card {
-            background: white;
-            border: 2px solid var(--border-light);
-            border-radius: 24px;
-            padding: 2rem;
-            display: flex;
-            flex-direction: column;
-            transition: all 0.3s ease;
-        }
-        .pricing-card:hover, .pricing-card.featured {
-            transform: translateY(-8px) scale(1.02);
-            border-color: var(--accent-gold);
-            box-shadow: 0 16px 32px rgba(245, 158, 11, 0.15);
-        }
+        .pricing-card { background: white; border: 2px solid var(--border-light); border-radius: 24px; padding: 2rem; display: flex; flex-direction: column; transition: all 0.3s ease; }
+        .pricing-card:hover, .pricing-card.featured { transform: translateY(-8px) scale(1.02); border-color: var(--accent-gold); box-shadow: 0 16px 32px rgba(245, 158, 11, 0.15); }
         .pricing-header { text-align: center; }
         .pricing-header h3 { font-size: 1.25rem; font-weight: 700; }
         .price { font-size: 3rem; font-weight: 800; color: var(--deep-navy); margin: 0.5rem 0 0.25rem; }
         .price-small { font-size: 1.5rem; font-weight: 600; color: var(--text-light); }
         .price-period { color: var(--text-light); font-size: 0.9rem; margin-bottom: 1.5rem; }
-        
         .pricing-features { list-style: none; margin-bottom: 2rem; flex-grow: 1; }
         .pricing-features li { display: flex; align-items: flex-start; gap: 0.75rem; padding: 0.5rem 0; font-size: 0.95rem; }
         .check-icon { color: var(--accent-gold); font-weight: bold; margin-top: 4px; flex-shrink: 0;}
-        
         .btn-pricing { width: 100%; }
         .btn-secondary { background: white; color: var(--deep-navy); border-color: var(--border-light); }
         .btn-secondary:hover { background: var(--bg-light); border-color: var(--deep-navy); }
         
         /* Final CTA Section */
-        .cta-section {
-            background: linear-gradient(135deg, var(--deep-navy) 0%, #1E293B 100%);
-            border-radius: 40px;
-            padding: 5rem 2rem;
-        }
+        .cta-section { background: linear-gradient(135deg, var(--deep-navy) 0%, #1E293B 100%); border-radius: 40px; padding: 5rem 2rem; }
         .cta-section h2, .cta-section .section-subtitle { color: white; }
         .cta-section .section-subtitle { color: rgba(255,255,255,0.8); }
 
         /* Footer */
-        footer {
-            background-color: var(--bg-light);
-            text-align: center;
-            padding: 4rem 2rem 2rem;
-        }
+        footer { background-color: var(--bg-light); text-align: center; padding: 4rem 2rem 2rem; }
         .footer-links { display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; margin-bottom: 2rem; }
         .footer-links a { color: var(--text-light); text-decoration: none; transition: color 0.2s; }
         .footer-links a:hover { color: var(--deep-navy); }
@@ -415,12 +188,12 @@
     <section class="hero">
         <div class="container hero-content">
             <div class="hero-text">
-                <h1>End Bedtime Battles with Magical Stories</h1>
+                <h1>Your Child's Never-Ending Storybook</h1>
                 <p class="hero-subtitle">
-                    Create stories, songs, and characters from your child's imagination. A new adventure every night brings calm, connection, and creativity.
+                    Create an ever-evolving story that continues each night. AI-powered stories, songs, and characters that grow with your child's imagination.
                 </p>
                 <div class="cta-buttons">
-                    <a href="#" class="btn btn-primary">Download The App</a>
+                    <a href="#" class="btn btn-primary">Download The App & Try Free</a>
                 </div>
                 <div class="app-badges">
                     <a href="#"><img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1276560000" alt="Download on the App Store"></a>
@@ -432,9 +205,7 @@
             </div>
         </div>
         <div class="curved-divider">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-            </svg>
+            <svg viewBox="0 0 1200 120" preserveAspectRatio="none"><path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path></svg>
         </div>
     </section>
 
@@ -443,50 +214,60 @@
             <h2>A Magical Story in 3 Simple Steps</h2>
             <p class="section-subtitle">From a single idea to a cherished memory in under a minute.</p>
             <div class="how-it-works-grid">
-                <div class="step-card">
-                    <div class="step-number">1</div>
-                    <h3>Spark an Idea</h3>
-                    <p>Describe a character, a place, or a silly scenario. "A brave little hedgehog who wants to fly to the moon."</p>
-                </div>
-                <div class="step-card">
-                    <div class="step-number">2</div>
-                    <h3>Add a Dash of Magic</h3>
-                    <p>Our AI weaves your idea into an age-appropriate story with beautiful illustrations and professional narration.</p>
-                </div>
-                <div class="step-card">
-                    <div class="step-number">3</div>
-                    <h3>Create a Memory</h3>
-                    <p>Snuggle up and enjoy a truly unique story. Perfect for bedtime, car journeys, or any time you need a little magic.</p>
-                </div>
+                <div class="step-card"><div class="step-number">1</div><h3>Spark an Idea</h3><p>Describe a character, a place, or a silly scenario. "A brave little hedgehog who wants to fly to the moon."</p></div>
+                <div class="step-card"><div class="step-number">2</div><h3>Add a Dash of Magic</h3><p>Our AI weaves your idea into an age-appropriate story with beautiful illustrations and professional narration.</p></div>
+                <div class="step-card"><div class="step-number">3</div><h3>Create a Memory</h3><p>Snuggle up and enjoy a truly unique story. Perfect for bedtime, car journeys, or any time you need a little magic.</p></div>
             </div>
         </div>
     </section>
 
-    <section class="section-light">
+    <section class="section-alt stats-section">
         <div class="container">
-            <div class="testimonial-bg">
-                <div class="testimonial-content">
-                    <p class="testimonial-quote">
-                        "This isn't just an app - it's our favourite part of bedtime. My daughter is learning to be creative, and <span class="testimonial-highlight">she's asleep in 20 minutes instead of the usual 2-hour battle!</span>"
-                    </p>
-                    <p class="testimonial-author">— Sarah, Parent of a 4-year-old, UK</p>
-                </div>
+            <div class="stats-grid">
+                <div class="stat-item"><div class="stat-number" data-target="28431">0</div><div class="stat-label">Stories Created</div></div>
+                <div class="stat-item"><div class="stat-number" data-target="9812">0</div><div class="stat-label">Characters Brought to Life</div></div>
+                <div class="stat-item"><div class="stat-number" data-target="5276">0</div><div class="stat-label">Songs Composed</div></div>
             </div>
         </div>
     </section>
     
-    <section class="section-alt">
+    <section class="section-light">
+        <div class="container">
+            <div class="testimonial-bg">
+                <div class="testimonial-content">
+                    <p class="testimonial-quote">"This isn't just an app - it's our favourite part of bedtime. My daughter is learning to be creative, and <span class="testimonial-highlight">she's asleep in 20 minutes instead of the usual 2-hour battle!</span>"</p>
+                    <p class="testimonial-author">— Sarah J., Parent of a 4-year-old, UK</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-alt never-ending-story-section">
+        <div class="container">
+            <div>
+                <h2>Your Never-Ending Storybook</h2>
+                <p class="section-subtitle">Tired of thinking up new stories every night? FairyAI remembers where you left off. Continue last night’s adventure with a single tap, creating a persistent, chapter-by-chapter tale your child will adore.</p>
+                <p>It’s the same comfort of a favourite book, but with the magic of infinite possibilities. Let their personal saga unfold, night after night.</p>
+            </div>
+            <div class="ui-mockup-placeholder">
+                <h4>Last night's adventure...</h4>
+                <p style="margin-bottom: 2rem;">Leo the hedgehog built a twig rocket but couldn't reach the moon.</p>
+                <div class="ui-button-mockup ui-primary">Continue the Adventure</div>
+                <div class="ui-button-mockup ui-secondary">Add a Twist...</div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section-light">
         <div class="container">
             <h2>A Universe of Possibilities</h2>
             <p class="section-subtitle">More than just a storybook. It's a complete creative toolkit for your child's imagination.</p>
-
             <div class="features-showcase">
                 <div class="feature-tabs">
                     <button class="tab-button active" onclick="openTab(event, 'characters')">Character Creator</button>
                     <button class="tab-button" onclick="openTab(event, 'stories')">Stories & Songs</button>
                     <button class="tab-button" onclick="openTab(event, 'fairycorner')">The Fairy Corner</button>
                 </div>
-
                 <div id="characters" class="tab-content active">
                     <div class="tab-content-grid">
                         <div>
@@ -498,12 +279,9 @@
                                 <li><strong>Build-a-Character:</strong> Choose from fun options.</li>
                             </ul>
                         </div>
-                        <div class="feature-image-placeholder">
-                            Animation: Photo of a dog<br>morphing into a cartoon dog character
-                        </div>
+                        <div class="feature-image-placeholder">Animation: Photo of a dog<br>morphing into a cartoon dog character</div>
                     </div>
                 </div>
-
                 <div id="stories" class="tab-content">
                      <div class="tab-content-grid">
                          <div>
@@ -515,12 +293,9 @@
                                  <li><strong>Narration in:</strong> EN, ES, FR, DE, IT & more.</li>
                              </ul>
                         </div>
-                        <div class="feature-image-placeholder">
-                            Visual: Storybook page<br>with narration audio wave
-                        </div>
+                        <div class="feature-image-placeholder">Visual: Storybook page<br>with narration audio wave</div>
                     </div>
                 </div>
-                
                 <div id="fairycorner" class="tab-content">
                     <div class="tab-content-grid">
                          <div>
@@ -532,10 +307,32 @@
                                  <li><strong>Daily Stories:</strong> A brand new story to discover every day!</li>
                              </ul>
                         </div>
-                        <div class="feature-image-placeholder">
-                            Visual: A magical, glowing library or bookshelf
-                        </div>
+                        <div class="feature-image-placeholder">Visual: A magical, glowing library or bookshelf</div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section-alt">
+        <div class="container">
+            <h2>Loved by Parents (and their little ones)</h2>
+            <p class="section-subtitle">We asked our first users for feedback. They had a lot to say.</p>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-card-header"><div class="testimonial-avatar">MC</div><div class="testimonial-author-info"><div class="name">Michael C.</div><div class="title">Father of three</div></div></div>
+                    <div class="stars">★★★★★</div>
+                    <p>"The 'continue story' feature is genius. My kids feel like they have their own personal TV series. They can't wait to find out what happens next to their characters."</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-card-header"><div class="testimonial-avatar">ER</div><div class="testimonial-author-info"><div class="name">Emily R.</div><div class="title">Mother of one</div></div></div>
+                    <div class="stars">★★★★★</div>
+                    <p>"The songs are surprisingly catchy! My daughter made a song about our dog and now she sings it all day. I love that it's creative and safe screen time."</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-card-header"><div class="testimonial-avatar">DT</div><div class="testimonial-author-info"><div class="name">David T.</div><div class="title">Father of twins</div></div></div>
+                    <div class="stars">★★★★★</div>
+                    <p>"Finally, an app I can trust. The safety filters are robust, and the content is genuinely wholesome. I turned my twins into superheroes and they were ecstatic."</p>
                 </div>
             </div>
         </div>
@@ -546,14 +343,8 @@
             <h2>The Magic Continues</h2>
             <p class="section-subtitle">Our story is just beginning. We're always dreaming up new ways to spark imagination.</p>
             <div class="coming-soon-grid">
-                <div class="coming-soon-card">
-                    <h3><span>🎨</span> Choose Your Path</h3>
-                    <p>Interactive adventures where your child's choices shape the outcome of the story.</p>
-                </div>
-                <div class="coming-soon-card">
-                    <h3><span>🎤</span> Your Voice, Their Story</h3>
-                    <p>Record your own narration for any story, creating a priceless keepsake they can listen to anytime.</p>
-                </div>
+                <div class="coming-soon-card"><h3><span>🎨</span> Choose Your Path</h3><p>Interactive adventures where your child's choices shape the outcome of the story.</p></div>
+                <div class="coming-soon-card"><h3><span>🎤</span> Your Voice, Their Story</h3><p>Record your own narration for any story, creating a priceless keepsake they can listen to anytime.</p></div>
             </div>
         </div>
     </section>
@@ -564,11 +355,7 @@
             <p class="section-subtitle">Every story, character, or song costs a sprinkle of Fairy Dust. Start free, then choose a plan that fits your family.</p>
             <div class="pricing-grid">
                 <div class="pricing-card">
-                    <div class="pricing-header">
-                        <h3>First Page</h3>
-                        <div class="price">Free</div>
-                        <p class="price-period">6 Fairy Dust to start</p>
-                    </div>
+                    <div class="pricing-header"><h3>First Page</h3><div class="price">Free</div><p class="price-period">6 Fairy Dust to start</p></div>
                     <ul class="pricing-features">
                         <li><span class="check-icon">✓</span><span>Create stories & characters</span></li>
                         <li><span class="check-icon">✓</span><span>Full Fairy Corner access</span></li>
@@ -577,11 +364,7 @@
                     <a href="#" class="btn btn-secondary btn-pricing">Start For Free</a>
                 </div>
                 <div class="pricing-card">
-                    <div class="pricing-header">
-                        <h3>Spark</h3>
-                        <div class="price">£2.39<span class="price-small">/mo</span></div>
-                        <p class="price-period">20 Fairy Dust monthly</p>
-                    </div>
+                    <div class="pricing-header"><h3>Spark</h3><div class="price">£2.39<span class="price-small">/mo</span></div><p class="price-period">20 Fairy Dust monthly</p></div>
                     <ul class="pricing-features">
                         <li><span class="check-icon">✓</span><span>~20 stories per month</span></li>
                         <li><span class="check-icon">✓</span><span>Create characters & songs</span></li>
@@ -590,11 +373,7 @@
                     <a href="#" class="btn btn-primary btn-pricing">Get Started</a>
                 </div>
                 <div class="pricing-card featured">
-                    <div class="pricing-header">
-                        <h3>Dream</h3>
-                        <div class="price">£5.99<span class="price-small">/mo</span></div>
-                        <p class="price-period">60 Fairy Dust monthly</p>
-                    </div>
+                    <div class="pricing-header"><h3>Dream</h3><div class="price">£5.99<span class="price-small">/mo</span></div><p class="price-period">60 Fairy Dust monthly</p></div>
                     <ul class="pricing-features">
                         <li><span class="check-icon">✓</span><span>~60 stories per month</span></li>
                         <li><span class="check-icon">✓</span><span>Premium illustrations</span></li>
@@ -602,12 +381,8 @@
                     </ul>
                     <a href="#" class="btn btn-primary btn-pricing">Choose Dream Plan</a>
                 </div>
-                 <div class="pricing-card">
-                    <div class="pricing-header">
-                        <h3>Odyssey</h3>
-                        <div class="price">£10.99<span class="price-small">/mo</span></div>
-                        <p class="price-period">125 Fairy Dust monthly</for>
-                    </div>
+                <div class="pricing-card">
+                    <div class="pricing-header"><h3>Odyssey</h3><div class="price">£10.99<span class="price-small">/mo</span></div><p class="price-period">125 Fairy Dust monthly</for></div>
                     <ul class="pricing-features">
                         <li><span class="check-icon">✓</span><span>~125 stories per month</span></li>
                         <li><span class="check-icon">✓</span><span>Unlimited characters & songs</span></li>
@@ -641,21 +416,62 @@
     </footer>
 
     <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            // --- SCRIPT FOR TABS ---
+            // Set the first tab and content as active by default
+            const firstTabButton = document.querySelector('.tab-button');
+            const firstTabContent = document.getElementById(firstTabButton.getAttribute('onclick').split("'")[1]);
+            if (firstTabButton && firstTabContent) {
+                firstTabButton.classList.add('active');
+                firstTabContent.classList.add('active');
+            }
+            
+            // --- SCRIPT FOR COUNTER ANIMATION ---
+            const counters = document.querySelectorAll('.stat-number');
+            const speed = 200; // The lower the number, the faster the count
+
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const counter = entry.target;
+                        const animate = () => {
+                            const target = +counter.getAttribute('data-target');
+                            const count = +counter.innerText.replace(/,/g, '');
+                            const inc = Math.ceil(target / speed);
+
+                            if (count < target) {
+                                counter.innerText = Math.min(count + inc, target).toLocaleString('en-GB');
+                                setTimeout(animate, 10);
+                            } else {
+                                counter.innerText = target.toLocaleString('en-GB');
+                            }
+                        };
+                        animate();
+                        observer.unobserve(counter); // Stop observing once animated
+                    }
+                });
+            }, {
+                threshold: 0.5 // Trigger when 50% of the element is visible
+            });
+
+            counters.forEach(counter => {
+                observer.observe(counter);
+            });
+        });
+
+        // --- GLOBAL FUNCTION FOR TABS ---
         function openTab(evt, tabName) {
             var i, tabcontent, tablinks;
-            // Hide all tab content
             tabcontent = document.getElementsByClassName("tab-content");
             for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
+                tabcontent[i].classList.remove('active');
             }
-            // Remove the 'active' class from all tab buttons
             tablinks = document.getElementsByClassName("tab-button");
             for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" active", "");
+                tablinks[i].classList.remove('active');
             }
-            // Show the current tab and add an 'active' class to the button that opened the tab
-            document.getElementById(tabName).style.display = "block";
-            evt.currentTarget.className += " active";
+            document.getElementById(tabName).classList.add('active');
+            evt.currentTarget.classList.add('active');
         }
     </script>
 
