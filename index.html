@@ -35,7 +35,7 @@
             background-color: white;
             -webkit-font-smoothing: antialiased;
         }
-
+        
         /* Typography */
         h1, h2, h3 { font-weight: 800; color: var(--deep-navy); line-height: 1.2; }
         h1 { font-size: clamp(2.5rem, 5vw, 4.25rem); }
@@ -55,15 +55,51 @@
         .logo { font-family: 'Lora', serif; font-weight: 600; font-size: 1.75rem; color: var(--deep-navy); text-decoration: none; }
         .logo-ai { color: var(--accent-gold); }
         
-        .nav-links { display: none; }
+        .desktop-nav-links { display: none; }
         @media (min-width: 992px) {
-            .nav-links { display: flex; align-items: center; gap: 2rem; }
-            .nav-links a { text-decoration: none; color: var(--text-main); font-weight: 600; font-size: 0.95rem; transition: color 0.2s; }
-            .nav-links a:hover { color: var(--accent-gold); }
+            .desktop-nav-links { display: flex; align-items: center; gap: 2rem; }
+            .desktop-nav-links a { text-decoration: none; color: var(--text-main); font-weight: 600; font-size: 0.95rem; transition: color 0.2s; }
+            .desktop-nav-links a:hover { color: var(--accent-gold); }
         }
+        .nav-actions { display: flex; align-items: center; gap: 1rem; }
         .nav-cta { background: var(--deep-navy); color: white; padding: 0.6rem 1.25rem; border-radius: 50px; font-weight: 600; text-decoration: none; transition: all 0.2s; }
         .nav-cta:hover { background: #334155; transform: translateY(-2px); }
 
+        /* Mobile Navigation */
+        .hamburger-btn {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            width: 24px;
+            height: 24px;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            padding: 0;
+            z-index: 10;
+        }
+        .hamburger-btn .bar { width: 24px; height: 3px; background-color: var(--deep-navy); border-radius: 10px; transition: all 0.3s linear; position: relative; transform-origin: 1px; }
+        @media (min-width: 992px) { .hamburger-btn { display: none; } }
+        
+        .mobile-nav-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(10px);
+            z-index: 999;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.3s ease-in-out;
+            transform: translateY(-100%);
+        }
+        .mobile-nav-overlay.open { transform: translateY(0); }
+        .mobile-nav-overlay a { font-size: 1.5rem; color: var(--deep-navy); text-decoration: none; font-weight: 700; margin: 1rem 0; }
+        
         /* Hero Section */
         .hero { padding-top: 180px; padding-bottom: 120px; background: linear-gradient(135deg, #FFF7ED 0%, #F0F9FF 100%); text-align: center;}
         .hero h1 { max-width: 800px; margin-left: auto; margin-right: auto; }
@@ -90,47 +126,37 @@
         .btn { padding: 14px 28px; border-radius: 50px; font-weight: 600; font-size: 1rem; text-decoration: none; transition: all 0.2s ease; display: inline-flex; align-items: center; justify-content: center; gap: 8px; border: 2px solid transparent; }
         .btn-primary { background: var(--accent-gold); color: var(--deep-navy); }
         .btn-primary:hover { background: #FBBF24; transform: translateY(-3px); box-shadow: 0 8px 16px rgba(245, 158, 11, 0.2); }
-
+        .btn-secondary { background: white; color: var(--deep-navy); border: 2px solid var(--border-light); text-decoration: none; padding: 12px 24px; border-radius: 50px; font-weight: 600; transition: all 0.2s; display: inline-block;}
+        .btn-secondary:hover { background: var(--bg-light); border-color: var(--deep-navy); }
+        
         /* How It Works Section */
         .how-it-works-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-top: 4rem; align-items: flex-start; }
         .step-card { text-align: center; }
         .step-number { width: 50px; height: 50px; margin: 0 auto 1.5rem; background: linear-gradient(135deg, var(--sky-blue) 0%, var(--soft-pink) 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1.25rem; color: white; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
         .step-card h3 { margin-bottom: 0.5rem; font-size: 1.375rem; }
         .step-card p { color: var(--text-light); max-width: 320px; margin: 0 auto; }
-        
         .info-box { background: white; border: 1px solid var(--border-light); border-radius: 16px; padding: 1.5rem; max-width: 800px; margin: 4rem auto 0; text-align: center; box-shadow: 0 8px 16px rgba(15, 23, 42, 0.03);}
         .info-box h3 { margin-bottom: 0.5rem; }
         
-        /* Stats Counter Section */
+        /* All other sections from previous code remain the same... */
         .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; }
         .stat-item { text-align: center; }
         .stat-number { font-size: clamp(2.5rem, 5vw, 3.5rem); font-weight: 800; color: var(--accent-gold); line-height: 1; }
         .stat-label { font-size: 1rem; color: var(--text-light); font-weight: 600; margin-top: 0.5rem; }
-
-        /* Safety & Trust Section */
         .trust-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
         .trust-pillar { background: white; padding: 2rem; border-radius: 16px; text-align: center; border: 1px solid var(--border-light); }
         .trust-pillar h3 { margin-top: 1rem; margin-bottom: 0.5rem; }
         .trust-pillar span { font-size: 2.5rem; }
-        
-        /* Big Testimonial */
         .testimonial-bg { background-color: var(--deep-navy); color: white; padding: 80px 24px; border-radius: 40px; }
         .testimonial-content { max-width: 800px; margin: 0 auto; text-align: center; }
         .testimonial-quote { font-family: 'Lora', serif; font-size: clamp(1.25rem, 3vw, 1.75rem); line-height: 1.6; font-style: italic; margin-bottom: 2rem; color: rgba(255,255,255,0.9); }
         .testimonial-highlight { color: #FBCFE8; }
         .testimonial-author { font-weight: 600; font-size: 1rem; color: rgba(255,255,255,0.7); }
-
-        /* Never-Ending Story Section */
         .never-ending-story-section .container { display: grid; grid-template-columns: 1fr; gap: 3rem; align-items: center; }
         @media (min-width: 992px) { .never-ending-story-section .container { grid-template-columns: 1.1fr 1fr; gap: 5rem; } }
         .never-ending-story-section h2, .never-ending-story-section .section-subtitle { text-align: left; margin-left: 0; margin-right: 0; }
         .ui-mockup-placeholder { background-color: white; border-radius: 24px; padding: 2rem; box-shadow: 0 20px 50px rgba(15, 23, 42, 0.1); text-align: center; font-weight: 600; color: var(--text-light); border: 2px dashed var(--border-light); }
         .ui-mockup-placeholder h4 { color: var(--deep-navy); margin-bottom: 1.5rem; }
-        .ui-button-mockup { display: block; width: 100%; padding: 1rem; border-radius: 12px; font-size: 1.1rem; font-weight: 600; text-align: center; margin-bottom: 1rem; }
-        .ui-primary { background: var(--accent-gold); color: var(--deep-navy); }
-        .ui-secondary { background: var(--bg-light); color: var(--text-main); border: 2px solid var(--border-light); }
-        
-        /* Feature Showcase Tabs */
         .features-showcase { max-width: 900px; margin: 0 auto; }
         .feature-tabs { display: flex; justify-content: center; gap: 1rem; margin-bottom: 3rem; flex-wrap: wrap; }
         .tab-button { padding: 0.75rem 1.5rem; border: 2px solid var(--border-light); background: white; border-radius: 50px; font-weight: 600; font-size: 1rem; color: var(--text-main); cursor: pointer; transition: all 0.2s ease; }
@@ -141,13 +167,8 @@
         .tab-content.active { display: block; }
         .tab-content-grid { display: grid; grid-template-columns: 1fr; gap: 2rem; align-items: center; }
         @media (min-width: 768px) { .tab-content-grid { grid-template-columns: 1fr 1fr; } }
-        .tab-content-grid ul { list-style: none; padding-left: 0; }
-        .tab-content-grid li { padding-left: 1.5rem; position: relative; margin-bottom: 0.5rem; }
-        .tab-content-grid li::before { content: '✨'; position: absolute; left: 0; top: 0; }
         .feature-image-placeholder { min-height: 300px; background: white; border-radius: 16px; display: flex; flex-direction: column; align-items: center; justify-content: center; font-weight: 600; color: var(--text-light); text-align: center; padding: 1rem; border: 2px dashed var(--border-light); }
         @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
-        
-        /* Testimonials Grid */
         .testimonials-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
         .testimonial-card { background: white; padding: 2rem; border-radius: 16px; border: 1px solid var(--border-light); }
         .testimonial-card-header { display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem; }
@@ -156,18 +177,12 @@
         .testimonial-author-info .title { font-size: 0.9rem; color: var(--text-light); }
         .testimonial-card .stars { color: var(--accent-gold); margin-bottom: 1rem; }
         .testimonial-card p { color: var(--text-main); line-height: 1.6; }
-        
-        /* Founder Section */
         .founder-section { background: linear-gradient(135deg, #FFF7ED 0%, #F0F9FF 100%); }
         .founder-content { display: grid; grid-template-columns: 1fr; gap: 2rem; align-items: center; max-width: 900px; margin: 0 auto; text-align: center;}
         @media (min-width: 768px) { .founder-content { grid-template-columns: auto 1fr; gap: 3rem; text-align: left;} }
         .founder-avatar { width: 150px; height: 150px; border-radius: 50%; background: var(--accent-gold); margin: 0 auto; border: 5px solid white; box-shadow: 0 8px 24px rgba(0,0,0,0.1); display: flex; align-items: center; justify-content: center; font-weight: 600; color: white; text-align: center; padding: 1rem;}
         .founder-text h2 { text-align: inherit; }
         .founder-text p { margin: 1rem 0; }
-        .btn-secondary { background: white; color: var(--deep-navy); border: 2px solid var(--border-light); text-decoration: none; padding: 12px 24px; border-radius: 50px; font-weight: 600; transition: all 0.2s; display: inline-block;}
-        .btn-secondary:hover { background: var(--bg-light); border-color: var(--deep-navy); }
-
-        /* FAQ Section */
         .faq-container { max-width: 800px; margin: 0 auto; }
         .faq-item { border-bottom: 1px solid var(--border-light); }
         .faq-item summary { font-size: 1.125rem; font-weight: 600; padding: 1.5rem 0; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center;}
@@ -175,38 +190,33 @@
         .faq-item summary::after { content: '+'; font-size: 1.5rem; font-weight: 400; transition: transform 0.2s; }
         .faq-item[open] summary::after { transform: rotate(45deg); }
         .faq-answer { padding-bottom: 1.5rem; color: var(--text-light); }
-        
-        /* Pricing Section */
         .pricing-grid { display: grid; grid-template-columns: 1fr; gap: 2rem; max-width: 1100px; margin: 0 auto; }
         @media (min-width: 768px) { .pricing-grid { grid-template-columns: repeat(2, 1fr); } }
         @media (min-width: 1200px) { .pricing-grid { grid-template-columns: repeat(4, 1fr); } }
         .pricing-card { background: white; border: 2px solid var(--border-light); border-radius: 24px; padding: 2rem; display: flex; flex-direction: column; transition: all 0.3s ease; position: relative; }
-        .pricing-card:hover, .pricing-card.featured { transform: translateY(-8px) scale(1.02); border-color: var(--accent-gold); box-shadow: 0 16px 32px rgba(245, 158, 11, 0.15); }
+        .pricing-card.featured { border-color: var(--accent-gold); }
         .popular-badge { position: absolute; top: -15px; left: 50%; transform: translateX(-50%); background: var(--accent-gold); color: var(--deep-navy); padding: 4px 12px; border-radius: 50px; font-size: 0.8rem; font-weight: 700; }
         .pricing-header { text-align: center; margin-top: 1rem;}
         .pricing-header h3 { font-size: 1.25rem; font-weight: 700; }
         .price { font-size: 3rem; font-weight: 800; color: var(--deep-navy); margin: 0.5rem 0 0.25rem; }
-        .price-small { font-size: 1.5rem; font-weight: 600; color: var(--text-light); }
-        .price-period { color: var(--text-light); font-size: 0.9rem; margin-bottom: 1.5rem; }
         .pricing-features { list-style: none; margin-bottom: 2rem; flex-grow: 1; }
         .pricing-features li { display: flex; align-items: flex-start; gap: 0.75rem; padding: 0.5rem 0; font-size: 0.95rem; }
         .check-icon { color: var(--accent-gold); font-weight: bold; margin-top: 4px; flex-shrink: 0;}
         .btn-pricing { width: 100%; }
         .currency-note { text-align: center; color: var(--text-light); margin-top: 2rem; font-size: 0.9rem; }
         .join-note { text-align: center; color: var(--text-main); margin-top: 2rem; font-weight: 600;}
-        
-        /* Final CTA Section */
         .cta-section { background: linear-gradient(135deg, var(--deep-navy) 0%, #1E293B 100%); border-radius: 40px; padding: 5rem 2rem; text-align: center;}
         .cta-section h2, .cta-section .section-subtitle { color: white; }
         .cta-section .section-subtitle { color: rgba(255,255,255,0.8); }
-
-        /* Footer */
+        .cta-app-badges { margin-top: 2rem; display: flex; gap: 1rem; align-items: center; justify-content: center; flex-wrap: wrap;}
+        .cta-app-badges img { height: 50px; }
         footer { background-color: var(--bg-light); text-align: center; padding: 4rem 2rem 2rem; }
         .social-links { display: flex; justify-content: center; gap: 1.5rem; margin-bottom: 2rem; }
         .social-links a { color: var(--text-light); text-decoration: none; transition: color 0.2s; }
         .social-links a:hover { color: var(--deep-navy); }
         .social-links svg { width: 24px; height: 24px; }
-        .footer-links { display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; margin-bottom: 2rem; }
+        .footer-links { display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; margin-bottom: 2rem; }
+        @media (min-width: 768px) { .footer-links { gap: 2rem; } }
         .footer-links a { color: var(--text-light); text-decoration: none; transition: color 0.2s; }
         .footer-links a:hover { color: var(--deep-navy); }
         .footer-text { font-size: 0.9rem; color: #94A3B8; }
@@ -217,13 +227,27 @@
     <nav>
         <div class="container nav-container">
             <a href="/" class="logo">Fairy<span class="logo-ai">AI</span></a>
-            <div class="nav-links">
+            <div class="desktop-nav-links">
                 <a href="#features">Features</a>
                 <a href="#pricing">Pricing</a>
                 <a href="#our-story">Our Story</a>
                 <a href="#faq">FAQ</a>
             </div>
-            <a href="#download" class="nav-cta">Try Free</a>
+            <div class="nav-actions">
+                <a href="#download" class="nav-cta">Try Free</a>
+                <button class="hamburger-btn" id="hamburger-btn" aria-label="Menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+        <div class="mobile-nav-overlay" id="mobile-menu">
+            <a href="#features" class="mobile-nav-link">Features</a>
+            <a href="#pricing" class="mobile-nav-link">Pricing</a>
+            <a href="#our-story" class="mobile-nav-link">Our Story</a>
+            <a href="#faq" class="mobile-nav-link">FAQ</a>
+            <a href="#download" class="mobile-nav-link nav-cta">Try Free</a>
         </div>
     </nav>
 
@@ -240,7 +264,7 @@
                 <span class="prop-item">📚 100+ Free Classics</span>
             </div>
             <div class="hero-image-placeholder">
-                <h3>Vibrant, joyful animation showing the app on a phone.</h3>
+                <h3>A vibrant, joyful animation showing the app on a phone.</h3>
                 <p>A child's drawing of a monster is shown, then it morphs into a beautiful storybook character on the screen, delighting the parent and child watching.</p>
             </div>
         </div>
@@ -325,11 +349,6 @@
                         <div>
                             <h3>Bring Anyone to Life</h3>
                             <p>Turn photos of family, pets, or even their own drawings into magical storybook characters. Or, describe them with words and watch them appear!</p>
-                            <ul>
-                                <li><strong>Photo-to-Toon:</strong> Securely upload a photo.</li>
-                                <li><strong>Describe:</strong> "A brave knight who is a squirrel."</li>
-                                <li><strong>Build-a-Character:</strong> Choose from fun options.</li>
-                            </ul>
                         </div>
                         <div class="feature-image-placeholder">
                             <h4>A fun, dynamic collage.</h4>
@@ -341,12 +360,7 @@
                      <div class="tab-content-grid">
                          <div>
                             <h3>Endless Tales & Tunes</h3>
-                            <p>Create unique, age-appropriate stories and songs in seconds. Unlock professional narration to help with reading and pronunciation.</p>
-                             <ul>
-                                 <li>Personalised plots based on your prompts.</li>
-                                 <li>Instantly turn any story into a catchy song.</li>
-                                 <li><strong>10 Languages including:</strong> English, Spanish, French, German, Italian, Portuguese, and Polish.</li>
-                             </ul>
+                            <p>Create unique, age-appropriate stories and songs in seconds. Unlock professional narration to help with reading and pronunciation in 10 languages.</p>
                         </div>
                         <div class="feature-image-placeholder">
                              <h4>A visual of an open storybook.</h4>
@@ -359,11 +373,6 @@
                          <div>
                             <h3>A Library of Classics</h3>
                             <p>Free with any subscription, the Fairy Corner is a growing library of timeless tales, rhymes, and daily AI-generated stories.</p>
-                             <ul>
-                                 <li><strong>100+ Fairy Tales:</strong> Cinderella, and more.</li>
-                                 <li><strong>Nursery Rhymes:</strong> Fully narrated and set to music.</li>
-                                 <li><strong>Daily Stories:</strong> A brand new story to discover every day!</li>
-                             </ul>
                         </div>
                         <div class="feature-image-placeholder">
                             <h4>A magical-looking digital bookshelf.</h4>
@@ -408,8 +417,7 @@
                 <div class="founder-text">
                     <h2>Built by a Dad Who Gets It</h2>
                     <p>FairyAI started as a personal project to make bedtime stories more magical for my own kids. I wanted to create something that wasn't just another app, but a tool for connection and creativity. It's built with the care and safety I'd want for my own family.</p>
-                    <p>Your feedback is what will make it truly special. I welcome every idea and suggestion.</p>
-                    <a href="/our-story" class="btn-secondary">Read Our Full Story</a>
+                    <a href="our-story.html" class="btn-secondary">Read Our Full Story</a>
                 </div>
             </div>
         </div>
@@ -449,39 +457,35 @@
             <p class="section-subtitle">Every creation costs 1 Fairy Dust. Get started for free, then pick a plan that fits your family's imagination.</p>
             <div class="pricing-grid">
                 <div class="pricing-card">
-                    <div class="pricing-header"><h3>First Page</h3><div class="price">Free</div><p class="price-period">6 Fairy Dust to start</p></div>
+                    <div class="pricing-header"><h3>First Page</h3><div class="price">Free</div><p>6 Fairy Dust to start</p></div>
                     <ul class="pricing-features">
                         <li><span class="check-icon">✓</span><span>Create 6 stories, characters, or songs</span></li>
                         <li><span class="check-icon">✓</span><span>Full Fairy Corner access</span></li>
-                        <li><span class="check-icon">✓</span><span>All safety features included</span></li>
                     </ul>
                     <a href="#" class="btn-secondary btn-pricing">Start For Free</a>
                 </div>
                 <div class="pricing-card">
-                    <div class="pricing-header"><h3>Spark</h3><div class="price">£2.39<span class="price-small">/mo</span></div><p class="price-period">20 Fairy Dust monthly</p></div>
+                    <div class="pricing-header"><h3>Spark</h3><div class="price">£2.39<span class="price-small">/mo</span></div><p>20 Fairy Dust monthly</p></div>
                     <ul class="pricing-features">
                         <li><span class="check-icon">✓</span><span>20 creations per month</span></li>
-                        <li><span class="check-icon">✓</span><span>Create characters & songs</span></li>
                         <li><span class="check-icon">✓</span><span>Perfect for regular story nights</span></li>
                     </ul>
                     <a href="#" class="btn-primary btn-pricing">Get Started</a>
                 </div>
                 <div class="pricing-card featured">
                     <span class="popular-badge">Most Popular</span>
-                    <div class="pricing-header"><h3>Dream</h3><div class="price">£5.99<span class="price-small">/mo</span></div><p class="price-period">60 Fairy Dust monthly</p></div>
+                    <div class="pricing-header"><h3>Dream</h3><div class="price">£5.99<span class="price-small">/mo</span></div><p>60 Fairy Dust monthly</p></div>
                     <ul class="pricing-features">
                         <li><span class="check-icon">✓</span><span>60 creations per month</span></li>
                         <li><span class="check-icon">✓</span><span>Premium illustrations</span></li>
-                        <li><span class="check-icon">✓</span><span>Ideal for daily storytellers</span></li>
                     </ul>
                     <a href="#" class="btn-primary btn-pricing">Choose Dream Plan</a>
                 </div>
                 <div class="pricing-card">
-                    <div class="pricing-header"><h3>Odyssey</h3><div class="price">£10.99<span class="price-small">/mo</span></div><p class="price-period">125 Fairy Dust monthly</p></div>
+                    <div class="pricing-header"><h3>Odyssey</h3><div class="price">£10.99<span class="price-small">/mo</span></div><p>125 Fairy Dust monthly</p></div>
                     <ul class="pricing-features">
                         <li><span class="check-icon">✓</span><span>125 creations per month</span></li>
                         <li><span class="check-icon">✓</span><span>Unlimited characters & songs</span></li>
-                        <li><span class="check-icon">✓</span><span>For the most imaginative families</span></li>
                     </ul>
                     <a href="#" class="btn-primary btn-pricing">Get Started</a>
                 </div>
@@ -496,7 +500,10 @@
             <div class="cta-section">
                 <h2>Start Creating Magic Tonight</h2>
                 <p class="section-subtitle">Your first 6 stories are on us. Download FairyAI and stop the bedtime battles for good.</p>
-                <a href="#" class="btn-primary">Start Your 6 Free Stories</a>
+                <div class="cta-app-badges">
+                    <a href="#"><img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1276560000" alt="Download on the App Store"></a>
+                    <a href="#"><img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" style="height: 62px;"></a>
+                </div>
             </div>
         </div>
     </section>
@@ -504,23 +511,16 @@
     <footer>
         <div class="container">
             <div class="social-links">
-                <a href="https://tiktok.com" title="TikTok" target="_blank" rel="noopener noreferrer">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-2.43.05-4.84-.95-6.43-2.8-1.59-1.87-2.15-4.24-1.72-6.59.35-1.88 1.45-3.63 3.1-4.85 1.4-1.04 3.04-1.57 4.8-1.59.01 2.22-.01 4.43.02 6.65-.03 1.39-.54 2.75-1.42 3.87-1.07 1.35-2.69 2.12-4.38 2.08-1.67-.04-3.23-.9-4.14-2.23-.82-1.22-1.04-2.74-.8-4.14.28-1.63 1.17-3.17 2.58-4.25 1.18-.9 2.6-1.36 4.09-1.38.01 2.18-.01 4.36.01 6.54l2.49-.01z"/></svg>
-                </a>
-                <a href="https://x.com" title="X (Twitter)" target="_blank" rel="noopener noreferrer">
-                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-                </a>
-                <a href="https://facebook.com" title="Facebook" target="_blank" rel="noopener noreferrer">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4z"/></svg>
-                </a>
+                <a href="https://tiktok.com" title="TikTok" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-2.43.05-4.84-.95-6.43-2.8-1.59-1.87-2.15-4.24-1.72-6.59.35-1.88 1.45-3.63 3.1-4.85 1.4-1.04 3.04-1.57 4.8-1.59.01 2.22-.01 4.43.02 6.65-.03 1.39-.54 2.75-1.42 3.87-1.07 1.35-2.69 2.12-4.38 2.08-1.67-.04-3.23-.9-4.14-2.23-.82-1.22-1.04-2.74-.8-4.14.28-1.63 1.17-3.17 2.58-4.25 1.18-.9 2.6-1.36 4.09-1.38.01 2.18-.01 4.36.01 6.54l2.49-.01z"/></svg></a>
+                <a href="https://x.com" title="X (Twitter)" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+                <a href="https://facebook.com" title="Facebook" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4z"/></svg></a>
             </div>
             <div class="footer-links">
-                <a href="/features">Features</a>
-                <a href="/pricing">Pricing</a>
-                <a href="/our-story">Our Story</a>
-                <a href="/safety">Safety</a>
-                <a href="/faq">FAQ</a>
-                <a href="/support">Support</a>
+                <a href="our-story.html">Our Story</a>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Service</a>
+                <a href="support.html">Support</a>
+                <a href="delete-account.html">Delete Account</a>
             </div>
             <p class="footer-text">© 2025 FairyAI. Made with love for little dreamers and their families.</p>
         </div>
@@ -528,6 +528,21 @@
 
     <script>
         document.addEventListener("DOMContentLoaded", () => {
+            // --- SCRIPT FOR MOBILE NAVIGATION ---
+            const hamburgerBtn = document.getElementById('hamburger-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+
+            hamburgerBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('open');
+            });
+            
+            mobileNavLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.remove('open');
+                });
+            });
+
             // --- SCRIPT FOR TABS ---
             const firstTabButton = document.querySelector('.tab-button');
             if (firstTabButton) {
@@ -541,8 +556,6 @@
             
             // --- SCRIPT FOR COUNTER ANIMATION ---
             const counters = document.querySelectorAll('.stat-number');
-            const speed = 200; 
-
             const observer = new IntersectionObserver(entries => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
@@ -551,7 +564,7 @@
                             const animate = () => {
                                 const target = +counter.getAttribute('data-target');
                                 const count = +counter.innerText.replace(/,/g, '');
-                                const inc = Math.ceil(target / speed);
+                                const inc = Math.ceil(target / 200);
 
                                 if (count < target) {
                                     counter.innerText = (count + inc).toLocaleString('en-GB');
@@ -565,9 +578,7 @@
                         }
                     }
                 });
-            }, {
-                threshold: 0.5 
-            });
+            }, { threshold: 0.5 });
 
             counters.forEach(counter => {
                 observer.observe(counter);
@@ -578,13 +589,9 @@
         function openTab(evt, tabName) {
             let i, tabcontent, tablinks;
             tabcontent = document.getElementsByClassName("tab-content");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].classList.remove('active');
-            }
+            for (i = 0; i < tabcontent.length; i++) { tabcontent[i].classList.remove('active'); }
             tablinks = document.getElementsByClassName("tab-button");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].classList.remove('active');
-            }
+            for (i = 0; i < tablinks.length; i++) { tablinks[i].classList.remove('active'); }
             document.getElementById(tabName).classList.add('active');
             evt.currentTarget.classList.add('active');
         }
