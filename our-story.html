@@ -186,6 +186,92 @@
             font-style: italic;
             color: var(--deep-navy);
         }
+
+        /* Enhanced Visual Hierarchy */
+        h1 {
+            font-size: 3rem !important;
+            font-weight: 900 !important;
+            line-height: 1.1 !important;
+            letter-spacing: -0.02em;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem !important;
+            }
+        }
+
+        h2 {
+            font-size: 2.25rem !important;
+            font-weight: 800 !important;
+            margin-bottom: 1rem !important;
+        }
+
+        @media (max-width: 768px) {
+            h2 {
+                font-size: 1.75rem !important;
+            }
+        }
+
+        .btn-primary {
+            font-size: 1.125rem !important;
+            padding: 1rem 2.5rem !important;
+            font-weight: 700 !important;
+            box-shadow: 0 4px 14px rgba(15, 27, 60, 0.2) !important;
+            transition: all 0.3s ease !important;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px) !important;
+            box-shadow: 0 6px 20px rgba(15, 27, 60, 0.3) !important;
+        }
+
+        section {
+            padding: 5rem 2rem !important;
+        }
+
+        @media (max-width: 768px) {
+            section {
+                padding: 3rem 1.5rem !important;
+            }
+        }
+
+        .info-box {
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1) !important;
+        }
+
+        /* Mobile-First Improvements */
+        @media (max-width: 768px) {
+            .btn,
+            .btn-primary,
+            .btn-secondary {
+                min-height: 48px;
+                font-size: 1rem;
+                padding: 0.875rem 1.5rem;
+            }
+
+            .hamburger-btn {
+                width: 48px;
+                height: 48px;
+            }
+
+            body {
+                font-size: 16px !important;
+            }
+
+            .value-item {
+                grid-template-columns: 1fr !important;
+            }
+        }
+
+        * {
+            max-width: 100%;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
     </style>
 </head>
 <body>
@@ -234,13 +320,22 @@
         <div class="container">
             <div class="story-content">
                 <!-- Placeholder for founder photo -->
-                <div class="founder-image" style="background: #F3F4F6; border: 2px dashed #D1D5DB; box-shadow: none;">
-                    <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%;">
-                        <p style="font-weight: 600; color: #6B7280; margin-bottom: 0.5rem; font-size: 0.9rem;">Founder Photo - Nathan</p>
-                        <p style="font-size: 0.8rem; color: #9CA3AF; margin-bottom: 0.25rem;">400x400px</p>
-                        <p style="font-size: 0.75rem; color: #9CA3AF; font-style: italic; text-align: center;">Casual but professional photo of Nathan, approachable expression</p>
+                <div style="display: flex; gap: 2rem; align-items: center; justify-content: center; flex-wrap: wrap; margin: 2rem auto 3rem;">
+                    <!-- Real Photo -->
+                    <div class="image-placeholder" style="width: 200px; height: 200px; border-radius: 50%; background: #F3F4F6; border: 2px dashed #D1D5DB; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 1rem;">
+                        <p style="font-weight: 600; color: #6B7280; margin-bottom: 0.25rem; font-size: 0.75rem; text-align: center;">Founder Photo</p>
+                        <p style="font-size: 0.65rem; color: #9CA3AF; margin-bottom: 0.25rem; text-align: center;">400x400px</p>
+                        <p style="font-size: 0.6rem; color: #9CA3AF; font-style: italic; text-align: center;">Real photo of Nathan, professional but casual</p>
+                    </div>
+
+                    <!-- Disney-Style Character -->
+                    <div class="image-placeholder" style="width: 200px; height: 200px; border-radius: 50%; background: #F3F4F6; border: 2px dashed #D1D5DB; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 1rem;">
+                        <p style="font-weight: 600; color: #6B7280; margin-bottom: 0.25rem; font-size: 0.75rem; text-align: center;">Nathan as Disney Character</p>
+                        <p style="font-size: 0.65rem; color: #9CA3AF; margin-bottom: 0.25rem; text-align: center;">400x400px</p>
+                        <p style="font-size: 0.6rem; color: #9CA3AF; font-style: italic; text-align: center;">Nathan's photo transformed into Disney-style character using FairyAI</p>
                     </div>
                 </div>
+                <p style="text-align: center; color: var(--text-light); font-size: 0.9rem; margin-bottom: 2rem;"><em>Yes, that's me on the right—created with FairyAI!</em></p>
 
                 <h2>It Started with Bedtime Stories</h2>
 

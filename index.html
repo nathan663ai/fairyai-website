@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FairyAI - The Never-Ending AI Storybook for Children</title>
-    <meta name="description" content="Turn bedtime into your child's favourite part of the day. Create magical, continuing stories with your child as the hero. Try free—no card required.">
+    <meta name="description" content="Create magical bedtime stories in 60 seconds. Bring your child's characters to life and continue their adventures night after night. Try free—no card required.">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -323,6 +323,156 @@
             font-weight: 600;
             color: var(--text-light);
         }
+
+        /* Enhanced Visual Hierarchy */
+        h1 {
+            font-size: 3rem !important;
+            font-weight: 900 !important;
+            line-height: 1.1 !important;
+            letter-spacing: -0.02em;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem !important;
+            }
+        }
+
+        h2 {
+            font-size: 2.25rem !important;
+            font-weight: 800 !important;
+            margin-bottom: 1rem !important;
+        }
+
+        @media (max-width: 768px) {
+            h2 {
+                font-size: 1.75rem !important;
+            }
+        }
+
+        .btn-primary {
+            font-size: 1.125rem !important;
+            padding: 1rem 2.5rem !important;
+            font-weight: 700 !important;
+            box-shadow: 0 4px 14px rgba(15, 27, 60, 0.2) !important;
+            transition: all 0.3s ease !important;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px) !important;
+            box-shadow: 0 6px 20px rgba(15, 27, 60, 0.3) !important;
+        }
+
+        .value-props {
+            font-weight: 600 !important;
+            font-size: 1.05rem !important;
+        }
+
+        .pricing-card.featured {
+            transform: scale(1.05);
+            box-shadow: 0 12px 40px rgba(15, 27, 60, 0.15) !important;
+            border: 3px solid var(--accent-gold) !important;
+        }
+
+        section {
+            padding: 5rem 2rem !important;
+        }
+
+        @media (max-width: 768px) {
+            section {
+                padding: 3rem 1.5rem !important;
+            }
+        }
+
+        .problem-section {
+            border-bottom: 4px solid var(--accent-gold);
+        }
+
+        .info-box {
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1) !important;
+        }
+
+        /* Mobile-First Improvements */
+        @media (max-width: 768px) {
+            .btn,
+            .btn-primary,
+            .btn-secondary {
+                min-height: 48px;
+                font-size: 1rem;
+                padding: 0.875rem 1.5rem;
+            }
+
+            .hamburger-btn {
+                width: 48px;
+                height: 48px;
+            }
+
+            .pricing-grid {
+                grid-template-columns: 1fr !important;
+            }
+
+            body {
+                font-size: 16px !important;
+            }
+
+            .problem-grid {
+                grid-template-columns: 1fr !important;
+                gap: 1.5rem;
+            }
+
+            .founder-content {
+                grid-template-columns: 1fr !important;
+                text-align: center;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr !important;
+            }
+
+            .steps-container {
+                grid-template-columns: 1fr !important;
+            }
+        }
+
+        * {
+            max-width: 100%;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Features Grid */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .feature-card {
+            background: white;
+            border: 2px solid var(--border-light);
+            border-radius: 16px;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .feature-card h3 {
+            margin-bottom: 0.75rem;
+            font-size: 1.25rem;
+        }
+
+        .feature-card p {
+            color: var(--text-light);
+        }
     </style>
 </head>
 <body>
@@ -387,9 +537,9 @@
 
     <section class="hero">
         <div class="container">
-            <h1>Turn Bedtime Into Your Child's Favourite Part of the Day</h1>
+            <h1>Bedtime Stories That Bring Imagination to Life</h1>
             <p class="section-subtitle">
-                No more "just one more story!" Create magical tales that continue each night—with your child as the hero. Their own Netflix series, but in storybook form.
+                Create magical bedtime stories in 60 seconds. Bring your child's characters to life and continue their adventures night after night—like episodes of their favorite show.
             </p>
             <a href="#download" class="btn btn-primary">Start Your 6 Free Stories</a>
              <div class="value-props">
@@ -410,17 +560,17 @@
             <div class="founder-content">
                 <div class="founder-image-placeholder">
                     <div class="image-placeholder" style="width: 200px; height: 200px; border-radius: 50%; background: #F3F4F6; border: 2px dashed #D1D5DB; display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 0 auto; padding: 1rem;">
-                        <p style="font-weight: 600; color: #6B7280; margin-bottom: 0.25rem; font-size: 0.75rem; text-align: center;">Founder Photo</p>
+                        <p style="font-weight: 600; color: #6B7280; margin-bottom: 0.25rem; font-size: 0.75rem; text-align: center;">Founder Photo - Nathan</p>
                         <p style="font-size: 0.65rem; color: #9CA3AF; margin-bottom: 0.25rem; text-align: center;">400x400px</p>
-                        <p style="font-size: 0.6rem; color: #9CA3AF; font-style: italic; text-align: center;">Nathan, professional photo</p>
+                        <p style="font-size: 0.6rem; color: #9CA3AF; font-style: italic; text-align: center;">Professional photo of Nathan</p>
                     </div>
                 </div>
                 <div class="founder-text">
                     <h2>Hi, I'm Nathan 👋</h2>
-                    <p class="founder-intro">I'm a parent just like you. Three years ago, I was losing the bedtime battle every single night. My kids wanted new stories, but I was too tired to make them up.</p>
-                    <p>So I built FairyAI—not as a tech company, but as a lifeline for exhausted parents everywhere. Now thousands of families use it to turn bedtime battles into magical moments.</p>
-                    <p><strong>Every story. Every character. Every feature. Built with parents in mind, because I know what it's like.</strong></p>
-                    <a href="our-story.html" class="btn-secondary">Read Our Full Story →</a>
+                    <p class="founder-intro">I'm a dad from Scotland with two daughters (ages 4 and 1). When my eldest was 2, I started using ChatGPT to create bedtime stories—but I wanted something better.</p>
+                    <p>I'd never coded before, but I spent 8 months building FairyAI. It's not perfect, and it's not Disney—but it's built by a parent, for parents. If it's good enough for my daughters, I hope it's good enough for yours.</p>
+                    <p><strong>This is just step one. Your feedback shapes what comes next.</strong></p>
+                    <a href="our-story.html" class="btn-secondary">Read the Full Story →</a>
                 </div>
             </div>
         </div>
@@ -443,12 +593,25 @@
     </section>
 
     <section class="section-light">
-        <div class="container">
-             <div class="stats-grid">
-                <div class="stat-item"><div class="stat-number" data-target="28431">0</div><div class="stat-label">Unique Stories Created</div></div>
-                <div class="stat-item"><div class="stat-number" data-target="9812">0</div><div class="stat-label">Characters Brought to Life</div></div>
-                <div class="stat-item"><div class="stat-number" data-target="5276">0</div><div class="stat-label">Songs Composed</div></div>
-                <div class="stat-item"><div class="stat-number">4.8★</div><div class="stat-label">Average Rating</div></div>
+        <div class="container" style="text-align: center; max-width: 800px; margin: 0 auto;">
+            <h2>Join Families Around the World</h2>
+            <p class="section-subtitle">FairyAI is live and helping families create magical bedtime moments across multiple continents. Be part of our growing community.</p>
+            <div style="display: flex; gap: 2rem; justify-content: center; align-items: center; margin-top: 2rem; flex-wrap: wrap;">
+                <div style="text-align: center;">
+                    <div style="font-size: 3rem; font-weight: 800; color: var(--accent-gold);">🌍</div>
+                    <p style="font-weight: 600; margin-top: 0.5rem;">Global Community</p>
+                    <p style="color: var(--text-light); font-size: 0.9rem;">Families worldwide</p>
+                </div>
+                <div style="text-align: center;">
+                    <div style="font-size: 3rem; font-weight: 800; color: var(--accent-gold);">✨</div>
+                    <p style="font-weight: 600; margin-top: 0.5rem;">Fresh Content Daily</p>
+                    <p style="color: var(--text-light); font-size: 0.9rem;">New stories every day</p>
+                </div>
+                <div style="text-align: center;">
+                    <div style="font-size: 3rem; font-weight: 800; color: var(--accent-gold);">🛡️</div>
+                    <p style="font-weight: 600; margin-top: 0.5rem;">Safe & Secure</p>
+                    <p style="color: var(--text-light); font-size: 0.9rem;">COPPA compliant</p>
+                </div>
             </div>
         </div>
     </section>
@@ -467,28 +630,48 @@
     
     <section class="section-alt testimonials-section">
         <div class="container">
-            <h2>What Parents Are Saying</h2>
-            <p class="section-subtitle">Real families, real results</p>
+            <h2>Beta Tester Feedback</h2>
+            <p class="section-subtitle">Real feedback from families testing FairyAI</p>
 
             <div class="testimonials-grid">
                 <div class="testimonial-card">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p class="testimonial-text">"Bedtime went from a 2-hour battle to 20 minutes of pure magic. My daughter asks for FairyAI stories every night now. I finally have my evenings back!"</p>
-                    <p class="testimonial-author">— Sarah M., Mother of a 5-year-old, London</p>
+                    <div class="testimonial-card-header">
+                        <div class="testimonial-avatar">?</div>
+                        <div class="testimonial-author-info">
+                            <div class="name">Beta Tester</div>
+                            <div class="title">Parent</div>
+                        </div>
+                    </div>
+                    <div class="stars">★★★★★</div>
+                    <p><em>Testimonial coming soon from real beta testers!</em></p>
                 </div>
-
                 <div class="testimonial-card">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p class="testimonial-text">"My son has autism and needs routine, but also novelty. FairyAI lets me use the same character he loves in completely new adventures. It's been a game-changer."</p>
-                    <p class="testimonial-author">— James K., Father of a 7-year-old, Manchester</p>
+                    <div class="testimonial-card-header">
+                        <div class="testimonial-avatar">?</div>
+                        <div class="testimonial-author-info">
+                            <div class="name">Beta Tester</div>
+                            <div class="title">Parent</div>
+                        </div>
+                    </div>
+                    <div class="stars">★★★★★</div>
+                    <p><em>Testimonial coming soon from real beta testers!</em></p>
                 </div>
-
                 <div class="testimonial-card">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p class="testimonial-text">"As a single mum working full-time, I don't always have energy for creative storytelling. FairyAI gives my kids amazing stories even on my most exhausted days."</p>
-                    <p class="testimonial-author">— Emma L., Mother of 3, Birmingham</p>
+                    <div class="testimonial-card-header">
+                        <div class="testimonial-avatar">?</div>
+                        <div class="testimonial-author-info">
+                            <div class="name">Beta Tester</div>
+                            <div class="title">Parent</div>
+                        </div>
+                    </div>
+                    <div class="stars">★★★★★</div>
+                    <p><em>Testimonial coming soon from real beta testers!</em></p>
                 </div>
             </div>
+
+            <p style="text-align: center; margin-top: 2rem; color: var(--text-light);">
+                Have you tested FairyAI? <a href="support.html" style="color: var(--accent-gold); font-weight: 600;">Share your feedback</a>
+            </p>
         </div>
     </section>
 
@@ -562,42 +745,49 @@
     
     <section class="section-alt">
         <div class="container">
-            <h2>Loved by Parents (and their little ones)</h2>
-            <p class="section-subtitle">We asked our first users for feedback. They had a lot to say.</p>
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <div class="testimonial-card-header"><div class="testimonial-avatar">MC</div><div class="testimonial-author-info"><div class="name">Michael C.</div><div class="title">Father of three</div></div></div>
-                    <div class="stars">★★★★★</div>
-                    <p>"The 'continue story' feature is genius. My kids feel like they have their own personal TV series. They can't wait to find out what happens next to their characters."</p>
+            <h2>What Makes FairyAI Special</h2>
+            <p class="section-subtitle">Six features that turn bedtime battles into magical moments</p>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📖</div>
+                    <h3>Ongoing Adventures</h3>
+                    <p>Stories don't have to end! Continue yesterday's tale tonight. Your child's characters grow and evolve across multiple adventures.</p>
                 </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-card-header"><div class="testimonial-avatar">ER</div><div class="testimonial-author-info"><div class="name">Emily R.</div><div class="title">Mother of one</div></div></div>
-                    <div class="stars">★★★★★</div>
-                    <p>"The songs are surprisingly catchy! My daughter made a song about our dog and now she sings it all day. I love that it's creative and safe screen time."</p>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🎭</div>
+                    <h3>Bring Characters to Life</h3>
+                    <p>Create unique characters with 6 different art styles. Use them in any story, anytime. Your child's imagination becomes visual.</p>
                 </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-card-header"><div class="testimonial-avatar">DT</div><div class="testimonial-author-info"><div class="name">David T.</div><div class="title">Father of twins</div></div></div>
-                    <div class="stars">★★★★★</div>
-                    <p>"Finally, an app I can trust. The safety filters are robust, and the content is genuinely wholesome. I turned my twins into superheroes and they were ecstatic."</p>
+
+                <div class="feature-card">
+                    <div class="feature-icon">📚</div>
+                    <h3>200+ Free Classics</h3>
+                    <p>Can't remember how The Three Little Pigs ends? We've got you covered. Access hundreds of classic fairy tales and nursery rhymes—free forever.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🎵</div>
+                    <h3>Turn Stories Into Songs</h3>
+                    <p>Any story can become a custom song. Perfect for car journeys, dance parties, or just because your child asked "again!"</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🔊</div>
+                    <h3>Professional Narration</h3>
+                    <p>AI voices that sound natural, not robotic. Available in 9 languages. Let someone else do the reading while you snuggle up together.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>Safe for Children</h3>
+                    <p>COPPA compliant. No tracking. No ads. Age-appropriate content filtering. Built by a parent who cares about safety as much as you do.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="our-story" class="section-light founder-section">
-        <div class="container">
-            <div class="founder-content">
-                <div class="founder-avatar">
-                    A warm, friendly, and authentic photo of the founder.
-                </div>
-                <div class="founder-text">
-                    <h2>Built by a Dad Who Gets It</h2>
-                    <p>FairyAI started as a personal project to make bedtime stories more magical for my own kids. I wanted to create something that wasn't just another app, but a tool for connection and creativity. It's built with the care and safety I'd want for my own family.</p>
-                    <a href="our-story.html" class="btn-secondary">Read Our Full Story</a>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <section id="faq" class="section-alt">
         <div class="container">
@@ -634,7 +824,18 @@
     <section id="pricing" class="section-light">
         <div class="container">
             <h2>Choose Your Adventure</h2>
-            <p class="section-subtitle">Stories cost 1 Fairy Dust. Characters, songs, and narrations cost 2 Fairy Dust each. Get started for free, then pick a plan that fits your family's imagination.</p>
+            <p class="section-subtitle" style="max-width: 700px; margin: 0 auto 1rem;">Choose a plan that fits your family's imagination.</p>
+            <div class="info-box" style="background: #FEF3C7; border: 2px solid #FCD34D; border-radius: 16px; padding: 1.5rem; max-width: 600px; margin: 0 auto 3rem; text-align: center;">
+                <h3 style="margin: 0 0 1rem; color: var(--deep-navy);">💫 How Fairy Dust Works</h3>
+                <p style="margin: 0 0 1rem; font-size: 1rem;"><strong>With 6 free Fairy Dust you can create:</strong></p>
+                <ul style="list-style: none; padding: 0; margin: 0;">
+                    <li style="margin: 0.5rem 0;">✨ 6 stories, OR</li>
+                    <li style="margin: 0.5rem 0;">✨ 3 characters, OR</li>
+                    <li style="margin: 0.5rem 0;">✨ 3 songs, OR</li>
+                    <li style="margin: 0.5rem 0;">✨ Mix and match!</li>
+                </ul>
+                <p style="margin: 1rem 0 0; font-size: 0.9rem; color: var(--text-light);"><em>Stories cost 1 dust • Characters, songs & narrations cost 2 dust each</em></p>
+            </div>
             <div class="pricing-grid">
                 <div class="pricing-card">
                     <div class="pricing-header"><h3>Free (First Page)</h3><div class="price">Free</div><p>6 Fairy Dust to start</p></div>
@@ -671,7 +872,7 @@
                 </div>
             </div>
             <p class="currency-note">All plans include unlimited access to The Fairy Corner. Prices are shown in GBP. The App Store or Google Play will automatically convert the price to your local currency.</p>
-            <p class="join-note">Join 5,000+ families creating magic every night!</p>
+            <p class="join-note">Join families around the world creating magic every night!</p>
         </div>
     </section>
 

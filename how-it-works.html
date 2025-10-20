@@ -220,6 +220,96 @@
         .footer-links a { color: var(--text-light); text-decoration: none; transition: color 0.2s; }
         .footer-links a:hover { color: var(--deep-navy); }
         .footer-text { font-size: 0.9rem; color: #94A3B8; }
+
+        /* Enhanced Visual Hierarchy */
+        h1 {
+            font-size: 3rem !important;
+            font-weight: 900 !important;
+            line-height: 1.1 !important;
+            letter-spacing: -0.02em;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem !important;
+            }
+        }
+
+        h2 {
+            font-size: 2.25rem !important;
+            font-weight: 800 !important;
+            margin-bottom: 1rem !important;
+        }
+
+        @media (max-width: 768px) {
+            h2 {
+                font-size: 1.75rem !important;
+            }
+        }
+
+        .btn-primary {
+            font-size: 1.125rem !important;
+            padding: 1rem 2.5rem !important;
+            font-weight: 700 !important;
+            box-shadow: 0 4px 14px rgba(15, 27, 60, 0.2) !important;
+            transition: all 0.3s ease !important;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px) !important;
+            box-shadow: 0 6px 20px rgba(15, 27, 60, 0.3) !important;
+        }
+
+        section {
+            padding: 5rem 2rem !important;
+        }
+
+        @media (max-width: 768px) {
+            section {
+                padding: 3rem 1.5rem !important;
+            }
+        }
+
+        .info-box {
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1) !important;
+        }
+
+        /* Mobile-First Improvements */
+        @media (max-width: 768px) {
+            .btn,
+            .btn-primary,
+            .btn-secondary {
+                min-height: 48px;
+                font-size: 1rem;
+                padding: 0.875rem 1.5rem;
+            }
+
+            .hamburger-btn {
+                width: 48px;
+                height: 48px;
+            }
+
+            body {
+                font-size: 16px !important;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr !important;
+            }
+
+            .steps-container {
+                grid-template-columns: 1fr !important;
+            }
+        }
+
+        * {
+            max-width: 100%;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
     </style>
 </head>
 <body>
@@ -276,6 +366,11 @@
                         <h3>Download & Create Profile</h3>
                         <p>Download FairyAI free from the App Store or Google Play. Create a quick account (takes less than 30 seconds). Choose your child's age group so we can make sure every story is perfectly age-appropriate.</p>
                         <p><strong>You'll get 6 free Fairy Dust credits to start—no credit card required.</strong></p>
+                        <div class="image-placeholder" style="background: #F3F4F6; border: 2px dashed #D1D5DB; border-radius: 12px; padding: 1.5rem; text-align: center; margin-top: 1rem; max-width: 280px;">
+                            <p style="font-weight: 600; color: #6B7280; margin-bottom: 0.5rem;">Screenshot Needed</p>
+                            <p style="font-size: 0.85rem; color: #9CA3AF; margin-bottom: 0.25rem;">280x600px (phone screen)</p>
+                            <p style="font-size: 0.8rem; color: #9CA3AF; font-style: italic;">App welcome screen OR profile creation screen showing age selection</p>
+                        </div>
                     </div>
                     <div class="step-image" style="background: #F3F4F6; border: 2px dashed #D1D5DB;">
                         <p style="font-weight: 600; color: #6B7280; margin-bottom: 0.5rem;">Step 1: Download & Setup</p>
@@ -293,6 +388,11 @@
                         <strong>• Upload a photo</strong> (your child, their pet, their favourite toy)<br>
                         <strong>• Let your child draw them</strong> (snap a photo of their drawing)</p>
                         <p>Choose from 6 beautiful art styles, and watch as AI transforms your idea into a magical storybook character in seconds.</p>
+                        <div class="image-placeholder" style="background: #F3F4F6; border: 2px dashed #D1D5DB; border-radius: 12px; padding: 1.5rem; text-align: center; margin-top: 1rem; max-width: 280px;">
+                            <p style="font-weight: 600; color: #6B7280; margin-bottom: 0.5rem;">Screenshot Needed</p>
+                            <p style="font-size: 0.85rem; color: #9CA3AF; margin-bottom: 0.25rem;">280x600px</p>
+                            <p style="font-size: 0.8rem; color: #9CA3AF; font-style: italic;">Character builder screen showing description input OR the 6 art style images selection screen</p>
+                        </div>
                     </div>
                     <div class="step-image" style="background: #F3F4F6; border: 2px dashed #D1D5DB;">
                         <p style="font-weight: 600; color: #6B7280; margin-bottom: 0.5rem;">Step 2: Create Character</p>
@@ -309,6 +409,11 @@
                         <p><strong>Quick Story:</strong> Just say what you want in plain English. "A story about Leo the hedgehog learning to swim" or "An adventure where Bella finds a magic paintbrush."</p>
                         <p><strong>Custom Story:</strong> Choose characters, setting, themes, and story length. Perfect control for specific bedtime needs.</p>
                         <p>Hit "Create" and in 30-60 seconds, you'll have a complete, beautifully illustrated story ready to read.</p>
+                        <div class="image-placeholder" style="background: #F3F4F6; border: 2px dashed #D1D5DB; border-radius: 12px; padding: 1.5rem; text-align: center; margin-top: 1rem; max-width: 280px;">
+                            <p style="font-weight: 600; color: #6B7280; margin-bottom: 0.5rem;">Screenshot Needed</p>
+                            <p style="font-size: 0.85rem; color: #9CA3AF; margin-bottom: 0.25rem;">280x600px</p>
+                            <p style="font-size: 0.8rem; color: #9CA3AF; font-style: italic;">Story creation form with character selected, showing "Create Story" button OR story generation progress screen</p>
+                        </div>
                     </div>
                     <div class="step-image" style="background: #F3F4F6; border: 2px dashed #D1D5DB;">
                         <p style="font-weight: 600; color: #6B7280; margin-bottom: 0.5rem;">Step 3: Generate Story</p>
@@ -324,6 +429,11 @@
                         <p>Your story is ready! Read it together on screen, or tap the narration button to hear it read aloud in a professional voice.</p>
                         <p>Love the story? Save it to your library. Want to know what happens next? Tap "Continue Story" tomorrow night and the adventure continues right where you left off.</p>
                         <p><strong>It's like your child's own Netflix series, but in storybook form.</strong></p>
+                        <div class="image-placeholder" style="background: #F3F4F6; border: 2px dashed #D1D5DB; border-radius: 12px; padding: 1.5rem; text-align: center; margin-top: 1rem; max-width: 280px;">
+                            <p style="font-weight: 600; color: #6B7280; margin-bottom: 0.5rem;">Screenshot Needed</p>
+                            <p style="font-size: 0.85rem; color: #9CA3AF; margin-bottom: 0.25rem;">280x600px</p>
+                            <p style="font-size: 0.8rem; color: #9CA3AF; font-style: italic;">Generated story display with illustration at top, story text, and "Continue Story" button visible at bottom</p>
+                        </div>
                     </div>
                     <div class="step-image" style="background: #F3F4F6; border: 2px dashed #D1D5DB;">
                         <p style="font-weight: 600; color: #6B7280; margin-bottom: 0.5rem;">Step 4: Read Together</p>
@@ -338,43 +448,51 @@
     <section class="section-alt">
         <div class="container">
             <h2 style="text-align: center;">More Than Just Stories</h2>
-            <p class="section-subtitle">A complete creative toolkit for your child's imagination</p>
+            <p class="section-subtitle">Turn stories into songs, add narration, explore classics, and more.</p>
 
-            <div class="features-grid">
-                <div class="feature-card">
-                    <span class="feature-icon">🎵</span>
-                    <h3>Turn Stories into Songs</h3>
-                    <p>Any story can become a custom song with just one tap. Choose from different music styles. Perfect for car journeys or dance parties!</p>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-top: 3rem;">
+                <!-- Feature 1: Songs -->
+                <div style="text-align: center;">
+                    <div class="image-placeholder" style="background: #F3F4F6; border: 2px dashed #D1D5DB; border-radius: 12px; padding: 1.5rem; text-align: center; margin-bottom: 1rem;">
+                        <p style="font-weight: 600; color: #6B7280; margin-bottom: 0.5rem;">Screenshot Needed</p>
+                        <p style="font-size: 0.85rem; color: #9CA3AF; margin-bottom: 0.25rem;">350x250px (landscape)</p>
+                        <p style="font-size: 0.8rem; color: #9CA3AF; font-style: italic;">Song player interface showing play button, song title, and waveform OR song creation screen</p>
+                    </div>
+                    <h3>🎵 Turn Stories into Songs</h3>
+                    <p>Any story becomes a custom song with different music styles</p>
                 </div>
 
-                <div class="feature-card">
-                    <span class="feature-icon">🔊</span>
-                    <h3>AI Narration</h3>
-                    <p>Professional voice actors bring stories to life in 10 languages. Listen while driving, cooking, or winding down for bedtime.</p>
+                <!-- Feature 2: Narration -->
+                <div style="text-align: center;">
+                    <div class="image-placeholder" style="background: #F3F4F6; border: 2px dashed #D1D5DB; border-radius: 12px; padding: 1.5rem; text-align: center; margin-bottom: 1rem;">
+                        <p style="font-weight: 600; color: #6B7280; margin-bottom: 0.5rem;">Screenshot Needed</p>
+                        <p style="font-size: 0.85rem; color: #9CA3AF; margin-bottom: 0.25rem;">350x250px</p>
+                        <p style="font-size: 0.8rem; color: #9CA3AF; font-style: italic;">Voice selection screen showing different narrator options and languages</p>
+                    </div>
+                    <h3>🔊 Professional Narration</h3>
+                    <p>Choose from multiple voices and 9 languages</p>
                 </div>
 
-                <div class="feature-card">
-                    <span class="feature-icon">📚</span>
-                    <h3>200+ Free Classics</h3>
-                    <p>Access fairy tales, nursery rhymes, and daily AI-generated stories in the Fairy Corner. No Fairy Dust required—always free!</p>
+                <!-- Feature 3: Fairy Corner -->
+                <div style="text-align: center;">
+                    <div class="image-placeholder" style="background: #F3F4F6; border: 2px dashed #D1D5DB; border-radius: 12px; padding: 1.5rem; text-align: center; margin-bottom: 1rem;">
+                        <p style="font-weight: 600; color: #6B7280; margin-bottom: 0.5rem;">Screenshot Needed</p>
+                        <p style="font-size: 0.85rem; color: #9CA3AF; margin-bottom: 0.25rem;">350x250px</p>
+                        <p style="font-size: 0.8rem; color: #9CA3AF; font-style: italic;">Fairy Corner home screen showing categories: Fairy Tales, Nursery Rhymes, Daily Stories</p>
+                    </div>
+                    <h3>📚 200+ Free Classics</h3>
+                    <p>Fairy tales and nursery rhymes—always free</p>
                 </div>
 
-                <div class="feature-card">
-                    <span class="feature-icon">♾️</span>
-                    <h3>Story Continuations</h3>
-                    <p>Build ongoing adventures over days or weeks. Your child shapes where the story goes. Character development that grows with them.</p>
-                </div>
-
-                <div class="feature-card">
-                    <span class="feature-icon">🎨</span>
-                    <h3>6 Art Styles</h3>
-                    <p>From watercolor to cartoon, choose the perfect artistic style for your story. Each one beautifully crafted and age-appropriate.</p>
-                </div>
-
-                <div class="feature-card">
-                    <span class="feature-icon">🌍</span>
-                    <h3>10 Languages</h3>
-                    <p>Create stories and narration in English, Spanish, French, German, Italian, Portuguese, Dutch, Polish, Japanese, and Mandarin.</p>
+                <!-- Feature 4: Story Continuation -->
+                <div style="text-align: center;">
+                    <div class="image-placeholder" style="background: #F3F4F6; border: 2px dashed #D1D5DB; border-radius: 12px; padding: 1.5rem; text-align: center; margin-bottom: 1rem;">
+                        <p style="font-weight: 600; color: #6B7280; margin-bottom: 0.5rem;">Screenshot Needed</p>
+                        <p style="font-size: 0.85rem; color: #9CA3AF; margin-bottom: 0.25rem;">350x250px</p>
+                        <p style="font-size: 0.8rem; color: #9CA3AF; font-style: italic;">Story detail screen with prominent "Continue This Story" button</p>
+                    </div>
+                    <h3>📖 Ongoing Adventures</h3>
+                    <p>Continue yesterday's story tonight</p>
                 </div>
             </div>
         </div>
