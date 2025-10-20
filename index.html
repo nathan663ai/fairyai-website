@@ -5,7 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FairyAI - The Never-Ending AI Storybook for Children</title>
     <meta name="description" content="Create magical bedtime stories in 60 seconds. Bring your child's characters to life and continue their adventures night after night. Try free—no card required.">
-    
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://fairyai.co.uk/">
+    <meta property="og:title" content="FairyAI - Turn Bedtime Battles Into Magical Moments">
+    <meta property="og:description" content="Create personalized children's stories in 60 seconds. Your child's characters, their adventures, narrated professionally. Like Netflix for bedtime stories.">
+    <meta property="og:image" content="https://fairyai.co.uk/images/social-share.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://fairyai.co.uk/">
+    <meta name="twitter:title" content="FairyAI - Turn Bedtime Battles Into Magical Moments">
+    <meta name="twitter:description" content="Create personalized children's stories in 60 seconds. Your child's characters, their adventures, narrated professionally.">
+    <meta name="twitter:image" content="https://fairyai.co.uk/images/social-share.png">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Lora:ital,wght@0;400;0;600;1,400&display=swap" rel="stylesheet">
@@ -473,6 +487,17 @@
         .feature-card p {
             color: var(--text-light);
         }
+
+        /* Hamburger animation when open */
+        .hamburger-btn.open .bar:nth-child(1) {
+            transform: rotate(-45deg) translate(-5px, 6px);
+        }
+        .hamburger-btn.open .bar:nth-child(2) {
+            opacity: 0;
+        }
+        .hamburger-btn.open .bar:nth-child(3) {
+            transform: rotate(45deg) translate(-5px, -6px);
+        }
     </style>
 </head>
 <body>
@@ -504,7 +529,9 @@
             <a href="our-story.html" class="mobile-nav-link">Our Story</a>
             <a href="#pricing" class="mobile-nav-link">Pricing</a>
             <a href="support.html" class="mobile-nav-link">Support</a>
-            <a href="#download" class="mobile-nav-link nav-cta">Try Free</a>
+            <a href="#download" class="mobile-nav-link" style="background: var(--accent-gold); color: var(--deep-navy); font-weight: 700; padding: 1rem 2rem; border-radius: 50px; margin-top: 1rem; text-align: center; display: block;">
+                Get 6 Free Stories →
+            </a>
         </div>
     </nav>
 
@@ -541,16 +568,40 @@
             <p class="section-subtitle">
                 Create magical bedtime stories in 60 seconds. Bring your child's characters to life and continue their adventures night after night—like episodes of their favorite show.
             </p>
-            <a href="#download" class="btn btn-primary">Start Your 6 Free Stories</a>
+            <a href="#download" class="btn btn-primary">Get 6 Free Stories Now</a>
+            <p style="font-size: 0.9rem; color: var(--text-light); margin-top: 1rem; text-align: center;">✓ No credit card required • ✓ Download in 30 seconds</p>
              <div class="value-props">
                 <span class="prop-item">⏱️ Stories in 60s</span>
                 <span class="prop-item">🎨 Unlimited Characters</span>
-                <span class="prop-item">📚 100+ Free Classics</span>
+                <span class="prop-item">📚 200+ Free Classics</span>
             </div>
             <div class="image-placeholder" style="background: #F3F4F6; border: 2px dashed #D1D5DB; border-radius: 12px; padding: 2rem; text-align: center; min-height: 400px; display: flex; flex-direction: column; align-items: center; justify-content: center; max-width: 1000px; margin: 3rem auto 0;">
                 <p style="font-weight: 600; color: #6B7280; margin-bottom: 0.5rem; font-size: 1.125rem;">Hero Image</p>
                 <p style="font-size: 0.9rem; color: #9CA3AF; margin-bottom: 0.5rem;">Dimensions: 1200x600px</p>
                 <p style="font-size: 0.875rem; color: #9CA3AF; font-style: italic; max-width: 600px;">Parent and child looking at phone together in cozy bedtime setting, warm lighting, realistic photography style</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-light" style="padding: 3rem 0;">
+        <div class="container">
+            <div style="display: flex; justify-content: center; align-items: center; gap: 3rem; flex-wrap: wrap; text-align: center;">
+                <div>
+                    <div style="font-size: 2.5rem; font-weight: 800; color: var(--deep-navy);">✓</div>
+                    <p style="font-size: 0.9rem; color: var(--text-light); margin-top: 0.5rem;">Apple App Store<br>Approved & Live</p>
+                </div>
+                <div>
+                    <div style="font-size: 2.5rem; font-weight: 800; color: var(--deep-navy);">🌍</div>
+                    <p style="font-size: 0.9rem; color: var(--text-light); margin-top: 0.5rem;">Testing Globally<br>6 Countries</p>
+                </div>
+                <div>
+                    <div style="font-size: 2.5rem; font-weight: 800; color: var(--deep-navy);">🛡️</div>
+                    <p style="font-size: 0.9rem; color: var(--text-light); margin-top: 0.5rem;">COPPA<br>Compliant</p>
+                </div>
+                <div>
+                    <div style="font-size: 2.5rem; font-weight: 800; color: var(--deep-navy);">200+</div>
+                    <p style="font-size: 0.9rem; color: var(--text-light); margin-top: 0.5rem;">Classic Stories<br>Always Free</p>
+                </div>
             </div>
         </div>
     </section>
@@ -669,8 +720,8 @@
                 </div>
             </div>
 
-            <p style="text-align: center; margin-top: 2rem; color: var(--text-light);">
-                Have you tested FairyAI? <a href="support.html" style="color: var(--accent-gold); font-weight: 600;">Share your feedback</a>
+            <p style="text-align: center; margin-top: 2rem; color: var(--text-main); font-size: 1rem;">
+                Have you tested FairyAI? We'd love to hear from you! <a href="support.html" style="color: var(--accent-gold); font-weight: 600; text-decoration: underline;">Share your feedback here</a>
             </p>
         </div>
     </section>
@@ -817,6 +868,26 @@
                     <summary>Can I cancel my subscription anytime?</summary>
                     <p class="faq-answer">Of course. You can easily cancel your subscription at any time through the App Store or Google Play Store settings. You'll retain access for the remainder of your billing period.</p>
                 </details>
+                <details class="faq-item">
+                    <summary>Is my child's data safe?</summary>
+                    <p class="faq-answer">Absolutely. FairyAI is COPPA compliant. We don't track your children, show ads, or sell data to anyone. Your stories and characters are private to your account. We use AI providers (OpenAI, Replicate) only to generate content—they don't store your prompts. Read our full <a href="/privacy.html" style="color: var(--accent-gold); font-weight: 600;">Privacy Policy</a>.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>How long does story generation take?</summary>
+                    <p class="faq-answer">Most stories generate in under 60 seconds. Characters with 6 art styles take 2-3 minutes. Songs take 3-5 minutes. You'll get a notification when they're ready, so you can do other things while waiting.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Do I need internet to use FairyAI?</summary>
+                    <p class="faq-answer">You need internet to generate new content, but all your saved stories, characters, and songs are available offline once created. Perfect for car journeys and flights!</p>
+                </details>
+                <details class="faq-item">
+                    <summary>What ages is FairyAI suitable for?</summary>
+                    <p class="faq-answer">FairyAI creates age-appropriate content for ages 2-12+. You can set the age range when creating stories, and our AI automatically adjusts vocabulary, themes, and complexity. Classic fairy tales in the Fairy Corner suit all ages.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Can I use FairyAI in other languages?</summary>
+                    <p class="faq-answer">Yes! FairyAI supports 9 languages: English (US, UK, Australia), Spanish (Spain, Mexico), French, German, Italian, and Portuguese. You can create stories in any language and switch between them anytime.</p>
+                </details>
             </div>
         </div>
     </section>
@@ -827,14 +898,14 @@
             <p class="section-subtitle" style="max-width: 700px; margin: 0 auto 1rem;">Choose a plan that fits your family's imagination.</p>
             <div class="info-box" style="background: #FEF3C7; border: 2px solid #FCD34D; border-radius: 16px; padding: 1.5rem; max-width: 600px; margin: 0 auto 3rem; text-align: center;">
                 <h3 style="margin: 0 0 1rem; color: var(--deep-navy);">💫 How Fairy Dust Works</h3>
-                <p style="margin: 0 0 1rem; font-size: 1rem;"><strong>With 6 free Fairy Dust you can create:</strong></p>
-                <ul style="list-style: none; padding: 0; margin: 0;">
-                    <li style="margin: 0.5rem 0;">✨ 6 stories, OR</li>
-                    <li style="margin: 0.5rem 0;">✨ 3 characters, OR</li>
-                    <li style="margin: 0.5rem 0;">✨ 3 songs, OR</li>
-                    <li style="margin: 0.5rem 0;">✨ Mix and match!</li>
-                </ul>
-                <p style="margin: 1rem 0 0; font-size: 0.9rem; color: var(--text-light);"><em>Stories cost 1 dust • Characters, songs & narrations cost 2 dust each</em></p>
+                <p style="font-size: 1.1rem; margin-bottom: 1rem;"><strong>Your 6 free Fairy Dust credits let you:</strong></p>
+                <div style="background: white; border-radius: 12px; padding: 1.5rem; margin-bottom: 1rem; text-align: left;">
+                    <p style="font-size: 1rem; margin-bottom: 0.75rem;">✨ Create 6 new stories (1 dust each)</p>
+                    <p style="font-size: 1rem; margin-bottom: 0.75rem;">✨ Design 3 custom characters (2 dust each)</p>
+                    <p style="font-size: 1rem; margin-bottom: 0.75rem;">✨ Generate 3 songs (2 dust each)</p>
+                    <p style="font-size: 1rem; margin-bottom: 0;">✨ Or any combination you choose!</p>
+                </div>
+                <p style="font-size: 0.9rem; color: var(--text-main);">💡 <strong>Pro tip:</strong> Story continuations only cost 1 dust, so your credits go far!</p>
             </div>
             <div class="pricing-grid">
                 <div class="pricing-card">
@@ -872,6 +943,9 @@
                 </div>
             </div>
             <p class="currency-note">All plans include unlimited access to The Fairy Corner. Prices are shown in GBP. The App Store or Google Play will automatically convert the price to your local currency.</p>
+            <p style="text-align: center; color: var(--text-light); font-size: 0.9rem; margin-top: 1rem;">
+                Cancel anytime directly through the App Store or Google Play—not through us. No hoops to jump through.
+            </p>
             <p class="join-note">Join families around the world creating magic every night!</p>
         </div>
     </section>
@@ -884,6 +958,18 @@
                 <div class="cta-app-badges">
                     <a href="#"><img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1276560000" alt="Download on the App Store"></a>
                     <a href="#"><img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" style="height: 62px;"></a>
+                </div>
+                <div style="margin-top: 3rem;">
+                    <h3 style="text-align: center; color: white; margin-bottom: 1.5rem;">What Happens Next?</h3>
+                    <ol style="max-width: 600px; margin: 0 auto; text-align: left; font-size: 1rem; line-height: 1.8; color: white; padding-left: 1.5rem;">
+                        <li style="margin-bottom: 0.75rem;">Download FairyAI from the App Store (30 seconds)</li>
+                        <li style="margin-bottom: 0.75rem;">Create your free account (1 minute)</li>
+                        <li style="margin-bottom: 0.75rem;">You'll see 6 free Fairy Dust credits waiting</li>
+                        <li style="margin-bottom: 0.75rem;">Tap "Create Story" and start your first magical bedtime</li>
+                    </ol>
+                    <p style="text-align: center; color: rgba(255,255,255,0.8); font-size: 0.95rem; margin-top: 1.5rem;">
+                        No credit card. No tricks. Just 6 free stories to try everything.
+                    </p>
                 </div>
             </div>
         </div>
@@ -918,11 +1004,13 @@
 
             hamburgerBtn.addEventListener('click', () => {
                 mobileMenu.classList.toggle('open');
+                hamburgerBtn.classList.toggle('open');
             });
             
             mobileNavLinks.forEach(link => {
                 link.addEventListener('click', () => {
                     mobileMenu.classList.remove('open');
+                    hamburgerBtn.classList.remove('open');
                 });
             });
 

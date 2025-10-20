@@ -6,6 +6,20 @@
     <title>Our Story - FairyAI | Built by a Parent Who Gets It</title>
     <meta name="description" content="The story behind FairyAI: How a parent's bedtime struggle became an app helping thousands of families turn bedtime battles into magical moments.">
 
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://fairyai.co.uk/our-story.html">
+    <meta property="og:title" content="Our Story - FairyAI">
+    <meta property="og:description" content="The honest story behind FairyAI. Built by a dad from Scotland who couldn't code, wanted better bedtime stories, and spent 8 months learning to build this app.">
+    <meta property="og:image" content="https://fairyai.co.uk/images/social-share.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://fairyai.co.uk/our-story.html">
+    <meta name="twitter:title" content="Our Story - FairyAI">
+    <meta name="twitter:description" content="The honest story behind FairyAI. Built by a dad from Scotland who couldn't code, wanted better bedtime stories, and spent 8 months learning to build this app.">
+    <meta name="twitter:image" content="https://fairyai.co.uk/images/social-share.png">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Lora:ital,wght@0;400;0;600;1,400&display=swap" rel="stylesheet">
@@ -272,6 +286,17 @@
             max-width: 100%;
             height: auto;
         }
+
+        /* Hamburger animation when open */
+        .hamburger-btn.open .bar:nth-child(1) {
+            transform: rotate(-45deg) translate(-5px, 6px);
+        }
+        .hamburger-btn.open .bar:nth-child(2) {
+            opacity: 0;
+        }
+        .hamburger-btn.open .bar:nth-child(3) {
+            transform: rotate(45deg) translate(-5px, -6px);
+        }
     </style>
 </head>
 <body>
@@ -303,7 +328,9 @@
             <a href="our-story.html" class="mobile-nav-link">Our Story</a>
             <a href="index.html#pricing" class="mobile-nav-link">Pricing</a>
             <a href="support.html" class="mobile-nav-link">Support</a>
-            <a href="index.html#download" class="mobile-nav-link nav-cta">Try Free</a>
+            <a href="index.html#download" class="mobile-nav-link" style="background: var(--accent-gold); color: var(--deep-navy); font-weight: 700; padding: 1rem 2rem; border-radius: 50px; margin-top: 1rem; text-align: center; display: block;">
+                Get 6 Free Stories →
+            </a>
         </div>
     </nav>
 
@@ -413,34 +440,34 @@
 
                 <p>I have plans to grow it: partnerships with real book companies, learning features, content for younger babies (sounds and simple stories), and more. This is just step 1... if it takes off.</p>
 
-                <h2>Why You Should Trust Me</h2>
+                <h2>What You Should Know About FairyAI</h2>
 
-                <p>Here's what I want you to know about FairyAI:</p>
+                <p style="margin-bottom: 2rem; font-size: 1.1rem;">I'm not going to pretend this is perfect. But here's what I can promise:</p>
 
                 <div class="values-grid">
                     <div class="value-item">
-                        <h3>🛡️ Safety First</h3>
-                        <p>COPPA compliant, no tracking kids, no ads, secure payments. Your children's data isn't sold or shared.</p>
+                        <h3>🛡️ Your Kids' Data is Safe</h3>
+                        <p>I've spent weeks making sure FairyAI is COPPA compliant. No tracking, no ads, no selling data. I wouldn't build anything less secure than what I'd trust with my own daughters.</p>
                     </div>
 
                     <div class="value-item">
-                        <h3>👨‍👧‍👦 Built by a Parent</h3>
-                        <p>I use this with my own daughters every night. If it's not good enough for them, it's not good enough for you.</p>
+                        <h3>👨‍👧‍👦 I Use This Every Night</h3>
+                        <p>This isn't some side project I built and forgot about. My 4-year-old asks for it every single night. If she stops using it, I'll know something's wrong.</p>
                     </div>
 
                     <div class="value-item">
-                        <h3>🔄 Always Improving</h3>
-                        <p>I'm learning as I go—both as a developer and as a parent. Your feedback shapes what gets built next.</p>
+                        <h3>🔄 I'm Still Learning</h3>
+                        <p>I'm not a professional developer—I'm learning as I go. Things might break. When they do, I'll fix them fast and let you know. No corporate runaround.</p>
                     </div>
 
                     <div class="value-item">
-                        <h3>💡 Honest Pricing</h3>
-                        <p>No hidden fees, no tricks. Cancel anytime. If something breaks, I'll fix it or refund you.</p>
+                        <h3>💡 No Hidden Fees</h3>
+                        <p>The price you see is the price you pay. Cancel anytime through the App Store. If something doesn't work as promised, email me and I'll make it right.</p>
                     </div>
 
                     <div class="value-item">
-                        <h3>💝 Not Just an App</h3>
-                        <p>This is a brand I'm building for families. If you trust me with your bedtime routine, I'll do everything I can to make it magical.</p>
+                        <h3>💝 This is Personal</h3>
+                        <p>FairyAI isn't a startup trying to get acquired. It's a tool I built for my family that I hope helps yours too. Every feature comes from a real bedtime problem I've had.</p>
                     </div>
                 </div>
 
@@ -499,11 +526,13 @@
 
             hamburgerBtn.addEventListener('click', () => {
                 mobileMenu.classList.toggle('open');
+                hamburgerBtn.classList.toggle('open');
             });
 
             mobileNavLinks.forEach(link => {
                 link.addEventListener('click', () => {
                     mobileMenu.classList.remove('open');
+                    hamburgerBtn.classList.remove('open');
                 });
             });
         });
