@@ -220,6 +220,109 @@
         .footer-links a { color: var(--text-light); text-decoration: none; transition: color 0.2s; }
         .footer-links a:hover { color: var(--deep-navy); }
         .footer-text { font-size: 0.9rem; color: #94A3B8; }
+
+        /* Problem Section */
+        .problem-section {
+            background: linear-gradient(135deg, #FEF3C7 0%, #FED7AA 100%);
+        }
+        .problem-content {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .problem-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        .problem-item {
+            background: white;
+            padding: 2rem;
+            border-radius: 16px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        .problem-icon {
+            font-size: 3rem;
+            display: block;
+            margin-bottom: 1rem;
+        }
+        .problem-item p {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--text-main);
+        }
+        .problem-solution {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--accent-gold);
+            margin-top: 2rem;
+        }
+
+        /* Founder Section Enhancements */
+        .founder-section {
+            padding: 80px 0;
+        }
+        .founder-content {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 3rem;
+            align-items: center;
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        @media (min-width: 768px) {
+            .founder-content {
+                grid-template-columns: 300px 1fr;
+                text-align: left;
+            }
+        }
+        .founder-text h2 {
+            text-align: inherit;
+            margin-bottom: 1rem;
+        }
+        .founder-text p {
+            font-size: 1.125rem;
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+        .founder-intro {
+            font-size: 1.25rem !important;
+            font-weight: 600;
+            color: var(--deep-navy);
+        }
+
+        /* Testimonials Grid Enhancement */
+        .testimonials-section .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        .testimonials-section .testimonial-card {
+            background: white;
+            border: 1px solid var(--border-light);
+            border-radius: 16px;
+            padding: 2rem;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+        .testimonials-section .testimonial-card .stars {
+            color: var(--accent-gold);
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+        }
+        .testimonials-section .testimonial-card .testimonial-text {
+            font-size: 1.05rem;
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+            color: var(--text-main);
+        }
+        .testimonials-section .testimonial-card .testimonial-author {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--text-light);
+        }
     </style>
 </head>
 <body>
@@ -229,9 +332,11 @@
             <a href="/" class="logo">Fairy<span class="logo-ai">AI</span></a>
             <div class="desktop-nav-links">
                 <a href="#features">Features</a>
+                <a href="how-it-works.html">How It Works</a>
+                <a href="sample-stories.html">Sample Stories</a>
+                <a href="our-story.html">Our Story</a>
                 <a href="#pricing">Pricing</a>
-                <a href="#our-story">Our Story</a>
-                <a href="#faq">FAQ</a>
+                <a href="support.html">Support</a>
             </div>
             <div class="nav-actions">
                 <a href="#download" class="nav-cta">Try Free</a>
@@ -244,12 +349,41 @@
         </div>
         <div class="mobile-nav-overlay" id="mobile-menu">
             <a href="#features" class="mobile-nav-link">Features</a>
+            <a href="how-it-works.html" class="mobile-nav-link">How It Works</a>
+            <a href="sample-stories.html" class="mobile-nav-link">Sample Stories</a>
+            <a href="our-story.html" class="mobile-nav-link">Our Story</a>
             <a href="#pricing" class="mobile-nav-link">Pricing</a>
-            <a href="#our-story" class="mobile-nav-link">Our Story</a>
-            <a href="#faq" class="mobile-nav-link">FAQ</a>
+            <a href="support.html" class="mobile-nav-link">Support</a>
             <a href="#download" class="mobile-nav-link nav-cta">Try Free</a>
         </div>
     </nav>
+
+    <section class="problem-section">
+        <div class="container">
+            <div class="problem-content">
+                <h2>Sound Familiar?</h2>
+                <div class="problem-grid">
+                    <div class="problem-item">
+                        <span class="problem-icon">😴</span>
+                        <p>"Just one more story, please!"</p>
+                    </div>
+                    <div class="problem-item">
+                        <span class="problem-icon">📚</span>
+                        <p>You've read the same books 47 times this month</p>
+                    </div>
+                    <div class="problem-item">
+                        <span class="problem-icon">⏰</span>
+                        <p>Bedtime takes 2 hours every single night</p>
+                    </div>
+                    <div class="problem-item">
+                        <span class="problem-icon">😫</span>
+                        <p>You're exhausted. They're wide awake.</p>
+                    </div>
+                </div>
+                <p class="problem-solution">There's a better way. ✨</p>
+            </div>
+        </div>
+    </section>
 
     <section class="hero">
         <div class="container">
@@ -266,6 +400,25 @@
             <div class="hero-image-placeholder">
                 <h3>A vibrant, joyful animation showing the app on a phone.</h3>
                 <p>A child's drawing of a monster is shown, then it morphs into a beautiful storybook character on the screen, delighting the parent and child watching.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-light founder-section">
+        <div class="container">
+            <div class="founder-content">
+                <div class="founder-image-placeholder">
+                    <div style="width: 200px; height: 200px; border-radius: 50%; background: linear-gradient(135deg, var(--sky-blue), var(--soft-pink)); display: flex; align-items: center; justify-content: center; margin: 0 auto;">
+                        <span style="font-size: 4rem;">👨‍💻</span>
+                    </div>
+                </div>
+                <div class="founder-text">
+                    <h2>Hi, I'm Nathan 👋</h2>
+                    <p class="founder-intro">I'm a parent just like you. Three years ago, I was losing the bedtime battle every single night. My kids wanted new stories, but I was too tired to make them up.</p>
+                    <p>So I built FairyAI—not as a tech company, but as a lifeline for exhausted parents everywhere. Now thousands of families use it to turn bedtime battles into magical moments.</p>
+                    <p><strong>Every story. Every character. Every feature. Built with parents in mind, because I know what it's like.</strong></p>
+                    <a href="our-story.html" class="btn-secondary">Read Our Full Story →</a>
+                </div>
             </div>
         </div>
     </section>
@@ -309,18 +462,34 @@
         </div>
     </section>
     
-    <section class="section-light">
+    <section class="section-alt testimonials-section">
         <div class="container">
-            <div class="testimonial-bg">
-                <div class="testimonial-content">
-                    <p class="testimonial-quote">"She's asleep in 20 minutes instead of the usual 2-hour battle! <span class="testimonial-highlight">I finally have my evenings back.</span> This isn't just an app - it's our favourite part of bedtime."</p>
-                    <p class="testimonial-author">— Sarah J., Parent of a 4-year-old, UK</p>
+            <h2>What Parents Are Saying</h2>
+            <p class="section-subtitle">Real families, real results</p>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Bedtime went from a 2-hour battle to 20 minutes of pure magic. My daughter asks for FairyAI stories every night now. I finally have my evenings back!"</p>
+                    <p class="testimonial-author">— Sarah M., Mother of a 5-year-old, London</p>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"My son has autism and needs routine, but also novelty. FairyAI lets me use the same character he loves in completely new adventures. It's been a game-changer."</p>
+                    <p class="testimonial-author">— James K., Father of a 7-year-old, Manchester</p>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"As a single mum working full-time, I don't always have energy for creative storytelling. FairyAI gives my kids amazing stories even on my most exhausted days."</p>
+                    <p class="testimonial-author">— Emma L., Mother of 3, Birmingham</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="features" class="section-alt never-ending-story-section">
+    <section id="features" class="section-light never-ending-story-section">
         <div class="container">
             <div>
                 <h2>Your Never-Ending Storybook</h2>
@@ -517,6 +686,8 @@
             </div>
             <div class="footer-links">
                 <a href="our-story.html">Our Story</a>
+                <a href="how-it-works.html">How It Works</a>
+                <a href="sample-stories.html">Sample Stories</a>
                 <a href="privacy.html">Privacy Policy</a>
                 <a href="terms.html">Terms of Service</a>
                 <a href="support.html">Support</a>
