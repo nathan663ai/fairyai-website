@@ -1,178 +1,491 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Delete Account - FairyAI</title>
+    <meta name="description" content="Request deletion of your FairyAI account. Learn what happens when you delete your account and how to do it.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Lora:ital,wght@0;400;0;600;1,400&display=swap" rel="stylesheet">
+
     <style>
+        /* CSS Reset */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        /* Variables & Global Styles */
+        :root {
+            --deep-navy: #0f1b3c;
+            --text-main: #334155;
+            --text-light: #64748B;
+            --accent-gold: #F59E0B;
+            --soft-pink: #FBCFE8;
+            --sky-blue: #BAE6FD;
+            --bg-light: #F8FAFC;
+            --border-light: #E2E8F0;
+        }
+
+        html { scroll-behavior: smooth; }
+
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: #f8f9ff;
-            margin: 0;
-            padding: 20px;
+            font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+            color: var(--text-main);
+            line-height: 1.7;
+            background-color: white;
+            -webkit-font-smoothing: antialiased;
         }
-        
-        .container {
-            max-width: 800px;
+
+        /* Typography */
+        h1, h2, h3, h4 { font-weight: 800; color: var(--deep-navy); line-height: 1.2; }
+        h1 { font-size: clamp(2.5rem, 5vw, 4.25rem); }
+        h2 { font-size: clamp(2rem, 4vw, 2.75rem); }
+        h3 { font-size: clamp(1.25rem, 2.5vw, 1.5rem); }
+        h4 { font-size: 1.125rem; }
+        .section-subtitle { text-align: center; font-size: 1.125rem; color: var(--text-light); max-width: 680px; margin: 1rem auto 4rem; }
+
+        /* Layout */
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+        section { padding: 100px 0; position: relative; }
+        .section-light { background-color: white; }
+        .section-alt { background-color: var(--bg-light); }
+
+        /* Navigation */
+        nav { position: fixed; top: 0; width: 100%; background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(10px); border-bottom: 1px solid var(--border-light); z-index: 1000; padding: 1rem 0; }
+        .nav-container { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-family: 'Lora', serif; font-weight: 600; font-size: 1.75rem; color: var(--deep-navy); text-decoration: none; }
+        .logo-ai { color: var(--accent-gold); }
+
+        .desktop-nav-links { display: none; }
+        @media (min-width: 992px) {
+            .desktop-nav-links { display: flex; align-items: center; gap: 2rem; }
+            .desktop-nav-links a { text-decoration: none; color: var(--text-main); font-weight: 600; font-size: 0.95rem; transition: color 0.2s; }
+            .desktop-nav-links a:hover { color: var(--accent-gold); }
+        }
+        .nav-actions { display: flex; align-items: center; gap: 1rem; }
+        .nav-cta { background: var(--deep-navy); color: white; padding: 0.6rem 1.25rem; border-radius: 50px; font-weight: 600; text-decoration: none; transition: all 0.2s; }
+        .nav-cta:hover { background: #334155; transform: translateY(-2px); }
+
+        /* Mobile Navigation */
+        .hamburger-btn {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            width: 24px;
+            height: 24px;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            padding: 0;
+            z-index: 10;
+        }
+        .hamburger-btn .bar { width: 24px; height: 3px; background-color: var(--deep-navy); border-radius: 10px; transition: all 0.3s linear; position: relative; transform-origin: 1px; }
+        @media (min-width: 992px) { .hamburger-btn { display: none; } }
+
+        .mobile-nav-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(10px);
+            z-index: 999;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.3s ease-in-out;
+            transform: translateY(-100%);
+        }
+        .mobile-nav-overlay.open { transform: translateY(0); }
+        .mobile-nav-overlay a { font-size: 1.5rem; color: var(--deep-navy); text-decoration: none; font-weight: 700; margin: 1rem 0; }
+
+        /* Hero Section */
+        .hero { padding-top: 180px; padding-bottom: 80px; background: linear-gradient(135deg, #FFF7ED 0%, #F0F9FF 100%); text-align: center;}
+        .hero h1 { max-width: 800px; margin-left: auto; margin-right: auto; }
+
+        /* Content Container */
+        .content-container {
+            max-width: 900px;
             margin: 0 auto;
+        }
+
+        /* Content Cards */
+        .content-card {
             background: white;
-            padding: 40px;
+            border: 1px solid var(--border-light);
             border-radius: 16px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            padding: 2rem;
+            margin-bottom: 2rem;
         }
-        
-        h1 {
-            color: #1F2937;
-            margin-bottom: 30px;
+
+        .content-card h2 {
+            font-size: 1.75rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
         }
-        
+
+        .content-card p {
+            margin-bottom: 1rem;
+        }
+
+        .content-card ul, .content-card ol {
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .content-card li {
+            margin-bottom: 0.75rem;
+        }
+
+        .content-card strong {
+            color: var(--deep-navy);
+        }
+
+        /* Warning Box */
         .warning-box {
             background: #FEF3C7;
-            border: 1px solid #FCD34D;
-            border-radius: 12px;
-            padding: 20px;
-            margin: 20px 0;
+            border: 2px solid #FCD34D;
+            border-radius: 16px;
+            padding: 2rem;
+            margin-bottom: 2rem;
         }
-        
+
         .warning-box strong {
             color: #92400E;
+            display: block;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
         }
-        
-        .section {
-            margin: 30px 0;
+
+        .warning-box ul {
+            margin-top: 1rem;
+            margin-left: 1.5rem;
         }
-        
-        .section h2 {
-            color: #374151;
-            font-size: 24px;
-            margin-bottom: 15px;
+
+        .warning-box li {
+            margin-bottom: 0.5rem;
         }
-        
-        .steps {
-            background: #F3F4F6;
-            padding: 20px;
+
+        /* Steps Box */
+        .steps-box {
+            background: var(--bg-light);
             border-radius: 12px;
-            margin: 20px 0;
+            padding: 1.5rem;
+            margin-top: 1rem;
         }
-        
-        .steps ol {
-            margin: 0;
-            padding-left: 20px;
+
+        .steps-box ol {
+            margin-left: 1.5rem;
         }
-        
-        .steps li {
-            margin-bottom: 10px;
+
+        .steps-box li {
+            margin-bottom: 0.75rem;
         }
-        
-        ul {
-            padding-left: 20px;
-        }
-        
-        li {
-            margin-bottom: 8px;
-        }
-        
-        .email-option {
+
+        /* Email Option Box */
+        .email-box {
             background: #EEF2FF;
-            padding: 20px;
+            border: 1px solid #C7D2FE;
             border-radius: 12px;
-            margin: 20px 0;
+            padding: 1.5rem;
+            margin-top: 1rem;
         }
-        
+
+        .email-box p {
+            margin-bottom: 0.75rem;
+        }
+
+        /* Links */
         a {
-            color: #6366F1;
+            color: var(--accent-gold);
             text-decoration: none;
+            font-weight: 600;
         }
-        
+
         a:hover {
             text-decoration: underline;
         }
-        
-        .footer {
-            margin-top: 40px;
-            text-align: center;
-            padding-top: 20px;
-            border-top: 1px solid #E5E7EB;
-            color: #6B7280;
+
+        /* Button */
+        .btn {
+            padding: 14px 28px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1rem;
+            text-decoration: none;
+            transition: all 0.2s ease;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            border: 2px solid transparent;
+        }
+        .btn-primary {
+            background: var(--accent-gold);
+            color: var(--deep-navy);
+        }
+        .btn-primary:hover {
+            background: #FBBF24;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 16px rgba(245, 158, 11, 0.2);
+            text-decoration: none;
+        }
+
+        /* Footer */
+        footer { background-color: var(--bg-light); text-align: center; padding: 4rem 2rem 2rem; }
+        .social-links { display: flex; justify-content: center; gap: 1.5rem; margin-bottom: 2rem; }
+        .social-links a { color: var(--text-light); text-decoration: none; transition: color 0.2s; }
+        .social-links a:hover { color: var(--deep-navy); }
+        .social-links svg { width: 24px; height: 24px; }
+        .footer-links { display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; margin-bottom: 2rem; }
+        @media (min-width: 768px) { .footer-links { gap: 2rem; } }
+        .footer-links a { color: var(--text-light); text-decoration: none; transition: color 0.2s; font-weight: 400; }
+        .footer-links a:hover { color: var(--deep-navy); }
+        .footer-text { font-size: 0.9rem; color: #94A3B8; }
+
+        /* Enhanced Visual Hierarchy */
+        h1 {
+            font-size: 3rem !important;
+            font-weight: 900 !important;
+            line-height: 1.1 !important;
+            letter-spacing: -0.02em;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem !important;
+            }
+        }
+
+        h2 {
+            font-size: 2.25rem !important;
+            font-weight: 800 !important;
+            margin-bottom: 1rem !important;
+        }
+
+        @media (max-width: 768px) {
+            h2 {
+                font-size: 1.75rem !important;
+            }
+
+            .hero {
+                padding-top: 120px !important;
+            }
+
+            .content-card {
+                padding: 1.5rem;
+            }
+
+            .warning-box {
+                padding: 1.5rem;
+            }
+        }
+
+        section {
+            padding: 5rem 2rem !important;
+        }
+
+        @media (max-width: 768px) {
+            section {
+                padding: 3rem 1.5rem !important;
+            }
+
+            .hamburger-btn {
+                width: 48px;
+                height: 48px;
+            }
+
+            body {
+                font-size: 16px !important;
+            }
+        }
+
+        * {
+            max-width: 100%;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Hamburger animation when open */
+        .hamburger-btn.open .bar:nth-child(1) {
+            transform: rotate(-45deg) translate(-5px, 6px);
+        }
+        .hamburger-btn.open .bar:nth-child(2) {
+            opacity: 0;
+        }
+        .hamburger-btn.open .bar:nth-child(3) {
+            transform: rotate(45deg) translate(-5px, -6px);
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Delete Your FairyAI Account</h1>
-        
-        <div class="section">
-            <h2>🗑️ How to Delete Your Account</h2>
-            <p>You can delete your FairyAI account directly from the app:</p>
-            
-            <div class="steps">
-                <ol>
-                    <li>Open the FairyAI app</li>
-                    <li>Go to <strong>Settings</strong></li>
-                    <li>Select <strong>Privacy & Data</strong></li>
-                    <li>Tap <strong>Delete Account</strong> (in red)</li>
-                    <li>Read the warnings and confirm</li>
-                    <li>Enter your password to verify</li>
-                    <li>Tap final delete confirmation</li>
-                </ol>
+
+    <nav>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Fairy<span class="logo-ai">AI</span></a>
+            <div class="desktop-nav-links">
+                <a href="index.html#features">Features</a>
+                <a href="how-it-works.html">How It Works</a>
+                <a href="sample-stories.html">Sample Stories</a>
+                <a href="our-story.html">Our Story</a>
+                <a href="index.html#pricing">Pricing</a>
+                <a href="support.html">Support</a>
+            </div>
+            <div class="nav-actions">
+                <a href="index.html#download" class="nav-cta">Get Started</a>
+                <button class="hamburger-btn" id="hamburger-btn" aria-label="Menu">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </button>
             </div>
         </div>
-        
-        <div class="warning-box">
-            <strong>⚠️ Important: Subscription Warning</strong><br>
-            Deleting your account does NOT cancel your App Store or Google Play subscription. You must cancel your subscription separately:
-            <ul>
-                <li><strong>iOS:</strong> Settings → [Your Name] → Subscriptions</li>
-                <li><strong>Android:</strong> Play Store → Menu → Subscriptions</li>
-            </ul>
+        <div class="mobile-nav-overlay" id="mobile-menu">
+            <a href="index.html#features" class="mobile-nav-link">Features</a>
+            <a href="how-it-works.html" class="mobile-nav-link">How It Works</a>
+            <a href="sample-stories.html" class="mobile-nav-link">Sample Stories</a>
+            <a href="our-story.html" class="mobile-nav-link">Our Story</a>
+            <a href="index.html#pricing" class="mobile-nav-link">Pricing</a>
+            <a href="support.html" class="mobile-nav-link">Support</a>
+            <a href="index.html#download" class="mobile-nav-link" style="background: var(--accent-gold); color: var(--deep-navy); font-weight: 700; padding: 1rem 2rem; border-radius: 50px; margin-top: 1rem; text-align: center; display: block;">
+                Get 6 Free Stories →
+            </a>
         </div>
-        
-        <div class="section">
-            <h2>📧 Alternative: Email Request</h2>
-            <div class="email-option">
-                <p>If you cannot access the app, you can request deletion by email:</p>
-                <p><strong>Email:</strong> <a href="mailto:legal@fairyai.co.uk?subject=Account%20Deletion%20Request">legal@fairyai.co.uk</a></p>
-                <p>Include your account email address in your request.</p>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Delete Your Account</h1>
+            <p class="section-subtitle">We're sad to see you go. Here's everything you need to know about deleting your FairyAI account.</p>
+        </div>
+    </section>
+
+    <section class="section-light">
+        <div class="container">
+            <div class="content-container">
+
+                <div class="warning-box">
+                    <strong>⚠️ Important: Subscription Warning</strong>
+                    Deleting your account does NOT cancel your App Store or Google Play subscription. You must cancel your subscription separately to avoid future charges:
+                    <ul>
+                        <li><strong>iOS:</strong> Settings → [Your Name] → Subscriptions → FairyAI → Cancel Subscription</li>
+                        <li><strong>Android:</strong> Google Play Store → Profile Icon → Payments & subscriptions → Subscriptions → FairyAI → Cancel Subscription</li>
+                    </ul>
+                </div>
+
+                <div class="content-card">
+                    <h2>🗑️ How to Delete Your Account</h2>
+                    <p>You can delete your FairyAI account directly from the app:</p>
+
+                    <div class="steps-box">
+                        <ol>
+                            <li>Open the FairyAI app</li>
+                            <li>Go to <strong>Settings</strong></li>
+                            <li>Select <strong>Privacy & Data</strong></li>
+                            <li>Tap <strong>Delete Account</strong> (shown in red)</li>
+                            <li>Read the warnings carefully and confirm</li>
+                            <li>Enter your password to verify it's you</li>
+                            <li>Tap the final delete confirmation</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="content-card">
+                    <h2>📧 Can't Access the App?</h2>
+                    <p>If you can't access the app for any reason, you can request account deletion by email:</p>
+
+                    <div class="email-box">
+                        <p><strong>Email:</strong> <a href="mailto:legal@fairyai.co.uk?subject=Account%20Deletion%20Request&body=Hi%20FairyAI%20team,%0A%0AI%20would%20like%20to%20request%20the%20deletion%20of%20my%20account.%0A%0AAccount%20email:%20%0A%0AThank%20you.">legal@fairyai.co.uk</a></p>
+                        <p style="margin-bottom: 0;">Please include your account email address in your request so we can verify your identity.</p>
+                    </div>
+                </div>
+
+                <div class="content-card">
+                    <h2>📊 What Gets Deleted</h2>
+                    <p>When you delete your account, the following will be permanently removed after the 30-day grace period:</p>
+                    <ul>
+                        <li>All your created stories and story history</li>
+                        <li>Custom characters you've created (including all 6 art styles)</li>
+                        <li>Generated songs and narrations</li>
+                        <li>Account preferences and settings</li>
+                        <li>Subscription and purchase history</li>
+                        <li>Support tickets and feedback</li>
+                        <li>Any remaining Fairy Dust credits</li>
+                    </ul>
+                </div>
+
+                <div class="content-card">
+                    <h2>⏱️ 30-Day Grace Period</h2>
+                    <p>We understand that sometimes deletions are accidental. Here's what happens:</p>
+                    <ul>
+                        <li><strong>Immediately:</strong> Your account is deactivated and you can no longer log in</li>
+                        <li><strong>Days 1-30:</strong> Your data is retained but inaccessible. You can email <a href="mailto:legal@fairyai.co.uk">legal@fairyai.co.uk</a> to recover your account</li>
+                        <li><strong>After 30 days:</strong> All your data is permanently deleted from our servers and cannot be recovered</li>
+                    </ul>
+                    <p style="margin-top: 1.5rem;"><strong>Note:</strong> This grace period is for your protection and is required by data protection laws.</p>
+                </div>
+
+                <div class="content-card">
+                    <h2>💬 Having Issues? Talk to Us First</h2>
+                    <p>Before you delete your account, we'd love to help resolve any issues you're experiencing. Most problems can be fixed quickly:</p>
+                    <ul>
+                        <li>Not happy with story quality? We can adjust settings</li>
+                        <li>Concerned about billing? We can help clarify charges</li>
+                        <li>App not working properly? We can troubleshoot</li>
+                        <li>Privacy concerns? We can explain what data we collect</li>
+                    </ul>
+                    <p style="margin-top: 1.5rem;">
+                        <a href="mailto:support@fairyai.co.uk?subject=%5BFairyAI%20Support%5D&body=Hi%20FairyAI%20team,%0A%0AI'm%20considering%20deleting%20my%20account%20because:%0A%0A%0AThanks!" class="btn btn-primary">Contact Support Instead</a>
+                    </p>
+                </div>
+
             </div>
         </div>
-        
-        <div class="section">
-            <h2>📊 What Gets Deleted</h2>
-            <p>When you delete your account, the following will be permanently removed:</p>
-            <ul>
-                <li>All your created stories and story history</li>
-                <li>Custom characters you've created</li>
-                <li>Generated songs and narrations</li>
-                <li>Account preferences and settings</li>
-                <li>Subscription and purchase history</li>
-                <li>User feedback and support tickets</li>
-            </ul>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="https://tiktok.com" title="TikTok" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.03-2.86-.3-4.11-1.01-2.19-1.25-3.66-3.67-3.74-6.21-.03-1.41.35-2.82 1.11-3.97.97-1.47 2.51-2.54 4.26-2.91 1.82-.39 3.74.06 5.2 1.17v4.53c-.42-.21-.87-.35-1.32-.44-1.33-.28-2.75.17-3.63 1.19-.5.58-.78 1.34-.78 2.11 0 .77.28 1.53.78 2.11.88 1.02 2.3 1.47 3.63 1.19.44-.09.86-.24 1.25-.44.39-.19.74-.44 1.05-.74.66-.64 1.08-1.51 1.18-2.44.01-.09.01-.18.02-.27.01-.91.01-1.82 0-2.73 0-2.02 0-4.03.01-6.05z"/></svg></a>
+                <a href="https://x.com" title="X (Twitter)" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+                <a href="https://instagram.com" title="Instagram" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"/></svg></a>
+            </div>
+            <div class="footer-links">
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Service</a>
+                <a href="support.html">Support</a>
+                <a href="delete-account.html">Delete Account</a>
+            </div>
+            <p class="footer-text">© 2025 Rebel AI Ltd. All rights reserved. Made in Scotland.</p>
         </div>
-        
-        <div class="section">
-            <h2>⏱️ Data Retention</h2>
-            <p>For legal compliance and security purposes:</p>
-            <ul>
-                <li>Your account is immediately deactivated</li>
-                <li>Data is retained for 30 days before permanent deletion</li>
-                <li>This allows for account recovery in case of accidental deletion</li>
-            </ul>
-        </div>
-        
-        <div class="section">
-            <h2>💬 Need Help Instead?</h2>
-            <p>If you're experiencing issues, our support team would love to help before you delete your account:</p>
-            <p><a href="mailto:legal@fairyai.co.uk">Contact Support</a></p>
-        </div>
-        
-        <div class="footer">
-            <a href="/">Home</a> | 
-            <a href="/privacy">Privacy Policy</a> | 
-            <a href="/terms">Terms of Service</a>
-            <p>© 2024 FairyAI. All rights reserved.</p>
-        </div>
-    </div>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const hamburgerBtn = document.getElementById('hamburger-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+
+            hamburgerBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('open');
+                hamburgerBtn.classList.toggle('open');
+            });
+
+            mobileNavLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.remove('open');
+                    hamburgerBtn.classList.remove('open');
+                });
+            });
+        });
+    </script>
+
 </body>
 </html>
