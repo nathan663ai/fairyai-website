@@ -217,9 +217,12 @@ const HowItWorksPage: React.FC = () => {
                 </div>
               </div>
 
-              <div className="mt-6 p-4 bg-soft-blue-50 rounded-lg">
-                <p className="text-neutral-700">
+              <div className="mt-6 p-4 bg-soft-blue-50 rounded-lg border-l-4 border-soft-blue-600">
+                <p className="text-neutral-700 mb-3">
                   <strong>Guest Mode:</strong> Browse Fairy Corner without signing up. 2 free fairy tales + 2 free nursery rhymes to try before you subscribe.
+                </p>
+                <p className="text-neutral-700">
+                  <strong>Free Parent Account:</strong> Sign up to get a bundle of Fairy Dust and try creating characters, stories, songs and narrations—no credit card required.
                 </p>
               </div>
             </div>

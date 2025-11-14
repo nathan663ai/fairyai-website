@@ -1,5 +1,6 @@
 import React from 'react';
 import Hero from '../components/sections/Hero';
+import TryItFree from '../components/sections/TryItFree';
 import Simple3Steps from '../components/sections/Simple3Steps';
 import FeaturesOverview from '../components/sections/FeaturesOverview';
 import WhyDifferentTeaser from '../components/sections/WhyDifferentTeaser';
@@ -13,6 +14,7 @@ const HomePage: React.FC = () => {
   return (
     <>
       <Hero />
+      <TryItFree />
       <Simple3Steps />
       <FeaturesOverview />
       <WhyDifferentTeaser />

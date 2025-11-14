@@ -4,7 +4,7 @@ import ImagePlaceholder from '../ui/ImagePlaceholder';
 
 const Hero: React.FC = () => {
   return (
-    <section className="relative bg-gradient-to-br from-soft-blue-50 via-white to-soft-green-50 pt-24 pb-16 md:pt-32 md:pb-24">
+    <section className="relative bg-gradient-to-br from-soft-blue-50 via-white to-soft-green-50 pt-28 pb-16 md:pt-36 md:pb-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Left Column - Text Content */}
@@ -39,6 +39,21 @@ const Hero: React.FC = () => {
             {/* Download Buttons */}
             <div className="mb-6">
               <DownloadButtons />
+            </div>
+
+            {/* Free Trial Options */}
+            <div className="bg-white/80 backdrop-blur-sm rounded-lg p-4 max-w-xl mx-auto md:mx-0 border border-neutral-200">
+              <p className="text-sm font-semibold text-neutral-900 mb-2">Try it free in two ways:</p>
+              <ul className="space-y-1 text-sm text-neutral-700">
+                <li className="flex items-start gap-2">
+                  <span className="text-soft-blue-600 mt-0.5">•</span>
+                  <span>Browse Fairy Corner without an account</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-soft-blue-600 mt-0.5">•</span>
+                  <span>Create a free parent account and get a bundle of Fairy Dust to try all features</span>
+                </li>
+              </ul>
             </div>
           </div>
 

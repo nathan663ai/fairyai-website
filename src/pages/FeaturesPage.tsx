@@ -157,12 +157,12 @@ const FeaturesPage: React.FC = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" />
                   </svg>
                 </div>
-                <div className="text-2xl font-bold text-soft-blue-600 mb-1">3 Dust</div>
+                <div className="text-2xl font-bold text-soft-blue-600 mb-1">2 Dust</div>
                 <div className="text-sm text-neutral-600">Per Song</div>
               </div>
             </div>
 
-            <ul className="space-y-3 text-neutral-700">
+            <ul className="space-y-3 text-neutral-700 mb-6">
               <li className="flex items-start gap-2">
                 <span className="text-soft-green-600">✓</span>
                 <span>Monthly allocation included with premium subscription</span>
@@ -180,6 +180,12 @@ const FeaturesPage: React.FC = () => {
                 <span>Track your balance in Settings</span>
               </li>
             </ul>
+
+            <div className="p-4 bg-white rounded-lg border-2 border-soft-blue-200">
+              <p className="text-neutral-700 text-sm">
+                <strong>Free to start:</strong> Create a parent account and get a bundle of Fairy Dust to try all features—no credit card required. Guest mode also available for browsing Fairy Corner.
+              </p>
+            </div>
           </div>
         </div>
       </section>

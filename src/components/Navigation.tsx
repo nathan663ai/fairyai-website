@@ -37,15 +37,15 @@ const Navigation: React.FC = () => {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 right-0 bg-white shadow-sm z-50">
+    <nav className="fixed top-0 left-0 right-0 bg-slate-900 shadow-lg z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-20 py-4">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
             <img
               src="/images/splash-logo-transparent.png"
               alt="FairyAI Logo"
-              className="h-10 w-auto"
+              className="h-12 w-auto"
             />
           </Link>
 
@@ -56,7 +56,7 @@ const Navigation: React.FC = () => {
                 <Link
                   key={index}
                   to={link.path}
-                  className="text-neutral-700 hover:text-soft-blue-600 font-medium transition-colors"
+                  className="text-neutral-200 hover:text-soft-blue-300 font-medium transition-colors"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {link.label}
@@ -65,7 +65,7 @@ const Navigation: React.FC = () => {
                 <button
                   key={index}
                   onClick={() => scrollToSection(link.id!)}
-                  className="text-neutral-700 hover:text-soft-blue-600 font-medium transition-colors"
+                  className="text-neutral-200 hover:text-soft-blue-300 font-medium transition-colors"
                 >
                   {link.label}
                 </button>
@@ -76,7 +76,7 @@ const Navigation: React.FC = () => {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden p-2"
+            className="md:hidden p-2 text-neutral-200"
             aria-label="Toggle menu"
           >
             {isMenuOpen ? (
@@ -94,7 +94,7 @@ const Navigation: React.FC = () => {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="md:hidden bg-white border-t">
+        <div className="md:hidden bg-slate-800 border-t border-slate-700">
           <div className="px-4 py-3 space-y-3">
             {navLinks.map((link, index) => (
               link.path ? (
@@ -102,7 +102,7 @@ const Navigation: React.FC = () => {
                   key={index}
                   to={link.path}
                   onClick={() => setIsMenuOpen(false)}
-                  className="block w-full text-left px-3 py-2 text-neutral-700 hover:bg-neutral-50 rounded-lg"
+                  className="block w-full text-left px-3 py-2 text-neutral-200 hover:bg-slate-700 rounded-lg"
                 >
                   {link.label}
                 </Link>
@@ -110,7 +110,7 @@ const Navigation: React.FC = () => {
                 <button
                   key={index}
                   onClick={() => scrollToSection(link.id!)}
-                  className="block w-full text-left px-3 py-2 text-neutral-700 hover:bg-neutral-50 rounded-lg"
+                  className="block w-full text-left px-3 py-2 text-neutral-200 hover:bg-slate-700 rounded-lg"
                 >
                   {link.label}
                 </button>

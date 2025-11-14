@@ -4,7 +4,9 @@ const DownloadButtons: React.FC = () => {
   return (
     <div className="flex flex-col sm:flex-row gap-4 items-center justify-center">
       <a
-        href="#"
+        href="https://apps.apple.com/app/id6749895614"
+        target="_blank"
+        rel="noreferrer"
         className="inline-block transition-transform hover:scale-105"
         aria-label="Download on the App Store"
       >
@@ -20,7 +22,9 @@ const DownloadButtons: React.FC = () => {
       </a>
 
       <a
-        href="#"
+        href="https://play.google.com/store/apps/details?id=com.rebelai.fairyaiapp"
+        target="_blank"
+        rel="noreferrer"
         className="inline-block transition-transform hover:scale-105"
         aria-label="Get it on Google Play"
       >
