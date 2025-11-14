@@ -51,8 +51,8 @@ const FeaturesOverview: React.FC = () => {
         {/* Section Header */}
         <div className="text-center mb-12">
           <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">
-            <span className="text-neutral-900">Everything You Need for </span>
-            <span className="text-gradient-playful">Magical Bedtimes</span>
+            <span className="text-slate-900">Everything You Need for </span>
+            <span className="text-soft-blue-600">Magical Bedtimes</span>
           </h2>
           <p className="text-lg text-neutral-600 max-w-2xl mx-auto">
             Characters, stories, songs, and narration—all in one safe, parent-built app.
@@ -69,7 +69,7 @@ const FeaturesOverview: React.FC = () => {
               </div>
 
               {/* Content */}
-              <h3 className="font-display text-xl font-semibold mb-2 bg-gradient-to-r from-soft-blue-700 to-soft-green-700 bg-clip-text text-transparent">
+              <h3 className="font-display text-xl font-semibold mb-2 text-slate-900">
                 {feature.title}
               </h3>
               <p className="text-neutral-600 text-sm mb-4">

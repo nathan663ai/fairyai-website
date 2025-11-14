@@ -7,8 +7,8 @@ const TryItFree: React.FC = () => {
         {/* Section Header */}
         <div className="text-center mb-12">
           <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">
-            <span className="text-neutral-900">Try FairyAI free in </span>
-            <span className="text-gradient-blue-green">two ways</span>
+            <span className="text-slate-900">Try FairyAI free in </span>
+            <span className="text-soft-blue-600">two ways</span>
           </h2>
           <p className="text-lg text-neutral-600 max-w-2xl mx-auto">
             No credit card required. Start exploring right away.

@@ -9,10 +9,8 @@ const Hero: React.FC = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Left Column - Text Content */}
           <div className="text-center md:text-left">
-            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-              <span className="text-gradient-animated">
-                Bedtime stories that grow with your child
-              </span>
+            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-6 text-slate-900">
+              Bedtime stories that grow with your child
             </h1>
             <p className="text-xl md:text-2xl text-neutral-700 mb-6 font-medium">
               Create characters they know, continue the same adventure night after night, and add songs and narration—all in a safe app built by a parent for parents.
@@ -73,9 +71,8 @@ const Hero: React.FC = () => {
       </div>
 
       {/* Decorative Background Elements */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-soft-blue-200 to-fairy-purple-200 rounded-full blur-3xl opacity-40 -z-10 animate-pulse"></div>
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-br from-soft-green-200 to-fairy-gold-200 rounded-full blur-3xl opacity-40 -z-10 animate-pulse" style={{animationDelay: '1s'}}></div>
-      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-fairy-purple-100 rounded-full blur-3xl opacity-20 -z-10"></div>
+      <div className="absolute top-0 right-0 w-96 h-96 bg-soft-blue-100 rounded-full blur-3xl opacity-30 -z-10"></div>
+      <div className="absolute bottom-0 left-0 w-96 h-96 bg-soft-green-100 rounded-full blur-3xl opacity-30 -z-10"></div>
     </section>
   );
 };

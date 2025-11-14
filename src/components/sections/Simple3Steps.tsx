@@ -47,8 +47,8 @@ const Simple3Steps: React.FC = () => {
         {/* Section Header */}
         <div className="text-center mb-12">
           <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">
-            <span className="text-gradient-magical">3 Steps</span>
-            <span className="text-neutral-900"> to Your Bedtime Story</span>
+            <span className="text-soft-green-600">3 Steps</span>
+            <span className="text-slate-900"> to Your Bedtime Story</span>
           </h2>
           <p className="text-lg text-neutral-600 max-w-2xl mx-auto">
             Too tired? Start in 2 taps. Want more control? We've got that too.

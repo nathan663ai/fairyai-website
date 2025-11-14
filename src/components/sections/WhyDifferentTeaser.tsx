@@ -44,8 +44,8 @@ const WhyDifferentTeaser: React.FC = () => {
         {/* Section Header */}
         <div className="text-center mb-12">
           <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">
-            <span className="text-neutral-900">Why FairyAI is </span>
-            <span className="text-gradient-magical drop-shadow-lg">Different</span>
+            <span className="text-slate-900">Why FairyAI is </span>
+            <span className="text-soft-green-600">Different</span>
           </h2>
           <p className="text-lg text-neutral-600 max-w-2xl mx-auto">
             Not just another AI story generator. Here's what sets us apart.
