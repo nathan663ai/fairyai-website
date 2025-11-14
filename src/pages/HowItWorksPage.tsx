@@ -1,5 +1,6 @@
 import React from 'react';
 import ImagePlaceholder from '../components/ui/ImagePlaceholder';
+import DownloadButtons from '../components/ui/DownloadButtons';
 
 const HowItWorksPage: React.FC = () => {
   return (
@@ -222,7 +223,7 @@ const HowItWorksPage: React.FC = () => {
                   <strong>Guest Mode:</strong> Browse Fairy Corner without signing up. 2 free fairy tales + 2 free nursery rhymes to try before you subscribe.
                 </p>
                 <p className="text-neutral-700">
-                  <strong>Free Parent Account:</strong> Sign up to get a bundle of Fairy Dust and try creating characters, stories, songs and narrations—no credit card required.
+                  <strong>Free Parent Account:</strong> Sign up to get 6 free Fairy Dust + 7-day Fairy Corner trial. Try creating characters, stories, songs and narrations—no credit card required.
                 </p>
               </div>
             </div>
@@ -268,7 +269,7 @@ const HowItWorksPage: React.FC = () => {
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-soft-blue-600 mt-1">•</span>
-                  <span>11+ languages with native-quality audio</span>
+                  <span>12 languages with native-quality audio</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-soft-blue-600 mt-1">•</span>
@@ -403,6 +404,19 @@ const HowItWorksPage: React.FC = () => {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Download CTA */}
+      <section className="py-16 md:py-24 bg-gradient-to-br from-soft-blue-50 to-soft-green-50">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="font-display text-3xl md:text-4xl font-bold text-neutral-900 mb-4">
+            Ready to Transform Bedtime?
+          </h2>
+          <p className="text-lg text-neutral-600 mb-8 max-w-2xl mx-auto">
+            Start your free trial today. 6 free Fairy Dust + 7 days of Fairy Corner access. No credit card required.
+          </p>
+          <DownloadButtons />
         </div>
       </section>
     </div>

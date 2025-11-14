@@ -33,7 +33,7 @@ const Hero: React.FC = () => {
             </ul>
 
             <p className="text-sm text-neutral-600 mb-4 italic">
-              First stories free • No credit card required
+              6 free Fairy Dust + 7-day trial • No credit card required
             </p>
 
             {/* Download Buttons */}
@@ -51,7 +51,7 @@ const Hero: React.FC = () => {
                 </li>
                 <li className="flex items-center justify-center gap-2">
                   <span className="text-soft-blue-600">•</span>
-                  <span>Or create a free account for full access + trial dust</span>
+                  <span>Or create a free account: 6 Fairy Dust + 7-day Fairy Corner trial</span>
                 </li>
               </ul>
             </div>

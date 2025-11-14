@@ -48,7 +48,7 @@ const TryItFree: React.FC = () => {
                 Sign Up for Full Access
               </h3>
               <p className="text-neutral-700 leading-relaxed mb-3">
-                Create a free account to access all areas of the app plus get a bundle of Fairy Dust to try creating characters, stories, songs and narrations.
+                Create a free account to access all areas of the app plus get 6 free Fairy Dust + 7-day Fairy Corner trial. Try creating characters, stories, songs and narrations.
               </p>
               <p className="text-sm font-semibold text-soft-green-700 bg-soft-green-50 px-3 py-2 rounded-lg inline-block">
                 100% free • No payment required

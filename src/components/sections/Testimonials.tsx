@@ -19,14 +19,14 @@ const Testimonials: React.FC = () => {
       role: 'Mum of 1 (age 7)'
     },
     {
-      quote: 'Perfect mix of fun and safe.',
+      quote: 'The songs are absolutely brilliant! My daughter created a character, then made a song about her, and now we sing it every morning. The lyrics are age-appropriate and catchy. I love that we can download the MP3s for car journeys.',
       name: 'Emily',
-      role: 'Mum of 1'
+      role: 'Mum of 1 (age 5)'
     },
     {
-      quote: 'His ideas come to life in the stories!',
+      quote: "We created a dragon character three months ago, and he's been in 15+ stories now. My kids feel like he's a real friend. The Fairy Corner classics are perfect for when we run low on Dust - my youngest loves the daily AI stories.",
       name: 'James',
-      role: 'Dad of 3'
+      role: 'Dad of 3 (ages 4, 6, 9)'
     }
   ];
 

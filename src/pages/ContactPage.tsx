@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 const ContactPage: React.FC = () => {
   useEffect(() => {
@@ -82,24 +83,24 @@ const ContactPage: React.FC = () => {
           <div className="mt-12 text-center">
             <h3 className="text-xl font-bold text-neutral-900 mb-6">Looking for something specific?</h3>
             <div className="flex flex-wrap justify-center gap-4">
-              <a
-                href="/privacy"
+              <Link
+                to="/privacy"
                 className="inline-block bg-white border-2 border-neutral-300 hover:border-soft-blue-500 text-neutral-700 hover:text-soft-blue-600 font-medium px-6 py-3 rounded-lg transition-all"
               >
                 Privacy Policy
-              </a>
-              <a
-                href="/terms"
+              </Link>
+              <Link
+                to="/terms"
                 className="inline-block bg-white border-2 border-neutral-300 hover:border-soft-blue-500 text-neutral-700 hover:text-soft-blue-600 font-medium px-6 py-3 rounded-lg transition-all"
               >
                 Terms of Service
-              </a>
-              <a
-                href="/account-delete"
+              </Link>
+              <Link
+                to="/account-delete"
                 className="inline-block bg-white border-2 border-neutral-300 hover:border-soft-blue-500 text-neutral-700 hover:text-soft-blue-600 font-medium px-6 py-3 rounded-lg transition-all"
               >
                 Delete Account
-              </a>
+              </Link>
             </div>
           </div>
 

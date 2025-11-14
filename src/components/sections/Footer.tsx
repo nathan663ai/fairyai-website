@@ -20,7 +20,7 @@ const Footer: React.FC = () => {
         if (element) {
           element.scrollIntoView({ behavior: 'smooth' });
         }
-      }, 100);
+      }, 300); // Increased timeout for more reliable scrolling
     }
   };
 
@@ -120,9 +120,12 @@ const Footer: React.FC = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-neutral-800 pt-8">
-          <p className="text-center text-sm text-neutral-500">
+        <div className="border-t border-neutral-800 pt-8 text-center">
+          <p className="text-sm text-neutral-500 mb-2">
             © {currentYear} FairyAI. Made with love for little dreamers and their families.
+          </p>
+          <p className="text-xs text-neutral-600">
+            Rebel AI Ltd • Company No. SC839626 • Scotland, UK
           </p>
         </div>
       </div>

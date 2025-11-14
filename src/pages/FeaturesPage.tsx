@@ -1,12 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import DownloadButtons from '../components/ui/DownloadButtons';
 
 const FeaturesPage: React.FC = () => {
   const differentiators = [
     'Characters your child actually remembers, with traits, abilities, and visual identity that persist forever',
     'Stories that continue into full chapter books with 2-tap instant continuation or advanced mode',
     '5 age groups (2-3, 4-6, 7-9, 10-12, 12+) with vocabulary and themes that adapt automatically',
-    'Stories, character images, cover art, narration in 11 languages, and songs with lyrics—full creative stack',
+    'Stories, character images, cover art, narration in 12 languages, and songs with lyrics—full creative stack',
     '12 languages with cultural guidance, not just translation—native-quality narration',
     'Curated classics + AI daily stories + your custom creations in Fairy Corner library',
     'Production-grade safety: age-based filters, rate limiting, abuse protection, no PII logging'
@@ -76,7 +77,7 @@ const FeaturesPage: React.FC = () => {
                 </svg>
               </div>
               <h3 className="font-semibold text-xl text-neutral-900 mb-2">Songs & Narration</h3>
-              <p className="text-neutral-700">4 voices, 11 languages, bedtime pacing. Songs with lyrics from stories/characters.</p>
+              <p className="text-neutral-700">4 voices, 12 languages, bedtime pacing. Songs with lyrics from stories/characters.</p>
               <Link to="/how-it-works" className="text-soft-blue-600 hover:underline text-sm mt-2 inline-block">
                 Learn more →
               </Link>
@@ -112,8 +113,97 @@ const FeaturesPage: React.FC = () => {
         </div>
       </section>
 
-      {/* Fairy Dust */}
+      {/* Comparison Table */}
       <section className="py-16 md:py-24 bg-white">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="font-display text-3xl md:text-4xl font-bold text-neutral-900 mb-4">
+              How We Compare
+            </h2>
+            <p className="text-lg text-neutral-600">
+              See what makes FairyAI the complete bedtime story solution
+            </p>
+          </div>
+
+          <div className="overflow-x-auto">
+            <table className="w-full border-collapse">
+              <thead>
+                <tr className="bg-neutral-100">
+                  <th className="text-left p-4 font-semibold text-neutral-900">Feature</th>
+                  <th className="text-center p-4 font-semibold text-soft-blue-600 bg-soft-blue-50">FairyAI</th>
+                  <th className="text-center p-4 font-semibold text-neutral-700">Generic AI Apps</th>
+                  <th className="text-center p-4 font-semibold text-neutral-700">Traditional Apps</th>
+                </tr>
+              </thead>
+              <tbody className="bg-white">
+                <tr className="border-b border-neutral-200">
+                  <td className="p-4 text-neutral-900">Persistent characters with memory</td>
+                  <td className="text-center p-4 bg-soft-blue-50 text-soft-green-600 font-bold text-xl">✓</td>
+                  <td className="text-center p-4 text-neutral-400">✗</td>
+                  <td className="text-center p-4 text-neutral-400">✗</td>
+                </tr>
+                <tr className="border-b border-neutral-200">
+                  <td className="p-4 text-neutral-900">Story continuation into chapter books</td>
+                  <td className="text-center p-4 bg-soft-blue-50 text-soft-green-600 font-bold text-xl">✓</td>
+                  <td className="text-center p-4 text-neutral-400">✗</td>
+                  <td className="text-center p-4 text-neutral-400">✗</td>
+                </tr>
+                <tr className="border-b border-neutral-200">
+                  <td className="p-4 text-neutral-900">Custom narration in 12 languages</td>
+                  <td className="text-center p-4 bg-soft-blue-50 text-soft-green-600 font-bold text-xl">✓</td>
+                  <td className="text-center p-4 text-neutral-400">✗</td>
+                  <td className="text-center p-4 text-neutral-600">Limited</td>
+                </tr>
+                <tr className="border-b border-neutral-200">
+                  <td className="p-4 text-neutral-900">Songs with lyrics from your stories</td>
+                  <td className="text-center p-4 bg-soft-blue-50 text-soft-green-600 font-bold text-xl">✓</td>
+                  <td className="text-center p-4 text-neutral-400">✗</td>
+                  <td className="text-center p-4 text-neutral-400">✗</td>
+                </tr>
+                <tr className="border-b border-neutral-200">
+                  <td className="p-4 text-neutral-900">Age-based content filters (5 age groups)</td>
+                  <td className="text-center p-4 bg-soft-blue-50 text-soft-green-600 font-bold text-xl">✓</td>
+                  <td className="text-center p-4 text-neutral-600">Basic</td>
+                  <td className="text-center p-4 text-soft-green-600 font-bold text-xl">✓</td>
+                </tr>
+                <tr className="border-b border-neutral-200">
+                  <td className="p-4 text-neutral-900">Curated classics library (Fairy Corner)</td>
+                  <td className="text-center p-4 bg-soft-blue-50 text-soft-green-600 font-bold text-xl">✓</td>
+                  <td className="text-center p-4 text-neutral-400">✗</td>
+                  <td className="text-center p-4 text-soft-green-600 font-bold text-xl">✓</td>
+                </tr>
+                <tr className="border-b border-neutral-200">
+                  <td className="p-4 text-neutral-900">Offline downloads (PDF & MP3)</td>
+                  <td className="text-center p-4 bg-soft-blue-50 text-soft-green-600 font-bold text-xl">✓</td>
+                  <td className="text-center p-4 text-neutral-400">✗</td>
+                  <td className="text-center p-4 text-soft-green-600 font-bold text-xl">✓</td>
+                </tr>
+                <tr className="border-b border-neutral-200">
+                  <td className="p-4 text-neutral-900">Transparent pricing, no lock-in</td>
+                  <td className="text-center p-4 bg-soft-blue-50 text-soft-green-600 font-bold text-xl">✓</td>
+                  <td className="text-center p-4 text-neutral-600">Varies</td>
+                  <td className="text-center p-4 text-neutral-600">Subscriptions</td>
+                </tr>
+                <tr>
+                  <td className="p-4 text-neutral-900 font-semibold">Your child's ideas come to life</td>
+                  <td className="text-center p-4 bg-soft-blue-50 text-soft-green-600 font-bold text-xl">✓</td>
+                  <td className="text-center p-4 text-neutral-600">Limited</td>
+                  <td className="text-center p-4 text-neutral-400">✗</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div className="mt-8 text-center">
+            <p className="text-neutral-600 italic">
+              FairyAI combines the best of both worlds: personalization from AI with the safety and polish of traditional apps.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Fairy Dust */}
+      <section className="py-16 md:py-24 bg-neutral-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <div className="mb-4 flex justify-center">
@@ -130,7 +220,7 @@ const FeaturesPage: React.FC = () => {
           </div>
 
           <div className="bg-gradient-to-br from-soft-blue-50 to-soft-green-50 rounded-2xl p-8 md:p-12">
-            <div className="grid md:grid-cols-3 gap-6 mb-8">
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
               <div className="bg-white rounded-lg p-6 text-center">
                 <div className="mb-2 flex justify-center">
                   <svg className="w-10 h-10 text-soft-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -160,6 +250,16 @@ const FeaturesPage: React.FC = () => {
                 <div className="text-2xl font-bold text-soft-blue-600 mb-1">2 Dust</div>
                 <div className="text-sm text-neutral-600">Per Song</div>
               </div>
+
+              <div className="bg-white rounded-lg p-6 text-center">
+                <div className="mb-2 flex justify-center">
+                  <svg className="w-10 h-10 text-soft-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" />
+                  </svg>
+                </div>
+                <div className="text-2xl font-bold text-soft-blue-600 mb-1">2 Dust</div>
+                <div className="text-sm text-neutral-600">Add Narration</div>
+              </div>
             </div>
 
             <ul className="space-y-3 text-neutral-700 mb-6">
@@ -183,8 +283,156 @@ const FeaturesPage: React.FC = () => {
 
             <div className="p-4 bg-white rounded-lg border-2 border-soft-blue-200">
               <p className="text-neutral-700 text-sm">
-                <strong>Free to start:</strong> Create a parent account and get a bundle of Fairy Dust to try all features—no credit card required. Guest mode also available for browsing Fairy Corner.
+                <strong>Free to start:</strong> Create a parent account and get 6 free Fairy Dust + 7-day Fairy Corner trial—no credit card required. Guest mode also available with 2 free fairy tales + 2 free nursery rhymes.
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Pricing Plans */}
+      <section className="py-16 md:py-24 bg-neutral-50">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="font-display text-3xl md:text-4xl font-bold text-neutral-900 mb-4">
+              Choose Your Plan
+            </h2>
+            <p className="text-lg text-neutral-600 max-w-2xl mx-auto">
+              All plans include access to all features. Pick the Dust allocation that fits your family.
+            </p>
+          </div>
+
+          {/* Subscription Tiers */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-6 mb-12">
+            {/* Free Tier */}
+            <div className="bg-white rounded-xl p-6 shadow-sm border-2 border-neutral-200">
+              <h3 className="font-display text-xl font-semibold text-neutral-900 mb-2">Free</h3>
+              <div className="text-3xl font-bold text-neutral-900 mb-4">£0<span className="text-base font-normal text-neutral-600">/month</span></div>
+              <ul className="space-y-2 text-sm text-neutral-700 mb-6">
+                <li className="flex items-start gap-2">
+                  <span className="text-soft-green-600">✓</span>
+                  <span>6 Dust welcome bonus</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-soft-green-600">✓</span>
+                  <span>7-day Fairy Corner trial</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-soft-green-600">✓</span>
+                  <span>No monthly refills</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Story Starter */}
+            <div className="bg-white rounded-xl p-6 shadow-sm border-2 border-soft-blue-200">
+              <h3 className="font-display text-xl font-semibold text-neutral-900 mb-2">Story Starter</h3>
+              <div className="text-3xl font-bold text-soft-blue-600 mb-4">£2.39<span className="text-base font-normal text-neutral-600">/month</span></div>
+              <ul className="space-y-2 text-sm text-neutral-700 mb-6">
+                <li className="flex items-start gap-2">
+                  <span className="text-soft-green-600">✓</span>
+                  <span><strong>20 Dust/month</strong></span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-soft-green-600">✓</span>
+                  <span>All features unlocked</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-soft-green-600">✓</span>
+                  <span>Save £4.69 on annual</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Dream Weaver */}
+            <div className="bg-white rounded-xl p-6 shadow-sm border-2 border-soft-green-200 relative">
+              <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-soft-green-500 text-white px-3 py-1 rounded-full text-xs font-semibold">
+                POPULAR
+              </div>
+              <h3 className="font-display text-xl font-semibold text-neutral-900 mb-2">Dream Weaver</h3>
+              <div className="text-3xl font-bold text-soft-green-600 mb-4">£5.99<span className="text-base font-normal text-neutral-600">/month</span></div>
+              <ul className="space-y-2 text-sm text-neutral-700 mb-6">
+                <li className="flex items-start gap-2">
+                  <span className="text-soft-green-600">✓</span>
+                  <span><strong>60 Dust/month</strong></span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-soft-green-600">✓</span>
+                  <span>All features unlocked</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-soft-green-600">✓</span>
+                  <span>Save £12.89 on annual</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Story Circle */}
+            <div className="bg-white rounded-xl p-6 shadow-sm border-2 border-neutral-200">
+              <h3 className="font-display text-xl font-semibold text-neutral-900 mb-2">Story Circle</h3>
+              <div className="text-3xl font-bold text-neutral-900 mb-4">£10.99<span className="text-base font-normal text-neutral-600">/month</span></div>
+              <ul className="space-y-2 text-sm text-neutral-700 mb-6">
+                <li className="flex items-start gap-2">
+                  <span className="text-soft-green-600">✓</span>
+                  <span><strong>125 Dust/month</strong></span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-soft-green-600">✓</span>
+                  <span>All features unlocked</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-soft-green-600">✓</span>
+                  <span>Save £26.89 on annual</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Endless Tales */}
+            <div className="bg-white rounded-xl p-6 shadow-sm border-2 border-neutral-200">
+              <h3 className="font-display text-xl font-semibold text-neutral-900 mb-2">Endless Tales</h3>
+              <div className="text-3xl font-bold text-neutral-900 mb-4">£17.99<span className="text-base font-normal text-neutral-600">/month</span></div>
+              <ul className="space-y-2 text-sm text-neutral-700 mb-6">
+                <li className="flex items-start gap-2">
+                  <span className="text-soft-green-600">✓</span>
+                  <span><strong>225 Dust/month</strong></span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-soft-green-600">✓</span>
+                  <span>All features unlocked</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-soft-green-600">✓</span>
+                  <span>Save £45.89 on annual</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Dust Top-Ups */}
+          <div className="bg-white rounded-2xl p-8">
+            <h3 className="font-display text-2xl font-bold text-neutral-900 mb-6 text-center">Fairy Dust Top-Ups</h3>
+            <p className="text-center text-neutral-600 mb-6">Need more Dust? Top up anytime. <strong>Bought Dust never expires!</strong></p>
+            <div className="grid md:grid-cols-3 gap-6 max-w-3xl mx-auto">
+              <div className="bg-neutral-50 rounded-lg p-6 text-center border-2 border-neutral-200">
+                <div className="text-2xl font-bold text-neutral-900 mb-2">15 Dust</div>
+                <div className="text-lg font-semibold text-soft-blue-600 mb-3">£2.39</div>
+                <div className="text-xs text-neutral-500">Fairy Dust Sprinkle</div>
+              </div>
+
+              <div className="bg-soft-green-50 rounded-lg p-6 text-center border-2 border-soft-green-300 relative">
+                <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-soft-green-600 text-white px-3 py-1 rounded-full text-xs font-semibold">
+                  BEST VALUE
+                </div>
+                <div className="text-2xl font-bold text-neutral-900 mb-2">45 Dust</div>
+                <div className="text-lg font-semibold text-soft-green-600 mb-3">£4.79</div>
+                <div className="text-xs text-neutral-500">Fairy Dust Pouch</div>
+              </div>
+
+              <div className="bg-neutral-50 rounded-lg p-6 text-center border-2 border-neutral-200">
+                <div className="text-2xl font-bold text-neutral-900 mb-2">100 Dust</div>
+                <div className="text-lg font-semibold text-soft-blue-600 mb-3">£10.79</div>
+                <div className="text-xs text-neutral-500">Fairy Dust Chest</div>
+              </div>
             </div>
           </div>
         </div>
@@ -197,7 +445,7 @@ const FeaturesPage: React.FC = () => {
             <div className="bg-white rounded-2xl p-8">
               <h3 className="font-display text-2xl font-bold text-neutral-900 mb-6">12 Languages</h3>
               <div className="grid grid-cols-2 gap-4">
-                {['English (UK/US)', 'Spanish', 'French', 'German', 'Italian', 'Portuguese', 'Dutch', 'Polish', 'Chinese', 'Japanese', 'Korean'].map((lang, i) => (
+                {['English (UK)', 'English (US)', 'Spanish', 'French', 'German', 'Italian', 'Portuguese', 'Dutch', 'Polish', 'Chinese', 'Japanese', 'Korean'].map((lang, i) => (
                   <div key={i} className="flex items-center gap-2 text-neutral-700">
                     <span className="text-soft-blue-600">✓</span>
                     <span>{lang}</span>
@@ -224,6 +472,95 @@ const FeaturesPage: React.FC = () => {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-16 md:py-24 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="font-display text-3xl md:text-4xl font-bold text-neutral-900 mb-4">
+              Frequently Asked Questions
+            </h2>
+            <p className="text-lg text-neutral-600">
+              Everything you need to know about FairyAI
+            </p>
+          </div>
+
+          <div className="space-y-6">
+            {/* FAQ 1 */}
+            <div className="bg-neutral-50 rounded-xl p-6">
+              <h3 className="font-semibold text-lg text-neutral-900 mb-3">
+                What if I don't like a generated story?
+              </h3>
+              <p className="text-neutral-700 leading-relaxed">
+                You'll need to generate a new story, which will cost Fairy Dust again. However, if generation fails due to a technical issue (timeout, API error, etc.), you'll receive an automatic refund. We recommend using the Story Wizard for more control over the output.
+              </p>
+            </div>
+
+            {/* FAQ 2 */}
+            <div className="bg-neutral-50 rounded-xl p-6">
+              <h3 className="font-semibold text-lg text-neutral-900 mb-3">
+                Can I edit stories after creation?
+              </h3>
+              <p className="text-neutral-700 leading-relaxed">
+                No, you can't edit stories directly. However, you can continue any story into a new chapter for just 1 Fairy Dust. Each continuation remembers the previous chapters and maintains continuity. Stories are automatically grouped into chapter books in your library.
+              </p>
+            </div>
+
+            {/* FAQ 3 */}
+            <div className="bg-neutral-50 rounded-xl p-6">
+              <h3 className="font-semibold text-lg text-neutral-900 mb-3">
+                Do my stories expire?
+              </h3>
+              <p className="text-neutral-700 leading-relaxed">
+                No! All your generated stories, characters, and songs are stored permanently. You can access them anytime from your library. Only your monthly Fairy Dust allocation expires at the end of each billing cycle—but purchased Dust top-ups never expire.
+              </p>
+            </div>
+
+            {/* FAQ 4 */}
+            <div className="bg-neutral-50 rounded-xl p-6">
+              <h3 className="font-semibold text-lg text-neutral-900 mb-3">
+                Can siblings share one account?
+              </h3>
+              <p className="text-neutral-700 leading-relaxed">
+                Not yet. FairyAI currently uses single-user accounts. Child profiles are planned for Q1 2026, which will allow multiple children per parent account with separate libraries and preferences. For now, each child needs their own account.
+              </p>
+            </div>
+
+            {/* FAQ 5 */}
+            <div className="bg-neutral-50 rounded-xl p-6">
+              <h3 className="font-semibold text-lg text-neutral-900 mb-3">
+                What happens if generation fails?
+              </h3>
+              <p className="text-neutral-700 leading-relaxed">
+                If a story, character, song, or narration fails to generate due to a technical error, you'll receive an automatic Fairy Dust refund within seconds. The system detects failures (timeouts, API errors, invalid outputs) and refunds you immediately—no support ticket needed.
+              </p>
+            </div>
+
+            {/* FAQ 6 */}
+            <div className="bg-neutral-50 rounded-xl p-6">
+              <h3 className="font-semibold text-lg text-neutral-900 mb-3">
+                Can I print or download stories?
+              </h3>
+              <p className="text-neutral-700 leading-relaxed">
+                Yes! You can download stories as PDFs and narrations as MP3 files for offline use. Perfect for printing bedtime stories, saving favourites, or listening during car rides without internet. All your content is yours to keep.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Download CTA */}
+      <section className="py-16 md:py-24 bg-gradient-to-br from-soft-blue-50 to-soft-green-50">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="font-display text-3xl md:text-4xl font-bold text-neutral-900 mb-4">
+            See Why Thousands of Parents Trust FairyAI
+          </h2>
+          <p className="text-lg text-neutral-600 mb-8 max-w-2xl mx-auto">
+            Join families creating magical bedtime moments every night. Start free—6 Fairy Dust + 7-day Fairy Corner trial. No credit card needed.
+          </p>
+          <DownloadButtons />
         </div>
       </section>
     </div>

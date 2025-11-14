@@ -1,4 +1,5 @@
 import React from 'react';
+import DownloadButtons from '../components/ui/DownloadButtons';
 
 const SafetyPage: React.FC = () => {
   const neverDo = [
@@ -38,12 +39,12 @@ const SafetyPage: React.FC = () => {
       description: 'Text inputs are capped. File uploads have a 16MB limit. These prevent malicious use and keep the service stable for everyone.'
     },
     {
-      title: 'Hashed passwords and security headers',
-      description: 'Passwords are hashed (never stored in plain text). We enforce CSP, HSTS, and XSS protection headers on all pages.'
+      title: 'Secure passwords and browser protection',
+      description: 'Passwords are encrypted (never stored in plain text). Every page uses browser security features that block malicious scripts and force secure connections.'
     },
     {
       title: 'Soft deletion with recovery window',
-      description: 'When you delete your account, we keep it for 90 days in case you change your mind. After that, it\'s permanently removed.'
+      description: 'When you delete your account, we keep it for 30 days in case you change your mind. After that, it\'s permanently removed.'
     },
     {
       title: 'No PII in logs',
@@ -58,7 +59,7 @@ const SafetyPage: React.FC = () => {
     },
     {
       title: 'Full account deletion anytime',
-      description: 'Delete your account from the app. Stories, characters, songs—all gone (after the 90-day recovery window).'
+      description: 'Delete your account from the app. Stories, characters, songs—all gone (after the 30-day recovery window).'
     },
     {
       title: 'Language, notification, and marketing preferences',
@@ -244,6 +245,19 @@ const SafetyPage: React.FC = () => {
           <p className="text-lg text-neutral-600">
             — Nathan, Dad & Founder
           </p>
+        </div>
+      </section>
+
+      {/* Download CTA */}
+      <section className="py-16 md:py-24 bg-gradient-to-br from-soft-blue-50 to-soft-green-50">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="font-display text-3xl md:text-4xl font-bold text-neutral-900 mb-4">
+            Safety You Can Trust, Stories They'll Love
+          </h2>
+          <p className="text-lg text-neutral-600 mb-8 max-w-2xl mx-auto">
+            Download FairyAI and experience bedtime stories built with your family's safety at the core. Start free today.
+          </p>
+          <DownloadButtons />
         </div>
       </section>
     </div>

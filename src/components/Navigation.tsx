@@ -23,7 +23,7 @@ const Navigation: React.FC = () => {
         if (element) {
           element.scrollIntoView({ behavior: 'smooth' });
         }
-      }, 100);
+      }, 300); // Increased timeout for more reliable scrolling
       setIsMenuOpen(false);
     }
   };
