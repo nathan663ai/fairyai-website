@@ -8,7 +8,7 @@ const Hero: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Left Column - Text Content */}
-          <div className="text-center md:text-left">
+          <div className="text-center">
             <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-6 text-slate-900">
               Bedtime stories that grow with your child
             </h1>
@@ -17,16 +17,16 @@ const Hero: React.FC = () => {
             </p>
 
             {/* 3 Key Bullets */}
-            <ul className="text-left space-y-3 mb-8 max-w-xl mx-auto md:mx-0">
-              <li className="flex items-start gap-3">
+            <ul className="space-y-3 mb-8 max-w-xl mx-auto">
+              <li className="flex items-center justify-center gap-3">
                 <span className="text-soft-blue-600 text-xl flex-shrink-0">✓</span>
                 <span className="text-neutral-700">Age-smart stories for ages 2–12</span>
               </li>
-              <li className="flex items-start gap-3">
+              <li className="flex items-center justify-center gap-3">
                 <span className="text-soft-blue-600 text-xl flex-shrink-0">✓</span>
                 <span className="text-neutral-700">Characters, chapters, songs and narration</span>
               </li>
-              <li className="flex items-start gap-3">
+              <li className="flex items-center justify-center gap-3">
                 <span className="text-soft-blue-600 text-xl flex-shrink-0">✓</span>
                 <span className="text-neutral-700">No ads, no trackers, built for children's safety</span>
               </li>
@@ -42,16 +42,16 @@ const Hero: React.FC = () => {
             </div>
 
             {/* Free Trial Options */}
-            <div className="bg-white/80 backdrop-blur-sm rounded-lg p-4 max-w-xl mx-auto md:mx-0 border border-neutral-200">
-              <p className="text-sm font-semibold text-neutral-900 mb-2">Try it free in two ways:</p>
+            <div className="bg-white/80 backdrop-blur-sm rounded-lg p-4 max-w-xl mx-auto border border-neutral-200 text-center">
+              <p className="text-sm font-semibold text-neutral-900 mb-2">Try it free:</p>
               <ul className="space-y-1 text-sm text-neutral-700">
-                <li className="flex items-start gap-2">
-                  <span className="text-soft-blue-600 mt-0.5">•</span>
-                  <span>Browse Fairy Corner without an account</span>
+                <li className="flex items-center justify-center gap-2">
+                  <span className="text-soft-blue-600">•</span>
+                  <span>Browse without signup</span>
                 </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-soft-blue-600 mt-0.5">•</span>
-                  <span>Create a free parent account and get a bundle of Fairy Dust to try all features</span>
+                <li className="flex items-center justify-center gap-2">
+                  <span className="text-soft-blue-600">•</span>
+                  <span>Or create a free account for full access + trial dust</span>
                 </li>
               </ul>
             </div>
