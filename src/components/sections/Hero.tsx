@@ -10,30 +10,30 @@ const Hero: React.FC = () => {
           {/* Left Column - Text Content */}
           <div className="text-center md:text-left">
             <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-neutral-900 leading-tight mb-6">
-              Your Family's AI Storytelling Studio
+              Bedtime stories that grow with your child
             </h1>
             <p className="text-xl md:text-2xl text-neutral-600 mb-6">
-              Create personalised characters with traits and abilities. Build evolving multi-chapter stories together. Add narration and songs in 12 languages. All with age-intelligent safety built by a parent who gets it.
+              Create characters they know, continue the same adventure night after night, and add songs and narration—all in a safe app built by a parent for parents.
             </p>
 
             {/* 3 Key Bullets */}
             <ul className="text-left space-y-3 mb-8 max-w-xl mx-auto md:mx-0">
               <li className="flex items-start gap-3">
                 <span className="text-soft-blue-600 text-xl flex-shrink-0">✓</span>
-                <span className="text-neutral-700">Deep character builder with traits, abilities & custom AI art</span>
+                <span className="text-neutral-700">Age-smart stories for ages 2–12</span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-soft-blue-600 text-xl flex-shrink-0">✓</span>
-                <span className="text-neutral-700">Guided story wizard, 2-tap continuation & multi-chapter books</span>
+                <span className="text-neutral-700">Characters, chapters, songs and narration</span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-soft-blue-600 text-xl flex-shrink-0">✓</span>
-                <span className="text-neutral-700">Songs, narration & Fairy Corner library in 12 languages</span>
+                <span className="text-neutral-700">No ads, no trackers, built for children's safety</span>
               </li>
             </ul>
 
-            <p className="text-sm text-neutral-600 mb-6 italic">
-              Built by a parent, for parents. Not a prompt box—a proper storytelling engine.
+            <p className="text-sm text-neutral-600 mb-4 italic">
+              First stories free • No credit card required
             </p>
 
             {/* Download Buttons */}
