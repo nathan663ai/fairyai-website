@@ -34,6 +34,9 @@ const FounderSection: React.FC = () => {
               <p className="text-lg text-neutral-700 leading-relaxed mb-6">
                 What started as a side project to help my daughter has now grown into a community of families turning bedtime battles into magical moments. I built this app because I needed it for my family, and now I'm thrilled to share it with yours – shaped by the feedback of amazing parents along the way.
               </p>
+              <p className="text-lg text-neutral-700 leading-relaxed mb-6">
+                I didn't want to build just another "type a sentence, get a story" app. I wanted a proper engine—characters my kids would remember, stories that could grow into chapter books, safety I'd trust with my own family. FairyAI is what I built for my kids. I hope it becomes part of your bedtime routine too.
+              </p>
               <p className="text-lg text-neutral-700 leading-relaxed italic">
                 — Nathan, Dad & Founder
               </p>

@@ -4,14 +4,19 @@ import Card from '../ui/Card';
 const Testimonials: React.FC = () => {
   const testimonials = [
     {
-      quote: 'Now my kids can\'t wait for bedtime!',
+      quote: 'We\'ve been continuing the same story for two weeks now—it\'s become a 4-chapter book about their characters. Bedtime used to be a battle. Now they beg for the next chapter!',
       name: 'Sarah',
-      role: 'Mum of 2'
+      role: 'Mum of 2 (ages 6 & 8)'
     },
     {
-      quote: 'His ideas come to life in the stories!',
-      name: 'James',
-      role: 'Dad of 3'
+      quote: 'The narration in French is incredible. My daughter loves hearing stories in both English and French, and the voices sound so natural. The Fairy Corner nursery rhymes are on repeat during car rides.',
+      name: 'Jean-Luc',
+      role: 'Dad of 1 (age 4)'
+    },
+    {
+      quote: 'I was skeptical about "AI stories" until I used the Character Wizard. We built a character based on my son\'s personality, and now every story feels personal. He asks for stories about "his" character every night. The continuation feature is genius—we\'re on chapter 8!',
+      name: 'Priya',
+      role: 'Mum of 1 (age 7)'
     },
     {
       quote: 'Perfect mix of fun and safe.',
@@ -19,14 +24,9 @@ const Testimonials: React.FC = () => {
       role: 'Mum of 1'
     },
     {
-      quote: 'My daughter asks for "her character" every night. The continuity is brilliant!',
-      name: 'Michael',
-      role: 'Dad of 2'
-    },
-    {
-      quote: 'As a busy parent, the narration feature is a lifesaver. Quality time without the exhaustion.',
-      name: 'Priya',
-      role: 'Mum of 2'
+      quote: 'His ideas come to life in the stories!',
+      name: 'James',
+      role: 'Dad of 3'
     }
   ];
 

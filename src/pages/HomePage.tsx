@@ -1,7 +1,8 @@
 import React from 'react';
 import Hero from '../components/sections/Hero';
-import HowItWorks from '../components/sections/HowItWorks';
-import Features from '../components/sections/Features';
+import TwoLayers from '../components/sections/TwoLayers';
+import FourPillars from '../components/sections/FourPillars';
+import WhyDifferent from '../components/sections/WhyDifferent';
 import ExampleStories from '../components/sections/ExampleStories';
 import Testimonials from '../components/sections/Testimonials';
 import FounderSection from '../components/sections/FounderSection';
@@ -12,8 +13,9 @@ const HomePage: React.FC = () => {
   return (
     <>
       <Hero />
-      <HowItWorks />
-      <Features />
+      <TwoLayers />
+      <FourPillars />
+      <WhyDifferent />
       <ExampleStories />
       <Testimonials />
       <FounderSection />

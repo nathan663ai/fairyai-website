@@ -5,25 +5,28 @@ import ImagePlaceholder from '../ui/ImagePlaceholder';
 const ExampleStories: React.FC = () => {
   const stories = [
     {
-      title: 'Teddy\'s Bedtime Song',
-      ageGroup: '2–3 years',
-      theme: 'Bedtime Routine',
-      moral: 'Comfort and routine',
-      excerpt: 'Teddy the bear loves his bedtime routine. First, he brushes his teeth, then he puts on his cozy pajamas. But tonight, Teddy sings a special lullaby that makes the stars twinkle extra bright...'
+      title: 'Luna\'s Moonlight Concert',
+      ageGroup: 'Ages 2-3',
+      theme: 'Music, Friendship',
+      moral: 'Sharing and kindness',
+      excerpt: 'A gentle story created with Quick Story mode, then narrated in British English with the "Shimmer" voice. Added a lullaby song afterward. Luna the bunny plays her magical flute for her forest friends under the moon.',
+      details: '400 words • Bedtime-optimised pacing'
     },
     {
-      title: 'The Robot Who Loved Art',
-      ageGroup: '7–9 years',
-      theme: 'Creativity & Self-Discovery',
-      moral: 'Following your passion',
-      excerpt: 'B3-RT worked in a factory building gadgets all day. But every night, he secretly painted colorful pictures. When his paintings are discovered, B3-RT must decide: keep building, or pursue his true calling...'
+      title: 'The Robot Who Painted Rainbows',
+      ageGroup: 'Ages 7-9',
+      theme: 'Creativity, Self-Expression',
+      moral: 'Being yourself',
+      excerpt: 'Built with the Story Wizard: 2 custom characters (an inventor robot + a shy artist girl), science fiction setting, moral about being yourself. Continued into 3 chapters forming a mini-book.',
+      details: '1000 words per chapter • STEM themes'
     },
     {
-      title: 'The Secret Library',
-      ageGroup: '10–12 years',
-      theme: 'Mystery & Adventure',
-      moral: 'Knowledge and courage',
-      excerpt: 'Maya discovers a hidden door in her school library that leads to an ancient archive filled with magical riddles. To find her way home, she must solve each puzzle before midnight strikes...'
+      title: 'The Last Library of Lumina',
+      ageGroup: 'Ages 10-12',
+      theme: 'Knowledge, Courage, Adventure',
+      moral: 'Wisdom and bravery',
+      excerpt: 'Advanced mode: epic fantasy with 4 custom characters, detailed world-building hints, continued across 5 chapters (1 full book). Added character theme songs and exported the whole series.',
+      details: '1500-1800 words per chapter • Complex vocabulary'
     }
   ];
 
@@ -33,10 +36,10 @@ const ExampleStories: React.FC = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-neutral-900 mb-4">
-            Example Stories
+            From toddler giggles to tween adventures
           </h2>
           <p className="text-lg md:text-xl text-neutral-600 max-w-2xl mx-auto">
-            Every story is unique, tailored to your child's imagination
+            Every story is unique, tailored to your child's age and imagination
           </p>
         </div>
 
@@ -69,9 +72,14 @@ const ExampleStories: React.FC = () => {
               </div>
 
               {/* Excerpt */}
-              <p className="text-neutral-600 flex-grow">
+              <p className="text-neutral-600 flex-grow mb-4">
                 {story.excerpt}
               </p>
+
+              {/* Details */}
+              <div className="text-xs text-neutral-400 border-t border-neutral-200 pt-3">
+                {story.details}
+              </div>
             </Card>
           ))}
         </div>

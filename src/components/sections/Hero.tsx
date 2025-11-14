@@ -10,21 +10,36 @@ const Hero: React.FC = () => {
           {/* Left Column - Text Content */}
           <div className="text-center md:text-left">
             <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-neutral-900 leading-tight mb-6">
-              AI-Generated Bedtime Stories Your Kids Will Love
+              Your Family's AI Storytelling Studio
             </h1>
-            <p className="text-xl md:text-2xl text-neutral-600 mb-8">
-              Created by a parent, built for parents.
+            <p className="text-xl md:text-2xl text-neutral-600 mb-6">
+              Create personalised characters with traits and abilities. Build evolving multi-chapter stories together. Add narration and songs in 12 languages. All with age-intelligent safety built by a parent who gets it.
+            </p>
+
+            {/* 3 Key Bullets */}
+            <ul className="text-left space-y-3 mb-8 max-w-xl mx-auto md:mx-0">
+              <li className="flex items-start gap-3">
+                <span className="text-soft-blue-600 text-xl flex-shrink-0">✓</span>
+                <span className="text-neutral-700">Deep character builder with traits, abilities & custom AI art</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-soft-blue-600 text-xl flex-shrink-0">✓</span>
+                <span className="text-neutral-700">Guided story wizard, 2-tap continuation & multi-chapter books</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-soft-blue-600 text-xl flex-shrink-0">✓</span>
+                <span className="text-neutral-700">Songs, narration & Fairy Corner library in 12 languages</span>
+              </li>
+            </ul>
+
+            <p className="text-sm text-neutral-600 mb-6 italic">
+              Built by a parent, for parents. Not a prompt box—a proper storytelling engine.
             </p>
 
             {/* Download Buttons */}
             <div className="mb-6">
               <DownloadButtons />
             </div>
-
-            {/* Free Stories Note */}
-            <p className="text-sm text-neutral-500 italic">
-              Your first 6 stories are free – no credit card needed.
-            </p>
           </div>
 
           {/* Right Column - App Screenshot */}

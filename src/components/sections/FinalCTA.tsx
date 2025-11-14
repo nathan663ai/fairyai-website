@@ -7,12 +7,12 @@ const FinalCTA: React.FC = () => {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         {/* Heading */}
         <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-          Ready to turn bedtime into a magical adventure?
+          Ready to build your family's story universe?
         </h2>
 
         {/* Subtext */}
         <p className="text-xl md:text-2xl mb-8 text-soft-blue-50">
-          Try it free today – 6 stories included.
+          Start simple: 2 taps and you're reading. Go deep: build characters, multi-chapter books, songs and narration. Free to try—2 fairy tales and 2 nursery rhymes, no sign-up needed.
         </p>
 
         {/* Download Buttons */}
@@ -21,8 +21,8 @@ const FinalCTA: React.FC = () => {
         </div>
 
         {/* Additional Note */}
-        <p className="text-sm text-soft-blue-100 italic">
-          No credit card required. Start creating magic tonight.
+        <p className="text-sm text-soft-blue-100">
+          Browse Fairy Corner as a guest first • Premium plans with monthly Fairy Dust allocation
         </p>
       </div>
     </section>
