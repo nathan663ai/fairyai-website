@@ -2,6 +2,12 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const WhyDifferentTeaser: React.FC = () => {
+  const iconBackgrounds = [
+    'from-soft-green-100 to-soft-blue-100',
+    'from-soft-blue-100 to-fairy-purple-100',
+    'from-fairy-purple-100 to-soft-green-100'
+  ];
+
   const topDifferentiators = [
     {
       title: 'Characters They Actually Remember',
@@ -37,8 +43,9 @@ const WhyDifferentTeaser: React.FC = () => {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-12">
-          <h2 className="font-display text-3xl md:text-4xl font-bold text-neutral-900 mb-4">
-            Why FairyAI is Different
+          <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">
+            <span className="text-neutral-900">Why FairyAI is </span>
+            <span className="text-gradient-magical drop-shadow-lg">Different</span>
           </h2>
           <p className="text-lg text-neutral-600 max-w-2xl mx-auto">
             Not just another AI story generator. Here's what sets us apart.
@@ -51,7 +58,7 @@ const WhyDifferentTeaser: React.FC = () => {
             <div key={index} className="text-center">
               {/* Icon */}
               <div className="mb-4 flex justify-center">
-                <div className="w-16 h-16 bg-gradient-to-br from-soft-green-100 to-soft-blue-100 rounded-full flex items-center justify-center">
+                <div className={`w-16 h-16 bg-gradient-to-br ${iconBackgrounds[index]} rounded-full flex items-center justify-center shadow-md hover:shadow-xl hover:scale-110 transition-all duration-300`}>
                   {item.icon}
                 </div>
               </div>

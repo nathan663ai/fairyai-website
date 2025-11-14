@@ -2,6 +2,12 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Simple3Steps: React.FC = () => {
+  const gradients = [
+    'from-soft-blue-500 to-soft-blue-600',
+    'from-soft-green-500 to-soft-green-600',
+    'from-fairy-purple-500 to-fairy-purple-600'
+  ];
+
   const steps = [
     {
       number: 1,
@@ -40,8 +46,9 @@ const Simple3Steps: React.FC = () => {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-12">
-          <h2 className="font-display text-3xl md:text-4xl font-bold text-neutral-900 mb-4">
-            3 Steps to Your Bedtime Story
+          <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">
+            <span className="text-gradient-magical">3 Steps</span>
+            <span className="text-neutral-900"> to Your Bedtime Story</span>
           </h2>
           <p className="text-lg text-neutral-600 max-w-2xl mx-auto">
             Too tired? Start in 2 taps. Want more control? We've got that too.
@@ -54,7 +61,7 @@ const Simple3Steps: React.FC = () => {
             <div key={step.number} className="text-center">
               {/* Number Badge */}
               <div className="mb-4 flex flex-col items-center">
-                <div className="w-14 h-14 bg-gradient-to-br from-soft-blue-500 to-soft-green-500 rounded-full flex items-center justify-center text-white text-xl font-bold mb-4 shadow-md">
+                <div className={`w-14 h-14 bg-gradient-to-br ${gradients[step.number - 1]} rounded-full flex items-center justify-center text-white text-xl font-bold mb-4 shadow-lg hover:shadow-xl hover:scale-110 transition-all duration-300`}>
                   {step.number}
                 </div>
                 {/* Icon */}

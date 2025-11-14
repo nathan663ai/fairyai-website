@@ -50,8 +50,9 @@ const FeaturesOverview: React.FC = () => {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-12">
-          <h2 className="font-display text-3xl md:text-4xl font-bold text-neutral-900 mb-4">
-            Everything You Need for Magical Bedtimes
+          <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">
+            <span className="text-neutral-900">Everything You Need for </span>
+            <span className="text-gradient-playful">Magical Bedtimes</span>
           </h2>
           <p className="text-lg text-neutral-600 max-w-2xl mx-auto">
             Characters, stories, songs, and narration—all in one safe, parent-built app.
@@ -61,14 +62,14 @@ const FeaturesOverview: React.FC = () => {
         {/* Features Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
           {features.map((feature, index) => (
-            <div key={index} className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+            <div key={index} className="bg-white rounded-xl p-6 shadow-sm hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-transparent hover:border-soft-blue-200">
               {/* Icon */}
               <div className="mb-4">
                 {feature.icon}
               </div>
 
               {/* Content */}
-              <h3 className="font-display text-xl font-semibold text-neutral-900 mb-2">
+              <h3 className="font-display text-xl font-semibold mb-2 bg-gradient-to-r from-soft-blue-700 to-soft-green-700 bg-clip-text text-transparent">
                 {feature.title}
               </h3>
               <p className="text-neutral-600 text-sm mb-4">
