@@ -25,8 +25,10 @@ const Footer: React.FC = () => {
   };
 
   const navigationLinks = [
+    { label: 'How It Works', path: '/how-it-works' },
+    { label: 'Features', path: '/features' },
+    { label: 'Safety', path: '/safety' },
     { label: 'About', section: 'about' },
-    { label: 'Features', section: 'features' },
     { label: 'Privacy', path: '/privacy' },
     { label: 'Terms', path: '/terms' },
     { label: 'Contact', path: '/contact' },

@@ -169,7 +169,11 @@ const HowItWorksPage: React.FC = () => {
 
               <div className="space-y-4">
                 <div className="flex items-start gap-4">
-                  <span className="text-3xl">📖</span>
+                  <div className="flex-shrink-0">
+                    <svg className="w-10 h-10 text-soft-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                    </svg>
+                  </div>
                   <div>
                     <h3 className="font-semibold text-lg text-neutral-900">Classic Fairy Tales</h3>
                     <p className="text-neutral-700">2 always free, rest included with premium. Download PDFs to read offline.</p>
@@ -177,7 +181,11 @@ const HowItWorksPage: React.FC = () => {
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <span className="text-3xl">✨</span>
+                  <div className="flex-shrink-0">
+                    <svg className="w-10 h-10 text-soft-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+                    </svg>
+                  </div>
                   <div>
                     <h3 className="font-semibold text-lg text-neutral-900">Story of the Day</h3>
                     <p className="text-neutral-700">Rotating daily stories in 12 languages. Perfect for variety.</p>
@@ -185,7 +193,11 @@ const HowItWorksPage: React.FC = () => {
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <span className="text-3xl">🎵</span>
+                  <div className="flex-shrink-0">
+                    <svg className="w-10 h-10 text-soft-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" />
+                    </svg>
+                  </div>
                   <div>
                     <h3 className="font-semibold text-lg text-neutral-900">Nursery Rhymes</h3>
                     <p className="text-neutral-700">Audio nursery rhymes with narration. 2 always free for guests.</p>
@@ -193,7 +205,11 @@ const HowItWorksPage: React.FC = () => {
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <span className="text-3xl">🌍</span>
+                  <div className="flex-shrink-0">
+                    <svg className="w-10 h-10 text-soft-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                  </div>
                   <div>
                     <h3 className="font-semibold text-lg text-neutral-900">Multi-Language Support</h3>
                     <p className="text-neutral-700">All Fairy Corner content available in 12 languages with native-quality narration.</p>
@@ -234,7 +250,11 @@ const HowItWorksPage: React.FC = () => {
           <div className="grid md:grid-cols-2 gap-8">
             {/* Narration Card */}
             <div className="bg-white rounded-xl p-8 shadow-lg">
-              <div className="text-4xl mb-4">🎙️</div>
+              <div className="mb-4 flex justify-center">
+                <svg className="w-12 h-12 text-soft-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" />
+                </svg>
+              </div>
               <h3 className="font-display text-2xl font-semibold text-neutral-900 mb-4">
                 Narration
               </h3>
@@ -260,7 +280,11 @@ const HowItWorksPage: React.FC = () => {
 
             {/* Songs Card */}
             <div className="bg-white rounded-xl p-8 shadow-lg">
-              <div className="text-4xl mb-4">🎵</div>
+              <div className="mb-4 flex justify-center">
+                <svg className="w-12 h-12 text-soft-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" />
+                </svg>
+              </div>
               <h3 className="font-display text-2xl font-semibold text-neutral-900 mb-4">
                 Songs
               </h3>

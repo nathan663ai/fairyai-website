@@ -97,7 +97,11 @@ const SafetyPage: React.FC = () => {
       <section className="py-16 md:py-24 bg-white">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <div className="text-5xl mb-4">🚫</div>
+            <div className="mb-4 flex justify-center">
+              <svg className="w-16 h-16 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636" />
+              </svg>
+            </div>
             <h2 className="font-display text-3xl md:text-4xl font-bold text-neutral-900 mb-4">
               What We Never Do
             </h2>
@@ -126,7 +130,11 @@ const SafetyPage: React.FC = () => {
       <section className="py-16 md:py-24 bg-neutral-50">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <div className="text-5xl mb-4">✅</div>
+            <div className="mb-4 flex justify-center">
+              <svg className="w-16 h-16 text-soft-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
             <h2 className="font-display text-3xl md:text-4xl font-bold text-neutral-900 mb-4">
               What We Actively Enforce
             </h2>
@@ -155,7 +163,11 @@ const SafetyPage: React.FC = () => {
       <section className="py-16 md:py-24 bg-white">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <div className="text-5xl mb-4">🎛️</div>
+            <div className="mb-4 flex justify-center">
+              <svg className="w-16 h-16 text-soft-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
+              </svg>
+            </div>
             <h2 className="font-display text-3xl md:text-4xl font-bold text-neutral-900 mb-4">
               Your Controls
             </h2>
@@ -191,19 +203,31 @@ const SafetyPage: React.FC = () => {
 
           <div className="grid md:grid-cols-3 gap-6 mb-8">
             <div className="bg-white rounded-lg p-6 text-center">
-              <div className="text-3xl mb-3">🔐</div>
+              <div className="mb-3 flex justify-center">
+                <svg className="w-10 h-10 text-soft-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                </svg>
+              </div>
               <h3 className="font-semibold text-lg text-neutral-900 mb-2">Secure hosting</h3>
               <p className="text-sm text-neutral-700">Enterprise-grade cloud with automatic backups and encryption</p>
             </div>
 
             <div className="bg-white rounded-lg p-6 text-center">
-              <div className="text-3xl mb-3">🤖</div>
+              <div className="mb-3 flex justify-center">
+                <svg className="w-10 h-10 text-soft-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                </svg>
+              </div>
               <h3 className="font-semibold text-lg text-neutral-900 mb-2">Modern AI models</h3>
               <p className="text-sm text-neutral-700">Industry-leading systems for stories, images, narration, and music</p>
             </div>
 
             <div className="bg-white rounded-lg p-6 text-center">
-              <div className="text-3xl mb-3">⚡</div>
+              <div className="mb-3 flex justify-center">
+                <svg className="w-10 h-10 text-soft-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+              </div>
               <h3 className="font-semibold text-lg text-neutral-900 mb-2">Reliable performance</h3>
               <p className="text-sm text-neutral-700">Async processing, circuit breakers, and automatic error recovery</p>
             </div>
