@@ -94,7 +94,7 @@ const FeaturesPage: React.FC = () => {
               Why FairyAI is Different
             </h2>
             <p className="text-lg text-neutral-600">
-              Not just another AI story generator. Here's what makes FairyAI stand out:
+              What makes FairyAI different:
             </p>
           </div>
 
@@ -121,7 +121,7 @@ const FeaturesPage: React.FC = () => {
               How We Compare
             </h2>
             <p className="text-lg text-neutral-600">
-              See what makes FairyAI the complete bedtime story solution
+              What makes FairyAI different from other apps
             </p>
           </div>
 
@@ -615,7 +615,7 @@ const FeaturesPage: React.FC = () => {
       <section className="py-16 md:py-24 bg-gradient-to-br from-soft-blue-50 to-soft-green-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="font-display text-3xl md:text-4xl font-bold text-neutral-900 mb-4">
-            See Why Thousands of Parents Trust FairyAI
+            Join Thousands of Families Using FairyAI
           </h2>
           <p className="text-lg text-neutral-600 mb-8 max-w-2xl mx-auto">
             Join families creating magical bedtime moments every night. Start free: 6 Fairy Dust + 7-day Fairy Corner trial. No credit card needed.

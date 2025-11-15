@@ -4,7 +4,6 @@ import TryItFree from '../components/sections/TryItFree';
 import Simple3Steps from '../components/sections/Simple3Steps';
 import FeaturesOverview from '../components/sections/FeaturesOverview';
 import WhyDifferentTeaser from '../components/sections/WhyDifferentTeaser';
-import ExampleStories from '../components/sections/ExampleStories';
 import Testimonials from '../components/sections/Testimonials';
 import FounderSection from '../components/sections/FounderSection';
 import SafetyTeaser from '../components/sections/SafetyTeaser';
@@ -14,14 +13,13 @@ const HomePage: React.FC = () => {
   return (
     <>
       <Hero />
-      <TryItFree />
       <Simple3Steps />
-      <FeaturesOverview />
       <WhyDifferentTeaser />
-      <ExampleStories />
+      <FeaturesOverview />
+      <SafetyTeaser />
+      <TryItFree />
       <Testimonials />
       <FounderSection />
-      <SafetyTeaser />
       <FinalCTA />
     </>
   );

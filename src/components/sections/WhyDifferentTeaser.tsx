@@ -48,7 +48,7 @@ const WhyDifferentTeaser: React.FC = () => {
             <span className="text-soft-green-600">Different</span>
           </h2>
           <p className="text-lg text-neutral-600 max-w-2xl mx-auto">
-            Not just another AI story generator. Here's what sets us apart.
+            More than a story generator. Here's what makes us different.
           </p>
         </div>
 

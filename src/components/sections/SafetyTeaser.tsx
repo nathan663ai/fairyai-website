@@ -3,10 +3,12 @@ import { Link } from 'react-router-dom';
 
 const SafetyTeaser: React.FC = () => {
   const safetyPromises = [
-    'No ads or trackers',
-    'Age-appropriate content filters',
-    'No selling your data',
-    'Full account control'
+    'Zero ads',
+    'Zero trackers',
+    'No child photos required',
+    'Age-filtered content',
+    'No data selling',
+    'Built by a parent for parents'
   ];
 
   return (

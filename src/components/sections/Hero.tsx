@@ -9,52 +9,32 @@ const Hero: React.FC = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Left Column - Text Content */}
           <div className="text-center">
+            {/* Emotional Hook */}
+            <p className="text-lg md:text-xl text-soft-green-600 font-semibold mb-4">
+              End bedtime battles. Start stories they'll beg to continue.
+            </p>
+
             <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-6 text-slate-900">
               Turn bedtime into their favourite adventure, starring the characters they know and love
             </h1>
-            <p className="text-xl md:text-2xl text-neutral-700 mb-6 font-medium">
-              Create characters they know, continue the same adventure night after night, and add songs and narration: all in a safe app built by a parent for parents.
+            <p className="text-xl md:text-2xl text-neutral-700 mb-8 font-medium">
+              I spent 10 months building the bedtime story app I wanted for my family. Persistent characters, multi-chapter books, songs, narration in 12 languages. All in one app.
             </p>
 
-            {/* 3 Key Bullets */}
-            <ul className="space-y-3 mb-8 max-w-xl mx-auto">
-              <li className="flex items-center justify-center gap-3">
-                <span className="text-soft-blue-600 text-xl flex-shrink-0">✓</span>
-                <span className="text-neutral-700">Age-smart stories for ages 2–12</span>
-              </li>
-              <li className="flex items-center justify-center gap-3">
-                <span className="text-soft-blue-600 text-xl flex-shrink-0">✓</span>
-                <span className="text-neutral-700">Characters, chapters, songs and narration</span>
-              </li>
-              <li className="flex items-center justify-center gap-3">
-                <span className="text-soft-blue-600 text-xl flex-shrink-0">✓</span>
-                <span className="text-neutral-700">No ads, no trackers, built for children's safety</span>
-              </li>
-            </ul>
+            {/* Download Buttons - Larger with gradient */}
+            <div className="mb-4 scale-125 transform">
+              <DownloadButtons variant="gradient" />
+            </div>
 
-            <p className="text-sm text-neutral-600 mb-4 italic">
-              6 free Fairy Dust + 7-day trial • No credit card required
+            {/* Trust Point */}
+            <p className="text-sm text-neutral-600 mb-8 font-medium">
+              No sign-up required • First stories free
             </p>
 
-            {/* Download Buttons */}
-            <div className="mb-6">
-              <DownloadButtons />
-            </div>
-
-            {/* Free Trial Options */}
-            <div className="bg-white/80 backdrop-blur-sm rounded-lg p-4 max-w-xl mx-auto border border-neutral-200 text-center">
-              <p className="text-sm font-semibold text-neutral-900 mb-2">Try it free:</p>
-              <ul className="space-y-1 text-sm text-neutral-700">
-                <li className="flex items-center justify-center gap-2">
-                  <span className="text-soft-blue-600">•</span>
-                  <span>Browse without signup</span>
-                </li>
-                <li className="flex items-center justify-center gap-2">
-                  <span className="text-soft-blue-600">•</span>
-                  <span>Or create a free account: 6 Fairy Dust + 7-day Fairy Corner trial</span>
-                </li>
-              </ul>
-            </div>
+            {/* Social Proof */}
+            <p className="text-sm text-neutral-500 italic mb-6">
+              Loved by families around the world • 50,000+ stories created
+            </p>
           </div>
 
           {/* Right Column - App Screenshot */}

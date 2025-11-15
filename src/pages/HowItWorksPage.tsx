@@ -12,7 +12,7 @@ const HowItWorksPage: React.FC = () => {
             How FairyAI Works
           </h1>
           <p className="text-xl md:text-2xl text-neutral-600">
-            See exactly how FairyAI fits into your evenings and grows with your family.
+            How FairyAI works in your family.
           </p>
         </div>
       </section>
@@ -247,7 +247,7 @@ const HowItWorksPage: React.FC = () => {
               Add Songs & Narration
             </h2>
             <p className="text-lg text-neutral-600 max-w-2xl mx-auto">
-              Layer on audio to bring stories to life, or give yourself a break.
+              Add audio for immersive listening, or to give yourself a break.
             </p>
           </div>
 

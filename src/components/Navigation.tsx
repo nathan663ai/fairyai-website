@@ -71,6 +71,16 @@ const Navigation: React.FC = () => {
                 </button>
               )
             ))}
+
+            {/* Download App CTA */}
+            <a
+              href="https://apps.apple.com/app/id6749895614"
+              target="_blank"
+              rel="noreferrer"
+              className="bg-gradient-to-r from-soft-blue-500 to-soft-green-500 text-white px-5 py-2.5 rounded-lg font-semibold hover:shadow-lg transition-all hover:scale-105"
+            >
+              Download App
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -96,6 +106,17 @@ const Navigation: React.FC = () => {
       {isMenuOpen && (
         <div className="md:hidden bg-slate-800 border-t border-slate-700">
           <div className="px-4 py-3 space-y-3">
+            {/* Download App CTA - Top of mobile menu */}
+            <a
+              href="https://apps.apple.com/app/id6749895614"
+              target="_blank"
+              rel="noreferrer"
+              onClick={() => setIsMenuOpen(false)}
+              className="block w-full text-center bg-gradient-to-r from-soft-blue-500 to-soft-green-500 text-white px-4 py-3 rounded-lg font-semibold hover:shadow-lg transition-all"
+            >
+              Download App
+            </a>
+
             {navLinks.map((link, index) => (
               link.path ? (
                 <Link

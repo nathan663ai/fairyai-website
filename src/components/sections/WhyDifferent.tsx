@@ -20,7 +20,7 @@ const WhyDifferent: React.FC = () => {
     {
       number: 4,
       title: 'True multi-modal',
-      description: 'Stories, character images, cover art, narration in 11 languages with accents, Suno-powered songs with lyrics. Full creative stack, not just text.'
+      description: 'Stories, character images, cover art, narration in 11 languages with accents, songs with lyrics. Full creative stack, not just text.'
     },
     {
       number: 5,
