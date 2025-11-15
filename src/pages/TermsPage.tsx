@@ -77,7 +77,7 @@ const TermsPage: React.FC = () => {
               <h2 className="text-2xl font-bold text-neutral-900 mb-4">6. Sharing & Downloads</h2>
               <ul className="list-disc ml-6 space-y-3 text-neutral-700 mb-4">
                 <li>The App allows you to share and download your generated content.</li>
-                <li>Once you share content externally, it is no longer under our control — you are responsible for where and how you share it.</li>
+                <li>Once you share content externally, it is no longer under our control; you are responsible for where and how you share it.</li>
                 <li>Content from the Fairy Corner (classic tales) may be subject to public domain or third-party rights. Classic tales in Fairy Corner are adapted from public domain sources. Musical arrangements are original works.</li>
               </ul>
             </div>

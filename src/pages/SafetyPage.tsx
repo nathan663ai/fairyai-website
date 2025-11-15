@@ -24,7 +24,7 @@ const SafetyPage: React.FC = () => {
   const activelyEnforce = [
     {
       title: 'Age-based content filters',
-      description: 'Every story passes through filters that block violence, fear, explicit content, and substances—tailored to each age group (2-3, 4-6, 7-9, 10-12, 12+).'
+      description: 'Every story passes through filters that block violence, fear, explicit content, and substances, tailored to each age group (2-3, 4-6, 7-9, 10-12, 12+).'
     },
     {
       title: 'Age-appropriate word counts and themes',
@@ -59,7 +59,7 @@ const SafetyPage: React.FC = () => {
     },
     {
       title: 'Full account deletion anytime',
-      description: 'Delete your account from the app. Stories, characters, songs—all gone (after the 30-day recovery window).'
+      description: 'Delete your account from the app. Stories, characters, songs: all gone (after the 30-day recovery window).'
     },
     {
       title: 'Language, notification, and marketing preferences',
@@ -89,7 +89,7 @@ const SafetyPage: React.FC = () => {
             Safety isn't a feature. It's the foundation.
           </h1>
           <p className="text-xl md:text-2xl text-neutral-600">
-            You're trusting us with bedtime. Here's exactly what we do—and don't do—to earn that trust.
+            You're trusting us with bedtime. Here's exactly what we do (and don't do) to earn that trust.
           </p>
         </div>
       </section>
@@ -243,7 +243,7 @@ const SafetyPage: React.FC = () => {
             "We're parents building for parents. If we wouldn't use it with our kids, we don't ship it."
           </p>
           <p className="text-lg text-neutral-600">
-            — Nathan, Dad & Founder
+            Nathan, Dad & Founder
           </p>
         </div>
       </section>

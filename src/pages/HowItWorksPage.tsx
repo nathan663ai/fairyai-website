@@ -140,7 +140,7 @@ const HowItWorksPage: React.FC = () => {
               <div className="bg-neutral-100 rounded-lg p-4">
                 <h4 className="font-semibold text-neutral-900 mb-2">Age-Intelligent Generation</h4>
                 <p className="text-sm text-neutral-700">
-                  5 age groups (2-3, 4-6, 7-9, 10-12, 12+). Vocabulary, themes, and word counts adapt automatically—from 400 words for toddlers to 2000 for teens.
+                  5 age groups (2-3, 4-6, 7-9, 10-12, 12+). Vocabulary, themes, and word counts adapt automatically: from 400 words for toddlers to 2000 for teens.
                 </p>
               </div>
             </div>
@@ -223,7 +223,7 @@ const HowItWorksPage: React.FC = () => {
                   <strong>Guest Mode:</strong> Browse Fairy Corner without signing up. 2 free fairy tales + 2 free nursery rhymes to try before you subscribe.
                 </p>
                 <p className="text-neutral-700">
-                  <strong>Free Parent Account:</strong> Sign up to get 6 free Fairy Dust + 7-day Fairy Corner trial. Try creating characters, stories, songs and narrations—no credit card required.
+                  <strong>Free Parent Account:</strong> Sign up to get 6 free Fairy Dust + 7-day Fairy Corner trial. Try creating characters, stories, songs and narrations. No credit card required.
                 </p>
               </div>
             </div>
@@ -247,7 +247,7 @@ const HowItWorksPage: React.FC = () => {
               Add Songs & Narration
             </h2>
             <p className="text-lg text-neutral-600 max-w-2xl mx-auto">
-              Layer on audio to bring stories to life—or give yourself a break.
+              Layer on audio to bring stories to life, or give yourself a break.
             </p>
           </div>
 

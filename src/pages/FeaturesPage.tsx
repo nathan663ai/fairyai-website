@@ -7,8 +7,8 @@ const FeaturesPage: React.FC = () => {
     'Characters your child actually remembers, with traits, abilities, and visual identity that persist forever',
     'Stories that continue into full chapter books with 2-tap instant continuation or advanced mode',
     '5 age groups (2-3, 4-6, 7-9, 10-12, 12+) with vocabulary and themes that adapt automatically',
-    'Stories, character images, cover art, narration in 12 languages, and songs with lyrics—full creative stack',
-    '12 languages with cultural guidance, not just translation—native-quality narration',
+    'Stories, character images, cover art, narration in 12 languages, and songs with lyrics: full creative stack',
+    '12 languages with cultural guidance, not just translation. Native-quality narration',
     'Curated classics + AI daily stories + your custom creations in Fairy Corner library',
     'Production-grade safety: age-based filters, rate limiting, abuse protection, no PII logging'
   ];
@@ -22,7 +22,7 @@ const FeaturesPage: React.FC = () => {
             Features Built for Families
           </h1>
           <p className="text-xl md:text-2xl text-neutral-600">
-            Everything you need for magical bedtime stories—and nothing you don't.
+            Everything you need for magical bedtime stories, and nothing you don't.
           </p>
         </div>
       </section>
@@ -283,7 +283,7 @@ const FeaturesPage: React.FC = () => {
 
             <div className="p-4 bg-white rounded-lg border-2 border-soft-blue-200">
               <p className="text-neutral-700 text-sm">
-                <strong>Free to start:</strong> Create a parent account and get 6 free Fairy Dust + 7-day Fairy Corner trial—no credit card required. Guest mode also available with 2 free fairy tales + 2 free nursery rhymes.
+                <strong>Free to start:</strong> Create a parent account and get 6 free Fairy Dust + 7-day Fairy Corner trial. No credit card required. Guest mode also available with 2 free fairy tales + 2 free nursery rhymes.
               </p>
             </div>
           </div>
@@ -494,7 +494,7 @@ const FeaturesPage: React.FC = () => {
                 Do my stories expire?
               </h3>
               <p className="text-neutral-700 leading-relaxed">
-                No! All your generated stories, characters, and songs are stored permanently. You can access them anytime from your library. Only your monthly Fairy Dust allocation expires at the end of each billing cycle—but purchased Dust top-ups never expire.
+                No! All your generated stories, characters, and songs are stored permanently. You can access them anytime from your library. Only your monthly Fairy Dust allocation expires at the end of each billing cycle, but purchased Dust top-ups never expire.
               </p>
             </div>
 
@@ -514,7 +514,7 @@ const FeaturesPage: React.FC = () => {
                 What happens if generation fails?
               </h3>
               <p className="text-neutral-700 leading-relaxed">
-                If a story, character, song, or narration fails to generate due to a technical error, you'll receive an automatic Fairy Dust refund within seconds. The system detects failures (timeouts, API errors, invalid outputs) and refunds you immediately—no support ticket needed.
+                If a story, character, song, or narration fails to generate due to a technical error, you'll receive an automatic Fairy Dust refund within seconds. The system detects failures (timeouts, API errors, invalid outputs) and refunds you immediately. No support ticket needed.
               </p>
             </div>
 
@@ -554,7 +554,7 @@ const FeaturesPage: React.FC = () => {
                 Can I cancel my subscription anytime?
               </h3>
               <p className="text-neutral-700 leading-relaxed">
-                Yes! You can cancel your subscription at any time from the app settings with no cancellation fees. Your subscription remains active until the end of your current billing period, and you keep access to all your generated stories, characters, and songs forever—even after cancelling. Any purchased Dust top-ups never expire and remain available to use anytime.
+                Yes! You can cancel your subscription at any time from the app settings with no cancellation fees. Your subscription remains active until the end of your current billing period, and you keep access to all your generated stories, characters, and songs forever, even after cancelling. Any purchased Dust top-ups never expire and remain available to use anytime.
               </p>
             </div>
 
@@ -594,7 +594,7 @@ const FeaturesPage: React.FC = () => {
                 How do persistent characters work?
               </h3>
               <p className="text-neutral-700 leading-relaxed">
-                When you create a character (2 Dust), it's saved to your character library with all traits, abilities, and artwork. You can then use this character in unlimited stories at no extra cost—just the normal 1 Dust story fee. The AI remembers the character's personality, appearance, and backstory across all stories, creating true continuity. Characters can appear together in the same story, and you can build a whole cast over time.
+                When you create a character (2 Dust), it's saved to your character library with all traits, abilities, and artwork. You can then use this character in unlimited stories at no extra cost: just the normal 1 Dust story fee. The AI remembers the character's personality, appearance, and backstory across all stories, creating true continuity. Characters can appear together in the same story, and you can build a whole cast over time.
               </p>
             </div>
 
@@ -618,7 +618,7 @@ const FeaturesPage: React.FC = () => {
             See Why Thousands of Parents Trust FairyAI
           </h2>
           <p className="text-lg text-neutral-600 mb-8 max-w-2xl mx-auto">
-            Join families creating magical bedtime moments every night. Start free—6 Fairy Dust + 7-day Fairy Corner trial. No credit card needed.
+            Join families creating magical bedtime moments every night. Start free: 6 Fairy Dust + 7-day Fairy Corner trial. No credit card needed.
           </p>
           <DownloadButtons />
         </div>

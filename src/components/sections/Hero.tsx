@@ -10,10 +10,10 @@ const Hero: React.FC = () => {
           {/* Left Column - Text Content */}
           <div className="text-center">
             <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-6 text-slate-900">
-              Bedtime stories that grow with your child
+              Turn bedtime into their favourite adventure, starring the characters they know and love
             </h1>
             <p className="text-xl md:text-2xl text-neutral-700 mb-6 font-medium">
-              Create characters they know, continue the same adventure night after night, and add songs and narration—all in a safe app built by a parent for parents.
+              Create characters they know, continue the same adventure night after night, and add songs and narration: all in a safe app built by a parent for parents.
             </p>
 
             {/* 3 Key Bullets */}

@@ -4,7 +4,7 @@ import Card from '../ui/Card';
 const Testimonials: React.FC = () => {
   const testimonials = [
     {
-      quote: 'We\'ve been continuing the same story for two weeks now—it\'s become a 4-chapter book about their characters. Bedtime used to be a battle. Now they beg for the next chapter!',
+      quote: 'We\'ve been continuing the same story for two weeks now, and it\'s become a 4-chapter book about their characters. Bedtime used to be a battle. Now they beg for the next chapter!',
       name: 'Sarah',
       role: 'Mum of 2 (ages 6 & 8)'
     },
@@ -14,7 +14,7 @@ const Testimonials: React.FC = () => {
       role: 'Dad of 1 (age 4)'
     },
     {
-      quote: 'I was skeptical about "AI stories" until I used the Character Wizard. We built a character based on my son\'s personality, and now every story feels personal. He asks for stories about "his" character every night. The continuation feature is genius—we\'re on chapter 8!',
+      quote: 'I was skeptical about "AI stories" until I used the Character Wizard. We built a character based on my son\'s personality, and now every story feels personal. He asks for stories about "his" character every night. The continuation feature is genius. We\'re on chapter 8!',
       name: 'Priya',
       role: 'Mum of 1 (age 7)'
     },
@@ -24,7 +24,7 @@ const Testimonials: React.FC = () => {
       role: 'Mum of 1 (age 5)'
     },
     {
-      quote: "We created a dragon character three months ago, and he's been in 15+ stories now. My kids feel like he's a real friend. The Fairy Corner classics are perfect for when we run low on Dust - my youngest loves the daily AI stories.",
+      quote: "We created a dragon character three months ago, and he's been in 15+ stories now. My kids feel like he's a real friend. The Fairy Corner classics are perfect for when we run low on Dust, and my youngest loves the daily AI stories.",
       name: 'James',
       role: 'Dad of 3 (ages 4, 6, 9)'
     }
