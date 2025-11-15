@@ -10,20 +10,17 @@ const Hero: React.FC = () => {
           {/* Left Column - Text Content */}
           <div className="text-center">
             {/* Emotional Hook */}
-            <p className="text-lg md:text-xl text-soft-green-600 font-semibold mb-4">
+            <p className="text-lg md:text-xl text-soft-green-600 font-semibold mb-6">
               End bedtime battles. Start stories they'll beg to continue.
             </p>
 
-            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-6 text-slate-900">
-              Turn bedtime into their favourite adventure, starring the characters they know and love
+            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-8 text-slate-900">
+              Stories your kids will remember. Characters they'll love. Adventures that grow into chapter books.
             </h1>
-            <p className="text-xl md:text-2xl text-neutral-700 mb-8 font-medium">
-              I spent 10 months building the bedtime story app I wanted for my family. Persistent characters, multi-chapter books, songs, narration in 12 languages. All in one app.
-            </p>
 
-            {/* Download Buttons - Larger with gradient */}
-            <div className="mb-4 scale-125 transform">
-              <DownloadButtons variant="gradient" />
+            {/* Download Buttons - Larger */}
+            <div id="download" className="mb-4 scale-125 transform">
+              <DownloadButtons variant="default" />
             </div>
 
             {/* Trust Point */}
@@ -33,7 +30,7 @@ const Hero: React.FC = () => {
 
             {/* Social Proof */}
             <p className="text-sm text-neutral-500 italic mb-6">
-              Loved by families around the world • 50,000+ stories created
+              Loved by families around the world
             </p>
           </div>
 

@@ -55,10 +55,13 @@ const HowItWorksPage: React.FC = () => {
                   </p>
                 </div>
 
-                <div className="border-l-4 border-soft-green-500 pl-4 py-2">
-                  <p className="text-neutral-700">
-                    <strong>Coming soon:</strong> Create characters from drawings or photos
-                  </p>
+                <div className="border-l-4 border-soft-green-500 pl-4 py-3">
+                  <p className="text-neutral-700 font-semibold mb-2">Coming Soon:</p>
+                  <ul className="space-y-1 text-neutral-700">
+                    <li>• Create characters from drawings or photos</li>
+                    <li>• Choose-your-own-path stories</li>
+                    <li>• Parents can record their own stories and messages</li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -189,7 +192,7 @@ const HowItWorksPage: React.FC = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg text-neutral-900">Story of the Day</h3>
-                    <p className="text-neutral-700">Rotating daily stories in 12 languages. Perfect for variety.</p>
+                    <p className="text-neutral-700">A new story every day in 12 languages with narration and songs. Perfect for variety.</p>
                   </div>
                 </div>
 

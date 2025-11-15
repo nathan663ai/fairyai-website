@@ -12,7 +12,7 @@ const FourPillars: React.FC = () => {
         'Character Wizard or Quick Create: types, traits, abilities, custom descriptions',
         'AI-generated images with 3 variations to choose from (~60 seconds)',
         'Characters remember their details across every story and song',
-        'Coming soon: create characters from photos or drawings'
+        'Coming soon: characters from photos, choose-your-own-path stories, parent-recorded stories'
       ]
     },
     {

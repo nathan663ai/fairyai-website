@@ -74,10 +74,17 @@ const Navigation: React.FC = () => {
 
             {/* Download App CTA */}
             <a
-              href="https://apps.apple.com/app/id6749895614"
-              target="_blank"
-              rel="noreferrer"
+              href="/#download"
               className="bg-gradient-to-r from-soft-blue-500 to-soft-green-500 text-white px-5 py-2.5 rounded-lg font-semibold hover:shadow-lg transition-all hover:scale-105"
+              onClick={(e) => {
+                e.preventDefault();
+                const element = document.getElementById('download');
+                if (element) {
+                  element.scrollIntoView({ behavior: 'smooth' });
+                } else {
+                  window.location.href = '/#download';
+                }
+              }}
             >
               Download App
             </a>
@@ -108,10 +115,17 @@ const Navigation: React.FC = () => {
           <div className="px-4 py-3 space-y-3">
             {/* Download App CTA - Top of mobile menu */}
             <a
-              href="https://apps.apple.com/app/id6749895614"
-              target="_blank"
-              rel="noreferrer"
-              onClick={() => setIsMenuOpen(false)}
+              href="/#download"
+              onClick={(e) => {
+                e.preventDefault();
+                setIsMenuOpen(false);
+                const element = document.getElementById('download');
+                if (element) {
+                  element.scrollIntoView({ behavior: 'smooth' });
+                } else {
+                  window.location.href = '/#download';
+                }
+              }}
               className="block w-full text-center bg-gradient-to-r from-soft-blue-500 to-soft-green-500 text-white px-4 py-3 rounded-lg font-semibold hover:shadow-lg transition-all"
             >
               Download App
