@@ -303,7 +303,7 @@ const FeaturesPage: React.FC = () => {
           </div>
 
           {/* Subscription Tiers */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-6 mb-12">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
             {/* Free Tier */}
             <div className="bg-white rounded-xl p-6 shadow-sm border-2 border-neutral-200">
               <h3 className="font-display text-xl font-semibold text-neutral-900 mb-2">Free</h3>
@@ -383,26 +383,6 @@ const FeaturesPage: React.FC = () => {
                 <li className="flex items-start gap-2">
                   <span className="text-soft-green-600">✓</span>
                   <span>Save £26.89 on annual</span>
-                </li>
-              </ul>
-            </div>
-
-            {/* Endless Tales */}
-            <div className="bg-white rounded-xl p-6 shadow-sm border-2 border-neutral-200">
-              <h3 className="font-display text-xl font-semibold text-neutral-900 mb-2">Endless Tales</h3>
-              <div className="text-3xl font-bold text-neutral-900 mb-4">£17.99<span className="text-base font-normal text-neutral-600">/month</span></div>
-              <ul className="space-y-2 text-sm text-neutral-700 mb-6">
-                <li className="flex items-start gap-2">
-                  <span className="text-soft-green-600">✓</span>
-                  <span><strong>225 Dust/month</strong></span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-soft-green-600">✓</span>
-                  <span>All features unlocked</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-soft-green-600">✓</span>
-                  <span>Save £45.89 on annual</span>
                 </li>
               </ul>
             </div>
