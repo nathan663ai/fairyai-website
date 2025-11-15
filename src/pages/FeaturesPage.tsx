@@ -527,6 +527,86 @@ const FeaturesPage: React.FC = () => {
                 Yes! You can download stories as PDFs and narrations as MP3 files for offline use. Perfect for printing bedtime stories, saving favourites, or listening during car rides without internet. All your content is yours to keep.
               </p>
             </div>
+
+            {/* FAQ 7 */}
+            <div className="bg-neutral-50 rounded-xl p-6">
+              <h3 className="font-semibold text-lg text-neutral-900 mb-3">
+                Is my child's data safe? How do you handle privacy?
+              </h3>
+              <p className="text-neutral-700 leading-relaxed">
+                Absolutely. FairyAI is COPPA-compliant and takes data privacy seriously. We never sell your data to third parties, never use your child's information for advertising, and all data is encrypted in transit and at rest. Stories are generated using age-appropriate AI models with strict content filters. You can delete your account and all associated data at any time with a simple request. See our <a href="/privacy" className="text-soft-blue-600 hover:text-soft-blue-700 underline">Privacy Policy</a> for full details.
+              </p>
+            </div>
+
+            {/* FAQ 8 */}
+            <div className="bg-neutral-50 rounded-xl p-6">
+              <h3 className="font-semibold text-lg text-neutral-900 mb-3">
+                How does FairyAI ensure content is age-appropriate?
+              </h3>
+              <p className="text-neutral-700 leading-relaxed">
+                Every story, character, and song is generated using age-specific AI models with built-in content filters. When you select your child's age (2-3, 4-6, 7-9, 10-12, or 12+), FairyAI automatically adjusts vocabulary, sentence complexity, and themes. All generated content is screened to prevent inappropriate topics, violence, or scary elements. Our Fairy Corner library is curated by our team to ensure every classic story is suitable for young children.
+              </p>
+            </div>
+
+            {/* FAQ 9 */}
+            <div className="bg-neutral-50 rounded-xl p-6">
+              <h3 className="font-semibold text-lg text-neutral-900 mb-3">
+                Can I cancel my subscription anytime?
+              </h3>
+              <p className="text-neutral-700 leading-relaxed">
+                Yes! You can cancel your subscription at any time from the app settings with no cancellation fees. Your subscription remains active until the end of your current billing period, and you keep access to all your generated stories, characters, and songs forever—even after cancelling. Any purchased Dust top-ups never expire and remain available to use anytime.
+              </p>
+            </div>
+
+            {/* FAQ 10 */}
+            <div className="bg-neutral-50 rounded-xl p-6">
+              <h3 className="font-semibold text-lg text-neutral-900 mb-3">
+                Can I use stories offline once they're generated?
+              </h3>
+              <p className="text-neutral-700 leading-relaxed">
+                Yes! Once you generate a story, it's saved to your library and available offline for reading. You can also download narrations as MP3 files to your device for offline listening during car rides, flights, or anywhere without internet. PDFs can be downloaded for printing physical copies.
+              </p>
+            </div>
+
+            {/* FAQ 11 */}
+            <div className="bg-neutral-50 rounded-xl p-6">
+              <h3 className="font-semibold text-lg text-neutral-900 mb-3">
+                How long does it take to generate a story, character, or song?
+              </h3>
+              <p className="text-neutral-700 leading-relaxed">
+                Stories generate in 30-60 seconds depending on length and complexity. Characters take about 60 seconds to generate with custom artwork. Songs (with lyrics and music) take approximately 2-3 minutes. Narrations add an extra 30-45 seconds. All generation times may vary slightly based on server load, but you'll see a progress indicator while content is being created.
+              </p>
+            </div>
+
+            {/* FAQ 12 */}
+            <div className="bg-neutral-50 rounded-xl p-6">
+              <h3 className="font-semibold text-lg text-neutral-900 mb-3">
+                What happens when I run out of Fairy Dust?
+              </h3>
+              <p className="text-neutral-700 leading-relaxed">
+                You can still access all your existing stories, characters, and songs in your library. You just won't be able to generate new content until your next monthly refill or until you purchase a Dust top-up (Sprinkle, Pouch, or Chest). The Fairy Corner library of 100+ classic stories remains fully accessible regardless of your Dust balance. Top-ups never expire, so you can stock up anytime.
+              </p>
+            </div>
+
+            {/* FAQ 13 */}
+            <div className="bg-neutral-50 rounded-xl p-6">
+              <h3 className="font-semibold text-lg text-neutral-900 mb-3">
+                How do persistent characters work?
+              </h3>
+              <p className="text-neutral-700 leading-relaxed">
+                When you create a character (2 Dust), it's saved to your character library with all traits, abilities, and artwork. You can then use this character in unlimited stories at no extra cost—just the normal 1 Dust story fee. The AI remembers the character's personality, appearance, and backstory across all stories, creating true continuity. Characters can appear together in the same story, and you can build a whole cast over time.
+              </p>
+            </div>
+
+            {/* FAQ 14 */}
+            <div className="bg-neutral-50 rounded-xl p-6">
+              <h3 className="font-semibold text-lg text-neutral-900 mb-3">
+                Can I get a refund if I'm not satisfied?
+              </h3>
+              <p className="text-neutral-700 leading-relaxed">
+                We offer a 7-day free trial (6 Fairy Dust + access to Fairy Corner) so you can try FairyAI risk-free before subscribing. If you're not satisfied with a paid subscription, contact us at <a href="mailto:support@fairyai.co.uk" className="text-soft-blue-600 hover:text-soft-blue-700 underline">support@fairyai.co.uk</a> within 7 days of your first charge for a full refund. After that, subscription fees are non-refundable, but you can cancel anytime to prevent future charges.
+              </p>
+            </div>
           </div>
         </div>
       </section>
