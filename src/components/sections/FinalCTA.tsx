@@ -19,7 +19,7 @@ const FinalCTA: React.FC = () => {
         </p>
 
         {/* Download Buttons - Larger with white background */}
-        <div className="mb-6 scale-125 transform">
+        <div className="mb-6 scale-110 sm:scale-125 transform">
           <div className="flex flex-col sm:flex-row gap-4 items-center justify-center">
             <a
               href="https://apps.apple.com/app/id6749895614"

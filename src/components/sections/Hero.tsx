@@ -19,7 +19,7 @@ const Hero: React.FC = () => {
             </h1>
 
             {/* Download Buttons - Larger */}
-            <div id="download" className="mb-4 scale-125 transform">
+            <div id="download" className="mb-4 scale-110 sm:scale-125 transform">
               <DownloadButtons variant="default" />
             </div>
 
