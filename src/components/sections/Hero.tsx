@@ -1,6 +1,6 @@
 import React from 'react';
 import DownloadButtons from '../ui/DownloadButtons';
-import ImagePlaceholder from '../ui/ImagePlaceholder';
+import VideoPlayer from '../ui/VideoPlayer';
 
 const Hero: React.FC = () => {
   return (
@@ -34,13 +34,18 @@ const Hero: React.FC = () => {
             </p>
           </div>
 
-          {/* Right Column - App Screenshot */}
+          {/* Right Column - App Demo Video */}
           <div className="flex justify-center">
             <div className="w-full max-w-md">
-              <ImagePlaceholder
-                label="App Screenshot"
+              <VideoPlayer
+                src="/videos/hero-demo.mp4"
+                poster="/images/posters/hero-poster.jpg"
                 aspectRatio="portrait"
                 className="shadow-2xl"
+                autoplay={true}
+                muted={true}
+                loop={true}
+                comingSoonText="App Demo Video Coming Soon"
               />
             </div>
           </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import ImagePlaceholder from '../components/ui/ImagePlaceholder';
+import VideoPlayer from '../components/ui/VideoPlayer';
 import DownloadButtons from '../components/ui/DownloadButtons';
 
 const HowItWorksPage: React.FC = () => {
@@ -67,10 +67,12 @@ const HowItWorksPage: React.FC = () => {
             </div>
 
             <div>
-              <ImagePlaceholder
-                label="Character Creation Screenshot"
+              <VideoPlayer
+                src="/videos/character-creation-demo.mp4"
                 aspectRatio="square"
                 className="shadow-xl rounded-lg"
+                controls={true}
+                comingSoonText="Character Creation Demo Coming Soon"
               />
             </div>
           </div>
@@ -149,10 +151,12 @@ const HowItWorksPage: React.FC = () => {
             </div>
 
             <div className="md:order-1">
-              <ImagePlaceholder
-                label="Story Reader + Continue Button Screenshot"
+              <VideoPlayer
+                src="/videos/story-reader-demo.mp4"
                 aspectRatio="portrait"
                 className="shadow-xl rounded-lg"
+                controls={true}
+                comingSoonText="Story Reader Demo Coming Soon"
               />
             </div>
           </div>
@@ -232,10 +236,12 @@ const HowItWorksPage: React.FC = () => {
             </div>
 
             <div>
-              <ImagePlaceholder
-                label="Fairy Corner Screenshot"
+              <VideoPlayer
+                src="/videos/fairy-corner-demo.mp4"
                 aspectRatio="portrait"
                 className="shadow-xl rounded-lg"
+                controls={true}
+                comingSoonText="Fairy Corner Demo Coming Soon"
               />
             </div>
           </div>

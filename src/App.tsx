@@ -6,6 +6,7 @@ import HomePage from './pages/HomePage';
 import HowItWorksPage from './pages/HowItWorksPage';
 import SafetyPage from './pages/SafetyPage';
 import FeaturesPage from './pages/FeaturesPage';
+import StoriesPage from './pages/StoriesPage';
 import PrivacyPage from './pages/PrivacyPage';
 import TermsPage from './pages/TermsPage';
 import AccountDeletePage from './pages/AccountDeletePage';
@@ -33,6 +34,7 @@ function App() {
           <Route path="/how-it-works" element={<HowItWorksPage />} />
           <Route path="/safety" element={<SafetyPage />} />
           <Route path="/features" element={<FeaturesPage />} />
+          <Route path="/stories" element={<StoriesPage />} />
           <Route path="/privacy" element={<PrivacyPage />} />
           <Route path="/terms" element={<TermsPage />} />
           <Route path="/account-delete" element={<AccountDeletePage />} />
