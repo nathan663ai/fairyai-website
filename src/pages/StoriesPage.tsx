@@ -106,7 +106,7 @@ const StoriesPage: React.FC = () => {
               className="bg-white rounded-2xl shadow-xl border border-neutral-100 overflow-hidden"
             >
               {/* Story Header */}
-              <div className="bg-gradient-to-r from-soft-blue-500 to-soft-green-500 p-6 md:p-8">
+              <div className="bg-slate-900 p-6 md:p-8">
                 <div className="flex items-center justify-between flex-wrap gap-4">
                   <div>
                     <h2 className="font-display text-3xl md:text-4xl font-bold text-white mb-2">

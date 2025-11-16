@@ -119,7 +119,7 @@ const ExperienceTheMagic: React.FC = () => {
                   {/* Read Full Story Button */}
                   <Link
                     to="/stories"
-                    className="block text-center bg-gradient-to-r from-soft-blue-500 to-soft-green-500 text-white px-4 py-2 rounded-lg font-semibold hover:shadow-lg transition-all hover:scale-105"
+                    className="block text-center bg-slate-900 text-white px-4 py-2 rounded-lg font-semibold hover:shadow-lg transition-all hover:scale-105"
                   >
                     Read Full Story
                   </Link>
