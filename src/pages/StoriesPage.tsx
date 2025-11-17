@@ -74,6 +74,44 @@ In the vast expanse of the cosmos, where nebulae swirled in kaleidoscopic patter
 
 The End.`,
   },
+  {
+    id: 4,
+    title: '[Daily Story Title from Fairy Corner]',
+    ageRange: '4-7 years',
+    audioSrc: '/audio/stories/fairy-corner-daily-narration.mp3',
+    characterImage: '/images/characters/character4.jpg',
+    creationMethod: 'fairy_corner_daily',
+    songs: [
+      { title: '[Song 1 Title]', audioSrc: '/audio/songs/fairy-corner-daily-song1.mp3' },
+      { title: '[Song 2 Title]', audioSrc: '/audio/songs/fairy-corner-daily-song2.mp3' },
+    ],
+    fullText: `[Story text will be added by user - placeholder for now]
+
+This is a daily AI-generated story from the Fairy Corner. A new story is created every day in 12 languages with full narration and songs.
+
+[Full story content goes here]
+
+The End.`,
+  },
+  {
+    id: 5,
+    title: 'The Gingerbread Man',
+    ageRange: '3-6 years',
+    audioSrc: '/audio/stories/gingerbread-man-narration.mp3',
+    characterImage: '/images/characters/character5.jpg',
+    creationMethod: 'fairy_corner_classic',
+    songs: [
+      { title: 'Run, Run, Run!', audioSrc: '/audio/songs/gingerbread-song1.mp3' },
+      { title: 'The Gingerbread Song', audioSrc: '/audio/songs/gingerbread-song2.mp3' },
+    ],
+    fullText: `[Story text will be added by user - placeholder for now]
+
+Once upon a time, a little old woman and a little old man lived in a cottage...
+
+[Full Gingerbread Man story content goes here]
+
+The End.`,
+  },
 ];
 
 const StoriesPage: React.FC = () => {
@@ -117,7 +155,13 @@ const StoriesPage: React.FC = () => {
                         {story.ageRange}
                       </span>
                       <span className="inline-block text-sm font-semibold text-white bg-white bg-opacity-30 px-3 py-1 rounded-full">
-                        {story.creationMethod === 'quick_story' ? '⚡ Quick Story' : '🧙 Story Wizard'}
+                        {story.creationMethod === 'quick_story'
+                          ? '⚡ Quick Story'
+                          : story.creationMethod === 'fairy_corner_daily'
+                          ? '✨ Fairy Corner - Daily AI Story'
+                          : story.creationMethod === 'fairy_corner_classic'
+                          ? '📚 Fairy Corner - Classic Tale'
+                          : '🧙 Story Wizard'}
                       </span>
                     </div>
                     {story.note && (
@@ -159,13 +203,57 @@ const StoriesPage: React.FC = () => {
                 </div>
               </div>
 
-              {/* How This Story Was Created */}
+              {/* How This Story Was Created / Songs Section */}
               <div className="p-6 md:p-8 border-t border-neutral-200">
-                <h3 className="text-xl font-bold text-neutral-900 mb-4">
-                  📝 How This Story Was Created
-                </h3>
+                {(story.creationMethod === 'fairy_corner_daily' || story.creationMethod === 'fairy_corner_classic') && story.songs ? (
+                  // Fairy Corner Stories - Show Songs
+                  <>
+                    <h3 className="text-xl font-bold text-neutral-900 mb-4">
+                      🎵 Songs from this Story
+                    </h3>
+                    <div className="grid md:grid-cols-2 gap-6 mb-6">
+                      {story.songs.map((song, idx) => (
+                        <div key={idx} className="bg-fairy-purple-50 rounded-lg p-6">
+                          <div className="flex items-center gap-3 mb-4">
+                            <div className="w-10 h-10 bg-gradient-to-br from-fairy-purple-100 to-soft-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
+                              <svg className="w-5 h-5 text-fairy-purple-600" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z" />
+                              </svg>
+                            </div>
+                            <h4 className="font-bold text-lg text-neutral-900">{song.title}</h4>
+                          </div>
+                          <AudioPlayer src={song.audioSrc} title={song.title} />
+                        </div>
+                      ))}
+                    </div>
 
-                {story.creationMethod === 'quick_story' ? (
+                    <div className="bg-neutral-50 rounded-lg p-6">
+                      <div className="flex items-start gap-3">
+                        <div className="bg-soft-blue-500 text-white rounded-full p-2 flex-shrink-0">
+                          <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                          </svg>
+                        </div>
+                        <div>
+                          <h4 className="font-bold text-lg text-neutral-900 mb-2">
+                            {story.creationMethod === 'fairy_corner_daily' ? 'Daily AI Story' : 'Classic Fairy Tale'}
+                          </h4>
+                          <p className="text-neutral-700 leading-relaxed">
+                            {story.creationMethod === 'fairy_corner_daily'
+                              ? 'A brand new story is created every day in 12 languages, complete with narration and songs. No Fairy Dust required — included with your subscription.'
+                              : 'One of 100+ curated classic fairy tales and nursery rhymes, all with professional narration and custom songs. Always available in the Fairy Corner library.'}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </>
+                ) : (
+                  <>
+                    <h3 className="text-xl font-bold text-neutral-900 mb-4">
+                      📝 How This Story Was Created
+                    </h3>
+
+                    {story.creationMethod === 'quick_story' ? (
                   // Quick Story Method
                   <div className="bg-soft-blue-50 rounded-lg p-6">
                     <div className="flex items-start gap-3 mb-4">
@@ -225,6 +313,8 @@ const StoriesPage: React.FC = () => {
                       ⏱️ Generated in ~20 seconds • 1 Fairy Dust
                     </p>
                   </div>
+                )}
+                  </>
                 )}
               </div>
 
