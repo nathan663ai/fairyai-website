@@ -96,7 +96,7 @@ const ContactPage: React.FC = () => {
                 Terms of Service
               </Link>
               <Link
-                to="/account-delete"
+                to="/delete-account"
                 className="inline-block bg-white border-2 border-neutral-300 hover:border-soft-blue-500 text-neutral-700 hover:text-soft-blue-600 font-medium px-6 py-3 rounded-lg transition-all"
               >
                 Delete Account

@@ -37,7 +37,7 @@ function App() {
           <Route path="/stories" element={<StoriesPage />} />
           <Route path="/privacy" element={<PrivacyPage />} />
           <Route path="/terms" element={<TermsPage />} />
-          <Route path="/account-delete" element={<AccountDeletePage />} />
+          <Route path="/delete-account" element={<AccountDeletePage />} />
           <Route path="/contact" element={<ContactPage />} />
         </Routes>
         <Footer />

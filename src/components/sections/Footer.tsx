@@ -32,7 +32,7 @@ const Footer: React.FC = () => {
     { label: 'Privacy', path: '/privacy' },
     { label: 'Terms', path: '/terms' },
     { label: 'Contact', path: '/contact' },
-    { label: 'Delete Account', path: '/account-delete' }
+    { label: 'Delete Account', path: '/delete-account' }
   ];
 
   const socialLinks = [
