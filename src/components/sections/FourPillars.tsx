@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router';
 import ImagePlaceholder from '../ui/ImagePlaceholder';
 
 const FourPillars: React.FC = () => {
@@ -93,6 +94,19 @@ const FourPillars: React.FC = () => {
                     </li>
                   ))}
                 </ul>
+
+                {/* Link to Fairy Corner stories */}
+                {pillar.id === 'fairy-corner' && (
+                  <Link
+                    to="/stories#fairy-corner-stories"
+                    className="inline-flex items-center gap-2 mt-6 px-6 py-3 bg-gradient-to-r from-soft-blue-500 to-soft-green-500 text-white font-semibold rounded-lg hover:shadow-lg transition-all hover:scale-105"
+                  >
+                    <span>See Fairy Corner Examples</span>
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                    </svg>
+                  </Link>
+                )}
               </div>
 
               {/* Image Placeholder */}

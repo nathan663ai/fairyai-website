@@ -141,6 +141,7 @@ const StoriesPage: React.FC = () => {
           {storyExamples.map((story) => (
             <article
               key={story.id}
+              id={story.id === 4 ? 'fairy-corner-stories' : undefined}
               className="bg-white rounded-2xl shadow-xl border border-neutral-100 overflow-hidden"
             >
               {/* Story Header */}
