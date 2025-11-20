@@ -10,6 +10,7 @@ import StoriesPage from './pages/StoriesPage';
 import PrivacyPage from './pages/PrivacyPage';
 import TermsPage from './pages/TermsPage';
 import AccountDeletePage from './pages/AccountDeletePage';
+import DeletePage from './pages/DeletePage';
 import ContactPage from './pages/ContactPage';
 
 // Scroll to top on route change
@@ -38,6 +39,7 @@ function App() {
           <Route path="/privacy" element={<PrivacyPage />} />
           <Route path="/terms" element={<TermsPage />} />
           <Route path="/delete-account" element={<AccountDeletePage />} />
+          <Route path="/delete" element={<DeletePage />} />
           <Route path="/contact" element={<ContactPage />} />
         </Routes>
         <Footer />
