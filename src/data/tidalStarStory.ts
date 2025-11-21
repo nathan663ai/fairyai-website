@@ -603,6 +603,93 @@ export const tidalStarStoryDE: TidalStarStoryData = {
   ]
 };
 
+const tidalStarContentIT = `Al bordo dell'oceano, dove la sabbia era fresca e polverosa tra le dita dei piedi, il cielo della sera trasformava l'acqua in argento-blu. Le onde parlavano con un morbido shhh, e piccole conchiglie erano sparse sulla riva come caramelle.
+
+**Lila** si inginocchiò vicino a una pozza tra le rocce e guardò dentro. Le alghe ondeggiavano come nastri verdi. Un piccolo gamberetto scattò via. Sul bordo della pozza trovò un sasso a forma di stella. Era liscio e brillava appena. Quando lo raccolse, si scaldò nel palmo, come se fosse contento di essere scelto.
+
+"Scusami!" disse una vocina. "Giù qui!"
+
+Lila si chinò più vicino. Un lampo d'argento sfrecciò intorno alla pozza e spuntò su come una moneta. Un pesciolino, luminoso come la luce della luna, la guardò a occhi spalancati.
+
+"Sono **Finn**," disse, le parole che scoppiettavano veloci come bollicine. "Ho perso il Sentiero della Luna. La mia famiglia è nuotata a casa al crepuscolo, e io… beh, ho inseguito un bagliore e mi sono perso."
+
+Lila poggiò il mento sulle ginocchia. "Cos'è il Sentiero della Luna?"
+
+"È il nastro argentato che la luna stende sull'acqua," disse Finn, le pinne inclinate preoccupate. "Lo seguiamo fino alla cala tranquilla. Ma sono arrivate nuvole, e le rocce fanno angoli e ombre. Ho bisogno di un'amica che viva sulla terra per fare una chiave di onde."
+
+"Una chiave di onde?" Lila inclinò la testa.
+
+Finn annuì. "Un disegno sull'acqua. Non schizzi. Delicato. Solo mani piccole e attente possono farlo. Chiama il Sentiero della Luna anche quando le nuvole nascondono la luna. E tu hai una stellina! Quella aiuta."
+
+Lila guardò la stellina. "Posso provare," disse, anche se lo stomaco le faceva un leggero svolazzo. "Non ho mai aperto l'acqua prima."
+
+"Perfetto," disse Finn tutto contento. "La magia funziona meglio la prima volta."
+
+Lila tirò su le maniche e allungò la mano sulla pozza. Quando le sue dita toccarono la superficie, la stellina fece un piccolo movimento. Lì per lì lei sospirò. La stellina spiegò cinque bracciolini.
+
+"Oh!" Lila rise. "Non sei un sasso. Sei una stellina assonnata."
+
+La piccola stellina si allungò sul suo dito come una manina morbida. Luccicava di una perla appena percettibile. Gli occhi di Finn diventarono tondi. "Ancora meglio," sussurrò. "Le stelline amiche ricordano il cielo."
+
+"Cosa devo fare?" chiese Lila.
+
+"Disegna cerchi lenti," disse Finn. "Niente schizzi. Con delicatezza. L'acqua ama i visitatori educati."
+
+Lila inspirò un profumo di sale e posti lontani. Fece ruotare il dito una volta. Troppo veloce. La pozza schizzò. "Ops," disse.
+
+Finn fece un colpetto incoraggiante. "Più dolce. Come una piuma."
+
+Lila chiuse gli occhi un momento e ascoltò il shhh del mare. Si convinse di poter essere leggera come una piuma. Tracciò un cerchietto più piccolo, poi un altro, più lento. La stellina si scaldò e una collana di bollicine salì a incontrare il suo dito.
+
+Le nuvole si diradarono. La luna scivolò tra di loro e baciò la pozza. Dove Lila aveva tracciato, l'acqua tremolò, e si formò un sentiero perlaceo di bollicine. Si allungò dalla pozza tra le rocce, attraversò una catena di acque basse e si protese verso il mare aperto.
+
+Finn fece una giravolta di gioia. "Ce l'hai fatta! Il Sentiero della Luna è entrato nelle pozze!"
+
+Lila sorrise, le guance rosate. "Lo seguiamo?"
+
+Camminò sul bordo, con i sandali in una mano e le dita dei piedi a sfiorare l'acqua. Il mare era fresco e setoso. Il sentiero di bollicine brillava piano, come una fila di lanterne. Finn nuotava sotto, al passo. Ogni volta che il sentiero si affievoliva, la stellina sul dito di Lila si illuminava, e la luce tornava.
+
+Svoltarono dove le rocce formavano un varco. Un granchio a strisce stava lì con le chele alzate come un guardiano. "Click-clack," disse, batterando su una pietra.
+
+"Ciao," disse Lila con cortesia. "Seguiamo il Sentiero della Luna. Possiamo passare?"
+
+Il granchio inclinò gli occhi. Lila ammirò il suo carapace lucido. "Le tue strisce sono molto eleganti," aggiunse.
+
+Il granchio smise di battere. Con un passo laterale indicò un canale stretto nascosto tra le alghe. "Click," disse, quasi gentile, e mostrò la via segreta.
+
+"Grazie," disse Lila, e Finn fece un piccolo inchino che lo fece sembrare molto importante per essere un pesciolino così piccolo.
+
+Oltre il varco, le pozze si allargarono. L'acqua si fece profonda e trasparente come vetro blu. Nella pozza più grande, le ombre diventavano forme, e le forme diventavano pesci. Code argentee disegnavano giri come se scrivessero nell'aria.
+
+"Finn!" cantarono, con un sciame di bollicine che andò plink contro la roccia.
+
+"Mamma! Papà! Sono qui!" Finn sfrecciò nel banco. Fece un giro veloce, poi tornò corricchiando da Lila. "Questa è Lila. Ha trovato la chiave."
+
+I pesci si misero insieme e disegnarono un'onda a forma di cuore. Il petto di Lila si riscaldò, proprio come la stellina sul suo dito.
+
+Un pesce molto vecchio, con occhi lenti e saggi, si avvicinò. "L'oceano ricorda la gentilezza," disse con voce morbida e acquosa. "Quando hai bisogno di trovare la strada, immergi la tua stellina in una pozza e ascolta. L'acqua ti mostrerà il sentiero più dolce."
+
+Finn fece su e giù. "Tu puoi tenere la stellina un po'? Le piace come la curi."
+
+La stellina si contorse come per dire di sì, poi scivolò dal dito di Lila nella sua mano e si sistemò lì, comoda come un bottoncino. "La terrò fino all'alba," promise Lila. "Poi la riporterò alla sua roccia."
+
+Finn scintillò nella luce della luna. "Ogni tanto manderò uno scintillio sulle onde per salutarti."
+
+Lila rise, quel tipo di risata piccola che sembra un segreto tra amici. "Lo cercherò."
+
+Le nuvole passarono lente. La luna brillò più forte, stendendo un nastro d'argento lontano sull'acqua. La famiglia di Finn scivolò lungo il sentiero, code che sbattevano, scaglie che scintillavano come stelle. "Buonanotte!" chiamarono, e il suono fu come un sospiro e una canzone insieme.
+
+Lila rimase molto ferma, poi tornò con passi leggeri alla prima pozza. Accarezzò il dorso della stellina con la punta di un dito. "Hai fatto bene," sussurrò. "Ce l'abbiamo fatta insieme."
+
+Si sedette su una roccia liscia. La brezza era morbida e odorava di sale e di sonno. La notte si raccolse come una coperta. Le onde continuarono il loro shhh tranquillo. Toccò la pozza un'altra volta, e per un momento le bollicine disegnarono una piccola mappa proprio uguale al percorso che avevano fatto: intorno al varco, oltre il granchio, fino alla grande pozza blu. Poi svanì, come se fosse stata messa al sicuro.
+
+Lila mise la stellina in un piccolo piattino d'acqua di mare accanto a sé. Riposò lì, i braccini rilassati, un lieve bagliore di perla che pulsava piano. Abbracciò le ginocchia e guardò la luna tracciare lunghe linee d'argento sul mare.
+
+Gli occhi si fecero pesanti. La sabbia si raffreddò sotto i piedi. Il faro lontano lampeggiò, paziente e calmo. Da qualche parte oltre le rocce, una coda di pesce potrebbe aver dato l'ultimo colpetto di scintilla. Lila sorrise e lasciò che il silenzio la cullasse. Tutto intorno, l'oceano respirava, dolce e sicuro.
+
+Il pensiero di stanotte: credi in te stessa
+FINE`;
+
 export const tidalStarStoryIT: TidalStarStoryData = {
   id: "c769ee6b-2693-4ffc-b3a9-901b0bd62dd4",
   title: "Sussurri della Stella della Marea",
@@ -610,7 +697,7 @@ export const tidalStarStoryIT: TidalStarStoryData = {
   type: "ai",
   slug: "whispers-of-the-tidal-star-d5dfda26",
   imageUrl: "https://d1mmspri4wgcne.cloudfront.net/ai_stories/whispers-of-the-tidal-star-d5dfda26/cover.jpg",
-  content: "[Italian translation would go here]",
+  content: tidalStarContentIT,
   narrators: [
     {
       id: "onyx",
