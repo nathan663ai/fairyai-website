@@ -110,4 +110,17 @@ export const storyExamples: StoryExample[] = [
     songs: [],
     fullText: '', // Will use gingerbread data
   },
+  {
+    id: 'whispers-tidal-star',
+    numericId: 6,
+    title: 'Whispers of the Tidal Star',
+    imageUrl: 'https://d1mmspri4wgcne.cloudfront.net/ai_stories/whispers-of-the-tidal-star-d5dfda26/cover.jpg',
+    characterImage: '/images/characters/character6.jpg',
+    creationMethod: 'fairy_corner_daily',
+    description: 'AI-generated story from Fairy Corner with original narration and songs. A magical tale about discovery and wonder, available in 12 languages with multiple narrators.',
+    tagline: 'Click to experience this AI-crafted adventure',
+    audioSrc: 'https://d1mmspri4wgcne.cloudfront.net/ai_stories/whispers-of-the-tidal-star-d5dfda26/en-GB/narrations/onyx.mp3',
+    songs: [],
+    fullText: '', // Will use tidal star data
+  },
 ];
