@@ -1248,3 +1248,161 @@ export const gingerbreadStoryNL: GingerbreadStoryData = {
     }
   ]
 };
+
+const gingerbreadContentPL = `W przytulnym, ceglanym domku na skraju gwarniej wioski, gdzie w powietrzu pachniało cynamonem i imbirem, stara kobieta zawiązała fartuszek z wesołym podśpiewywaniem.
+
+"Dziś mam ochotę coś upiec," powiedziała do swojego kota, który leniwie mrugał na parapecie.
+
+Wymieszała mąkę, masło, cukier i melasę w swojej największej drewnianej misce. Ciasto było miękkie i klejące, pachnące przyprawami. Ostrożnie rozwałkowała je i wycięła idealny kształt piernikowego ludzika.
+
+"Zrobimy cię wyjątkowym," powiedziała życzliwie, wciskając porzeczki na oczy, rodzynkę na uśmiechniętą buzię i trzy cukrowe perełki na guziki. "Gotowe. Teraz do pieca z tobą."
+
+Wsadziła blachę do piekarnika i zamknęła drzwiczki. Gorąco falowało i unosiło się w górę. Kot z ciekawością wąchał powietrze.
+
+Ale gdy tylko minutnik zadzwonił—
+
+POP!
+
+Drzwiczki piekarnika otworzyły się z hukiem, a z nich wyskoczył Piernikowy Ludzik, rumiany i uśmiechnięty.
+
+"Nie jedz mnie!" zawołał, zeskakując na podłogę. "Biegnij, biegnij, ile sił w nogach! Nie złapiesz mnie, jestem Piernikowym Ludzikiem!"
+
+I pognał—przez kuchnię, obok zdziwionego kota i przez drzwi na słoneczny dwór.
+
+"Stój!" krzyknęła staruszka. "Wróć tutaj!"
+
+Ale Piernikowy Ludzik tylko się śmiał, gdy jego małe ciasteczkowe stópki stukały po ogrodowej ścieżce.
+"Uciekłem przed kobietą, ucieknę i przed tobą!
+Biegnij, biegnij, ile sił w nogach!
+Nie złapiesz mnie, jestem Piernikowym Ludzikiem!"
+
+Wkrótce minął grubą różową świnkę w błotnistej zagrodzie.
+
+"Chrum! Pachniesz pysznie!" zachrumkała świnka, ruszając za nim.
+
+Ale Piernikowy Ludzik tylko zawołał:
+"Uciekłem przed kobietą, uciekłem przed jej kotem—
+Ucieknę przed świnką równie łatwo!
+Biegnij, biegnij, ile sił w nogach!
+Nie złapiesz mnie, jestem Piernikowym Ludzikiem!"
+
+Przebiegł przez rynek wioski, obok zdziwionych sklepikarzy i koszy z jabłkami, jego małe nóżki biegły bardzo szybko.
+
+Następna była brązowa krowa, machająca ogonem przy płocie.
+
+"Muu! Byłbyś pyszną przekąską," powiedziała, biegnąc za nim.
+
+Ale on tylko zawołał:
+"Uciekłem przed kobietą, kotem i świnką,
+Uciec przed tobą? To nic trudnego!
+Biegnij, biegnij, ile sił w nogach!
+Nie złapiesz mnie, jestem Piernikowym Ludzikiem!"
+
+Za nim podnosił się kurz, gdy świnka i krowa dołączyły do pościgu. Ich racice dudniły po ziemi, a dzieci śmiały się i pokazywały palcami.
+
+Wtedy wysoki koń zarżał z łąki i ruszył w pogoń.
+
+"Złapię cię raz-dwa!" zawołał, kopyta dudniły.
+
+Ale Piernikowy Ludzik tylko przyspieszył, przemykając przez pola złotych zbóż.
+
+"Uciekłem przed wszystkimi, zobaczysz, że potrafię—
+Nie złapiesz mnie, jestem Piernikowym Ludzikiem!"
+
+Zwierzęta sapały i dyszały za nim. Staruszka już się poddała, trzymając ręce na biodrach i mrucząc: "To mnie nauczy, żeby nie piec niczego z nogami."
+
+Piernikowy Ludzik śmiał się, biegnąc przez las, liście szeleściły pod jego stopami, a ptaki rozlatywały się nad głową.
+
+Ale nagle dotarł do szerokiej, szumiącej rzeki. Woda wirowała ciemna i szybka, za głęboka, by przejść, za szeroka, by przeskoczyć.
+
+"Okruszki," powiedział, chodząc wzdłuż brzegu.
+
+Nagle wyszedł zgrabny lis, jego futro błyszczało jak wypolerowana miedź.
+
+"Czemu taka smutna mina, małe ciasteczko?" zapytał lis, głosem gładkim jak roztopione masło.
+
+"Muszę przejść przez rzekę," powiedział Piernikowy Ludzik, patrząc nerwowo na nurt. "Ale nie umiem pływać."
+
+Oczy lisa zabłysły. "Ja umiem. Wskakuj na mój ogon, a przeniosę cię na drugi brzeg."
+
+Piernikowy Ludzik zawahał się tylko chwilę i wskoczył.
+
+Lis wszedł do zimnej wody. Fale lśniły, gdy płynął powoli do przodu.
+
+"Z tyłu za bardzo chlupie," powiedział lis. "Wskocz mi na grzbiet."
+
+Piernikowy Ludzik wspiął się wyżej.
+
+Wkrótce woda sięgała lisowi do szyi. "Lepiej wskocz mi na głowę," powiedział, poruszając uszami.
+
+Piernikowy Ludzik posłuchał.
+
+Ale woda podniosła się jeszcze bardziej.
+
+"Zmokniesz—najlepiej wejdź mi na nos," wyszeptał lis.
+
+Gdy tylko Piernikowy Ludzik stanął na czubku nosa lisa—
+
+KŁAP!
+
+Jednym szybkim ruchem głowy lis podrzucił Piernikowego Ludzika w powietrze i połknął go na jeden kęs.
+
+Rzeka płynęła dalej. Ptaki ćwierkały. A lis oblizał wargi.
+
+"Pyszne."
+
+Chwilę później świnka, krowa i koń dobiegli, sapiąc.
+
+"Gdzie on jest?" sapnęła świnka.
+
+Lis cicho bekł. "Trochę się rozmokło," powiedział z mrugnięciem.
+
+W wiosce staruszka wyjęła z pieca kolejną blachę. Spojrzała na kota i powiedziała: "Tym razem bez nóg."
+
+Koniec`;
+
+export const gingerbreadStoryPL: GingerbreadStoryData = {
+  id: "05e75658-aa32-4f43-a4c4-bc8aaab5ee78",
+  title: "Piernikowy Ludzik",
+  languageCode: "pl",
+  type: "classic",
+  imageUrl: "https://d1mmspri4wgcne.cloudfront.net/classic-tales/The+Gingerbread+Man.png",
+  content: gingerbreadContentPL,
+  narrators: [
+    {
+      id: "onyx",
+      name: "Onyx",
+      duration: 323,
+      audioUrl: "https://d1mmspri4wgcne.cloudfront.net/ai_stories/the_gingerbread_man/narrations/pl/onyx.mp3"
+    },
+    {
+      id: "shimmer",
+      name: "Shimmer",
+      duration: 328,
+      audioUrl: "https://d1mmspri4wgcne.cloudfront.net/ai_stories/the_gingerbread_man/narrations/pl/shimmer.mp3"
+    }
+  ],
+  songs: [
+    {
+      id: "epic_adventure",
+      title: "Piernikowy Ludzik",
+      style: "epic_adventure",
+      url: "https://d1mmspri4wgcne.cloudfront.net/classic-tales/piernikowy_ludzik/pl/epic_adventure.mp3",
+      duration: 193.56
+    },
+    {
+      id: "singalong",
+      title: "Piernikowy Ludzik Tańczy",
+      style: "singalong",
+      url: "https://d1mmspri4wgcne.cloudfront.net/classic-tales/piernikowy_ludzik/pl/singalong.mp3",
+      duration: 209.52
+    },
+    {
+      id: "storytelling",
+      title: "Piernikowy Ludzik",
+      style: "storytelling",
+      url: "https://d1mmspri4wgcne.cloudfront.net/classic-tales/piernikowy_ludzik/pl/storytelling.mp3",
+      duration: 207.4
+    }
+  ]
+};
