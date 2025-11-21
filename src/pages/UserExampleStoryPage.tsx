@@ -4,11 +4,11 @@ import DownloadButtons from '../components/ui/DownloadButtons';
 import { UserExampleStory } from '../data/userExampleStories';
 import { robotFriendshipStory, dragonHeightsStory } from '../data/userExampleStories';
 
-type AgeGroup = '2-4' | '5-7' | '8-10' | '11-12';
+type AgeGroup = '2-3' | '4-6' | '7-9' | '10-12';
 
 const UserExampleStoryPage: React.FC = () => {
   const { storyId } = useParams<{ storyId: string }>();
-  const [selectedAge, setSelectedAge] = useState<AgeGroup>('5-7');
+  const [selectedAge, setSelectedAge] = useState<AgeGroup>('4-6');
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -146,7 +146,7 @@ const UserExampleStoryPage: React.FC = () => {
                 See How The Story Adapts By Age
               </h3>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-                {(['2-4', '5-7', '8-10', '11-12'] as AgeGroup[]).map((age) => (
+                {(['2-3', '4-6', '7-9', '10-12'] as AgeGroup[]).map((age) => (
                   <button
                     key={age}
                     onClick={() => setSelectedAge(age)}
@@ -158,10 +158,10 @@ const UserExampleStoryPage: React.FC = () => {
                   >
                     <div className="text-lg font-bold mb-1">Ages {age}</div>
                     <div className={`text-xs ${selectedAge === age ? 'text-white opacity-90' : 'text-neutral-500'}`}>
-                      {age === '2-4' && 'Simple & Playful'}
-                      {age === '5-7' && 'Adventure Begins'}
-                      {age === '8-10' && 'Growing Complexity'}
-                      {age === '11-12' && 'Deeper Themes'}
+                      {age === '2-3' && 'Simple & Playful'}
+                      {age === '4-6' && 'Adventure Begins'}
+                      {age === '7-9' && 'Growing Complexity'}
+                      {age === '10-12' && 'Deeper Themes'}
                     </div>
                   </button>
                 ))}

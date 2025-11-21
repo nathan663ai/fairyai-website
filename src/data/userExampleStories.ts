@@ -34,10 +34,10 @@ export interface UserExampleStory {
 
   // Stories by age group
   ageVariations: {
-    '2-4': AgeVariation;
-    '5-7': AgeVariation;
-    '8-10': AgeVariation;
-    '11-12': AgeVariation;
+    '2-3': AgeVariation;
+    '4-6': AgeVariation;
+    '7-9': AgeVariation;
+    '10-12': AgeVariation;
   };
 }
 
@@ -49,7 +49,7 @@ export const robotFriendshipStory: UserExampleStory = {
   promptText: 'A robot learns about friendship',
 
   ageVariations: {
-    '2-4': {
+    '2-3': {
       id: '60106122-ff41-452e-9d42-e8691a4c8093',
       imageUrl: 'https://d1mmspri4wgcne.cloudfront.net/users/0d73d152-bdfb-4aca-98bb-ed33d2b912f4/stories/60106122-ff41-452e-9d42-e8691a4c8093/0d73d152-bdfb-4aca-98bb-ed33d2b912f4_60106122-ff41-452e-9d42-e8691a4c8093_cover.png',
       content: `Once upon a time, in a bright blue house, lived a little robot named Beep. Beep was shiny and silver, with twinkly lights and a big, round button on his tummy. Beep loved to beep and boop all day long. But sometimes, Beep felt a little bit lonely.
@@ -132,7 +132,7 @@ The end.`,
         length: '~5 minutes'
       }
     },
-    '5-7': {
+    '4-6': {
       id: '067a4db2-9383-4d08-884e-d1dbad16483a',
       imageUrl: 'https://d1mmspri4wgcne.cloudfront.net/users/0d73d152-bdfb-4aca-98bb-ed33d2b912f4/stories/067a4db2-9383-4d08-884e-d1dbad16483a/0d73d152-bdfb-4aca-98bb-ed33d2b912f4_067a4db2-9383-4d08-884e-d1dbad16483a_cover.png',
       content: `Once upon a time, in a bright and bustling city, there lived a shiny silver robot named Robbie. Robbie lived in a cosy workshop with his inventor, Miss Tilly. Miss Tilly took good care of Robbie. She polished his metal arms every morning and tightened his bolts at night before bedtime. Robbie loved his workshop, but sometimes, he felt a little lonely.
@@ -241,7 +241,7 @@ Goodnight, little robot friend!`,
         length: '~8 minutes'
       }
     },
-    '8-10': {
+    '7-9': {
       id: '98b0e2c1-ece1-4654-8e4e-0b76c57a018a',
       imageUrl: 'https://d1mmspri4wgcne.cloudfront.net/users/0d73d152-bdfb-4aca-98bb-ed33d2b912f4/stories/98b0e2c1-ece1-4654-8e4e-0b76c57a018a/0d73d152-bdfb-4aca-98bb-ed33d2b912f4_98b0e2c1-ece1-4654-8e4e-0b76c57a018a_cover.png',
       content: `In the centre of a busy city, where people hurried past tall buildings and bright shops, lived a robot named Pixel. Pixel was not like the other robots who worked in offices or delivered post. Instead, he lived in the back room of Mr Singh's repair shop, surrounded by shelves cluttered with clocks, radios, and tangled wires.
@@ -338,13 +338,13 @@ As stars blinked above outside and city lights sparkled below their window, both
         length: '~10 minutes'
       }
     },
-    '11-12': {
-      id: 'robot-friendship-11-12',
+    '10-12': {
+      id: 'robot-friendship-10-12',
       content: `[Placeholder: Story content will be provided by Nathan]
 
-This is where the version for ages 11-12 will appear, with sophisticated themes and deeper meaning.`,
+This is where the version for ages 10-12 will appear, with sophisticated themes and deeper meaning.`,
       context: {
-        ageRange: '11-12 years',
+        ageRange: '10-12 years',
         styleNotes: [
           'Sophisticated themes',
           'Internal conflict and growth',
@@ -371,13 +371,13 @@ export const dragonHeightsStory: UserExampleStory = {
   },
 
   ageVariations: {
-    '2-4': {
-      id: 'dragon-heights-2-4',
+    '2-3': {
+      id: 'dragon-heights-2-3',
       content: `[Placeholder: Story content will be provided by Nathan]
 
 Simplified version: "Ember the dragon doesn't like to fly. Flying feels scary! But when her friend needs help, Ember tries. She goes up, up, up! Ember is brave!"`,
       context: {
-        ageRange: '2-4 years',
+        ageRange: '2-3 years',
         styleNotes: [
           'Shorter sentences, repetitive phrases',
           'Focus on action, not emotion complexity',
@@ -386,13 +386,13 @@ Simplified version: "Ember the dragon doesn't like to fly. Flying feels scary! B
         length: '~3 minutes'
       }
     },
-    '5-7': {
-      id: 'dragon-heights-5-7',
+    '4-6': {
+      id: 'dragon-heights-4-6',
       content: `[Placeholder: Story content will be provided by Nathan]
 
 This is the original target age for the story, with clear character emotions, problem-solving, and a satisfying resolution.`,
       context: {
-        ageRange: '5-7 years (Original Target)',
+        ageRange: '4-6 years (Original Target)',
         styleNotes: [
           'Character feels fear but overcomes it',
           'Clear cause and effect',
@@ -402,13 +402,13 @@ This is the original target age for the story, with clear character emotions, pr
         length: '~6 minutes'
       }
     },
-    '8-10': {
-      id: 'dragon-heights-8-10',
+    '7-9': {
+      id: 'dragon-heights-7-9',
       content: `[Placeholder: Story content will be provided by Nathan]
 
 Expanded version with more internal conflict: Ember doesn't just fear flying—she fears disappointing her family, being different, and failing when it matters most.`,
       context: {
-        ageRange: '8-10 years',
+        ageRange: '7-9 years',
         styleNotes: [
           'More complex emotional landscape',
           'Secondary characters with depth',
@@ -418,13 +418,13 @@ Expanded version with more internal conflict: Ember doesn't just fear flying—s
         length: '~8 minutes'
       }
     },
-    '11-12': {
-      id: 'dragon-heights-11-12',
+    '10-12': {
+      id: 'dragon-heights-10-12',
       content: `[Placeholder: Story content will be provided by Nathan]
 
 Matured version exploring identity and self-acceptance: What if who you are doesn't match who you're supposed to be? Ember's journey becomes about accepting herself, not just saving her friend.`,
       context: {
-        ageRange: '11-12 years',
+        ageRange: '10-12 years',
         styleNotes: [
           'Sophisticated themes of identity',
           'Nuanced character relationships',
