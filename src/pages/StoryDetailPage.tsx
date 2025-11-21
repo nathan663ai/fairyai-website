@@ -146,23 +146,23 @@ const StoryDetailPage: React.FC = () => {
                 <div className="bg-gradient-to-r from-soft-blue-50 to-soft-green-50 rounded-xl p-6 border border-soft-blue-100">
                   <h2 className="font-display text-2xl font-bold text-neutral-900 mb-3">Classic Fairy Tales</h2>
                   <p className="text-neutral-700 mb-4 leading-relaxed">
-                    These are timeless stories that have delighted children for generations. Our Fairy Corner features over 40 beloved classics—from The Three Little Pigs to Little Red Riding Hood—reimagined with beautiful narrations and original songs. Every story is available in 9 languages, making bedtime magical for families around the world.
+                    These are timeless stories that have delighted children for generations. Our Fairy Corner features over 40 beloved classics—from The Three Little Pigs to Little Red Riding Hood—reimagined with beautiful narrations and original songs. Every story is available in 12 languages, making bedtime magical for families around the world.
                   </p>
                   <div className="flex flex-wrap gap-2">
                     <span className="inline-flex items-center bg-white px-3 py-2 rounded-lg text-sm font-medium text-neutral-700 border border-neutral-200">
-                      📚 Familiar characters children already love
+                      Familiar characters children already love
                     </span>
                     <span className="inline-flex items-center bg-white px-3 py-2 rounded-lg text-sm font-medium text-neutral-700 border border-neutral-200">
-                      👨‍👩‍👧 Stories parents remember from childhood
+                      Stories parents remember from childhood
                     </span>
                     <span className="inline-flex items-center bg-white px-3 py-2 rounded-lg text-sm font-medium text-neutral-700 border border-neutral-200">
-                      🎵 Original songs in various musical styles
+                      Original songs in various musical styles
                     </span>
                     <span className="inline-flex items-center bg-white px-3 py-2 rounded-lg text-sm font-medium text-neutral-700 border border-neutral-200">
-                      🌍 Available in 9 languages
+                      Available in 12 languages
                     </span>
                     <span className="inline-flex items-center bg-white px-3 py-2 rounded-lg text-sm font-medium text-neutral-700 border border-neutral-200">
-                      ✨ Free for all subscribers
+                      Free for all subscribers
                     </span>
                   </div>
                 </div>
@@ -310,13 +310,13 @@ const StoryDetailPage: React.FC = () => {
                     </p>
                     <div className="flex flex-wrap gap-2">
                       <span className="inline-flex items-center bg-soft-blue-50 px-3 py-1 rounded-full text-xs font-medium text-soft-blue-700">
-                        🌙 Calming
+                        Calming
                       </span>
                       <span className="inline-flex items-center bg-soft-blue-50 px-3 py-1 rounded-full text-xs font-medium text-soft-blue-700">
-                        🌊 Ocean Adventure
+                        Ocean Adventure
                       </span>
                       <span className="inline-flex items-center bg-soft-blue-50 px-3 py-1 rounded-full text-xs font-medium text-soft-blue-700">
-                        ⭐ Magical
+                        Magical
                       </span>
                       <span className="inline-flex items-center bg-soft-blue-50 px-3 py-1 rounded-full text-xs font-medium text-soft-blue-700">
                         Ages 6-10
