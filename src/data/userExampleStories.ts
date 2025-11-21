@@ -131,19 +131,111 @@ The end.`,
       }
     },
     '5-7': {
-      id: 'robot-friendship-5-7',
-      content: `[Placeholder: Story content will be provided by Nathan]
+      id: '067a4db2-9383-4d08-884e-d1dbad16483a',
+      content: `Once upon a time, in a bright and bustling city, there lived a shiny silver robot named Robbie. Robbie lived in a cosy workshop with his inventor, Miss Tilly. Miss Tilly took good care of Robbie. She polished his metal arms every morning and tightened his bolts at night before bedtime. Robbie loved his workshop, but sometimes, he felt a little lonely.
 
-This is where the version for ages 5-7 will appear, with a clear narrative arc and character feelings.`,
+Robbie had lots of buttons and flashing lights, and he could beep and whirr as much as he liked. But sometimes, he wished he had someone to play with. He watched birds fly past the window in pairs, and children skipping hand-in-hand on the pavement outside. Robbie wondered what it would be like to have a friend.
+
+One sunny morning, Miss Tilly said, "Robbie, would you like to come with me to the park today?"
+
+Robbie's eyes lit up bright blue. "Yes, please!" he beeped excitedly.
+
+Miss Tilly packed a picnic. She tucked in some sandwiches, fruit, and a shiny red apple for herself—a shiny new battery for Robbie. Off they went to the park.
+
+The park was full of colour and laughter. Children ran about playing tag. Dogs chased sticks across the grass. Near the big oak tree, Miss Tilly spread out their picnic blanket.
+
+"Go and explore if you like," said Miss Tilly with a smile.
+
+Robbie whirred over to the playground. He saw two children building a sandcastle together. He saw a group of girls spinning on the roundabout, giggling as they went round and round.
+
+Robbie beeped shyly and rolled over to the sandpit. "Hello," he said in his best robot voice.
+
+The two children looked up. One was called Sam and the other was called Jaya.
+
+"Hello!" said Jaya with a grin. "Are you a real robot?"
+
+"Yes," beeped Robbie proudly.
+
+Sam's eyes grew wide. "Can you help us build our castle?"
+
+Robbie nodded and used his clever claw hands to pat down the sand just right. Together, they made the tallest sandcastle in the park! They added seashells for windows and sticks for flags.
+
+"This is fun!" said Jaya.
+
+"It's even better with you," said Sam.
+
+Robbie felt something new inside him—something warm and sparkly—even though he didn't have a heart like humans did.
+
+After a while, Sam said, "Let's play hide-and-seek!"
+
+"I've never played that before," Robbie admitted.
+
+"It's easy!" Jaya explained. "You close your eyes and count while we hide."
+
+Robbie turned around and closed his robot eyes (which meant he switched off his camera sensors for ten seconds). He counted out loud: "One… two… three…"
+
+When he finished counting, Robbie beeped, "Ready or not, here I come!" He used his gentle whirring wheels to glide around the playground looking for Sam and Jaya.
+
+He found Sam hiding behind the big slide and Jaya crouched behind the swings. Everyone cheered!
+
+"You're really good at seeking," laughed Sam.
+
+"I like this game," said Robbie happily.
+
+Soon it was time for lunch. Miss Tilly called Robbie over to the picnic blanket.
+
+"Did you have fun?" she asked as she passed him his shiny new battery.
+
+"Yes!" said Robbie. "I made friends."
+
+Sam and Jaya waved from across the grass. "Come play again after lunch!" they called.
+
+After eating, Robbie hurried back to his new friends. Together they played on the swings—Jaya pushed Robbie gently so he could feel what it was like to swing back and forth under the blue sky.
+
+Then they built paper aeroplanes from leaves and tried flying them from the top of their sandcastle tower.
+
+As the afternoon sunshine turned golden, Jaya said softly, "We have to go home soon."
+
+Sam nodded sadly. "Will we see you again?"
+
+"I hope so," beeped Robbie quietly.
+
+Jaya smiled brightly. "We come here every Saturday! Will you come too?"
+
+"I'd like that very much," said Robbie with a happy whirr.
+
+Just then, Sam gave Robbie a small pebble with a painted smiley face on it. "This is for you—to remember us!"
+
+Robbie picked up the pebble carefully in his metal hand. It wasn't shiny or new like his battery, but it felt very special indeed.
+
+When it was time to leave, Robbie waved goodbye to Sam and Jaya.
+
+On the way home, Miss Tilly asked him gently, "Did you have a good day?"
+
+Robbie thought about playing hide-and-seek, building castles together, swinging under the sky, and getting his special pebble from Sam.
+
+"Yes," he beeped softly but proudly. "I made friends today."
+
+Miss Tilly smiled kindly at him. "Friends make everything brighter."
+
+That evening back at home, Robbie placed the smiley pebble on his bedside shelf next to his favourite screwdriver. As he powered down for bedtime mode, he remembered all the laughter and games from his wonderful day at the park.
+
+From that day forward, every Saturday became 'Friendship Day' for Robbie—and he knew now that even robots could feel happy inside when they had friends by their side.
+
+And so Robbie learned that friendship isn't about having buttons or bolts—it's about sharing fun times together and caring for each other in small special ways.
+
+As night fell and stars twinkled above his workshop window, Robbie dreamed sweet dreams about all of his new adventures—with friends who would always be there when he needed them most.
+
+Goodnight, little robot friend!`,
       context: {
-        ageRange: '5-7 years',
+        ageRange: '4-6 years',
         styleNotes: [
-          'Clear narrative arc',
-          'Character feelings expressed',
-          'Simple problem-solving',
+          'Clear narrative arc with beginning, middle, and end',
+          'Character feelings expressed clearly',
+          'Simple problem-solving (making friends at the park)',
         ],
-        moral: 'Friends are more important than rules',
-        length: '~6 minutes'
+        moral: 'Friends are more important than being perfect',
+        length: '~8 minutes'
       }
     },
     '8-10': {
