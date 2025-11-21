@@ -105,7 +105,7 @@ export const storyExamples: StoryExample[] = [
     characterImage: '/images/characters/character5.jpg',
     creationMethod: 'fairy_corner_classic',
     description: 'Classic fairy tale from Fairy Corner library. One of 100+ curated tales with professional narration, custom songs, and multiple languages.',
-    tagline: 'Click to explore this timeless tale in English or French',
+    tagline: 'Click to explore this timeless tale in 4 languages',
     audioSrc: '/audio/stories/gingerbread-man-narration.mp3',
     songs: [],
     fullText: '', // Will use gingerbread data

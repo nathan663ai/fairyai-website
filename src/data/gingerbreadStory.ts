@@ -465,3 +465,161 @@ export const gingerbreadStoryFR: GingerbreadStoryData = {
     }
   ]
 };
+
+const gingerbreadContentES = `En una acogedora casita de ladrillo al borde de un pueblo bullicioso, donde la canela y el jengibre llenaban el aire de la mañana, una anciana se ató el delantal tarareando alegremente.
+
+"Hoy es un buen día para hornear", le dijo a su gato, que parpadeaba perezoso en la ventana.
+
+Mezcló harina, mantequilla, azúcar y melaza en su tazón de madera más grande. La masa era suave y pegajosa, calentita con especias. Con cuidado, la extendió y cortó la forma perfecta de un hombre de jengibre.
+
+"Vamos a hacerte especial", dijo amablemente, poniendo grosellas para los ojos, una pasa para la boca sonriente y tres perlas de azúcar para los botones. "Listo. Ahora al horno vas."
+
+Deslizó la bandeja y cerró la puerta. El calor subió y brilló. El gato olfateó el aire con interés.
+
+Pero justo cuando el reloj hizo tic—
+
+¡POP!
+
+La puerta del horno se abrió de golpe y saltó el Hombre de Jengibre, dorado y sonriente.
+
+"¡No me comas!" gritó, saltando al suelo. "¡Corre, corre, tan rápido como puedas! ¡No me atrapas, soy el Hombre de Jengibre!"
+
+Y salió corriendo—por la cocina, pasando al gato sorprendido, y por la puerta hacia el sol.
+
+"¡Detente!" gritó la anciana. "¡Vuelve aquí!"
+
+Pero el Hombre de Jengibre solo se rió mientras sus pequeños pies de galleta sonaban en el sendero del jardín.
+"¡Corrí de la señora, de ti también correré!
+¡Corre, corre, tan rápido como puedas!
+¡No me atrapas, soy el Hombre de Jengibre!"
+
+Pronto pasó junto a un cerdo rosado y gordo en un corral de barro.
+
+"¡Oinc! ¡Qué rico hueles!" gruñó el cerdo, trotando tras él.
+
+Pero el Hombre de Jengibre solo dijo:
+"¡Corrí de la señora, corrí de su gato—
+De un cerdo también me escaparé!
+¡Corre, corre, tan rápido como puedas!
+¡No me atrapas, soy el Hombre de Jengibre!"
+
+Corrió por la plaza del pueblo, pasando tenderos sorprendidos y cestas de manzanas, moviendo rápido sus pequeñas piernas.
+
+Luego vino una vaca marrón, moviendo la cola junto a la cerca.
+
+"¡Muu! Serías un buen bocadillo", dijo, siguiéndolo.
+
+Pero él solo gritó:
+"¡Corrí de la señora, del gato y del cerdo,
+Correr de ti no es gran enredo!
+¡Corre, corre, tan rápido como puedas!
+¡No me atrapas, soy el Hombre de Jengibre!"
+
+El polvo se levantaba detrás de él mientras el cerdo y la vaca se unían a la persecución. Sus pezuñas golpeaban la tierra mientras los niños reían y señalaban.
+
+Entonces un caballo alto relinchó desde el prado y se unió a la carrera.
+
+"¡Te atraparé en un instante!" llamó, galopando fuerte.
+
+Pero el Hombre de Jengibre solo corrió más rápido, cruzando campos de trigo dorado.
+
+"¡Corrí de todos ellos, verás que puedo—
+No me atrapas, soy el Hombre de Jengibre!"
+
+Los animales resoplaban y jadeaban detrás de él. La anciana se rindió, con las manos en la cintura, murmurando: "Eso me pasa por hornear algo con piernas".
+
+El Hombre de Jengibre se reía mientras corría por el bosque, hojas crujiendo bajo sus pies, pájaros volando por encima.
+
+Pero de repente, llegó a un río ancho y rápido. El agua giraba oscura y veloz, demasiado profunda para cruzar caminando, demasiado ancha para saltar.
+
+"Oh, migas", dijo, caminando de un lado a otro en la orilla.
+
+Salió un zorro elegante, su pelaje brillando como cobre pulido.
+
+"¿Por qué esa carita, pequeña galleta?" preguntó el zorro, con voz suave como mantequilla derretida.
+
+"Necesito cruzar este río", dijo el Hombre de Jengibre, mirando nervioso la corriente. "Pero no sé nadar".
+
+Los ojos del zorro brillaron. "Bueno, yo sí. Súbete a mi cola y te llevo al otro lado".
+
+Dudando solo un momento, el Hombre de Jengibre subió.
+
+El zorro entró al agua fría. Las ondas brillaban mientras nadaba suavemente.
+
+"Demasiado salpicón atrás", dijo el zorro. "Súbete a mi espalda".
+
+El Hombre de Jengibre subió más alto.
+
+Pronto el agua llegó al cuello del zorro. "Mejor súbete a mi cabeza", dijo moviendo las orejas.
+
+El Hombre de Jengibre obedeció.
+
+Pero el agua subió otra vez.
+
+"Te mojarás—mejor sube a mi nariz", susurró el zorro.
+
+En cuanto el Hombre de Jengibre pisó la punta de la nariz del zorro—
+
+¡CRAC!
+
+Con un rápido movimiento de cabeza, el zorro lanzó al Hombre de Jengibre al aire y se lo tragó de un solo bocado.
+
+El río siguió fluyendo. Los pájaros cantaron. Y el zorro se relamió los labios.
+
+"Delicioso."
+
+Momentos después, llegaron el cerdo, la vaca y el caballo, jadeando.
+
+"¿Dónde está?" preguntó el cerdo, sin aliento.
+
+El zorro dio un pequeño eructo. "Se puso un poco blandito", dijo guiñando un ojo.
+
+De vuelta en el pueblo, la anciana sacó otra bandeja del horno. Miró a su gato y dijo: "Esta vez, sin piernas".
+
+Fin`;
+
+export const gingerbreadStoryES: GingerbreadStoryData = {
+  id: "fc9934d4-c542-4904-8a9d-9e6a15974ffa",
+  title: "El Hombre de Jengibre",
+  languageCode: "es",
+  type: "classic",
+  imageUrl: "https://d1mmspri4wgcne.cloudfront.net/classic-tales/The+Gingerbread+Man.png",
+  content: gingerbreadContentES,
+  narrators: [
+    {
+      id: "onyx",
+      name: "Onyx",
+      duration: 324,
+      audioUrl: "https://d1mmspri4wgcne.cloudfront.net/ai_stories/the_gingerbread_man/narrations/es/onyx.mp3"
+    },
+    {
+      id: "shimmer",
+      name: "Shimmer",
+      duration: 331,
+      audioUrl: "https://d1mmspri4wgcne.cloudfront.net/ai_stories/the_gingerbread_man/narrations/es/shimmer.mp3"
+    }
+  ],
+  songs: [
+    {
+      id: "epic_adventure",
+      title: "El Hombre de Jengibre",
+      style: "epic_adventure",
+      url: "https://d1mmspri4wgcne.cloudfront.net/classic-tales/el_hombre_de_jengibre/es/epic_adventure.mp3",
+      duration: 197
+    },
+    {
+      id: "singalong",
+      title: "El Hombre de Jengibre",
+      style: "singalong",
+      url: "https://d1mmspri4wgcne.cloudfront.net/classic-tales/el_hombre_de_jengibre/es/singalong.mp3",
+      duration: 142
+    },
+    {
+      id: "storytelling",
+      title: "El Hombre de Jengibre",
+      style: "storytelling",
+      url: "https://d1mmspri4wgcne.cloudfront.net/classic-tales/el_hombre_de_jengibre/es/storytelling.mp3",
+      duration: 157.28
+    }
+  ]
+};
