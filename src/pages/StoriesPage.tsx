@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import AudioPlayer from '../components/ui/AudioPlayer';
 import ImagePlaceholder from '../components/ui/ImagePlaceholder';
 import DownloadButtons from '../components/ui/DownloadButtons';
-import { gingerbreadStoryEnGB, gingerbreadStoryEnUS } from '../data/gingerbreadStory';
+import { gingerbreadStoryEnGB, gingerbreadStoryEnUS, gingerbreadStoryFR } from '../data/gingerbreadStory';
 
 // Story Examples Data with Creation Methods
 const storyExamples = [
@@ -117,7 +117,7 @@ The End.`,
 
 const StoriesPage: React.FC = () => {
   const [expandedStory, setExpandedStory] = useState<number | null>(null);
-  const [selectedLanguage, setSelectedLanguage] = useState<'en-GB' | 'en-US'>('en-GB');
+  const [selectedLanguage, setSelectedLanguage] = useState<'en-GB' | 'en-US' | 'fr'>('en-GB');
   const [selectedNarrator, setSelectedNarrator] = useState<string>('echo');
 
   const toggleStory = (storyId: number) => {
@@ -125,7 +125,12 @@ const StoriesPage: React.FC = () => {
   };
 
   // Get current gingerbread data based on selected language
-  const currentGingerbread = selectedLanguage === 'en-GB' ? gingerbreadStoryEnGB : gingerbreadStoryEnUS;
+  const currentGingerbread =
+    selectedLanguage === 'en-GB' ? gingerbreadStoryEnGB :
+    selectedLanguage === 'en-US' ? gingerbreadStoryEnUS :
+    gingerbreadStoryFR;
+
+  // Ensure selected narrator exists for current language, default to first available
   const currentNarrator = currentGingerbread.narrators.find(n => n.id === selectedNarrator) || currentGingerbread.narrators[0];
 
   return (
@@ -187,7 +192,7 @@ const StoriesPage: React.FC = () => {
                   // Enhanced Gingerbread Man section with language toggle and narrator selection
                   <>
                     {/* Language Toggle */}
-                    <div className="mb-6 flex items-center justify-center gap-2 bg-soft-blue-50 rounded-lg p-4">
+                    <div className="mb-6 flex items-center justify-center gap-2 bg-soft-blue-50 rounded-lg p-4 flex-wrap">
                       <span className="text-sm font-semibold text-neutral-700">Language:</span>
                       <button
                         onClick={() => setSelectedLanguage('en-GB')}
@@ -208,6 +213,16 @@ const StoriesPage: React.FC = () => {
                         }`}
                       >
                         🇺🇸 English (US)
+                      </button>
+                      <button
+                        onClick={() => setSelectedLanguage('fr')}
+                        className={`px-4 py-2 rounded-lg font-medium transition-all ${
+                          selectedLanguage === 'fr'
+                            ? 'bg-soft-blue-500 text-white shadow-md'
+                            : 'bg-white text-neutral-700 hover:bg-neutral-100'
+                        }`}
+                      >
+                        🇫🇷 Français
                       </button>
                     </div>
 

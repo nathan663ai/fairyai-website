@@ -307,3 +307,161 @@ export const gingerbreadStoryEnUS: GingerbreadStoryData = {
     }
   ]
 };
+
+const gingerbreadContentFR = `Dans un petit cottage en briques, au bord d'un village animé, où la cannelle et le gingembre parfumaient l'air du matin, une vieille dame noua son tablier en fredonnant joyeusement.
+
+"Aujourd'hui, c'est un jour pour faire de la pâtisserie," dit-elle à son chat, qui cligna lentement des yeux sur le rebord de la fenêtre.
+
+Elle mélangea de la farine, du beurre, du sucre et de la mélasse dans son plus grand saladier en bois. La pâte était douce et collante, chaude d'épices. Avec soin, elle l'étala et découpa la forme parfaite d'un petit bonhomme en pain d'épices.
+
+"On va te rendre spécial," dit-elle gentiment, en pressant des groseilles pour les yeux, un raisin pour un sourire, et trois perles de sucre pour les boutons. "Voilà. Maintenant, au four !"
+
+Elle glissa la plaque et ferma la porte. La chaleur montait et dansait. Le chat renifla l'air avec intérêt.
+
+Mais juste quand le minuteur sonna—
+
+POP !
+
+La porte du four s'ouvrit d'un coup, et le Petit Bonhomme en Pain d'Épices bondit dehors, doré et souriant.
+
+"Ne me mangez pas !" cria-t-il, sautant sur le sol. "Cours, cours, aussi vite que tu peux ! Tu ne m'attraperas pas, je suis le Petit Bonhomme en Pain d'Épices !"
+
+Et le voilà parti—à travers la cuisine, devant le chat étonné, et dehors, sous le soleil.
+
+"Arrête !" cria la vieille dame. "Reviens !"
+
+Mais le Petit Bonhomme en Pain d'Épices riait, ses petits pieds de biscuit tapant sur le chemin du jardin.
+"J'ai échappé à la dame, je t'échapperai aussi !
+Cours, cours, aussi vite que tu peux !
+Tu ne m'attraperas pas, je suis le Petit Bonhomme en Pain d'Épices !"
+
+Bientôt, il passa devant un gros cochon rose dans une mare de boue.
+
+"Groin ! Tu sens drôlement bon !" grogna le cochon, trottinant derrière lui.
+
+Mais le Petit Bonhomme en Pain d'Épices lança :
+"J'ai échappé à la dame, j'ai échappé à son chat—
+Je vais échapper à un cochon tout aussi vite !
+Cours, cours, aussi vite que tu peux !
+Tu ne m'attraperas pas, je suis le Petit Bonhomme en Pain d'Épices !"
+
+Il traversa la place du village, devant les commerçants surpris et des paniers de pommes, ses petites jambes allant très vite.
+
+Puis une vache brune, balançant sa queue près de la clôture, s'approcha.
+
+"Meuh ! Quel bon goûter tu ferais," dit-elle, s'élançant à sa poursuite.
+
+Mais il cria simplement :
+"J'ai échappé à la dame, au chat et au cochon,
+Te fuir, ce n'est pas trop long !
+Cours, cours, aussi vite que tu peux !
+Tu ne m'attraperas pas, je suis le Petit Bonhomme en Pain d'Épices !"
+
+La poussière s'éleva derrière lui alors que le cochon et la vache rejoignaient la course. Leurs sabots frappaient la terre, tandis que les enfants riaient et montraient du doigt.
+
+Puis un grand cheval hennit depuis le pré et se lança à la poursuite.
+
+"Je vais t'attraper en un rien de temps !" cria-t-il, ses sabots tonnant.
+
+Mais le Petit Bonhomme en Pain d'Épices accéléra encore, filant à travers les champs de blé doré.
+
+"J'ai échappé à tous, tu verras bien—
+Tu ne m'attraperas pas, je suis le Petit Bonhomme en Pain d'Épices !"
+
+Les animaux soufflaient et haletaient derrière lui. La vieille dame avait abandonné, les mains sur les hanches, marmonnant : "Ça m'apprendra à faire cuire quelque chose avec des jambes."
+
+Le Petit Bonhomme en Pain d'Épices riait en courant dans la forêt, les feuilles craquant sous ses pieds, les oiseaux s'envolant au-dessus de lui.
+
+Mais soudain, il arriva devant une large rivière rapide. L'eau tourbillonnait, sombre et rapide, trop profonde pour marcher, trop large pour sauter.
+
+"Oh, miettes," dit-il, marchant le long de la berge.
+
+Un renard lisse sortit de derrière un buisson, son pelage brillant comme du cuivre poli.
+
+"Pourquoi cette mine triste, petit biscuit ?" demanda le renard, sa voix douce comme du beurre fondu.
+
+"Je dois traverser cette rivière," dit le Petit Bonhomme en Pain d'Épices, regardant le courant avec inquiétude. "Mais je ne sais pas nager."
+
+Les yeux du renard pétillèrent. "Moi, je peux. Grimpe sur ma queue, et je te porterai de l'autre côté."
+
+Hésitant juste un instant, le Petit Bonhomme en Pain d'Épices monta.
+
+Le renard entra dans l'eau froide. Des vaguelettes brillaient alors qu'il nageait doucement.
+
+"Trop d'éclaboussures derrière," dit le renard. "Monte sur mon dos."
+
+Le Petit Bonhomme en Pain d'Épices grimpa plus haut.
+
+Bientôt, l'eau arriva au cou du renard. "Mieux vaut monter sur ma tête," dit-il en bougeant les oreilles.
+
+Le Petit Bonhomme en Pain d'Épices obéit.
+
+Mais l'eau monta encore.
+
+"Tu vas être mouillé—grimpe sur mon nez," chuchota le renard.
+
+Dès que le Petit Bonhomme en Pain d'Épices posa le pied sur le bout du nez du renard—
+
+SNAP !
+
+D'un coup de tête, le renard lança le Petit Bonhomme en Pain d'Épices en l'air et l'avala d'une seule bouchée.
+
+La rivière continuait de couler. Les oiseaux chantaient. Et le renard se lécha les babines.
+
+"Délicieux."
+
+Quelques instants plus tard, le cochon, la vache et le cheval arrivèrent, tout essoufflés.
+
+"Où est-il ?" souffla le cochon.
+
+Le renard fit un petit rot. "Il est devenu un peu mouillé," dit-il en faisant un clin d'œil.
+
+De retour au village, la vieille dame sortit une autre plaque du four. Elle regarda son chat et dit : "Cette fois, pas de jambes."
+
+La Fin`;
+
+export const gingerbreadStoryFR: GingerbreadStoryData = {
+  id: "3956dc38-3102-4520-adf8-e4f41570c370",
+  title: "Le Petit Bonhomme en Pain d'Épices",
+  languageCode: "fr",
+  type: "classic",
+  imageUrl: "https://d1mmspri4wgcne.cloudfront.net/classic-tales/The+Gingerbread+Man.png",
+  content: gingerbreadContentFR,
+  narrators: [
+    {
+      id: "onyx",
+      name: "Onyx",
+      duration: 314,
+      audioUrl: "https://d1mmspri4wgcne.cloudfront.net/ai_stories/the_gingerbread_man/narrations/fr/onyx.mp3"
+    },
+    {
+      id: "shimmer",
+      name: "Shimmer",
+      duration: 334,
+      audioUrl: "https://d1mmspri4wgcne.cloudfront.net/ai_stories/the_gingerbread_man/narrations/fr/shimmer.mp3"
+    }
+  ],
+  songs: [
+    {
+      id: "epic_adventure",
+      title: "L'Évasion du Bonhomme en Pain d'Épices",
+      style: "epic_adventure",
+      url: "https://d1mmspri4wgcne.cloudfront.net/classic-tales/le_petit_bonhomme_en_pain_d'épices/fr/epic_adventure.mp3",
+      duration: 177.36
+    },
+    {
+      id: "singalong",
+      title: "Le Petit Bonhomme en Pain d'Épices",
+      style: "singalong",
+      url: "https://d1mmspri4wgcne.cloudfront.net/classic-tales/le_petit_bonhomme_en_pain_d'épices/fr/singalong.mp3",
+      duration: 154.92
+    },
+    {
+      id: "storytelling",
+      title: "Le Petit Bonhomme",
+      style: "storytelling",
+      url: "https://d1mmspri4wgcne.cloudfront.net/classic-tales/le_petit_bonhomme_en_pain_d'épices/fr/storytelling.mp3",
+      duration: 104.96
+    }
+  ]
+};
