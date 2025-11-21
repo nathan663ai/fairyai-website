@@ -240,6 +240,93 @@ export const tidalStarStoryEnUS: TidalStarStoryData = {
   ]
 };
 
+const tidalStarContentFR = `Au bord de l'océan, là où le sable était frais et poudreux entre les orteils, le ciel du soir teintait l'eau d'un bleu-argenté. Les vagues chuchotaient un petit shhh, et de minuscules coquillages parsemaient la plage comme des bonbons.
+
+**Lila** s'agenouilla près d'une flaque entre les rochers et regarda dedans. Des algues flottaient comme des rubans verts. Une toute petite crevette fit mine de s'enfuir. Sur le rebord de la flaque, elle trouva un galet en forme d'étoile. Il était lisse, avec un léger scintillement. Quand elle le ramassa, il se réchauffa dans sa paume, comme s'il aimait être choisi.
+
+— Excusez-moi ! dit une petite voix. Là-dedans !
+
+Lila se pencha plus près. Un éclat d'argent fit le tour de la flaque et jaillit comme une pièce. Un petit poisson, lumineux comme la lune, lui fit cligner les yeux.
+
+— Je suis **Finn**, dit-il, les mots pétillant rapidement. J'ai perdu le Chemin de Lune. Ma famille a nagé vers la maison au crépuscule, et moi… eh bien, j'ai poursuivi une lueur et je me suis pris les nageoires.
+
+Lila posa son menton sur ses genoux. — C'est quoi, le Chemin de Lune ?
+
+— C'est le ruban argenté que la lune pose sur l'eau, expliqua Finn, ses nageoires inclinées d'inquiétude. On le suit pour aller à la crique tranquille. Mais des nuages sont venus, et les rochers font des coins et des ombres. J'ai besoin d'une amie de la terre pour faire une clé d'ondulation.
+
+— Une clé d'ondulation ? demanda Lila en penchant la tête.
+
+Finn hocha la tête. — Un motif sur l'eau. Pas d'éclaboussures. Des mains petites et délicates seulement peuvent le faire. Il appelle le Chemin de Lune même quand les nuages cachent la lune. Et toi, tu as un galet-étoile ! Ça aide.
+
+Lila regarda le galet. — Je peux essayer, dit-elle, bien que son ventre fasse comme des papillons. Je n'ai jamais ouvert l'eau avant.
+
+— Parfait, dit Finn avec gaieté. La première fois, la magie marche mieux.
+
+Lila retroussa ses manches et étendit la main au-dessus de la flaque. Dès que ses doigts touchèrent la surface, le galet-étoile tressaillit. Elle retint un petit cri. Le galet déploya cinq minuscules bras.
+
+— Oh ! ricana Lila. Tu n'es pas du tout un galet. Tu es une étoile de mer endormie.
+
+La petite étoile de mer s'étira sur son doigt comme une main douce et minuscule. Elle brillait d'un faible éclat nacré. Les yeux de Finn s'écarquillèrent. — Encore mieux, souffla-t-il. Les amis-Étoiles se souviennent du ciel.
+
+— Que dois-je faire ? demanda Lila.
+
+— Trace des cercles lents, dit Finn. Pas d'éclaboussures. Doucement. L'eau aime les visiteurs polis.
+
+Lila prit une grande respiration qui sentait le sel et les lieux lointains. Elle fit tournoyer son doigt une fois. Trop vite. La flaque éclaboussa. — Oups, dit-elle.
+
+Finn fit un battement encourageant. — Plus doux. Comme une plume.
+
+Lila ferma les yeux un instant et écouta le shhh de la mer. Elle se dit qu'elle pouvait être légère comme une plume. Elle dessina un petit cercle, puis un autre, plus lent. L'étoile de mer devint plus chaude, et un collier de minuscules bulles monta à la rencontre de son doigt.
+
+Les nuages s'amincirent. La lumière de la lune se faufila entre eux et embrassa la flaque. Là où Lila traçait, l'eau frissonna, et un chemin nacré de bulles se forma. Il s'étira depuis la flaque, serpentait à travers une chaîne de bas-fonds et tendit la main vers la mer ouverte.
+
+Finn tourna de joie. — Tu l'as fait ! Le Chemin de Lune est entré dans les flaques !
+
+Lila sourit, les joues roses. — On le suit ?
+
+Elle marcha le long du bord, ses sandales à la main, les orteils frôlant l'eau. La mer était fraîche et soyeuse. Le sentier de bulles brillait doucement, comme une guirlande de lanternes. Finn nageait dessous, gardant le rythme. Chaque fois que le chemin faiblissait, l'étoile sur le doigt de Lila s'éclairait, et la lumière revenait.
+
+Ils tournèrent un coin où les rochers formaient une porte. Un crabe rayé se tenait là, ses pinces comme un garde. — Clic-clac, dit-il en tapotant une pierre.
+
+— Bonjour, dit Lila poliment. Nous suivons le Chemin de Lune. Pourrions-nous passer ?
+
+Le crabe inclina ses yeux. Lila admira sa carapace brillante. — Tes rayures sont très élégantes, ajouta-t-elle.
+
+Le crabe cessa de taper. D'un pas de côté, il montra un petit ruisselet caché par des algues. — Clic, dit-il, presque gentiment, et montra le chemin secret.
+
+— Merci, dit Lila, et Finn fit une petite révérence qui le rendit terriblement grand pour un si petit poisson.
+
+Après la porte, les flaques s'élargirent. L'eau devint bleu clair comme du verre. Dans la plus grande, les ombres devinrent formes, et les formes devinrent poissons. Des queues argentées traçaient des boucles comme des lettres dans l'air.
+
+— Finn ! chantèrent-ils, avec un chapelet de bulles qui fit plink contre le rocher.
+
+— Maman ! Papa ! Je suis là ! s'exclama Finn en fonçant dans le banc. Il fit un tour rapide, puis revint vrombir vers Lila. — Voici Lila. Elle a trouvé la clé.
+
+Les poissons se rapprochèrent et dessinèrent une ondulation en forme de cœur. La poitrine de Lila se réchauffa, tout comme l'étoile de mer sur son doigt.
+
+Un poisson très vieux, aux yeux doux et sages, nagea près d'elle. — L'océan se souvient de la gentillesse, dit-il d'une voix douce et humide. Quand tu dois retrouver ton chemin, trempe ton ami-Étoile dans une flaque et écoute. L'eau te montrera le chemin le plus doux.
+
+Finn hocha. — Tu peux garder l'étoile un peu ? Elle aime tes soins.
+
+L'étoile de mer se tortilla comme pour approuver, puis glissa du doigt de Lila dans sa paume et s'y blottit, confortable comme un bouton. — Je la garderai jusqu'à l'aube, promit Lila. Ensuite je la ramènerai sur son rocher.
+
+Finn scintilla sous la lumière de la lune. — J'enverrai parfois une étincelle sur les vagues pour dire bonjour.
+
+Lila rit, d'un petit rire qui ressemble à un secret partagé entre amis. — Je la guetterai.
+
+Les nuages dérivèrent. La lune brilla plus fort et étendit un long ruban d'argent sur l'eau. La famille de Finn glissa le long du chemin, queues battantes, écailles scintillant comme des étoiles. — Bonne nuit ! appelèrent-ils, et le son fut à la fois un soupir et une chanson.
+
+Lila resta immobile un instant, puis remonta vers la première flaque. Elle caressa le dos de l'étoile de mer du bout du doigt. — Tu as bien travaillé, chuchota-t-elle. Nous avons bien fait toutes les deux.
+
+Elle se percha sur un rocher lisse. La brise était douce et sentait le sel et le sommeil. La nuit s'étendit comme une couverture. Les vagues gardèrent leur shhh tranquille. Elle toucha la flaque encore une fois, et pendant un instant les bulles dessinèrent une petite carte qui ressemblait exactement au chemin qu'elles avaient suivi : autour de la porte, passé le crabe, jusqu'à la grande flaque bleue. Puis elle s'effaça, comme rangée en lieu sûr.
+
+Lila posa l'étoile de mer dans une coupelle d'eau de mer peu profonde à côté d'elle. Elle y resta, bras minuscules détendus, un faible éclat nacré palpita très lentement. Elle entoura ses genoux de ses bras et regarda la lune peindre de longues lignes d'argent sur la mer.
+
+Ses yeux devinrent lourds. Le sable refroidit sous ses pieds. Le phare au loin clignota, patient et tranquille. Quelque part, derrière les rochers, une queue de poisson avait peut-être encore agité une dernière vague d'étincelles. Lila sourit et se laissa envelopper par le calme. Autour d'elle, l'océan respirait, doux et sûr.
+
+La pensée de ce soir : crois en toi
+FIN`;
+
 export const tidalStarStoryFR: TidalStarStoryData = {
   id: "0cef9b7c-9fa3-45ec-afb0-250e7704c4d5",
   title: "Murmures de l'Étoile des Marées",
@@ -247,7 +334,7 @@ export const tidalStarStoryFR: TidalStarStoryData = {
   type: "ai",
   slug: "whispers-of-the-tidal-star-d5dfda26",
   imageUrl: "https://d1mmspri4wgcne.cloudfront.net/ai_stories/whispers-of-the-tidal-star-d5dfda26/cover.jpg",
-  content: "[French translation would go here]",
+  content: tidalStarContentFR,
   narrators: [
     {
       id: "onyx",
