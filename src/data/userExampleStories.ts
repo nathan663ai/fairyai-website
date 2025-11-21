@@ -49,19 +49,85 @@ export const robotFriendshipStory: UserExampleStory = {
 
   ageVariations: {
     '2-4': {
-      id: 'robot-friendship-2-4',
-      content: `[Placeholder: Story content will be provided by Nathan]
+      id: '60106122-ff41-452e-9d42-e8691a4c8093',
+      content: `Once upon a time, in a bright blue house, lived a little robot named Beep. Beep was shiny and silver, with twinkly lights and a big, round button on his tummy. Beep loved to beep and boop all day long. But sometimes, Beep felt a little bit lonely.
 
-This is where the simple version for ages 2-4 will appear, with basic language and repetitive phrases.`,
+One sunny morning, Beep woke up with a wiggle and a beep. "Beep beep! What will I do today?" he wondered. Beep looked out of the window and saw the birds singing in the trees. He saw the squirrels chasing each other. He saw the butterflies dancing in the garden.
+
+"I want to play too," said Beep. "But I do not know how."
+
+Beep rolled outside on his little wheels. He saw a small, brown puppy digging in the dirt. The puppy wagged his tail and barked. "Woof woof!"
+
+"Hello, Puppy," said Beep. "Can I play with you?"
+
+The puppy sniffed Beep's shiny hand. "Woof! Let's dig!" said Puppy.
+
+Beep tried to dig with his metal hands, but the dirt was hard and cold. His hands got all muddy. "Oh no!" said Beep. "I do not like digging."
+
+Puppy wagged his tail. "That's okay, Beep! Let's run!"
+
+Beep tried to run, but his wheels went bumpity-bump on the grass. He rolled this way and that way. "Oh no!" said Beep. "I do not like running."
+
+Puppy licked Beep's hand. "That's okay, Beep! Let's find someone else to play with."
+
+Beep and Puppy went to the garden. There, they saw Bella Bunny nibbling on a carrot. Her ears were long and floppy.
+
+"Hello, Bella Bunny," said Beep. "Can we play with you?"
+
+Bella Bunny wiggled her nose. "Let's hop!" she said.
+
+Beep tried to hop, but his wheels went round and round. He wobbled and wiggled, but he could not hop. "Oh no!" said Beep. "I do not like hopping."
+
+Bella Bunny smiled. "That's okay, Beep! Let's find another friend."
+
+Beep, Puppy, and Bella Bunny walked to the pond. Quack the Duck was splashing in the water.
+
+"Hello, Quack," said Beep. "Can we play with you?"
+
+Quack flapped his wings. "Let's swim!" he said.
+
+Beep rolled to the water's edge. He put one wheel in the water. Splash! "Oh no!" said Beep. "I do not like swimming."
+
+Quack paddled closer. "That's okay, Beep! What do you like to do?"
+
+Beep thought and thought. His lights blinked. His button glowed. "I like to beep and boop!" he said. "I can make music with my beeps and boops."
+
+Puppy barked. "I like music!"
+
+Bella Bunny wiggled her ears. "Me too!"
+
+Quack flapped his wings. "Let's all make music!"
+
+Beep beeped and booped. Puppy barked. Bella Bunny thumped her feet. Quack quacked. Together, they made a happy song.
+
+Beep felt happy. His lights blinked in all the colours of the rainbow. "I love playing music with my friends," he said.
+
+Puppy wagged his tail. "You are a good friend, Beep!"
+
+Bella Bunny nibbled her carrot. "You make us happy, Beep!"
+
+Quack splashed in the pond. "Let's play again tomorrow!"
+
+Beep beeped with joy. "Yes, let's play again! I love my friends!"
+
+The sun began to set. It was time to go home.
+
+Beep rolled back to his bright blue house. He looked up at the twinkly stars. "I learned something today," said Beep. "Friends are special. Friends help each other. Friends play together. And friends make me happy."
+
+Beep closed his eyes. His lights turned soft and gentle. "Goodnight, friends," he whispered.
+
+And Beep the Robot fell fast asleep, dreaming of beeps, boops, and wonderful friendship adventures.
+
+The end.`,
       context: {
-        ageRange: '2-4 years',
+        ageRange: '2-3 years',
         styleNotes: [
           'Simple, repetitive language',
-          'Bright colors and sounds',
+          'Bright characters and sounds (Beep! Woof! Quack!)',
           'Basic emotions and actions',
         ],
         moral: 'Friends make us happy',
-        length: '~3 minutes'
+        length: '~5 minutes'
       }
     },
     '5-7': {
