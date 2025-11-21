@@ -274,6 +274,95 @@ export const tidalStarStoryFR: TidalStarStoryData = {
   ]
 };
 
+const tidalStarContentES = `En el borde del océano, donde la arena se sentía fresca y polvorienta entre los dedos, el cielo de la tarde teñía el agua de azul plateado. Las olas hablaban con un suave shhh, y pequeñas conchitas estaban esparcidas como dulces por la orilla.
+
+**Lila** se arrodilló junto a una poza entre las rocas y asomó la cabeza. El alga flotaba como cintas verdes. Un camarón pequeñito se alejó haciendo un salto. En el borde de la poza encontró una piedrecita con forma de estrella. Era lisa y tenía un brillo tenue. Cuando la recogió, se calentó en su palma, como si le gustara haber sido elegida.
+
+—¡Perdona! —dijo una vocesita—. ¡Aquí abajo!
+
+**Lila** se inclinó más. Un destello plateado recorrió la poza y salió como una moneda chapando. Un pez pequeño, brillante como la luz de la luna, la miró parpadeando.
+
+—Soy **Finn** —dijo, las palabras burbujeando deprisa—. He perdido el Camino de la Luna. Mi familia nadó a casa al anochecer y yo… bueno, seguí un brillo y me perdí.
+
+**Lila** apoyó la barbilla en las rodillas. —¿Qué es el Camino de la Luna?
+
+—Es la cinta plateada que la luna deja sobre el agua —dijo **Finn**, moviendo las aletas con preocupación—. Lo seguimos hasta la cala tranquila. Pero se vinieron nubes y las rocas se volvieron esquinas y sombras. Necesito un amigo de tierra que haga una llave de ondas.
+
+—¿Una llave de ondas? —inclinó la cabeza **Lila**.
+
+**Finn** asintió. —Un dibujo en el agua. No salpicones. Suave. Solo manos pequeñas y cuidadosas pueden hacerlo. Llama al Camino de la Luna aunque las nubes tapen la luna. Y tienes una piedrecita estrellada. Eso ayuda.
+
+**Lila** miró la piedrecita. —Puedo intentarlo —dijo, aunque le cosquilleaba el estómago—. Nunca he abierto el agua antes.
+
+—Eso es perfecto —dijo **Finn** con alegría—. La primera vez la magia funciona mejor.
+
+**Lila** se arremangó y puso la mano sobre la poza. Al tocar la superficie, la piedrecita dio un pequeño movimiento. Ella jadeó. La piedrecita desplegó cinco bracitos diminutos.
+
+—¡Oh! —se rió **Lila**—. No eres una piedrecita. Eres una estrellita de mar dormilona.
+
+La estrellita se extendió sobre su dedo como una mano suave y pequeña. Brilló con un perlita muy leve. Los ojos de **Finn** se abrieron como platos. —Mejor todavía —susurró—. Las amiguitas estelares recuerdan el cielo.
+
+—¿Qué hago? —preguntó **Lila**.
+
+—Traza círculos despacio —dijo **Finn**—. Nada de chapoteos. Suave. Al agua le gustan las visitas educadas.
+
+**Lila** respiró hondo, con olor a sal y lugares lejanos. Hizo girar el dedo una vez. Muy rápido. La poza chapoteó. —Uy —dijo.
+
+**Finn** dio un meneo animador. —Más suave. Como una pluma.
+
+**Lila** cerró los ojos un momento y escuchó el shhh del mar. Creyó que podía ser tan ligera como una pluma. Dibujó un círculo más pequeño, luego otro, más despacio. La estrellita se calentó y un collar de burbujitas subió a encontrarse con su dedo.
+
+Las nubes se abrieron un poco. La luz de la luna se coló entre ellas y besó la poza. Donde **Lila** trazó, el agua tembló y se formó un sendero perlado de burbujas. Se extendió desde la poza entre las rocas, tejió una cadena de bajíos y se abrió hacia el mar abierto.
+
+**Finn** dio vueltas de alegría. —¡Lo lograste! ¡El Camino de la Luna llegó dentro de las pozas!
+
+**Lila** sonrió con las mejillas rosadas. —¿Lo seguimos?
+
+Ella anduvo por el borde, las sandalias en una mano y los dedos rozando el agua. El mar estaba fresco y sedoso. El sendero de burbujas brillaba débil, como una fila de farolillos. **Finn** nadaba debajo, al mismo paso. Cuando el sendero se apagaba, la estrellita en el dedo de **Lila** se iluminaba y la luz volvía.
+
+Doblaron una esquina donde las rocas formaban una puerta. Allí estaba un cangrejo rayado que sostenía las pinzas como si fuera guardián.
+
+—Clic-clac —dijo, golpeando una piedra.
+
+—Hola —dijo **Lila** con educación—. Seguimos el Camino de la Luna. ¿Podemos pasar?
+
+El cangrejo inclinó los ojos. **Lila** admiró su caparazón brillante. —Tus rayas son muy arregladas —añadió.
+
+El cangrejo dejó de golpear. Con un paso de lado señaló un canalito estrecho escondido por las algas. —Click —dijo, casi amable, y mostró la senda secreta.
+
+—Gracias —dijo **Lila**, y **Finn** hizo una pequeña reverencia que lo hizo parecer muy elegante para ser un pez tan pequeño.
+
+Más allá de la puerta, las pozas se ensancharon. El agua se hizo profunda y cristalina, azul como vidrio. En la poza más grande, las sombras se volvieron formas y las formas se volvieron peces. Colas plateadas dibujaban bucles como si escribieran en el aire.
+
+—¡Finn! —cantaron, con una lluvia de burbujitas que hicieron plink contra la roca.
+
+—¡Mamá! ¡Papá! ¡Estoy aquí! —**Finn** se lanzó a la escuela. Dio una vuelta rápida y volvió a toda prisa hacia **Lila**. —Esta es Lila. Ella encontró la llave.
+
+Los peces nadaron juntos y formaron una onda con forma de corazón. El pecho de **Lila** se calentó, igual que la estrellita en su dedo.
+
+Un pez muy viejo, con ojos lentos y sabios, se acercó. —El océano recuerda la bondad —dijo con una voz suave y húmeda—. Cuando necesites encontrar tu camino, sumerge a tu amiguita estelar en una poza y escucha. El agua te mostrará el camino más tierno.
+
+**Finn** se movió arriba y abajo. —¿Puedes quedarte un ratito con la estrellita? Le gusta que la cuiden.
+
+La estrellita se retorció como si estuviera de acuerdo y se deslizó del dedo de **Lila** a su palma, acomodándose ahí, calentita como un botón. —La cuidaré hasta el amanecer —prometió **Lila**—. Luego la llevaré de vuelta a su roca.
+
+**Finn** brilló a la luz de la luna. —Mandaré un destello en las olas para saludarte a veces.
+
+**Lila** se rió, una risita pequeña que suena a secreto entre amigos. —Lo esperaré.
+
+Las nubes siguieron su camino. La luna brilló más fuerte, dejando una larga cinta plateada sobre el agua. La familia de **Finn** recorrió el sendero, moviendo las colas, con las escamas titilando como estrellas. —¡Buenas noches! —gritaron, y el sonido fue como un suspiro y una canción a la vez.
+
+**Lila** se quedó muy quieta y luego volvió al primer charco. Acarició la espalda de la estrellita con la punta de un dedo. —Lo hiciste bien —susurró—. Las dos lo hicimos.
+
+Se sentó en una roca lisa. La brisa era suave y olía a sal y a sueño. La noche se recogía como una manta. Las olas mantuvieron su tranquilo shhh. Tocó la poza otra vez y por un instante las burbujas dibujaron un pequeño mapa que parecía exactamente el camino que habían tomado: alrededor de la puerta, pasando por el cangrejo, hasta la poza grande y azul. Luego se desvaneció, como si lo hubieran guardado con cuidado.
+
+**Lila** puso la estrellita en un platito con agua de mar a su lado. Descansó allí, con los bracitos relajados y un tenue brillo perla latiendo muy despacio. Rodeó las rodillas con los brazos y miró la luna pintar largas líneas de plata en el mar.
+
+Sus ojos se fueron poniendo pesados. La arena se enfrió bajo sus pies. El faro lejano parpadeó, paciente y calmado. En algún lugar, más allá de las rocas, la cola de un pez quizá lanzó una última estela de brillo. **Lila** sonrió y dejó que el silencio la envolviera. Por todas partes, el océano respiraba, tierno y seguro.
+
+Pensamiento de esta noche: cree en ti
+FIN`;
+
 export const tidalStarStoryES: TidalStarStoryData = {
   id: "88376fe0-4843-434b-b121-39be9277543c",
   title: "Susurros de la Estrella de la Marea",
@@ -281,7 +370,7 @@ export const tidalStarStoryES: TidalStarStoryData = {
   type: "ai",
   slug: "whispers-of-the-tidal-star-d5dfda26",
   imageUrl: "https://d1mmspri4wgcne.cloudfront.net/ai_stories/whispers-of-the-tidal-star-d5dfda26/cover.jpg",
-  content: "[Spanish translation would go here]",
+  content: tidalStarContentES,
   narrators: [
     {
       id: "onyx",
