@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import AudioPlayer from '../components/ui/AudioPlayer';
 import ImagePlaceholder from '../components/ui/ImagePlaceholder';
 import DownloadButtons from '../components/ui/DownloadButtons';
+import { gingerbreadStoryEnGB, gingerbreadStoryEnUS } from '../data/gingerbreadStory';
 
 // Story Examples Data with Creation Methods
 const storyExamples = [
@@ -116,10 +117,16 @@ The End.`,
 
 const StoriesPage: React.FC = () => {
   const [expandedStory, setExpandedStory] = useState<number | null>(null);
+  const [selectedLanguage, setSelectedLanguage] = useState<'en-GB' | 'en-US'>('en-GB');
+  const [selectedNarrator, setSelectedNarrator] = useState<string>('echo');
 
   const toggleStory = (storyId: number) => {
     setExpandedStory(expandedStory === storyId ? null : storyId);
   };
+
+  // Get current gingerbread data based on selected language
+  const currentGingerbread = selectedLanguage === 'en-GB' ? gingerbreadStoryEnGB : gingerbreadStoryEnUS;
+  const currentNarrator = currentGingerbread.narrators.find(n => n.id === selectedNarrator) || currentGingerbread.narrators[0];
 
   return (
     <div className="pt-16 bg-white">
@@ -176,56 +183,158 @@ const StoriesPage: React.FC = () => {
 
               {/* Character Image & Audio Player */}
               <div className="p-6 md:p-8 bg-gradient-to-br from-neutral-50 to-white">
-                <div className="grid md:grid-cols-3 gap-6 mb-6">
-                  {/* Character Image */}
-                  <div className="md:col-span-1">
-                    <ImagePlaceholder
-                      label={`Character from ${story.title}`}
-                      aspectRatio="square"
-                      className="rounded-lg shadow-md"
-                    />
-                  </div>
+                {story.id === 5 ? (
+                  // Enhanced Gingerbread Man section with language toggle and narrator selection
+                  <>
+                    {/* Language Toggle */}
+                    <div className="mb-6 flex items-center justify-center gap-2 bg-soft-blue-50 rounded-lg p-4">
+                      <span className="text-sm font-semibold text-neutral-700">Language:</span>
+                      <button
+                        onClick={() => setSelectedLanguage('en-GB')}
+                        className={`px-4 py-2 rounded-lg font-medium transition-all ${
+                          selectedLanguage === 'en-GB'
+                            ? 'bg-soft-blue-500 text-white shadow-md'
+                            : 'bg-white text-neutral-700 hover:bg-neutral-100'
+                        }`}
+                      >
+                        🇬🇧 English (UK)
+                      </button>
+                      <button
+                        onClick={() => setSelectedLanguage('en-US')}
+                        className={`px-4 py-2 rounded-lg font-medium transition-all ${
+                          selectedLanguage === 'en-US'
+                            ? 'bg-soft-blue-500 text-white shadow-md'
+                            : 'bg-white text-neutral-700 hover:bg-neutral-100'
+                        }`}
+                      >
+                        🇺🇸 English (US)
+                      </button>
+                    </div>
 
-                  {/* Audio Player */}
-                  <div className="md:col-span-2 flex items-center">
-                    <div className="w-full">
-                      <h3 className="text-lg font-semibold text-neutral-900 mb-3">
-                        🎧 Listen to the Story
-                      </h3>
-                      <AudioPlayer
-                        src={story.audioSrc}
-                        title={`${story.title} - Full Narration`}
+                    <div className="grid md:grid-cols-3 gap-6 mb-6">
+                      {/* Story Cover Image */}
+                      <div className="md:col-span-1">
+                        <img
+                          src={currentGingerbread.imageUrl}
+                          alt={currentGingerbread.title}
+                          className="w-full rounded-lg shadow-md"
+                        />
+                      </div>
+
+                      {/* Audio Player with Narrator Selection */}
+                      <div className="md:col-span-2">
+                        <div className="w-full">
+                          <h3 className="text-lg font-semibold text-neutral-900 mb-3">
+                            🎧 Listen to the Story
+                          </h3>
+
+                          {/* Narrator Selection */}
+                          <div className="mb-4 bg-white rounded-lg p-4 border border-neutral-200">
+                            <p className="text-sm font-semibold text-neutral-700 mb-3">Choose your narrator:</p>
+                            <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
+                              {currentGingerbread.narrators.map((narrator) => (
+                                <button
+                                  key={narrator.id}
+                                  onClick={() => setSelectedNarrator(narrator.id)}
+                                  className={`px-3 py-2 rounded-lg text-sm font-medium transition-all ${
+                                    selectedNarrator === narrator.id
+                                      ? 'bg-gradient-to-r from-soft-blue-500 to-soft-green-500 text-white shadow-md'
+                                      : 'bg-neutral-100 text-neutral-700 hover:bg-neutral-200'
+                                  }`}
+                                >
+                                  {narrator.name}
+                                </button>
+                              ))}
+                            </div>
+                          </div>
+
+                          <AudioPlayer
+                            src={currentNarrator.audioUrl}
+                            title={`${currentGingerbread.title} - ${currentNarrator.name}`}
+                          />
+                          <p className="text-xs text-neutral-500 mt-2">
+                            Full narration ({Math.floor(currentNarrator.duration / 60)}:{(currentNarrator.duration % 60).toString().padStart(2, '0')}) • Available in app
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </>
+                ) : (
+                  // Standard rendering for other stories
+                  <div className="grid md:grid-cols-3 gap-6 mb-6">
+                    {/* Character Image */}
+                    <div className="md:col-span-1">
+                      <ImagePlaceholder
+                        label={`Character from ${story.title}`}
+                        aspectRatio="square"
+                        className="rounded-lg shadow-md"
                       />
-                      <p className="text-xs text-neutral-500 mt-2">
-                        30-second narration sample • Full narration available in app
-                      </p>
+                    </div>
+
+                    {/* Audio Player */}
+                    <div className="md:col-span-2 flex items-center">
+                      <div className="w-full">
+                        <h3 className="text-lg font-semibold text-neutral-900 mb-3">
+                          🎧 Listen to the Story
+                        </h3>
+                        <AudioPlayer
+                          src={story.audioSrc}
+                          title={`${story.title} - Full Narration`}
+                        />
+                        <p className="text-xs text-neutral-500 mt-2">
+                          30-second narration sample • Full narration available in app
+                        </p>
+                      </div>
                     </div>
                   </div>
-                </div>
+                )}
               </div>
 
               {/* How This Story Was Created / Songs Section */}
               <div className="p-6 md:p-8 border-t border-neutral-200">
-                {(story.creationMethod === 'fairy_corner_daily' || story.creationMethod === 'fairy_corner_classic') && story.songs ? (
+                {(story.creationMethod === 'fairy_corner_daily' || story.creationMethod === 'fairy_corner_classic') && (story.songs || story.id === 5) ? (
                   // Fairy Corner Stories - Show Songs
                   <>
                     <h3 className="text-xl font-bold text-neutral-900 mb-4">
                       🎵 Songs from this Story
                     </h3>
                     <div className="grid md:grid-cols-2 gap-6 mb-6">
-                      {story.songs.map((song, idx) => (
-                        <div key={idx} className="bg-fairy-purple-50 rounded-lg p-6">
-                          <div className="flex items-center gap-3 mb-4">
-                            <div className="w-10 h-10 bg-gradient-to-br from-fairy-purple-100 to-soft-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
-                              <svg className="w-5 h-5 text-fairy-purple-600" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z" />
-                              </svg>
+                      {story.id === 5 ? (
+                        // Use real Gingerbread songs from data
+                        currentGingerbread.songs.map((song) => (
+                          <div key={song.id} className="bg-fairy-purple-50 rounded-lg p-6">
+                            <div className="flex items-center gap-3 mb-4">
+                              <div className="w-10 h-10 bg-gradient-to-br from-fairy-purple-100 to-soft-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                <svg className="w-5 h-5 text-fairy-purple-600" fill="currentColor" viewBox="0 0 24 24">
+                                  <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z" />
+                                </svg>
+                              </div>
+                              <div className="flex-1">
+                                <h4 className="font-bold text-lg text-neutral-900">{song.title}</h4>
+                                <span className="inline-block text-xs font-medium text-fairy-purple-600 bg-fairy-purple-100 px-2 py-1 rounded-full mt-1">
+                                  {song.style.replace(/_/g, ' ')}
+                                </span>
+                              </div>
                             </div>
-                            <h4 className="font-bold text-lg text-neutral-900">{song.title}</h4>
+                            <AudioPlayer src={song.url} title={song.title} />
                           </div>
-                          <AudioPlayer src={song.audioSrc} title={song.title} />
-                        </div>
-                      ))}
+                        ))
+                      ) : (
+                        // Use placeholder songs for other stories
+                        story.songs?.map((song, idx) => (
+                          <div key={idx} className="bg-fairy-purple-50 rounded-lg p-6">
+                            <div className="flex items-center gap-3 mb-4">
+                              <div className="w-10 h-10 bg-gradient-to-br from-fairy-purple-100 to-soft-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                <svg className="w-5 h-5 text-fairy-purple-600" fill="currentColor" viewBox="0 0 24 24">
+                                  <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z" />
+                                </svg>
+                              </div>
+                              <h4 className="font-bold text-lg text-neutral-900">{song.title}</h4>
+                            </div>
+                            <AudioPlayer src={song.audioSrc} title={song.title} />
+                          </div>
+                        ))
+                      )}
                     </div>
 
                     <div className="bg-neutral-50 rounded-lg p-6">
@@ -343,11 +452,30 @@ const StoriesPage: React.FC = () => {
                 {expandedStory === story.id && (
                   <div className="p-6 md:p-8 bg-neutral-50 border-t border-neutral-200">
                     <div className="prose prose-lg max-w-none">
-                      {story.fullText.split('\n\n').map((paragraph, idx) => (
-                        <p key={idx} className="text-neutral-700 mb-4 leading-relaxed">
-                          {paragraph}
-                        </p>
-                      ))}
+                      {story.id === 5 ? (
+                        // Use real Gingerbread content with bold markdown support
+                        currentGingerbread.content.split('\n\n').map((paragraph, idx) => {
+                          // Convert **bold** markdown to <strong> tags
+                          const parts = paragraph.split(/(\*\*.*?\*\*)/g);
+                          return (
+                            <p key={idx} className="text-neutral-700 mb-4 leading-relaxed">
+                              {parts.map((part, partIdx) => {
+                                if (part.startsWith('**') && part.endsWith('**')) {
+                                  return <strong key={partIdx} className="font-bold text-neutral-900">{part.slice(2, -2)}</strong>;
+                                }
+                                return <span key={partIdx}>{part}</span>;
+                              })}
+                            </p>
+                          );
+                        })
+                      ) : (
+                        // Standard rendering for other stories
+                        story.fullText.split('\n\n').map((paragraph, idx) => (
+                          <p key={idx} className="text-neutral-700 mb-4 leading-relaxed">
+                            {paragraph}
+                          </p>
+                        ))
+                      )}
                     </div>
                   </div>
                 )}
