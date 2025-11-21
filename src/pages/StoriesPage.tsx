@@ -89,7 +89,7 @@ const StoriesPage: React.FC = () => {
                     </div>
 
                     {/* Description */}
-                    <p className="text-sm text-neutral-600 mb-3 line-clamp-3">
+                    <p className="text-sm text-neutral-600 mb-3 line-clamp-4">
                       {story.description}
                     </p>
 
