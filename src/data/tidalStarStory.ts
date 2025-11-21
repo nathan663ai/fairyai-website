@@ -308,6 +308,91 @@ export const tidalStarStoryES: TidalStarStoryData = {
   ]
 };
 
+const tidalStarContentDE = `**Lila** kniete an einer Felsenpfütze und spähte hinein. Seetang trieb wie grüne Bänder. Eine kleine Garnele schnippte weg. Am Rand der Pfütze fand sie einen Kiesel in Sternform. Er war glatt und schimmerte ganz leise. Als sie ihn aufhob, wurde er in ihrer Hand warm, als würde er es mögen, ausgewählt zu sein.
+
+„Entschuldigung!" sagte eine kleine Stimme. „Hier unten!"
+
+Lila beugte sich näher. Ein silberner Blitz sauste um die Pfütze und hüpfte wie eine Münze hoch. Ein kleiner Fisch, so hell wie Mondlicht, blinzelte sie an.
+
+„Ich bin **Finn**," sagte er, Worte wie Bläschen. „Ich habe den Mondweg verloren. Meine Familie schwamm bei Einbruch der Dämmerung nach Hause, und ich… nun, ich bin einem Leuchten nachgejagt und habe mich verirrt."
+
+Lila legte ihr Kinn auf die Knie. „Was ist der Mondweg?"
+
+„Das ist das silbrige Band, das der Mond aufs Wasser legt," erklärte Finn und seine Flossen neigten sich sorgenfroh. „Wir folgen ihm zur ruhigen Bucht. Aber Wolken sind gekommen, und die Felsen sind voller Ecken und Schatten. Ich brauche eine Land-Freundin, die einen Wellen-Schlüssel macht."
+
+„Einen Wellen-Schlüssel?" Lila neigte den Kopf.
+
+Finn nickte. „Ein Muster auf dem Wasser. Nur kleine, vorsichtige Hände können das. Es ruft den Mondweg, selbst wenn die Wolken den Mond verstecken. Und du hast einen Sternenkiesel! Das hilft."
+
+Lila sah den Kiesel an. „Ich kann es versuchen," sagte sie, obwohl ihr Bauch vor Aufregung flatterte. „Ich habe noch nie Wasser geöffnet."
+
+„Das ist perfekt," sagte Finn fröhlich. „Erstes Mal Zauber klappt am besten."
+
+Lila krempelte die Ärmel hoch und streckte ihre Hand über die Pfütze. Als ihre Finger die Oberfläche berührten, zuckte der Sternenkiesel. Sie schnappte nach Luft. Der Kiesel entfaltete fünf winzige Arme.
+
+„Oh!" Lila kicherte. „Du bist gar kein Kiesel. Du bist ein schläfriger Seestern."
+
+Der kleine Seestern legte sich wie eine weiche kleine Hand um ihren Finger. Er glühte in einem zarten Perlmuttton. Finns Augen wurden rund. „Noch besser," flüsterte er. „Sternfreunde erinnern sich an den Himmel."
+
+„Was soll ich tun?" fragte Lila.
+
+„Zieh langsame Kreise," sagte Finn. „Nicht platschen. Sanft. Das Wasser mag höfliche Gäste."
+
+Lila atmete tief, und die Luft roch nach Salz und fernen Orten. Sie zog einmal mit dem Finger einen Kreis. Zu schnell. Die Pfütze schwappte. „Ups," sagte sie.
+
+Finn gab ermutigend einen Flossenschlag. „Leichter. Wie eine Feder."
+
+Lila schloss kurz die Augen und lauschte dem Schhh des Meeres. Sie stellte sich vor, so leicht wie eine Feder zu sein. Sie malte einen kleineren Kreis, dann noch einen, langsamer. Der Seestern wurde wärmer, und eine Kette winziger Bläschen stieg zu ihrem Finger empor.
+
+Die Wolken zogen dünner. Mondlicht schlüpfte dazwischen und küsste die Pfütze. Wo Lila nachzeichnete, bebte das Wasser, und ein perlmuttfarbener Blasenweg entstand. Er spannte sich von der Felsenpfütze, schlängelte sich durch eine Kette von Untiefen und reichte hinaus aufs offene Meer.
+
+Finn drehte vor Freude Pirouetten. „Du hast es geschafft! Der Mondweg ist in die Pfützen gekommen!"
+
+Lila grinste, ihre Wangen wurden rosa. „Sollen wir ihm folgen?"
+
+Sie ging am Rand entlang, die Sandalen in einer Hand, die Zehen das Wasser streifend. Das Meer war kühl und seidig. Der Blasenweg leuchtete schwach, wie eine Kette kleiner Lampions. Finn schwamm darunter und hielt Schritt. Immer wenn der Weg dunkler wurde, leuchtete der Seestern an Lilas Finger heller, und das Licht kehrte zurück.
+
+Sie bogen um eine Ecke, wo die Felsen ein Tor bildeten. Ein gestreifter Krebs stand dort, die Scheren wie ein Wächter erhoben. „Klick-klack," sagte er und klopfte an einen Stein.
+
+„Hallo," sagte Lila höflich. „Wir folgen dem Mondweg. Können wir durchschlüpfen?"
+
+Der Krebs neigte die Augen. Lila bewunderte seinen glänzenden Panzer. „Deine Streifen sind sehr klug," fügte sie hinzu.
+
+Der Krebs hörte auf zu klopfen. Mit einem seitlichen Hüpfer deutete er auf einen schmalen Rinnsal, versteckt hinter Seetang. „Klick," sagte er, beinahe freundlich, und zeigte den geheimen Weg.
+
+„Danke," sagte Lila, und Finn machte eine kleine Verbeugung, die ihn für einen so kleinen Fisch sehr groß erscheinen ließ.
+
+Hinter dem Tor wurden die Pfützen weiter. Das Wasser wurde tiefer und klar wie Glas. In der größten Pfütze wurden Schatten zu Formen, und Formen wurden zu Fischen. Silberne Schwänze zogen Bögen wie Schrift in die Luft.
+
+„Finn!" sangen sie, mit einem Wirbel von Bläschen, die gegen den Felsen plinkten.
+
+„Mama! Papa! Ich bin hier!" Finn schoss in den Schwarm. Er drehte eine schnelle Runde und sauste dann zurück zu Lila. „Das ist Lila. Sie hat den Schlüssel gefunden."
+
+Die Fische schwammen zusammen und bildeten eine herzförmige Welle. Lila wurde ganz warm ums Herz, so wie der Seestern in ihrer Hand.
+
+Ein sehr alter Fisch mit langsamen, weisen Augen schwamm heran. „Der Ozean erinnert sich an Freundlichkeit," sagte er mit einer sanften, wässrigen Stimme. „Wenn ihr euren Weg finden möchtet, taucht euren Sternfreund in eine Pfütze und hört zu. Das Wasser zeigt euch den sanftesten Pfad."
+
+Finn nickte. „Magst du den Seestern ein Weilchen behalten? Er mag deine Fürsorge."
+
+Der Seestern wackelte, als würde er zustimmen, schlupfte dann von Lilas Finger in ihre Handfläche und kuschelte sich dort, gemütlich wie ein Knopf. „Ich passe gut darauf auf, bis zum Morgen," versprach Lila. „Dann bringe ich ihn zurück zu seinem Felsen."
+
+Finn funkelte im Mondlicht. „Ich werde manchmal einen Funken auf den Wellen schicken, um Hallo zu sagen."
+
+Lila lachte, dieses kleine Lachen, das sich anfühlt wie ein Geheimnis zwischen Freunden. „Ich werde danach Ausschau halten."
+
+Die Wolken trieben weiter. Der Mond schien heller und legte ein silbernes Band weit übers Wasser. Finns Familie glitt den Weg entlang, Schwänze peitschten, Schuppen funkelten wie Sterne. „Gute Nacht!" riefen sie, und das Klang wie Seufzer und Lied zusammen.
+
+Lila stand ganz still, dann ging sie zurück zur ersten Pfütze. Sie streichelte mit dem Fingerspitzen den Rücken des Seesterns. „Du hast es gut gemacht," flüsterte sie. „Wir haben es beide gut gemacht."
+
+Sie setzte sich auf einen glatten Felsen. Die Brise war weich und roch nach Salz und Schlaf. Die Nacht legte sich wie eine Decke. Die Wellen behielten ihr ruhiges Schhh. Noch einmal berührte sie die Pfütze, und für einen Augenblick zeichneten die Bläschen eine winzige Karte, die genau wie der Weg aussah, den sie genommen hatten: rund ums Tor, am Krebs vorbei, zur großen blauen Pfütze. Dann verschwand sie, als wäre sie sicher verstaut.
+
+Lila stellte den Seestern in eine flache Schale mit Meerwasser neben sich. Er ruhte dort, die kleinen Arme entspannt, ein schwaches Perlmuttglühen pulste ganz langsam. Sie schlang die Arme um die Knie und sah zu, wie der Mond lange silberne Linien aufs Meer malte.
+
+Ihre Augen wurden schwer. Der Sand kühlte unter den Füßen. Der weit entfernte Leuchtturm blinkte, geduldig und ruhig. Irgendwo hinter den Felsen konnte ein Fischschwanz noch eine letzte Funkelwelle schlagen. Lila lächelte und ließ die Stille über sich kommen. Überall atmete der Ozean, sanft und sicher.
+
+Der heutige Abendgedanke: Glaub an dich selbst
+ENDE`;
+
 export const tidalStarStoryDE: TidalStarStoryData = {
   id: "1a058fd9-b244-47ea-a74b-9e26b41fb30e",
   title: "Flüstern des Gezeitensterns",
@@ -315,7 +400,7 @@ export const tidalStarStoryDE: TidalStarStoryData = {
   type: "ai",
   slug: "whispers-of-the-tidal-star-d5dfda26",
   imageUrl: "https://d1mmspri4wgcne.cloudfront.net/ai_stories/whispers-of-the-tidal-star-d5dfda26/cover.jpg",
-  content: "[German translation would go here]",
+  content: tidalStarContentDE,
   narrators: [
     {
       id: "onyx",
