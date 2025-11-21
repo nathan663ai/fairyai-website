@@ -774,3 +774,161 @@ export const gingerbreadStoryDE: GingerbreadStoryData = {
     }
   ]
 };
+
+const gingerbreadContentIT = `In una casetta di mattoni accogliente, ai margini di un villaggio vivace, dove la **cannella** e lo **zenzero** profumavano l'aria del mattino, una vecchietta si legò il grembiule canticchiando felice.
+
+"Oggi è proprio una giornata da dolci," disse al suo gatto, che sbadigliava pigramente sul davanzale.
+
+Mescolò farina, burro, zucchero e **melassa** nella sua ciotola di legno più grande. L'impasto era morbido e appiccicoso, caldo di spezie. Con cura, lo stese e tagliò la forma perfetta di un **omino di pan di zenzero**.
+
+"Facciamo che tu sia speciale," disse gentile, mettendo **uvette per gli occhi**, una **uva passa per la bocca sorridente** e **tre perle di zucchero per i bottoni**. "Ecco. Ora dentro il forno."
+
+Fece scivolare la teglia e chiuse lo sportello. Il calore tremolava e si alzava. Il gatto annusava l'aria curioso.
+
+Ma proprio quando il timer suonò—
+
+**POP!**
+
+Lo sportello del forno si spalancò e saltò fuori l'**Omino di Pan di Zenzero**, dorato e sorridente.
+
+"Non mangiarmi!" gridò, saltando sul pavimento. "**Corri, corri, più veloce che puoi! Non mi prenderai mai, sono l'Omino di Pan di Zenzero!**"
+
+E via che scappò—attraverso la cucina, oltre il gatto sorpreso, e fuori dalla porta sotto il sole.
+
+"Fermati!" gridò la vecchietta. "Torna qui!"
+
+Ma l'**Omino di Pan di Zenzero** rise mentre i suoi piedini di biscotto ticchettavano sul sentiero del giardino.
+"**Sono scappato dalla signora, scapperò anche da te!
+Corri, corri, più veloce che puoi!
+Non mi prenderai mai, sono l'Omino di Pan di Zenzero!**"
+
+Presto passò davanti a un **maialino rosa e grasso** nel suo recinto fangoso.
+
+"Snort! Che profumino!" grugnì il maiale, correndogli dietro.
+
+Ma l'Omino di Pan di Zenzero disse solo:
+"**Sono scappato dalla signora, sono scappato dal suo gatto—
+Scapperò da un maiale in un baleno!
+Corri, corri, più veloce che puoi!
+Non mi prenderai mai, sono l'Omino di Pan di Zenzero!**"
+
+Corse attraverso la **piazza del villaggio**, tra negozianti stupiti e cesti di mele, con le sue gambette che si muovevano veloci.
+
+Poi arrivò una **mucca marrone**, che agitava la coda vicino al recinto.
+
+"Muu! Che spuntino saresti," disse, inseguendolo.
+
+Ma lui gridò:
+"**Sono scappato dalla signora, dal gatto e dal maiale,
+Scappare da te? Non è niente di speciale!
+Corri, corri, più veloce che puoi!
+Non mi prenderai mai, sono l'Omino di Pan di Zenzero!**"
+
+La polvere si alzava dietro di lui mentre **maiale e mucca** si univano all'inseguimento. I loro zoccoli battevano la terra e i bambini ridevano e indicavano.
+
+Poi un **cavallo alto** nitrì dal prato e si mise a correre.
+
+"Ti prenderò in un attimo!" gridò, galoppando forte.
+
+Ma l'Omino di Pan di Zenzero corse ancora più veloce, zigzagando tra i campi di grano dorato.
+
+"**Sono scappato da tutti, vedrai che posso—
+Non mi prenderai, sono l'Omino di Pan di Zenzero!**"
+
+Gli animali ansimavano dietro di lui. La vecchietta si era arresa, con le mani sui fianchi, borbottando: "Questo mi insegnerà a fare dolci con le gambe."
+
+L'**Omino di Pan di Zenzero** rideva mentre correva nel bosco, **le foglie scricchiolavano sotto i suoi piedi**, gli uccellini volavano via spaventati.
+
+Ma all'improvviso arrivò a un **fiume largo e impetuoso**. L'acqua girava scura e veloce, troppo profonda per passare a piedi, troppo larga per saltare.
+
+"Oh briciole," disse, camminando avanti e indietro sulla riva.
+
+Apparve una **volpe** lucida, con il pelo che brillava come rame lucido.
+
+"Perché quella faccia triste, biscottino?" chiese la volpe, con voce morbida come burro fuso.
+
+"Devo attraversare il fiume," disse l'Omino di Pan di Zenzero, guardando l'acqua con paura. "Ma non so nuotare."
+
+Gli occhi della volpe brillarono. "Io posso. Sali sulla mia **coda**, ti porto io dall'altra parte."
+
+L'Omino di Pan di Zenzero esitò solo un attimo, poi salì.
+
+La volpe entrò nell'acqua fredda. **Le onde brillavano** mentre nuotava piano piano.
+
+"Troppa acqua qui dietro," disse la volpe. "Sali sulla mia **schiena**."
+
+L'Omino di Pan di Zenzero salì più in alto.
+
+Presto l'acqua arrivò al collo della volpe. "Meglio che sali sulla mia **testa**," disse, muovendo le orecchie.
+
+L'Omino di Pan di Zenzero obbedì.
+
+Ma l'acqua salì ancora.
+
+"Ti bagnerai—meglio salire sul mio **naso**," sussurrò la volpe.
+
+Appena l'Omino di Pan di Zenzero mise piede sulla punta del naso della volpe—
+
+**SNAP!**
+
+Con un colpo veloce della testa, la volpe lanciò l'**Omino di Pan di Zenzero** in aria e **lo inghiottì in un solo boccone**.
+
+Il fiume continuò a scorrere. Gli uccellini cinguettavano. E la volpe si leccò i baffi.
+
+"**Delizioso.**"
+
+Pochi istanti dopo, arrivarono **maiale, mucca e cavallo**, ansimando.
+
+"Dov'è finito?" grugnì il maiale.
+
+La volpe fece un piccolo ruttino. "Si è un po' inzuppato," disse con un occhiolino.
+
+Nel villaggio, la vecchietta tirò fuori un'altra teglia dal forno. Guardò il suo gatto e disse: "Questa volta, niente gambe."
+
+**Fine**`;
+
+export const gingerbreadStoryIT: GingerbreadStoryData = {
+  id: "6fdfa209-f1e7-4cb5-900f-62b67ede6d90",
+  title: "L'Omino di Pan di Zenzero",
+  languageCode: "it",
+  type: "classic",
+  imageUrl: "https://d1mmspri4wgcne.cloudfront.net/classic-tales/The+Gingerbread+Man.png",
+  content: gingerbreadContentIT,
+  narrators: [
+    {
+      id: "onyx",
+      name: "Onyx",
+      duration: 324,
+      audioUrl: "https://d1mmspri4wgcne.cloudfront.net/ai_stories/the_gingerbread_man/narrations/it/onyx.mp3"
+    },
+    {
+      id: "shimmer",
+      name: "Shimmer",
+      duration: 320,
+      audioUrl: "https://d1mmspri4wgcne.cloudfront.net/ai_stories/the_gingerbread_man/narrations/it/shimmer.mp3"
+    }
+  ],
+  songs: [
+    {
+      id: "epic_adventure",
+      title: "L'Omino Coraggioso",
+      style: "epic_adventure",
+      url: "https://d1mmspri4wgcne.cloudfront.net/classic-tales/l'omino_di_pan_di_zenzero/it/epic_adventure.mp3",
+      duration: 203.68
+    },
+    {
+      id: "singalong",
+      title: "L'Omino di Pan di Zenzero",
+      style: "singalong",
+      url: "https://d1mmspri4wgcne.cloudfront.net/classic-tales/l'omino_di_pan_di_zenzero/it/singalong.mp3",
+      duration: 199.4
+    },
+    {
+      id: "storytelling",
+      title: "Il Biscottino Coraggioso",
+      style: "storytelling",
+      url: "https://d1mmspri4wgcne.cloudfront.net/classic-tales/l'omino_di_pan_di_zenzero/it/storytelling.mp3",
+      duration: 166.6
+    }
+  ]
+};
