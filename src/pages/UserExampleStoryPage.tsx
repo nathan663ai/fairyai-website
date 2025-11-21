@@ -6,6 +6,13 @@ import { robotFriendshipStory, dragonHeightsStory } from '../data/userExampleSto
 
 type AgeGroup = '2-3' | '4-6' | '7-9' | '10-12';
 
+const ageLabels: Record<AgeGroup, string> = {
+  '2-3': 'Simple & Playful',
+  '4-6': 'Adventure Begins',
+  '7-9': 'Growing Complexity',
+  '10-12': 'Deeper Themes',
+};
+
 const UserExampleStoryPage: React.FC = () => {
   const { storyId } = useParams<{ storyId: string }>();
   const [selectedAge, setSelectedAge] = useState<AgeGroup>('4-6');
@@ -48,9 +55,6 @@ const UserExampleStoryPage: React.FC = () => {
           </h1>
           <div className="flex flex-wrap gap-2">
             <span className="inline-block text-sm font-semibold px-3 py-1 rounded-full bg-soft-green-100 text-soft-green-700">
-              ✨ User-Created Example
-            </span>
-            <span className="inline-block text-sm font-semibold px-3 py-1 rounded-full bg-soft-blue-100 text-soft-blue-700">
               {story.promptType === 'simple' ? '⚡ Simple Prompt' : '📝 Detailed Prompt'}
             </span>
           </div>
@@ -62,160 +66,122 @@ const UserExampleStoryPage: React.FC = () => {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="space-y-6">
 
+            {/* Age Group Selector - Dropdown style like StoryDetailPage */}
+            <div>
+              <label htmlFor="age-select" className="block text-sm font-semibold text-neutral-700 mb-2">
+                Select Age Group:
+              </label>
+              <select
+                id="age-select"
+                value={selectedAge}
+                onChange={(e) => setSelectedAge(e.target.value as AgeGroup)}
+                className="w-full md:w-64 px-4 py-3 bg-white border border-neutral-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-soft-blue-500 text-neutral-900 font-medium"
+              >
+                <option value="2-3">Ages 2-3 ({ageLabels['2-3']})</option>
+                <option value="4-6">Ages 4-6 ({ageLabels['4-6']})</option>
+                <option value="7-9">Ages 7-9 ({ageLabels['7-9']})</option>
+                <option value="10-12">Ages 10-12 ({ageLabels['10-12']})</option>
+              </select>
+            </div>
+
             {/* Prompt Showcase Box */}
-            <div className={`rounded-xl p-6 border-2 ${story.promptType === 'simple' ? 'bg-gradient-to-br from-soft-green-50 to-soft-blue-50 border-soft-green-200' : 'bg-gradient-to-br from-soft-blue-50 to-soft-green-50 border-soft-blue-200'}`}>
+            <div className={`rounded-xl p-5 md:p-6 border-2 ${story.promptType === 'simple' ? 'bg-gradient-to-br from-soft-green-50 to-soft-blue-50 border-soft-green-200' : 'bg-gradient-to-br from-soft-blue-50 to-soft-green-50 border-soft-blue-200'}`}>
               <div className="flex items-center mb-3">
-                <span className="text-2xl mr-2">✨</span>
+                <span className="text-xl mr-2">✨</span>
                 <span className="font-semibold text-neutral-900">The Prompt That Created This Story</span>
               </div>
 
               {story.promptType === 'simple' ? (
-                // Simple Prompt Display
-                <div className="bg-white rounded-lg p-4 mb-3">
-                  <p className="text-xl font-medium text-neutral-900 text-center italic">
+                <div className="bg-white rounded-lg p-4">
+                  <p className="text-lg md:text-xl font-medium text-neutral-900 text-center italic">
                     "{story.promptText}"
+                  </p>
+                  <p className="text-sm text-neutral-600 text-center mt-3">
+                    That's it—just one simple sentence! See how FairyAI adapts this idea for different ages.
                   </p>
                 </div>
               ) : (
-                // Detailed Prompt Display
-                <>
-                  <div className="bg-white rounded-lg p-4 mb-3">
-                    <p className="text-neutral-700 leading-relaxed mb-4">
-                      {story.promptText.split('**').map((part, idx) => {
-                        if (idx % 2 === 1) {
-                          return <strong key={idx} className="font-bold text-neutral-900">{part}</strong>;
-                        }
-                        return <span key={idx}>{part}</span>;
-                      })}
-                    </p>
-                    {story.promptDetails && (
-                      <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mt-4 pt-4 border-t border-neutral-200">
-                        {story.promptDetails.theme && (
-                          <div>
-                            <span className="text-xs font-semibold text-neutral-500 uppercase">Theme:</span>
-                            <p className="text-sm text-neutral-900 font-medium">{story.promptDetails.theme}</p>
-                          </div>
-                        )}
-                        {story.promptDetails.moral && (
-                          <div>
-                            <span className="text-xs font-semibold text-neutral-500 uppercase">Moral:</span>
-                            <p className="text-sm text-neutral-900 font-medium">{story.promptDetails.moral}</p>
-                          </div>
-                        )}
-                        {story.promptDetails.setting && (
-                          <div>
-                            <span className="text-xs font-semibold text-neutral-500 uppercase">Setting:</span>
-                            <p className="text-sm text-neutral-900 font-medium">{story.promptDetails.setting}</p>
-                          </div>
-                        )}
-                        {story.promptDetails.targetAge && (
-                          <div>
-                            <span className="text-xs font-semibold text-neutral-500 uppercase">Target Age:</span>
-                            <p className="text-sm text-neutral-900 font-medium">{story.promptDetails.targetAge}</p>
-                          </div>
-                        )}
-                      </div>
-                    )}
-                  </div>
-                </>
-              )}
-
-              <div className="text-center text-sm text-neutral-600 bg-white bg-opacity-60 rounded-lg p-3">
-                {story.promptType === 'simple' ? (
-                  <p>That's it—just one simple sentence! Watch how FairyAI adapts this idea for different ages below.</p>
-                ) : (
-                  <p>See how specific details help create a richer, more targeted story. Try adding themes, settings, and character details in your prompts!</p>
-                )}
-              </div>
-            </div>
-
-            {/* Context Blurb - Create Your Own Stories */}
-            <div className="bg-gradient-to-r from-soft-blue-50 to-soft-green-50 rounded-xl p-6 border border-soft-blue-100">
-              <h2 className="font-display text-2xl font-bold text-neutral-900 mb-3">Create Your Own Stories</h2>
-              <p className="text-neutral-700 mb-3 leading-relaxed">
-                These examples showcase what you can build with FairyAI. From detailed prompts with specific themes and characters, to simple one-sentence ideas, the app brings your imagination to life with professional narrations and custom songs.
-              </p>
-              <p className="text-neutral-700 leading-relaxed">
-                <strong className="text-neutral-900">Try it yourself:</strong> Each example shows the exact prompt used, so you can see how easy it is to create magical bedtime stories for your children.
-              </p>
-            </div>
-
-            {/* Age Group Selector */}
-            <div className="bg-white rounded-xl p-6 border-2 border-neutral-200">
-              <h3 className="font-display text-xl font-bold text-neutral-900 mb-4 text-center">
-                See How The Story Adapts By Age
-              </h3>
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-                {(['2-3', '4-6', '7-9', '10-12'] as AgeGroup[]).map((age) => (
-                  <button
-                    key={age}
-                    onClick={() => setSelectedAge(age)}
-                    className={`p-4 rounded-lg border-2 transition-all ${
-                      selectedAge === age
-                        ? 'bg-soft-blue-500 border-soft-blue-600 text-white shadow-lg transform scale-105'
-                        : 'bg-white border-neutral-300 text-neutral-700 hover:border-soft-blue-400 hover:shadow-md'
-                    }`}
-                  >
-                    <div className="text-lg font-bold mb-1">Ages {age}</div>
-                    <div className={`text-xs ${selectedAge === age ? 'text-white opacity-90' : 'text-neutral-500'}`}>
-                      {age === '2-3' && 'Simple & Playful'}
-                      {age === '4-6' && 'Adventure Begins'}
-                      {age === '7-9' && 'Growing Complexity'}
-                      {age === '10-12' && 'Deeper Themes'}
+                <div className="bg-white rounded-lg p-4">
+                  <p className="text-neutral-700 leading-relaxed mb-4">
+                    {story.promptText.split('**').map((part, idx) => {
+                      if (idx % 2 === 1) {
+                        return <strong key={idx} className="font-bold text-neutral-900">{part}</strong>;
+                      }
+                      return <span key={idx}>{part}</span>;
+                    })}
+                  </p>
+                  {story.promptDetails && (
+                    <div className="grid grid-cols-2 gap-3 pt-4 border-t border-neutral-200">
+                      {story.promptDetails.theme && (
+                        <div>
+                          <span className="text-xs font-semibold text-neutral-500 uppercase">Theme:</span>
+                          <p className="text-sm text-neutral-900 font-medium">{story.promptDetails.theme}</p>
+                        </div>
+                      )}
+                      {story.promptDetails.moral && (
+                        <div>
+                          <span className="text-xs font-semibold text-neutral-500 uppercase">Moral:</span>
+                          <p className="text-sm text-neutral-900 font-medium">{story.promptDetails.moral}</p>
+                        </div>
+                      )}
+                      {story.promptDetails.setting && (
+                        <div>
+                          <span className="text-xs font-semibold text-neutral-500 uppercase">Setting:</span>
+                          <p className="text-sm text-neutral-900 font-medium">{story.promptDetails.setting}</p>
+                        </div>
+                      )}
+                      {story.promptDetails.targetAge && (
+                        <div>
+                          <span className="text-xs font-semibold text-neutral-500 uppercase">Target Age:</span>
+                          <p className="text-sm text-neutral-900 font-medium">{story.promptDetails.targetAge}</p>
+                        </div>
+                      )}
                     </div>
-                  </button>
-                ))}
-              </div>
-            </div>
-
-            {/* Age Context Card */}
-            <div className="bg-gradient-to-br from-soft-green-50 to-soft-blue-50 rounded-xl p-6 border border-soft-green-200">
-              <h4 className="font-display text-lg font-bold text-neutral-900 mb-3">
-                Story Style for Ages {currentVariation.context.ageRange}
-              </h4>
-              <ul className="space-y-2 mb-4">
-                {currentVariation.context.styleNotes.map((note, idx) => (
-                  <li key={idx} className="flex items-start text-neutral-700">
-                    <span className="text-soft-blue-600 mr-2">•</span>
-                    <span>{note}</span>
-                  </li>
-                ))}
-                <li className="flex items-start text-neutral-700">
-                  <span className="text-soft-blue-600 mr-2">•</span>
-                  <span>Length: {currentVariation.context.length}</span>
-                </li>
-              </ul>
-              <div className="bg-white rounded-lg p-3 border border-soft-green-300">
-                <span className="text-sm font-semibold text-neutral-700">💫 Moral: </span>
-                <span className="text-sm text-neutral-900">{currentVariation.context.moral}</span>
-              </div>
+                  )}
+                </div>
+              )}
             </div>
 
             {/* Story Cover Image */}
             {currentVariation.imageUrl && (
-              <div>
-                <h3 className="text-lg font-semibold text-neutral-900 mb-3">🎨 Story Cover</h3>
-                <img
-                  src={currentVariation.imageUrl}
-                  alt={`Cover illustration for Ages ${currentVariation.context.ageRange}`}
-                  className="w-full rounded-lg shadow-lg border border-neutral-200"
-                />
-              </div>
+              <img
+                src={currentVariation.imageUrl}
+                alt={`Cover illustration for Ages ${currentVariation.context.ageRange}`}
+                className="w-full rounded-lg shadow-lg"
+              />
             )}
+
+            {/* Story Info Bar - Compact version */}
+            <div className="flex flex-wrap gap-3">
+              <span className="inline-flex items-center bg-soft-blue-50 px-3 py-2 rounded-lg text-sm font-medium text-soft-blue-700 border border-soft-blue-200">
+                📖 {currentVariation.context.length}
+              </span>
+              <span className="inline-flex items-center bg-soft-green-50 px-3 py-2 rounded-lg text-sm font-medium text-soft-green-700 border border-soft-green-200">
+                💫 {currentVariation.context.moral}
+              </span>
+            </div>
 
             {/* Full Story Text */}
             <div>
               <h3 className="text-lg font-semibold text-neutral-900 mb-3">📖 Full Story</h3>
-              <div className="bg-neutral-50 rounded-lg p-6 max-h-[600px] overflow-y-auto border border-neutral-200">
+              <div className="bg-neutral-50 rounded-lg p-4 md:p-6 max-h-[500px] overflow-y-auto border border-neutral-200">
                 {currentVariation.content.split('\n\n').map((paragraph, idx) => (
-                  <p key={idx} className="text-neutral-700 mb-4 leading-relaxed">
+                  <p key={idx} className="text-neutral-700 mb-4 leading-relaxed last:mb-0">
                     {paragraph}
                   </p>
                 ))}
               </div>
-              <div className="mt-4 text-center text-sm text-neutral-500 italic">
-                Note: Full story content with narration and songs will be added soon!
-              </div>
+            </div>
+
+            {/* Info Card - moved to bottom */}
+            <div className="bg-gradient-to-r from-soft-blue-50 to-soft-green-50 rounded-xl p-5 md:p-6 border border-soft-blue-100">
+              <h4 className="font-display text-lg font-bold text-neutral-900 mb-3">About User-Created Stories</h4>
+              <p className="text-neutral-700 mb-3 leading-relaxed">
+                This example showcases what you can build with FairyAI. From simple one-sentence ideas to detailed prompts with specific themes and characters, the app brings your imagination to life.
+              </p>
+              <p className="text-neutral-700 leading-relaxed">
+                <strong className="text-neutral-900">The same prompt, four different stories:</strong> FairyAI automatically adapts vocabulary, complexity, and themes based on your child's age group.
+              </p>
             </div>
 
           </div>
@@ -223,15 +189,15 @@ const UserExampleStoryPage: React.FC = () => {
       </section>
 
       {/* Final CTA */}
-      <section className="py-16 md:py-24 bg-gradient-to-br from-soft-blue-500 to-soft-green-500 text-white">
+      <section className="py-12 md:py-20 bg-gradient-to-br from-soft-blue-500 to-soft-green-500 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">
+          <h2 className="font-display text-2xl md:text-3xl font-bold mb-4">
             Ready to Create Your Own Stories?
           </h2>
-          <p className="text-xl mb-6 text-white/90">
-            Download FairyAI and start creating personalised bedtime adventures for your family.
+          <p className="text-lg mb-6 text-white/90">
+            Download FairyAI and start creating personalised bedtime adventures.
           </p>
-          <p className="text-lg mb-8 font-semibold">
+          <p className="text-base mb-8 font-semibold">
             6 free Fairy Dust • 7-day Fairy Corner trial • No credit card required
           </p>
           <DownloadButtons />
