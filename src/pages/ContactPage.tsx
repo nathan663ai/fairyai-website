@@ -1,5 +1,7 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import FAQAccordion from '../components/sections/FAQAccordion';
+import { faqs } from '../data/faqs';
 
 const ContactPage: React.FC = () => {
   useEffect(() => {
@@ -64,7 +66,7 @@ const ContactPage: React.FC = () => {
           </div>
 
           {/* Company Information */}
-          <div className="bg-neutral-50 border border-neutral-200 rounded-lg p-8">
+          <div className="bg-neutral-50 border border-neutral-200 rounded-lg p-8 mb-12">
             <h2 className="text-2xl font-bold text-neutral-900 mb-6">About Us</h2>
             <div className="space-y-4 text-neutral-700">
               <p>
@@ -78,7 +80,18 @@ const ContactPage: React.FC = () => {
               </p>
             </div>
           </div>
+        </div>
+      </section>
 
+      {/* FAQ Section */}
+      <FAQAccordion
+        faqs={faqs}
+        title="Common Questions"
+        subtitle="Find answers before you reach out — or email us if you need more help"
+      />
+
+      <section className="py-12 md:py-16">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Quick Links */}
           <div className="mt-12 text-center">
             <h3 className="text-xl font-bold text-neutral-900 mb-6">Looking for something specific?</h3>
