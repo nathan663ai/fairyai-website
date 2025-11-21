@@ -12,6 +12,7 @@ export interface AgeVariation {
   id: string;
   content: string;
   context: AgeVariationContext;
+  imageUrl?: string; // Cover image for this age variation
   // Narrations and songs will be added by Nathan later
   narrations?: any[];
   songs?: any[];
@@ -50,6 +51,7 @@ export const robotFriendshipStory: UserExampleStory = {
   ageVariations: {
     '2-4': {
       id: '60106122-ff41-452e-9d42-e8691a4c8093',
+      imageUrl: 'https://d1mmspri4wgcne.cloudfront.net/users/0d73d152-bdfb-4aca-98bb-ed33d2b912f4/stories/60106122-ff41-452e-9d42-e8691a4c8093/0d73d152-bdfb-4aca-98bb-ed33d2b912f4_60106122-ff41-452e-9d42-e8691a4c8093_cover.png',
       content: `Once upon a time, in a bright blue house, lived a little robot named Beep. Beep was shiny and silver, with twinkly lights and a big, round button on his tummy. Beep loved to beep and boop all day long. But sometimes, Beep felt a little bit lonely.
 
 One sunny morning, Beep woke up with a wiggle and a beep. "Beep beep! What will I do today?" he wondered. Beep looked out of the window and saw the birds singing in the trees. He saw the squirrels chasing each other. He saw the butterflies dancing in the garden.
@@ -132,6 +134,7 @@ The end.`,
     },
     '5-7': {
       id: '067a4db2-9383-4d08-884e-d1dbad16483a',
+      imageUrl: 'https://d1mmspri4wgcne.cloudfront.net/users/0d73d152-bdfb-4aca-98bb-ed33d2b912f4/stories/067a4db2-9383-4d08-884e-d1dbad16483a/0d73d152-bdfb-4aca-98bb-ed33d2b912f4_067a4db2-9383-4d08-884e-d1dbad16483a_cover.png',
       content: `Once upon a time, in a bright and bustling city, there lived a shiny silver robot named Robbie. Robbie lived in a cosy workshop with his inventor, Miss Tilly. Miss Tilly took good care of Robbie. She polished his metal arms every morning and tightened his bolts at night before bedtime. Robbie loved his workshop, but sometimes, he felt a little lonely.
 
 Robbie had lots of buttons and flashing lights, and he could beep and whirr as much as he liked. But sometimes, he wished he had someone to play with. He watched birds fly past the window in pairs, and children skipping hand-in-hand on the pavement outside. Robbie wondered what it would be like to have a friend.
@@ -240,6 +243,7 @@ Goodnight, little robot friend!`,
     },
     '8-10': {
       id: '98b0e2c1-ece1-4654-8e4e-0b76c57a018a',
+      imageUrl: 'https://d1mmspri4wgcne.cloudfront.net/users/0d73d152-bdfb-4aca-98bb-ed33d2b912f4/stories/98b0e2c1-ece1-4654-8e4e-0b76c57a018a/0d73d152-bdfb-4aca-98bb-ed33d2b912f4_98b0e2c1-ece1-4654-8e4e-0b76c57a018a_cover.png',
       content: `In the centre of a busy city, where people hurried past tall buildings and bright shops, lived a robot named Pixel. Pixel was not like the other robots who worked in offices or delivered post. Instead, he lived in the back room of Mr Singh's repair shop, surrounded by shelves cluttered with clocks, radios, and tangled wires.
 
 Pixel was small and round, with shiny silver arms and a friendly face made of blinking blue lights. He had a button nose that glowed when he was curious—which was almost all the time. Every morning, Mr Singh would wind up his gears and say cheerfully, "Ready for another day of learning, Pixel?"

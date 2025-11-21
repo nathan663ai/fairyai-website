@@ -191,6 +191,18 @@ const UserExampleStoryPage: React.FC = () => {
               </div>
             </div>
 
+            {/* Story Cover Image */}
+            {currentVariation.imageUrl && (
+              <div>
+                <h3 className="text-lg font-semibold text-neutral-900 mb-3">🎨 Story Cover</h3>
+                <img
+                  src={currentVariation.imageUrl}
+                  alt={`Cover illustration for Ages ${currentVariation.context.ageRange}`}
+                  className="w-full rounded-lg shadow-lg border border-neutral-200"
+                />
+              </div>
+            )}
+
             {/* Full Story Text */}
             <div>
               <h3 className="text-lg font-semibold text-neutral-900 mb-3">📖 Full Story</h3>
