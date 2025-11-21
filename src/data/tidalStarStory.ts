@@ -724,6 +724,93 @@ export const tidalStarStoryIT: TidalStarStoryData = {
   ]
 };
 
+const tidalStarContentPT = `Na beira do oceano, onde a areia ficava fresca e fininha entre os pés, o céu da noite pintava a água de azul-prateado. As ondas sussurravam um suave shhh, e conchinhas pequeninas estavam espalhadas pela praia como doces.
+
+**Lila** ajoelhou-se junto a uma poça entre as rochas e espreitou para dentro. As algas flutuavam como fitas verdes. Um camarão minúsculo deu um salto e foi-se embora. No rebordo da poça, ela encontrou uma pedrinha em forma de estrela. Era lisa e tinha um brilho ténue. Quando a pegou, aqueceu na palma da mão, como se gostasse de ser escolhida.
+
+— Com licença! — disse uma vozinha. — Aqui embaixo!
+
+Lila inclinou-se mais. Um relâmpago prateado passeou à volta da poça e saltou para cima como uma moeda. Um peixe pequenino, brilhante como luz da lua, piscou para ela.
+
+— Sou o **Finn** — disse ele, as palavras a borbulhar rápido. — Perdi o Caminho da Lua. A minha família foi para casa ao anoitecer e eu… bem, segui um brilho e acabei por me perder.
+
+Lila apoiou o queixo nos joelhos. — O que é o Caminho da Lua?
+
+— É a fita prateada que a lua põe sobre a água — explicou Finn, as nadadeiras a inclinar-se preocupado. — Seguimos por ela até uma enseada calma. Mas as nuvens vieram, e as pedras ficaram cheias de cantos e sombras. Preciso de um amigo da terra para fazer uma chave de ondazinha.
+
+— Uma chave de ondazinha? — Lila inclinou a cabeça.
+
+Finn acenou. — Um padrão na água. Não é pancada, é cuidado. Só mãos pequenas e mimosas conseguem fazê-lo. Chama o Caminho da Lua mesmo quando as nuvens escondem a lua. E tu tens uma pedrinha em forma de estrela! Isso ajuda.
+
+Lila olhou para a pedrinha. — Posso tentar — disse, apesar de o estômago fazer-lhe cócegas. — Nunca abri água antes.
+
+— Isso é perfeito — disse Finn, luminoso de alegria. — A magia da primeira vez é sempre a melhor.
+
+Lila arregaçou as mangas e esticou a mão sobre a poça. Quando os seus dedos tocaram a superfície, a pedrinha fez um pequeno movimento. Ela arfou. A pedrinha desenrolou cinco bracinhos minúsculos.
+
+— Oh! — Lila riu. — Tu não és uma pedrinha. És uma estrela-do-mar sonolenta.
+
+A pequena estrela-do-mar abriu-se no dedo dela como uma mãozinha macia. Tinha um brilho pérola muito suave. Os olhos de Finn arregalaram-se. — Ainda melhor — sussurrou. — Amigos de estrela lembram-se do céu.
+
+— O que eu faço? — perguntou Lila.
+
+— Desenha círculos lentos — disse Finn. — Nada de salpicos. Suave. A água gosta de visitantes educados.
+
+Lila respirou fundo, com cheiro a sal e a lugares distantes. Rodopiou o dedo uma vez. Devagar demais. A poça espirrou. — Ups — disse ela.
+
+Finn fez um movimento encorajador com a cauda. — Mais suave. Como uma pena.
+
+Lila fechou os olhos por um momento e ouviu o shhh do mar. Acreditou que podia ser leve como uma pena. Desenhou um círculo menor, depois outro, mais devagar. A estrela-do-mar aqueceu, e um colar de bolhinhas subiu para encontrar o seu dedo.
+
+As nuvens afinaram. A luz da lua escorregou entre elas e beijou a poça. Onde Lila traçou, a água estremeceu, e um caminho perolado de bolhas se formou. Estendeu-se a partir da poça, atravessou uma cadeia de baixios e alcançou o mar aberto.
+
+Finn rodopiou de alegria. — Conseguiste! O Caminho da Lua entrou nas poças!
+
+Lila sorriu, com as bochechas coradas. — Vamos seguir?
+
+Ela caminhou pela beira, com as sandálias numa mão e os dedos dos pés a roçar a água. O mar estava fresco e sedoso. O caminho de bolhas brilhava baixinho, como um cordão de lanternas. Finn nadava por baixo, a acompanhar. Sempre que o caminho enfraquecia, a estrela-do-mar no dedo de Lila brilhava mais, e a luz voltava.
+
+Viraram a esquina onde as rochas faziam um portal. Um caranguejo às riscas estava lá, com as garras erguidas como um porteiro. — Tic-tac — disse, a bater numa pedra.
+
+— Olá — disse Lila educadamente. — Estamos a seguir o Caminho da Lua. Podemos passar?
+
+O caranguejo inclinou os olhos. Lila admirou o seu casco lustroso. — As tuas riscas são muito elegantes — acrescentou.
+
+O caranguejo parou de bater. Com um andar de lado, apontou para um corredorzinho estreito escondido pelas algas. — Tic — disse, quase amigável, e mostrou o caminho secreto.
+
+— Obrigada — disse Lila, e Finn fez uma pequena reverência que o fez parecer muito pomposo para um peixe tão pequeno.
+
+Passado o portal, as poças alargaram-se. A água tornou-se de um azul transparente como vidro. Na maior delas, sombras tornaram-se formas, e as formas tornaram-se peixes. Caudas prateadas desenhavam loops como se escrevessem no ar.
+
+— Finn! — cantaram eles, com um rajado de bolhas que fizeram plink contra a rocha.
+
+— Mãe! Pai! Estou aqui! — Finn disparou para o cardume. Rodopiou rápido, depois voltou para Lila. — Esta é a Lila. Ela encontrou a chave.
+
+Os peixes juntaram-se e fizeram uma ondulação em forma de coração. O peito de Lila aqueceu, como o brilho da estrela-do-mar no seu dedo.
+
+Um peixe muito velho, com olhos lentos e sábios, aproximou-se. — O mar lembra-se da bondade — disse numa voz suave e de água. — Sempre que precisares de encontrar o caminho, mergulha a tua amiga-estrela numa poça e escuta. A água mostrar-te-á o caminho mais tranquilo.
+
+Finn balançou. — Ficas com a estrela-do-mar um bocadinho? Ela gosta do teu cuidado.
+
+A estrela-do-mar mexeu-se como a dizer que sim, depois deslizou do dedo de Lila para a sua palma e acomodou-se ali, quentinha como um botão. — Vou cuidar dela até ao amanhecer — prometeu Lila. — Depois levo-a de volta à sua rocha.
+
+Finn cintilou ao luar. — Vou mandar um brilho nas ondas para dizer olá de vez em quando.
+
+Lila riu, aquela risada pequenina que parece um segredo entre amigos. — Vou ficar à espera.
+
+As nuvens seguiram o seu caminho. A lua brilhou mais forte, estendendo uma fita prateada pelo mar. A família de Finn deslizou pelo caminho, caudas a abanar, escamas a piscarem como estrelas. — Boa noite! — chamaram, e o som pareceu um suspiro e uma cantiga juntos.
+
+Lila ficou muito quieta, depois voltou a caminho da primeira poça. Acariciou as costas da estrela-do-mar com a ponta de um dedo. — Portaste-te bem — sussurrou. — Nós portámo-nos bem.
+
+Ela sentou-se numa rocha lisa. A brisa era suave e cheirava a sal e a sono. A noite juntou-se como um cobertor. As ondas mantiveram o seu shhh tranquilo. Tocou na poça mais uma vez, e por um momento as bolhas desenharam um mapa pequeno igualzinho ao caminho que tinham feito: à volta do portal, passado o caranguejo, até à grande poça azul. Depois desfez-se, como se tivesse sido guardado com cuidado.
+
+Lila pôs a estrela-do-mar numa tigelinha com água do mar ao seu lado. Ela descansou ali, braços minúsculos relaxados, um brilho pérola a pulsar muito devagar. Abraçou os joelhos e observou a lua pintar longas linhas prateadas no mar.
+
+Os olhos ficaram pesados. A areia arrefeceu debaixo dos pés. O farol ao longe piscou, paciente e calmo, como os faróis das nossas costas portuguesas que guiam os barcos à noite. Algures além das rochas, a cauda de um peixe pode ter dado um último cintilar de luz. Lila sorriu e deixou o silêncio embalá-la. À volta, o oceano respirava, suave e certo.
+
+O pensamento desta noite: acredita em ti próprio
+FIM`;
+
 export const tidalStarStoryPT: TidalStarStoryData = {
   id: "7ed6a1bf-9e1d-4fe6-a26c-ad1319a55d94",
   title: "Sussurros da Estrela da Maré",
@@ -731,7 +818,7 @@ export const tidalStarStoryPT: TidalStarStoryData = {
   type: "ai",
   slug: "whispers-of-the-tidal-star-d5dfda26",
   imageUrl: "https://d1mmspri4wgcne.cloudfront.net/ai_stories/whispers-of-the-tidal-star-d5dfda26/cover.jpg",
-  content: "[Portuguese translation would go here]",
+  content: tidalStarContentPT,
   narrators: [
     {
       id: "onyx",
@@ -870,6 +957,93 @@ export const tidalStarStoryNL: TidalStarStoryData = {
   songs: [] // NO SONGS AVAILABLE
 };
 
+const tidalStarContentPL = `Na brzegu oceanu, gdzie piasek był chłodny i miękki pod palcami, wieczorne niebo zamieniało wodę w srebrno-niebieskie lustro. Fale szumiały cichym „szzzz", a malutkie muszelki leżały rozsiane jak słodkości na piasku.
+
+**Lila** uklękła przy rozlewisku i zajrzała do środka. Wodorosty pływały jak zielone wstążki. Maleńka krewetka strzeliła ogonem i odpłynęła. Na brzegku rozlewiska znalazła kamyk w kształcie gwiazdki. Był gładki i delikatnie się błyszczał. Kiedy go podniosła, zrobił się cieplejszy w jej dłoni, jakby cieszył się, że go wybrała.
+
+— Przepraszam! — rozległ się mały głos. — Tutaj na dole!
+
+Lila pochyliła się jeszcze bliżej. Srebrzysty błysk zakręcił wokół rozlewiska i wyskoczył jak moneta. Mała rybka, jasna jak blask księżyca, mrugnęła do niej.
+
+— Jestem **Finn** — powiedział, słowa bąbelkowały szybko. — Zgubiłem Księżycową Ścieżkę. Moja rodzina popłynęła do domu o zmierzchu, a ja… no cóż, pogoniłem za światłem i się pogubiłem.
+
+Lila oparła podbródek na kolanach. — Co to jest Księżycowa Ścieżka?
+
+— To srebrna wstęga, którą księżyc kładzie na wodzie — powiedział Finn, płetwy układając w zmartwieniu. — Płyniemy nią do spokojnej zatoki. Ale chmury przyszły, a skały robią kąty i cienie. Potrzebuję przyjaciela z lądu, żeby zrobić klucz z fal.
+
+— Klucz z fal? — Lila przekrzywiła głowę.
+
+Finn skinął. — Wzór na wodzie. Tylko małe, delikatne ręce potrafią go stworzyć. Przywołuje Księżycową Ścieżkę, nawet gdy chmury ukryją księżyc. A ty masz kamyczek-gwiazdkę! To pomaga.
+
+Lila spojrzała na kamyk. — Spróbuję — powiedziała, choć w brzuszku zamigotało jej trochę niepokoju. — Nigdy wcześniej nie otwierałam wody.
+
+— Właśnie tak najlepiej — powiedział Finn radośnie. — Magia przy pierwszym razie działa najsilniej.
+
+Lila podwinęła rękawki i wyciągnęła dłoń nad rozlewisko. Kiedy palce dotknęły powierzchni, gwiazdkowy kamyk drgnął. Zaskoczyła się. Kamyk rozłożył pięć maleńkich ramion.
+
+— Ojej! — Lila zachichotała. — To wcale nie kamyk. To śpiąca rozgwiazda.
+
+Mała rozgwiazda rozwinęła się na jej palcu jak mała, miękka rączka. Świeciła najdelikatniejszym perłowym blaskiem. Oczy Finna zrobiły się okrągłe. — Nawet lepiej — wyszeptał. — Przyjaciele-gwiazdy pamiętają niebo.
+
+— Co mam robić? — zapytała Lila.
+
+— Rysuj powolne kółka — powiedział Finn. — Bez chlapania. Delikatnie. Woda lubi grzecznych gości.
+
+Lila wzięła oddech, który pachniał solą i dalekimi miejscami. Zakreśliła palcem raz. Za szybko. Rozlewisko prysnęło. — Ups — powiedziała.
+
+Finn zachęcił ją figlarnym ruchem płetwy. — Łagodniej. Jak piórko.
+
+Lila zamknęła na chwilę oczy i nasłuchiwała szz szz morza. Uwierzyła, że może być lekka jak piórko. Narysowała mniejsze kółko, potem jeszcze jedno, jeszcze wolniej. Rozgwiazda zrobiła się cieplejsza, a z powierzchni cisnęły się maleńkie bąbelki, które spotkały jej palec w szyku jak korale.
+
+Chmury przerzedziły się. Księżyc przebił się między nimi i pocałował rozlewisko. Tam, gdzie Lila rysowała, woda zadrżała, a perłowa ścieżka bąbelków uformowała się. Ciągnęła się od rozlewiska, splatała przez łańcuszek płytkich zatoczek i sięgała ku otwartemu morzu.
+
+Finn zakręcił się z radości. — Udało ci się! Księżycowa Ścieżka weszła w oczka wodne!
+
+Lila uśmiechnęła się, policzki miała różowe. — Pójdziemy nią? — zapytała.
+
+Szła po krawędzi, sandałki trzymała w jednej ręce, palce stópek muskały wodę. Morze było chłodne i jedwabiste. Ścieżka z bąbelków świeciła delikatnie, jak sznur maleńkich lampionów. Finn płynął niżej, dotrzymywał kroku. Kiedy ścieżka przygasała, rozgwiazda na palcu Lili rozjaśniała się i światło wracało.
+
+Skręcili za róg, gdzie skały tworzyły bramkę. Stał tam pasiasty krab, szczypce trzymał jak strażnik. — Klik-klak — powiedział, stukając w kamień.
+
+— Dzień dobry — powiedziała Lila grzecznie. — Idziemy za Księżycową Ścieżką. Czy możemy się prześlizgnąć?
+
+Krab przechylił oczka. Lila podziwiała jego błyszczącą skorupę. — Twoje pasy są bardzo eleganckie — dodała.
+
+Krab przestał stukać. Zboczył na bok i wskazał wąski przesmyk ukryty w wodorostach. — Klik — powiedział prawie po przyjacielsku i pokazał tajną drogę.
+
+— Dziękujemy — powiedziała Lila, a Finn ukłonił się lekko, co sprawiło, że wyglądał bardzo dostojnie jak na taką malutką rybkę.
+
+Za bramką oczka wodne się powiększyły. Woda pogłębiła się do przejrzystego, szklanego błękitu. W największym oczku cienie stały się kształtami, a kształty zamieniły się w ryby. Srebrne ogony rysowały pętle jak litery na niebie.
+
+— Finn! — zaśpiewały, posyłając bąbelkowy deszczyk, który stuknął o kamień.
+
+— Mamo! Tato! Jestem tutaj! — Finn wpadł w ławicę. Zakręcił szybkie kółko, potem pofrunął z powrotem do Lili. — To jest Lila. Znalazła klucz.
+
+Ryby zebrały się razem i zrobiły serduszkowy falowy kształt. Serce Lili zrobiło się ciepłe, jak rozgwiazda na jej palcu.
+
+Przysunęła się bardzo stara ryba, z wolnymi, mądrymi oczami. — Ocean pamięta dobroć — powiedziała miękkim, wodnistym głosem. — Gdy będziesz potrzebować drogi, zanurz swojego gwiezdnego przyjaciela w oczku i posłuchaj. Woda pokaże najłagodniejszą ścieżkę.
+
+Finn podskoczył. — Czy możesz potrzymać rozgwiazdę na chwilę? Lubi twoją opiekę.
+
+Rozgwiazda pomachała ramionkami jak na zgodę, potem przemieściła się z palca Lili do jej dłoni i ułożyła się tam, przytulna jak guzik. — Potrzymam ją do świtu — obiecała Lila. — Potem oddam na skałę.
+
+Finn zamrugał w księżycowym blasku. — Będę czasem wysyłać drobne błyski na falach, żeby powiedzieć „cześć".
+
+Lila roześmiała się takim małym śmiechem, który jest jak tajemnica dzielona między przyjaciółmi. — Będę na nie patrzeć — powiedziała.
+
+Chmury płynęły dalej. Księżyc świecił jaśniej i kładł srebrną wstęgę daleko po wodzie. Rodzina Finna ślizgała się po ścieżce, ogony migały, łuski iskrzyły jak gwiazdki. — Dobranoc! — zawołały, a dźwięk ten był jak westchnienie i piosenka zarazem.
+
+Lila stała bardzo spokojnie, potem wróciła ścieżką do pierwszego rozlewiska. Przesunęła palcem po grzbiecie rozgwiazdy. — Dobrze wam poszło — wyszeptała. — Dobrze nam poszło.
+
+Usiadła na gładkiej skale. Wiatr był miękki i pachniał solą i snem. Noc złożyła się jak koc. Fale trzymały swój cichy „szzzz". Dotknęła jeszcze raz wody i przez moment bąbelki ułożyły miniaturową mapkę, która wyglądała dokładnie jak ścieżka, którą przeszli: koło bramki, obok kraba, do wielkiego niebieskiego oczka. Potem zniknęła, jakby ładnie schowana.
+
+Lila położyła rozgwiazdę w płytkiej miseczce z morską wodą obok siebie. Odpoczywała tam, ramionka rozluźnione, perłowy blask pulsował bardzo wolno. Oplotła ręce wokół kolan i patrzyła, jak księżyc maluje długie srebrne linie na morzu.
+
+Jej oczy zrobiły się ciężkie. Piasek ochłodził się pod stopami. Daleka latarnia morska mrugała, cierpliwa i spokojna. Gdzieś za skałami ogon rybki mógł jeszcze machnąć ostatnim błyskiem. Lila uśmiechnęła się i pozwoliła, by cisza ją ukołysała. Wokół ocean oddychał, delikatny i pewny.
+
+Dziś do zapamiętania: uwierz w siebie
+KONIEC`;
+
 export const tidalStarStoryPL: TidalStarStoryData = {
   id: "58f6ea89-999f-4d83-8822-ead485c1cec0",
   title: "Szepty Przypływowej Gwiazdeczki",
@@ -877,7 +1051,7 @@ export const tidalStarStoryPL: TidalStarStoryData = {
   type: "ai",
   slug: "whispers-of-the-tidal-star-d5dfda26",
   imageUrl: "https://d1mmspri4wgcne.cloudfront.net/ai_stories/whispers-of-the-tidal-star-d5dfda26/cover.jpg",
-  content: "[Polish translation would go here]",
+  content: tidalStarContentPL,
   narrators: [
     {
       id: "onyx",
