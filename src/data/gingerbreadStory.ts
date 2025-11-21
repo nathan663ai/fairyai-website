@@ -932,3 +932,161 @@ export const gingerbreadStoryIT: GingerbreadStoryData = {
     }
   ]
 };
+
+const gingerbreadContentPT = `Em uma casinha de tijolos aconchegante, na beira de uma vila animada, onde canela e gengibre perfumavam o ar da manhã, uma velhinha amarrou seu avental com um assobio alegre.
+
+"Hoje é um bom dia para assar," disse ela ao seu gato, que piscou preguiçoso no parapeito da janela.
+
+Ela misturou farinha, manteiga, açúcar e melaço em sua maior tigela de madeira. A massa ficou macia e grudenta, cheirando a especiarias. Com cuidado, ela abriu a massa e cortou o formato perfeito de um homem de gengibre.
+
+"Vamos te deixar especial," disse ela com carinho, colocando groselhas para os olhos, uma uva-passa para o sorriso e três pérolas de açúcar para os botões. "Pronto. Agora para o forno você vai."
+
+Ela colocou a assadeira e fechou a porta. O calor subiu e dançou. O gato cheirou o ar com interesse.
+
+Mas, bem quando o timer tocou—
+
+POP!
+
+A porta do forno se abriu de repente, e de lá pulou o Homem de Gengibre, dourado e sorridente.
+
+"Não me coma!" ele gritou, pulando no chão. "Corra, corra, o mais rápido que puder! Você não me pega, eu sou o Homem de Gengibre!"
+
+E lá foi ele—pela cozinha, passando pelo gato assustado, e saindo pela porta para o sol.
+
+"Pare!" gritou a velhinha. "Volte aqui!"
+
+Mas o Homem de Gengibre só riu enquanto seus pezinhos de biscoito batiam pelo caminho do jardim.
+"Fugi da velhinha, vou fugir de você!
+Corra, corra, o mais rápido que puder!
+Você não me pega, eu sou o Homem de Gengibre!"
+
+Logo ele passou por um porquinho rosa e gordo, dentro de um chiqueiro lamacento.
+
+"Oinc! Você cheira delicioso!" grunhiu o porco, correndo atrás dele.
+
+Mas o Homem de Gengibre só disse:
+"Fugi da velhinha, fugi do gato dela—
+Vou fugir de um porco rapidinho também!
+Corra, corra, o mais rápido que puder!
+Você não me pega, eu sou o Homem de Gengibre!"
+
+Ele disparou pela praça da vila, passando por vendedores assustados e cestos de maçãs, com suas perninhas correndo depressa.
+
+Depois veio uma vaca marrom, balançando o rabo perto da cerca.
+
+"Muu! Que lanchinho gostoso você seria," disse ela, trotando atrás dele.
+
+Mas ele só gritou:
+"Fugi da velhinha, do gato e do porco,
+Fugir de você? Isso é pouco!
+Corra, corra, o mais rápido que puder!
+Você não me pega, eu sou o Homem de Gengibre!"
+
+A poeira subiu atrás dele enquanto o porco e a vaca se juntaram à perseguição. Seus cascos batiam no chão enquanto as crianças riam e apontavam.
+
+Então um cavalo alto relinchou do campo e entrou na corrida.
+
+"Vou te pegar rapidinho!" chamou ele, com os cascos trovejando.
+
+Mas o Homem de Gengibre só correu mais rápido, passando por campos de trigo dourado.
+
+"Fugi de todos eles, você vai ver—
+Você não me pega, eu sou o Homem de Gengibre!"
+
+Os animais bufavam e ofegavam atrás dele. A velhinha já tinha desistido, com as mãos na cintura, resmungando: "Isso me ensina a não assar nada com pernas."
+
+O Homem de Gengibre riu enquanto corria pela floresta, folhas estalando sob seus pés, pássaros voando assustados.
+
+Mas de repente, ele chegou a um rio largo e veloz. A água girava escura e rápida, fundo demais para atravessar, largo demais para pular.
+
+"Ai, ai," disse ele, andando de um lado para o outro na beira do rio.
+
+Saiu então uma raposa elegante, com o pelo brilhando como cobre polido.
+
+"Por que essa carinha triste, biscoitinho?" perguntou a raposa, com voz suave como manteiga derretida.
+
+"Preciso atravessar esse rio," disse o Homem de Gengibre, olhando nervoso para a correnteza. "Mas eu não sei nadar."
+
+Os olhos da raposa brilharam. "Ora, eu sei. Suba no meu rabo, que eu te levo."
+
+Hesitando só um pouquinho, o Homem de Gengibre subiu.
+
+A raposa entrou na água fria. Ondinhas brilhavam enquanto ela nadava devagar.
+
+"Está muito molhado aí atrás," disse a raposa. "Suba nas minhas costas."
+
+O Homem de Gengibre subiu mais alto.
+
+Logo a água chegou ao pescoço da raposa. "Melhor subir na minha cabeça," disse ela, mexendo as orelhas.
+
+O Homem de Gengibre obedeceu.
+
+Mas a água subiu de novo.
+
+"Você vai se molhar—melhor subir no meu nariz," sussurrou a raposa.
+
+Assim que o Homem de Gengibre pisou na pontinha do nariz da raposa—
+
+SNAP!
+
+Com um movimento rápido da cabeça, a raposa jogou o Homem de Gengibre para o alto e o engoliu de uma só vez.
+
+O rio continuou a correr. Os pássaros cantaram. E a raposa lambeu os lábios.
+
+"Delicioso."
+
+Momentos depois, o porco, a vaca e o cavalo chegaram, ofegantes.
+
+"Onde ele está?" arfou o porco.
+
+A raposa deu um pequeno arroto. "Ele ficou meio molinho," disse ela, piscando.
+
+De volta à vila, a velhinha tirou outra assadeira do forno. Ela olhou para o gato e disse: "Desta vez, sem pernas."
+
+Fim`;
+
+export const gingerbreadStoryPT: GingerbreadStoryData = {
+  id: "2baca3bf-c6ef-4ffc-82e4-e5310789a289",
+  title: "O Homem de Gengibre",
+  languageCode: "pt",
+  type: "classic",
+  imageUrl: "https://d1mmspri4wgcne.cloudfront.net/classic-tales/The+Gingerbread+Man.png",
+  content: gingerbreadContentPT,
+  narrators: [
+    {
+      id: "onyx",
+      name: "Onyx",
+      duration: 318,
+      audioUrl: "https://d1mmspri4wgcne.cloudfront.net/ai_stories/the_gingerbread_man/narrations/pt/onyx.mp3"
+    },
+    {
+      id: "shimmer",
+      name: "Shimmer",
+      duration: 345,
+      audioUrl: "https://d1mmspri4wgcne.cloudfront.net/ai_stories/the_gingerbread_man/narrations/pt/shimmer.mp3"
+    }
+  ],
+  songs: [
+    {
+      id: "epic_adventure",
+      title: "A Fuga do Homem de Gengibre",
+      style: "epic_adventure",
+      url: "https://d1mmspri4wgcne.cloudfront.net/classic-tales/o_homem_de_gengibre/pt/epic_adventure.mp3",
+      duration: 111.8
+    },
+    {
+      id: "singalong",
+      title: "O Homem de Gengibre",
+      style: "singalong",
+      url: "https://d1mmspri4wgcne.cloudfront.net/classic-tales/o_homem_de_gengibre/pt/singalong.mp3",
+      duration: 185.12
+    },
+    {
+      id: "storytelling",
+      title: "O Homem de Gengibre",
+      style: "storytelling",
+      url: "https://d1mmspri4wgcne.cloudfront.net/classic-tales/o_homem_de_gengibre/pt/storytelling.mp3",
+      duration: 179.88
+    }
+  ]
+};
