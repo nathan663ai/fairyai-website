@@ -5,79 +5,7 @@ import SongPlayer from '../components/ui/SongPlayer';
 import ImagePlaceholder from '../components/ui/ImagePlaceholder';
 import DownloadButtons from '../components/ui/DownloadButtons';
 import { gingerbreadStoryEnGB, gingerbreadStoryEnUS, gingerbreadStoryFR } from '../data/gingerbreadStory';
-
-// Story Examples Data (matching StoriesPage)
-const storyExamples = [
-  {
-    id: 'luna-brave-bunny',
-    numericId: 1,
-    title: 'Luna the Brave Bunny',
-    ageRange: '4-6 years',
-    audioSrc: '/audio/stories/luna-narration.mp3',
-    characterImage: '/images/characters/character1.jpg',
-    creationMethod: 'quick_story' as const,
-    prompt: 'A brave bunny goes on an adventure to find a missing moon crystal and learns about courage and kindness.',
-    fullText: `[Story text will be added by user - placeholder for now]\n\nOnce upon a time, in a magical forest where the trees whispered secrets and the flowers glowed with moonlight, there lived a brave little bunny named Luna...\n\n[Full story content goes here]\n\nThe End.`,
-  },
-  {
-    id: 'space-dragon-young',
-    numericId: 2,
-    title: 'The Friendly Space Dragon',
-    ageRange: '5-8 years',
-    audioSrc: '/audio/stories/dragon-narration.mp3',
-    characterImage: '/images/characters/character2.jpg',
-    creationMethod: 'story_wizard' as const,
-    wizardSelections: {
-      characters: 'Cosmo the Space Dragon',
-      location: 'Outer Space',
-      theme: 'Adventure & Friendship',
-      ageGroup: '5-8 years',
-    },
-    fullText: `[Story text will be added by user - placeholder for now]\n\nFar, far away in the depths of space, between the twinkling stars and swirling galaxies, lived a dragon named Cosmo...\n\n[Full story content goes here]\n\nThe End.`,
-  },
-  {
-    id: 'space-dragon-older',
-    numericId: 3,
-    title: 'The Friendly Space Dragon',
-    ageRange: '10-12 years',
-    audioSrc: '/audio/stories/space-narration.mp3',
-    characterImage: '/images/characters/character3.jpg',
-    creationMethod: 'story_wizard' as const,
-    note: 'Same prompt, different age group',
-    wizardSelections: {
-      characters: 'Cosmo the Space Dragon',
-      location: 'Outer Space',
-      theme: 'Adventure & Friendship',
-      ageGroup: '10-12 years',
-    },
-    fullText: `[Story text will be added by user - placeholder for now]\n\nIn the vast expanse of the cosmos, where nebulae swirled in kaleidoscopic patterns and distant galaxies whispered ancient secrets, there existed a dragon unlike any other...\n\n[Full story content goes here]\n\nThe End.`,
-  },
-  {
-    id: 'fairy-corner-daily',
-    numericId: 4,
-    title: '[Daily Story from Fairy Corner]',
-    ageRange: '4-7 years',
-    audioSrc: '/audio/stories/fairy-corner-daily-narration.mp3',
-    characterImage: '/images/characters/character4.jpg',
-    creationMethod: 'fairy_corner_daily' as const,
-    songs: [
-      { id: 'song1', title: '[Song 1]', style: 'singalong', url: '/audio/songs/fairy-corner-daily-song1.mp3', duration: 120 },
-      { id: 'song2', title: '[Song 2]', style: 'playful', url: '/audio/songs/fairy-corner-daily-song2.mp3', duration: 110 },
-    ],
-    fullText: `[Story text will be added by user - placeholder for now]\n\nThis is a daily AI-generated story from the Fairy Corner.\n\n[Full story content goes here]\n\nThe End.`,
-  },
-  {
-    id: 'gingerbread-man',
-    numericId: 5,
-    title: 'The Gingerbread Man',
-    ageRange: '3-6 years',
-    audioSrc: '/audio/stories/gingerbread-man-narration.mp3',
-    characterImage: '/images/characters/character5.jpg',
-    creationMethod: 'fairy_corner_classic' as const,
-    songs: [],
-    fullText: '', // Will use gingerbread data
-  },
-];
+import { storyExamples } from '../data/stories';
 
 const StoryDetailPage: React.FC = () => {
   const { storyId } = useParams<{ storyId: string }>();
@@ -138,9 +66,11 @@ const StoryDetailPage: React.FC = () => {
             {story.id === 'gingerbread-man' ? currentGingerbread.title : story.title}
           </h1>
           <div className="flex flex-wrap gap-2">
-            <span className="inline-block text-sm font-semibold bg-white px-3 py-1 rounded-full">
-              {story.ageRange}
-            </span>
+            {story.ageRange && (
+              <span className="inline-block text-sm font-semibold bg-white px-3 py-1 rounded-full">
+                {story.ageRange}
+              </span>
+            )}
             <span className={`inline-block text-sm font-semibold px-3 py-1 rounded-full ${badge.color}`}>
               {badge.text}
             </span>

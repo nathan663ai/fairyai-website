@@ -2,56 +2,7 @@ import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import ImagePlaceholder from '../components/ui/ImagePlaceholder';
 import DownloadButtons from '../components/ui/DownloadButtons';
-
-// Story Examples Data
-const storyExamples = [
-  {
-    id: 'luna-brave-bunny',
-    title: 'Luna the Brave Bunny',
-    ageRange: '4-6 years',
-    characterImage: '/images/characters/character1.jpg',
-    creationMethod: 'quick_story' as const,
-    description: 'User-created story generated with a simple prompt in seconds.',
-    tagline: 'Click to read the full story and hear the narration',
-  },
-  {
-    id: 'space-dragon-young',
-    title: 'The Friendly Space Dragon',
-    ageRange: '5-8 years',
-    characterImage: '/images/characters/character2.jpg',
-    creationMethod: 'story_wizard' as const,
-    description: 'Crafted with Story Wizard: choose characters, settings, themes, and age group.',
-    tagline: 'Click to explore this adventure and listen along',
-  },
-  {
-    id: 'space-dragon-older',
-    title: 'The Friendly Space Dragon',
-    ageRange: '10-12 years',
-    characterImage: '/images/characters/character3.jpg',
-    creationMethod: 'story_wizard' as const,
-    description: 'Same prompt as above, but tailored for older children with more complex language.',
-    tagline: 'Click to see how the same story adapts to different ages',
-  },
-  {
-    id: 'fairy-corner-daily',
-    title: '[Daily Story from Fairy Corner]',
-    ageRange: '4-7 years',
-    characterImage: '/images/characters/character4.jpg',
-    creationMethod: 'fairy_corner_daily' as const,
-    description: 'AI-generated daily story from Fairy Corner, complete with narration and songs.',
-    tagline: 'Click to read and enjoy today\'s musical adventure',
-  },
-  {
-    id: 'gingerbread-man',
-    title: 'The Gingerbread Man',
-    ageRange: '3-6 years',
-    imageUrl: 'https://d1mmspri4wgcne.cloudfront.net/classic-tales/The+Gingerbread+Man.png',
-    characterImage: '/images/characters/character5.jpg',
-    creationMethod: 'fairy_corner_classic' as const,
-    description: 'Classic fairy tale from Fairy Corner library with multiple narrators, songs, and languages.',
-    tagline: 'Click to explore this timeless tale in English or French',
-  },
-];
+import { storyExamples } from '../data/stories';
 
 const StoriesPage: React.FC = () => {
   useEffect(() => {
@@ -127,9 +78,11 @@ const StoriesPage: React.FC = () => {
 
                     {/* Badges */}
                     <div className="flex flex-wrap gap-2 mb-3">
-                      <span className="inline-block text-xs font-semibold bg-white border border-neutral-300 px-2 py-1 rounded-full">
-                        {story.ageRange}
-                      </span>
+                      {story.ageRange && (
+                        <span className="inline-block text-xs font-semibold bg-white border border-neutral-300 px-2 py-1 rounded-full">
+                          {story.ageRange}
+                        </span>
+                      )}
                       <span className={`inline-block text-xs font-semibold px-2 py-1 rounded-full ${badge.color}`}>
                         {badge.text}
                       </span>
