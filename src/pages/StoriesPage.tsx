@@ -19,6 +19,8 @@ const StoriesPage: React.FC = () => {
         return { text: '✨ Daily AI Story', color: 'bg-gradient-to-r from-soft-blue-100 to-soft-green-100 text-neutral-800' };
       case 'fairy_corner_classic':
         return { text: '📚 Classic Tale', color: 'bg-gradient-to-r from-soft-blue-100 to-soft-green-100 text-neutral-800' };
+      case 'user_example':
+        return { text: '👤 User Example', color: 'bg-soft-green-100 text-soft-green-700' };
       default:
         return { text: method, color: 'bg-neutral-100 text-neutral-700' };
     }
@@ -44,11 +46,14 @@ const StoriesPage: React.FC = () => {
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             {storyExamples.map((story) => {
               const badge = getCreationMethodBadge(story.creationMethod);
+              const storyUrl = story.creationMethod === 'user_example'
+                ? `/stories/examples/${story.id}`
+                : `/stories/${story.id}`;
 
               return (
                 <Link
                   key={story.id}
-                  to={`/stories/${story.id}`}
+                  to={storyUrl}
                   className="group bg-white rounded-xl shadow-lg border border-neutral-200 overflow-hidden hover:shadow-2xl hover:scale-[1.02] transition-all duration-300"
                 >
                   {/* Story Image */}

@@ -15,7 +15,7 @@ export interface StoryExample {
   ageRange?: string; // Optional - not all stories have age ranges
   imageUrl?: string; // Optional - for stories with real images
   characterImage: string;
-  creationMethod: 'quick_story' | 'story_wizard' | 'fairy_corner_daily' | 'fairy_corner_classic';
+  creationMethod: 'quick_story' | 'story_wizard' | 'fairy_corner_daily' | 'fairy_corner_classic' | 'user_example';
   description: string;
   tagline: string;
   audioSrc: string;
@@ -122,5 +122,29 @@ export const storyExamples: StoryExample[] = [
     audioSrc: 'https://d1mmspri4wgcne.cloudfront.net/ai_stories/whispers-of-the-tidal-star-d5dfda26/en-GB/narrations/onyx.mp3',
     songs: [],
     fullText: '', // Will use tidal star data
+  },
+  {
+    id: 'robot-friendship',
+    numericId: 7,
+    title: 'A Robot Learns About Friendship',
+    characterImage: '/images/characters/character7.jpg',
+    creationMethod: 'user_example',
+    description: 'See how a simple one-sentence prompt adapts across different age groups. From playful simplicity for toddlers to deeper themes for tweens.',
+    tagline: 'See how one simple prompt becomes 4 different stories',
+    audioSrc: '/audio/stories/placeholder.mp3', // Placeholder
+    prompt: 'A robot learns about friendship',
+    fullText: '', // Will use user example data
+  },
+  {
+    id: 'dragon-afraid-heights',
+    numericId: 8,
+    title: 'The Dragon Who Was Afraid of Heights',
+    characterImage: '/images/characters/character8.jpg',
+    creationMethod: 'user_example',
+    description: 'A detailed prompt with specific themes, characters, and settings. Explore how rich story details create targeted, age-appropriate narratives.',
+    tagline: 'Discover how detailed prompts create richer stories',
+    audioSrc: '/audio/stories/placeholder.mp3', // Placeholder
+    prompt: 'Create a story about a young dragon named Ember who is terrified of flying...',
+    fullText: '', // Will use user example data
   },
 ];
