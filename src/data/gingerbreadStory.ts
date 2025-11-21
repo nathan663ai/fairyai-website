@@ -1406,3 +1406,158 @@ export const gingerbreadStoryPL: GingerbreadStoryData = {
     }
   ]
 };
+
+const gingerbreadContentZH = `在热闹村庄边上的一间温暖的砖房里，空气中飘着肉桂和姜的香味。一位老奶奶系上围裙，开心地哼着小曲。
+
+"今天真适合烤点心。"她对窗台上懒洋洋眨眼的猫咪说。
+
+她用最大的木碗搅拌着面粉、黄油、糖和糖浆。面团又软又黏，带着香香的味道。她小心地把面团擀平，切出一个完美的姜饼人形状。
+
+"让你变得特别一点吧。"她温柔地说，用葡萄干做眼睛，用葡萄干做微笑的嘴巴，再用三颗糖珠做纽扣。"好了，现在进烤箱吧。"
+
+她把烤盘推进去，关上门。热气升腾起来。猫咪好奇地闻了闻空气。
+
+就在计时器滴答响起时——
+
+"砰！"
+
+烤箱门突然弹开，姜饼人跳了出来，金黄的身体，咧着大大的笑脸。
+
+"别吃我！"他大叫着跳到地板上。"快跑，快跑，你追不上我！我是姜饼人！"
+
+他飞快地冲出了厨房，跑过吓了一跳的猫咪，冲进了阳光下。
+
+"停下！"老奶奶喊道，"快回来！"
+
+可姜饼人只是笑着，小饼干脚丫在花园小路上噼啪作响。
+"我能从老奶奶那儿跑掉，也能从你这儿跑掉！
+快跑，快跑，你追不上我！我是姜饼人！"
+
+很快，他跑过了猪圈里一只胖胖的粉色小猪。
+
+"哼哼！你闻起来真香！"小猪哼哼着，跟着他跑了起来。
+
+但姜饼人只是喊：
+"我能从老奶奶那儿跑掉，也能从她的猫那儿跑掉——
+我也能像这样从小猪那儿跑掉！
+快跑，快跑，你追不上我！我是姜饼人！"
+
+他冲过村子的广场，跑过吃惊的店主和一篮篮苹果，小腿飞快地跑着。
+
+接着，一头棕色的奶牛在篱笆旁摇着尾巴。
+
+"哞！你一定很好吃。"奶牛说着，也追了上来。
+
+可他只是大声喊：
+"我能从老奶奶、猫咪和小猪那儿跑掉，
+从你这儿跑掉也不难！
+快跑，快跑，你追不上我！我是姜饼人！"
+
+小猪和奶牛也加入了追逐，尘土飞扬。孩子们咯咯笑着，指着他们。
+
+然后，一匹高大的马在草地上嘶鸣，也追了过来。
+
+"我很快就能抓住你！"马叫着，蹄子咚咚响。
+
+但姜饼人跑得更快，穿过金黄的麦田。
+
+"我能从他们全都跑掉，你看我行的——
+你也追不上我，我是姜饼人！"
+
+动物们在他身后喘着气。老奶奶已经放弃了，双手叉腰嘀咕着："以后再也不做会跑的点心了。"
+
+姜饼人笑着跑进森林，脚下树叶咔嚓作响，鸟儿在头顶飞散。
+
+突然，他来到了一条又宽又急的河边。水流又深又快，太深不能趟过去，太宽也跳不过去。
+
+"哎呀，"他在河岸边来回踱步。
+
+这时，一只光滑的狐狸走了出来，毛发像擦亮的铜一样闪闪发光。
+
+"小饼干，为什么皱着眉头？"狐狸的声音像融化的黄油一样温柔。
+
+"我需要过河。"姜饼人看着水流，紧张地说，"可我不会游泳。"
+
+狐狸的眼睛闪了闪。"我会游泳。跳到我的尾巴上，我带你过去。"
+
+姜饼人只犹豫了一下，就爬上了狐狸的尾巴。
+
+狐狸走进冰凉的水里。水面荡起波纹，他慢慢地游着。
+
+"尾巴后面太湿了，"狐狸说，"跳到我背上来吧。"
+
+姜饼人爬得更高了。
+
+很快，水已经淹到狐狸的脖子。"最好到我头上来。"狐狸甩了甩耳朵说。
+
+姜饼人照做了。
+
+可水又升高了。
+
+"你会湿的——最好爬到我鼻子上。"狐狸低声说。
+
+姜饼人刚刚踩到狐狸鼻尖——
+
+"咔嚓！"
+
+狐狸猛地一甩头，把姜饼人抛到空中，一口吞了下去。
+
+河水继续流淌，鸟儿在唱歌。狐狸舔了舔嘴唇。
+
+"真好吃。"
+
+过了一会儿，小猪、奶牛和马气喘吁吁地赶来了。
+
+"他去哪儿了？"小猪喘着问。
+
+狐狸打了个小嗝，眨眨眼说："他有点湿了。"
+
+回到村子里，老奶奶又从烤箱里拿出一盘点心。她看了看猫咪，说："这次，别做腿了。"
+
+故事结束`;
+
+export const gingerbreadStoryZH: GingerbreadStoryData = {
+  id: "d1c73862-4957-443c-8ea5-f3fcb364dbc6",
+  title: "姜饼人",
+  languageCode: "zh",
+  type: "classic",
+  imageUrl: "https://d1mmspri4wgcne.cloudfront.net/classic-tales/The+Gingerbread+Man.png",
+  content: gingerbreadContentZH,
+  narrators: [
+    {
+      id: "onyx",
+      name: "Onyx",
+      duration: 269,
+      audioUrl: "https://d1mmspri4wgcne.cloudfront.net/ai_stories/the_gingerbread_man/narrations/zh/onyx.mp3"
+    },
+    {
+      id: "shimmer",
+      name: "Shimmer",
+      duration: 306,
+      audioUrl: "https://d1mmspri4wgcne.cloudfront.net/ai_stories/the_gingerbread_man/narrations/zh/shimmer.mp3"
+    }
+  ],
+  songs: [
+    {
+      id: "epic_adventure",
+      title: "姜饼人的逃亡",
+      style: "epic_adventure",
+      url: "https://d1mmspri4wgcne.cloudfront.net/classic-tales/姜饼人/zh/epic_adventure.mp3",
+      duration: 213.52
+    },
+    {
+      id: "singalong",
+      title: "姜饼快跑！",
+      style: "singalong",
+      url: "https://d1mmspri4wgcne.cloudfront.net/classic-tales/姜饼人/zh/singalong.mp3",
+      duration: 149.2
+    },
+    {
+      id: "storytelling",
+      title: "逃跑的姜饼人",
+      style: "storytelling",
+      url: "https://d1mmspri4wgcne.cloudfront.net/classic-tales/姜饼人/zh/storytelling.mp3",
+      duration: 185
+    }
+  ]
+};

@@ -4,14 +4,14 @@ import AudioPlayer from '../components/ui/AudioPlayer';
 import SongPlayer from '../components/ui/SongPlayer';
 import ImagePlaceholder from '../components/ui/ImagePlaceholder';
 import DownloadButtons from '../components/ui/DownloadButtons';
-import { gingerbreadStoryEnGB, gingerbreadStoryEnUS, gingerbreadStoryFR, gingerbreadStoryES, gingerbreadStoryDE, gingerbreadStoryIT, gingerbreadStoryPT, gingerbreadStoryNL, gingerbreadStoryPL } from '../data/gingerbreadStory';
+import { gingerbreadStoryEnGB, gingerbreadStoryEnUS, gingerbreadStoryFR, gingerbreadStoryES, gingerbreadStoryDE, gingerbreadStoryIT, gingerbreadStoryPT, gingerbreadStoryNL, gingerbreadStoryPL, gingerbreadStoryZH } from '../data/gingerbreadStory';
 import { storyExamples } from '../data/stories';
 
 const StoryDetailPage: React.FC = () => {
   const { storyId } = useParams<{ storyId: string }>();
   const story = storyExamples.find(s => s.id === storyId);
 
-  const [selectedLanguage, setSelectedLanguage] = useState<'en-GB' | 'en-US' | 'fr' | 'es' | 'de' | 'it' | 'pt' | 'nl' | 'pl'>('en-GB');
+  const [selectedLanguage, setSelectedLanguage] = useState<'en-GB' | 'en-US' | 'fr' | 'es' | 'de' | 'it' | 'pt' | 'nl' | 'pl' | 'zh'>('en-GB');
   const [selectedNarrator, setSelectedNarrator] = useState<string>('onyx');
 
   useEffect(() => {
@@ -33,7 +33,8 @@ const StoryDetailPage: React.FC = () => {
     selectedLanguage === 'it' ? gingerbreadStoryIT :
     selectedLanguage === 'pt' ? gingerbreadStoryPT :
     selectedLanguage === 'nl' ? gingerbreadStoryNL :
-    gingerbreadStoryPL;
+    selectedLanguage === 'pl' ? gingerbreadStoryPL :
+    gingerbreadStoryZH;
 
   const currentNarrator = currentGingerbread.narrators.find(n => n.id === selectedNarrator) || currentGingerbread.narrators[0];
 
@@ -99,7 +100,7 @@ const StoryDetailPage: React.FC = () => {
                   <select
                     id="language-select"
                     value={selectedLanguage}
-                    onChange={(e) => setSelectedLanguage(e.target.value as 'en-GB' | 'en-US' | 'fr' | 'es' | 'de' | 'it' | 'pt' | 'nl' | 'pl')}
+                    onChange={(e) => setSelectedLanguage(e.target.value as 'en-GB' | 'en-US' | 'fr' | 'es' | 'de' | 'it' | 'pt' | 'nl' | 'pl' | 'zh')}
                     className="w-full md:w-64 px-3 py-2 bg-white border border-neutral-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-soft-blue-500"
                   >
                     <option value="en-GB">🇬🇧 English (UK)</option>
@@ -111,6 +112,7 @@ const StoryDetailPage: React.FC = () => {
                     <option value="pt">🇵🇹 Português</option>
                     <option value="nl">🇳🇱 Nederlands</option>
                     <option value="pl">🇵🇱 Polski</option>
+                    <option value="zh">🇨🇳 中文</option>
                   </select>
                 </div>
 
