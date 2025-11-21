@@ -1090,3 +1090,161 @@ export const gingerbreadStoryPT: GingerbreadStoryData = {
     }
   ]
 };
+
+const gingerbreadContentNL = `In een knus bakstenen huisje aan de rand van een druk dorp, waar kaneel en gember de ochtendlucht vulden, deed een oude vrouw haar schort om met een vrolijk deuntje.
+
+"Vandaag is een echte bakdag," zei ze tegen haar kat, die lui knipperde op de vensterbank.
+
+Ze roerde bloem, boter, suiker en stroop in haar grootste houten kom. Het deeg was zacht en plakkerig, warm van de kruiden. Voorzichtig rolde ze het uit en sneed de perfecte vorm van een peperkoekman.
+
+"Laten we jou bijzonder maken," zei ze vriendelijk, terwijl ze krenten voor ogen drukte, een rozijn voor een lachende mond, en drie suikerparels als knopen. "Zo. Nu de oven in."
+
+Ze schoof de bakplaat erin en deed de deur dicht. De hitte trilde en steeg op. De kat snoof nieuwsgierig de lucht op.
+
+Maar precies toen de timer tikte—
+
+POP!
+
+De ovendeur vloog open en daar sprong de Peperkoekman naar buiten, goudbruin en grijnzend.
+
+"Eet me niet op!" riep hij, springend op de vloer. "Ren, ren, zo snel als je kan! Je vangt me niet, ik ben de Peperkoekman!"
+
+En weg was hij—door de keuken, langs de geschrokken kat, en de deur uit in het zonlicht.
+
+"Stop!" riep de oude vrouw. "Kom terug!"
+
+Maar de Peperkoekman lachte alleen maar terwijl zijn kleine koekjesvoetjes over het tuinpad tikten.
+"Ik rende weg van de vrouw, ik ren weg van jou!
+Ren, ren, zo snel als je kan!
+Je vangt me niet, ik ben de Peperkoekman!"
+
+Al gauw kwam hij langs een dik roze varkentje in een modderige stal.
+
+"Knor! Je ruikt heerlijk!" knorde het varkentje, terwijl hij achter hem aan draafde.
+
+Maar de Peperkoekman riep:
+"Ik rende weg van de vrouw, ik rende weg van haar kat—
+Ik ren net zo snel weg van een varken als dat!
+Ren, ren, zo snel als je kan!
+Je vangt me niet, ik ben de Peperkoekman!"
+
+Hij rende over het dorpsplein, langs geschrokken winkeliers en manden met appels, zijn kleine beentjes gingen snel.
+
+Toen kwam er een bruine koe, zwaaiend met haar staart bij het hek.
+
+"Boe! Wat zou jij een lekker hapje zijn," zei ze, terwijl ze achter hem aan liep.
+
+Maar hij riep alleen maar:
+"Ik rende weg van de vrouw, de kat en het varken,
+Voor jou wegrennen? Dat is niet zo zwaar!
+Ren, ren, zo snel als je kan!
+Je vangt me niet, ik ben de Peperkoekman!"
+
+Stof dwarrelde op achter hem terwijl het varken en de koe zich bij de achtervolging voegden. Hun hoeven bonsden op de grond terwijl kinderen giechelden en wezen.
+
+Toen hinnikte een hoge paard uit de wei en deed mee met de achtervolging.
+
+"Ik vang je zo!" riep hij, terwijl zijn hoeven daverden.
+
+Maar de Peperkoekman rende alleen maar harder, zigzaggend door velden vol gouden tarwe.
+
+"Ik rende weg van allemaal, je zult zien dat ik het kan—
+Je vangt me niet, ik ben de Peperkoekman!"
+
+De dieren hijgden en puften achter hem. De oude vrouw had het opgegeven, handen in de zij, mopperend: "Dat zal me leren om iets met beentjes te bakken."
+
+De Peperkoekman lachte terwijl hij door het bos rende, bladeren kraakten onder zijn voeten, vogels vlogen verschrikt op.
+
+Maar opeens kwam hij bij een brede, snel stromende rivier. Het water draaide donker en snel, te diep om door te waden, te breed om over te springen.
+
+"O jee," zei hij, heen en weer lopend langs de oever.
+
+Daar stapte een slanke vos naar voren, zijn vacht glansde als gepoetst koper.
+
+"Waarom zo'n lang gezicht, klein koekje?" vroeg de vos, zijn stem glad als gesmolten boter.
+
+"Ik moet deze rivier over," zei de Peperkoekman, terwijl hij zenuwachtig naar de stroming keek. "Maar ik kan niet zwemmen."
+
+De ogen van de vos twinkelden. "Nou, ik kan het wel. Spring maar op mijn staart, dan draag ik je over."
+
+Na een kort momentje twijfelen klom de Peperkoekman op.
+
+De vos stapte het koude water in. Rimpels glinsterden terwijl hij rustig vooruit zwom.
+
+"Te nat achteraan," zei de vos. "Klim maar op mijn rug."
+
+De Peperkoekman klom hoger.
+
+Al snel kwam het water tot aan de nek van de vos. "Beter dat je op mijn hoofd gaat zitten," zei hij met een wiebel van zijn oren.
+
+De Peperkoekman deed het.
+
+Maar het water steeg weer.
+
+"Je wordt nat—klim maar op mijn neus," fluisterde de vos.
+
+Zodra de Peperkoekman op het puntje van de neus van de vos stapte—
+
+SNAP!
+
+Met één snelle zwaai van zijn kop gooide de vos de Peperkoekman de lucht in en slikte hem in één hap door.
+
+De rivier stroomde verder. Vogels tjilpten. En de vos likte zijn lippen.
+
+"Heerlijk."
+
+Even later kwamen het varken, de koe en het paard aan, hijgend.
+
+"Waar is hij?" snakte het varkentje.
+
+De vos boerde zachtjes. "Hij werd een beetje zompig," zei hij met een knipoog.
+
+Terug in het dorp haalde de oude vrouw nog een bakplaat uit de oven. Ze keek naar haar kat en zei: "Deze keer geen beentjes."
+
+Het Einde`;
+
+export const gingerbreadStoryNL: GingerbreadStoryData = {
+  id: "5d41877e-a0b8-40f8-98d3-03858e2eade0",
+  title: "De Peperkoekman",
+  languageCode: "nl",
+  type: "classic",
+  imageUrl: "https://d1mmspri4wgcne.cloudfront.net/classic-tales/The+Gingerbread+Man.png",
+  content: gingerbreadContentNL,
+  narrators: [
+    {
+      id: "onyx",
+      name: "Onyx",
+      duration: 304,
+      audioUrl: "https://d1mmspri4wgcne.cloudfront.net/ai_stories/the_gingerbread_man/narrations/nl/onyx.mp3"
+    },
+    {
+      id: "shimmer",
+      name: "Shimmer",
+      duration: 299,
+      audioUrl: "https://d1mmspri4wgcne.cloudfront.net/ai_stories/the_gingerbread_man/narrations/nl/shimmer.mp3"
+    }
+  ],
+  songs: [
+    {
+      id: "epic_adventure",
+      title: "De Peperkoekman",
+      style: "epic_adventure",
+      url: "https://d1mmspri4wgcne.cloudfront.net/classic-tales/de_peperkoekman/nl/epic_adventure.mp3",
+      duration: 223.16
+    },
+    {
+      id: "singalong",
+      title: "De Peperkoekman Liedje",
+      style: "singalong",
+      url: "https://d1mmspri4wgcne.cloudfront.net/classic-tales/de_peperkoekman/nl/singalong.mp3",
+      duration: 155.96
+    },
+    {
+      id: "storytelling",
+      title: "De Peperkoekman",
+      style: "storytelling",
+      url: "https://d1mmspri4wgcne.cloudfront.net/classic-tales/de_peperkoekman/nl/storytelling.mp3",
+      duration: 215.28
+    }
+  ]
+};
