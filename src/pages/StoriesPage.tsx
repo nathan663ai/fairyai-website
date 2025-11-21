@@ -1,525 +1,178 @@
-import React, { useState } from 'react';
-import AudioPlayer from '../components/ui/AudioPlayer';
+import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import ImagePlaceholder from '../components/ui/ImagePlaceholder';
 import DownloadButtons from '../components/ui/DownloadButtons';
-import { gingerbreadStoryEnGB, gingerbreadStoryEnUS, gingerbreadStoryFR } from '../data/gingerbreadStory';
 
-// Story Examples Data with Creation Methods
+// Story Examples Data
 const storyExamples = [
   {
-    id: 1,
+    id: 'luna-brave-bunny',
     title: 'Luna the Brave Bunny',
     ageRange: '4-6 years',
-    audioSrc: '/audio/stories/luna-narration.mp3',
     characterImage: '/images/characters/character1.jpg',
-    creationMethod: 'quick_story',
-    prompt: 'A brave bunny goes on an adventure to find a missing moon crystal and learns about courage and kindness.',
-    fullText: `[Story text will be added by user - placeholder for now]
-
-Once upon a time, in a magical forest where the trees whispered secrets and the flowers glowed with moonlight, there lived a brave little bunny named Luna...
-
-[Full story content goes here]
-
-The End.`,
+    creationMethod: 'quick_story' as const,
+    description: 'User-created story generated with a simple prompt in seconds.',
+    tagline: 'Click to read the full story and hear the narration',
   },
   {
-    id: 2,
+    id: 'space-dragon-young',
     title: 'The Friendly Space Dragon',
     ageRange: '5-8 years',
-    audioSrc: '/audio/stories/dragon-narration.mp3',
     characterImage: '/images/characters/character2.jpg',
-    creationMethod: 'story_wizard',
-    wizardSelections: {
-      characters: ['Cosmo the Space Dragon'],
-      location: 'Outer Space',
-      theme: 'Adventure & Friendship',
-      moral: 'Friendship can happen anywhere, and helping others leads to meaningful connections',
-      ageGroup: '5-8 years',
-      language: 'English',
-      length: 'Medium (800-1000 words)',
-      perspective: 'Third Person',
-      plotHints: 'Include a rescue scene and a heartwarming resolution',
-    },
-    fullText: `[Story text will be added by user - placeholder for now]
-
-Far, far away in the depths of space, between the twinkling stars and swirling galaxies, lived a dragon named Cosmo...
-
-[Full story content goes here]
-
-The End.`,
+    creationMethod: 'story_wizard' as const,
+    description: 'Crafted with Story Wizard: choose characters, settings, themes, and age group.',
+    tagline: 'Click to explore this adventure and listen along',
   },
   {
-    id: 3,
+    id: 'space-dragon-older',
     title: 'The Friendly Space Dragon',
     ageRange: '10-12 years',
-    audioSrc: '/audio/stories/space-narration.mp3',
     characterImage: '/images/characters/character3.jpg',
-    creationMethod: 'story_wizard',
-    note: 'Same prompt as Story #2, but for older age group',
-    wizardSelections: {
-      characters: ['Cosmo the Space Dragon'],
-      location: 'Outer Space',
-      theme: 'Adventure & Friendship',
-      moral: 'Friendship can happen anywhere, and helping others leads to meaningful connections',
-      ageGroup: '10-12 years', // Different age group!
-      language: 'English',
-      length: 'Long (1500-2000 words)',
-      perspective: 'Third Person',
-      plotHints: 'Include a rescue scene and a heartwarming resolution',
-    },
-    fullText: `[Story text will be added by user - placeholder for now]
-
-In the vast expanse of the cosmos, where nebulae swirled in kaleidoscopic patterns and distant galaxies whispered ancient secrets, there existed a dragon unlike any other...
-
-[Full story content goes here - more sophisticated vocabulary and longer for older kids]
-
-The End.`,
+    creationMethod: 'story_wizard' as const,
+    description: 'Same prompt as above, but tailored for older children with more complex language.',
+    tagline: 'Click to see how the same story adapts to different ages',
   },
   {
-    id: 4,
-    title: '[Daily Story Title from Fairy Corner]',
+    id: 'fairy-corner-daily',
+    title: '[Daily Story from Fairy Corner]',
     ageRange: '4-7 years',
-    audioSrc: '/audio/stories/fairy-corner-daily-narration.mp3',
     characterImage: '/images/characters/character4.jpg',
-    creationMethod: 'fairy_corner_daily',
-    songs: [
-      { title: '[Song 1 Title]', audioSrc: '/audio/songs/fairy-corner-daily-song1.mp3' },
-      { title: '[Song 2 Title]', audioSrc: '/audio/songs/fairy-corner-daily-song2.mp3' },
-    ],
-    fullText: `[Story text will be added by user - placeholder for now]
-
-This is a daily AI-generated story from the Fairy Corner. A new story is created every day in 12 languages with full narration and songs.
-
-[Full story content goes here]
-
-The End.`,
+    creationMethod: 'fairy_corner_daily' as const,
+    description: 'AI-generated daily story from Fairy Corner, complete with narration and songs.',
+    tagline: 'Click to read and enjoy today\'s musical adventure',
   },
   {
-    id: 5,
+    id: 'gingerbread-man',
     title: 'The Gingerbread Man',
     ageRange: '3-6 years',
-    audioSrc: '/audio/stories/gingerbread-man-narration.mp3',
+    imageUrl: 'https://d1mmspri4wgcne.cloudfront.net/classic-tales/The+Gingerbread+Man.png',
     characterImage: '/images/characters/character5.jpg',
-    creationMethod: 'fairy_corner_classic',
-    songs: [
-      { title: 'Run, Run, Run!', audioSrc: '/audio/songs/gingerbread-song1.mp3' },
-      { title: 'The Gingerbread Song', audioSrc: '/audio/songs/gingerbread-song2.mp3' },
-    ],
-    fullText: `[Story text will be added by user - placeholder for now]
-
-Once upon a time, a little old woman and a little old man lived in a cottage...
-
-[Full Gingerbread Man story content goes here]
-
-The End.`,
+    creationMethod: 'fairy_corner_classic' as const,
+    description: 'Classic fairy tale from Fairy Corner library with multiple narrators, songs, and languages.',
+    tagline: 'Click to explore this timeless tale in English or French',
   },
 ];
 
 const StoriesPage: React.FC = () => {
-  const [expandedStory, setExpandedStory] = useState<number | null>(null);
-  const [selectedLanguage, setSelectedLanguage] = useState<'en-GB' | 'en-US' | 'fr'>('en-GB');
-  const [selectedNarrator, setSelectedNarrator] = useState<string>('echo');
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
-  const toggleStory = (storyId: number) => {
-    setExpandedStory(expandedStory === storyId ? null : storyId);
+  const getCreationMethodBadge = (method: string) => {
+    switch (method) {
+      case 'quick_story':
+        return { text: '⚡ Quick Story', color: 'bg-soft-blue-100 text-soft-blue-700' };
+      case 'story_wizard':
+        return { text: '🧙 Story Wizard', color: 'bg-soft-green-100 text-soft-green-700' };
+      case 'fairy_corner_daily':
+        return { text: '✨ Daily AI Story', color: 'bg-gradient-to-r from-soft-blue-100 to-soft-green-100 text-neutral-800' };
+      case 'fairy_corner_classic':
+        return { text: '📚 Classic Tale', color: 'bg-gradient-to-r from-soft-blue-100 to-soft-green-100 text-neutral-800' };
+      default:
+        return { text: method, color: 'bg-neutral-100 text-neutral-700' };
+    }
   };
 
-  // Get current gingerbread data based on selected language
-  const currentGingerbread =
-    selectedLanguage === 'en-GB' ? gingerbreadStoryEnGB :
-    selectedLanguage === 'en-US' ? gingerbreadStoryEnUS :
-    gingerbreadStoryFR;
-
-  // Ensure selected narrator exists for current language, default to first available
-  const currentNarrator = currentGingerbread.narrators.find(n => n.id === selectedNarrator) || currentGingerbread.narrators[0];
-
   return (
-    <div className="pt-16 bg-white">
+    <div className="pt-16 bg-white min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-soft-blue-50 to-soft-green-50 py-16 md:py-24">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-neutral-900 mb-6">
+      <section className="bg-gradient-to-br from-soft-blue-50 to-soft-green-50 py-12 md:py-16">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h1 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-neutral-900 mb-4">
             Example Stories from FairyAI
           </h1>
-          <p className="text-xl md:text-2xl text-neutral-600 mb-8">
-            See how stories are created with different methods. Listen to narration samples and explore the creation process.
+          <p className="text-lg md:text-xl text-neutral-600 max-w-3xl mx-auto">
+            Explore different story creation methods. Click any story to see the full content, listen to narration, and enjoy the songs.
           </p>
         </div>
       </section>
 
-      {/* Story Examples */}
-      <section className="py-16 md:py-24">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
-          {storyExamples.map((story) => (
-            <article
-              key={story.id}
-              id={story.id === 4 ? 'fairy-corner-stories' : undefined}
-              className="bg-white rounded-2xl shadow-xl border border-neutral-100 overflow-hidden"
-            >
-              {/* Story Header */}
-              <div className="bg-slate-900 p-6 md:p-8">
-                <div className="flex items-center justify-between flex-wrap gap-4">
-                  <div>
-                    <h2 className="font-display text-3xl md:text-4xl font-bold text-white mb-2">
-                      {story.title}
-                    </h2>
-                    <div className="flex items-center gap-2 flex-wrap">
-                      <span className="inline-block text-sm font-semibold text-white bg-white bg-opacity-30 px-3 py-1 rounded-full">
-                        {story.ageRange}
-                      </span>
-                      <span className="inline-block text-sm font-semibold text-white bg-white bg-opacity-30 px-3 py-1 rounded-full">
-                        {story.creationMethod === 'quick_story'
-                          ? '⚡ Quick Story'
-                          : story.creationMethod === 'fairy_corner_daily'
-                          ? '✨ Fairy Corner - Daily AI Story'
-                          : story.creationMethod === 'fairy_corner_classic'
-                          ? '📚 Fairy Corner - Classic Tale'
-                          : '🧙 Story Wizard'}
-                      </span>
-                    </div>
-                    {story.note && (
-                      <p className="text-sm text-white bg-fairy-purple-600 bg-opacity-50 px-3 py-1 rounded-lg mt-2 inline-block">
-                        ℹ️ {story.note}
-                      </p>
-                    )}
-                  </div>
-                </div>
-              </div>
+      {/* Stories Grid */}
+      <section className="py-12 md:py-16">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+            {storyExamples.map((story) => {
+              const badge = getCreationMethodBadge(story.creationMethod);
 
-              {/* Character Image & Audio Player */}
-              <div className="p-6 md:p-8 bg-gradient-to-br from-neutral-50 to-white">
-                {story.id === 5 ? (
-                  // Enhanced Gingerbread Man section with language toggle and narrator selection
-                  <>
-                    {/* Language Toggle */}
-                    <div className="mb-6 flex items-center justify-center gap-2 bg-soft-blue-50 rounded-lg p-4 flex-wrap">
-                      <span className="text-sm font-semibold text-neutral-700">Language:</span>
-                      <button
-                        onClick={() => setSelectedLanguage('en-GB')}
-                        className={`px-4 py-2 rounded-lg font-medium transition-all ${
-                          selectedLanguage === 'en-GB'
-                            ? 'bg-soft-blue-500 text-white shadow-md'
-                            : 'bg-white text-neutral-700 hover:bg-neutral-100'
-                        }`}
-                      >
-                        🇬🇧 English (UK)
-                      </button>
-                      <button
-                        onClick={() => setSelectedLanguage('en-US')}
-                        className={`px-4 py-2 rounded-lg font-medium transition-all ${
-                          selectedLanguage === 'en-US'
-                            ? 'bg-soft-blue-500 text-white shadow-md'
-                            : 'bg-white text-neutral-700 hover:bg-neutral-100'
-                        }`}
-                      >
-                        🇺🇸 English (US)
-                      </button>
-                      <button
-                        onClick={() => setSelectedLanguage('fr')}
-                        className={`px-4 py-2 rounded-lg font-medium transition-all ${
-                          selectedLanguage === 'fr'
-                            ? 'bg-soft-blue-500 text-white shadow-md'
-                            : 'bg-white text-neutral-700 hover:bg-neutral-100'
-                        }`}
-                      >
-                        🇫🇷 Français
-                      </button>
-                    </div>
-
-                    <div className="grid md:grid-cols-3 gap-6 mb-6">
-                      {/* Story Cover Image */}
-                      <div className="md:col-span-1">
-                        <img
-                          src={currentGingerbread.imageUrl}
-                          alt={currentGingerbread.title}
-                          className="w-full rounded-lg shadow-md"
-                        />
-                      </div>
-
-                      {/* Audio Player with Narrator Selection */}
-                      <div className="md:col-span-2">
-                        <div className="w-full">
-                          <h3 className="text-lg font-semibold text-neutral-900 mb-3">
-                            🎧 Listen to the Story
-                          </h3>
-
-                          {/* Narrator Selection */}
-                          <div className="mb-4 bg-white rounded-lg p-4 border border-neutral-200">
-                            <p className="text-sm font-semibold text-neutral-700 mb-3">Choose your narrator:</p>
-                            <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
-                              {currentGingerbread.narrators.map((narrator) => (
-                                <button
-                                  key={narrator.id}
-                                  onClick={() => setSelectedNarrator(narrator.id)}
-                                  className={`px-3 py-2 rounded-lg text-sm font-medium transition-all ${
-                                    selectedNarrator === narrator.id
-                                      ? 'bg-gradient-to-r from-soft-blue-500 to-soft-green-500 text-white shadow-md'
-                                      : 'bg-neutral-100 text-neutral-700 hover:bg-neutral-200'
-                                  }`}
-                                >
-                                  {narrator.name}
-                                </button>
-                              ))}
-                            </div>
-                          </div>
-
-                          <AudioPlayer
-                            src={currentNarrator.audioUrl}
-                            title={`${currentGingerbread.title} - ${currentNarrator.name}`}
-                          />
-                          <p className="text-xs text-neutral-500 mt-2">
-                            Full narration ({Math.floor(currentNarrator.duration / 60)}:{(currentNarrator.duration % 60).toString().padStart(2, '0')}) • Available in app
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </>
-                ) : (
-                  // Standard rendering for other stories
-                  <div className="grid md:grid-cols-3 gap-6 mb-6">
-                    {/* Character Image */}
-                    <div className="md:col-span-1">
+              return (
+                <Link
+                  key={story.id}
+                  to={`/stories/${story.id}`}
+                  className="group bg-white rounded-xl shadow-lg border border-neutral-200 overflow-hidden hover:shadow-2xl hover:scale-[1.02] transition-all duration-300"
+                >
+                  {/* Story Image */}
+                  <div className="relative aspect-square overflow-hidden">
+                    {story.imageUrl ? (
+                      <img
+                        src={story.imageUrl}
+                        alt={story.title}
+                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                      />
+                    ) : (
                       <ImagePlaceholder
                         label={`Character from ${story.title}`}
                         aspectRatio="square"
-                        className="rounded-lg shadow-md"
+                        className="group-hover:scale-110 transition-transform duration-300"
                       />
-                    </div>
-
-                    {/* Audio Player */}
-                    <div className="md:col-span-2 flex items-center">
-                      <div className="w-full">
-                        <h3 className="text-lg font-semibold text-neutral-900 mb-3">
-                          🎧 Listen to the Story
-                        </h3>
-                        <AudioPlayer
-                          src={story.audioSrc}
-                          title={`${story.title} - Full Narration`}
-                        />
-                        <p className="text-xs text-neutral-500 mt-2">
-                          30-second narration sample • Full narration available in app
-                        </p>
-                      </div>
-                    </div>
+                    )}
+                    {/* Overlay gradient for better text readability if needed */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
                   </div>
-                )}
-              </div>
 
-              {/* How This Story Was Created / Songs Section */}
-              <div className="p-6 md:p-8 border-t border-neutral-200">
-                {(story.creationMethod === 'fairy_corner_daily' || story.creationMethod === 'fairy_corner_classic') && (story.songs || story.id === 5) ? (
-                  // Fairy Corner Stories - Show Songs
-                  <>
-                    <h3 className="text-xl font-bold text-neutral-900 mb-4">
-                      🎵 Songs from this Story
-                    </h3>
-                    <div className="grid md:grid-cols-2 gap-6 mb-6">
-                      {story.id === 5 ? (
-                        // Use real Gingerbread songs from data
-                        currentGingerbread.songs.map((song) => (
-                          <div key={song.id} className="bg-fairy-purple-50 rounded-lg p-6">
-                            <div className="flex items-center gap-3 mb-4">
-                              <div className="w-10 h-10 bg-gradient-to-br from-fairy-purple-100 to-soft-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
-                                <svg className="w-5 h-5 text-fairy-purple-600" fill="currentColor" viewBox="0 0 24 24">
-                                  <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z" />
-                                </svg>
-                              </div>
-                              <div className="flex-1">
-                                <h4 className="font-bold text-lg text-neutral-900">{song.title}</h4>
-                                <span className="inline-block text-xs font-medium text-fairy-purple-600 bg-fairy-purple-100 px-2 py-1 rounded-full mt-1">
-                                  {song.style.replace(/_/g, ' ')}
-                                </span>
-                              </div>
-                            </div>
-                            <AudioPlayer src={song.url} title={song.title} />
-                          </div>
-                        ))
-                      ) : (
-                        // Use placeholder songs for other stories
-                        story.songs?.map((song, idx) => (
-                          <div key={idx} className="bg-fairy-purple-50 rounded-lg p-6">
-                            <div className="flex items-center gap-3 mb-4">
-                              <div className="w-10 h-10 bg-gradient-to-br from-fairy-purple-100 to-soft-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
-                                <svg className="w-5 h-5 text-fairy-purple-600" fill="currentColor" viewBox="0 0 24 24">
-                                  <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z" />
-                                </svg>
-                              </div>
-                              <h4 className="font-bold text-lg text-neutral-900">{song.title}</h4>
-                            </div>
-                            <AudioPlayer src={song.audioSrc} title={song.title} />
-                          </div>
-                        ))
-                      )}
+                  {/* Story Info */}
+                  <div className="p-5">
+                    <h2 className="font-display text-xl font-bold text-neutral-900 mb-2 group-hover:text-soft-blue-600 transition-colors">
+                      {story.title}
+                    </h2>
+
+                    {/* Badges */}
+                    <div className="flex flex-wrap gap-2 mb-3">
+                      <span className="inline-block text-xs font-semibold bg-white border border-neutral-300 px-2 py-1 rounded-full">
+                        {story.ageRange}
+                      </span>
+                      <span className={`inline-block text-xs font-semibold px-2 py-1 rounded-full ${badge.color}`}>
+                        {badge.text}
+                      </span>
                     </div>
 
-                    <div className="bg-neutral-50 rounded-lg p-6">
-                      <div className="flex items-start gap-3">
-                        <div className="bg-soft-blue-500 text-white rounded-full p-2 flex-shrink-0">
-                          <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
-                          </svg>
-                        </div>
-                        <div>
-                          <h4 className="font-bold text-lg text-neutral-900 mb-2">
-                            {story.creationMethod === 'fairy_corner_daily' ? 'Daily AI Story' : 'Classic Fairy Tale'}
-                          </h4>
-                          <p className="text-neutral-700 leading-relaxed">
-                            {story.creationMethod === 'fairy_corner_daily'
-                              ? 'A brand new story is created every day in 12 languages, complete with narration and songs. No Fairy Dust required — included with your subscription.'
-                              : 'One of 100+ curated classic fairy tales and nursery rhymes, all with professional narration and custom songs. Always available in the Fairy Corner library.'}
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </>
-                ) : (
-                  <>
-                    <h3 className="text-xl font-bold text-neutral-900 mb-4">
-                      📝 How This Story Was Created
-                    </h3>
-
-                    {story.creationMethod === 'quick_story' ? (
-                  // Quick Story Method
-                  <div className="bg-soft-blue-50 rounded-lg p-6">
-                    <div className="flex items-start gap-3 mb-4">
-                      <div className="bg-soft-blue-500 text-white rounded-full p-2 flex-shrink-0">
-                        <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                          <path d="M13 10V3L4 14h7v7l9-11h-7z" />
-                        </svg>
-                      </div>
-                      <div>
-                        <h4 className="font-bold text-lg text-neutral-900 mb-1">Quick Story</h4>
-                        <p className="text-sm text-neutral-600">
-                          Perfect for weeknight bedtimes - just describe what you want in one sentence
-                        </p>
-                      </div>
-                    </div>
-
-                    <div className="bg-white rounded-lg p-4 border-l-4 border-soft-blue-500">
-                      <p className="text-sm font-semibold text-neutral-500 mb-2">USER PROMPT:</p>
-                      <p className="text-neutral-800 italic">"{story.prompt}"</p>
-                    </div>
-
-                    <p className="text-xs text-neutral-600 mt-3">
-                      ⏱️ Generated in ~15 seconds • 1 Fairy Dust
+                    {/* Description */}
+                    <p className="text-sm text-neutral-600 mb-3 line-clamp-3">
+                      {story.description}
                     </p>
-                  </div>
-                ) : (
-                  // Story Wizard Method
-                  <div className="bg-soft-green-50 rounded-lg p-6">
-                    <div className="flex items-start gap-3 mb-4">
-                      <div className="bg-soft-green-500 text-white rounded-full p-2 flex-shrink-0">
-                        <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                          <path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5zm0 18.5c-3.65-.91-6.5-4.58-6.5-8.5V8.3l6.5-3.17 6.5 3.17V12c0 3.92-2.85 7.59-6.5 8.5z" />
-                        </svg>
-                      </div>
-                      <div>
-                        <h4 className="font-bold text-lg text-neutral-900 mb-1">Story Wizard</h4>
-                        <p className="text-sm text-neutral-600">
-                          Full control over every aspect of your story - perfect for crafting exactly what you envision
-                        </p>
-                      </div>
-                    </div>
 
-                    <div className="grid md:grid-cols-2 gap-4">
-                      {Object.entries(story.wizardSelections!).map(([key, value]) => (
-                        <div key={key} className="bg-white rounded-lg p-3 border border-neutral-200">
-                          <p className="text-xs font-semibold text-neutral-500 uppercase mb-1">
-                            {key.replace(/([A-Z])/g, ' $1').trim()}:
-                          </p>
-                          <p className="text-sm text-neutral-800">
-                            {Array.isArray(value) ? value.join(', ') : value}
-                          </p>
-                        </div>
-                      ))}
-                    </div>
-
-                    <p className="text-xs text-neutral-600 mt-3">
-                      ⏱️ Generated in ~20 seconds • 1 Fairy Dust
-                    </p>
-                  </div>
-                )}
-                  </>
-                )}
-              </div>
-
-              {/* Read Full Story - Expandable */}
-              <div className="border-t border-neutral-200">
-                <button
-                  onClick={() => toggleStory(story.id)}
-                  className="w-full p-6 flex items-center justify-between hover:bg-neutral-50 transition-colors"
-                >
-                  <span className="font-semibold text-neutral-900 flex items-center gap-2">
-                    📖 {expandedStory === story.id ? 'Hide Full Story' : 'Read Full Story'}
-                  </span>
-                  <svg
-                    className={`w-6 h-6 text-neutral-600 transition-transform ${
-                      expandedStory === story.id ? 'rotate-180' : ''
-                    }`}
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                  </svg>
-                </button>
-
-                {expandedStory === story.id && (
-                  <div className="p-6 md:p-8 bg-neutral-50 border-t border-neutral-200">
-                    <div className="prose prose-lg max-w-none">
-                      {story.id === 5 ? (
-                        // Use real Gingerbread content with bold markdown support
-                        currentGingerbread.content.split('\n\n').map((paragraph, idx) => {
-                          // Convert **bold** markdown to <strong> tags
-                          const parts = paragraph.split(/(\*\*.*?\*\*)/g);
-                          return (
-                            <p key={idx} className="text-neutral-700 mb-4 leading-relaxed">
-                              {parts.map((part, partIdx) => {
-                                if (part.startsWith('**') && part.endsWith('**')) {
-                                  return <strong key={partIdx} className="font-bold text-neutral-900">{part.slice(2, -2)}</strong>;
-                                }
-                                return <span key={partIdx}>{part}</span>;
-                              })}
-                            </p>
-                          );
-                        })
-                      ) : (
-                        // Standard rendering for other stories
-                        story.fullText.split('\n\n').map((paragraph, idx) => (
-                          <p key={idx} className="text-neutral-700 mb-4 leading-relaxed">
-                            {paragraph}
-                          </p>
-                        ))
-                      )}
+                    {/* Call to Action */}
+                    <div className="flex items-center text-soft-blue-600 font-medium group-hover:text-soft-blue-700">
+                      <span>{story.tagline}</span>
+                      <svg
+                        className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                      </svg>
                     </div>
                   </div>
-                )}
-              </div>
-            </article>
-          ))}
+                </Link>
+              );
+            })}
+          </div>
         </div>
       </section>
 
       {/* Final CTA */}
-      <section className="py-16 md:py-24 bg-gradient-to-br from-soft-blue-600 to-soft-green-600 text-white">
+      <section className="py-16 md:py-24 bg-gradient-to-br from-soft-blue-500 to-soft-green-500 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="font-display text-3xl md:text-4xl font-bold mb-6">
+          <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">
             Ready to Create Your Own Stories?
           </h2>
-          <p className="text-xl md:text-2xl mb-4 text-soft-blue-50">
+          <p className="text-xl mb-6 text-white/90">
             Download FairyAI and start creating personalised bedtime adventures for your family.
           </p>
           <p className="text-lg mb-8 font-semibold">
-            6 free Fairy Dust to get started • 7-day Fairy Corner trial • No credit card required
+            6 free Fairy Dust • 7-day Fairy Corner trial • No credit card required
           </p>
-
-          <div className="mb-6">
-            <DownloadButtons variant="gradient" />
-          </div>
-
-          <p className="text-sm text-soft-blue-100">
-            Join thousands of families creating magical bedtime moments
-          </p>
+          <DownloadButtons />
         </div>
       </section>
     </div>
