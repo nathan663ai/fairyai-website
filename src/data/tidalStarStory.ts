@@ -758,6 +758,93 @@ export const tidalStarStoryPT: TidalStarStoryData = {
   ]
 };
 
+const tidalStarContentNL = `Aan de rand van de oceaan, waar het zand koel en poederig tussen je tenen voelde, kleurde de avondlucht het water zilverblauw. De golven praatten zacht, sssj, en kleine schelpen lagen verspreid over het strand als snoepjes.
+
+**Lila** knielde bij een plonskreek en keek erin. Zeewier dreef als groene linten. Een klein garnaaltje schoot weg. Op de rand van de kreek vond ze een steentje in de vorm van een ster. Het was glad en had een heel klein sprankje. Toen ze het oppakte, werd het warm in haar hand, alsof het blij was gekozen te zijn.
+
+"Pardon!" zei een klein stemmetje. "Hier beneden!"
+
+Lila boog voorover. Een zilverkleurig flitsje zoefde rond de kreek en sprong omhoog als een muntje. Een klein vissie, licht als maanlicht, knipperde naar haar.
+
+"Ik ben **Finn**," zei hij, woorden bubbeld snel. "Ik ben het Maanpad kwijtgeraakt. Mijn familie zwom naar huis bij de schemering, en ik… nou, ik heb een gloedje achterna gezwommen en raakte de weg kwijt."
+
+Lila legde haar kin op haar knieën. "Wat is het Maanpad?"
+
+"Het is het zilveren lint dat de maan op het water legt," zei Finn, zijn vinnen een beetje bezorgd gekanteld. "Wij volgen het naar de stille baai. Maar er kwamen wolken, en de rotsen zijn maar hoeken en schaduwen. Ik heb een land-vriend nodig om een rimpelsleutel te maken."
+
+"Een rimpelsleutel?" Lila kantelde haar hoofd.
+
+Finn knikte. "Een patroon op het water. Geen gespetter. Alleen kleine, zachte handen kunnen het maken. Het roept het Maanpad, zelfs als de wolken de maan verbergen. En jij hebt een ster-steentje! Dat helpt."
+
+Lila keek naar het steentje. "Ik kan het proberen," zei ze, al voelde haar buik een beetje zenuwachtig. "Ik heb nog nooit water opengelaten."
+
+"Dat is perfect," zei Finn vrolijk. "De eerste keer werkt magie vaak het beste."
+
+Lila stropte haar mouwen op en stak haar hand over de kreek. Zodra haar vingers het water raakten, maakte het ster-steentje een kleine beweging. Ze zuchtte van verbazing. Het steentje ontvouwde vijf piepkleine armpjes.
+
+"Oh!" Lila giechelde. "Je bent helemaal geen steentje. Je bent een slaperig zeestertje."
+
+Het kleine zeestertje spreidde zich over haar vinger als een zacht handje. Het gaf een vaag parelachtig licht. Finn keek met grote ogen. "Nog beter," fluisterde hij. "Ster-vriendjes herinneren zich de lucht."
+
+"Wat moet ik doen?" vroeg Lila.
+
+"Teken langzaam cirkels," zei Finn. "Niet spetteren. Zachtjes. Het water houdt van beleefde bezoekers."
+
+Lila haalde adem die naar zout en verre plekken rook. Ze maakte één draai met haar vinger. Te snel. De kreek klotste. "Oeps," zei ze.
+
+Finn gaf een bemoedigende zwiep. "Zachter. Zoals een veertje."
+
+Lila deed haar ogen even dicht en luisterde naar het sssj van de zee. Ze geloofde dat ze licht als een veertje kon zijn. Ze tekende een kleine cirkel, daarna nog één, langzamer. Het zeestertje werd warmer en een ketting van piepkleine belletjes steeg op om haar vinger te begroeten.
+
+De wolken trokken wat uit elkaar. Maanlicht glipte ertussen en kuste de kreek. Waar Lila tekende, rilde het water en vormde zich een parelpad van bellen. Het liep vanaf de plonskreek, kronkelde door een rij ondieptes en reikte naar de open zee.
+
+Finn draaide van blijdschap. "Je hebt het gedaan! Het Maanpad kwam de poeltjes in!"
+
+Lila grijnsde, haar wangen roze. "Gaan we het volgen?"
+
+Ze liep langs de rand, sandalen in één hand, tenen die het water streelden. De zee voelde koel en zijdezacht. Het bellenpad gloeide zacht, als een rij lampionnetjes. Finn zwom eronder en hield het tempo bij. Wanneer het pad even dof werd, lichtte het zeestertje op Lila's vinger op en kwam het licht terug.
+
+Ze gingen om een hoek waar de rotsen een poort vormden. Een gestreepte krab stond daar met zijn scharen opgeheven als een bewaker. "Klik-klak," zei hij, tikte op een steen.
+
+"Hallo," zei Lila beleefd. "We volgen het Maanpad. Mogen we erlangs glippen?"
+
+De krab kantelde zijn ogen. Lila keek naar zijn glanzende schild. "Jouw strepen zijn erg stijlvol," voegde ze erbij.
+
+De krab stopte met tikken. Met een schuine stap wees hij op een smal geultje dat verstopt lag achter zeewier. "Klik," zei hij, bijna vriendelijk, en liet het geheime pad zien.
+
+"Dank je," zei Lila, en Finn boog lichtjes, wat hem heel plechtig deed lijken voor zo'n klein vissie.
+
+Voorbij de poort werden de poelen groter. Het water werd diep en helder als glasblauw. In het grootste poeltje werden schaduwen vormen, en vormen werden vissen. Zilveren staarten trokken lussen als letters in de lucht.
+
+"Finn!" zongen ze, met een plons van belletjes die tegen de rots tikten.
+
+"Mam! Pap! Ik ben hier!" spatte Finn naar de school. Hij draaide een snelle cirkel en zoefde terug naar Lila. "Dit is Lila. Zij vond de sleutel."
+
+De vissen zwommen samen en maakten een hartvormige rimpel. Lila voelde warmte in haar borst, net als het sterretje op haar vinger.
+
+Een zeer oude vis met trage, wijze ogen zwom dichterbij. "De oceaan onthoudt vriendelijkheid," zei hij met een zachte, waterige stem. "Wanneer je de weg zoekt, doop je je stervriend in een poel en luister je. Het water toont je het zachtste pad."
+
+Finn bobbelde. "Wil je het zeestertje een tijdje bewaren? Het vindt het fijn bij jou."
+
+Het zeestertje kronkelde alsof het instemde, gleed van Lila's vinger naar haar handpalm en nestelde zich daar, warm en knus. "Ik bewaar hem tot zonsopgang," beloofde Lila. "Dan breng ik het terug naar zijn rots."
+
+Finn fonkelde in het maanlicht. "Ik zal soms een sprankeltje over de golven sturen om hallo te zeggen."
+
+Lila lachte, dat kleine lachje dat voelt als een geheim tussen vrienden. "Ik zal erop letten."
+
+De wolken dreven verder. De maan scheen helderder en legde een zilveren lint ver over het water. Finns familie gleed over het pad, staarten zwiepend, schubben twinkelend als sterren. "Welterusten!" riepen ze, en de klank voelde als een zucht en een lied tegelijk.
+
+Lila stond heel stil en liep toen terug naar de eerste kreek. Ze streek zachtjes over de rug van het zeestertje met het puntje van één vinger. "Je deed het goed," fluisterde ze. "We deden het allebei goed."
+
+Ze ging zitten op een gladde rots. De bries was zacht en rook naar zout en slapen. De nacht verzamelde zich als een deken. De golven hielden hun stille sssj. Ze raakte de kreek nog één keer aan en voor een ogenblik tekenden de belletjes een klein kaartje dat precies leek op het pad dat ze gevolgd hadden: om de poort, langs de krab, naar het grote blauwe poeltje. Toen vervaagde het, alsof het veilig werd opgeborgen.
+
+Lila zette het zeestertje in een ondiep bakje met zeewater naast zich. Het rustte daar, de armpjes ontspannen, een zacht parelachtig lichtje dat heel langzaam pulste. Ze sloeg haar armen om haar knieën en keek hoe de maan lange zilveren lijnen op de zee schilderde.
+
+Haar ogen werden zwaar. Het zand voelde koud onder haar voeten. De vuurtoren in de verte knipperde, geduldig en rustig. Iets voorbij de rotsen sloeg misschien nog een vissestaart een laatste sprankeltje over het water. Lila glimlachte en liet de stilte haar meenemen. Om haar heen ademde de oceaan, zacht en zeker.
+
+Gedachte voor vanavond: geloof in jezelf
+HET EINDE`;
+
 export const tidalStarStoryNL: TidalStarStoryData = {
   id: "6f5daeab-0a56-465f-b9eb-6368407f9bb4",
   title: "Fluisteringen van de Getijdenster",
@@ -765,7 +852,7 @@ export const tidalStarStoryNL: TidalStarStoryData = {
   type: "ai",
   slug: "whispers-of-the-tidal-star-d5dfda26",
   imageUrl: "https://d1mmspri4wgcne.cloudfront.net/ai_stories/whispers-of-the-tidal-star-d5dfda26/cover.jpg",
-  content: "[Dutch translation would go here]",
+  content: tidalStarContentNL,
   narrators: [
     {
       id: "onyx",
