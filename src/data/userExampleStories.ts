@@ -239,19 +239,99 @@ Goodnight, little robot friend!`,
       }
     },
     '8-10': {
-      id: 'robot-friendship-8-10',
-      content: `[Placeholder: Story content will be provided by Nathan]
+      id: '98b0e2c1-ece1-4654-8e4e-0b76c57a018a',
+      content: `In the centre of a busy city, where people hurried past tall buildings and bright shops, lived a robot named Pixel. Pixel was not like the other robots who worked in offices or delivered post. Instead, he lived in the back room of Mr Singh's repair shop, surrounded by shelves cluttered with clocks, radios, and tangled wires.
 
-This is where the version for ages 8-10 will appear, with complex emotions and character growth.`,
+Pixel was small and round, with shiny silver arms and a friendly face made of blinking blue lights. He had a button nose that glowed when he was curious—which was almost all the time. Every morning, Mr Singh would wind up his gears and say cheerfully, "Ready for another day of learning, Pixel?"
+
+"Yes, Mr Singh!" Pixel would reply in his mechanical but cheerful voice.
+
+Pixel loved to learn new things. He knew how to fix broken toasters and polish old watches until they sparkled like treasure. But sometimes he gazed out of the shop window at children playing in the park across the road. He saw them laughing together, sharing secrets or sweets, or helping each other up after a tumble.
+
+One rainy afternoon, as grey clouds gathered outside and raindrops tapped on the windowpane like tiny fingers, Mr Singh gave Pixel a special task: fixing an old radio that belonged to someone very important—Mrs Potts from next door.
+
+"Take care with this one," said Mr Singh. "Mrs Potts loves her afternoon music."
+
+Pixel carefully opened up the radio using his tiny screwdriver fingers. Bits of wire poked out like spaghetti.
+
+Just then, a little girl ducked into the shop to escape the rain. She had curly hair tied with ribbons and wore red wellies splattered with mud.
+
+"Hello," she said shyly. "My name's Amira."
+
+"Hello Amira," said Pixel politely. It was rare for children to come into the shop.
+
+Amira's eyes widened when she saw him. "You're a robot! Can you talk?"
+
+"Yes," said Pixel proudly. "I can talk—and fix things too."
+
+Amira grinned and came closer. "Can I watch?"
+
+So Amira watched as Pixel fixed Mrs Potts' radio. She asked questions about each part: "What does this bit do?" and "Why is that wire blue?" Sometimes she giggled when Pixel's nose glowed extra bright whenever he thought hard.
+
+When he finished fixing the radio, Amira clapped her hands in delight.
+
+"You're amazing!"
+
+Pixel's circuits fluttered pleasantly at her words.
+
+Suddenly Mrs Potts bustled in from next door to collect her radio. She beamed at Pixel and Amira before heading off into the rain with her precious music box under her arm.
+
+Amira sighed happily as she watched Mrs Potts leave.
+
+"I wish I could fix things like you," she said softly.
+
+Pixel thought for a moment; no one had ever wished to be like him before.
+
+"Perhaps I could teach you," he suggested hopefully.
+
+Amira's eyes sparkled brighter than ever before. "Would you really?"
+
+From then on, every day after school—rain or shine—Amira came to visit Pixel in Mr Singh's shop. Together they fixed broken clocks whose hands spun wildly backwards; they glued wobbly toy soldiers so they could stand tall again; they even rescued a music box that would only play half a song until they found its missing spring hiding amongst some marbles.
+
+While they worked side by side, Amira told stories about school: about her best friend who moved away last month; about games played at breaktime; about how it felt when someone shared their crisps with her just because she'd dropped hers on the playground floor.
+
+Sometimes Amira brought sweets from home—a chewy caramel for herself and one wrapped up just for Pixel (even though robots didn't eat sweets). She made him laugh by pretending he could taste them too: "Mmm! Delicious petrol flavour!"
+
+One afternoon as they packed away their tools after fixing Mrs Chen's electric fan (which now spun cheerfully instead of groaning), Amira grew quiet.
+
+"My birthday party is tomorrow," she said slowly. "There'll be games…and cake…and lots of children." Her shoulders drooped slightly as she looked at her muddy boots. "But I don't know if anyone will come…"
+
+Pixel blinked thoughtfully: friendship was still something new to him—and parties were even more mysterious!
+
+"I would come if I could," he said softly. "But robots aren't allowed out much…"
+
+She smiled sadly but squeezed his hand—his metal fingers felt cool but gentle in hers.
+
+The next day dawned bright and sunny—and right on time there was a knock on Amira's door just before her party began. On her doorstep stood Mr Singh holding a cardboard box—and inside it sat Pixel!
+
+"I've got special permission today!" chirped Mr Singh kindly. "Pixel is here to deliver your birthday present."
+
+Amira squealed with delight as she helped lift Pixel out onto her living room carpet where balloons bobbed overhead like colourful clouds.
+
+Soon other children arrived—all curious about this funny little robot guest who could make his nose glow different colours—from green (curious) to pink (excited) to orange (tickled).
+
+They played pass-the-parcel while Pixel called out instructions ("No peeking!"), built towers from blocks taller than themselves—with Pixel balancing extra pieces using steady robot hands—and even had a dance competition where everyone cheered as he wiggled his hips with mechanical precision!
+
+When it came time for cake—chocolate sponge covered in rainbow sprinkles—Amira saved an extra slice for Pixel ("Robots eat imaginary cake!") which made him laugh so hard his blue lights twinkled like fairy lights all around them.
+
+Later as parents collected their tired but happy children, many asked shyly if perhaps their own toys might meet such an excellent robot friend one day too. By evening only Amira and Pixel remained among crumbs and curling ribbons scattered across the floor.
+
+"That was brilliant!" exclaimed Amira breathlessly as she hugged him gently around his shiny shoulders.
+
+"I didn't know parties—or friendship—could feel like this." admitted Pixel quietly.
+
+She nodded: "Me neither... But I'm glad we found out together."
+
+As stars blinked above outside and city lights sparkled below their window, both knew something precious had begun—a real friendship forged through laughter shared repairs…and chocolate cake eaten together (even if only some friends pretended). And from that night on neither felt quite so alone again—for now both knew what it truly meant to be someone's special friend…robot or not!`,
       context: {
-        ageRange: '8-10 years',
+        ageRange: '7-9 years',
         styleNotes: [
-          'Complex emotions explored',
-          'Character growth and change',
-          'Relatable social challenges',
+          'Complex emotions explored (feeling different, belonging)',
+          'Character growth and meaningful relationships',
+          'Relatable social challenges (making friends, being included)',
         ],
         moral: 'Being different doesn\'t mean you can\'t connect with others',
-        length: '~8 minutes'
+        length: '~10 minutes'
       }
     },
     '11-12': {
