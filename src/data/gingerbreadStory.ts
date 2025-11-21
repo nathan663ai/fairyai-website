@@ -623,3 +623,154 @@ export const gingerbreadStoryES: GingerbreadStoryData = {
     }
   ]
 };
+
+const gingerbreadContentDE = `In einem gemütlichen Backsteinhäuschen am Rand eines lebhaften Dorfes, wo Zimt und Ingwer die Morgenluft erfüllten, band sich eine alte Frau fröhlich summend ihre Schürze um.
+
+"Heute ist ein Backtag", sagte sie zu ihrer Katze, die träge auf der Fensterbank blinzelte.
+
+Sie rührte Mehl, Butter, Zucker und Melasse in ihrer größten Holzschüssel. Der Teig war weich und klebrig, warm von den Gewürzen. Sorgfältig rollte sie ihn aus und schnitt die perfekte Form eines Lebkuchenmanns aus.
+
+"Dich mache ich ganz besonders", sagte sie freundlich und drückte Johannisbeeren als Augen, eine Rosine als lachenden Mund und drei Zuckerperlen als Knöpfe hinein. "So. Jetzt ab in den Ofen mit dir."
+
+Sie schob das Blech hinein und schloss die Tür. Die Hitze flimmerte und stieg auf. Die Katze schnupperte neugierig in die Luft.
+
+Doch gerade als der Wecker tickte—
+
+POP!
+
+Die Ofentür sprang auf, und heraus hüpfte der Lebkuchenmann, goldbraun und grinsend.
+
+"Iss mich nicht!" rief er und sprang auf den Boden. "Lauf, lauf, so schnell du kannst! Du fängst mich nicht, ich bin der Lebkuchenmann!"
+
+Und schon rannte er los—durch die Küche, an der erschrockenen Katze vorbei und hinaus in den Sonnenschein.
+
+"Stopp!" rief die alte Frau. "Komm zurück!"
+
+Aber der Lebkuchenmann lachte nur, während seine kleinen Keksfüße über den Gartenweg tappten.
+"Ich lief vor der Frau weg, ich lauf auch vor dir!
+Lauf, lauf, so schnell du kannst!
+Du fängst mich nicht, ich bin der Lebkuchenmann!"
+
+Bald kam er an einem dicken rosa Schwein im matschigen Gehege vorbei.
+
+"Grunz! Du riechst lecker!" quiekte das Schwein und trabte hinter ihm her.
+
+Aber der Lebkuchenmann rief nur:
+"Ich lief vor der Frau weg, ich lief vor ihrer Katze—
+Vor einem Schwein lauf ich auch ratzfatz!
+Lauf, lauf, so schnell du kannst!
+Du fängst mich nicht, ich bin der Lebkuchenmann!"
+
+Er rannte über den Dorfplatz, an erschrockenen Ladenbesitzern und Körben voller Äpfel vorbei, seine kleinen Beine liefen ganz schnell.
+
+Als Nächstes kam eine braune Kuh, die neben dem Zaun mit dem Schwanz wedelte.
+
+"Muh! Was für ein feiner Snack du wärst", sagte sie und lief hinterher.
+
+Aber er rief nur:
+"Ich lief vor der Frau weg, der Katze und dem Schwein,
+Vor dir wegzulaufen, das krieg ich schon hin!
+Lauf, lauf, so schnell du kannst!
+Du fängst mich nicht, ich bin der Lebkuchenmann!"
+
+Hinter ihm wirbelte Staub auf, als Schwein und Kuh sich der Jagd anschlossen. Ihre Hufe trommelten auf die Erde, während Kinder kicherten und zeigten.
+
+Dann wieherte ein großes Pferd von der Wiese und galoppierte los.
+
+"Ich fang dich im Nu!" rief es, die Hufe donnerten.
+
+Aber der Lebkuchenmann lief nur noch schneller und sauste durch Felder aus goldenem Weizen.
+
+"Ich lief vor ihnen allen weg, du wirst schon seh'n—
+Du fängst mich nicht, ich bin der Lebkuchenmann!"
+
+Die Tiere schnauften und keuchten hinter ihm. Die alte Frau hatte aufgegeben, die Hände in die Hüften gestemmt, und murmelte: "Das lehrt mich, nichts mit Beinen zu backen."
+
+Der Lebkuchenmann lachte, als er durch den Wald rannte, Blätter knackten unter seinen Füßen, Vögel flatterten davon.
+
+Doch plötzlich stand er vor einem breiten, rauschenden Fluss. Das Wasser wirbelte dunkel und schnell, zu tief zum Waten, zu breit zum Springen.
+
+"Oh je", sagte er und lief am Ufer auf und ab.
+
+Da trat ein schlauer Fuchs hervor, sein Fell glänzte wie poliertes Kupfer.
+
+"Warum so ein langes Gesicht, kleiner Keks?" fragte der Fuchs, seine Stimme war weich wie geschmolzene Butter.
+
+"Ich muss über den Fluss", sagte der Lebkuchenmann und schaute nervös auf die Strömung. "Aber ich kann nicht schwimmen."
+
+Die Augen des Fuchses funkelten. "Ich kann schwimmen. Spring auf meinen Schwanz, ich bring dich hinüber."
+
+Nur einen Moment zögernd, kletterte der Lebkuchenmann auf.
+
+Der Fuchs stieg ins kalte Wasser. Wellen glitzerten, als er vorsichtig losschwamm.
+
+"Hinten ist es zu spritzig", sagte der Fuchs. "Kletter auf meinen Rücken."
+
+Der Lebkuchenmann kletterte höher.
+
+Bald reichte das Wasser bis an den Hals des Fuchses. "Am besten auf meinen Kopf", sagte er und zuckte mit den Ohren.
+
+Der Lebkuchenmann gehorchte.
+
+Doch das Wasser stieg weiter.
+
+"Du wirst nass—kletter lieber auf meine Nase", flüsterte der Fuchs.
+
+Kaum war der Lebkuchenmann auf die Nasenspitze getreten—
+
+Schnapp!
+
+Mit einem schnellen Kopfschlenker warf der Fuchs den Lebkuchenmann in die Luft und schluckte ihn mit einem Bissen hinunter.
+
+Der Fluss floss weiter. Vögel zwitscherten. Und der Fuchs leckte sich die Lippen.
+
+"Köstlich."
+
+Kurz darauf kamen Schwein, Kuh und Pferd keuchend an.
+
+"Wo ist er?" schnaufte das Schwein.
+
+Der Fuchs rülpste leise. "Er ist ein bisschen matschig geworden", sagte er mit einem Augenzwinkern.
+
+Zurück im Dorf zog die alte Frau ein neues Blech aus dem Ofen. Sie sah ihre Katze an und sagte: "Diesmal keine Beine."
+
+Das Ende`;
+
+export const gingerbreadStoryDE: GingerbreadStoryData = {
+  id: "a438386e-642f-46f4-8805-469f484f58a5",
+  title: "Der Lebkuchenmann",
+  languageCode: "de",
+  type: "classic",
+  imageUrl: "https://d1mmspri4wgcne.cloudfront.net/classic-tales/The+Gingerbread+Man.png",
+  content: gingerbreadContentDE,
+  narrators: [
+    {
+      id: "onyx",
+      name: "Onyx",
+      duration: 299,
+      audioUrl: "https://d1mmspri4wgcne.cloudfront.net/ai_stories/the_gingerbread_man/narrations/de/onyx.mp3"
+    },
+    {
+      id: "shimmer",
+      name: "Shimmer",
+      duration: 323,
+      audioUrl: "https://d1mmspri4wgcne.cloudfront.net/ai_stories/the_gingerbread_man/narrations/de/shimmer.mp3"
+    }
+  ],
+  songs: [
+    {
+      id: "epic_adventure",
+      title: "Lebkuchenlauf",
+      style: "epic_adventure",
+      url: "https://d1mmspri4wgcne.cloudfront.net/classic-tales/der_lebkuchenmann/de/epic_adventure.mp3",
+      duration: 227.08
+    },
+    {
+      id: "singalong",
+      title: "Der Lebkuchenmann",
+      style: "singalong",
+      url: "https://d1mmspri4wgcne.cloudfront.net/classic-tales/der_lebkuchenmann/de/singalong.mp3",
+      duration: 240
+    }
+  ]
+};
