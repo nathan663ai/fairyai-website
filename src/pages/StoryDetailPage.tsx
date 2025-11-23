@@ -143,29 +143,9 @@ const StoryDetailPage: React.FC = () => {
                 </div>
 
                 {/* Context Blurb - Classic Fairy Tales */}
-                <div className="bg-gradient-to-r from-soft-blue-50 to-soft-green-50 rounded-xl p-6 border border-soft-blue-100">
-                  <h2 className="font-display text-2xl font-bold text-neutral-900 mb-3">Classic Fairy Tales</h2>
-                  <p className="text-neutral-700 mb-4 leading-relaxed">
-                    These are timeless stories that have delighted children for generations. Our Fairy Corner features over 40 beloved classics—from The Three Little Pigs to Little Red Riding Hood—reimagined with beautiful narrations and original songs. Every story is available in 12 languages, making bedtime magical for families around the world.
-                  </p>
-                  <div className="flex flex-wrap gap-2">
-                    <span className="inline-flex items-center bg-white px-3 py-2 rounded-lg text-sm font-medium text-neutral-700 border border-neutral-200">
-                      Familiar characters children already love
-                    </span>
-                    <span className="inline-flex items-center bg-white px-3 py-2 rounded-lg text-sm font-medium text-neutral-700 border border-neutral-200">
-                      Stories parents remember from childhood
-                    </span>
-                    <span className="inline-flex items-center bg-white px-3 py-2 rounded-lg text-sm font-medium text-neutral-700 border border-neutral-200">
-                      Original songs in various musical styles
-                    </span>
-                    <span className="inline-flex items-center bg-white px-3 py-2 rounded-lg text-sm font-medium text-neutral-700 border border-neutral-200">
-                      Available in 12 languages
-                    </span>
-                    <span className="inline-flex items-center bg-white px-3 py-2 rounded-lg text-sm font-medium text-neutral-700 border border-neutral-200">
-                      Free for all subscribers
-                    </span>
-                  </div>
-                </div>
+                <p className="text-neutral-600 text-sm">
+                  One of over 40 classic fairy tales in Fairy Corner, with professional narration and original songs in 12 languages.
+                </p>
 
                 {/* Story Image */}
                 <img
@@ -274,56 +254,9 @@ const StoryDetailPage: React.FC = () => {
                 </div>
 
                 {/* Context Blurb - AI-Generated Daily Stories */}
-                <div className="bg-gradient-to-r from-soft-blue-50 to-soft-green-50 rounded-xl p-6 border border-soft-blue-100">
-                  <h2 className="font-display text-2xl font-bold text-neutral-900 mb-3">AI-Generated Daily Stories</h2>
-                  <p className="text-neutral-700 mb-4 leading-relaxed">
-                    Every day, FairyAI creates brand new adventures with fresh themes, morals, and locations. These aren't just variations—they're completely original stories designed for different age groups, ensuring your child always has something new to discover.
-                  </p>
-
-                  {/* Coming Soon Box */}
-                  <div className="bg-white rounded-lg p-4 mb-4 border border-soft-blue-200">
-                    <h3 className="font-semibold text-neutral-900 mb-2 flex items-center">
-                      <span className="mr-2">🎁</span>
-                      Coming Soon
-                    </h3>
-                    <ul className="space-y-1 text-sm text-neutral-700">
-                      <li className="flex items-start">
-                        <span className="mr-2">•</span>
-                        <span>Age-specific stories (2-4, 5-7, 8-10, 11-12) tailored to your child's development</span>
-                      </li>
-                      <li className="flex items-start">
-                        <span className="mr-2">•</span>
-                        <span>Recurring characters who continue their adventures across multiple stories</span>
-                      </li>
-                      <li className="flex items-start">
-                        <span className="mr-2">•</span>
-                        <span>Stories that grow with your child</span>
-                      </li>
-                    </ul>
-                  </div>
-
-                  {/* Current Story Description */}
-                  <div className="bg-white rounded-lg p-4 border border-soft-green-200">
-                    <h3 className="font-semibold text-neutral-900 mb-2">About This Story</h3>
-                    <p className="text-sm text-neutral-700 mb-3 leading-relaxed">
-                      This calming bedtime tale follows <strong>Lila</strong> and <strong>Finn</strong> on a gentle moonlit adventure. Featuring poetic language and soothing imagery, it's designed for children aged <strong>6-10</strong> to help them transition peacefully to sleep. Perfect for winding down after a busy day.
-                    </p>
-                    <div className="flex flex-wrap gap-2">
-                      <span className="inline-flex items-center bg-soft-blue-50 px-3 py-1 rounded-full text-xs font-medium text-soft-blue-700">
-                        Calming
-                      </span>
-                      <span className="inline-flex items-center bg-soft-blue-50 px-3 py-1 rounded-full text-xs font-medium text-soft-blue-700">
-                        Ocean Adventure
-                      </span>
-                      <span className="inline-flex items-center bg-soft-blue-50 px-3 py-1 rounded-full text-xs font-medium text-soft-blue-700">
-                        Magical
-                      </span>
-                      <span className="inline-flex items-center bg-soft-blue-50 px-3 py-1 rounded-full text-xs font-medium text-soft-blue-700">
-                        Ages 6-10
-                      </span>
-                    </div>
-                  </div>
-                </div>
+                <p className="text-neutral-600 text-sm">
+                  A daily AI-generated story from Fairy Corner, with professional narration and original songs in 12 languages.
+                </p>
 
                 {/* Story Image */}
                 <img
