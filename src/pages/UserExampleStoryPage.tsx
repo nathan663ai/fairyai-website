@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, Link, Navigate } from 'react-router-dom';
 import DownloadButtons from '../components/ui/DownloadButtons';
-import { UserExampleStory } from '../data/userExampleStories';
-import { robotFriendshipStory, dragonHeightsStory } from '../data/userExampleStories';
+import { UserExampleStory, robotFriendshipStory } from '../data/userExampleStories';
 
-type AgeGroup = '2-3' | '4-6' | '7-9' | '10-12';
+type AgeGroup = '2-3' | '4-6' | '7-9';
 
 const UserExampleStoryPage: React.FC = () => {
   const { storyId } = useParams<{ storyId: string }>();
@@ -18,8 +17,6 @@ const UserExampleStoryPage: React.FC = () => {
   let story: UserExampleStory | null = null;
   if (storyId === 'robot-friendship') {
     story = robotFriendshipStory;
-  } else if (storyId === 'dragon-afraid-heights') {
-    story = dragonHeightsStory;
   }
 
   // If story not found, redirect to stories page
@@ -82,7 +79,6 @@ const UserExampleStoryPage: React.FC = () => {
                   <option value="2-3">Ages 2-3</option>
                   <option value="4-6">Ages 4-6</option>
                   <option value="7-9">Ages 7-9</option>
-                  <option value="10-12">Ages 10-12</option>
                 </select>
               </div>
               <div className="bg-neutral-50 rounded-lg p-4 md:p-6 max-h-[500px] overflow-y-auto border border-neutral-200">

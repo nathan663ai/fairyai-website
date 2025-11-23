@@ -12,15 +12,15 @@ const StoriesPage: React.FC = () => {
   const getCreationMethodBadge = (method: string) => {
     switch (method) {
       case 'quick_story':
-        return { text: '⚡ Quick Story', color: 'bg-soft-blue-100 text-soft-blue-700' };
+        return { text: 'Quick Story', color: 'bg-soft-blue-100 text-soft-blue-700' };
       case 'story_wizard':
-        return { text: '🧙 Story Wizard', color: 'bg-soft-green-100 text-soft-green-700' };
+        return { text: 'Story Wizard', color: 'bg-soft-green-100 text-soft-green-700' };
       case 'fairy_corner_daily':
-        return { text: '✨ Daily AI Story', color: 'bg-gradient-to-r from-soft-blue-100 to-soft-green-100 text-neutral-800' };
+        return { text: 'Daily AI Story', color: 'bg-gradient-to-r from-soft-blue-100 to-soft-green-100 text-neutral-800' };
       case 'fairy_corner_classic':
-        return { text: '📚 Classic Tale', color: 'bg-gradient-to-r from-soft-blue-100 to-soft-green-100 text-neutral-800' };
+        return { text: 'Classic Tale', color: 'bg-gradient-to-r from-soft-blue-100 to-soft-green-100 text-neutral-800' };
       case 'user_example':
-        return { text: '👤 User Example', color: 'bg-soft-green-100 text-soft-green-700' };
+        return { text: 'User Example', color: 'bg-soft-green-100 text-soft-green-700' };
       default:
         return { text: method, color: 'bg-neutral-100 text-neutral-700' };
     }

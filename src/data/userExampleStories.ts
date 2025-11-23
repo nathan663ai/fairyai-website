@@ -13,7 +13,6 @@ export interface AgeVariation {
   content: string;
   context: AgeVariationContext;
   imageUrl?: string; // Cover image for this age variation
-  // Narrations and songs will be added by Nathan later
   narrations?: any[];
   songs?: any[];
 }
@@ -37,7 +36,6 @@ export interface UserExampleStory {
     '2-3': AgeVariation;
     '4-6': AgeVariation;
     '7-9': AgeVariation;
-    '10-12': AgeVariation;
   };
 }
 
@@ -335,102 +333,6 @@ As stars blinked above outside and city lights sparkled below their window, both
           'Relatable social challenges (making friends, being included)',
         ],
         moral: 'Being different doesn\'t mean you can\'t connect with others',
-        length: '~10 minutes'
-      }
-    },
-    '10-12': {
-      id: 'robot-friendship-10-12',
-      content: `[Placeholder: Story content will be provided by Nathan]
-
-This is where the version for ages 10-12 will appear, with sophisticated themes and deeper meaning.`,
-      context: {
-        ageRange: '10-12 years',
-        styleNotes: [
-          'Sophisticated themes',
-          'Internal conflict and growth',
-          'Deeper meaning and nuance',
-        ],
-        moral: 'Vulnerability is strength, not weakness',
-        length: '~10 minutes'
-      }
-    }
-  }
-};
-
-// Dragon Heights Story (Detailed Prompt Example)
-export const dragonHeightsStory: UserExampleStory = {
-  id: 'dragon-afraid-heights',
-  title: 'The Dragon Who Was Afraid of Heights',
-  promptType: 'detailed',
-  promptText: `Create a story about a young dragon named Ember who is terrified of flying, even though all dragons are supposed to soar through the sky. She lives in mountain caves and feels embarrassed that she prefers walking. One day, a tiny mouse named Pip gets trapped on a cliff ledge during a storm. Ember must face her fear to save her friend.`,
-  promptDetails: {
-    theme: 'Overcoming fear',
-    moral: 'True courage means doing what\'s right, even when you\'re scared',
-    setting: 'Misty mountain peaks and cozy caves',
-    targetAge: '5-7 years'
-  },
-
-  ageVariations: {
-    '2-3': {
-      id: 'dragon-heights-2-3',
-      content: `[Placeholder: Story content will be provided by Nathan]
-
-Simplified version: "Ember the dragon doesn't like to fly. Flying feels scary! But when her friend needs help, Ember tries. She goes up, up, up! Ember is brave!"`,
-      context: {
-        ageRange: '2-3 years',
-        styleNotes: [
-          'Shorter sentences, repetitive phrases',
-          'Focus on action, not emotion complexity',
-        ],
-        moral: 'Being brave helps friends',
-        length: '~3 minutes'
-      }
-    },
-    '4-6': {
-      id: 'dragon-heights-4-6',
-      content: `[Placeholder: Story content will be provided by Nathan]
-
-This is the original target age for the story, with clear character emotions, problem-solving, and a satisfying resolution.`,
-      context: {
-        ageRange: '4-6 years (Original Target)',
-        styleNotes: [
-          'Character feels fear but overcomes it',
-          'Clear cause and effect',
-          'Friendship and bravery themes',
-        ],
-        moral: 'True courage means doing what\'s right, even when you\'re scared',
-        length: '~6 minutes'
-      }
-    },
-    '7-9': {
-      id: 'dragon-heights-7-9',
-      content: `[Placeholder: Story content will be provided by Nathan]
-
-Expanded version with more internal conflict: Ember doesn't just fear flying—she fears disappointing her family, being different, and failing when it matters most.`,
-      context: {
-        ageRange: '7-9 years',
-        styleNotes: [
-          'More complex emotional landscape',
-          'Secondary characters with depth',
-          'Longer descriptive passages',
-        ],
-        moral: 'Courage isn\'t the absence of fear, it\'s acting despite it',
-        length: '~8 minutes'
-      }
-    },
-    '10-12': {
-      id: 'dragon-heights-10-12',
-      content: `[Placeholder: Story content will be provided by Nathan]
-
-Matured version exploring identity and self-acceptance: What if who you are doesn't match who you're supposed to be? Ember's journey becomes about accepting herself, not just saving her friend.`,
-      context: {
-        ageRange: '10-12 years',
-        styleNotes: [
-          'Sophisticated themes of identity',
-          'Nuanced character relationships',
-          'More literary language',
-        ],
-        moral: 'True courage is accepting who you are, even if you\'re different',
         length: '~10 minutes'
       }
     }
