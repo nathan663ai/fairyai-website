@@ -30,7 +30,7 @@ const TryItFree: React.FC = () => {
               Browse Without Signing Up
             </h3>
             <p className="text-neutral-700 leading-relaxed">
-              Access Fairy Corner instantly—read 2 classic fairy tales and 2 nursery rhymes without creating an account.
+              Access Fairy Corner instantly. Read 2 classic fairy tales and 2 nursery rhymes without creating an account.
             </p>
           </div>
 

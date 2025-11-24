@@ -87,7 +87,7 @@ const ContactPage: React.FC = () => {
       <FAQAccordion
         faqs={faqs}
         title="Common Questions"
-        subtitle="Find answers before you reach out — or email us if you need more help"
+        subtitle="Find answers before you reach out, or email us if you need more help"
       />
 
       <section className="py-12 md:py-16">

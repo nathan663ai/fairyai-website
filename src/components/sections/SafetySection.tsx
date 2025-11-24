@@ -9,7 +9,7 @@ const SafetySection: React.FC = () => {
   ];
 
   const activelyEnforce = [
-    'Age-based content filters block violence, fear, explicit content, substances—tailored to each age group',
+    'Age-based content filters block violence, fear, explicit content, and substances, tailored to each age group',
     'Age-appropriate word counts and themes (400 words for toddlers → 2000 for teens)',
     'Rate limiting and abuse protection per user, per IP, per operation',
     'Input length limits and file size restrictions (16MB cap)',
@@ -39,7 +39,7 @@ const SafetySection: React.FC = () => {
             Safety isn't a feature. It's the foundation.
           </h2>
           <p className="text-lg md:text-xl text-neutral-600 max-w-3xl mx-auto mb-2">
-            You're trusting us with bedtime. Here's exactly what we do—and don't do—to earn that trust.
+            You're trusting us with bedtime. Here's exactly what we do, and don't do, to earn that trust.
           </p>
         </div>
 

@@ -217,7 +217,7 @@ const StoryDetailPage: React.FC = () => {
                     <strong>The Gingerbread Man</strong> is one of over 100 classic fairy tales and nursery rhymes available in the <strong>Fairy Corner</strong> section of the FairyAI app. These are professionally crafted, well-known stories that children love, each adapted with care to include engaging narration and custom songs.
                   </p>
                   <p className="text-sm text-neutral-700 mb-3">
-                    Unlike user-generated stories, Fairy Corner tales are <strong>pre-made and always available</strong> in the app—no Fairy Dust required! Each story is offered in <strong>12 languages</strong> with multiple narrator voices, making bedtime stories accessible to families around the world.
+                    Unlike user-generated stories, Fairy Corner tales are <strong>pre-made and always available</strong> in the app with no Fairy Dust required. Each story is offered in <strong>12 languages</strong> with multiple narrator voices, making bedtime stories accessible to families around the world.
                   </p>
                   <p className="text-sm text-neutral-700">
                     All the content you see on this website, including this story with all its language versions, narrations, and songs, is available in the FairyAI app today.
@@ -344,13 +344,13 @@ const StoryDetailPage: React.FC = () => {
                 <div className="bg-gradient-to-r from-soft-blue-50 to-soft-green-50 rounded-lg p-6">
                   <h4 className="text-lg font-semibold text-neutral-900 mb-3">✨ About AI-Generated Stories</h4>
                   <p className="text-sm text-neutral-700 mb-3">
-                    This is an example of the <strong>AI-generated daily stories</strong> available in the Fairy Corner section of FairyAI. Every day, a brand new story is created using advanced AI, complete with professional narration and custom songs—all in <strong>12 languages</strong>.
+                    This is an example of the <strong>AI-generated daily stories</strong> available in the Fairy Corner section of FairyAI. Every day, a brand new story is created using advanced AI, complete with professional narration and custom songs in <strong>12 languages</strong>.
                   </p>
                   <p className="text-sm text-neutral-700 mb-3">
                     These daily stories provide <strong>fresh, original content</strong> that keeps bedtime exciting and unpredictable. Unlike the classic tales, AI stories explore new characters, settings, and adventures, giving children something different to enjoy each night.
                   </p>
                   <p className="text-sm text-neutral-700">
-                    Best of all, Fairy Corner content requires <strong>no Fairy Dust</strong>—it's included with your subscription, with new stories added automatically every single day.
+                    Best of all, Fairy Corner content requires <strong>no Fairy Dust</strong> and is included with your subscription, with new stories added automatically every single day.
                   </p>
                 </div>
               </>
@@ -414,13 +414,13 @@ const StoryDetailPage: React.FC = () => {
                   <div className="bg-gradient-to-r from-soft-blue-50 to-soft-green-50 rounded-lg p-6">
                     <h4 className="text-lg font-semibold text-neutral-900 mb-3">✨ About AI-Generated Stories</h4>
                     <p className="text-sm text-neutral-700 mb-3">
-                      This is an example of the <strong>AI-generated daily stories</strong> available in the Fairy Corner section of FairyAI. Every day, a brand new story is created using advanced AI, complete with professional narration and custom songs—all in <strong>12 languages</strong>.
+                      This is an example of the <strong>AI-generated daily stories</strong> available in the Fairy Corner section of FairyAI. Every day, a brand new story is created using advanced AI, complete with professional narration and custom songs in <strong>12 languages</strong>.
                     </p>
                     <p className="text-sm text-neutral-700 mb-3">
                       These daily stories provide <strong>fresh, original content</strong> that keeps bedtime exciting and unpredictable. Unlike the classic tales, AI stories explore new characters, settings, and adventures, giving children something different to enjoy each night.
                     </p>
                     <p className="text-sm text-neutral-700">
-                      Best of all, Fairy Corner content requires <strong>no Fairy Dust</strong>—it's included with your subscription, with new stories added automatically every single day.
+                      Best of all, Fairy Corner content requires <strong>no Fairy Dust</strong> and is included with your subscription, with new stories added automatically every single day.
                     </p>
                   </div>
                 )}
