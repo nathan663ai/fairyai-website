@@ -1,49 +1,51 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import AudioPlayer from '../ui/AudioPlayer';
-import ImagePlaceholder from '../ui/ImagePlaceholder';
 
-// Story Examples Data
+// Story Examples Data - matches actual stories on Stories Page
 const storyExamples = [
   {
     id: 1,
-    title: 'Luna the Brave Bunny',
-    ageRange: '4-6 years',
-    description: 'A courageous bunny goes on an adventure to find the missing moon crystal',
-    audioSrc: '/audio/stories/luna-narration.mp3',
-    characterImage: '/images/characters/character1.jpg',
+    title: 'The Gingerbread Man',
+    ageRange: 'Classic Tale',
+    description: 'A beloved fairy tale about a gingerbread cookie who comes to life and runs away',
+    audioSrc: '/audio/stories/gingerbread-man-narration.mp3',
+    imageUrl: 'https://d1mmspri4wgcne.cloudfront.net/classic-tales/The+Gingerbread+Man.png',
+    linkTo: '/stories/gingerbread-man'
   },
   {
     id: 2,
-    title: 'The Friendly Space Dragon',
-    ageRange: '5-8 years',
-    description: 'A lonely dragon discovers friendship among the stars',
-    audioSrc: '/audio/stories/dragon-narration.mp3',
-    characterImage: '/images/characters/character2.jpg',
+    title: 'Whispers of the Tidal Star',
+    ageRange: 'Daily AI Story',
+    description: 'A calming bedtime tale about a magical adventure by the ocean at twilight',
+    audioSrc: 'https://d1mmspri4wgcne.cloudfront.net/ai_stories/whispers-of-the-tidal-star-d5dfda26/en-GB/narrations/onyx.mp3',
+    imageUrl: 'https://d1mmspri4wgcne.cloudfront.net/ai_stories/whispers-of-the-tidal-star-d5dfda26/cover.jpg',
+    linkTo: '/stories/whispers-tidal-star'
   },
   {
     id: 3,
-    title: 'Rocket to the Rainbow Planet',
-    ageRange: '6-9 years',
-    description: 'An exciting journey through space to discover a magical world',
-    audioSrc: '/audio/stories/space-narration.mp3',
-    characterImage: '/images/characters/character3.jpg',
+    title: 'A Robot Learns About Friendship',
+    ageRange: 'User Example',
+    description: 'See how one simple prompt adapts across different age groups',
+    audioSrc: '/audio/stories/placeholder.mp3',
+    imageUrl: 'https://d1mmspri4wgcne.cloudfront.net/users/0d73d152-bdfb-4aca-98bb-ed33d2b912f4/stories/067a4db2-9383-4d08-884e-d1dbad16483a/0d73d152-bdfb-4aca-98bb-ed33d2b912f4_067a4db2-9383-4d08-884e-d1dbad16483a_cover.png',
+    linkTo: '/stories/examples/robot-friendship'
   },
 ];
 
-// Song Examples Data
+// Song Examples Data - matches actual songs from Gingerbread Man
 const songExamples = [
   {
     id: 1,
-    title: 'Adventure Song',
-    fromStory: 'Luna the Brave Bunny',
-    audioSrc: '/audio/songs/adventure-song.mp3',
+    title: 'The Gingerbread Rap',
+    fromStory: 'The Gingerbread Man',
+    audioSrc: 'https://d1mmspri4wgcne.cloudfront.net/classic-tales/the_gingerbread_man/rap.mp3',
   },
   {
     id: 2,
-    title: 'Bedtime Lullaby',
-    fromStory: 'The Friendly Space Dragon',
-    audioSrc: '/audio/songs/bedtime-song.mp3',
+    title: 'Singalong Version',
+    fromStory: 'The Gingerbread Man',
+    audioSrc: 'https://d1mmspri4wgcne.cloudfront.net/classic-tales/the_gingerbread_man/singalong.mp3',
   },
 ];
 
@@ -75,7 +77,7 @@ const ExperienceTheMagic: React.FC = () => {
             Sample Stories
           </h3>
           <p className="text-center text-neutral-600 mb-10">
-            Listen to 30-second narration samples from real FairyAI stories
+            Listen to narration samples from real FairyAI stories
           </p>
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -84,12 +86,12 @@ const ExperienceTheMagic: React.FC = () => {
                 key={story.id}
                 className="bg-white rounded-xl shadow-md hover:shadow-2xl transition-all duration-300 overflow-hidden"
               >
-                {/* Character Image Placeholder */}
+                {/* Story Image */}
                 <div className="relative h-48">
-                  <ImagePlaceholder
-                    label={`Character from ${story.title}`}
-                    aspectRatio="video"
-                    className=""
+                  <img
+                    src={story.imageUrl}
+                    alt={story.title}
+                    className="w-full h-full object-cover"
                   />
                 </div>
 
@@ -109,19 +111,21 @@ const ExperienceTheMagic: React.FC = () => {
                   </p>
 
                   {/* Audio Player */}
-                  <div className="mb-4">
-                    <AudioPlayer
-                      src={story.audioSrc}
-                      title="Story Narration Sample"
-                    />
-                  </div>
+                  {story.id !== 3 && (
+                    <div className="mb-4">
+                      <AudioPlayer
+                        src={story.audioSrc}
+                        title="Story Narration Sample"
+                      />
+                    </div>
+                  )}
 
                   {/* Read Full Story Button */}
                   <Link
-                    to="/stories"
+                    to={story.linkTo}
                     className="block text-center bg-slate-900 text-white px-4 py-2 rounded-lg font-semibold hover:shadow-lg transition-all hover:scale-105"
                   >
-                    Read Full Story
+                    {story.id === 3 ? 'See Age Variations' : 'Read Full Story'}
                   </Link>
                 </div>
               </div>
@@ -185,21 +189,25 @@ const ExperienceTheMagic: React.FC = () => {
             {characters.map((character) => (
               <div
                 key={character.id}
-                className="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 p-4 text-center"
+                className="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden"
               >
-                {/* Character Image Placeholder */}
-                <ImagePlaceholder
-                  label={character.name}
-                  aspectRatio="square"
-                  className="mb-3 rounded-lg"
-                />
+                {/* Character Image */}
+                <div className="aspect-square relative">
+                  <img
+                    src={character.imageSrc}
+                    alt={character.name}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
 
-                <p className="text-sm font-semibold text-neutral-700">
-                  {character.name}
-                </p>
-                <p className="text-xs text-neutral-500 mt-1">
-                  Character image coming soon
-                </p>
+                <div className="p-3 text-center">
+                  <p className="text-sm font-semibold text-neutral-700">
+                    {character.name}
+                  </p>
+                  <p className="text-xs text-neutral-500 mt-1">
+                    Placeholder image
+                  </p>
+                </div>
               </div>
             ))}
           </div>
