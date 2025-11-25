@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import AudioPlayer from '../ui/AudioPlayer';
+import ImagePlaceholder from '../ui/ImagePlaceholder';
 
 // Story Examples Data - matches actual stories on Stories Page
 const storyExamples = [
@@ -189,25 +190,21 @@ const ExperienceTheMagic: React.FC = () => {
             {characters.map((character) => (
               <div
                 key={character.id}
-                className="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden"
+                className="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 p-4 text-center"
               >
-                {/* Character Image */}
-                <div className="aspect-square relative">
-                  <img
-                    src={character.imageSrc}
-                    alt={character.name}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
+                {/* Character Image Placeholder */}
+                <ImagePlaceholder
+                  label={character.name}
+                  aspectRatio="square"
+                  className="mb-3 rounded-lg"
+                />
 
-                <div className="p-3 text-center">
-                  <p className="text-sm font-semibold text-neutral-700">
-                    {character.name}
-                  </p>
-                  <p className="text-xs text-neutral-500 mt-1">
-                    Placeholder image
-                  </p>
-                </div>
+                <p className="text-sm font-semibold text-neutral-700">
+                  {character.name}
+                </p>
+                <p className="text-xs text-neutral-500 mt-1">
+                  Character image coming soon
+                </p>
               </div>
             ))}
           </div>
