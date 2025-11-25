@@ -10,7 +10,7 @@ const storyExamples = [
     title: 'The Gingerbread Man',
     ageRange: 'Classic Tale',
     description: 'A beloved fairy tale about a gingerbread cookie who comes to life and runs away',
-    audioSrc: '/audio/stories/gingerbread-man-narration.mp3',
+    audioSrc: 'https://d1mmspri4wgcne.cloudfront.net/ai_stories/the_gingerbread_man/narrations/en/nova.mp3',
     imageUrl: 'https://d1mmspri4wgcne.cloudfront.net/classic-tales/The+Gingerbread+Man.png',
     linkTo: '/stories/gingerbread-man'
   },
@@ -19,7 +19,7 @@ const storyExamples = [
     title: 'Whispers of the Tidal Star',
     ageRange: 'Daily AI Story',
     description: 'A calming bedtime tale about a magical adventure by the ocean at twilight',
-    audioSrc: 'https://d1mmspri4wgcne.cloudfront.net/ai_stories/whispers-of-the-tidal-star-d5dfda26/en-GB/narrations/onyx.mp3',
+    audioSrc: 'https://d1mmspri4wgcne.cloudfront.net/ai_stories/whispers-of-the-tidal-star-d5dfda26/narrations/en-GB/shimmer.mp3',
     imageUrl: 'https://d1mmspri4wgcne.cloudfront.net/ai_stories/whispers-of-the-tidal-star-d5dfda26/cover.jpg',
     linkTo: '/stories/whispers-tidal-star'
   },
@@ -38,9 +38,9 @@ const storyExamples = [
 const songExamples = [
   {
     id: 1,
-    title: 'The Gingerbread Rap',
+    title: 'Run Run Run (Epic Adventure)',
     fromStory: 'The Gingerbread Man',
-    audioSrc: 'https://d1mmspri4wgcne.cloudfront.net/classic-tales/the_gingerbread_man/rap.mp3',
+    audioSrc: 'https://d1mmspri4wgcne.cloudfront.net/classic-tales/the_gingerbread_man/epic_adventure.mp3',
   },
   {
     id: 2,
