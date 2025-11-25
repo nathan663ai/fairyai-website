@@ -66,7 +66,7 @@ export const storyExamples: StoryExample[] = [
     characterImage: '/images/characters/character7.jpg',
     creationMethod: 'user_example',
     description: 'See how a simple one-sentence prompt adapts across different age groups. From playful simplicity for toddlers to deeper themes for tweens.',
-    tagline: 'See how one simple prompt becomes 4 different stories',
+    tagline: 'See how one simple prompt adapts for different age groups',
     audioSrc: '/audio/stories/placeholder.mp3',
     prompt: 'A robot learns about friendship',
     fullText: '', // Will use user example data

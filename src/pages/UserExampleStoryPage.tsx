@@ -94,7 +94,7 @@ const UserExampleStoryPage: React.FC = () => {
             <div className="bg-gradient-to-r from-soft-blue-50 to-soft-green-50 rounded-xl p-5 border border-soft-blue-100">
               <h4 className="font-display text-lg font-bold text-neutral-900 mb-2">Age-Adaptive Stories</h4>
               <p className="text-neutral-700 text-sm">
-                The same prompt creates four different stories. FairyAI automatically adapts vocabulary, complexity, and themes based on your child's age group.
+                The same prompt adapts for each age group. FairyAI automatically adjusts vocabulary, complexity, and themes based on your child's age.
               </p>
             </div>
 

@@ -4,27 +4,27 @@ import Card from '../ui/Card';
 const Testimonials: React.FC = () => {
   const testimonials = [
     {
-      quote: 'We\'ve been continuing the same story for two weeks now, and it\'s become a 4-chapter book about their characters. Bedtime used to be a battle. Now they beg for the next chapter!',
+      quote: 'My son made a character called "Professor Whiskers" and we\'re on chapter 11 now. He literally counts down the hours until bedtime.',
       name: 'Sarah',
       role: 'Mum of 2 (ages 6 & 8)'
     },
     {
-      quote: 'The narration in French is incredible. My daughter loves hearing stories in both English and French, and the voices sound so natural. The Fairy Corner nursery rhymes are on repeat during car rides.',
+      quote: 'The French narration is really good quality. My daughter switches between English and French versions of the same story, which is great for her language learning.',
       name: 'Jean-Luc',
       role: 'Dad of 1 (age 4)'
     },
     {
-      quote: 'I was skeptical about "AI stories" until I used the Character Wizard. We built a character based on my son\'s personality, and now every story feels personal. He asks for stories about "his" character every night. The continuation feature is genius. We\'re on chapter 8!',
+      quote: 'Was skeptical about AI stories but the Character Wizard changed my mind. We made a character based on my son and now every story feels like it\'s actually about him. Much better than I expected.',
       name: 'Priya',
       role: 'Mum of 1 (age 7)'
     },
     {
-      quote: 'The songs are absolutely brilliant! My daughter created a character, then made a song about her, and now we sing it every morning. The lyrics are age-appropriate and catchy. I love that we can download the MP3s for car journeys.',
+      quote: 'The songs are surprisingly catchy! We made one about her character and now she sings it constantly. Bit annoying actually but she loves it.',
       name: 'Emily',
       role: 'Mum of 1 (age 5)'
     },
     {
-      quote: "We created a dragon character three months ago, and he's been in 15+ stories now. My kids feel like he's a real friend. The Fairy Corner classics are perfect for when we run low on Dust, and my youngest loves the daily AI stories.",
+      quote: "Created a dragon called Spark three months ago. He's been in loads of stories and my kids genuinely talk about him like he's real. The free Fairy Corner stuff is handy when we run out of credits.",
       name: 'James',
       role: 'Dad of 3 (ages 4, 6, 9)'
     }
