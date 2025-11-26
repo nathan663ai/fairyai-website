@@ -1,7 +1,17 @@
-import React from 'react';
-import ImagePlaceholder from '../ui/ImagePlaceholder';
+import React, { useState } from 'react';
 
 const FounderSection: React.FC = () => {
+  const founderImages = [
+    { src: '/images/Founder_Original.png', label: 'Original' },
+    { src: '/images/Founder_Transform1.jpg', label: 'FairyAI Style 1' },
+    { src: '/images/Founder_Transform2.jpg', label: 'FairyAI Style 2' }
+  ];
+
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  const handleImageClick = () => {
+    setCurrentImageIndex((prevIndex) => (prevIndex + 1) % founderImages.length);
+  };
   return (
     <section id="about" className="py-16 md:py-24 bg-white">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -15,13 +25,26 @@ const FounderSection: React.FC = () => {
         {/* Content */}
         <div className="grid md:grid-cols-3 gap-12 items-center">
           {/* Founder Image */}
-          <div className="md:col-span-1 flex justify-center">
-            <div className="w-48 h-48 md:w-64 md:h-64">
-              <ImagePlaceholder
-                label="Founder Portrait"
-                aspectRatio="square"
-                className="rounded-full shadow-xl"
+          <div className="md:col-span-1 flex flex-col items-center gap-4">
+            <div
+              className="w-48 h-48 md:w-64 md:h-64 cursor-pointer transition-all duration-500 hover:scale-105 hover:shadow-2xl rounded-full shadow-xl overflow-hidden"
+              onClick={handleImageClick}
+            >
+              <img
+                src={founderImages[currentImageIndex].src}
+                alt={`Nathan - ${founderImages[currentImageIndex].label}`}
+                className="w-full h-full object-cover transition-opacity duration-500"
               />
+            </div>
+
+            {/* Label and instruction */}
+            <div className="text-center">
+              <p className="text-sm font-semibold bg-gradient-to-r from-soft-blue-600 to-soft-green-600 bg-clip-text text-transparent mb-1">
+                {founderImages[currentImageIndex].label}
+              </p>
+              <p className="text-xs text-neutral-500 italic">
+                Click to see me transformed by FairyAI!
+              </p>
             </div>
           </div>
 

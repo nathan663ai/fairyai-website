@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Sitemap: https://fairyai.co.uk/sitemap.xml
+
+Disallow: /delete
+Disallow: /delete-account

@@ -138,9 +138,14 @@ const ExperienceTheMagic: React.FC = () => {
                     <h4 className="font-display text-xl font-bold text-slate-900">
                       {story.title}
                     </h4>
-                    <span className="text-xs font-semibold text-soft-blue-600 bg-soft-blue-50 px-2 py-1 rounded-full">
-                      {story.ageRange}
-                    </span>
+                    <div className="flex flex-col gap-1">
+                      <span className="text-xs font-semibold text-soft-blue-600 bg-soft-blue-50 px-2 py-1 rounded-full">
+                        {story.ageRange}
+                      </span>
+                      <span className="text-xs font-semibold text-soft-green-600 bg-soft-green-50 px-2 py-1 rounded-full text-center">
+                        ⚡ Generated in 30s
+                      </span>
+                    </div>
                   </div>
 
                   <p className="text-neutral-600 mb-4 text-sm">
@@ -218,8 +223,11 @@ const ExperienceTheMagic: React.FC = () => {
           <h3 className="font-display text-2xl md:text-3xl font-semibold text-center mb-3 text-slate-900">
             Character Gallery
           </h3>
-          <p className="text-center text-neutral-600 mb-10">
+          <p className="text-center text-neutral-600 mb-2">
             Build your own cast of characters that persist across stories
+          </p>
+          <p className="text-center text-sm font-semibold text-soft-blue-600 mb-10">
+            All characters created in seconds using FairyAI's 6 unique art styles
           </p>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">

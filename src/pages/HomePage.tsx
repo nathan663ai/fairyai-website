@@ -3,6 +3,7 @@ import Hero from '../components/sections/Hero';
 import TryItFree from '../components/sections/TryItFree';
 import Simple3Steps from '../components/sections/Simple3Steps';
 import FeaturesOverview from '../components/sections/FeaturesOverview';
+import MadeWithFairyAI from '../components/sections/MadeWithFairyAI';
 import ExperienceTheMagic from '../components/sections/ExperienceTheMagic';
 import WhyDifferentTeaser from '../components/sections/WhyDifferentTeaser';
 import Testimonials from '../components/sections/Testimonials';
@@ -17,6 +18,7 @@ const HomePage: React.FC = () => {
       <Simple3Steps />
       <WhyDifferentTeaser />
       <FeaturesOverview />
+      <MadeWithFairyAI />
       <ExperienceTheMagic />
       <SafetyTeaser />
       <TryItFree />
