@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import AudioPlayer from '../ui/AudioPlayer';
-import ImagePlaceholder from '../ui/ImagePlaceholder';
 
 // Story Examples Data - matches actual stories on Stories Page
 const storyExamples = [
@@ -50,12 +49,49 @@ const songExamples = [
   },
 ];
 
-// Character Gallery Data
-const characters = Array.from({ length: 8 }, (_, i) => ({
-  id: i + 1,
-  name: `Character ${i + 1}`,
-  imageSrc: `/images/characters/character${i + 1}.jpg`,
-}));
+// Character Gallery Data - Real character images from app
+const characters = [
+  {
+    id: 1,
+    name: "Sparkle",
+    imageSrc: "https://d1mmspri4wgcne.cloudfront.net/users/0d73d152-bdfb-4aca-98bb-ed33d2b912f4/characters/8553a425-d604-4de2-bea9-7ce556fccb2c/0d73d152-bdfb-4aca-98bb-ed33d2b912f4_8553a425-d604-4de2-bea9-7ce556fccb2c_style_Style1.png"
+  },
+  {
+    id: 2,
+    name: "Captain Whiskers",
+    imageSrc: "https://d1mmspri4wgcne.cloudfront.net/users/0d73d152-bdfb-4aca-98bb-ed33d2b912f4/characters/f51c1e70-9c50-4322-a5ee-96f51ba43d40/0d73d152-bdfb-4aca-98bb-ed33d2b912f4_f51c1e70-9c50-4322-a5ee-96f51ba43d40_style_Style6.png"
+  },
+  {
+    id: 3,
+    name: "Astro",
+    imageSrc: "https://d1mmspri4wgcne.cloudfront.net/users/0d73d152-bdfb-4aca-98bb-ed33d2b912f4/characters/aa8854a1-ae57-4f38-8894-85aed2f84789/0d73d152-bdfb-4aca-98bb-ed33d2b912f4_aa8854a1-ae57-4f38-8894-85aed2f84789_style_Style3.png"
+  },
+  {
+    id: 4,
+    name: "Ember",
+    imageSrc: "https://d1mmspri4wgcne.cloudfront.net/users/0d73d152-bdfb-4aca-98bb-ed33d2b912f4/characters/4028445e-cd22-4167-a8dd-3bd4d7306dbf/0d73d152-bdfb-4aca-98bb-ed33d2b912f4_4028445e-cd22-4167-a8dd-3bd4d7306dbf_style_Style2.png"
+  },
+  {
+    id: 5,
+    name: "Melody",
+    imageSrc: "https://d1mmspri4wgcne.cloudfront.net/users/0d73d152-bdfb-4aca-98bb-ed33d2b912f4/characters/91609a2a-2825-4d75-bec3-51501c09035c/0d73d152-bdfb-4aca-98bb-ed33d2b912f4_91609a2a-2825-4d75-bec3-51501c09035c_style_Style4.png"
+  },
+  {
+    id: 6,
+    name: "Zoom",
+    imageSrc: "https://d1mmspri4wgcne.cloudfront.net/users/0d73d152-bdfb-4aca-98bb-ed33d2b912f4/characters/e0362249-d97d-4050-844a-88feb4dfa93f/0d73d152-bdfb-4aca-98bb-ed33d2b912f4_e0362249-d97d-4050-844a-88feb4dfa93f_style_Style5.png"
+  },
+  {
+    id: 7,
+    name: "Oliver",
+    imageSrc: "https://d1mmspri4wgcne.cloudfront.net/users/0d73d152-bdfb-4aca-98bb-ed33d2b912f4/characters/5633ddcc-dd2c-4a66-bf3f-8ea6a6e38ec7/0d73d152-bdfb-4aca-98bb-ed33d2b912f4_5633ddcc-dd2c-4a66-bf3f-8ea6a6e38ec7_style_Style4.png"
+  },
+  {
+    id: 8,
+    name: "Coral",
+    imageSrc: "https://d1mmspri4wgcne.cloudfront.net/users/0d73d152-bdfb-4aca-98bb-ed33d2b912f4/characters/a8ee270e-e84c-40c6-b718-9de9e752aad9/0d73d152-bdfb-4aca-98bb-ed33d2b912f4_a8ee270e-e84c-40c6-b718-9de9e752aad9_style_Style1.png"
+  }
+];
 
 const ExperienceTheMagic: React.FC = () => {
   return (
@@ -190,21 +226,23 @@ const ExperienceTheMagic: React.FC = () => {
             {characters.map((character) => (
               <div
                 key={character.id}
-                className="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 p-4 text-center"
+                className="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden"
               >
-                {/* Character Image Placeholder */}
-                <ImagePlaceholder
-                  label={character.name}
-                  aspectRatio="square"
-                  className="mb-3 rounded-lg"
-                />
+                {/* Character Image */}
+                <div className="aspect-square relative">
+                  <img
+                    src={character.imageSrc}
+                    alt={character.name}
+                    loading="lazy"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
 
-                <p className="text-sm font-semibold text-neutral-700">
-                  {character.name}
-                </p>
-                <p className="text-xs text-neutral-500 mt-1">
-                  Character image coming soon
-                </p>
+                <div className="p-3 text-center">
+                  <p className="text-sm font-semibold text-neutral-700">
+                    {character.name}
+                  </p>
+                </div>
               </div>
             ))}
           </div>
