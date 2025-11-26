@@ -34,6 +34,7 @@ const FounderSection: React.FC = () => {
                 src={founderImages[currentImageIndex].src}
                 alt={`Nathan - ${founderImages[currentImageIndex].label}`}
                 className="w-full h-full object-cover transition-opacity duration-500"
+                style={{ objectPosition: currentImageIndex === 0 ? 'center 60%' : 'center' }}
               />
             </div>
 
