@@ -4,14 +4,14 @@ import Card from '../ui/Card';
 const Testimonials: React.FC = () => {
   const testimonials = [
     {
-      quote: 'My son made a character called "Professor Whiskers" and we\'re on chapter 11 now. He literally counts down the hours until bedtime.',
-      name: 'Sarah',
-      role: 'Mum of 2 (ages 6 & 8)'
+      quote: 'Great all round product at great value, would recommend to any parent!',
+      name: 'Lucy',
+      role: 'Mother of 2'
     },
     {
-      quote: 'The French narration is really good quality. My daughter switches between English and French versions of the same story, which is great for her language learning.',
-      name: 'Jean-Luc',
-      role: 'Dad of 1 (age 4)'
+      quote: 'A magical personalised adventure! My favorite thing is being able to turn your loved ones into heroes.',
+      name: 'Deborah',
+      role: 'Mother of 3'
     },
     {
       quote: 'Was skeptical about AI stories but the Character Wizard changed my mind. We made a character based on my son and now every story feels like it\'s actually about him. Much better than I expected.',
