@@ -4,27 +4,27 @@ const HowItWorks: React.FC = () => {
   const steps = [
     {
       number: 1,
-      title: 'Create Characters',
-      description: 'Turn photos into story heroes, or describe them from imagination. Pick from 6 art styles.',
+      title: 'Build Characters',
+      description: 'Create persistent characters with traits and abilities that live across all your stories.',
       emoji: '🎨'
     },
     {
       number: 2,
-      title: 'Generate Stories',
-      description: 'Pick a theme, add your characters, and watch unique tales appear in seconds.',
+      title: 'Create Stories',
+      description: 'Quick Story for instant magic, Story Wizard for full control, or browse Fairy Corner classics.',
       emoji: '✨'
     },
     {
       number: 3,
-      title: 'Listen Together',
-      description: 'Choose a voice and language, or read it yourself. Perfect for bedtime.',
+      title: 'Listen & Read',
+      description: 'Enjoy narration in 12 languages, or read together. Your choice.',
       emoji: '🎧'
     },
     {
       number: 4,
-      title: 'Songs & Sequels',
-      description: 'Turn stories into catchy songs, or continue the adventure tomorrow night.',
-      emoji: '🎵'
+      title: 'Continue Adventures',
+      description: 'Extend into multi-chapter books, create custom songs, or write sequels with the same characters.',
+      emoji: '📖'
     }
   ];
 

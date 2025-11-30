@@ -97,15 +97,15 @@ const VideoPlayer: React.FC<VideoPlayerProps> = ({
       {/* Play Button Overlay (Mobile or when paused) */}
       {showPlayButton && (
         <div
-          className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30 rounded-lg cursor-pointer transition-opacity hover:bg-opacity-40"
+          className="absolute inset-0 flex items-center justify-center bg-gradient-to-b from-black/20 to-black/40 rounded-lg cursor-pointer transition-all hover:from-black/30 hover:to-black/50"
           onClick={handlePlayClick}
         >
           <button
-            className="bg-white bg-opacity-90 rounded-full p-6 shadow-2xl hover:bg-opacity-100 transition-all hover:scale-110"
+            className="bg-gradient-to-br from-soft-blue-600 to-soft-green-600 rounded-full p-6 shadow-2xl hover:shadow-3xl transition-all hover:scale-110 active:scale-95 group"
             aria-label="Play video"
           >
             <svg
-              className="w-12 h-12 text-soft-blue-600"
+              className="w-14 h-14 text-white ml-1"
               fill="currentColor"
               viewBox="0 0 24 24"
             >

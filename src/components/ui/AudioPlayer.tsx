@@ -69,28 +69,21 @@ const AudioPlayer: React.FC<AudioPlayerProps> = ({ src, title, className = '' })
   };
 
   return (
-    <div className={`bg-gradient-to-r from-soft-blue-50 to-soft-green-50 rounded-lg p-4 shadow-md ${className}`}>
+    <div className={`bg-white border border-neutral-200 rounded-xl p-5 shadow-sm hover:shadow-md transition-shadow ${className}`}>
       {/* Hidden Audio Element */}
       <audio ref={audioRef} src={src} preload="metadata" aria-label={title || 'Audio player'} />
 
-      {/* Title */}
-      {title && (
-        <div className="mb-3">
-          <p className="text-sm font-semibold text-neutral-800">{title}</p>
-        </div>
-      )}
-
       {/* Player Controls */}
-      <div className="flex items-center gap-3">
-        {/* Play/Pause Button */}
+      <div className="flex items-center gap-4">
+        {/* Play/Pause Button - Larger & More Modern */}
         <button
           onClick={togglePlay}
           disabled={isLoading}
-          className="flex-shrink-0 w-10 h-10 bg-gradient-to-r from-soft-blue-500 to-soft-green-500 rounded-full flex items-center justify-center shadow-md hover:shadow-lg transition-all hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed"
+          className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-soft-blue-600 to-soft-green-600 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all hover:scale-110 active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed group"
           aria-label={isPlaying ? 'Pause' : 'Play'}
         >
           {isLoading ? (
-            <svg className="w-5 h-5 text-white animate-spin" viewBox="0 0 24 24" fill="none">
+            <svg className="w-6 h-6 text-white animate-spin" viewBox="0 0 24 24" fill="none">
               <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
               <path
                 className="opacity-75"
@@ -103,39 +96,52 @@ const AudioPlayer: React.FC<AudioPlayerProps> = ({ src, title, className = '' })
               <path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z" />
             </svg>
           ) : (
-            <svg className="w-5 h-5 text-white ml-0.5" fill="currentColor" viewBox="0 0 24 24">
+            <svg className="w-6 h-6 text-white ml-1" fill="currentColor" viewBox="0 0 24 24">
               <path d="M8 5v14l11-7z" />
             </svg>
           )}
         </button>
 
-        {/* Progress Bar */}
-        <div className="flex-1 flex items-center gap-2">
-          <span className="text-xs text-neutral-600 font-medium min-w-[35px]">
-            {formatTime(currentTime)}
-          </span>
-          <input
-            type="range"
-            min="0"
-            max={duration || 0}
-            value={currentTime}
-            onChange={handleSeek}
-            disabled={isLoading}
-            className="flex-1 h-2 bg-white rounded-full appearance-none cursor-pointer disabled:cursor-not-allowed"
-            style={{
-              background: `linear-gradient(to right, #3B82F6 0%, #22C55E ${(currentTime / duration) * 100}%, #e5e7eb ${(currentTime / duration) * 100}%, #e5e7eb 100%)`,
-            }}
-            aria-label="Seek audio"
-          />
-          <span className="text-xs text-neutral-600 font-medium min-w-[35px]">
-            {formatTime(duration)}
-          </span>
+        {/* Progress Bar & Time - Modern Layout */}
+        <div className="flex-1 flex flex-col gap-2">
+          {/* Title - Above progress bar if exists */}
+          {title && (
+            <p className="text-sm font-medium text-neutral-700">{title}</p>
+          )}
+
+          {/* Progress Bar Container */}
+          <div className="flex items-center gap-3">
+            <span className="text-xs text-neutral-500 font-medium tabular-nums min-w-[38px]">
+              {formatTime(currentTime)}
+            </span>
+
+            {/* Modern Progress Bar */}
+            <div className="flex-1 relative group/progress">
+              <input
+                type="range"
+                min="0"
+                max={duration || 0}
+                value={currentTime}
+                onChange={handleSeek}
+                disabled={isLoading}
+                className="w-full h-1.5 bg-neutral-200 rounded-full appearance-none cursor-pointer disabled:cursor-not-allowed slider"
+                style={{
+                  background: `linear-gradient(to right, #3B82F6 0%, #22C55E ${(currentTime / duration) * 100}%, #E5E7EB ${(currentTime / duration) * 100}%, #E5E7EB 100%)`,
+                }}
+                aria-label="Seek audio"
+              />
+            </div>
+
+            <span className="text-xs text-neutral-500 font-medium tabular-nums min-w-[38px]">
+              {formatTime(duration)}
+            </span>
+          </div>
         </div>
       </div>
 
       {/* Loading State Text */}
       {isLoading && (
-        <p className="text-xs text-neutral-500 mt-2 text-center">Loading audio...</p>
+        <p className="text-xs text-neutral-400 mt-2 text-center animate-pulse">Loading audio...</p>
       )}
     </div>
   );
