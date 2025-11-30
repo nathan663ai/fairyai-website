@@ -56,3 +56,41 @@ body {
   background-clip: text;
   animation: gradient-shift 6s ease infinite;
 }
+
+/* Carousel utilities - hide scrollbar */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;  /* Chrome, Safari, Opera */
+}
+
+/* Banner aspect ratio for hero */
+.aspect-banner {
+  aspect-ratio: 21 / 9;
+}
+@media (max-width: 768px) {
+  .aspect-banner {
+    aspect-ratio: 16 / 9;
+  }
+}
+
+/* Scroll snap utilities (Tailwind doesn't have all variants) */
+.snap-x {
+  scroll-snap-type: x mandatory;
+}
+.snap-mandatory {
+  scroll-snap-type: x mandatory;
+}
+.snap-start {
+  scroll-snap-align: start;
+}
+.snap-center {
+  scroll-snap-align: center;
+}
+
+/* Smooth scroll behavior for carousels */
+.overflow-x-auto {
+  scroll-behavior: smooth;
+}

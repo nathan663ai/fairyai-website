@@ -31,42 +31,49 @@ const Testimonials: React.FC = () => {
   ];
 
   return (
-    <section id="testimonials" className="py-16 md:py-24 bg-neutral-50">
+    <section id="testimonials" className="py-6 md:py-10 bg-neutral-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center mb-16">
-          <h2 className="font-display text-3xl md:text-4xl font-bold text-neutral-900 mb-4">
+        <div className="text-center mb-8">
+          <h2 className="font-display text-3xl md:text-4xl font-bold text-neutral-900 mb-3">
             What Parents Are Saying
           </h2>
+          <p className="text-lg text-neutral-600">
+            Swipe to read more reviews
+          </p>
         </div>
 
-        {/* Testimonials Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {testimonials.map((testimonial, index) => (
-            <Card key={index} className="flex flex-col">
-              {/* Quote Icon */}
-              <div className="text-soft-blue-400 text-5xl mb-4 leading-none">"</div>
+        {/* Testimonials Carousel */}
+        <div className="relative">
+          <div className="flex overflow-x-auto snap-x snap-mandatory scrollbar-hide gap-4 pb-4">
+            {testimonials.map((testimonial, index) => (
+              <div key={index} className="flex-shrink-0 w-80 snap-start">
+                <Card className="h-full flex flex-col p-4">
+                  {/* Quote Icon */}
+                  <div className="text-soft-blue-400 text-4xl mb-3 leading-none">"</div>
 
-              {/* Quote Text */}
-              <p className="text-lg text-neutral-700 mb-6 flex-grow italic">
-                {testimonial.quote}
-              </p>
+                  {/* Quote Text */}
+                  <p className="text-base text-neutral-700 mb-4 flex-grow italic">
+                    {testimonial.quote}
+                  </p>
 
-              {/* Author Info */}
-              <div className="flex items-center gap-4">
-                {/* Avatar Placeholder */}
-                <div className="w-12 h-12 bg-gradient-to-br from-soft-blue-400 to-soft-green-400 rounded-full flex items-center justify-center text-white font-bold">
-                  {testimonial.name.charAt(0)}
-                </div>
+                  {/* Author Info */}
+                  <div className="flex items-center gap-3">
+                    {/* Avatar Placeholder */}
+                    <div className="w-10 h-10 bg-gradient-to-br from-soft-blue-400 to-soft-green-400 rounded-full flex items-center justify-center text-white font-bold text-sm">
+                      {testimonial.name.charAt(0)}
+                    </div>
 
-                {/* Name and Role */}
-                <div>
-                  <p className="font-semibold text-neutral-900">{testimonial.name}</p>
-                  <p className="text-sm text-neutral-500">{testimonial.role}</p>
-                </div>
+                    {/* Name and Role */}
+                    <div>
+                      <p className="font-semibold text-neutral-900 text-sm">{testimonial.name}</p>
+                      <p className="text-xs text-neutral-500">{testimonial.role}</p>
+                    </div>
+                  </div>
+                </Card>
               </div>
-            </Card>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </section>

@@ -1,12 +1,14 @@
 import React from 'react';
 
 interface DownloadButtonsProps {
-  variant?: 'default' | 'gradient';
+  variant?: 'default' | 'gradient' | 'light';
 }
 
 const DownloadButtons: React.FC<DownloadButtonsProps> = ({ variant = 'default' }) => {
   const bgClass = variant === 'gradient'
     ? 'bg-gradient-to-r from-soft-blue-500 to-soft-green-500 text-white shadow-xl hover:shadow-2xl'
+    : variant === 'light'
+    ? 'bg-white text-soft-blue-600 shadow-lg hover:shadow-xl hover:bg-neutral-50'
     : 'bg-black text-white';
 
   return (

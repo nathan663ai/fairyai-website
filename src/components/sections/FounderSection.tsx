@@ -13,21 +13,21 @@ const FounderSection: React.FC = () => {
     setCurrentImageIndex((prevIndex) => (prevIndex + 1) % founderImages.length);
   };
   return (
-    <section id="about" className="py-16 md:py-24 bg-white">
+    <section id="about" className="py-6 md:py-10 bg-white">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center mb-12">
-          <h2 className="font-display text-3xl md:text-4xl font-bold text-neutral-900 mb-4">
+        <div className="text-center mb-6">
+          <h2 className="font-display text-3xl md:text-4xl font-bold text-neutral-900 mb-2">
             Built by a Parent Who Gets It
           </h2>
         </div>
 
         {/* Content */}
-        <div className="grid md:grid-cols-3 gap-12 items-center">
+        <div className="grid md:grid-cols-3 gap-8 items-center">
           {/* Founder Image */}
-          <div className="md:col-span-1 flex flex-col items-center gap-4">
+          <div className="md:col-span-1 flex flex-col items-center gap-3">
             <div
-              className="w-48 h-48 md:w-64 md:h-64 cursor-pointer transition-all duration-500 hover:scale-105 hover:shadow-2xl rounded-full shadow-xl overflow-hidden"
+              className="w-40 h-40 md:w-48 md:h-48 cursor-pointer transition-all duration-500 hover:scale-105 hover:shadow-2xl rounded-full shadow-xl overflow-hidden"
               onClick={handleImageClick}
             >
               <img
@@ -51,17 +51,14 @@ const FounderSection: React.FC = () => {
 
           {/* Story Text */}
           <div className="md:col-span-2">
-            <div className="prose prose-lg max-w-none">
-              <p className="text-lg text-neutral-700 leading-relaxed mb-6">
-                Hi, I'm <span className="font-semibold text-neutral-900">Nathan</span>, a parent just like you. FairyAI was born from bedtime chaos in my own home and the desire to give kids something truly special.
+            <div className="prose max-w-none">
+              <p className="text-base text-neutral-700 leading-relaxed mb-4">
+                Hi, I'm <span className="font-semibold text-neutral-900">Nathan</span>, a parent just like you. FairyAI was born from bedtime chaos in my own home. What started as a side project to help my daughter has grown into a community of families turning bedtime battles into magical moments.
               </p>
-              <p className="text-lg text-neutral-700 leading-relaxed mb-6">
-                What started as a side project to help my daughter has now grown into a community of families turning bedtime battles into magical moments. I built this app because I needed it for my family, and now I'm thrilled to share it with yours – shaped by the feedback of amazing parents along the way.
+              <p className="text-base text-neutral-700 leading-relaxed mb-4">
+                I didn't want to build just another "type a sentence, get a story" app. I wanted characters my kids would remember, stories that could grow into chapter books, and safety I'd trust with my own family. FairyAI is what I built for my kids. I hope it becomes part of your bedtime routine too.
               </p>
-              <p className="text-lg text-neutral-700 leading-relaxed mb-6">
-                I didn't want to build just another "type a sentence, get a story" app. I wanted a proper engine with characters my kids would remember, stories that could grow into chapter books, and safety I'd trust with my own family. FairyAI is what I built for my kids. I hope it becomes part of your bedtime routine too.
-              </p>
-              <p className="text-lg text-neutral-700 leading-relaxed italic">
+              <p className="text-base text-neutral-700 leading-relaxed italic">
                 — Nathan, Dad & Founder
               </p>
             </div>

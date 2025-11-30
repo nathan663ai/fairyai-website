@@ -3,7 +3,7 @@ import React from 'react';
 interface ImagePlaceholderProps {
   label: string;
   className?: string;
-  aspectRatio?: 'square' | 'video' | 'portrait';
+  aspectRatio?: 'square' | 'video' | 'portrait' | 'banner';
 }
 
 const ImagePlaceholder: React.FC<ImagePlaceholderProps> = ({
@@ -14,7 +14,8 @@ const ImagePlaceholder: React.FC<ImagePlaceholderProps> = ({
   const aspectClasses = {
     square: 'aspect-square',
     video: 'aspect-video',
-    portrait: 'aspect-[3/4]'
+    portrait: 'aspect-[3/4]',
+    banner: 'aspect-banner'
   };
 
   return (
