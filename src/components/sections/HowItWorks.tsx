@@ -4,27 +4,27 @@ const HowItWorks: React.FC = () => {
   const steps = [
     {
       number: 1,
-      title: 'Create a Character',
-      description: 'Choose traits, style, and avatar.',
-      emoji: '✨'
+      title: 'Create Characters',
+      description: 'Turn photos into story heroes, or describe them from imagination. Pick from 6 art styles.',
+      emoji: '🎨'
     },
     {
       number: 2,
-      title: 'Pick a Theme',
-      description: 'Pirates, friendship, space adventures – or create your own.',
-      emoji: '🚀'
+      title: 'Generate Stories',
+      description: 'Pick a theme, add your characters, and watch unique tales appear in seconds.',
+      emoji: '✨'
     },
     {
       number: 3,
-      title: 'Generate Your Story',
-      description: 'AI creates a unique tale tailored to your child.',
-      emoji: '📖'
+      title: 'Listen Together',
+      description: 'Choose a voice and language, or read it yourself. Perfect for bedtime.',
+      emoji: '🎧'
     },
     {
       number: 4,
-      title: 'Read or Listen Together',
-      description: 'Enjoy professional narration or read it yourself.',
-      emoji: '🎧'
+      title: 'Songs & Sequels',
+      description: 'Turn stories into catchy songs, or continue the adventure tomorrow night.',
+      emoji: '🎵'
     }
   ];
 
@@ -41,25 +41,32 @@ const HowItWorks: React.FC = () => {
           </p>
         </div>
 
-        {/* Desktop: Horizontal with Arrows */}
+        {/* Desktop: Horizontal with Curved Arrows */}
         <div className="hidden lg:flex items-start justify-between gap-4">
           {steps.map((step, index) => (
             <React.Fragment key={step.number}>
               {/* Step Card */}
               <div className="flex-1 text-center">
-                <div className="bg-gradient-to-br from-soft-blue-500 to-soft-green-500 w-12 h-12 rounded-full flex items-center justify-center text-white text-xl font-bold mx-auto mb-3 shadow-lg">
+                {/* Number ABOVE Circle */}
+                <div className="text-4xl md:text-5xl font-bold text-fairy-gold-500 mb-3">
                   {step.number}
                 </div>
-                <div className="text-3xl mb-2">{step.emoji}</div>
-                <h3 className="font-display text-lg font-semibold mb-2">{step.title}</h3>
-                <p className="text-sm text-neutral-600">{step.description}</p>
+
+                {/* Large Circular Illustration */}
+                <div className="w-32 h-32 md:w-40 md:h-40 mx-auto rounded-full bg-gradient-to-br from-fairy-gold-50 to-soft-blue-50 flex items-center justify-center shadow-lg mb-4">
+                  <span className="text-5xl">{step.emoji}</span>
+                </div>
+
+                {/* Title and Description */}
+                <h3 className="font-display text-lg font-semibold mb-2 text-neutral-900">{step.title}</h3>
+                <p className="text-sm text-neutral-600 leading-relaxed">{step.description}</p>
               </div>
 
-              {/* Arrow Connector */}
+              {/* Curved Arrow Connector */}
               {index < steps.length - 1 && (
-                <div className="flex items-center pt-6">
-                  <svg className="w-8 h-8 text-soft-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                <div className="flex items-center pt-20">
+                  <svg className="w-10 h-10 text-fairy-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
                   </svg>
                 </div>
               )}
@@ -68,15 +75,22 @@ const HowItWorks: React.FC = () => {
         </div>
 
         {/* Mobile: Vertical Stack (no arrows) */}
-        <div className="lg:hidden grid gap-6">
+        <div className="lg:hidden grid gap-8">
           {steps.map((step) => (
             <div key={step.number} className="text-center">
-              <div className="bg-gradient-to-br from-soft-blue-500 to-soft-green-500 w-12 h-12 rounded-full flex items-center justify-center text-white text-xl font-bold mx-auto mb-3 shadow-lg">
+              {/* Number ABOVE Circle */}
+              <div className="text-4xl font-bold text-fairy-gold-500 mb-3">
                 {step.number}
               </div>
-              <div className="text-3xl mb-2">{step.emoji}</div>
-              <h3 className="font-display text-lg font-semibold mb-2">{step.title}</h3>
-              <p className="text-sm text-neutral-600">{step.description}</p>
+
+              {/* Large Circular Illustration */}
+              <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-br from-fairy-gold-50 to-soft-blue-50 flex items-center justify-center shadow-lg mb-4">
+                <span className="text-5xl">{step.emoji}</span>
+              </div>
+
+              {/* Title and Description */}
+              <h3 className="font-display text-lg font-semibold mb-2 text-neutral-900">{step.title}</h3>
+              <p className="text-sm text-neutral-600 leading-relaxed">{step.description}</p>
             </div>
           ))}
         </div>
