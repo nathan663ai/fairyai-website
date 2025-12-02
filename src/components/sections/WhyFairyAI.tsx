@@ -56,6 +56,7 @@ const WhyFairyAI: React.FC = () => {
                     <img
                       src={reason.imageSrc}
                       alt={reason.title}
+                      loading="lazy"
                       className="w-full h-full object-cover rounded-full"
                       onError={(e) => {
                         // Fallback to emoji if image not found
@@ -99,6 +100,7 @@ const WhyFairyAI: React.FC = () => {
                   <img
                     src={reason.imageSrc}
                     alt={reason.title}
+                    loading="lazy"
                     className="w-full h-full object-cover rounded-full"
                     onError={(e) => {
                       // Fallback to emoji if image not found

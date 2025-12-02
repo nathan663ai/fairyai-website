@@ -148,6 +148,7 @@ const ExperienceTheMagic: React.FC = () => {
                       <img
                         src={story.imageUrl}
                         alt={story.title}
+                        loading="lazy"
                         className="w-full h-full object-cover"
                       />
                     </div>

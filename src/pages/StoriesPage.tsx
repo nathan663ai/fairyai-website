@@ -62,6 +62,7 @@ const StoriesPage: React.FC = () => {
                       <img
                         src={story.imageUrl}
                         alt={story.title}
+                        loading="lazy"
                         className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                       />
                     ) : (

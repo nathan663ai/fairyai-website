@@ -66,6 +66,7 @@ const Footer: React.FC = () => {
             <img
               src="/images/splash-logo-transparent.png"
               alt="FairyAI Logo"
+              loading="lazy"
               className="h-12 w-auto mb-4 brightness-0 invert"
             />
             <p className="text-sm text-neutral-400">

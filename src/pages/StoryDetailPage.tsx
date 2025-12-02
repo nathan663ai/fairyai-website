@@ -151,6 +151,7 @@ const StoryDetailPage: React.FC = () => {
                 <img
                   src={currentGingerbread.imageUrl}
                   alt={currentGingerbread.title}
+                  loading="lazy"
                   className="w-full rounded-lg shadow-lg"
                 />
 
@@ -262,6 +263,7 @@ const StoryDetailPage: React.FC = () => {
                 <img
                   src={currentTidalStar.imageUrl}
                   alt={currentTidalStar.title}
+                  loading="lazy"
                   className="w-full rounded-lg shadow-lg"
                 />
 

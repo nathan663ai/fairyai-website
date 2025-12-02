@@ -62,6 +62,7 @@ const UserExampleStoryPage: React.FC = () => {
               <img
                 src={currentVariation.imageUrl}
                 alt={`Cover illustration for Ages ${currentVariation.context.ageRange}`}
+                loading="lazy"
                 className="w-full rounded-lg shadow-lg"
               />
             )}

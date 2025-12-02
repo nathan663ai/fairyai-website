@@ -33,6 +33,7 @@ const FounderSection: React.FC = () => {
               <img
                 src={founderImages[currentImageIndex].src}
                 alt={`Nathan - ${founderImages[currentImageIndex].label}`}
+                loading="lazy"
                 className="w-full h-full object-cover transition-opacity duration-500"
                 style={{ objectPosition: currentImageIndex === 0 ? 'center 65%' : 'center' }}
               />
