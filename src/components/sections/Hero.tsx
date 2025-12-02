@@ -1,15 +1,15 @@
 import React from 'react';
 import DownloadButtons from '../ui/DownloadButtons';
-import ImagePlaceholder from '../ui/ImagePlaceholder';
 
 const Hero: React.FC = () => {
   return (
     <section className="relative h-[500px] md:h-[600px] overflow-hidden">
       {/* Background Banner Image */}
-      <ImagePlaceholder
-        label="Hero Banner - Parent & Child Reading Together in Cozy Bedtime Setting"
-        aspectRatio="banner"
-        className="absolute inset-0 w-full h-full object-cover rounded-none"
+      <img
+        src="/images/hero-banner.png"
+        alt="Parent and child reading a bedtime story together on a tablet"
+        loading="eager"
+        className="absolute inset-0 w-full h-full object-cover"
       />
 
       {/* Gradient Overlay for Text Readability */}
