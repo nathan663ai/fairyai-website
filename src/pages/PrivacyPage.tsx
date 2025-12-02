@@ -34,7 +34,7 @@ const PrivacyPage: React.FC = () => {
             <div className="mb-10">
               <h2 className="text-2xl font-bold text-neutral-900 mb-4">1.5 How FairyAI Works</h2>
               <p className="text-neutral-700 leading-relaxed mb-4">
-                FairyAI is designed for parents, guardians, and caregivers to use on their own devices to create personalized stories, characters, and songs for children ages 2-12.
+                FairyAI is designed for parents, guardians, and caregivers to use on their own devices to create personalised stories, characters, and songs for children ages 2-12.
               </p>
               <p className="text-neutral-700 leading-relaxed mb-4">
                 The app user is the adult, not the child. We collect data about your account and usage, not about the children who listen to or enjoy the content you create.

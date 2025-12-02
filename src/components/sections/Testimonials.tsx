@@ -6,12 +6,12 @@ const Testimonials: React.FC = () => {
     {
       quote: 'Great all round product at great value, would recommend to any parent!',
       name: 'Lucy',
-      role: 'Mother of 2'
+      role: 'Mum of 2'
     },
     {
-      quote: 'A magical personalised adventure! My favorite thing is being able to turn your loved ones into heroes.',
+      quote: 'A magical personalised adventure! My favourite thing is being able to turn your loved ones into heroes.',
       name: 'Deborah',
-      role: 'Mother of 3'
+      role: 'Mum of 3'
     },
     {
       quote: 'Was skeptical about AI stories but the Character Wizard changed my mind. We made a character based on my son and now every story feels like it\'s actually about him. Much better than I expected.',
