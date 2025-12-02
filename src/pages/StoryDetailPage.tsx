@@ -5,7 +5,7 @@ import SongPlayer from '../components/ui/SongPlayer';
 import ImagePlaceholder from '../components/ui/ImagePlaceholder';
 import DownloadButtons from '../components/ui/DownloadButtons';
 import { gingerbreadStoryEnGB, gingerbreadStoryEnUS, gingerbreadStoryFR, gingerbreadStoryES, gingerbreadStoryDE, gingerbreadStoryIT, gingerbreadStoryPT, gingerbreadStoryNL, gingerbreadStoryPL, gingerbreadStoryZH, gingerbreadStoryJA, gingerbreadStoryKO } from '../data/gingerbreadStory';
-import { tidalStarStoryEnGB, tidalStarStoryEnUS, tidalStarStoryFR, tidalStarStoryES, tidalStarStoryDE, tidalStarStoryIT, tidalStarStoryPT, tidalStarStoryNL, tidalStarStoryPL, tidalStarStoryZH, tidalStarStoryJA, tidalStarStoryKO } from '../data/tidalStarStory';
+import { bluebellSeaStoryEnGB, bluebellSeaStoryEnUS, bluebellSeaStoryFR, bluebellSeaStoryES, bluebellSeaStoryDE, bluebellSeaStoryIT, bluebellSeaStoryPT, bluebellSeaStoryNL, bluebellSeaStoryPL, bluebellSeaStoryZH, bluebellSeaStoryJA, bluebellSeaStoryKO } from '../data/bluebellSeaStory';
 import { storyExamples } from '../data/stories';
 
 const StoryDetailPage: React.FC = () => {
@@ -41,22 +41,22 @@ const StoryDetailPage: React.FC = () => {
 
   const currentNarrator = currentGingerbread.narrators.find(n => n.id === selectedNarrator) || currentGingerbread.narrators[0];
 
-  // Get current tidal star data if applicable
-  const currentTidalStar =
-    selectedLanguage === 'en-GB' ? tidalStarStoryEnGB :
-    selectedLanguage === 'en-US' ? tidalStarStoryEnUS :
-    selectedLanguage === 'fr' ? tidalStarStoryFR :
-    selectedLanguage === 'es' ? tidalStarStoryES :
-    selectedLanguage === 'de' ? tidalStarStoryDE :
-    selectedLanguage === 'it' ? tidalStarStoryIT :
-    selectedLanguage === 'pt' ? tidalStarStoryPT :
-    selectedLanguage === 'nl' ? tidalStarStoryNL :
-    selectedLanguage === 'pl' ? tidalStarStoryPL :
-    selectedLanguage === 'zh' ? tidalStarStoryZH :
-    selectedLanguage === 'ja' ? tidalStarStoryJA :
-    tidalStarStoryKO;
+  // Get current bluebell sea data if applicable
+  const currentBluebellSea =
+    selectedLanguage === 'en-GB' ? bluebellSeaStoryEnGB :
+    selectedLanguage === 'en-US' ? bluebellSeaStoryEnUS :
+    selectedLanguage === 'fr' ? bluebellSeaStoryFR :
+    selectedLanguage === 'es' ? bluebellSeaStoryES :
+    selectedLanguage === 'de' ? bluebellSeaStoryDE :
+    selectedLanguage === 'it' ? bluebellSeaStoryIT :
+    selectedLanguage === 'pt' ? bluebellSeaStoryPT :
+    selectedLanguage === 'nl' ? bluebellSeaStoryNL :
+    selectedLanguage === 'pl' ? bluebellSeaStoryPL :
+    selectedLanguage === 'zh' ? bluebellSeaStoryZH :
+    selectedLanguage === 'ja' ? bluebellSeaStoryJA :
+    bluebellSeaStoryKO;
 
-  const currentTidalStarNarrator = currentTidalStar.narrators.find(n => n.id === selectedNarrator) || currentTidalStar.narrators[0];
+  const currentBluebellSeaNarrator = currentBluebellSea.narrators.find(n => n.id === selectedNarrator) || currentBluebellSea.narrators[0];
 
   const getCreationMethodBadge = (method: string) => {
     switch (method) {
@@ -93,7 +93,7 @@ const StoryDetailPage: React.FC = () => {
           </Link>
           <h1 className="font-display text-3xl md:text-4xl font-bold text-neutral-900 mb-3">
             {story.id === 'gingerbread-man' ? currentGingerbread.title :
-             story.id === 'whispers-tidal-star' ? currentTidalStar.title :
+             story.id === 'bluebell-sea' ? currentBluebellSea.title :
              story.title}
           </h1>
           <div className="flex flex-wrap gap-2">
@@ -225,7 +225,7 @@ const StoryDetailPage: React.FC = () => {
                   </p>
                 </div>
               </>
-            ) : story.id === 'whispers-tidal-star' ? (
+            ) : story.id === 'bluebell-sea' ? (
               /* Whispers of the Tidal Star - Enhanced with Language & Narrators */
               <>
                 {/* Language Selector */}
@@ -261,14 +261,14 @@ const StoryDetailPage: React.FC = () => {
 
                 {/* Story Image */}
                 <img
-                  src={currentTidalStar.imageUrl}
-                  alt={currentTidalStar.title}
+                  src={currentBluebellSea.imageUrl}
+                  alt={currentBluebellSea.title}
                   loading="lazy"
                   className="w-full rounded-lg shadow-lg"
                 />
 
                 {/* Narrator Selector or Coming Soon Message */}
-                {currentTidalStar.narrators.length > 0 ? (
+                {currentBluebellSea.narrators.length > 0 ? (
                   <>
                     <div>
                       <label htmlFor="narrator-select" className="block text-sm font-semibold text-neutral-700 mb-2">
@@ -280,7 +280,7 @@ const StoryDetailPage: React.FC = () => {
                         onChange={(e) => setSelectedNarrator(e.target.value)}
                         className="w-full md:w-64 px-3 py-2 bg-white border border-neutral-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-soft-blue-500"
                       >
-                        {currentTidalStar.narrators.map((narrator) => (
+                        {currentBluebellSea.narrators.map((narrator) => (
                           <option key={narrator.id} value={narrator.id}>
                             {narrator.name} ({Math.floor(narrator.duration / 60)}:{(narrator.duration % 60).toString().padStart(2, '0')})
                           </option>
@@ -292,8 +292,8 @@ const StoryDetailPage: React.FC = () => {
                     <div>
                       <h3 className="text-lg font-semibold text-neutral-900 mb-3">🎧 Listen to Story</h3>
                       <AudioPlayer
-                        src={currentTidalStarNarrator.audioUrl}
-                        title={`${currentTidalStar.title} - ${currentTidalStarNarrator.name}`}
+                        src={currentBluebellSeaNarrator.audioUrl}
+                        title={`${currentBluebellSea.title} - ${currentBluebellSeaNarrator.name}`}
                       />
                     </div>
                   </>
@@ -308,10 +308,10 @@ const StoryDetailPage: React.FC = () => {
                 )}
 
                 {/* Songs or Coming Soon Message */}
-                {currentTidalStar.songs.length > 0 ? (
+                {currentBluebellSea.songs.length > 0 ? (
                   <div>
                     <h3 className="text-lg font-semibold text-neutral-900 mb-3">🎵 Songs from this Story</h3>
-                    <SongPlayer songs={currentTidalStar.songs} />
+                    <SongPlayer songs={currentBluebellSea.songs} />
                   </div>
                 ) : (
                   <div className="bg-soft-green-50 rounded-lg p-6 border border-soft-green-200">
@@ -326,7 +326,7 @@ const StoryDetailPage: React.FC = () => {
                 <div>
                   <h3 className="text-lg font-semibold text-neutral-900 mb-3">📖 Full Story</h3>
                   <div className="bg-neutral-50 rounded-lg p-6 max-h-[600px] overflow-y-auto">
-                    {currentTidalStar.content.split('\n\n').map((paragraph, idx) => {
+                    {currentBluebellSea.content.split('\n\n').map((paragraph, idx) => {
                       const parts = paragraph.split(/(\*\*.*?\*\*)/g);
                       return (
                         <p key={idx} className="text-neutral-700 mb-4 leading-relaxed">
