@@ -1,4 +1,5 @@
 import React from 'react';
+import { Palette, Zap, Wand2, BookOpen, Headphones, Music, Library, Shield, ChevronLeft, ChevronRight } from 'lucide-react';
 import VideoPlayer from '../components/ui/VideoPlayer';
 import DownloadButtons from '../components/ui/DownloadButtons';
 import Card from '../components/ui/Card';
@@ -6,42 +7,42 @@ import Card from '../components/ui/Card';
 const HowItWorksPage: React.FC = () => {
   const features = [
     {
-      icon: '🎨',
+      icon: Palette,
       title: 'Build Characters',
       description: 'Create once, use forever. Give them traits, abilities, and custom images.'
     },
     {
-      icon: '⚡',
+      icon: Zap,
       title: 'Quick Story',
       description: '2 taps for instant magic when you just need a story fast.'
     },
     {
-      icon: '🧙',
+      icon: Wand2,
       title: 'Story Wizard',
       description: 'Full control: characters, theme, moral lesson, plot hints.'
     },
     {
-      icon: '📖',
+      icon: BookOpen,
       title: 'Continue Adventures',
       description: 'Turn any story into multi-chapter books. Quick or advanced mode.'
     },
     {
-      icon: '🎧',
+      icon: Headphones,
       title: '12 Languages',
       description: 'Stories, narration, and songs in native-quality audio.'
     },
     {
-      icon: '🎵',
+      icon: Music,
       title: 'Custom Songs',
       description: 'Turn stories into catchy songs with lyrics and melodies.'
     },
     {
-      icon: '📚',
+      icon: Library,
       title: 'Fairy Corner',
       description: 'Classic tales, daily AI stories, nursery rhymes. 2 always free.'
     },
     {
-      icon: '🛡️',
+      icon: Shield,
       title: 'Age-Smart',
       description: 'Content adapts for ages 2-12. Safe filters on everything.'
     }
@@ -139,6 +140,10 @@ const HowItWorksPage: React.FC = () => {
                 </Card>
               </div>
             </div>
+            {/* Swipe Hint - Mobile Only */}
+            <p className="text-center text-sm text-neutral-500 mt-2 md:hidden flex items-center justify-center gap-1">
+              <ChevronLeft className="w-4 h-4" /> Swipe to explore <ChevronRight className="w-4 h-4" />
+            </p>
           </div>
         </div>
       </section>
@@ -155,7 +160,9 @@ const HowItWorksPage: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {features.map((feature, index) => (
               <Card key={index} className="text-center p-6 hover:shadow-lg transition-shadow">
-                <div className="text-5xl mb-3">{feature.icon}</div>
+                <div className="mb-3 flex justify-center">
+                  <feature.icon className="w-10 h-10 text-soft-blue-600" strokeWidth={1.5} />
+                </div>
                 <h3 className="font-display text-lg font-semibold mb-2 text-neutral-900">
                   {feature.title}
                 </h3>

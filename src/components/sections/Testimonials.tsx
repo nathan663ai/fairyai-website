@@ -1,4 +1,5 @@
 import React from 'react';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 import Card from '../ui/Card';
 
 const Testimonials: React.FC = () => {
@@ -74,6 +75,10 @@ const Testimonials: React.FC = () => {
               </div>
             ))}
           </div>
+          {/* Swipe Hint - Mobile Only */}
+          <p className="text-center text-sm text-neutral-500 mt-2 md:hidden flex items-center justify-center gap-1">
+            <ChevronLeft className="w-4 h-4" /> Swipe to explore <ChevronRight className="w-4 h-4" />
+          </p>
         </div>
       </div>
     </section>

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Shield, Globe, ChevronLeft, ChevronRight } from 'lucide-react';
 import Card from '../ui/Card';
 
 const FeaturesOverview: React.FC = () => {
@@ -43,12 +44,12 @@ const FeaturesOverview: React.FC = () => {
     {
       title: 'Built-In Safety',
       description: 'Every story passes through content filters and age-appropriate guardrails for wholesome content.',
-      icon: <div className="text-4xl mx-auto">🛡️</div>
+      icon: <Shield className="w-10 h-10 text-soft-blue-600 mx-auto" strokeWidth={1.5} />
     },
     {
       title: 'Multi-Language Support',
       description: 'Generate stories in English, Spanish, French, German, Italian, Portuguese, and more.',
-      icon: <div className="text-4xl mx-auto">🌍</div>
+      icon: <Globe className="w-10 h-10 text-soft-blue-600 mx-auto" strokeWidth={1.5} />
     }
   ];
 
@@ -88,6 +89,10 @@ const FeaturesOverview: React.FC = () => {
               </div>
             ))}
           </div>
+          {/* Swipe Hint - Mobile Only */}
+          <p className="text-center text-sm text-neutral-500 mt-2 md:hidden flex items-center justify-center gap-1">
+            <ChevronLeft className="w-4 h-4" /> Swipe to explore <ChevronRight className="w-4 h-4" />
+          </p>
         </div>
 
         {/* See All Features Link */}

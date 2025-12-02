@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 import AudioPlayer from '../ui/AudioPlayer';
 import VideoPlayer from '../ui/VideoPlayer';
 import Card from '../ui/Card';
@@ -188,6 +189,10 @@ const ExperienceTheMagic: React.FC = () => {
                 </div>
               ))}
             </div>
+            {/* Swipe Hint - Mobile Only */}
+            <p className="text-center text-sm text-neutral-500 mt-2 md:hidden flex items-center justify-center gap-1">
+              <ChevronLeft className="w-4 h-4" /> Swipe to explore <ChevronRight className="w-4 h-4" />
+            </p>
           </div>
         </div>
 
@@ -232,6 +237,10 @@ const ExperienceTheMagic: React.FC = () => {
                 </div>
               ))}
             </div>
+            {/* Swipe Hint - Mobile Only */}
+            <p className="text-center text-sm text-neutral-500 mt-2 md:hidden flex items-center justify-center gap-1">
+              <ChevronLeft className="w-4 h-4" /> Swipe to explore <ChevronRight className="w-4 h-4" />
+            </p>
           </div>
         </div>
 
@@ -271,6 +280,10 @@ const ExperienceTheMagic: React.FC = () => {
                 </div>
               ))}
             </div>
+            {/* Swipe Hint - Mobile Only */}
+            <p className="text-center text-sm text-neutral-500 mt-2 md:hidden flex items-center justify-center gap-1">
+              <ChevronLeft className="w-4 h-4" /> Swipe to explore <ChevronRight className="w-4 h-4" />
+            </p>
           </div>
 
           {/* CTA below character gallery */}
