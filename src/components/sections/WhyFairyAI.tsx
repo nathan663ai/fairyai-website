@@ -14,7 +14,7 @@ const WhyFairyAI: React.FC = () => {
     },
     {
       title: 'Built by Parents',
-      description: 'Made for real bedtime routines, not engagement metrics. Start simple with 2 taps, or go deep with character builders and story wizards.',
+      description: 'Built by a dad, shaped by families. Every feature comes from real bedtime needs, and we\'re always listening.',
       imageSrc: '/images/why/parents.png'
     }
   ];
