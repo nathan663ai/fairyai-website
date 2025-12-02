@@ -25,7 +25,7 @@ const HowItWorks: React.FC = () => {
     {
       number: 4,
       title: 'Continue Adventures',
-      description: 'Your story remembers everything. Continue exactly where you left off, or start fresh anytime.',
+      description: 'Create the next chapter of your adventure. Your new story picks up exactly where the last one ended — or start a brand new tale anytime.',
       imageSrc: '/images/steps/continue-adventures.png'
     }
   ];
@@ -71,13 +71,15 @@ const HowItWorks: React.FC = () => {
                   </div>
 
                   {/* Text Side */}
-                  <div className={`w-1/2 ${isEven ? 'text-left' : 'text-right'}`}>
-                    <h3 className="font-display text-2xl font-semibold mb-3 text-neutral-900">
-                      {step.title}
-                    </h3>
-                    <p className="text-neutral-600 leading-relaxed max-w-sm">
-                      {step.description}
-                    </p>
+                  <div className={`w-1/2 flex ${isEven ? 'justify-start' : 'justify-end'}`}>
+                    <div className={`max-w-sm ${isEven ? 'text-left' : 'text-right'}`}>
+                      <h3 className="font-display text-2xl font-semibold mb-3 text-neutral-900">
+                        {step.title}
+                      </h3>
+                      <p className="text-neutral-600 leading-relaxed">
+                        {step.description}
+                      </p>
+                    </div>
                   </div>
                 </div>
 
