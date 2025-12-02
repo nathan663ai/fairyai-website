@@ -41,14 +41,14 @@ const sampleSongs = [
   {
     id: 'gingerbread-epic',
     title: 'Run Run Run',
-    style: 'Epic Adventure',
+    fromStory: 'The Gingerbread Man',
     audioSrc: 'https://d1mmspri4wgcne.cloudfront.net/classic-tales/the_gingerbread_man/epic_adventure.mp3',
     duration: 154, // seconds
   },
   {
     id: 'gingerbread-singalong',
     title: 'Gingerbread Singalong',
-    style: 'Kids Singalong',
+    fromStory: 'The Gingerbread Man',
     audioSrc: 'https://d1mmspri4wgcne.cloudfront.net/classic-tales/the_gingerbread_man/singalong.mp3',
     duration: 118,
   },
@@ -338,7 +338,7 @@ const ExperienceTheMagic: React.FC = () => {
                         {song.title}
                       </p>
                       <p className="text-sm text-neutral-500 truncate">
-                        {song.style}
+                        From: <span className="text-soft-green-600 font-medium">{song.fromStory}</span>
                       </p>
                     </div>
 
@@ -367,9 +367,21 @@ const ExperienceTheMagic: React.FC = () => {
                   <span className="text-xs text-neutral-500 w-10 text-right">
                     {formatDuration(Math.floor(currentTime))}
                   </span>
-                  <div className="flex-1 h-2 bg-neutral-200 rounded-full overflow-hidden">
+                  <div
+                    className="flex-1 h-2 bg-neutral-200 rounded-full overflow-hidden cursor-pointer"
+                    onClick={(e) => {
+                      if (audioRef.current && duration > 0) {
+                        const rect = e.currentTarget.getBoundingClientRect();
+                        const clickX = e.clientX - rect.left;
+                        const percentage = clickX / rect.width;
+                        const newTime = percentage * duration;
+                        audioRef.current.currentTime = newTime;
+                        setCurrentTime(newTime);
+                      }
+                    }}
+                  >
                     <div
-                      className="h-full bg-fairy-gold-500 rounded-full transition-all"
+                      className="h-full bg-fairy-gold-500 rounded-full transition-all pointer-events-none"
                       style={{ width: `${duration > 0 ? (currentTime / duration) * 100 : 0}%` }}
                     />
                   </div>
