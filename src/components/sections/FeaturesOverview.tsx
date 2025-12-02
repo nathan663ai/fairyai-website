@@ -95,13 +95,14 @@ const FeaturesOverview: React.FC = () => {
           </p>
         </div>
 
-        {/* See All Features Link */}
+        {/* See All Features Button */}
         <div className="text-center">
           <Link
             to="/features"
-            className="inline-flex items-center gap-2 text-soft-blue-600 hover:text-soft-blue-700 font-medium transition-colors"
+            className="inline-flex items-center gap-2 bg-gradient-to-r from-soft-blue-600 to-soft-green-600 text-white font-semibold px-6 py-3 rounded-lg hover:shadow-lg hover:scale-105 transition-all duration-200"
           >
-            See all features and pricing →
+            See all features and pricing
+            <ChevronRight className="w-5 h-5" />
           </Link>
         </div>
       </div>
