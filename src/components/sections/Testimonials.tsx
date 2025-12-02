@@ -1,8 +1,20 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import Card from '../ui/Card';
 
 const Testimonials: React.FC = () => {
+  const carouselRef = useRef<HTMLDivElement>(null);
+
+  const scroll = (direction: 'left' | 'right') => {
+    if (carouselRef.current) {
+      const scrollAmount = 320; // Card width + gap
+      carouselRef.current.scrollBy({
+        left: direction === 'left' ? -scrollAmount : scrollAmount,
+        behavior: 'smooth'
+      });
+    }
+  };
+
   const testimonials = [
     {
       quote: 'Great all round product at great value, would recommend to any parent!',
@@ -46,7 +58,28 @@ const Testimonials: React.FC = () => {
 
         {/* Testimonials Carousel */}
         <div className="relative">
-          <div className="flex overflow-x-auto snap-x snap-mandatory scrollbar-hide gap-4 pb-4">
+          {/* Desktop Arrow - Left */}
+          <button
+            onClick={() => scroll('left')}
+            className="hidden md:flex absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 z-10 w-10 h-10 bg-white/90 hover:bg-white rounded-full shadow-lg items-center justify-center transition-all hover:scale-110"
+            aria-label="Scroll left"
+          >
+            <ChevronLeft className="w-6 h-6 text-neutral-700" />
+          </button>
+
+          {/* Desktop Arrow - Right */}
+          <button
+            onClick={() => scroll('right')}
+            className="hidden md:flex absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 z-10 w-10 h-10 bg-white/90 hover:bg-white rounded-full shadow-lg items-center justify-center transition-all hover:scale-110"
+            aria-label="Scroll right"
+          >
+            <ChevronRight className="w-6 h-6 text-neutral-700" />
+          </button>
+
+          <div
+            ref={carouselRef}
+            className="flex overflow-x-auto snap-x snap-mandatory scrollbar-hide gap-4 pb-4"
+          >
             {testimonials.map((testimonial, index) => (
               <div key={index} className="flex-shrink-0 w-80 snap-start">
                 <Card className="h-full flex flex-col p-4">

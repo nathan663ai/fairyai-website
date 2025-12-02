@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import AudioPlayer from '../ui/AudioPlayer';
@@ -96,7 +96,38 @@ const characters = [
   }
 ];
 
+// Carousel Arrow Button component
+const CarouselArrow: React.FC<{
+  direction: 'left' | 'right';
+  onClick: () => void;
+}> = ({ direction, onClick }) => (
+  <button
+    onClick={onClick}
+    className={`hidden md:flex absolute ${direction === 'left' ? 'left-0 -translate-x-4' : 'right-0 translate-x-4'} top-1/2 -translate-y-1/2 z-10 w-10 h-10 bg-white/90 hover:bg-white rounded-full shadow-lg items-center justify-center transition-all hover:scale-110`}
+    aria-label={`Scroll ${direction}`}
+  >
+    {direction === 'left' ? (
+      <ChevronLeft className="w-6 h-6 text-neutral-700" />
+    ) : (
+      <ChevronRight className="w-6 h-6 text-neutral-700" />
+    )}
+  </button>
+);
+
 const ExperienceTheMagic: React.FC = () => {
+  const storyCarouselRef = useRef<HTMLDivElement>(null);
+  const songCarouselRef = useRef<HTMLDivElement>(null);
+  const characterCarouselRef = useRef<HTMLDivElement>(null);
+
+  const scroll = (ref: React.RefObject<HTMLDivElement>, direction: 'left' | 'right', amount: number) => {
+    if (ref.current) {
+      ref.current.scrollBy({
+        left: direction === 'left' ? -amount : amount,
+        behavior: 'smooth'
+      });
+    }
+  };
+
   return (
     <section className="py-6 md:py-10 bg-gradient-to-br from-white via-soft-blue-50 to-soft-green-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -139,7 +170,13 @@ const ExperienceTheMagic: React.FC = () => {
           </p>
 
           <div className="relative">
-            <div className="flex overflow-x-auto snap-x snap-mandatory scrollbar-hide gap-4 pb-4">
+            <CarouselArrow direction="left" onClick={() => scroll(storyCarouselRef, 'left', 320)} />
+            <CarouselArrow direction="right" onClick={() => scroll(storyCarouselRef, 'right', 320)} />
+
+            <div
+              ref={storyCarouselRef}
+              className="flex overflow-x-auto snap-x snap-mandatory scrollbar-hide gap-4 pb-4"
+            >
               {storyExamples.map((story) => (
                 <div key={story.id} className="flex-shrink-0 w-80 snap-start">
                   <Card className="h-full overflow-hidden p-0">
@@ -207,7 +244,13 @@ const ExperienceTheMagic: React.FC = () => {
           </p>
 
           <div className="relative">
-            <div className="flex overflow-x-auto snap-x snap-mandatory scrollbar-hide gap-4 pb-4">
+            <CarouselArrow direction="left" onClick={() => scroll(songCarouselRef, 'left', 320)} />
+            <CarouselArrow direction="right" onClick={() => scroll(songCarouselRef, 'right', 320)} />
+
+            <div
+              ref={songCarouselRef}
+              className="flex overflow-x-auto snap-x snap-mandatory scrollbar-hide gap-4 pb-4"
+            >
               {songExamples.map((song) => (
                 <div key={song.id} className="flex-shrink-0 w-80 snap-start">
                   <Card className="h-full p-4">
@@ -258,7 +301,13 @@ const ExperienceTheMagic: React.FC = () => {
           </p>
 
           <div className="relative">
-            <div className="flex overflow-x-auto snap-x snap-mandatory scrollbar-hide gap-4 pb-4">
+            <CarouselArrow direction="left" onClick={() => scroll(characterCarouselRef, 'left', 200)} />
+            <CarouselArrow direction="right" onClick={() => scroll(characterCarouselRef, 'right', 200)} />
+
+            <div
+              ref={characterCarouselRef}
+              className="flex overflow-x-auto snap-x snap-mandatory scrollbar-hide gap-4 pb-4"
+            >
               {characters.map((character) => (
                 <div key={character.id} className="flex-shrink-0 w-48 snap-start">
                   <Card className="p-0 overflow-hidden">

@@ -1,10 +1,22 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { Palette, Zap, Wand2, BookOpen, Headphones, Music, Library, Shield, ChevronLeft, ChevronRight } from 'lucide-react';
 import VideoPlayer from '../components/ui/VideoPlayer';
 import DownloadButtons from '../components/ui/DownloadButtons';
 import Card from '../components/ui/Card';
 
 const HowItWorksPage: React.FC = () => {
+  const videoCarouselRef = useRef<HTMLDivElement>(null);
+
+  const scroll = (direction: 'left' | 'right') => {
+    if (videoCarouselRef.current) {
+      const scrollAmount = 340; // Card width + gap
+      videoCarouselRef.current.scrollBy({
+        left: direction === 'left' ? -scrollAmount : scrollAmount,
+        behavior: 'smooth'
+      });
+    }
+  };
+
   const features = [
     {
       icon: Palette,
@@ -76,7 +88,28 @@ const HowItWorksPage: React.FC = () => {
 
           {/* Video Carousel */}
           <div className="relative">
-            <div className="flex overflow-x-auto snap-x snap-mandatory scrollbar-hide gap-6 pb-4">
+            {/* Desktop Arrow - Left */}
+            <button
+              onClick={() => scroll('left')}
+              className="hidden md:flex absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 z-10 w-10 h-10 bg-white/90 hover:bg-white rounded-full shadow-lg items-center justify-center transition-all hover:scale-110"
+              aria-label="Scroll left"
+            >
+              <ChevronLeft className="w-6 h-6 text-neutral-700" />
+            </button>
+
+            {/* Desktop Arrow - Right */}
+            <button
+              onClick={() => scroll('right')}
+              className="hidden md:flex absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 z-10 w-10 h-10 bg-white/90 hover:bg-white rounded-full shadow-lg items-center justify-center transition-all hover:scale-110"
+              aria-label="Scroll right"
+            >
+              <ChevronRight className="w-6 h-6 text-neutral-700" />
+            </button>
+
+            <div
+              ref={videoCarouselRef}
+              className="flex overflow-x-auto snap-x snap-mandatory scrollbar-hide gap-6 pb-4"
+            >
               {/* Character Creation */}
               <div className="flex-shrink-0 w-80 snap-start">
                 <Card className="p-0 overflow-hidden">

@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Navigation from './components/Navigation';
 import Footer from './components/sections/Footer';
 import HomePage from './pages/HomePage';
@@ -30,12 +31,12 @@ function App() {
   const [showCookieNotice, setShowCookieNotice] = useState(false);
 
   useEffect(() => {
-    const accepted = localStorage.getItem('cookieConsent');
-    if (!accepted) setShowCookieNotice(true);
+    const consent = localStorage.getItem('cookie-consent');
+    if (!consent) setShowCookieNotice(true);
   }, []);
 
-  const acceptCookies = () => {
-    localStorage.setItem('cookieConsent', 'true');
+  const handleCookieChoice = (choice: 'accepted' | 'rejected') => {
+    localStorage.setItem('cookie-consent', choice);
     setShowCookieNotice(false);
   };
 
@@ -63,15 +64,26 @@ function App() {
       {showCookieNotice && (
         <div className="fixed bottom-0 left-0 right-0 bg-slate-900 text-white p-4 shadow-2xl z-50">
           <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
-            <p className="text-sm">
-              This website uses cookies to improve your experience. By continuing, you accept our use of cookies.
+            <p className="text-sm text-center sm:text-left">
+              We use cookies to improve your experience.{' '}
+              <Link to="/privacy" className="underline hover:text-soft-blue-300">
+                Learn more
+              </Link>
             </p>
-            <button
-              onClick={acceptCookies}
-              className="bg-soft-blue-500 hover:bg-soft-blue-600 px-6 py-2 rounded-lg font-semibold transition-colors whitespace-nowrap"
-            >
-              Accept
-            </button>
+            <div className="flex gap-3">
+              <button
+                onClick={() => handleCookieChoice('rejected')}
+                className="px-5 py-2 rounded-lg font-semibold transition-colors whitespace-nowrap border border-white/30 hover:bg-white/10"
+              >
+                Necessary Only
+              </button>
+              <button
+                onClick={() => handleCookieChoice('accepted')}
+                className="bg-soft-blue-500 hover:bg-soft-blue-600 px-5 py-2 rounded-lg font-semibold transition-colors whitespace-nowrap"
+              >
+                Accept All
+              </button>
+            </div>
           </div>
         </div>
       )}
