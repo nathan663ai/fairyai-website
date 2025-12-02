@@ -1,28 +1,21 @@
 import React from 'react';
-import { Shield, Sparkles, Heart } from 'lucide-react';
 
 const WhyFairyAI: React.FC = () => {
   const reasons = [
     {
-      number: 1,
       title: 'Safety First',
       description: 'Every story passes through content filters and age-appropriate guardrails. No ads, no social features, no surprises.',
-      icon: Shield,
-      imageSrc: '/images/why/safety.png' // Placeholder for user's artwork
+      imageSrc: '/images/why/safety.png'
     },
     {
-      number: 2,
       title: 'Real Quality',
       description: 'Not generic AI slop. Persistent characters with real personalities, multi-chapter books, custom songs with actual melodies.',
-      icon: Sparkles,
-      imageSrc: '/images/why/quality.png' // Placeholder for user's artwork
+      imageSrc: '/images/why/quality.png'
     },
     {
-      number: 3,
       title: 'Built by Parents',
       description: 'Made for real bedtime routines, not engagement metrics. Start simple with 2 taps, or go deep with character builders and story wizards.',
-      icon: Heart,
-      imageSrc: '/images/why/parents.png' // Placeholder for user's artwork
+      imageSrc: '/images/why/parents.png'
     }
   ];
 
@@ -42,30 +35,17 @@ const WhyFairyAI: React.FC = () => {
         {/* Desktop: Horizontal with Arrows */}
         <div className="hidden lg:flex items-start justify-between gap-4">
           {reasons.map((reason, index) => (
-            <React.Fragment key={reason.number}>
+            <React.Fragment key={reason.title}>
               {/* Reason Card */}
               <div className="flex-1 text-center">
-                {/* Number ABOVE Circle */}
-                <div className="text-4xl md:text-5xl font-bold text-fairy-gold-500 mb-3">
-                  {reason.number}
-                </div>
-
                 {/* Large Circular Illustration */}
                 <div className="w-32 h-32 md:w-40 md:h-40 mx-auto rounded-full bg-gradient-to-br from-fairy-gold-50 to-soft-blue-50 flex items-center justify-center shadow-lg mb-4">
-                  {reason.imageSrc ? (
-                    <img
-                      src={reason.imageSrc}
-                      alt={reason.title}
-                      loading="lazy"
-                      className="w-full h-full object-cover rounded-full"
-                      onError={(e) => {
-                        // Fallback to emoji if image not found
-                        e.currentTarget.style.display = 'none';
-                        e.currentTarget.nextElementSibling?.classList.remove('hidden');
-                      }}
-                    />
-                  ) : null}
-                  <reason.icon className={reason.imageSrc ? "hidden w-12 h-12 text-soft-blue-600" : "w-12 h-12 text-soft-blue-600"} strokeWidth={1.5} />
+                  <img
+                    src={reason.imageSrc}
+                    alt={reason.title}
+                    loading="lazy"
+                    className="w-full h-full object-contain p-4"
+                  />
                 </div>
 
                 {/* Title and Description */}
@@ -88,28 +68,15 @@ const WhyFairyAI: React.FC = () => {
         {/* Mobile: Vertical Stack (no arrows) */}
         <div className="lg:hidden grid gap-8">
           {reasons.map((reason) => (
-            <div key={reason.number} className="text-center">
-              {/* Number ABOVE Circle */}
-              <div className="text-4xl font-bold text-fairy-gold-500 mb-3">
-                {reason.number}
-              </div>
-
+            <div key={reason.title} className="text-center">
               {/* Large Circular Illustration */}
               <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-br from-fairy-gold-50 to-soft-blue-50 flex items-center justify-center shadow-lg mb-4">
-                {reason.imageSrc ? (
-                  <img
-                    src={reason.imageSrc}
-                    alt={reason.title}
-                    loading="lazy"
-                    className="w-full h-full object-cover rounded-full"
-                    onError={(e) => {
-                      // Fallback to emoji if image not found
-                      e.currentTarget.style.display = 'none';
-                      e.currentTarget.nextElementSibling?.classList.remove('hidden');
-                    }}
-                  />
-                ) : null}
-                <reason.icon className={reason.imageSrc ? "hidden w-12 h-12 text-soft-blue-600" : "w-12 h-12 text-soft-blue-600"} strokeWidth={1.5} />
+                <img
+                  src={reason.imageSrc}
+                  alt={reason.title}
+                  loading="lazy"
+                  className="w-full h-full object-contain p-4"
+                />
               </div>
 
               {/* Title and Description */}
