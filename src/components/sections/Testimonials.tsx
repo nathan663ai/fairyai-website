@@ -16,23 +16,33 @@ const Testimonials: React.FC = () => {
       quote: "We made a character based on my son — now every story feels like it's actually about him.",
       name: "Priya",
       role: "Mum of 1"
+    },
+    {
+      quote: "We created a dragon called Spark. Three months later, my kids still talk about him like he's real.",
+      name: "James",
+      role: "Dad of 2"
+    },
+    {
+      quote: "It encourages his creativity and imagination as he creates his own characters and adventures. It's become a cherished part of our nightly routine.",
+      name: "Elliott",
+      role: "Dad of 1"
     }
   ];
 
   return (
     <section id="testimonials" className="py-10 md:py-14 bg-neutral-50">
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center mb-10">
+        <div className="text-center mb-8">
           <h2 className="font-display text-3xl md:text-4xl font-bold text-neutral-900 mb-2">
             What Parents Are Saying
           </h2>
         </div>
 
-        {/* Testimonials Grid */}
-        <div className="grid md:grid-cols-3 gap-8">
+        {/* Testimonials - Horizontal scroll */}
+        <div className="flex overflow-x-auto snap-x snap-mandatory scrollbar-hide gap-4 pb-4 -mx-4 px-4">
           {testimonials.map((testimonial, index) => (
-            <div key={index} className="flex flex-col items-center">
+            <div key={index} className="flex-shrink-0 w-72 snap-start flex flex-col items-center">
               {/* Speech Bubble */}
               <div className="relative bg-white rounded-2xl shadow-md border border-fairy-gold-200 p-5 mb-4 w-full">
                 {/* Quote Text */}
@@ -53,7 +63,7 @@ const Testimonials: React.FC = () => {
                   {testimonial.name.charAt(0)}
                 </div>
                 {/* Name and Role */}
-                <div className="text-center">
+                <div className="text-left">
                   <p className="font-semibold text-neutral-900 text-sm">{testimonial.name}</p>
                   <p className="text-xs text-neutral-500">{testimonial.role}</p>
                 </div>

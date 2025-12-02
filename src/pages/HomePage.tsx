@@ -12,8 +12,8 @@ const HomePage: React.FC = () => {
     <>
       <Hero />
       <WhyFairyAI />
-      <HowItWorks />
       <ExperienceTheMagic />
+      <HowItWorks />
       <Testimonials />
       <FounderSection />
       <FinalCTA />
