@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 const FounderSection: React.FC = () => {
   const founderImages = [
-    { src: '/images/Founder_Original.png', label: 'Original' },
+    { src: '/images/Founder_Original.png?v=2', label: 'Original' },
     { src: '/images/Founder_Transform1.jpg', label: 'FairyAI Style 1' },
     { src: '/images/Founder_Transform2.jpg', label: 'FairyAI Style 2' }
   ];
