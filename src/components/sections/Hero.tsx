@@ -9,7 +9,7 @@ const Hero: React.FC = () => {
         src="/images/hero-banner.png"
         alt="Parent and child reading a bedtime story together on a tablet"
         loading="eager"
-        className="absolute inset-0 w-full h-full object-cover"
+        className="absolute inset-0 w-full h-full object-cover object-[70%_center] md:object-center"
       />
 
       {/* Gradient Overlay for Text Readability */}
