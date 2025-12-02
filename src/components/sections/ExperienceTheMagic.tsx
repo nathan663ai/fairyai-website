@@ -1,6 +1,6 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Play, Pause } from 'lucide-react';
 import AudioPlayer from '../ui/AudioPlayer';
 import VideoPlayer from '../ui/VideoPlayer';
 import Card from '../ui/Card';
@@ -36,19 +36,21 @@ const storyExamples = [
   },
 ];
 
-// Song Examples Data - matches actual songs from Gingerbread Man
-const songExamples = [
+// Song Examples Data - easy to update array
+const sampleSongs = [
   {
-    id: 1,
-    title: 'Run Run Run (Epic Adventure)',
-    fromStory: 'The Gingerbread Man',
+    id: 'gingerbread-epic',
+    title: 'Run Run Run',
+    style: 'Epic Adventure',
     audioSrc: 'https://d1mmspri4wgcne.cloudfront.net/classic-tales/the_gingerbread_man/epic_adventure.mp3',
+    duration: 154, // seconds
   },
   {
-    id: 2,
-    title: 'Singalong Version',
-    fromStory: 'The Gingerbread Man',
+    id: 'gingerbread-singalong',
+    title: 'Gingerbread Singalong',
+    style: 'Kids Singalong',
     audioSrc: 'https://d1mmspri4wgcne.cloudfront.net/classic-tales/the_gingerbread_man/singalong.mp3',
+    duration: 118,
   },
 ];
 
@@ -114,10 +116,23 @@ const CarouselArrow: React.FC<{
   </button>
 );
 
+// Helper to format duration
+const formatDuration = (seconds: number): string => {
+  const mins = Math.floor(seconds / 60);
+  const secs = seconds % 60;
+  return `${mins}:${secs.toString().padStart(2, '0')}`;
+};
+
 const ExperienceTheMagic: React.FC = () => {
   const storyCarouselRef = useRef<HTMLDivElement>(null);
-  const songCarouselRef = useRef<HTMLDivElement>(null);
   const characterCarouselRef = useRef<HTMLDivElement>(null);
+  const audioRef = useRef<HTMLAudioElement | null>(null);
+
+  // Song player state
+  const [currentSongId, setCurrentSongId] = useState<string | null>(null);
+  const [isPlaying, setIsPlaying] = useState(false);
+  const [currentTime, setCurrentTime] = useState(0);
+  const [duration, setDuration] = useState(0);
 
   const scroll = (ref: React.RefObject<HTMLDivElement>, direction: 'left' | 'right', amount: number) => {
     if (ref.current) {
@@ -127,6 +142,54 @@ const ExperienceTheMagic: React.FC = () => {
       });
     }
   };
+
+  // Handle song play/pause
+  const handleSongClick = (songId: string, audioSrc: string) => {
+    if (currentSongId === songId && isPlaying) {
+      // Pause current song
+      audioRef.current?.pause();
+      setIsPlaying(false);
+    } else if (currentSongId === songId && !isPlaying) {
+      // Resume current song
+      audioRef.current?.play();
+      setIsPlaying(true);
+    } else {
+      // Play new song
+      if (audioRef.current) {
+        audioRef.current.pause();
+      }
+      const audio = new Audio(audioSrc);
+      audioRef.current = audio;
+
+      audio.addEventListener('timeupdate', () => {
+        setCurrentTime(audio.currentTime);
+      });
+      audio.addEventListener('loadedmetadata', () => {
+        setDuration(audio.duration);
+      });
+      audio.addEventListener('ended', () => {
+        setIsPlaying(false);
+        setCurrentTime(0);
+      });
+
+      audio.play();
+      setCurrentSongId(songId);
+      setIsPlaying(true);
+    }
+  };
+
+  // Cleanup audio on unmount
+  useEffect(() => {
+    return () => {
+      if (audioRef.current) {
+        audioRef.current.pause();
+        audioRef.current = null;
+      }
+    };
+  }, []);
+
+  // Get current song info
+  const currentSong = sampleSongs.find(s => s.id === currentSongId);
 
   return (
     <section className="py-6 md:py-10 bg-gradient-to-br from-white via-soft-blue-50 to-soft-green-50">
@@ -234,7 +297,7 @@ const ExperienceTheMagic: React.FC = () => {
           </div>
         </div>
 
-        {/* Song Samples - CAROUSEL */}
+        {/* Song Samples - Vertical Track List */}
         <div className="mb-12">
           <h3 className="font-display text-2xl md:text-3xl font-semibold text-center mb-2 text-slate-900">
             Sample Songs
@@ -243,48 +306,85 @@ const ExperienceTheMagic: React.FC = () => {
             Every story can become a personalised song
           </p>
 
-          <div className="relative">
-            <CarouselArrow direction="left" onClick={() => scroll(songCarouselRef, 'left', 320)} />
-            <CarouselArrow direction="right" onClick={() => scroll(songCarouselRef, 'right', 320)} />
+          {/* Track List Container */}
+          <div className="max-w-lg mx-auto bg-white rounded-xl shadow-md border border-neutral-200 overflow-hidden">
+            {/* Track List */}
+            <div className="divide-y divide-neutral-100">
+              {sampleSongs.map((song) => {
+                const isCurrentSong = currentSongId === song.id;
+                const isThisSongPlaying = isCurrentSong && isPlaying;
 
-            <div
-              ref={songCarouselRef}
-              className="flex overflow-x-auto snap-x snap-mandatory scrollbar-hide gap-4 pb-4"
-            >
-              {songExamples.map((song) => (
-                <div key={song.id} className="flex-shrink-0 w-80 snap-start">
-                  <Card className="h-full p-4">
-                    {/* Song Icon */}
-                    <div className="flex items-center gap-3 mb-4">
-                      <div className="w-10 h-10 bg-gradient-to-br from-fairy-purple-100 to-soft-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
-                        <svg
-                          className="w-5 h-5 text-fairy-purple-600"
-                          fill="currentColor"
-                          viewBox="0 0 24 24"
-                        >
-                          <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z" />
-                        </svg>
-                      </div>
-                      <div>
-                        <h4 className="font-display text-base font-bold text-slate-900">
-                          {song.title}
-                        </h4>
-                        <p className="text-xs text-neutral-500">
-                          From: <span className="text-soft-green-600 font-semibold">{song.fromStory}</span>
-                        </p>
-                      </div>
+                return (
+                  <div
+                    key={song.id}
+                    className={`flex items-center gap-3 p-4 hover:bg-neutral-50 transition-colors cursor-pointer ${isCurrentSong ? 'bg-amber-50' : ''}`}
+                    onClick={() => handleSongClick(song.id, song.audioSrc)}
+                  >
+                    {/* Play/Pause Button */}
+                    <button
+                      className="flex-shrink-0 w-10 h-10 bg-fairy-gold-500 hover:bg-fairy-gold-600 rounded-full flex items-center justify-center text-white transition-all hover:scale-110 shadow-md"
+                      aria-label={isThisSongPlaying ? 'Pause' : 'Play'}
+                    >
+                      {isThisSongPlaying ? (
+                        <Pause className="w-5 h-5" fill="currentColor" />
+                      ) : (
+                        <Play className="w-5 h-5 ml-0.5" fill="currentColor" />
+                      )}
+                    </button>
+
+                    {/* Song Info */}
+                    <div className="flex-1 min-w-0">
+                      <p className={`font-semibold text-neutral-900 truncate ${isCurrentSong ? 'text-fairy-gold-600' : ''}`}>
+                        {song.title}
+                      </p>
+                      <p className="text-sm text-neutral-500 truncate">
+                        {song.style}
+                      </p>
                     </div>
 
-                    {/* Audio Player */}
-                    <AudioPlayer src={song.audioSrc} title={`Listen to ${song.title}`} />
-                  </Card>
-                </div>
-              ))}
+                    {/* Duration */}
+                    <span className="text-sm text-neutral-400 flex-shrink-0">
+                      {formatDuration(song.duration)}
+                    </span>
+                  </div>
+                );
+              })}
             </div>
-            {/* Swipe Hint - Mobile Only */}
-            <p className="text-center text-sm text-neutral-500 mt-2 md:hidden flex items-center justify-center gap-1">
-              <ChevronLeft className="w-4 h-4" /> Swipe to explore <ChevronRight className="w-4 h-4" />
-            </p>
+
+            {/* Now Playing Bar */}
+            {currentSong ? (
+              <div className="bg-neutral-50 border-t border-neutral-200 p-4">
+                <div className="flex items-center gap-3 mb-2">
+                  <span className="text-xs font-semibold text-fairy-gold-500 uppercase tracking-wide">
+                    Now Playing
+                  </span>
+                  <span className="text-sm font-medium text-neutral-700 truncate">
+                    {currentSong.title}
+                  </span>
+                </div>
+                {/* Progress Bar */}
+                <div className="flex items-center gap-3">
+                  <span className="text-xs text-neutral-500 w-10 text-right">
+                    {formatDuration(Math.floor(currentTime))}
+                  </span>
+                  <div className="flex-1 h-2 bg-neutral-200 rounded-full overflow-hidden">
+                    <div
+                      className="h-full bg-fairy-gold-500 rounded-full transition-all"
+                      style={{ width: `${duration > 0 ? (currentTime / duration) * 100 : 0}%` }}
+                    />
+                  </div>
+                  <span className="text-xs text-neutral-500 w-10">
+                    {formatDuration(Math.floor(duration))}
+                  </span>
+                </div>
+              </div>
+            ) : (
+              <div className="bg-neutral-50 border-t border-neutral-200 p-4 text-center">
+                <p className="text-sm text-neutral-400">
+                  Select a song to play
+                </p>
+              </div>
+            )}
           </div>
         </div>
 
