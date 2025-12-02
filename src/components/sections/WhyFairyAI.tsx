@@ -1,4 +1,5 @@
 import React from 'react';
+import { Shield, Sparkles, Heart } from 'lucide-react';
 
 const WhyFairyAI: React.FC = () => {
   const reasons = [
@@ -6,21 +7,21 @@ const WhyFairyAI: React.FC = () => {
       number: 1,
       title: 'Safety First',
       description: 'Every story passes through content filters and age-appropriate guardrails. No ads, no social features, no surprises.',
-      emoji: '🛡️',
+      icon: Shield,
       imageSrc: '/images/why/safety.png' // Placeholder for user's artwork
     },
     {
       number: 2,
       title: 'Real Quality',
       description: 'Not generic AI slop. Persistent characters with real personalities, multi-chapter books, custom songs with actual melodies.',
-      emoji: '✨',
+      icon: Sparkles,
       imageSrc: '/images/why/quality.png' // Placeholder for user's artwork
     },
     {
       number: 3,
       title: 'Built by Parents',
       description: 'Made for real bedtime routines, not engagement metrics. Start simple with 2 taps, or go deep with character builders and story wizards.',
-      emoji: '❤️',
+      icon: Heart,
       imageSrc: '/images/why/parents.png' // Placeholder for user's artwork
     }
   ];
@@ -63,9 +64,7 @@ const WhyFairyAI: React.FC = () => {
                       }}
                     />
                   ) : null}
-                  <span className={reason.imageSrc ? "hidden text-5xl" : "text-5xl"}>
-                    {reason.emoji}
-                  </span>
+                  <reason.icon className={reason.imageSrc ? "hidden w-12 h-12 text-soft-blue-600" : "w-12 h-12 text-soft-blue-600"} strokeWidth={1.5} />
                 </div>
 
                 {/* Title and Description */}
@@ -108,9 +107,7 @@ const WhyFairyAI: React.FC = () => {
                     }}
                   />
                 ) : null}
-                <span className={reason.imageSrc ? "hidden text-5xl" : "text-5xl"}>
-                  {reason.emoji}
-                </span>
+                <reason.icon className={reason.imageSrc ? "hidden w-12 h-12 text-soft-blue-600" : "w-12 h-12 text-soft-blue-600"} strokeWidth={1.5} />
               </div>
 
               {/* Title and Description */}

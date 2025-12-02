@@ -1,4 +1,5 @@
 import React from 'react';
+import { Palette, Sparkles, Headphones, BookOpen } from 'lucide-react';
 
 const HowItWorks: React.FC = () => {
   const steps = [
@@ -6,25 +7,25 @@ const HowItWorks: React.FC = () => {
       number: 1,
       title: 'Build Characters',
       description: 'Create persistent characters with traits and abilities that live across all your stories.',
-      emoji: '🎨'
+      icon: Palette
     },
     {
       number: 2,
       title: 'Create Stories',
       description: 'Quick Story for instant magic, Story Wizard for full control, or browse Fairy Corner classics.',
-      emoji: '✨'
+      icon: Sparkles
     },
     {
       number: 3,
       title: 'Listen & Read',
       description: 'Enjoy narration in 12 languages, or read together. Your choice.',
-      emoji: '🎧'
+      icon: Headphones
     },
     {
       number: 4,
       title: 'Continue Adventures',
       description: 'Extend into multi-chapter books, create custom songs, or write sequels with the same characters.',
-      emoji: '📖'
+      icon: BookOpen
     }
   ];
 
@@ -54,7 +55,7 @@ const HowItWorks: React.FC = () => {
 
                 {/* Large Circular Illustration */}
                 <div className="w-32 h-32 md:w-40 md:h-40 mx-auto rounded-full bg-gradient-to-br from-fairy-gold-50 to-soft-blue-50 flex items-center justify-center shadow-lg mb-4">
-                  <span className="text-5xl">{step.emoji}</span>
+                  <step.icon className="w-12 h-12 text-soft-blue-600" strokeWidth={1.5} />
                 </div>
 
                 {/* Title and Description */}
@@ -85,7 +86,7 @@ const HowItWorks: React.FC = () => {
 
               {/* Large Circular Illustration */}
               <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-br from-fairy-gold-50 to-soft-blue-50 flex items-center justify-center shadow-lg mb-4">
-                <span className="text-5xl">{step.emoji}</span>
+                <step.icon className="w-12 h-12 text-soft-blue-600" strokeWidth={1.5} />
               </div>
 
               {/* Title and Description */}

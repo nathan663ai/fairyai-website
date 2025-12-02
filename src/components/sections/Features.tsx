@@ -1,30 +1,31 @@
 import React from 'react';
+import { Shield, Mic, Globe, Users, Target } from 'lucide-react';
 import Card from '../ui/Card';
 
 const Features: React.FC = () => {
   const features = [
     {
-      icon: '🛡️',
+      icon: Shield,
       title: 'Built-In Safety',
       description: 'Every story passes through content filters and age-appropriate guardrails. We ensure wholesome, safe content that parents can trust.'
     },
     {
-      icon: '🎙️',
+      icon: Mic,
       title: 'Narrated Audio',
       description: 'Immersive voice-over with subtle background effects brings stories to life. Perfect for winding down or when you need a break.'
     },
     {
-      icon: '🌍',
+      icon: Globe,
       title: 'Multi-Language Support',
       description: 'Generate stories in English, Spanish, French, German, Italian, Portuguese, and more – perfect for bilingual families.'
     },
     {
-      icon: '👥',
+      icon: Users,
       title: 'Character Continuity',
       description: 'Characters persist across stories, creating ongoing adventures your child can follow night after night.'
     },
     {
-      icon: '🎯',
+      icon: Target,
       title: 'For Ages 2–12',
       description: 'Language complexity and themes adapt automatically based on your child\'s age group – from toddlers to tweens.'
     }
@@ -47,7 +48,9 @@ const Features: React.FC = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {features.map((feature, index) => (
             <Card key={index} className="text-center hover:scale-105 transition-transform">
-              <div className="text-5xl mb-4">{feature.icon}</div>
+              <div className="mb-4 flex justify-center">
+                <feature.icon className="w-12 h-12 text-soft-blue-600" strokeWidth={1.5} />
+              </div>
               <h3 className="font-display text-xl font-semibold text-neutral-900 mb-3">
                 {feature.title}
               </h3>
