@@ -104,18 +104,18 @@ const UserExampleStoryPage: React.FC = () => {
       </section>
 
       {/* Final CTA */}
-      <section className="py-12 md:py-16 bg-fairy-gold-500 text-white">
+      <section className="py-12 md:py-16 bg-amber-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="font-display text-2xl md:text-3xl font-bold mb-4">
+          <h2 className="font-display text-2xl md:text-3xl font-bold mb-4 text-neutral-900">
             Ready to Create Your Own Stories?
           </h2>
-          <p className="text-lg mb-6 text-white/90">
+          <p className="text-lg mb-6 text-neutral-700">
             Download FairyAI and start creating personalised bedtime adventures.
           </p>
-          <p className="text-base mb-8 font-semibold">
+          <p className="text-base mb-8 font-semibold text-neutral-800">
             6 free Fairy Dust • 7-day Fairy Corner trial • No credit card required
           </p>
-          <DownloadButtons />
+          <DownloadButtons variant="gradient" />
         </div>
       </section>
     </div>

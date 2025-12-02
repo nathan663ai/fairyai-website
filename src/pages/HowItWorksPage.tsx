@@ -348,15 +348,15 @@ const HowItWorksPage: React.FC = () => {
       </section>
 
       {/* Download CTA */}
-      <section className="py-12 md:py-16 bg-fairy-gold-500 text-white">
+      <section className="py-12 md:py-16 bg-amber-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">
+          <h2 className="font-display text-3xl md:text-4xl font-bold mb-4 text-neutral-900">
             Ready to Start?
           </h2>
-          <p className="text-lg text-soft-blue-50 mb-8">
+          <p className="text-lg text-neutral-700 mb-8">
             6 free Fairy Dust + 7 days of Fairy Corner. No credit card required.
           </p>
-          <DownloadButtons variant="light" />
+          <DownloadButtons variant="gradient" />
         </div>
       </section>
     </div>

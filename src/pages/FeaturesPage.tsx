@@ -194,39 +194,39 @@ const FeaturesPage: React.FC = () => {
             </Card>
 
             {/* Premium Plan */}
-            <Card className="p-8 bg-fairy-gold-500 text-white border-2 border-fairy-gold-400">
+            <Card className="p-8 bg-amber-50 border-2 border-fairy-gold-500">
               <div className="mb-4">
-                <Star className="w-10 h-10 text-fairy-gold-200" strokeWidth={1.5} fill="currentColor" />
+                <Star className="w-10 h-10 text-fairy-gold-500" strokeWidth={1.5} fill="currentColor" />
               </div>
-              <h3 className="font-display text-2xl font-semibold mb-3">
+              <h3 className="font-display text-2xl font-semibold mb-3 text-neutral-900">
                 Premium Plans
               </h3>
-              <p className="text-soft-blue-50 mb-6">
+              <p className="text-neutral-600 mb-6">
                 Monthly Fairy Dust allocations
               </p>
-              <ul className="space-y-3 text-white mb-6">
+              <ul className="space-y-3 text-neutral-700 mb-6">
                 <li className="flex items-start gap-2">
-                  <Check className="w-5 h-5 text-fairy-gold-200 mt-0.5 flex-shrink-0" strokeWidth={2} />
+                  <Check className="w-5 h-5 text-fairy-gold-500 mt-0.5 flex-shrink-0" strokeWidth={2} />
                   <span>Unlimited characters & stories</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <Check className="w-5 h-5 text-fairy-gold-200 mt-0.5 flex-shrink-0" strokeWidth={2} />
+                  <Check className="w-5 h-5 text-fairy-gold-500 mt-0.5 flex-shrink-0" strokeWidth={2} />
                   <span>Full Fairy Corner access</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <Check className="w-5 h-5 text-fairy-gold-200 mt-0.5 flex-shrink-0" strokeWidth={2} />
+                  <Check className="w-5 h-5 text-fairy-gold-500 mt-0.5 flex-shrink-0" strokeWidth={2} />
                   <span>Narration in 12 languages</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <Check className="w-5 h-5 text-fairy-gold-200 mt-0.5 flex-shrink-0" strokeWidth={2} />
+                  <Check className="w-5 h-5 text-fairy-gold-500 mt-0.5 flex-shrink-0" strokeWidth={2} />
                   <span>Custom songs with lyrics</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <Check className="w-5 h-5 text-fairy-gold-200 mt-0.5 flex-shrink-0" strokeWidth={2} />
+                  <Check className="w-5 h-5 text-fairy-gold-500 mt-0.5 flex-shrink-0" strokeWidth={2} />
                   <span>Offline PDF & MP3 downloads</span>
                 </li>
               </ul>
-              <p className="text-sm text-soft-blue-100">
+              <p className="text-sm text-neutral-600">
                 Flexible plans from £6.99/month. See app for details.
               </p>
             </Card>
@@ -254,15 +254,15 @@ const FeaturesPage: React.FC = () => {
       </section>
 
       {/* Download CTA */}
-      <section className="py-12 md:py-16 bg-fairy-gold-500 text-white">
+      <section className="py-12 md:py-16 bg-amber-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">
+          <h2 className="font-display text-3xl md:text-4xl font-bold mb-4 text-neutral-900">
             Start Your Free Trial
           </h2>
-          <p className="text-lg text-soft-blue-50 mb-8">
+          <p className="text-lg text-neutral-700 mb-8">
             6 free Fairy Dust + 7 days of Fairy Corner access. No credit card required.
           </p>
-          <DownloadButtons variant="light" />
+          <DownloadButtons variant="gradient" />
         </div>
       </section>
     </div>

@@ -33,8 +33,8 @@ const Hero: React.FC = () => {
             <DownloadButtons variant="light" />
           </div>
 
-          {/* Trust Point */}
-          <p className="text-sm text-white/80 font-medium">
+          {/* Trust Point - Centered below buttons */}
+          <p className="text-sm text-white/80 font-medium text-center">
             ✓ No sign-up required • ✓ 6 free stories
           </p>
         </div>
