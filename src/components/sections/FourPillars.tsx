@@ -99,7 +99,7 @@ const FourPillars: React.FC = () => {
                 {pillar.id === 'fairy-corner' && (
                   <Link
                     to="/stories#fairy-corner-stories"
-                    className="inline-flex items-center gap-2 mt-6 px-6 py-3 bg-gradient-to-r from-soft-blue-500 to-soft-green-500 text-white font-semibold rounded-lg hover:shadow-lg transition-all hover:scale-105"
+                    className="inline-flex items-center gap-2 mt-6 px-6 py-3 bg-fairy-gold-500 text-white font-semibold rounded-lg hover:shadow-lg transition-all hover:scale-105"
                   >
                     <span>See Fairy Corner Examples</span>
                     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

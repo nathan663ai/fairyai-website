@@ -348,7 +348,7 @@ const HowItWorksPage: React.FC = () => {
       </section>
 
       {/* Download CTA */}
-      <section className="py-12 md:py-16 bg-gradient-to-br from-soft-blue-600 to-soft-green-600 text-white">
+      <section className="py-12 md:py-16 bg-fairy-gold-500 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">
             Ready to Start?

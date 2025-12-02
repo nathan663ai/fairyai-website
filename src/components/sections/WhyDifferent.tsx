@@ -61,7 +61,7 @@ const WhyDifferent: React.FC = () => {
             >
               <div className="flex items-start gap-4">
                 {/* Number Badge */}
-                <div className="flex-shrink-0 w-10 h-10 bg-gradient-to-br from-soft-blue-500 to-soft-green-500 rounded-full flex items-center justify-center text-white font-bold">
+                <div className="flex-shrink-0 w-10 h-10 bg-fairy-gold-500 rounded-full flex items-center justify-center text-white font-bold">
                   {item.number}
                 </div>
 

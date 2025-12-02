@@ -75,7 +75,7 @@ const Navigation: React.FC = () => {
             {/* Download App CTA */}
             <a
               href="/#download"
-              className="bg-gradient-to-r from-soft-blue-500 to-soft-green-500 text-white px-5 py-2.5 rounded-lg font-semibold hover:shadow-lg transition-all hover:scale-105"
+              className="bg-fairy-gold-500 text-white px-5 py-2.5 rounded-lg font-semibold hover:shadow-lg transition-all hover:scale-105"
               onClick={(e) => {
                 e.preventDefault();
                 const element = document.getElementById('download');
@@ -126,7 +126,7 @@ const Navigation: React.FC = () => {
                   window.location.href = '/#download';
                 }
               }}
-              className="block w-full text-center bg-gradient-to-r from-soft-blue-500 to-soft-green-500 text-white px-4 py-3 rounded-lg font-semibold hover:shadow-lg transition-all"
+              className="block w-full text-center bg-fairy-gold-500 text-white px-4 py-3 rounded-lg font-semibold hover:shadow-lg transition-all"
             >
               Download App
             </a>

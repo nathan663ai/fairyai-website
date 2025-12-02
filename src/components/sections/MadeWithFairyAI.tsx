@@ -12,7 +12,7 @@ const MadeWithFairyAI: React.FC = () => {
 
           {/* Main Heading */}
           <h2 className="font-display text-3xl md:text-4xl font-bold text-center mb-6">
-            <span className="bg-gradient-to-r from-soft-blue-600 to-soft-green-600 bg-clip-text text-transparent">
+            <span className="text-fairy-gold-500">
               Everything You See Was Created with FairyAI
             </span>
           </h2>

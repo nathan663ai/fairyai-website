@@ -41,7 +41,7 @@ const FounderSection: React.FC = () => {
 
             {/* Label and instruction */}
             <div className="text-center">
-              <p className="text-sm font-semibold bg-gradient-to-r from-soft-blue-600 to-soft-green-600 bg-clip-text text-transparent mb-1">
+              <p className="text-sm font-semibold text-fairy-gold-500 mb-1">
                 {founderImages[currentImageIndex].label}
               </p>
               <p className="text-xs text-neutral-500 italic">

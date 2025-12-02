@@ -164,7 +164,7 @@ const HowItWorks: React.FC = () => {
           </p>
           <Link
             to="/stories"
-            className="inline-flex items-center gap-2 bg-gradient-to-r from-soft-blue-600 to-soft-green-600 text-white font-semibold px-6 py-3 rounded-lg hover:shadow-lg hover:scale-105 transition-all duration-200"
+            className="inline-flex items-center gap-2 bg-fairy-gold-500 text-white font-semibold px-6 py-3 rounded-lg hover:shadow-lg hover:scale-105 transition-all duration-200"
           >
             Browse Fairy Corner
             <Sparkles className="w-5 h-5" />

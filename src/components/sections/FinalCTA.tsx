@@ -3,7 +3,7 @@ import DownloadButtons from '../ui/DownloadButtons';
 
 const FinalCTA: React.FC = () => {
   return (
-    <section className="py-8 md:py-12 bg-gradient-to-br from-soft-blue-600 to-soft-green-600 text-white">
+    <section className="py-8 md:py-12 bg-fairy-gold-500 text-white">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         {/* Heading */}
         <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">

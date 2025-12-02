@@ -113,7 +113,7 @@ const SongPlayer: React.FC<SongPlayerProps> = ({ songs, className = '' }) => {
         <button
           onClick={togglePlay}
           disabled={isLoading}
-          className="w-10 h-10 flex items-center justify-center rounded-full bg-gradient-to-r from-soft-blue-500 to-soft-green-500 text-white hover:from-soft-blue-600 hover:to-soft-green-600 transition-all shadow-md disabled:opacity-50"
+          className="w-10 h-10 flex items-center justify-center rounded-full bg-fairy-gold-500 text-white hover:bg-fairy-gold-600 transition-all shadow-md disabled:opacity-50"
           aria-label={isPlaying ? 'Pause' : 'Play'}
         >
           {isLoading ? (

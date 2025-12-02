@@ -101,7 +101,7 @@ const VideoPlayer: React.FC<VideoPlayerProps> = ({
           onClick={handlePlayClick}
         >
           <button
-            className="bg-gradient-to-br from-soft-blue-600 to-soft-green-600 rounded-full p-6 shadow-2xl hover:shadow-3xl transition-all hover:scale-110 active:scale-95 group"
+            className="bg-fairy-gold-500 rounded-full p-6 shadow-2xl hover:shadow-3xl transition-all hover:scale-110 active:scale-95 group"
             aria-label="Play video"
           >
             <svg

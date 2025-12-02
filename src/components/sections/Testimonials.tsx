@@ -94,7 +94,7 @@ const Testimonials: React.FC = () => {
                   {/* Author Info */}
                   <div className="flex items-center gap-3">
                     {/* Avatar Placeholder */}
-                    <div className="w-10 h-10 bg-gradient-to-br from-soft-blue-400 to-soft-green-400 rounded-full flex items-center justify-center text-white font-bold text-sm">
+                    <div className="w-10 h-10 bg-fairy-gold-500 rounded-full flex items-center justify-center text-white font-bold text-sm">
                       {testimonial.name.charAt(0)}
                     </div>
 

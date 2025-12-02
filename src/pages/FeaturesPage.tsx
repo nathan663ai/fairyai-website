@@ -131,7 +131,7 @@ const FeaturesPage: React.FC = () => {
             {whyDifferent.map((item, index) => (
               <Card key={index} className="p-8">
                 <div className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-soft-blue-600 to-soft-green-600 rounded-full flex items-center justify-center text-white font-bold text-sm">
+                  <div className="flex-shrink-0 w-12 h-12 bg-fairy-gold-500 rounded-full flex items-center justify-center text-white font-bold text-sm">
                     {item.number}
                   </div>
                   <div>
@@ -194,7 +194,7 @@ const FeaturesPage: React.FC = () => {
             </Card>
 
             {/* Premium Plan */}
-            <Card className="p-8 bg-gradient-to-br from-soft-blue-600 to-soft-green-600 text-white border-2 border-soft-blue-400">
+            <Card className="p-8 bg-fairy-gold-500 text-white border-2 border-fairy-gold-400">
               <div className="mb-4">
                 <Star className="w-10 h-10 text-fairy-gold-200" strokeWidth={1.5} fill="currentColor" />
               </div>
@@ -254,7 +254,7 @@ const FeaturesPage: React.FC = () => {
       </section>
 
       {/* Download CTA */}
-      <section className="py-12 md:py-16 bg-gradient-to-br from-soft-blue-600 to-soft-green-600 text-white">
+      <section className="py-12 md:py-16 bg-fairy-gold-500 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">
             Start Your Free Trial
