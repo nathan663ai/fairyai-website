@@ -41,7 +41,7 @@ const HowItWorksPage: React.FC = () => {
     {
       imageSrc: '/images/features/languages.png',
       title: '12 Languages',
-      description: "Stories, narration, and songs in native-quality audio."
+      description: "Stories, narration, and songs in native quality audio."
     },
     {
       imageSrc: '/images/features/custom-songs.png',
@@ -160,7 +160,7 @@ const HowItWorksPage: React.FC = () => {
                       Reading Stories
                     </h3>
                     <p className="text-sm text-neutral-600">
-                      Read together or play narration. Continue into multi-chapter books.
+                      Read together or play narration. Continue into chapter books.
                     </p>
                   </div>
                 </Card>
@@ -285,13 +285,13 @@ const HowItWorksPage: React.FC = () => {
                   <div className="mb-3">
                     <p className="text-sm font-semibold text-neutral-700 mb-1">You provide:</p>
                     <p className="text-sm text-neutral-600">
-                      Things like characters, themes, settings, age group, plot ideas... or just a one-sentence idea and we'll handle the rest.
+                      Things like characters, themes, settings, age group, plot ideas... or just a single sentence and we'll handle the rest.
                     </p>
                   </div>
                   <div>
                     <p className="text-sm font-semibold text-neutral-700 mb-1">We add:</p>
                     <p className="text-sm text-neutral-600">
-                      Including age-appropriate language, story structure, character consistency, safety filters, and more.
+                      Age appropriate language, story structure, character consistency, safety filters, and more.
                     </p>
                   </div>
                 </div>
@@ -319,7 +319,7 @@ const HowItWorksPage: React.FC = () => {
                   <div>
                     <p className="text-sm font-semibold text-neutral-700 mb-1">We add:</p>
                     <p className="text-sm text-neutral-600">
-                      Including 6 unique art styles, child-friendly visuals, consistent appearance across stories, and more.
+                      6 unique art styles, child friendly visuals, consistent appearance across stories, and more.
                     </p>
                   </div>
                 </div>
@@ -347,7 +347,7 @@ const HowItWorksPage: React.FC = () => {
                   <div>
                     <p className="text-sm font-semibold text-neutral-700 mb-1">We add:</p>
                     <p className="text-sm text-neutral-600">
-                      Including kid-friendly framing, story context, character details, content filtering, and more.
+                      Kid friendly framing, story context, character details, content filtering, and more.
                     </p>
                   </div>
                 </div>
@@ -369,13 +369,13 @@ const HowItWorksPage: React.FC = () => {
                   <div className="mb-3">
                     <p className="text-sm font-semibold text-neutral-700 mb-1">You provide:</p>
                     <p className="text-sm text-neutral-600">
-                      Just pick a voice and accent — that's it.
+                      Simply pick a voice and accent.
                     </p>
                   </div>
                   <div>
                     <p className="text-sm font-semibold text-neutral-700 mb-1">We add:</p>
                     <p className="text-sm text-neutral-600">
-                      Including bedtime narrator style, steady pacing, clear pronunciation, smart chunking for longer stories, and more.
+                      Bedtime narrator style, steady pacing, clear pronunciation, smart chunking for longer stories, and more.
                     </p>
                   </div>
                 </div>
@@ -385,52 +385,52 @@ const HowItWorksPage: React.FC = () => {
           </div>
 
           {/* How We Build Your Content Box */}
-          <div className="bg-gradient-to-r from-soft-blue-50 via-white to-fairy-gold-50 rounded-2xl p-8 mb-8 border border-neutral-200">
-            <h3 className="font-display text-2xl font-semibold text-center mb-6 text-neutral-900">
+          <div className="bg-slate-800 rounded-2xl p-8 mb-8 text-white">
+            <h3 className="font-display text-2xl font-semibold text-center mb-6">
               How We Build Your Content
             </h3>
 
             {/* Simple Flow */}
             <div className="flex flex-col md:flex-row items-center justify-center gap-4 mb-6">
-              <div className="bg-white rounded-xl px-6 py-3 shadow-sm border border-neutral-100">
-                <p className="font-semibold text-neutral-800">Your Ideas</p>
+              <div className="bg-soft-blue-500 rounded-xl px-6 py-3 shadow-lg">
+                <p className="font-semibold text-white">Your Ideas</p>
               </div>
-              <span className="text-fairy-gold-500 text-2xl">→</span>
-              <div className="bg-white rounded-xl px-6 py-3 shadow-sm border border-neutral-100">
-                <p className="font-semibold text-neutral-800">Our Prompt Engine</p>
+              <span className="text-fairy-gold-400 text-2xl font-bold">→</span>
+              <div className="bg-soft-blue-500 rounded-xl px-6 py-3 shadow-lg">
+                <p className="font-semibold text-white">Our Prompt Engine</p>
               </div>
-              <span className="text-fairy-gold-500 text-2xl">→</span>
-              <div className="bg-white rounded-xl px-6 py-3 shadow-sm border border-neutral-100">
-                <p className="font-semibold text-neutral-800">AI Generation</p>
+              <span className="text-fairy-gold-400 text-2xl font-bold">→</span>
+              <div className="bg-fairy-gold-500 rounded-xl px-6 py-3 shadow-lg">
+                <p className="font-semibold text-white">AI Generation</p>
               </div>
             </div>
 
-            <p className="text-center text-neutral-700 mb-4">
+            <p className="text-center text-neutral-300 mb-4">
               We combine your inputs with our carefully crafted prompt system:
             </p>
 
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3 max-w-4xl mx-auto">
-              <div className="bg-white rounded-lg px-4 py-2 text-center text-sm text-neutral-700 border border-neutral-100">
+              <div className="bg-white/10 backdrop-blur rounded-lg px-4 py-3 text-center text-sm text-white border border-white/20">
                 Safety guidelines & content filters
               </div>
-              <div className="bg-white rounded-lg px-4 py-2 text-center text-sm text-neutral-700 border border-neutral-100">
-                Age-appropriate complexity
+              <div className="bg-white/10 backdrop-blur rounded-lg px-4 py-3 text-center text-sm text-white border border-white/20">
+                Age appropriate complexity
               </div>
-              <div className="bg-white rounded-lg px-4 py-2 text-center text-sm text-neutral-700 border border-neutral-100">
+              <div className="bg-white/10 backdrop-blur rounded-lg px-4 py-3 text-center text-sm text-white border border-white/20">
                 Story structure & pacing
               </div>
-              <div className="bg-white rounded-lg px-4 py-2 text-center text-sm text-neutral-700 border border-neutral-100">
+              <div className="bg-white/10 backdrop-blur rounded-lg px-4 py-3 text-center text-sm text-white border border-white/20">
                 Style consistency
               </div>
             </div>
 
-            <p className="text-center text-neutral-600 mt-6 text-sm">
+            <p className="text-center text-fairy-gold-400 mt-6 font-medium">
               The result: unique, safe, personalised content every time.
             </p>
           </div>
 
           {/* Want to Know More CTA */}
-          <div className="bg-neutral-50 rounded-xl p-6 text-center">
+          <div className="bg-gradient-to-r from-fairy-gold-50 to-soft-blue-50 rounded-xl p-6 text-center border border-fairy-gold-200">
             <p className="font-semibold text-neutral-900 mb-2">
               Curious about the technical details?
             </p>
