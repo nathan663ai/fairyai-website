@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { Palette, Zap, Wand2, BookOpen, ChevronLeft, ChevronRight } from 'lucide-react';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 import VideoPlayer from '../components/ui/VideoPlayer';
 import DownloadButtons from '../components/ui/DownloadButtons';
 import Card from '../components/ui/Card';
@@ -253,152 +253,198 @@ const HowItWorksPage: React.FC = () => {
         </div>
       </section>
 
-      {/* How Character Wizard Works - Simplified */}
-      <section className="py-12 md:py-16 bg-white">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      {/* Behind the Magic */}
+      <section className="py-8 md:py-12 bg-white">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+
+          {/* Section Header */}
           <div className="text-center mb-10">
             <h2 className="font-display text-3xl md:text-4xl font-bold text-neutral-900 mb-3">
-              Character Wizard
+              Behind the Magic
             </h2>
             <p className="text-lg text-neutral-600">
-              Two ways to create characters
+              Here's what happens when you create with FairyAI
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8">
-            {/* Quick Character */}
-            <Card className="p-8 bg-gradient-to-br from-soft-blue-50 to-white">
-              <div className="mb-4">
-                <Zap className="w-10 h-10 text-soft-blue-600" strokeWidth={1.5} />
+          {/* Four Content Type Cards - 2x2 Grid */}
+          <div className="grid md:grid-cols-2 gap-6 mb-10">
+
+            {/* Stories */}
+            <Card className="p-6 bg-gradient-to-br from-fairy-gold-50 to-white">
+              <div className="flex items-start gap-4">
+                <img
+                  src="/images/features/continue-adventures.png"
+                  alt="Stories"
+                  className="w-12 h-12 object-contain flex-shrink-0"
+                />
+                <div>
+                  <h3 className="font-display text-xl font-semibold mb-3 text-neutral-900">
+                    Stories
+                  </h3>
+                  <div className="mb-3">
+                    <p className="text-sm font-semibold text-neutral-700 mb-1">You provide:</p>
+                    <p className="text-sm text-neutral-600">
+                      Things like characters, themes, settings, age group, plot ideas... or just a one-sentence idea and we'll handle the rest.
+                    </p>
+                  </div>
+                  <div>
+                    <p className="text-sm font-semibold text-neutral-700 mb-1">We add:</p>
+                    <p className="text-sm text-neutral-600">
+                      Including age-appropriate language, story structure, character consistency, safety filters, and more.
+                    </p>
+                  </div>
+                </div>
               </div>
-              <h3 className="font-display text-2xl font-semibold mb-3 text-neutral-900">
-                Quick Character
-              </h3>
-              <p className="text-neutral-700 mb-4">
-                Describe in one sentence. Create instantly.
-              </p>
-              <p className="text-sm text-neutral-600">
-                Perfect when you just want to start the story.
-              </p>
             </Card>
 
-            {/* Full Wizard */}
-            <Card className="p-8 bg-gradient-to-br from-soft-green-50 to-white">
-              <div className="mb-4">
-                <Palette className="w-10 h-10 text-soft-green-600" strokeWidth={1.5} />
+            {/* Characters */}
+            <Card className="p-6 bg-gradient-to-br from-soft-blue-50 to-white">
+              <div className="flex items-start gap-4">
+                <img
+                  src="/images/features/build-characters.png"
+                  alt="Characters"
+                  className="w-12 h-12 object-contain flex-shrink-0"
+                />
+                <div>
+                  <h3 className="font-display text-xl font-semibold mb-3 text-neutral-900">
+                    Characters
+                  </h3>
+                  <div className="mb-3">
+                    <p className="text-sm font-semibold text-neutral-700 mb-1">You provide:</p>
+                    <p className="text-sm text-neutral-600">
+                      A name and description, or go deeper with traits, abilities, personality... as much or as little as you like.
+                    </p>
+                  </div>
+                  <div>
+                    <p className="text-sm font-semibold text-neutral-700 mb-1">We add:</p>
+                    <p className="text-sm text-neutral-600">
+                      Including 6 unique art styles, child-friendly visuals, consistent appearance across stories, and more.
+                    </p>
+                  </div>
+                </div>
               </div>
-              <h3 className="font-display text-2xl font-semibold mb-3 text-neutral-900">
-                Full Wizard
-              </h3>
-              <p className="text-neutral-700 mb-4">
-                Step-by-step builder. Add traits, abilities, generate custom images (~60 seconds).
-              </p>
-              <p className="text-sm text-neutral-600">
-                Choose from Fantasy, Adventure, Animal, or Modern character types.
-              </p>
             </Card>
+
+            {/* Songs */}
+            <Card className="p-6 bg-gradient-to-br from-soft-green-50 to-white">
+              <div className="flex items-start gap-4">
+                <img
+                  src="/images/features/custom-songs.png"
+                  alt="Songs"
+                  className="w-12 h-12 object-contain flex-shrink-0"
+                />
+                <div>
+                  <h3 className="font-display text-xl font-semibold mb-3 text-neutral-900">
+                    Songs
+                  </h3>
+                  <div className="mb-3">
+                    <p className="text-sm font-semibold text-neutral-700 mb-1">You provide:</p>
+                    <p className="text-sm text-neutral-600">
+                      Things like a song idea, music style, voice type, featured characters... or just tell us what you're feeling.
+                    </p>
+                  </div>
+                  <div>
+                    <p className="text-sm font-semibold text-neutral-700 mb-1">We add:</p>
+                    <p className="text-sm text-neutral-600">
+                      Including kid-friendly framing, story context, character details, content filtering, and more.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </Card>
+
+            {/* Narrations */}
+            <Card className="p-6 bg-gradient-to-br from-fairy-purple-50 to-white">
+              <div className="flex items-start gap-4">
+                <img
+                  src="/images/features/languages.png"
+                  alt="Narrations"
+                  className="w-12 h-12 object-contain flex-shrink-0"
+                />
+                <div>
+                  <h3 className="font-display text-xl font-semibold mb-3 text-neutral-900">
+                    Narrations
+                  </h3>
+                  <div className="mb-3">
+                    <p className="text-sm font-semibold text-neutral-700 mb-1">You provide:</p>
+                    <p className="text-sm text-neutral-600">
+                      Just pick a voice and accent — that's it.
+                    </p>
+                  </div>
+                  <div>
+                    <p className="text-sm font-semibold text-neutral-700 mb-1">We add:</p>
+                    <p className="text-sm text-neutral-600">
+                      Including bedtime narrator style, steady pacing, clear pronunciation, smart chunking for longer stories, and more.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </Card>
+
           </div>
 
-          {/* Coming Soon Note */}
-          <div className="mt-8 p-6 bg-gradient-to-r from-fairy-purple-50 to-soft-blue-50 rounded-xl border-l-4 border-fairy-purple-400">
-            <p className="font-semibold text-neutral-900 mb-2">Coming Soon:</p>
-            <div className="grid md:grid-cols-3 gap-4 text-sm text-neutral-700">
-              <div>Create from photos or drawings</div>
-              <div>Choose-your-own-path stories</div>
-              <div>Record your own narrations</div>
+          {/* How We Build Your Content Box */}
+          <div className="bg-gradient-to-r from-soft-blue-50 via-white to-fairy-gold-50 rounded-2xl p-8 mb-8 border border-neutral-200">
+            <h3 className="font-display text-2xl font-semibold text-center mb-6 text-neutral-900">
+              How We Build Your Content
+            </h3>
+
+            {/* Simple Flow */}
+            <div className="flex flex-col md:flex-row items-center justify-center gap-4 mb-6">
+              <div className="bg-white rounded-xl px-6 py-3 shadow-sm border border-neutral-100">
+                <p className="font-semibold text-neutral-800">Your Ideas</p>
+              </div>
+              <span className="text-fairy-gold-500 text-2xl">→</span>
+              <div className="bg-white rounded-xl px-6 py-3 shadow-sm border border-neutral-100">
+                <p className="font-semibold text-neutral-800">Our Prompt Engine</p>
+              </div>
+              <span className="text-fairy-gold-500 text-2xl">→</span>
+              <div className="bg-white rounded-xl px-6 py-3 shadow-sm border border-neutral-100">
+                <p className="font-semibold text-neutral-800">AI Generation</p>
+              </div>
             </div>
-          </div>
-        </div>
-      </section>
 
-      {/* Story Creation - Simplified */}
-      <section className="py-12 md:py-16 bg-neutral-50">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-10">
-            <h2 className="font-display text-3xl md:text-4xl font-bold text-neutral-900 mb-3">
-              Story Creation
-            </h2>
-            <p className="text-lg text-neutral-600">
-              Choose your level of control
+            <p className="text-center text-neutral-700 mb-4">
+              We combine your inputs with our carefully crafted prompt system:
+            </p>
+
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3 max-w-4xl mx-auto">
+              <div className="bg-white rounded-lg px-4 py-2 text-center text-sm text-neutral-700 border border-neutral-100">
+                Safety guidelines & content filters
+              </div>
+              <div className="bg-white rounded-lg px-4 py-2 text-center text-sm text-neutral-700 border border-neutral-100">
+                Age-appropriate complexity
+              </div>
+              <div className="bg-white rounded-lg px-4 py-2 text-center text-sm text-neutral-700 border border-neutral-100">
+                Story structure & pacing
+              </div>
+              <div className="bg-white rounded-lg px-4 py-2 text-center text-sm text-neutral-700 border border-neutral-100">
+                Style consistency
+              </div>
+            </div>
+
+            <p className="text-center text-neutral-600 mt-6 text-sm">
+              The result: unique, safe, personalised content every time.
             </p>
           </div>
 
-          <div className="space-y-6">
-            {/* Quick Story */}
-            <Card className="p-8">
-              <div className="flex items-start gap-6">
-                <div className="flex-shrink-0">
-                  <Zap className="w-12 h-12 text-fairy-gold-500" strokeWidth={1.5} />
-                </div>
-                <div>
-                  <h3 className="font-display text-2xl font-semibold mb-3 text-neutral-900">
-                    Quick Story
-                  </h3>
-                  <p className="text-lg text-neutral-700 mb-3">
-                    Pick age group. Describe what you want in one sentence. Done.
-                  </p>
-                  <p className="text-sm text-neutral-600">
-                    Perfect for weeknight bedtimes when you just need a story fast.
-                  </p>
-                </div>
-              </div>
-            </Card>
-
-            {/* Story Wizard */}
-            <Card className="p-8 bg-gradient-to-br from-white to-soft-blue-50">
-              <div className="flex items-start gap-6">
-                <div className="flex-shrink-0">
-                  <Wand2 className="w-12 h-12 text-soft-blue-600" strokeWidth={1.5} />
-                </div>
-                <div>
-                  <h3 className="font-display text-2xl font-semibold mb-3 text-neutral-900">
-                    Story Wizard
-                  </h3>
-                  <p className="text-lg text-neutral-700 mb-4">
-                    Full control when you have more time:
-                  </p>
-                  <div className="grid md:grid-cols-2 gap-x-6 gap-y-2 text-neutral-700">
-                    <div>• Select characters (one or many)</div>
-                    <div>• Choose theme and setting</div>
-                    <div>• Pick moral lesson</div>
-                    <div>• Add optional plot hints</div>
-                    <div>• Select age group and language</div>
-                    <div>• Choose length and perspective</div>
-                  </div>
-                </div>
-              </div>
-            </Card>
-
-            {/* Continuation */}
-            <Card className="p-8 bg-gradient-to-br from-soft-green-50 to-white border-2 border-soft-green-200">
-              <div className="flex items-start gap-6">
-                <div className="flex-shrink-0">
-                  <BookOpen className="w-12 h-12 text-soft-green-600" strokeWidth={1.5} />
-                </div>
-                <div>
-                  <h3 className="font-display text-2xl font-semibold mb-3 text-neutral-900">
-                    Continue Into Books
-                  </h3>
-                  <p className="text-lg text-neutral-700 mb-4">
-                    Stories don't end. Continue them night after night:
-                  </p>
-                  <div className="grid md:grid-cols-2 gap-4">
-                    <div className="bg-white rounded-lg p-4">
-                      <p className="font-semibold text-neutral-900 mb-1">Quick Continue</p>
-                      <p className="text-sm text-neutral-600">2 taps, instant next chapter</p>
-                    </div>
-                    <div className="bg-white rounded-lg p-4">
-                      <p className="font-semibold text-neutral-900 mb-1">Advanced Continue</p>
-                      <p className="text-sm text-neutral-600">Add characters, change tone, guide plot</p>
-                    </div>
-                  </div>
-                  <p className="text-sm text-neutral-600 mt-4">
-                    Stories auto-group into books of 5 chapters with "Play All" narration.
-                  </p>
-                </div>
-              </div>
-            </Card>
+          {/* Want to Know More CTA */}
+          <div className="bg-neutral-50 rounded-xl p-6 text-center">
+            <p className="font-semibold text-neutral-900 mb-2">
+              Curious about the technical details?
+            </p>
+            <p className="text-neutral-600 mb-4">
+              We're happy to chat about how FairyAI works under the hood.
+            </p>
+            <a
+              href="/contact"
+              className="inline-flex items-center gap-2 text-soft-blue-600 font-semibold hover:text-soft-blue-700 transition-colors"
+            >
+              Contact Us →
+            </a>
           </div>
+
         </div>
       </section>
 
