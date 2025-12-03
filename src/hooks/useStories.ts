@@ -20,7 +20,7 @@ export function useStories(): UseStoriesResult {
         setError(null);
 
         // Fetch specific stories by slug (only show these on the website)
-        const allowedSlugs = ['the_gingerbread_man', 'whispers-from-the-beanstalk-375b3b33', 'the-lantern-of-brave-dreams-1d9f0a65'];
+        const allowedSlugs = ['the_gingerbread_man', 'whispers-from-the-beanstalk-375b3b33', 'the-lantern-of-brave-dreams-1d9f0a65', 'goldilocks_and_the_three_bears'];
         console.log('[useStories] Fetching stories with slugs:', allowedSlugs);
 
         const { data, error: fetchError } = await supabase
