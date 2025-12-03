@@ -19,11 +19,14 @@ export function useStories(): UseStoriesResult {
         setLoading(true);
         setError(null);
 
-        // Fetch unique stories (one per slug, preferring en-GB)
+        // Fetch specific stories by slug (only show these on the website)
+        const allowedSlugs = ['gingerbread-man', 'bluebell-sea'];
+
         const { data, error: fetchError } = await supabase
           .from('fairy_tales')
           .select('id, slug, title, image_url, type, is_featured, language_code')
           .eq('is_active', true)
+          .in('slug', allowedSlugs)
           .order('is_featured', { ascending: false })
           .order('title', { ascending: true });
 
