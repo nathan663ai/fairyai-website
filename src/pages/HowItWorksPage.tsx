@@ -63,14 +63,28 @@ const HowItWorksPage: React.FC = () => {
   return (
     <div className="pt-16 bg-white">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-soft-blue-50 to-soft-green-50 py-12 md:py-16">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="font-display text-4xl md:text-5xl font-bold text-neutral-900 mb-4">
-            How It Works
-          </h1>
-          <p className="text-xl text-neutral-600">
-            Simple to start. Deep when you want it.
-          </p>
+      <section className="bg-gradient-to-br from-soft-blue-50 to-soft-green-50 py-8 md:py-12">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-2 gap-8 items-center">
+            {/* Text - Left */}
+            <div className="text-center md:text-left">
+              <h1 className="font-display text-4xl md:text-5xl font-bold text-neutral-900 mb-4">
+                How It Works
+              </h1>
+              <p className="text-xl text-neutral-600">
+                Simple to start. Deep when you want it.
+              </p>
+            </div>
+
+            {/* Fairy - Right */}
+            <div className="flex justify-center md:justify-end">
+              <img
+                src="/images/how-it-works/fairy-guide.png"
+                alt="Fairy guide"
+                className="h-48 md:h-64 w-auto object-contain"
+              />
+            </div>
+          </div>
         </div>
       </section>
 
