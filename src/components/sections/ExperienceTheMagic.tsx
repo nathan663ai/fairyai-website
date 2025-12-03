@@ -76,25 +76,25 @@ interface SongData {
 
 const songsByCategory: Record<SongCategory, SongData[]> = {
   classic: [
-    { id: 'classic-1', title: 'Run, Run, Run!', style: 'rap', storyTitle: 'The Gingerbread Man', audioSrc: 'https://d1mmspri4wgcne.cloudfront.net/classic-tales/the_gingerbread_man/rap.mp3' },
-    { id: 'classic-2', title: 'Run, Run, As Fast As You Can', style: 'singalong', storyTitle: 'The Gingerbread Man', audioSrc: 'https://d1mmspri4wgcne.cloudfront.net/classic-tales/the_gingerbread_man/singalong.mp3' },
-    { id: 'classic-3', title: "Rapunzel's Hair Jam", style: 'rap', storyTitle: 'Rapunzel', audioSrc: 'https://d1mmspri4wgcne.cloudfront.net/classic-tales/rapunzel/rap.mp3' },
-    { id: 'classic-4', title: 'Seven With One Blow', style: 'epic_adventure', storyTitle: 'The Brave Little Tailor', audioSrc: 'https://d1mmspri4wgcne.cloudfront.net/classic-tales/the_brave_little_tailor/epic_adventure.mp3' },
-    { id: 'classic-5', title: 'Follow the Piper', style: 'singalong', storyTitle: 'The Pied Piper of Hamelin', audioSrc: 'https://d1mmspri4wgcne.cloudfront.net/classic-tales/the_pied_piper_of_hamelin/singalong.mp3' },
+    { id: 'classic-1', title: 'Run, Run, Run!', style: 'epic_adventure', storyTitle: 'The Gingerbread Man', audioSrc: 'https://d1mmspri4wgcne.cloudfront.net/classic-tales/the_gingerbread_man/epic_adventure.mp3' },
+    { id: 'classic-2', title: "Rapunzel's Hair Jam", style: 'rap', storyTitle: 'Rapunzel', audioSrc: 'https://d1mmspri4wgcne.cloudfront.net/classic-tales/rapunzel/rap.mp3' },
+    { id: 'classic-3', title: 'Stitch by Stitch', style: 'magical_pop_rock', storyTitle: 'The Brave Little Tailor', audioSrc: 'https://d1mmspri4wgcne.cloudfront.net/classic-tales/the_brave_little_tailor/magical_pop_rock.mp3' },
+    { id: 'classic-4', title: 'Follow the Piper', style: 'singalong', storyTitle: 'The Pied Piper of Hamelin', audioSrc: 'https://d1mmspri4wgcne.cloudfront.net/classic-tales/the_pied_piper_of_hamelin/singalong.mp3' },
+    { id: 'classic-5', title: 'Tower of Stars', style: 'enchanted_synth_pop', storyTitle: 'Rapunzel', audioSrc: 'https://d1mmspri4wgcne.cloudfront.net/classic-tales/rapunzel/enchanted_synth_pop.mp3' },
   ],
   ai: [
     { id: 'ai-1', title: 'The Giggly Witch and the Runaway Berries', style: 'singalong', storyTitle: "Bumblefizz and the Whimsical Witches' Picnic", audioSrc: 'https://d1mmspri4wgcne.cloudfront.net/ai_stories/bumblefizz-and-the-whimsical-witches-picnic-c0dd266c/songs/audio/98572fcb-b03d-42ef-a240-0753c9217ed1.mp3' },
-    { id: 'ai-2', title: 'Sprinkle-Blue Adventure', style: 'singalong', storyTitle: "Pibble's Planet Gigglepop Goof-Up!", audioSrc: 'https://d1mmspri4wgcne.cloudfront.net/ai_stories/pibble-s-planet-gigglepop-goof-up-036fb9b7/songs/audio/c3c92211-0a70-4e8e-a072-bac02053bb03.mp3' },
-    { id: 'ai-3', title: 'The Clever Little Octopus', style: 'singalong', storyTitle: 'Bibblet and the Mystery of the Coral Kingdom', audioSrc: 'https://d1mmspri4wgcne.cloudfront.net/ai_stories/bibblet-and-the-mystery-of-the-coral-kingdom-110a5183/songs/audio/ecfc5b95-4c18-4856-8979-b69e1aedf241.mp3' },
-    { id: 'ai-4', title: 'The Footprints Song', style: 'singalong', storyTitle: 'Sibley and the Secret of the Whispering Woods', audioSrc: 'https://d1mmspri4wgcne.cloudfront.net/ai_stories/sibley-and-the-secret-of-the-whispering-woods-f288f540/songs/audio/87359261-35a9-49f9-a48f-3a7d8ecb40f1.mp3' },
-    { id: 'ai-5', title: 'The Moon Jelly Crown Quest', style: 'singalong', storyTitle: 'Tibbit and the Secret of Coralina', audioSrc: 'https://d1mmspri4wgcne.cloudfront.net/ai_stories/tibbit-and-the-secret-of-coralina-130030e5/songs/audio/b10fa78c-fd5f-488a-a8d0-6e5f96127f72.mp3' },
+    { id: 'ai-2', title: "The Bubble-Ship's Wild Ride", style: 'epic_adventure', storyTitle: "Pibble's Planet Gigglepop Goof-Up!", audioSrc: 'https://d1mmspri4wgcne.cloudfront.net/ai_stories/pibble-s-planet-gigglepop-goof-up-036fb9b7/songs/audio/5989ef20-1b17-42bc-84e1-5ca7d58d7f99.mp3' },
+    { id: 'ai-3', title: "The Pearl's Secret Glow", style: 'magical_pop_rock', storyTitle: 'Bibblet and the Mystery of the Coral Kingdom', audioSrc: 'https://d1mmspri4wgcne.cloudfront.net/ai_stories/bibblet-and-the-mystery-of-the-coral-kingdom-110a5183/songs/audio/bd6a857f-bb67-4007-93a9-94cf24669bea.mp3' },
+    { id: 'ai-4', title: 'The Kite and the Breeze', style: 'enchanted_synth_pop', storyTitle: 'Lena and the Fluttering Red Kite', audioSrc: 'https://apiboxfiles.erweima.ai/M2U0ZmI1MmUtMmM0NS00MjViLThiOGItNjk1YmRkMjgwMzhl.mp3' },
+    { id: 'ai-5', title: 'Footprints in the Whispering Woods', style: 'epic_adventure', storyTitle: 'Sibley and the Secret of the Whispering Woods', audioSrc: 'https://d1mmspri4wgcne.cloudfront.net/ai_stories/sibley-and-the-secret-of-the-whispering-woods-f288f540/songs/audio/c228d783-df45-4298-9c3c-b9126a8f5dcc.mp3' },
   ],
   nursery: [
     { id: 'nursery-1', title: 'Five Little Monkeys Remix', style: 'rap', storyTitle: 'Five Little Monkeys Jumping on the Bed', audioSrc: 'https://d1mmspri4wgcne.cloudfront.net/nursery-rhymes/five_little_monkeys_jumping_on_the_bed/en-GB/rap.mp3' },
     { id: 'nursery-2', title: 'Starfire Odyssey', style: 'epic_adventure', storyTitle: 'Twinkle Twinkle Little Star', audioSrc: 'https://d1mmspri4wgcne.cloudfront.net/nursery-rhymes/twinkle_twinkle_little_star/en-GB/epic_adventure.mp3' },
-    { id: 'nursery-3', title: 'The Ballad of Humpty Dumpty', style: 'epic_adventure', storyTitle: 'Humpty Dumpty', audioSrc: 'https://d1mmspri4wgcne.cloudfront.net/nursery-rhymes/humpty_dumpty/en-GB/epic_adventure.mp3' },
-    { id: 'nursery-4', title: 'The Wheels of the Quest', style: 'epic_adventure', storyTitle: 'The Wheels on the Bus', audioSrc: 'https://d1mmspri4wgcne.cloudfront.net/nursery-rhymes/the_wheels_on_the_bus/en-GB/epic_adventure.mp3' },
-    { id: 'nursery-5', title: 'Row Row Row Your Boat', style: 'epic_adventure', storyTitle: 'Row Row Row Your Boat', audioSrc: 'https://d1mmspri4wgcne.cloudfront.net/nursery-rhymes/row_row_row_your_boat/en-GB/epic_adventure.mp3' },
+    { id: 'nursery-3', title: 'Humpty Dumpty Remix', style: 'pop', storyTitle: 'Humpty Dumpty', audioSrc: 'https://d1mmspri4wgcne.cloudfront.net/nursery-rhymes/humpty_dumpty/en-GB/pop.mp3' },
+    { id: 'nursery-4', title: 'The Brave Farmer MacDonald', style: 'epic_adventure', storyTitle: 'Old MacDonald Had a Farm', audioSrc: 'https://d1mmspri4wgcne.cloudfront.net/nursery-rhymes/old_macdonald_had_a_farm/en-GB/epic_adventure.mp3' },
+    { id: 'nursery-5', title: 'Row Row Remix', style: 'rap', storyTitle: 'Row Row Row Your Boat', audioSrc: 'https://d1mmspri4wgcne.cloudfront.net/nursery-rhymes/row_row_row_your_boat/en-GB/rap.mp3' },
   ],
 };
 
