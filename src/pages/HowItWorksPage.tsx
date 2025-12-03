@@ -60,6 +60,45 @@ const HowItWorksPage: React.FC = () => {
     }
   ];
 
+  const journeySteps = [
+    {
+      number: 1,
+      title: 'Your Child Starts the Magic',
+      description: 'They choose their hero, dream up an adventure, or pick from our daily ideas.',
+      imageSrc: '/images/how-it-works/step-1-starts-magic.png'
+    },
+    {
+      number: 2,
+      title: 'FairyAI Listens and Learns',
+      description: 'Our system remembers their favourite characters, themes, and style, growing smarter with every story.',
+      imageSrc: '/images/how-it-works/step-2-listens-learns.png'
+    },
+    {
+      number: 3,
+      title: 'The Story Studio Begins',
+      description: 'Behind the scenes, FairyAI blends imagination with gentle storytelling rules to keep every tale kind, calm, and age perfect.',
+      imageSrc: '/images/how-it-works/step-3-story-studio.png'
+    },
+    {
+      number: 4,
+      title: 'Specialists Bring It to Life',
+      description: 'Different creative engines handle each part: one writes, one paints, one sings, one tells the tale, all working together seamlessly.',
+      imageSrc: '/images/how-it-works/step-4-specialists.png'
+    },
+    {
+      number: 5,
+      title: 'The Story Comes Alive',
+      description: "Within moments, your child's world appears, complete with custom art, voices, and songs that make every story unique.",
+      imageSrc: '/images/how-it-works/step-5-comes-alive.png'
+    },
+    {
+      number: 6,
+      title: 'Safe, Stored, and Always Theirs',
+      description: "Every creation is saved securely in your family's own library, ready to revisit, replay, or continue anytime.",
+      imageSrc: '/images/how-it-works/step-6-safe-stored.png'
+    }
+  ];
+
   return (
     <div className="pt-16 bg-white">
       {/* Hero Section */}
@@ -195,8 +234,138 @@ const HowItWorksPage: React.FC = () => {
         </div>
       </section>
 
+      {/* The FairyAI Journey */}
+      <section className="py-12 md:py-16 bg-neutral-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Section Header */}
+          <div className="text-center mb-12">
+            <h2 className="font-display text-3xl md:text-4xl font-bold text-neutral-900 mb-3">
+              The FairyAI Journey
+            </h2>
+            <p className="text-lg text-neutral-600">
+              From imagination to bedtime magic in moments
+            </p>
+          </div>
+
+          {/* Desktop: Zigzag Layout */}
+          <div className="hidden lg:block relative">
+            {journeySteps.map((step, index) => {
+              const isEven = index % 2 === 0;
+              return (
+                <div key={step.number} className="relative">
+                  {/* Step Row */}
+                  <div className={`flex items-center gap-8 ${isEven ? '' : 'flex-row-reverse'} mb-8`}>
+                    {/* Image Side */}
+                    <div className="w-1/2 flex justify-center">
+                      <div className="relative">
+                        {/* Number Badge */}
+                        <div className="absolute -top-4 -left-4 w-12 h-12 bg-fairy-gold-500 rounded-full flex items-center justify-center text-white text-xl font-bold shadow-lg z-10">
+                          {step.number}
+                        </div>
+                        {/* Image */}
+                        <div className="w-48 h-48 md:w-56 md:h-56 rounded-full bg-gradient-to-br from-fairy-gold-50 to-soft-blue-50 shadow-xl overflow-hidden">
+                          <img
+                            src={step.imageSrc}
+                            alt={step.title}
+                            loading="lazy"
+                            className="w-full h-full object-contain p-4"
+                          />
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Text Side */}
+                    <div className={`w-1/2 flex ${isEven ? 'justify-start' : 'justify-end'}`}>
+                      <div className={`max-w-sm ${isEven ? 'text-left' : 'text-right'}`}>
+                        <h3 className="font-display text-2xl font-semibold mb-3 text-neutral-900">
+                          {step.title}
+                        </h3>
+                        <p className="text-neutral-600 leading-relaxed">
+                          {step.description}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Curved Arrow to Next Step */}
+                  {index < journeySteps.length - 1 && (
+                    <div className={`flex ${isEven ? 'justify-end pr-24' : 'justify-start pl-24'} -mt-4 mb-4`}>
+                      <svg
+                        className={`w-16 h-16 text-fairy-gold-400 ${isEven ? '' : 'scale-x-[-1]'}`}
+                        viewBox="0 0 64 64"
+                        fill="none"
+                        stroke="currentColor"
+                      >
+                        <path
+                          d="M8 8 C 32 8, 56 32, 56 56"
+                          strokeWidth="3"
+                          strokeLinecap="round"
+                          strokeDasharray="4 4"
+                        />
+                        <path
+                          d="M48 48 L 56 56 L 48 56"
+                          strokeWidth="3"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </svg>
+                    </div>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+
+          {/* Mobile: Vertical Stack */}
+          <div className="lg:hidden space-y-8">
+            {journeySteps.map((step, index) => (
+              <div key={step.number} className="text-center">
+                {/* Number Badge */}
+                <div className="inline-flex items-center justify-center w-10 h-10 bg-fairy-gold-500 rounded-full text-white text-lg font-bold shadow-lg mb-4">
+                  {step.number}
+                </div>
+
+                {/* Image */}
+                <div className="w-40 h-40 mx-auto rounded-full bg-gradient-to-br from-fairy-gold-50 to-soft-blue-50 shadow-lg overflow-hidden mb-4">
+                  <img
+                    src={step.imageSrc}
+                    alt={step.title}
+                    loading="lazy"
+                    className="w-full h-full object-contain p-4"
+                  />
+                </div>
+
+                {/* Title and Description */}
+                <h3 className="font-display text-xl font-semibold mb-2 text-neutral-900">
+                  {step.title}
+                </h3>
+                <p className="text-neutral-600 leading-relaxed max-w-xs mx-auto">
+                  {step.description}
+                </p>
+
+                {/* Arrow to Next Step */}
+                {index < journeySteps.length - 1 && (
+                  <div className="flex justify-center mt-6">
+                    <svg className="w-8 h-8 text-fairy-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                    </svg>
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+
+          {/* Tagline */}
+          <div className="text-center mt-12">
+            <p className="text-lg text-neutral-700 italic">
+              "FairyAI isn't just AI — it's a whole story studio built around your child's imagination."
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Features Grid */}
-      <section className="py-8 md:py-12 bg-neutral-50">
+      <section className="py-8 md:py-12 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8">
             <h2 className="font-display text-3xl md:text-4xl font-bold text-neutral-900 mb-3">
@@ -254,7 +423,7 @@ const HowItWorksPage: React.FC = () => {
       </section>
 
       {/* Behind the Magic */}
-      <section className="py-8 md:py-12 bg-white">
+      <section className="py-8 md:py-12 bg-neutral-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 
           {/* Section Header */}
@@ -384,67 +553,24 @@ const HowItWorksPage: React.FC = () => {
 
           </div>
 
-          {/* How We Build Your Content Box */}
-          <div className="bg-gradient-to-br from-fairy-gold-100 via-fairy-gold-50 to-soft-blue-50 rounded-2xl p-8 mb-8 border border-fairy-gold-200">
-            <h3 className="font-display text-2xl font-semibold text-center mb-8 text-neutral-900">
-              How We Build Your Content
-            </h3>
+        </div>
+      </section>
 
-            {/* Simple Flow */}
-            <div className="flex flex-col md:flex-row items-center justify-center gap-3 md:gap-4 mb-8">
-              <div className="bg-soft-blue-500 rounded-xl px-6 py-3 shadow-md">
-                <p className="font-semibold text-white text-center">Your Ideas</p>
-              </div>
-              <span className="text-fairy-gold-500 text-2xl font-bold">→</span>
-              <div className="bg-soft-blue-500 rounded-xl px-6 py-3 shadow-md">
-                <p className="font-semibold text-white text-center">Our Prompt Engine</p>
-              </div>
-              <span className="text-fairy-gold-500 text-2xl font-bold">→</span>
-              <div className="bg-fairy-gold-500 rounded-xl px-6 py-3 shadow-md">
-                <p className="font-semibold text-white text-center">AI Generation</p>
-              </div>
-            </div>
-
-            <p className="text-center text-neutral-700 mb-6">
-              We combine your inputs with our carefully crafted prompt system:
-            </p>
-
-            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-4xl mx-auto">
-              <div className="bg-white rounded-xl px-4 py-4 text-center text-sm font-medium text-neutral-800 shadow-md border border-fairy-gold-200">
-                Safety guidelines & content filters
-              </div>
-              <div className="bg-white rounded-xl px-4 py-4 text-center text-sm font-medium text-neutral-800 shadow-md border border-fairy-gold-200">
-                Age appropriate complexity
-              </div>
-              <div className="bg-white rounded-xl px-4 py-4 text-center text-sm font-medium text-neutral-800 shadow-md border border-fairy-gold-200">
-                Story structure & pacing
-              </div>
-              <div className="bg-white rounded-xl px-4 py-4 text-center text-sm font-medium text-neutral-800 shadow-md border border-fairy-gold-200">
-                Style consistency
-              </div>
-            </div>
-
-            <p className="text-center text-fairy-gold-600 mt-8 font-semibold text-lg">
-              The result: unique, safe, personalised content every time.
-            </p>
-          </div>
-
-          {/* Want to Know More CTA */}
-          <div className="bg-gradient-to-r from-fairy-gold-50 to-soft-blue-50 rounded-xl p-6 text-center border border-fairy-gold-200">
-            <p className="font-semibold text-neutral-900 mb-2">
-              Curious about the technical details?
-            </p>
-            <p className="text-neutral-600 mb-4">
-              We're happy to chat about how FairyAI works under the hood.
-            </p>
-            <a
-              href="/contact"
-              className="inline-flex items-center gap-2 text-soft-blue-600 font-semibold hover:text-soft-blue-700 transition-colors"
-            >
-              Contact Us →
-            </a>
-          </div>
-
+      {/* Curious about technical details */}
+      <section className="py-8 md:py-12 bg-slate-800">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <p className="font-semibold text-white text-xl mb-2">
+            Curious about the technical details?
+          </p>
+          <p className="text-neutral-300 mb-6">
+            We're happy to chat about how FairyAI works under the hood.
+          </p>
+          <a
+            href="/contact"
+            className="inline-flex items-center gap-2 bg-fairy-gold-500 text-white font-semibold px-6 py-3 rounded-lg hover:bg-fairy-gold-600 hover:shadow-lg transition-all"
+          >
+            Contact Us →
+          </a>
         </div>
       </section>
 
