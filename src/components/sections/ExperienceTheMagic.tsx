@@ -63,22 +63,45 @@ const storyExamples = [
   },
 ];
 
-// Song Examples Data - easy to update array
-const sampleSongs = [
-  {
-    id: 'gingerbread-epic',
-    title: 'Run Run Run',
-    fromStory: 'The Gingerbread Man',
-    audioSrc: 'https://d1mmspri4wgcne.cloudfront.net/classic-tales/the_gingerbread_man/epic_adventure.mp3',
-    duration: 154, // seconds
-  },
-  {
-    id: 'gingerbread-singalong',
-    title: 'Gingerbread Singalong',
-    fromStory: 'The Gingerbread Man',
-    audioSrc: 'https://d1mmspri4wgcne.cloudfront.net/classic-tales/the_gingerbread_man/singalong.mp3',
-    duration: 118,
-  },
+// Song Examples Data - organized by category for tabs
+type SongCategory = 'classic' | 'ai' | 'nursery';
+
+interface SongData {
+  id: string;
+  title: string;
+  style: string;
+  storyTitle: string;
+  audioSrc: string;
+}
+
+const songsByCategory: Record<SongCategory, SongData[]> = {
+  classic: [
+    { id: 'classic-1', title: 'Run, Run, Run!', style: 'rap', storyTitle: 'The Gingerbread Man', audioSrc: 'https://d1mmspri4wgcne.cloudfront.net/classic-tales/the_gingerbread_man/rap.mp3' },
+    { id: 'classic-2', title: 'Run, Run, As Fast As You Can', style: 'singalong', storyTitle: 'The Gingerbread Man', audioSrc: 'https://d1mmspri4wgcne.cloudfront.net/classic-tales/the_gingerbread_man/singalong.mp3' },
+    { id: 'classic-3', title: "Rapunzel's Hair Jam", style: 'rap', storyTitle: 'Rapunzel', audioSrc: 'https://d1mmspri4wgcne.cloudfront.net/classic-tales/rapunzel/rap.mp3' },
+    { id: 'classic-4', title: 'Seven With One Blow', style: 'epic_adventure', storyTitle: 'The Brave Little Tailor', audioSrc: 'https://d1mmspri4wgcne.cloudfront.net/classic-tales/the_brave_little_tailor/epic_adventure.mp3' },
+    { id: 'classic-5', title: 'Follow the Piper', style: 'singalong', storyTitle: 'The Pied Piper of Hamelin', audioSrc: 'https://d1mmspri4wgcne.cloudfront.net/classic-tales/the_pied_piper_of_hamelin/singalong.mp3' },
+  ],
+  ai: [
+    { id: 'ai-1', title: 'The Giggly Witch and the Runaway Berries', style: 'singalong', storyTitle: "Bumblefizz and the Whimsical Witches' Picnic", audioSrc: 'https://d1mmspri4wgcne.cloudfront.net/ai_stories/bumblefizz-and-the-whimsical-witches-picnic-c0dd266c/songs/audio/98572fcb-b03d-42ef-a240-0753c9217ed1.mp3' },
+    { id: 'ai-2', title: 'Sprinkle-Blue Adventure', style: 'singalong', storyTitle: "Pibble's Planet Gigglepop Goof-Up!", audioSrc: 'https://d1mmspri4wgcne.cloudfront.net/ai_stories/pibble-s-planet-gigglepop-goof-up-036fb9b7/songs/audio/c3c92211-0a70-4e8e-a072-bac02053bb03.mp3' },
+    { id: 'ai-3', title: 'The Clever Little Octopus', style: 'singalong', storyTitle: 'Bibblet and the Mystery of the Coral Kingdom', audioSrc: 'https://d1mmspri4wgcne.cloudfront.net/ai_stories/bibblet-and-the-mystery-of-the-coral-kingdom-110a5183/songs/audio/ecfc5b95-4c18-4856-8979-b69e1aedf241.mp3' },
+    { id: 'ai-4', title: 'The Footprints Song', style: 'singalong', storyTitle: 'Sibley and the Secret of the Whispering Woods', audioSrc: 'https://d1mmspri4wgcne.cloudfront.net/ai_stories/sibley-and-the-secret-of-the-whispering-woods-f288f540/songs/audio/87359261-35a9-49f9-a48f-3a7d8ecb40f1.mp3' },
+    { id: 'ai-5', title: 'The Moon Jelly Crown Quest', style: 'singalong', storyTitle: 'Tibbit and the Secret of Coralina', audioSrc: 'https://d1mmspri4wgcne.cloudfront.net/ai_stories/tibbit-and-the-secret-of-coralina-130030e5/songs/audio/b10fa78c-fd5f-488a-a8d0-6e5f96127f72.mp3' },
+  ],
+  nursery: [
+    { id: 'nursery-1', title: 'Five Little Monkeys Remix', style: 'rap', storyTitle: 'Five Little Monkeys Jumping on the Bed', audioSrc: 'https://d1mmspri4wgcne.cloudfront.net/nursery-rhymes/five_little_monkeys_jumping_on_the_bed/en-GB/rap.mp3' },
+    { id: 'nursery-2', title: 'Starfire Odyssey', style: 'epic_adventure', storyTitle: 'Twinkle Twinkle Little Star', audioSrc: 'https://d1mmspri4wgcne.cloudfront.net/nursery-rhymes/twinkle_twinkle_little_star/en-GB/epic_adventure.mp3' },
+    { id: 'nursery-3', title: 'The Ballad of Humpty Dumpty', style: 'epic_adventure', storyTitle: 'Humpty Dumpty', audioSrc: 'https://d1mmspri4wgcne.cloudfront.net/nursery-rhymes/humpty_dumpty/en-GB/epic_adventure.mp3' },
+    { id: 'nursery-4', title: 'The Wheels of the Quest', style: 'epic_adventure', storyTitle: 'The Wheels on the Bus', audioSrc: 'https://d1mmspri4wgcne.cloudfront.net/nursery-rhymes/the_wheels_on_the_bus/en-GB/epic_adventure.mp3' },
+    { id: 'nursery-5', title: 'Row Row Row Your Boat', style: 'epic_adventure', storyTitle: 'Row Row Row Your Boat', audioSrc: 'https://d1mmspri4wgcne.cloudfront.net/nursery-rhymes/row_row_row_your_boat/en-GB/epic_adventure.mp3' },
+  ],
+};
+
+const songTabs: { id: SongCategory; label: string }[] = [
+  { id: 'classic', label: 'Classic Tales' },
+  { id: 'ai', label: 'Daily AI Stories' },
+  { id: 'nursery', label: 'Nursery Rhymes' },
 ];
 
 // Character Gallery Data - Real character images from app
@@ -162,6 +185,9 @@ const ExperienceTheMagic: React.FC = () => {
   const [duration, setDuration] = useState(0);
   const [isLoading, setIsLoading] = useState(false);
 
+  // Song tab state
+  const [activeSongTab, setActiveSongTab] = useState<SongCategory>('classic');
+
   const scroll = (ref: React.RefObject<HTMLDivElement>, direction: 'left' | 'right', amount: number) => {
     if (ref.current) {
       ref.current.scrollBy({
@@ -235,9 +261,9 @@ const ExperienceTheMagic: React.FC = () => {
     };
   }, []);
 
-  // Get current song info (for song player section) - only if a song is playing
+  // Get current song info (for song player section) - search all categories
   const currentSong = currentAudioId?.startsWith('song-')
-    ? sampleSongs.find(s => `song-${s.id}` === currentAudioId)
+    ? Object.values(songsByCategory).flat().find(s => `song-${s.id}` === currentAudioId)
     : null;
 
   return (
@@ -405,7 +431,7 @@ const ExperienceTheMagic: React.FC = () => {
           </div>
         </div>
 
-        {/* Song Samples - Vertical Track List */}
+        {/* Song Samples - Tabbed Track List */}
         <div className="mb-12">
           <h3 className="font-display text-2xl md:text-3xl font-semibold text-center mb-2 text-slate-900">
             Sample Songs
@@ -416,9 +442,26 @@ const ExperienceTheMagic: React.FC = () => {
 
           {/* Track List Container */}
           <div className="max-w-lg mx-auto bg-white rounded-xl shadow-md border border-neutral-200 overflow-hidden">
+            {/* Tabs */}
+            <div className="flex border-b border-neutral-200">
+              {songTabs.map((tab) => (
+                <button
+                  key={tab.id}
+                  onClick={() => setActiveSongTab(tab.id)}
+                  className={`flex-1 px-3 py-3 text-sm font-medium transition-colors ${
+                    activeSongTab === tab.id
+                      ? 'text-fairy-gold-600 border-b-2 border-fairy-gold-500 bg-fairy-gold-50'
+                      : 'text-neutral-500 hover:text-neutral-700 hover:bg-neutral-50'
+                  }`}
+                >
+                  {tab.label}
+                </button>
+              ))}
+            </div>
+
             {/* Track List */}
             <div className="divide-y divide-neutral-100">
-              {sampleSongs.map((song) => {
+              {songsByCategory[activeSongTab].map((song) => {
                 const songAudioId = `song-${song.id}`;
                 const isCurrentSong = currentAudioId === songAudioId;
                 const isThisSongPlaying = isCurrentSong && isPlaying;
@@ -447,13 +490,13 @@ const ExperienceTheMagic: React.FC = () => {
                         {song.title}
                       </p>
                       <p className="text-sm text-neutral-500 truncate">
-                        From: <span className="text-soft-green-600 font-medium">{song.fromStory}</span>
+                        From: <span className="text-soft-green-600 font-medium">{song.storyTitle}</span>
                       </p>
                     </div>
 
-                    {/* Duration */}
-                    <span className="text-sm text-neutral-400 flex-shrink-0">
-                      {formatDuration(song.duration)}
+                    {/* Style Badge */}
+                    <span className="text-xs text-neutral-400 bg-neutral-100 px-2 py-0.5 rounded-full flex-shrink-0">
+                      {song.style.replace(/_/g, ' ')}
                     </span>
                   </div>
                 );
