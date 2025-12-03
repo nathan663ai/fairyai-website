@@ -204,19 +204,16 @@ const HowItWorksPage: React.FC = () => {
             </h2>
           </div>
 
-          {/* Desktop Grid - Hidden on mobile */}
+          {/* Desktop Grid */}
           <div className="hidden md:grid md:grid-cols-4 gap-6">
             {features.map((feature, index) => (
-              <Card key={index} className="text-center p-6">
-                {/* Icon in circular container */}
-                <div className="w-20 h-20 mx-auto rounded-full bg-gradient-to-br from-fairy-gold-50 to-soft-blue-50 flex items-center justify-center shadow-lg mb-4">
-                  <img
-                    src={feature.imageSrc}
-                    alt={feature.title}
-                    loading="lazy"
-                    className="w-12 h-12 object-contain"
-                  />
-                </div>
+              <Card key={index} className="text-center p-6 bg-gradient-to-br from-fairy-gold-50 to-soft-blue-50">
+                <img
+                  src={feature.imageSrc}
+                  alt={feature.title}
+                  loading="lazy"
+                  className="w-16 h-16 mx-auto mb-4 object-contain"
+                />
                 <h3 className="font-display text-lg font-semibold mb-2 text-neutral-900">
                   {feature.title}
                 </h3>
@@ -227,21 +224,18 @@ const HowItWorksPage: React.FC = () => {
             ))}
           </div>
 
-          {/* Mobile Carousel - Hidden on desktop */}
+          {/* Mobile Carousel */}
           <div className="md:hidden">
             <div className="flex overflow-x-auto snap-x snap-mandatory scrollbar-hide gap-4 pb-4 -mx-4 px-4">
               {features.map((feature, index) => (
                 <div key={index} className="flex-shrink-0 w-64 snap-start">
-                  <Card className="text-center p-6 h-full">
-                    {/* Icon in circular container */}
-                    <div className="w-20 h-20 mx-auto rounded-full bg-gradient-to-br from-fairy-gold-50 to-soft-blue-50 flex items-center justify-center shadow-lg mb-4">
-                      <img
-                        src={feature.imageSrc}
-                        alt={feature.title}
-                        loading="lazy"
-                        className="w-12 h-12 object-contain"
-                      />
-                    </div>
+                  <Card className="text-center p-6 h-full bg-gradient-to-br from-fairy-gold-50 to-soft-blue-50">
+                    <img
+                      src={feature.imageSrc}
+                      alt={feature.title}
+                      loading="lazy"
+                      className="w-16 h-16 mx-auto mb-4 object-contain"
+                    />
                     <h3 className="font-display text-lg font-semibold mb-2 text-neutral-900">
                       {feature.title}
                     </h3>
@@ -252,7 +246,6 @@ const HowItWorksPage: React.FC = () => {
                 </div>
               ))}
             </div>
-            {/* Swipe Hint */}
             <p className="text-center text-sm text-neutral-500 mt-2 flex items-center justify-center gap-1">
               <ChevronLeft className="w-4 h-4" /> Swipe to explore <ChevronRight className="w-4 h-4" />
             </p>
