@@ -385,46 +385,46 @@ const HowItWorksPage: React.FC = () => {
           </div>
 
           {/* How We Build Your Content Box */}
-          <div className="bg-slate-800 rounded-2xl p-8 mb-8 text-white">
-            <h3 className="font-display text-2xl font-semibold text-center mb-6">
+          <div className="bg-gradient-to-br from-fairy-gold-100 via-fairy-gold-50 to-soft-blue-50 rounded-2xl p-8 mb-8 border border-fairy-gold-200">
+            <h3 className="font-display text-2xl font-semibold text-center mb-8 text-neutral-900">
               How We Build Your Content
             </h3>
 
             {/* Simple Flow */}
-            <div className="flex flex-col md:flex-row items-center justify-center gap-4 mb-6">
-              <div className="bg-soft-blue-500 rounded-xl px-6 py-3 shadow-lg">
-                <p className="font-semibold text-white">Your Ideas</p>
+            <div className="flex flex-col md:flex-row items-center justify-center gap-3 md:gap-4 mb-8">
+              <div className="bg-soft-blue-500 rounded-xl px-6 py-3 shadow-md">
+                <p className="font-semibold text-white text-center">Your Ideas</p>
               </div>
-              <span className="text-fairy-gold-400 text-2xl font-bold">→</span>
-              <div className="bg-soft-blue-500 rounded-xl px-6 py-3 shadow-lg">
-                <p className="font-semibold text-white">Our Prompt Engine</p>
+              <span className="text-fairy-gold-500 text-2xl font-bold">→</span>
+              <div className="bg-soft-blue-500 rounded-xl px-6 py-3 shadow-md">
+                <p className="font-semibold text-white text-center">Our Prompt Engine</p>
               </div>
-              <span className="text-fairy-gold-400 text-2xl font-bold">→</span>
-              <div className="bg-fairy-gold-500 rounded-xl px-6 py-3 shadow-lg">
-                <p className="font-semibold text-white">AI Generation</p>
+              <span className="text-fairy-gold-500 text-2xl font-bold">→</span>
+              <div className="bg-fairy-gold-500 rounded-xl px-6 py-3 shadow-md">
+                <p className="font-semibold text-white text-center">AI Generation</p>
               </div>
             </div>
 
-            <p className="text-center text-neutral-300 mb-4">
+            <p className="text-center text-neutral-700 mb-6">
               We combine your inputs with our carefully crafted prompt system:
             </p>
 
-            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3 max-w-4xl mx-auto">
-              <div className="bg-white/10 backdrop-blur rounded-lg px-4 py-3 text-center text-sm text-white border border-white/20">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-4xl mx-auto">
+              <div className="bg-white rounded-xl px-4 py-4 text-center text-sm font-medium text-neutral-800 shadow-md border border-fairy-gold-200">
                 Safety guidelines & content filters
               </div>
-              <div className="bg-white/10 backdrop-blur rounded-lg px-4 py-3 text-center text-sm text-white border border-white/20">
+              <div className="bg-white rounded-xl px-4 py-4 text-center text-sm font-medium text-neutral-800 shadow-md border border-fairy-gold-200">
                 Age appropriate complexity
               </div>
-              <div className="bg-white/10 backdrop-blur rounded-lg px-4 py-3 text-center text-sm text-white border border-white/20">
+              <div className="bg-white rounded-xl px-4 py-4 text-center text-sm font-medium text-neutral-800 shadow-md border border-fairy-gold-200">
                 Story structure & pacing
               </div>
-              <div className="bg-white/10 backdrop-blur rounded-lg px-4 py-3 text-center text-sm text-white border border-white/20">
+              <div className="bg-white rounded-xl px-4 py-4 text-center text-sm font-medium text-neutral-800 shadow-md border border-fairy-gold-200">
                 Style consistency
               </div>
             </div>
 
-            <p className="text-center text-fairy-gold-400 mt-6 font-medium">
+            <p className="text-center text-fairy-gold-600 mt-8 font-semibold text-lg">
               The result: unique, safe, personalised content every time.
             </p>
           </div>
