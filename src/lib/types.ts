@@ -72,6 +72,50 @@ export interface StorySummary {
   isFeatured: boolean;
 }
 
+// Helper to convert narrations object to array
+function transformNarrations(narrations: DbNarrations | null | undefined): Narrator[] {
+  if (!narrations || typeof narrations !== 'object') {
+    return [];
+  }
+  // Handle object format: { "echo": { duration, audio_url }, ... }
+  return Object.entries(narrations).map(([id, entry]) => ({
+    id,
+    name: id.charAt(0).toUpperCase() + id.slice(1), // Capitalize: "echo" -> "Echo"
+    duration: entry?.duration || 0,
+    audioUrl: entry?.audio_url || '',
+  }));
+}
+
+// Helper to convert songs (handles both array and object formats)
+function transformSongs(songs: DbSong[] | Record<string, DbSong> | null | undefined): Song[] {
+  if (!songs) {
+    return [];
+  }
+  // If it's an array, map directly
+  if (Array.isArray(songs)) {
+    return songs.map(s => ({
+      id: s.id,
+      title: s.title,
+      style: s.style,
+      url: s.url,
+      duration: s.duration,
+      coverUrl: s.cover_url,
+    }));
+  }
+  // If it's an object, convert using Object.entries
+  if (typeof songs === 'object') {
+    return Object.entries(songs).map(([id, s]) => ({
+      id,
+      title: s.title,
+      style: s.style,
+      url: s.url,
+      duration: s.duration,
+      coverUrl: s.cover_url,
+    }));
+  }
+  return [];
+}
+
 // Transform database row to app format
 export function transformDbToStoryData(row: DbFairyTale): StoryData {
   return {
@@ -82,22 +126,8 @@ export function transformDbToStoryData(row: DbFairyTale): StoryData {
     slug: row.slug,
     imageUrl: row.image_url,
     content: row.content,
-    narrators: row.narrations
-      ? Object.entries(row.narrations).map(([id, entry]) => ({
-          id,
-          name: id.charAt(0).toUpperCase() + id.slice(1), // Capitalize: "echo" -> "Echo"
-          duration: entry.duration,
-          audioUrl: entry.audio_url,
-        }))
-      : [],
-    songs: (row.songs || []).map(s => ({
-      id: s.id,
-      title: s.title,
-      style: s.style,
-      url: s.url,
-      duration: s.duration,
-      coverUrl: s.cover_url,
-    })),
+    narrators: transformNarrations(row.narrations),
+    songs: transformSongs(row.songs),
   };
 }
 
