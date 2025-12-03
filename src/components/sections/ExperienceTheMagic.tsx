@@ -12,18 +12,20 @@ const storyExamples = [
     title: 'The Gingerbread Man',
     ageRange: 'Classic Tale',
     description: 'A beloved fairy tale about a gingerbread cookie who comes to life and runs away',
-    audioSrc: 'https://d1mmspri4wgcne.cloudfront.net/classic-tales/the_gingerbread_man/narrations/en-GB/nova.mp3',
+    audioSrc: 'https://d1mmspri4wgcne.cloudfront.net/fairy_tales/the_gingerbread_man/narrations/en-GB/nova.mp3',
     imageUrl: 'https://d1mmspri4wgcne.cloudfront.net/classic-tales/The+Gingerbread+Man.png',
-    linkTo: '/stories/the_gingerbread_man'
+    linkTo: '/stories/the_gingerbread_man',
+    isUserExample: false
   },
   {
     id: 2,
     title: 'Goldilocks and the Three Bears',
     ageRange: 'Classic Tale',
     description: 'The timeless story of a curious girl and three bears with porridge, chairs, and beds',
-    audioSrc: 'https://d1mmspri4wgcne.cloudfront.net/classic-tales/goldilocks_and_the_three_bears/narrations/en-GB/nova.mp3',
+    audioSrc: 'https://d1mmspri4wgcne.cloudfront.net/fairy_tales/goldilocks_and_the_three_bears/narrations/en-GB/nova.mp3',
     imageUrl: 'https://d1mmspri4wgcne.cloudfront.net/classic-tales/Goldilocks+and+the+Three+Bears.png',
-    linkTo: '/stories/goldilocks_and_the_three_bears'
+    linkTo: '/stories/goldilocks_and_the_three_bears',
+    isUserExample: false
   },
   {
     id: 3,
@@ -32,7 +34,8 @@ const storyExamples = [
     description: 'A magical AI-generated bedtime adventure with professional narration and songs',
     audioSrc: 'https://d1mmspri4wgcne.cloudfront.net/ai_stories/whispers-from-the-beanstalk-375b3b33/narrations/en-GB/nova.mp3',
     imageUrl: 'https://d1mmspri4wgcne.cloudfront.net/ai_stories/whispers-from-the-beanstalk-375b3b33/cover.jpg',
-    linkTo: '/stories/whispers-from-the-beanstalk-375b3b33'
+    linkTo: '/stories/whispers-from-the-beanstalk-375b3b33',
+    isUserExample: false
   },
   {
     id: 4,
@@ -41,7 +44,18 @@ const storyExamples = [
     description: 'An enchanting AI-crafted tale about courage and following your dreams',
     audioSrc: 'https://d1mmspri4wgcne.cloudfront.net/ai_stories/the-lantern-of-brave-dreams-1d9f0a65/narrations/en-GB/nova.mp3',
     imageUrl: 'https://d1mmspri4wgcne.cloudfront.net/ai_stories/the-lantern-of-brave-dreams-1d9f0a65/cover.jpg',
-    linkTo: '/stories/the-lantern-of-brave-dreams-1d9f0a65'
+    linkTo: '/stories/the-lantern-of-brave-dreams-1d9f0a65',
+    isUserExample: false
+  },
+  {
+    id: 5,
+    title: 'A Robot Learns About Friendship',
+    ageRange: 'User Example',
+    description: 'See how one simple prompt adapts across different age groups',
+    audioSrc: '',
+    imageUrl: 'https://d1mmspri4wgcne.cloudfront.net/users/0d73d152-bdfb-4aca-98bb-ed33d2b912f4/stories/067a4db2-9383-4d08-884e-d1dbad16483a/0d73d152-bdfb-4aca-98bb-ed33d2b912f4_067a4db2-9383-4d08-884e-d1dbad16483a_cover.png',
+    linkTo: '/stories/examples/robot-friendship',
+    isUserExample: true
   },
 ];
 
@@ -278,7 +292,7 @@ const ExperienceTheMagic: React.FC = () => {
                       </p>
 
                       {/* Audio Player */}
-                      {story.id !== 3 && (
+                      {!story.isUserExample && story.audioSrc && (
                         <div className="mb-3">
                           <AudioPlayer
                             src={story.audioSrc}
@@ -287,12 +301,12 @@ const ExperienceTheMagic: React.FC = () => {
                         </div>
                       )}
 
-                      {/* Read Full Story Button */}
+                      {/* Story Button */}
                       <Link
                         to={story.linkTo}
                         className="block text-center bg-slate-900 text-white px-4 py-2 rounded-lg font-semibold hover:shadow-lg transition-all hover:scale-105 text-sm"
                       >
-                        {story.id === 3 ? 'See Age Variations' : 'Read Full Story'}
+                        {story.isUserExample ? 'See Age Variations' : 'Explore Story'}
                       </Link>
                     </div>
                   </Card>
