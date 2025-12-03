@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import FAQAccordion from '../components/sections/FAQAccordion';
 import { faqs } from '../data/faqs';
+import DownloadButtons from '../components/ui/DownloadButtons';
 
 const ContactPage: React.FC = () => {
   useEffect(() => {
@@ -123,6 +124,19 @@ const ContactPage: React.FC = () => {
               We typically respond within 24-48 hours during business days. Thanks for your patience!
             </p>
           </div>
+        </div>
+      </section>
+
+      {/* Download CTA */}
+      <section className="py-12 md:py-16 bg-amber-50">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="font-display text-3xl md:text-4xl font-bold mb-4 text-neutral-900">
+            Ready to Create Magical Bedtime Stories?
+          </h2>
+          <p className="text-lg text-neutral-700 mb-8">
+            Download FairyAI and start your free trial today. No credit card required.
+          </p>
+          <DownloadButtons variant="gradient" />
         </div>
       </section>
     </div>

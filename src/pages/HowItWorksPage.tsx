@@ -223,7 +223,9 @@ const HowItWorksPage: React.FC = () => {
           <div className="grid md:grid-cols-2 gap-8">
             {/* Quick Character */}
             <Card className="p-8 bg-gradient-to-br from-soft-blue-50 to-white">
-              <div className="text-4xl mb-4">⚡</div>
+              <div className="mb-4">
+                <Zap className="w-10 h-10 text-soft-blue-600" strokeWidth={1.5} />
+              </div>
               <h3 className="font-display text-2xl font-semibold mb-3 text-neutral-900">
                 Quick Character
               </h3>
@@ -237,7 +239,9 @@ const HowItWorksPage: React.FC = () => {
 
             {/* Full Wizard */}
             <Card className="p-8 bg-gradient-to-br from-soft-green-50 to-white">
-              <div className="text-4xl mb-4">🎨</div>
+              <div className="mb-4">
+                <Palette className="w-10 h-10 text-soft-green-600" strokeWidth={1.5} />
+              </div>
               <h3 className="font-display text-2xl font-semibold mb-3 text-neutral-900">
                 Full Wizard
               </h3>
@@ -254,9 +258,9 @@ const HowItWorksPage: React.FC = () => {
           <div className="mt-8 p-6 bg-gradient-to-r from-fairy-purple-50 to-soft-blue-50 rounded-xl border-l-4 border-fairy-purple-400">
             <p className="font-semibold text-neutral-900 mb-2">Coming Soon:</p>
             <div className="grid md:grid-cols-3 gap-4 text-sm text-neutral-700">
-              <div>📸 Create from photos or drawings</div>
-              <div>🎮 Choose-your-own-path stories</div>
-              <div>🎙️ Record your own narrations</div>
+              <div>Create from photos or drawings</div>
+              <div>Choose-your-own-path stories</div>
+              <div>Record your own narrations</div>
             </div>
           </div>
         </div>
@@ -278,7 +282,9 @@ const HowItWorksPage: React.FC = () => {
             {/* Quick Story */}
             <Card className="p-8">
               <div className="flex items-start gap-6">
-                <div className="text-5xl flex-shrink-0">⚡</div>
+                <div className="flex-shrink-0">
+                  <Zap className="w-12 h-12 text-fairy-gold-500" strokeWidth={1.5} />
+                </div>
                 <div>
                   <h3 className="font-display text-2xl font-semibold mb-3 text-neutral-900">
                     Quick Story
@@ -296,7 +302,9 @@ const HowItWorksPage: React.FC = () => {
             {/* Story Wizard */}
             <Card className="p-8 bg-gradient-to-br from-white to-soft-blue-50">
               <div className="flex items-start gap-6">
-                <div className="text-5xl flex-shrink-0">🧙</div>
+                <div className="flex-shrink-0">
+                  <Wand2 className="w-12 h-12 text-soft-blue-600" strokeWidth={1.5} />
+                </div>
                 <div>
                   <h3 className="font-display text-2xl font-semibold mb-3 text-neutral-900">
                     Story Wizard
@@ -319,7 +327,9 @@ const HowItWorksPage: React.FC = () => {
             {/* Continuation */}
             <Card className="p-8 bg-gradient-to-br from-soft-green-50 to-white border-2 border-soft-green-200">
               <div className="flex items-start gap-6">
-                <div className="text-5xl flex-shrink-0">📖</div>
+                <div className="flex-shrink-0">
+                  <BookOpen className="w-12 h-12 text-soft-green-600" strokeWidth={1.5} />
+                </div>
                 <div>
                   <h3 className="font-display text-2xl font-semibold mb-3 text-neutral-900">
                     Continue Into Books
