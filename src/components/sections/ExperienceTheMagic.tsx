@@ -12,7 +12,7 @@ const storyExamples = [
     title: 'The Gingerbread Man',
     ageRange: 'Classic Tale',
     description: 'A beloved fairy tale about a gingerbread cookie who comes to life and runs away',
-    audioSrc: 'https://d1mmspri4wgcne.cloudfront.net/fairy_tales/the_gingerbread_man/narrations/en-GB/nova.mp3',
+    audioSrc: 'https://d1mmspri4wgcne.cloudfront.net/ai_stories/the_gingerbread_man/narrations/en/nova.mp3',
     imageUrl: 'https://d1mmspri4wgcne.cloudfront.net/classic-tales/The+Gingerbread+Man.png',
     linkTo: '/stories/the_gingerbread_man',
     isUserExample: false
@@ -22,7 +22,7 @@ const storyExamples = [
     title: 'Goldilocks and the Three Bears',
     ageRange: 'Classic Tale',
     description: 'The timeless story of a curious girl and three bears with porridge, chairs, and beds',
-    audioSrc: 'https://d1mmspri4wgcne.cloudfront.net/fairy_tales/goldilocks_and_the_three_bears/narrations/en-GB/nova.mp3',
+    audioSrc: 'https://d1mmspri4wgcne.cloudfront.net/ai_stories/goldilocks_and_the_three_bears/narrations/en/echo.mp3',
     imageUrl: 'https://d1mmspri4wgcne.cloudfront.net/classic-tales/Goldilocks+and+the+Three+Bears.png',
     linkTo: '/stories/goldilocks_and_the_three_bears',
     isUserExample: false
@@ -32,7 +32,7 @@ const storyExamples = [
     title: 'Whispers from the Beanstalk',
     ageRange: 'Daily AI Story',
     description: 'A magical AI-generated bedtime adventure with professional narration and songs',
-    audioSrc: 'https://d1mmspri4wgcne.cloudfront.net/ai_stories/whispers-from-the-beanstalk-375b3b33/narrations/en-GB/nova.mp3',
+    audioSrc: 'https://d1mmspri4wgcne.cloudfront.net/ai_stories/whispers-from-the-beanstalk-375b3b33/narrations/en-GB/shimmer.mp3',
     imageUrl: 'https://d1mmspri4wgcne.cloudfront.net/ai_stories/whispers-from-the-beanstalk-375b3b33/cover.jpg',
     linkTo: '/stories/whispers-from-the-beanstalk-375b3b33',
     isUserExample: false
@@ -42,7 +42,7 @@ const storyExamples = [
     title: 'The Lantern of Brave Dreams',
     ageRange: 'Daily AI Story',
     description: 'An enchanting AI-crafted tale about courage and following your dreams',
-    audioSrc: 'https://d1mmspri4wgcne.cloudfront.net/ai_stories/the-lantern-of-brave-dreams-1d9f0a65/narrations/en-GB/nova.mp3',
+    audioSrc: 'https://d1mmspri4wgcne.cloudfront.net/ai_stories/the-lantern-of-brave-dreams-1d9f0a65/narrations/en-GB/onyx.mp3',
     imageUrl: 'https://d1mmspri4wgcne.cloudfront.net/ai_stories/the-lantern-of-brave-dreams-1d9f0a65/cover.jpg',
     linkTo: '/stories/the-lantern-of-brave-dreams-1d9f0a65',
     isUserExample: false
