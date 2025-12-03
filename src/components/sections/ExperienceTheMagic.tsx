@@ -1,7 +1,6 @@
-import React, { useRef, useState, useEffect } from 'react';
+import React, { useRef, useState, useEffect, useCallback } from 'react';
 import { Link } from 'react-router-dom';
 import { ChevronLeft, ChevronRight, Play, Pause } from 'lucide-react';
-import AudioPlayer from '../ui/AudioPlayer';
 import VideoPlayer from '../ui/VideoPlayer';
 import Card from '../ui/Card';
 
@@ -13,6 +12,7 @@ const storyExamples = [
     ageRange: 'Classic Tale',
     description: 'A beloved fairy tale about a gingerbread cookie who comes to life and runs away',
     audioSrc: 'https://d1mmspri4wgcne.cloudfront.net/ai_stories/the_gingerbread_man/narrations/en/nova.mp3',
+    voice: 'Nova',
     imageUrl: 'https://d1mmspri4wgcne.cloudfront.net/classic-tales/The+Gingerbread+Man.png',
     linkTo: '/stories/the_gingerbread_man',
     isUserExample: false
@@ -23,6 +23,7 @@ const storyExamples = [
     ageRange: 'Classic Tale',
     description: 'The timeless story of a curious girl and three bears with porridge, chairs, and beds',
     audioSrc: 'https://d1mmspri4wgcne.cloudfront.net/ai_stories/goldilocks_and_the_three_bears/narrations/en/echo.mp3',
+    voice: 'Echo',
     imageUrl: 'https://d1mmspri4wgcne.cloudfront.net/classic-tales/Goldilocks+and+the+Three+Bears.png',
     linkTo: '/stories/goldilocks_and_the_three_bears',
     isUserExample: false
@@ -33,6 +34,7 @@ const storyExamples = [
     ageRange: 'Daily AI Story',
     description: 'A magical AI-generated bedtime adventure with professional narration and songs',
     audioSrc: 'https://d1mmspri4wgcne.cloudfront.net/ai_stories/whispers-from-the-beanstalk-375b3b33/narrations/en-GB/shimmer.mp3',
+    voice: 'Shimmer',
     imageUrl: 'https://d1mmspri4wgcne.cloudfront.net/ai_stories/whispers-from-the-beanstalk-375b3b33/cover.jpg',
     linkTo: '/stories/whispers-from-the-beanstalk-375b3b33',
     isUserExample: false
@@ -43,6 +45,7 @@ const storyExamples = [
     ageRange: 'Daily AI Story',
     description: 'An enchanting AI-crafted tale about courage and following your dreams',
     audioSrc: 'https://d1mmspri4wgcne.cloudfront.net/ai_stories/the-lantern-of-brave-dreams-1d9f0a65/narrations/en-GB/onyx.mp3',
+    voice: 'Onyx',
     imageUrl: 'https://d1mmspri4wgcne.cloudfront.net/ai_stories/the-lantern-of-brave-dreams-1d9f0a65/cover.jpg',
     linkTo: '/stories/the-lantern-of-brave-dreams-1d9f0a65',
     isUserExample: false
@@ -53,6 +56,7 @@ const storyExamples = [
     ageRange: 'User Example',
     description: 'See how one simple prompt adapts across different age groups',
     audioSrc: '',
+    voice: '',
     imageUrl: 'https://d1mmspri4wgcne.cloudfront.net/users/0d73d152-bdfb-4aca-98bb-ed33d2b912f4/stories/067a4db2-9383-4d08-884e-d1dbad16483a/0d73d152-bdfb-4aca-98bb-ed33d2b912f4_067a4db2-9383-4d08-884e-d1dbad16483a_cover.png',
     linkTo: '/stories/examples/robot-friendship',
     isUserExample: true
@@ -151,11 +155,12 @@ const ExperienceTheMagic: React.FC = () => {
   const characterCarouselRef = useRef<HTMLDivElement>(null);
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
-  // Song player state
-  const [currentSongId, setCurrentSongId] = useState<string | null>(null);
+  // Unified audio player state (handles both stories and songs)
+  const [currentAudioId, setCurrentAudioId] = useState<string | null>(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(0);
+  const [isLoading, setIsLoading] = useState(false);
 
   const scroll = (ref: React.RefObject<HTMLDivElement>, direction: 'left' | 'right', amount: number) => {
     if (ref.current) {
@@ -166,21 +171,22 @@ const ExperienceTheMagic: React.FC = () => {
     }
   };
 
-  // Handle song play/pause
-  const handleSongClick = (songId: string, audioSrc: string) => {
-    if (currentSongId === songId && isPlaying) {
-      // Pause current song
+  // Unified audio play handler - only one audio plays at a time
+  const handleAudioPlay = useCallback((audioId: string, audioSrc: string) => {
+    if (currentAudioId === audioId && isPlaying) {
+      // Pause current audio
       audioRef.current?.pause();
       setIsPlaying(false);
-    } else if (currentSongId === songId && !isPlaying) {
-      // Resume current song
+    } else if (currentAudioId === audioId && !isPlaying) {
+      // Resume current audio
       audioRef.current?.play();
       setIsPlaying(true);
     } else {
-      // Play new song
+      // Play new audio (stops any currently playing)
       if (audioRef.current) {
         audioRef.current.pause();
       }
+      setIsLoading(true);
       const audio = new Audio(audioSrc);
       audioRef.current = audio;
 
@@ -189,17 +195,35 @@ const ExperienceTheMagic: React.FC = () => {
       });
       audio.addEventListener('loadedmetadata', () => {
         setDuration(audio.duration);
+        setIsLoading(false);
       });
       audio.addEventListener('ended', () => {
         setIsPlaying(false);
         setCurrentTime(0);
       });
+      audio.addEventListener('canplay', () => {
+        setIsLoading(false);
+      });
 
       audio.play();
-      setCurrentSongId(songId);
+      setCurrentAudioId(audioId);
       setIsPlaying(true);
+      setCurrentTime(0);
+      setDuration(0);
     }
-  };
+  }, [currentAudioId, isPlaying]);
+
+  // Seek handler for progress bar click
+  const handleSeek = useCallback((e: React.MouseEvent<HTMLDivElement>, audioDuration: number) => {
+    if (audioRef.current && audioDuration > 0) {
+      const rect = e.currentTarget.getBoundingClientRect();
+      const clickX = e.clientX - rect.left;
+      const percentage = clickX / rect.width;
+      const newTime = percentage * audioDuration;
+      audioRef.current.currentTime = newTime;
+      setCurrentTime(newTime);
+    }
+  }, []);
 
   // Cleanup audio on unmount
   useEffect(() => {
@@ -211,8 +235,10 @@ const ExperienceTheMagic: React.FC = () => {
     };
   }, []);
 
-  // Get current song info
-  const currentSong = sampleSongs.find(s => s.id === currentSongId);
+  // Get current song info (for song player section) - only if a song is playing
+  const currentSong = currentAudioId?.startsWith('song-')
+    ? sampleSongs.find(s => `song-${s.id}` === currentAudioId)
+    : null;
 
   return (
     <section className="py-6 md:py-10 bg-gradient-to-br from-white via-soft-blue-50 to-soft-green-50">
@@ -291,15 +317,71 @@ const ExperienceTheMagic: React.FC = () => {
                         {story.description}
                       </p>
 
-                      {/* Audio Player */}
-                      {!story.isUserExample && story.audioSrc && (
-                        <div className="mb-3">
-                          <AudioPlayer
-                            src={story.audioSrc}
-                            title="Story Narration Sample"
-                          />
-                        </div>
-                      )}
+                      {/* Audio Player - Two Row Layout */}
+                      {!story.isUserExample && story.audioSrc && (() => {
+                        const storyAudioId = `story-${story.id}`;
+                        const isThisPlaying = currentAudioId === storyAudioId && isPlaying;
+                        const isThisActive = currentAudioId === storyAudioId;
+                        const displayTime = isThisActive ? currentTime : 0;
+                        const displayDuration = isThisActive ? duration : 0;
+                        const isThisLoading = isThisActive && isLoading;
+
+                        return (
+                          <div className="mb-3 bg-neutral-50 rounded-lg p-3 border border-neutral-200">
+                            {/* Row 1: Play button, Label, Voice */}
+                            <div className="flex items-center gap-3 mb-2">
+                              <button
+                                onClick={() => handleAudioPlay(storyAudioId, story.audioSrc)}
+                                disabled={isThisLoading}
+                                className="flex-shrink-0 w-10 h-10 bg-fairy-gold-500 hover:bg-fairy-gold-600 rounded-full flex items-center justify-center shadow-md hover:shadow-lg transition-all hover:scale-105 active:scale-95 disabled:opacity-50"
+                                aria-label={isThisPlaying ? 'Pause' : 'Play'}
+                              >
+                                {isThisLoading ? (
+                                  <svg className="w-5 h-5 text-white animate-spin" viewBox="0 0 24 24" fill="none">
+                                    <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
+                                    <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" />
+                                  </svg>
+                                ) : isThisPlaying ? (
+                                  <Pause className="w-5 h-5 text-white" fill="currentColor" />
+                                ) : (
+                                  <Play className="w-5 h-5 text-white ml-0.5" fill="currentColor" />
+                                )}
+                              </button>
+                              <span className="font-medium text-neutral-800 text-sm">Listen to Narration</span>
+                              <span className="ml-auto text-xs text-neutral-500 bg-neutral-200 px-2 py-0.5 rounded-full">
+                                Voice: {story.voice}
+                              </span>
+                            </div>
+
+                            {/* Row 2: Time + Full-width Progress Bar + Duration */}
+                            <div className="flex items-center gap-2">
+                              <span className="text-xs text-neutral-500 font-medium tabular-nums w-10 text-right">
+                                {formatDuration(Math.floor(displayTime))}
+                              </span>
+                              <div
+                                className="flex-1 h-2 bg-neutral-200 rounded-full cursor-pointer relative group"
+                                onClick={(e) => isThisActive && handleSeek(e, displayDuration)}
+                              >
+                                {/* Progress fill */}
+                                <div
+                                  className="absolute inset-y-0 left-0 bg-gradient-to-r from-soft-blue-500 to-soft-green-500 rounded-full transition-all"
+                                  style={{ width: displayDuration > 0 ? `${(displayTime / displayDuration) * 100}%` : '0%' }}
+                                />
+                                {/* Thumb/handle */}
+                                {isThisActive && displayDuration > 0 && (
+                                  <div
+                                    className="absolute top-1/2 -translate-y-1/2 w-4 h-4 bg-white border-2 border-soft-blue-500 rounded-full shadow-md transition-all group-hover:scale-110"
+                                    style={{ left: `calc(${(displayTime / displayDuration) * 100}% - 8px)` }}
+                                  />
+                                )}
+                              </div>
+                              <span className="text-xs text-neutral-500 font-medium tabular-nums w-10">
+                                {displayDuration > 0 ? formatDuration(Math.floor(displayDuration)) : '--:--'}
+                              </span>
+                            </div>
+                          </div>
+                        );
+                      })()}
 
                       {/* Story Button */}
                       <Link
@@ -334,14 +416,15 @@ const ExperienceTheMagic: React.FC = () => {
             {/* Track List */}
             <div className="divide-y divide-neutral-100">
               {sampleSongs.map((song) => {
-                const isCurrentSong = currentSongId === song.id;
+                const songAudioId = `song-${song.id}`;
+                const isCurrentSong = currentAudioId === songAudioId;
                 const isThisSongPlaying = isCurrentSong && isPlaying;
 
                 return (
                   <div
                     key={song.id}
                     className={`flex items-center gap-3 p-4 hover:bg-neutral-50 transition-colors cursor-pointer ${isCurrentSong ? 'bg-amber-50' : ''}`}
-                    onClick={() => handleSongClick(song.id, song.audioSrc)}
+                    onClick={() => handleAudioPlay(songAudioId, song.audioSrc)}
                   >
                     {/* Play/Pause Button */}
                     <button
