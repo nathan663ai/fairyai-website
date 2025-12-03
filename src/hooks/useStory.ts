@@ -28,6 +28,8 @@ export function useStory(slug: string): UseStoryResult {
         setLoading(true);
         setError(null);
 
+        console.log('[useStory] Fetching story with slug:', slug);
+
         // Fetch all language variants for this story
         const { data, error: fetchError } = await supabase
           .from('fairy_tales')
@@ -35,17 +37,23 @@ export function useStory(slug: string): UseStoryResult {
           .eq('slug', slug)
           .eq('is_active', true);
 
+        console.log('[useStory] Supabase response:', { data, error: fetchError, rowCount: data?.length });
+
         if (fetchError) {
+          console.error('[useStory] Supabase error:', fetchError);
           throw fetchError;
         }
 
         if (!data || data.length === 0) {
+          console.warn('[useStory] No data found for slug:', slug);
           setStoryVariants([]);
           setLanguages([]);
           return;
         }
 
+        console.log('[useStory] Raw data sample:', data[0]);
         const variants = (data as DbFairyTale[]).map(transformDbToStoryData);
+        console.log('[useStory] Transformed variants:', variants.length, variants[0]);
         const langCodes = variants.map(v => v.languageCode);
 
         // Sort languages with en-GB first

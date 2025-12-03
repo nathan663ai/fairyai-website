@@ -21,6 +21,7 @@ export function useStories(): UseStoriesResult {
 
         // Fetch specific stories by slug (only show these on the website)
         const allowedSlugs = ['the_gingerbread_man', 'whispers-from-the-beanstalk-375b3b33', 'the-lantern-of-brave-dreams-1d9f0a65'];
+        console.log('[useStories] Fetching stories with slugs:', allowedSlugs);
 
         const { data, error: fetchError } = await supabase
           .from('fairy_tales')
@@ -30,11 +31,15 @@ export function useStories(): UseStoriesResult {
           .order('is_featured', { ascending: false })
           .order('title', { ascending: true });
 
+        console.log('[useStories] Supabase response:', { data, error: fetchError, rowCount: data?.length });
+
         if (fetchError) {
+          console.error('[useStories] Supabase error:', fetchError);
           throw fetchError;
         }
 
         if (!data) {
+          console.warn('[useStories] No data returned');
           setStories([]);
           return;
         }
@@ -49,6 +54,7 @@ export function useStories(): UseStoriesResult {
         }
 
         const uniqueStories = Array.from(storyMap.values()).map(transformDbToSummary);
+        console.log('[useStories] Unique stories:', uniqueStories);
         setStories(uniqueStories);
       } catch (err) {
         setError(err instanceof Error ? err.message : 'Failed to fetch stories');
