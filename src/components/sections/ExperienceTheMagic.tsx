@@ -12,27 +12,36 @@ const storyExamples = [
     title: 'The Gingerbread Man',
     ageRange: 'Classic Tale',
     description: 'A beloved fairy tale about a gingerbread cookie who comes to life and runs away',
-    audioSrc: 'https://d1mmspri4wgcne.cloudfront.net/ai_stories/the_gingerbread_man/narrations/en/nova.mp3',
+    audioSrc: 'https://d1mmspri4wgcne.cloudfront.net/classic-tales/the_gingerbread_man/narrations/en-GB/nova.mp3',
     imageUrl: 'https://d1mmspri4wgcne.cloudfront.net/classic-tales/The+Gingerbread+Man.png',
-    linkTo: '/stories/gingerbread-man'
+    linkTo: '/stories/the_gingerbread_man'
   },
   {
     id: 2,
-    title: 'Whispers of the Tidal Star',
-    ageRange: 'Daily AI Story',
-    description: 'A calming bedtime tale about a magical adventure by the ocean at twilight',
-    audioSrc: 'https://d1mmspri4wgcne.cloudfront.net/ai_stories/whispers-of-the-tidal-star-d5dfda26/narrations/en-GB/shimmer.mp3',
-    imageUrl: 'https://d1mmspri4wgcne.cloudfront.net/ai_stories/whispers-of-the-tidal-star-d5dfda26/cover.jpg',
-    linkTo: '/stories/whispers-tidal-star'
+    title: 'Goldilocks and the Three Bears',
+    ageRange: 'Classic Tale',
+    description: 'The timeless story of a curious girl and three bears with porridge, chairs, and beds',
+    audioSrc: 'https://d1mmspri4wgcne.cloudfront.net/classic-tales/goldilocks_and_the_three_bears/narrations/en-GB/nova.mp3',
+    imageUrl: 'https://d1mmspri4wgcne.cloudfront.net/classic-tales/Goldilocks+and+the+Three+Bears.png',
+    linkTo: '/stories/goldilocks_and_the_three_bears'
   },
   {
     id: 3,
-    title: 'A Robot Learns About Friendship',
-    ageRange: 'User Example',
-    description: 'See how one simple prompt adapts across different age groups',
-    audioSrc: '/audio/stories/placeholder.mp3',
-    imageUrl: 'https://d1mmspri4wgcne.cloudfront.net/users/0d73d152-bdfb-4aca-98bb-ed33d2b912f4/stories/067a4db2-9383-4d08-884e-d1dbad16483a/0d73d152-bdfb-4aca-98bb-ed33d2b912f4_067a4db2-9383-4d08-884e-d1dbad16483a_cover.png',
-    linkTo: '/stories/examples/robot-friendship'
+    title: 'Whispers from the Beanstalk',
+    ageRange: 'Daily AI Story',
+    description: 'A magical AI-generated bedtime adventure with professional narration and songs',
+    audioSrc: 'https://d1mmspri4wgcne.cloudfront.net/ai_stories/whispers-from-the-beanstalk-375b3b33/narrations/en-GB/nova.mp3',
+    imageUrl: 'https://d1mmspri4wgcne.cloudfront.net/ai_stories/whispers-from-the-beanstalk-375b3b33/cover.jpg',
+    linkTo: '/stories/whispers-from-the-beanstalk-375b3b33'
+  },
+  {
+    id: 4,
+    title: 'The Lantern of Brave Dreams',
+    ageRange: 'Daily AI Story',
+    description: 'An enchanting AI-crafted tale about courage and following your dreams',
+    audioSrc: 'https://d1mmspri4wgcne.cloudfront.net/ai_stories/the-lantern-of-brave-dreams-1d9f0a65/narrations/en-GB/nova.mp3',
+    imageUrl: 'https://d1mmspri4wgcne.cloudfront.net/ai_stories/the-lantern-of-brave-dreams-1d9f0a65/cover.jpg',
+    linkTo: '/stories/the-lantern-of-brave-dreams-1d9f0a65'
   },
 ];
 
