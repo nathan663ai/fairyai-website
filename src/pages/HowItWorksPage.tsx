@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { Palette, Zap, Wand2, BookOpen, Headphones, Music, Library, Shield, ChevronLeft, ChevronRight } from 'lucide-react';
+import { Palette, Zap, Wand2, BookOpen, ChevronLeft, ChevronRight } from 'lucide-react';
 import VideoPlayer from '../components/ui/VideoPlayer';
 import DownloadButtons from '../components/ui/DownloadButtons';
 import Card from '../components/ui/Card';
@@ -19,44 +19,44 @@ const HowItWorksPage: React.FC = () => {
 
   const features = [
     {
-      icon: Palette,
+      imageSrc: '/images/features/build-characters.png',
       title: 'Build Characters',
-      description: 'Create once, use forever. Give them traits, abilities, and custom images.'
+      description: "Traits and abilities that shape your stories. Use them in as many adventures as you want."
     },
     {
-      icon: Zap,
+      imageSrc: '/images/features/quick-story.png',
       title: 'Quick Story',
-      description: '2 taps for instant magic when you just need a story fast.'
+      description: "2 taps for instant magic when you just need a story fast."
     },
     {
-      icon: Wand2,
+      imageSrc: '/images/features/story-wizard.png',
       title: 'Story Wizard',
-      description: 'Full control: characters, theme, moral lesson, plot hints.'
+      description: "Characters, themes, morals, plot hints, and more. Full creative control."
     },
     {
-      icon: BookOpen,
+      imageSrc: '/images/features/continue-adventures.png',
       title: 'Continue Adventures',
-      description: 'Turn any story into multi-chapter books. Quick or advanced mode.'
+      description: "Pick up exactly where the last story ended, or start fresh anytime."
     },
     {
-      icon: Headphones,
+      imageSrc: '/images/features/languages.png',
       title: '12 Languages',
-      description: 'Stories, narration, and songs in native-quality audio.'
+      description: "Stories, narration, and songs in native-quality audio."
     },
     {
-      icon: Music,
+      imageSrc: '/images/features/custom-songs.png',
       title: 'Custom Songs',
-      description: 'Turn stories into catchy songs with lyrics and melodies.'
+      description: "Turn stories into catchy songs with lyrics and melodies."
     },
     {
-      icon: Library,
+      imageSrc: '/images/features/fairy-corner.png',
       title: 'Fairy Corner',
-      description: 'Classic tales, daily AI stories, nursery rhymes. 2 always free.'
+      description: "Classic tales, daily AI stories, and nursery rhymes."
     },
     {
-      icon: Shield,
+      imageSrc: '/images/features/age-smart.png',
       title: 'Age-Smart',
-      description: 'Content adapts for ages 2-12. Safe filters on everything.'
+      description: "Story complexity adapts to your child's age. Safe filters on everything."
     }
   ];
 
@@ -196,19 +196,26 @@ const HowItWorksPage: React.FC = () => {
       </section>
 
       {/* Features Grid */}
-      <section className="py-12 md:py-16 bg-neutral-50">
+      <section className="py-8 md:py-12 bg-neutral-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-10">
+          <div className="text-center mb-8">
             <h2 className="font-display text-3xl md:text-4xl font-bold text-neutral-900 mb-3">
               Everything Included
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {/* Desktop Grid - Hidden on mobile */}
+          <div className="hidden md:grid md:grid-cols-4 gap-6">
             {features.map((feature, index) => (
-              <Card key={index} className="text-center p-6 hover:shadow-lg transition-shadow">
-                <div className="mb-3 flex justify-center">
-                  <feature.icon className="w-10 h-10 text-soft-blue-600" strokeWidth={1.5} />
+              <Card key={index} className="text-center p-6">
+                {/* Icon in circular container */}
+                <div className="w-20 h-20 mx-auto rounded-full bg-gradient-to-br from-fairy-gold-50 to-soft-blue-50 flex items-center justify-center shadow-lg mb-4">
+                  <img
+                    src={feature.imageSrc}
+                    alt={feature.title}
+                    loading="lazy"
+                    className="w-12 h-12 object-contain"
+                  />
                 </div>
                 <h3 className="font-display text-lg font-semibold mb-2 text-neutral-900">
                   {feature.title}
@@ -218,6 +225,37 @@ const HowItWorksPage: React.FC = () => {
                 </p>
               </Card>
             ))}
+          </div>
+
+          {/* Mobile Carousel - Hidden on desktop */}
+          <div className="md:hidden">
+            <div className="flex overflow-x-auto snap-x snap-mandatory scrollbar-hide gap-4 pb-4 -mx-4 px-4">
+              {features.map((feature, index) => (
+                <div key={index} className="flex-shrink-0 w-64 snap-start">
+                  <Card className="text-center p-6 h-full">
+                    {/* Icon in circular container */}
+                    <div className="w-20 h-20 mx-auto rounded-full bg-gradient-to-br from-fairy-gold-50 to-soft-blue-50 flex items-center justify-center shadow-lg mb-4">
+                      <img
+                        src={feature.imageSrc}
+                        alt={feature.title}
+                        loading="lazy"
+                        className="w-12 h-12 object-contain"
+                      />
+                    </div>
+                    <h3 className="font-display text-lg font-semibold mb-2 text-neutral-900">
+                      {feature.title}
+                    </h3>
+                    <p className="text-sm text-neutral-600">
+                      {feature.description}
+                    </p>
+                  </Card>
+                </div>
+              ))}
+            </div>
+            {/* Swipe Hint */}
+            <p className="text-center text-sm text-neutral-500 mt-2 flex items-center justify-center gap-1">
+              <ChevronLeft className="w-4 h-4" /> Swipe to explore <ChevronRight className="w-4 h-4" />
+            </p>
           </div>
         </div>
       </section>
