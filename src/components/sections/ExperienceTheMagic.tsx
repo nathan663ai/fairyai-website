@@ -77,7 +77,7 @@ interface SongData {
 const songsByCategory: Record<SongCategory, SongData[]> = {
   classic: [
     { id: 'classic-1', title: 'Run, Run, Run!', style: 'epic_adventure', storyTitle: 'The Gingerbread Man', audioSrc: 'https://d1mmspri4wgcne.cloudfront.net/classic-tales/the_gingerbread_man/epic_adventure.mp3' },
-    { id: 'classic-2', title: "Rapunzel's Hair Jam", style: 'rap', storyTitle: 'Rapunzel', audioSrc: 'https://d1mmspri4wgcne.cloudfront.net/classic-tales/rapunzel/rap.mp3' },
+    { id: 'classic-2', title: 'Candy Trail', style: 'rap', storyTitle: 'Hansel and Gretel', audioSrc: 'https://d1mmspri4wgcne.cloudfront.net/classic-tales/hansel_and_gretel/rap.mp3' },
     { id: 'classic-3', title: 'Stitch by Stitch', style: 'magical_pop_rock', storyTitle: 'The Brave Little Tailor', audioSrc: 'https://d1mmspri4wgcne.cloudfront.net/classic-tales/the_brave_little_tailor/magical_pop_rock.mp3' },
     { id: 'classic-4', title: 'Follow the Piper', style: 'singalong', storyTitle: 'The Pied Piper of Hamelin', audioSrc: 'https://d1mmspri4wgcne.cloudfront.net/classic-tales/the_pied_piper_of_hamelin/singalong.mp3' },
     { id: 'classic-5', title: 'Tower of Stars', style: 'enchanted_synth_pop', storyTitle: 'Rapunzel', audioSrc: 'https://d1mmspri4wgcne.cloudfront.net/classic-tales/rapunzel/enchanted_synth_pop.mp3' },
