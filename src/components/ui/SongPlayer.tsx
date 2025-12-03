@@ -107,7 +107,7 @@ const SongPlayer: React.FC<SongPlayerProps> = ({ songs, className = '' }) => {
                   {song.title}
                 </p>
                 <p className="text-sm text-neutral-500 truncate">
-                  {song.style.replace(/_/g, ' ')}
+                  {(song.style || '').replace(/_/g, ' ')}
                 </p>
               </div>
 
