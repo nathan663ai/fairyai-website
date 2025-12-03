@@ -1,11 +1,13 @@
 // Database types for fairy_tales table
 
-export interface DbNarrator {
-  id: string;
-  name: string;
+// Database narration entry (keyed by narrator id like "echo", "nova")
+export interface DbNarrationEntry {
   duration: number;
   audio_url: string;
 }
+
+// Narrations stored as object: { "echo": { duration, audio_url }, "nova": { ... } }
+export type DbNarrations = Record<string, DbNarrationEntry>;
 
 export interface DbSong {
   id: string;
@@ -23,7 +25,7 @@ export interface DbFairyTale {
   title: string;
   content: string;
   image_url: string;
-  narrations: DbNarrator[];
+  narrations: DbNarrations | null;
   songs: DbSong[];
   type: 'ai' | 'classic';
   language_code: string;
@@ -80,12 +82,14 @@ export function transformDbToStoryData(row: DbFairyTale): StoryData {
     slug: row.slug,
     imageUrl: row.image_url,
     content: row.content,
-    narrators: (row.narrations || []).map(n => ({
-      id: n.id,
-      name: n.name,
-      duration: n.duration,
-      audioUrl: n.audio_url,
-    })),
+    narrators: row.narrations
+      ? Object.entries(row.narrations).map(([id, entry]) => ({
+          id,
+          name: id.charAt(0).toUpperCase() + id.slice(1), // Capitalize: "echo" -> "Echo"
+          duration: entry.duration,
+          audioUrl: entry.audio_url,
+        }))
+      : [],
     songs: (row.songs || []).map(s => ({
       id: s.id,
       title: s.title,
