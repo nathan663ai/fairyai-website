@@ -2,27 +2,29 @@ import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import ImagePlaceholder from '../components/ui/ImagePlaceholder';
 import DownloadButtons from '../components/ui/DownloadButtons';
+import { useStories } from '../hooks/useStories';
 import { storyExamples } from '../data/stories';
 
 const StoriesPage: React.FC = () => {
+  const { stories: supabaseStories, loading, error } = useStories();
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
-  const getCreationMethodBadge = (method: string) => {
-    switch (method) {
-      case 'quick_story':
-        return { text: 'Quick Story', color: 'bg-soft-blue-100 text-soft-blue-700' };
-      case 'story_wizard':
-        return { text: 'Story Wizard', color: 'bg-soft-green-100 text-soft-green-700' };
-      case 'fairy_corner_daily':
+  // Get robot-friendship from hardcoded data (user example - demo content)
+  const robotFriendship = storyExamples.find(s => s.id === 'robot-friendship');
+
+  const getTypeBadge = (type: 'ai' | 'classic' | 'user_example') => {
+    switch (type) {
+      case 'ai':
         return { text: 'Daily AI Story', color: 'bg-gradient-to-r from-soft-blue-100 to-soft-green-100 text-neutral-800' };
-      case 'fairy_corner_classic':
+      case 'classic':
         return { text: 'Classic Tale', color: 'bg-gradient-to-r from-soft-blue-100 to-soft-green-100 text-neutral-800' };
       case 'user_example':
         return { text: 'User Example', color: 'bg-soft-green-100 text-soft-green-700' };
       default:
-        return { text: method, color: 'bg-neutral-100 text-neutral-700' };
+        return { text: type, color: 'bg-neutral-100 text-neutral-700' };
     }
   };
 
@@ -43,65 +45,135 @@ const StoriesPage: React.FC = () => {
       {/* Stories Grid */}
       <section className="py-12 md:py-16">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-            {storyExamples.map((story) => {
-              const badge = getCreationMethodBadge(story.creationMethod);
-              const storyUrl = story.creationMethod === 'user_example'
-                ? `/stories/examples/${story.id}`
-                : `/stories/${story.id}`;
+          {/* Loading State */}
+          {loading && (
+            <div className="flex justify-center items-center py-12">
+              <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-soft-blue-600"></div>
+              <span className="ml-3 text-neutral-600">Loading stories...</span>
+            </div>
+          )}
 
-              return (
+          {/* Error State */}
+          {error && (
+            <div className="bg-red-50 border border-red-200 rounded-lg p-6 text-center">
+              <p className="text-red-700 font-medium">Failed to load stories</p>
+              <p className="text-red-600 text-sm mt-1">{error}</p>
+            </div>
+          )}
+
+          {/* Stories Grid */}
+          {!loading && !error && (
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+              {/* Supabase Stories */}
+              {supabaseStories.map((story) => {
+                const badge = getTypeBadge(story.type);
+
+                return (
+                  <Link
+                    key={story.id}
+                    to={`/stories/${story.slug}`}
+                    className="group bg-white rounded-xl shadow-lg border border-neutral-200 overflow-hidden hover:shadow-2xl hover:scale-[1.02] transition-all duration-300"
+                  >
+                    {/* Story Image */}
+                    <div className="relative aspect-square overflow-hidden">
+                      {story.imageUrl ? (
+                        <img
+                          src={story.imageUrl}
+                          alt={story.title}
+                          loading="lazy"
+                          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                        />
+                      ) : (
+                        <ImagePlaceholder
+                          label={`Character from ${story.title}`}
+                          aspectRatio="square"
+                          className="group-hover:scale-110 transition-transform duration-300"
+                        />
+                      )}
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+                    </div>
+
+                    {/* Story Info */}
+                    <div className="p-5">
+                      <h2 className="font-display text-xl font-bold text-neutral-900 mb-2 group-hover:text-soft-blue-600 transition-colors">
+                        {story.title}
+                      </h2>
+
+                      {/* Badges */}
+                      <div className="flex flex-wrap gap-2 mb-3">
+                        <span className={`inline-block text-xs font-semibold px-2 py-1 rounded-full ${badge.color}`}>
+                          {badge.text}
+                        </span>
+                        {story.isFeatured && (
+                          <span className="inline-block text-xs font-semibold px-2 py-1 rounded-full bg-amber-100 text-amber-700">
+                            Featured
+                          </span>
+                        )}
+                      </div>
+
+                      {/* Call to Action */}
+                      <div className="flex items-center text-soft-blue-600 font-medium group-hover:text-soft-blue-700">
+                        <span>Click to explore this story</span>
+                        <svg
+                          className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                        </svg>
+                      </div>
+                    </div>
+                  </Link>
+                );
+              })}
+
+              {/* Robot Friendship - Hardcoded User Example */}
+              {robotFriendship && (
                 <Link
-                  key={story.id}
-                  to={storyUrl}
+                  to={`/stories/examples/${robotFriendship.id}`}
                   className="group bg-white rounded-xl shadow-lg border border-neutral-200 overflow-hidden hover:shadow-2xl hover:scale-[1.02] transition-all duration-300"
                 >
                   {/* Story Image */}
                   <div className="relative aspect-square overflow-hidden">
-                    {story.imageUrl ? (
+                    {robotFriendship.imageUrl ? (
                       <img
-                        src={story.imageUrl}
-                        alt={story.title}
+                        src={robotFriendship.imageUrl}
+                        alt={robotFriendship.title}
                         loading="lazy"
                         className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                       />
                     ) : (
                       <ImagePlaceholder
-                        label={`Character from ${story.title}`}
+                        label={`Character from ${robotFriendship.title}`}
                         aspectRatio="square"
                         className="group-hover:scale-110 transition-transform duration-300"
                       />
                     )}
-                    {/* Overlay gradient for better text readability if needed */}
                     <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
                   </div>
 
                   {/* Story Info */}
                   <div className="p-5">
                     <h2 className="font-display text-xl font-bold text-neutral-900 mb-2 group-hover:text-soft-blue-600 transition-colors">
-                      {story.title}
+                      {robotFriendship.title}
                     </h2>
 
                     {/* Badges */}
                     <div className="flex flex-wrap gap-2 mb-3">
-                      {story.ageRange && (
-                        <span className="inline-block text-xs font-semibold bg-white border border-neutral-300 px-2 py-1 rounded-full">
-                          {story.ageRange}
-                        </span>
-                      )}
-                      <span className={`inline-block text-xs font-semibold px-2 py-1 rounded-full ${badge.color}`}>
-                        {badge.text}
+                      <span className="inline-block text-xs font-semibold px-2 py-1 rounded-full bg-soft-green-100 text-soft-green-700">
+                        User Example
                       </span>
                     </div>
 
                     {/* Description */}
                     <p className="text-sm text-neutral-600 mb-3 line-clamp-4">
-                      {story.description}
+                      {robotFriendship.description}
                     </p>
 
                     {/* Call to Action */}
                     <div className="flex items-center text-soft-blue-600 font-medium group-hover:text-soft-blue-700">
-                      <span>{story.tagline}</span>
+                      <span>{robotFriendship.tagline}</span>
                       <svg
                         className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform"
                         fill="none"
@@ -113,9 +185,9 @@ const StoriesPage: React.FC = () => {
                     </div>
                   </div>
                 </Link>
-              );
-            })}
-          </div>
+              )}
+            </div>
+          )}
         </div>
       </section>
 

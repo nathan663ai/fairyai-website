@@ -52,7 +52,7 @@ function App() {
           <Route path="/features" element={<FeaturesPage />} />
           <Route path="/stories" element={<StoriesPage />} />
           <Route path="/stories/examples/:storyId" element={<UserExampleStoryPage />} />
-          <Route path="/stories/:storyId" element={<StoryDetailPage />} />
+          <Route path="/stories/:slug" element={<StoryDetailPage />} />
           <Route path="/privacy" element={<PrivacyPage />} />
           <Route path="/terms" element={<TermsPage />} />
           <Route path="/delete-account" element={<AccountDeletePage />} />
