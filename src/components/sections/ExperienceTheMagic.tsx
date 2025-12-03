@@ -304,16 +304,19 @@ const ExperienceTheMagic: React.FC = () => {
 
                     {/* Story Info */}
                     <div className="p-4">
-                      <div className="flex items-start justify-between mb-2 gap-2">
-                        <h4 className="font-display text-lg font-bold text-slate-900">
-                          {story.title}
-                        </h4>
-                        <span className="text-xs font-semibold text-soft-blue-600 bg-soft-blue-50 px-2 py-1 rounded-full flex-shrink-0">
+                      {/* Centered Badge */}
+                      <div className="flex justify-center mb-2">
+                        <span className="text-xs font-semibold text-soft-blue-600 bg-soft-blue-50 px-2 py-1 rounded-full">
                           {story.ageRange}
                         </span>
                       </div>
 
-                      <p className="text-neutral-600 mb-3 text-sm">
+                      {/* Title below badge */}
+                      <h4 className="font-display text-lg font-bold text-slate-900 text-center mb-2">
+                        {story.title}
+                      </h4>
+
+                      <p className="text-neutral-600 mb-3 text-sm text-center">
                         {story.description}
                       </p>
 
@@ -364,13 +367,13 @@ const ExperienceTheMagic: React.FC = () => {
                               >
                                 {/* Progress fill */}
                                 <div
-                                  className="absolute inset-y-0 left-0 bg-gradient-to-r from-soft-blue-500 to-soft-green-500 rounded-full transition-all"
+                                  className="absolute inset-y-0 left-0 bg-fairy-gold-500 rounded-full transition-all"
                                   style={{ width: displayDuration > 0 ? `${(displayTime / displayDuration) * 100}%` : '0%' }}
                                 />
                                 {/* Thumb/handle */}
                                 {isThisActive && displayDuration > 0 && (
                                   <div
-                                    className="absolute top-1/2 -translate-y-1/2 w-4 h-4 bg-white border-2 border-soft-blue-500 rounded-full shadow-md transition-all group-hover:scale-110"
+                                    className="absolute top-1/2 -translate-y-1/2 w-4 h-4 bg-white border-2 border-fairy-gold-500 rounded-full shadow-md transition-all group-hover:scale-110"
                                     style={{ left: `calc(${(displayTime / displayDuration) * 100}% - 8px)` }}
                                   />
                                 )}
