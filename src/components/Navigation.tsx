@@ -40,19 +40,22 @@ const Navigation: React.FC = () => {
     <nav className="fixed top-0 left-0 right-0 bg-slate-900 shadow-lg z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20 py-4 relative">
-          {/* Logo */}
+          {/* F Logo */}
           <Link to="/" className="flex items-center">
             <img
-              src="/images/splash-logo-transparent.png"
-              alt="FairyAI Logo"
+              src="/images/F_Logo.png"
+              alt="FairyAI"
               className="h-10 w-auto"
             />
           </Link>
 
-          {/* Centered Brand Name - Mobile Only */}
-          <Link to="/" className="absolute left-1/2 -translate-x-1/2 font-display text-xl font-bold md:hidden">
-            <span className="text-white">Fairy</span>
-            <span className="text-fairy-gold-500">AI</span>
+          {/* Centered FairyAI Logo */}
+          <Link to="/" className="absolute left-1/2 -translate-x-1/2">
+            <img
+              src="/images/FairyAI_Logo.png"
+              alt="FairyAI"
+              className="h-8 w-auto"
+            />
           </Link>
 
           {/* Desktop Navigation */}
