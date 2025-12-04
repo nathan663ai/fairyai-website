@@ -20,7 +20,7 @@ export const faqs: FAQ[] = [
   },
   {
     question: "Can siblings share one account?",
-    answer: "Not yet. FairyAI currently uses single-user accounts. Child profiles are planned for Q1 2026, which will allow multiple children per parent account with separate libraries and preferences. For now, each child needs their own account."
+    answer: "Not yet. FairyAI currently uses single-user accounts. Child profiles are planned for a future update, which will allow multiple children per parent account with separate libraries and preferences. For now, each child needs their own account."
   },
   {
     question: "What happens if generation fails?",

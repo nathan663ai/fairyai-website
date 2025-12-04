@@ -107,7 +107,7 @@ const FeaturesPage: React.FC = () => {
             </div>
             <div className="flex justify-center md:justify-end">
               <img
-                src="/images/how-it-works/fairy-guide.png"
+                src="/images/features/fairy-features.png"
                 alt="Fairy guide"
                 className="h-48 md:h-64 w-auto object-contain"
               />
@@ -226,10 +226,10 @@ const FeaturesPage: React.FC = () => {
             {/* Free */}
             <Card className="p-6 text-center">
               <h3 className="font-display text-xl font-semibold mb-1 text-neutral-900">Free</h3>
-              <p className="text-3xl font-bold text-neutral-900 mb-1">£0</p>
-              <p className="text-sm text-neutral-500 mb-4">forever</p>
+              <p className="text-3xl font-bold text-neutral-900 mb-4">£0</p>
               <ul className="text-sm text-neutral-700 space-y-2 mb-4 text-left">
-                <li>• 6 Fairy Dust monthly</li>
+                <li>• 6 Fairy Dust at sign up</li>
+                <li>• Fairy Corner free trial</li>
                 <li>• All features included</li>
                 <li>• No account required to try</li>
               </ul>
@@ -252,42 +252,27 @@ const FeaturesPage: React.FC = () => {
 
             {/* Higher Tiers */}
             <Card className="p-6 text-center">
-              <h3 className="font-display text-xl font-semibold mb-1 text-neutral-900">More Options</h3>
+              <h3 className="font-display text-xl font-semibold mb-1 text-neutral-900">Need More?</h3>
               <p className="text-sm text-neutral-600 mb-4">For families who create more</p>
-              <ul className="text-sm text-neutral-700 space-y-2 text-left">
-                <li>• <strong>Dream Weaver:</strong> 60 dust, £5.99/mo</li>
-                <li>• <strong>Story Circle:</strong> 125 dust, £10.99/mo</li>
-                <li>• <strong>Endless Tales:</strong> 225 dust, £17.99/mo</li>
+              <ul className="text-sm text-neutral-700 space-y-3 text-left">
+                <li><strong>Dream Weaver</strong><br/>60 dust monthly, £5.99/mo</li>
+                <li><strong>Story Circle</strong><br/>125 dust monthly, £10.99/mo</li>
               </ul>
-              <p className="text-xs text-neutral-500 mt-4">Annual plans save 17-22%</p>
+              <p className="text-xs text-neutral-500 mt-4">Annual plans save 17-20%</p>
             </Card>
           </div>
 
-          {/* Dust Packs */}
-          <div className="bg-neutral-50 rounded-xl p-6 mb-6">
-            <h3 className="font-display text-lg font-semibold text-center mb-4 text-neutral-900">
-              Or Buy Dust Packs (Never Expire)
-            </h3>
-            <div className="grid grid-cols-3 gap-4 max-w-md mx-auto">
-              <div className="text-center">
-                <p className="font-bold text-neutral-900">15 dust</p>
-                <p className="text-sm text-neutral-600">£1.99</p>
-              </div>
-              <div className="text-center">
-                <p className="font-bold text-neutral-900">45 dust</p>
-                <p className="text-sm text-neutral-600">£3.99</p>
-              </div>
-              <div className="text-center">
-                <p className="font-bold text-neutral-900">100 dust</p>
-                <p className="text-sm text-neutral-600">£7.99</p>
-              </div>
-            </div>
+          {/* Dust Packs - Simplified */}
+          <div className="bg-neutral-50 rounded-xl p-6 mb-6 text-center">
+            <p className="text-neutral-700">
+              <strong>Need a top up?</strong> Dust packs available for one-time purchase. Purchased dust never expires.
+            </p>
           </div>
 
           {/* What's Fairy Dust */}
           <div className="bg-soft-blue-50 rounded-xl p-6 text-center">
             <p className="text-neutral-700">
-              <strong>What's Fairy Dust?</strong> Our creative currency. 1 dust = 1 story or continuation. 2 dust = 1 character, song, or narration. Monthly dust refills on your billing date. Purchased dust never expires.
+              <strong>What's Fairy Dust?</strong> Our creative currency. 1 dust = 1 story or continuation. 2 dust = 1 character, song, or narration.
             </p>
           </div>
 
@@ -311,7 +296,7 @@ const FeaturesPage: React.FC = () => {
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {comingSoonItems.map((item, index) => (
-              <div key={index} className="bg-white rounded-xl p-4 text-center border border-neutral-200">
+              <div key={index} className="bg-white rounded-xl p-4 text-center border-2 border-fairy-gold-200 shadow-sm">
                 <p className="text-neutral-800 font-medium">{item}</p>
               </div>
             ))}
@@ -345,16 +330,7 @@ const FeaturesPage: React.FC = () => {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-12 md:py-16 bg-neutral-50">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-10">
-            <h2 className="font-display text-3xl md:text-4xl font-bold text-neutral-900 mb-3">
-              Frequently Asked Questions
-            </h2>
-          </div>
-          <FAQAccordion faqs={faqs} />
-        </div>
-      </section>
+      <FAQAccordion faqs={faqs} />
 
       {/* Download CTA */}
       <section className="py-12 md:py-16 bg-amber-50">
