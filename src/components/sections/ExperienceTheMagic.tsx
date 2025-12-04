@@ -494,10 +494,12 @@ const ExperienceTheMagic: React.FC = () => {
                       </p>
                     </div>
 
-                    {/* Style Badge */}
-                    <span className="text-xs text-neutral-400 bg-neutral-100 px-2 py-0.5 rounded-full flex-shrink-0">
-                      {song.style.replace(/_/g, ' ')}
-                    </span>
+                    {/* Style Badge - hidden on AI tab to allow longer titles */}
+                    {activeSongTab !== 'ai' && (
+                      <span className="text-xs text-neutral-400 bg-neutral-100 px-2 py-0.5 rounded-full flex-shrink-0">
+                        {song.style.replace(/_/g, ' ')}
+                      </span>
+                    )}
                   </div>
                 );
               })}
