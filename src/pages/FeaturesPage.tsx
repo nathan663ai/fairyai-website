@@ -1,121 +1,165 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { Palette, BookOpen, Sparkles, Music, Shield, Globe, Gift, Star, Check } from 'lucide-react';
+import { Check, Gift, Star } from 'lucide-react';
 import DownloadButtons from '../components/ui/DownloadButtons';
 import FAQAccordion from '../components/sections/FAQAccordion';
 import { faqs } from '../data/faqs';
 import Card from '../components/ui/Card';
 
+// Feature cards with images
+const createFeatures = [
+  {
+    imageSrc: '/images/features/build-characters.png',
+    title: 'Persistent Characters',
+    description: 'Build once, use forever. Traits, abilities, and custom images that work across all stories.'
+  },
+  {
+    imageSrc: '/images/features/story-wizard.png',
+    title: 'Stories & Chapters',
+    description: 'Quick Story or Story Wizard. Continue into multi-chapter books with 2 tap continuation.'
+  },
+  {
+    imageSrc: '/images/features/fairy-corner.png',
+    title: 'Fairy Corner',
+    description: 'Classic tales, daily AI stories, nursery rhymes. 2 always free for guests.'
+  },
+  {
+    imageSrc: '/images/features/custom-songs.png',
+    title: 'Songs & Narration',
+    description: '4 voices, 12 languages, bedtime pacing. Custom songs with lyrics from your stories.'
+  },
+  {
+    imageSrc: '/images/features/age-smart.png',
+    title: 'Built In Safety',
+    description: 'Age based filters, content screening, no PII logging. Safe for ages 2 to 12.'
+  },
+  {
+    imageSrc: '/images/features/languages.png',
+    title: 'Multi Language',
+    description: '12 languages with native quality narration. Stories, songs, and audio.'
+  }
+];
+
+// Why different points
+const whyDifferent = [
+  {
+    number: '01',
+    title: 'No Sign Up Required',
+    text: 'Browse Fairy Corner, listen to stories, explore the app. Create an account only when you want to build your own content.'
+  },
+  {
+    number: '02',
+    title: 'Characters That Matter',
+    text: 'Not random AI output. Persistent characters with real abilities and traits that shape every story.'
+  },
+  {
+    number: '03',
+    title: 'Stories That Continue',
+    text: 'Turn any story into multi-chapter books. Quick 2 tap continue or full control mode.'
+  },
+  {
+    number: '04',
+    title: 'Production Quality',
+    text: 'Native quality narration in 12 languages. Custom songs with real melodies. Professional cover art.'
+  },
+  {
+    number: '05',
+    title: 'Built For Families',
+    text: 'Age smart filters, transparent pricing, offline downloads. No ads, no social features, no surprises.'
+  }
+];
+
+// Coming soon features
+const comingSoonFeatures = [
+  {
+    title: 'Family Sharing',
+    description: 'Share your library across multiple devices and family members.'
+  },
+  {
+    title: 'Reading Together Mode',
+    description: 'Highlighted text that follows along as stories are narrated.'
+  },
+  {
+    title: 'Character Voice Cloning',
+    description: 'Create unique voices for your characters using safe AI voice synthesis.'
+  },
+  {
+    title: 'Story Templates',
+    description: 'Pre-built story structures for common themes like bedtime, holidays, and life lessons.'
+  },
+  {
+    title: 'Collaborative Stories',
+    description: 'Let siblings or friends add their characters to shared adventures.'
+  },
+  {
+    title: 'Print Your Books',
+    description: 'Order professionally printed copies of your favourite stories.'
+  }
+];
+
 const FeaturesPage: React.FC = () => {
-  const coreFeatures = [
-    {
-      icon: Palette,
-      title: 'Persistent Characters',
-      description: 'Build once, use forever. Traits, abilities, and custom images that work across all stories.',
-      link: '/how-it-works'
-    },
-    {
-      icon: BookOpen,
-      title: 'Stories & Chapters',
-      description: 'Quick Story or Story Wizard. Continue into multi-chapter books with 2-tap continuation.',
-      link: '/how-it-works'
-    },
-    {
-      icon: Sparkles,
-      title: 'Fairy Corner',
-      description: 'Classic tales, daily AI stories, nursery rhymes. 2 always free for guests.',
-      link: '/how-it-works'
-    },
-    {
-      icon: Music,
-      title: 'Songs & Narration',
-      description: '4 voices, 12 languages, bedtime pacing. Custom songs with lyrics from your stories.',
-      link: '/how-it-works'
-    },
-    {
-      icon: Shield,
-      title: 'Built-In Safety',
-      description: 'Age-based filters, content screening, no PII logging. Safe for ages 2-12.',
-      link: null
-    },
-    {
-      icon: Globe,
-      title: 'Multi-Language',
-      description: '12 languages with native-quality narration. Stories, songs, and audio.',
-      link: null
-    }
-  ];
-
-  const whyDifferent = [
-    {
-      number: '01',
-      title: 'Characters That Matter',
-      text: 'Not random AI slop. Persistent characters with real abilities and traits that shape every story.'
-    },
-    {
-      number: '02',
-      title: 'Stories That Continue',
-      text: 'Turn any story into multi-chapter books. Quick 2-tap continue or full control mode.'
-    },
-    {
-      number: '03',
-      title: 'Production Quality',
-      text: 'Native-quality narration in 12 languages. Custom songs with real melodies. Professional cover art.'
-    },
-    {
-      number: '04',
-      title: 'Built For Families',
-      text: 'Age-smart filters, transparent pricing, offline downloads. No ads, no social features, no surprises.'
-    }
-  ];
-
   return (
     <div className="pt-16 bg-white">
       {/* Hero */}
-      <section className="bg-gradient-to-br from-soft-blue-50 to-soft-green-50 py-12 md:py-16">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="font-display text-4xl md:text-5xl font-bold text-neutral-900 mb-4">
-            Features & Pricing
-          </h1>
-          <p className="text-xl text-neutral-600">
-            Everything you need for magical bedtimes, and nothing you don't.
-          </p>
+      <section className="bg-gradient-to-br from-soft-blue-50 via-white to-soft-green-50 py-12 md:py-16">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col md:flex-row items-center gap-8">
+            <div className="flex-1 text-center md:text-left">
+              <h1 className="font-display text-4xl md:text-5xl font-bold text-neutral-900 mb-4">
+                Features & Pricing
+              </h1>
+              <p className="text-xl text-neutral-600">
+                Everything you need for magical bedtimes, and nothing you don't.
+              </p>
+            </div>
+            <div className="flex-shrink-0">
+              <img
+                src="/images/fairy-wand.png"
+                alt="FairyAI mascot"
+                className="w-48 md:w-64 h-auto"
+              />
+            </div>
+          </div>
         </div>
       </section>
 
-      {/* Core Features Grid */}
+      {/* What You Can Create */}
       <section className="py-12 md:py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10">
             <h2 className="font-display text-3xl md:text-4xl font-bold text-neutral-900 mb-3">
-              Everything Included
+              What You Can Create
             </h2>
+            <p className="text-lg text-neutral-600">
+              All included in every plan
+            </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {coreFeatures.map((feature, index) => (
-              <Card key={index} className="text-center p-8 hover:shadow-lg transition-shadow">
+            {createFeatures.map((feature, index) => (
+              <Card
+                key={index}
+                className="text-center p-8 hover:shadow-lg transition-shadow bg-gradient-to-br from-soft-blue-50 via-white to-soft-green-50"
+              >
                 <div className="mb-4 flex justify-center">
-                <feature.icon className="w-12 h-12 text-soft-blue-600" strokeWidth={1.5} />
-              </div>
+                  <img
+                    src={feature.imageSrc}
+                    alt={feature.title}
+                    className="w-16 h-16 object-contain"
+                  />
+                </div>
                 <h3 className="font-display text-xl font-semibold mb-3 text-neutral-900">
                   {feature.title}
                 </h3>
-                <p className="text-neutral-700 mb-4">
+                <p className="text-neutral-700">
                   {feature.description}
                 </p>
-                {feature.link && (
-                  <Link to={feature.link} className="text-soft-blue-600 hover:text-soft-blue-700 text-sm font-medium">
-                    Learn more →
-                  </Link>
-                )}
               </Card>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Why Different - Simplified */}
+      {/* Why Different */}
       <section className="py-12 md:py-16 bg-neutral-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
@@ -128,7 +172,7 @@ const FeaturesPage: React.FC = () => {
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
-            {whyDifferent.map((item, index) => (
+            {whyDifferent.slice(0, 4).map((item, index) => (
               <Card key={index} className="p-8">
                 <div className="flex items-start gap-4">
                   <div className="flex-shrink-0 w-12 h-12 bg-fairy-gold-500 rounded-full flex items-center justify-center text-white font-bold text-sm">
@@ -146,10 +190,29 @@ const FeaturesPage: React.FC = () => {
               </Card>
             ))}
           </div>
+
+          {/* Fifth item centered below */}
+          <div className="mt-8 max-w-xl mx-auto">
+            <Card className="p-8">
+              <div className="flex items-start gap-4">
+                <div className="flex-shrink-0 w-12 h-12 bg-fairy-gold-500 rounded-full flex items-center justify-center text-white font-bold text-sm">
+                  {whyDifferent[4].number}
+                </div>
+                <div>
+                  <h3 className="font-display text-xl font-semibold mb-2 text-neutral-900">
+                    {whyDifferent[4].title}
+                  </h3>
+                  <p className="text-neutral-700">
+                    {whyDifferent[4].text}
+                  </p>
+                </div>
+              </div>
+            </Card>
+          </div>
         </div>
       </section>
 
-      {/* Pricing - Simplified */}
+      {/* Pricing */}
       <section className="py-12 md:py-16 bg-white">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
@@ -157,7 +220,7 @@ const FeaturesPage: React.FC = () => {
               Simple, Transparent Pricing
             </h2>
             <p className="text-lg text-neutral-600">
-              Pay only for what you create. No lock-in, no hidden fees.
+              Pay only for what you create. Top up at any time.
             </p>
           </div>
 
@@ -168,7 +231,7 @@ const FeaturesPage: React.FC = () => {
                 <Gift className="w-10 h-10 text-soft-blue-600" strokeWidth={1.5} />
               </div>
               <h3 className="font-display text-2xl font-semibold mb-3 text-neutral-900">
-                Free Forever
+                Free to Start
               </h3>
               <p className="text-neutral-700 mb-6">
                 Try FairyAI with no credit card required
@@ -180,7 +243,7 @@ const FeaturesPage: React.FC = () => {
                 </li>
                 <li className="flex items-start gap-2">
                   <Check className="w-5 h-5 text-soft-green-600 mt-0.5 flex-shrink-0" strokeWidth={2} />
-                  <span>7-day Fairy Corner trial</span>
+                  <span>7 day Fairy Corner trial</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <Check className="w-5 h-5 text-soft-green-600 mt-0.5 flex-shrink-0" strokeWidth={2} />
@@ -188,46 +251,42 @@ const FeaturesPage: React.FC = () => {
                 </li>
                 <li className="flex items-start gap-2">
                   <Check className="w-5 h-5 text-soft-green-600 mt-0.5 flex-shrink-0" strokeWidth={2} />
-                  <span>Browse as guest (no signup needed)</span>
+                  <span>Browse as guest (no sign up needed)</span>
                 </li>
               </ul>
             </Card>
 
-            {/* Premium Plan */}
+            {/* Pay As You Go */}
             <Card className="p-8 bg-amber-50 border-2 border-fairy-gold-500">
               <div className="mb-4">
                 <Star className="w-10 h-10 text-fairy-gold-500" strokeWidth={1.5} fill="currentColor" />
               </div>
               <h3 className="font-display text-2xl font-semibold mb-3 text-neutral-900">
-                Premium Plans
+                Pay As You Go
               </h3>
               <p className="text-neutral-600 mb-6">
-                Monthly Fairy Dust allocations
+                From £2.39 for 50 Fairy Dust
               </p>
               <ul className="space-y-3 text-neutral-700 mb-6">
                 <li className="flex items-start gap-2">
                   <Check className="w-5 h-5 text-fairy-gold-500 mt-0.5 flex-shrink-0" strokeWidth={2} />
-                  <span>Unlimited characters & stories</span>
+                  <span>Top up at any time from the app</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <Check className="w-5 h-5 text-fairy-gold-500 mt-0.5 flex-shrink-0" strokeWidth={2} />
-                  <span>Full Fairy Corner access</span>
+                  <span>No subscriptions required</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <Check className="w-5 h-5 text-fairy-gold-500 mt-0.5 flex-shrink-0" strokeWidth={2} />
-                  <span>Narration in 12 languages</span>
+                  <span>Managed securely by App Store & Google Play</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <Check className="w-5 h-5 text-fairy-gold-500 mt-0.5 flex-shrink-0" strokeWidth={2} />
-                  <span>Custom songs with lyrics</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <Check className="w-5 h-5 text-fairy-gold-500 mt-0.5 flex-shrink-0" strokeWidth={2} />
-                  <span>Offline PDF & MP3 downloads</span>
+                  <span>Dust never expires</span>
                 </li>
               </ul>
               <p className="text-sm text-neutral-600">
-                Flexible plans from £6.99/month. See app for details.
+                Larger packs available with better value. See app for details.
               </p>
             </Card>
           </div>
@@ -241,8 +300,53 @@ const FeaturesPage: React.FC = () => {
         </div>
       </section>
 
-      {/* FAQ Section */}
+      {/* Coming Soon */}
       <section className="py-12 md:py-16 bg-neutral-50">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="font-display text-3xl md:text-4xl font-bold text-neutral-900 mb-4">
+              Coming Soon
+            </h2>
+            <p className="text-lg text-neutral-600">
+              Features we're working on
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {comingSoonFeatures.map((feature, index) => (
+              <Card key={index} className="p-6 bg-white/80 border border-neutral-200">
+                <h3 className="font-display text-lg font-semibold mb-2 text-neutral-900">
+                  {feature.title}
+                </h3>
+                <p className="text-neutral-600 text-sm">
+                  {feature.description}
+                </p>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Feedback Welcome */}
+      <section className="py-12 md:py-16 bg-gradient-to-br from-soft-blue-100 via-white to-soft-green-100">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="font-display text-3xl md:text-4xl font-bold text-neutral-900 mb-4">
+            We'd Love Your Feedback
+          </h2>
+          <p className="text-lg text-neutral-700 mb-6">
+            FairyAI is built by parents, for parents. If there's a feature you'd love to see, or something that could work better, we want to hear about it.
+          </p>
+          <a
+            href="mailto:hello@fairyai.app"
+            className="inline-flex items-center gap-2 bg-fairy-gold-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-fairy-gold-600 transition-colors"
+          >
+            Get In Touch
+          </a>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-12 md:py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10">
             <h2 className="font-display text-3xl md:text-4xl font-bold text-neutral-900 mb-3">
