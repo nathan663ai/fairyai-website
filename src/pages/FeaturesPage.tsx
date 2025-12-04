@@ -262,23 +262,24 @@ const FeaturesPage: React.FC = () => {
             </Card>
           </div>
 
-          {/* Dust Packs - Simplified */}
+          {/* Managed by App Stores */}
+          <p className="text-center text-sm text-neutral-500 mb-6">
+            All subscriptions managed securely through App Store & Google Play
+          </p>
+
+          {/* Dust Packs */}
           <div className="bg-neutral-50 rounded-xl p-6 mb-6 text-center">
             <p className="text-neutral-700">
-              <strong>Need a top up?</strong> Dust packs available for one-time purchase. Purchased dust never expires.
+              <strong>Need a top up?</strong> Dust packs available for one-time purchase. No subscription required. Purchased dust never expires.
             </p>
           </div>
 
           {/* What's Fairy Dust */}
           <div className="bg-soft-blue-50 rounded-xl p-6 text-center">
             <p className="text-neutral-700">
-              <strong>What's Fairy Dust?</strong> Our creative currency. 1 dust = 1 story or continuation. 2 dust = 1 character, song, or narration.
+              <strong>What's Fairy Dust?</strong> Creating stories, characters, and songs uses AI that costs real money to run. Rather than charging high fees, Fairy Dust lets you pay only for what you create. Simple, fair, and you're never paying for things you don't use.
             </p>
           </div>
-
-          <p className="text-center text-sm text-neutral-500 mt-4">
-            All subscriptions managed securely through App Store & Google Play
-          </p>
         </div>
       </section>
 
