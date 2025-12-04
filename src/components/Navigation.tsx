@@ -54,7 +54,7 @@ const Navigation: React.FC = () => {
             <img
               src="/images/FairyAi_Logo.png"
               alt="FairyAI"
-              className="h-14 w-auto"
+              className="h-28 w-auto"
             />
           </Link>
 
