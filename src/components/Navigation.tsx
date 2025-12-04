@@ -39,27 +39,31 @@ const Navigation: React.FC = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 bg-slate-900 shadow-lg z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-20 py-4 relative">
-          {/* F Logo */}
-          <Link to="/" className="flex items-center">
-            <img
-              src="/images/F_Logo.png"
-              alt="FairyAI"
-              className="h-10 w-auto"
-            />
-          </Link>
+        <div className="flex items-center h-20 py-4">
+          {/* Left: F Logo */}
+          <div className="flex-1 flex justify-start">
+            <Link to="/" className="flex items-center">
+              <img
+                src="/images/F_Logo.png"
+                alt="FairyAI"
+                className="h-10 w-auto"
+              />
+            </Link>
+          </div>
 
-          {/* Centered FairyAI Logo */}
-          <Link to="/" className="absolute left-1/2 -translate-x-1/2 md:left-1/3">
-            <img
-              src="/images/FairyAi_Logo.png"
-              alt="FairyAI"
-              className="h-28 w-auto"
-            />
-          </Link>
+          {/* Center: FairyAI Logo */}
+          <div className="flex-1 flex justify-center">
+            <Link to="/">
+              <img
+                src="/images/FairyAi_Logo.png"
+                alt="FairyAI"
+                className="h-[5.5rem] w-auto"
+              />
+            </Link>
+          </div>
 
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          {/* Right: Desktop Navigation */}
+          <div className="flex-1 hidden md:flex items-center justify-end space-x-8">
             {navLinks.map((link, index) => (
               link.path ? (
                 <Link
@@ -99,22 +103,24 @@ const Navigation: React.FC = () => {
             </a>
           </div>
 
-          {/* Mobile Menu Button */}
-          <button
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden p-2 text-neutral-200"
-            aria-label="Toggle menu"
-          >
-            {isMenuOpen ? (
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            ) : (
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-              </svg>
-            )}
-          </button>
+          {/* Right: Mobile Menu Button */}
+          <div className="flex-1 flex justify-end md:hidden">
+            <button
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              className="p-2 text-neutral-200"
+              aria-label="Toggle menu"
+            >
+              {isMenuOpen ? (
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              ) : (
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+              )}
+            </button>
+          </div>
         </div>
       </div>
 
