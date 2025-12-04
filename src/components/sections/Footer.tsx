@@ -28,6 +28,7 @@ const Footer: React.FC = () => {
     { label: 'How It Works', path: '/how-it-works' },
     { label: 'Features', path: '/features' },
     { label: 'Safety', path: '/safety' },
+    { label: 'Stories', path: '/stories' },
     { label: 'About', section: 'about' },
     { label: 'Privacy', path: '/privacy' },
     { label: 'Terms', path: '/terms' },

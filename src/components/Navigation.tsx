@@ -41,12 +41,16 @@ const Navigation: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20 py-4">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2">
+          <Link to="/" className="flex items-center gap-2">
             <img
               src="/images/splash-logo-transparent.png"
               alt="FairyAI Logo"
-              className="h-12 w-auto"
+              className="h-10 w-auto"
             />
+            <span className="font-display text-xl font-bold">
+              <span className="text-white">Fairy</span>
+              <span className="text-fairy-gold-500">AI</span>
+            </span>
           </Link>
 
           {/* Desktop Navigation */}
