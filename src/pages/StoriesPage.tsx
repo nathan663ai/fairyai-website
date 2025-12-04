@@ -32,13 +32,24 @@ const StoriesPage: React.FC = () => {
     <div className="pt-16 bg-white min-h-screen">
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-soft-blue-50 to-soft-green-50 py-12 md:py-16">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-neutral-900 mb-4">
-            Example Stories from FairyAI
-          </h1>
-          <p className="text-lg md:text-xl text-neutral-600 max-w-3xl mx-auto">
-            Explore different story creation methods. Click any story to see the full content, listen to narration, and enjoy the songs.
-          </p>
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-2 gap-8 items-center">
+            <div className="text-center md:text-left">
+              <h1 className="font-display text-4xl md:text-5xl font-bold text-neutral-900 mb-4">
+                Example Stories
+              </h1>
+              <p className="text-xl text-neutral-600">
+                Explore our daily AI stories and classic tales. Click any story to read, listen, and enjoy original songs.
+              </p>
+            </div>
+            <div className="flex justify-center md:justify-end">
+              <img
+                src="/images/stories/stories-hero.png"
+                alt="Story book"
+                className="h-48 md:h-64 w-auto object-contain"
+              />
+            </div>
+          </div>
         </div>
       </section>
 
@@ -192,7 +203,7 @@ const StoriesPage: React.FC = () => {
       </section>
 
       {/* Final CTA */}
-      <section className="py-16 md:py-24 bg-amber-50">
+      <section className="py-16 md:py-24 bg-gradient-to-br from-soft-blue-50 to-soft-green-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="font-display text-3xl md:text-4xl font-bold mb-4 text-neutral-900">
             Ready to Create Your Own Stories?
