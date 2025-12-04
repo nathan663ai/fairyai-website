@@ -50,9 +50,9 @@ const Navigation: React.FC = () => {
           </Link>
 
           {/* Centered FairyAI Logo */}
-          <Link to="/" className="absolute left-1/2 -translate-x-1/2">
+          <Link to="/" className="absolute left-1/2 -translate-x-1/2 md:left-1/3">
             <img
-              src="/images/FairyAI_Logo.png"
+              src="/images/FairyAi_Logo.png"
               alt="FairyAI"
               className="h-8 w-auto"
             />
