@@ -82,7 +82,7 @@ const whyDifferent = [
 
 // Coming soon features
 const comingSoonItems = [
-  'Characters from photos',
+  'Characters from drawings',
   'Record your own narration',
   'Choose-your-own-path stories',
   'Improved story prompts',
@@ -164,7 +164,7 @@ const FeaturesPage: React.FC = () => {
               Why FairyAI is Different
             </h2>
             <p className="text-lg text-neutral-600">
-              Not just another ChatGPT wrapper
+              More than just an AI story generator
             </p>
           </div>
 
@@ -321,7 +321,7 @@ const FeaturesPage: React.FC = () => {
             </p>
             <a
               href="/contact"
-              className="inline-flex items-center gap-2 bg-fairy-gold-500 text-white font-semibold px-6 py-3 rounded-lg hover:bg-fairy-gold-600 hover:shadow-lg transition-all"
+              className="inline-flex items-center gap-2 bg-fairy-gold-500 text-white font-semibold px-6 py-3 rounded-lg hover:bg-fairy-gold-600 hover:shadow-lg transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-fairy-gold-500 focus-visible:ring-offset-2"
             >
               Share Your Feedback →
             </a>
@@ -331,6 +331,16 @@ const FeaturesPage: React.FC = () => {
 
       {/* FAQ Section */}
       <FAQAccordion faqs={faqs} />
+      <div className="bg-white pb-12">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <p className="text-neutral-600">
+            Still have questions?{' '}
+            <Link to="/contact" className="text-soft-blue-600 hover:text-soft-blue-700 font-medium focus:outline-none focus-visible:underline">
+              Get in touch →
+            </Link>
+          </p>
+        </div>
+      </div>
 
       {/* Download CTA */}
       <section className="py-12 md:py-16 bg-amber-50">
@@ -339,7 +349,7 @@ const FeaturesPage: React.FC = () => {
             Start Your Free Trial
           </h2>
           <p className="text-lg text-neutral-700 mb-8">
-            6 free Fairy Dust + 7 days of Fairy Corner access. No credit card required.
+            6 Fairy Dust to start + Fairy Corner free trial. No credit card required.
           </p>
           <DownloadButtons variant="gradient" />
         </div>
