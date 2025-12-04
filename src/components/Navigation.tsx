@@ -49,8 +49,8 @@ const Navigation: React.FC = () => {
             />
           </Link>
 
-          {/* Centered Brand Name */}
-          <Link to="/" className="absolute left-1/2 -translate-x-1/2 font-display text-xl font-bold">
+          {/* Centered Brand Name - Mobile Only */}
+          <Link to="/" className="absolute left-1/2 -translate-x-1/2 font-display text-xl font-bold md:hidden">
             <span className="text-white">Fairy</span>
             <span className="text-fairy-gold-500">AI</span>
           </Link>
