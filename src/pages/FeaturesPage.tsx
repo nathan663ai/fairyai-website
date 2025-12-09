@@ -241,10 +241,10 @@ const FeaturesPage: React.FC = () => {
                 MOST POPULAR
               </span>
               <h3 className="font-display text-xl font-semibold mb-1 text-neutral-900">Story Starter</h3>
-              <p className="text-3xl font-bold text-neutral-900 mb-1">£2.39<span className="text-lg font-normal">/mo</span></p>
-              <p className="text-sm text-neutral-500 mb-4">or £23.99/year (save 16%)</p>
+              <p className="text-3xl font-bold text-neutral-900 mb-1">£1.99<span className="text-lg font-normal">/mo</span></p>
+              <p className="text-sm text-neutral-500 mb-4">or £19.99/year (save 17%)</p>
               <ul className="text-sm text-neutral-700 space-y-2 mb-4 text-left">
-                <li>• 20 Fairy Dust monthly</li>
+                <li>• 15 Fairy Dust monthly</li>
                 <li>• Ad-free experience</li>
                 <li>• Full Fairy Corner access</li>
               </ul>
@@ -255,10 +255,10 @@ const FeaturesPage: React.FC = () => {
               <h3 className="font-display text-xl font-semibold mb-1 text-neutral-900">Need More?</h3>
               <p className="text-sm text-neutral-600 mb-4">For families who create more</p>
               <ul className="text-sm text-neutral-700 space-y-3 text-left">
-                <li><strong>Dream Weaver</strong><br/>60 dust monthly, £5.99/mo</li>
-                <li><strong>Story Circle</strong><br/>125 dust monthly, £10.99/mo</li>
+                <li><strong>Dream Weaver</strong><br/>45 dust monthly, £4.99/mo</li>
+                <li><strong>Story Circle</strong><br/>100 dust monthly, £9.99/mo</li>
               </ul>
-              <p className="text-xs text-neutral-500 mt-4">Annual plans save 17-20%</p>
+              <p className="text-xs text-neutral-500 mt-4">Annual plans save 17%</p>
             </Card>
           </div>
 
@@ -268,17 +268,40 @@ const FeaturesPage: React.FC = () => {
           </p>
 
           {/* Dust Packs */}
-          <div className="bg-neutral-50 rounded-xl p-6 mb-6 text-center">
-            <p className="text-neutral-700">
+          <div className="bg-neutral-50 rounded-xl p-6 mb-6">
+            <p className="text-neutral-700 text-center mb-4">
               <strong>Need a top up?</strong> Dust packs available for one-time purchase. No subscription required. Purchased dust never expires.
             </p>
+            <div className="flex justify-center gap-4 flex-wrap">
+              <div className="bg-white rounded-lg px-4 py-2 border border-neutral-200 text-center">
+                <p className="font-semibold text-neutral-900">Sprinkle</p>
+                <p className="text-sm text-neutral-600">5 dust • £0.99</p>
+              </div>
+              <div className="bg-white rounded-lg px-4 py-2 border border-neutral-200 text-center">
+                <p className="font-semibold text-neutral-900">Pouch</p>
+                <p className="text-sm text-neutral-600">15 dust • £2.49</p>
+              </div>
+              <div className="bg-white rounded-lg px-4 py-2 border border-neutral-200 text-center">
+                <p className="font-semibold text-neutral-900">Chest</p>
+                <p className="text-sm text-neutral-600">40 dust • £5.99</p>
+              </div>
+            </div>
           </div>
 
           {/* What's Fairy Dust */}
-          <div className="bg-soft-blue-50 rounded-xl p-6 text-center">
-            <p className="text-neutral-700">
-              <strong>What's Fairy Dust?</strong> Creating stories, characters, and songs uses AI that costs real money to run. Rather than charging high fees, Fairy Dust lets you pay only for what you create. Simple, fair, and you're never paying for things you don't use.
+          <div className="bg-soft-blue-50 rounded-xl p-6">
+            <p className="text-neutral-700 text-center mb-4">
+              <strong>What's Fairy Dust?</strong> Creating stories, characters, and songs uses AI that costs real money to run. Rather than charging high fees, Fairy Dust lets you pay only for what you create.
             </p>
+            <div className="flex justify-center gap-4 flex-wrap text-sm text-neutral-600">
+              <span>1 dust = 1 story</span>
+              <span>•</span>
+              <span>1 dust = 1 character</span>
+              <span>•</span>
+              <span>1 dust = 1 song</span>
+              <span>•</span>
+              <span>2 dust = narration</span>
+            </div>
           </div>
         </div>
       </section>

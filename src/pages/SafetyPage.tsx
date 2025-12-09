@@ -71,7 +71,7 @@ const SafetyPage: React.FC = () => {
     },
     {
       title: 'No lock-in, no hidden fees',
-      description: 'Cancel your subscription anytime. Your existing Fairy Dust stays until you use it or it expires monthly.'
+      description: 'Cancel your subscription anytime. Purchased Fairy Dust never expires and stays until you use it.'
     }
   ];
 
