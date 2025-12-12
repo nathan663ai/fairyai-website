@@ -16,6 +16,8 @@ import TermsPage from './pages/TermsPage';
 import AccountDeletePage from './pages/AccountDeletePage';
 import DeletePage from './pages/DeletePage';
 import ContactPage from './pages/ContactPage';
+import BlogPage from './pages/BlogPage';
+import BlogPostPage from './pages/BlogPostPage';
 
 // Scroll to top on route change
 function ScrollToTop() {
@@ -60,6 +62,8 @@ function App() {
           <Route path="/delete-account" element={<AccountDeletePage />} />
           <Route path="/delete" element={<DeletePage />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/blog" element={<BlogPage />} />
+          <Route path="/blog/:slug" element={<BlogPostPage />} />
         </Routes>
         <Footer />
       </div>
