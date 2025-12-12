@@ -128,6 +128,148 @@ And when you need a story about your child's imaginary friend defeating a candy 
 
 *FairyAI creates personalised bedtime stories for families. Download free on iOS and Android.*
     `.trim()
+  },
+  {
+    slug: 'bedtime-routine-that-works',
+    title: 'How to Build a Bedtime Routine That Actually Works',
+    description: 'Practical, evidence-based advice for creating a bedtime routine that reduces stress and helps your child sleep better.',
+    date: '2025-12-12',
+    readTime: '6 min read',
+    content: `
+If bedtime in your house feels like a chaotic endurance test, you're not alone. Every parent has been through the evenings where teeth brushing takes 20 minutes, pyjamas somehow disappear, someone is suddenly "starving", and the entire routine falls apart before it even begins.
+
+The good news: bedtime doesn't need to be perfect to work — it just needs to be predictable. A solid routine isn't magic, but it *is* one of the simplest, most effective tools you can use to reduce stress and help your child sleep better.
+
+This article breaks down what actually matters, why routines work, and how to build something sustainable for real family life.
+
+## 1. Why Bedtime Routines Matter
+
+A bedtime routine isn't about control or strict rules — it's about giving your child a sense of predictability at the end of the day.
+
+### Predictability reduces anxiety
+
+Children thrive on knowing what comes next. After a full day of new experiences, stimulation, and emotions they're still learning to process, a consistent evening pattern signals, *"You're safe. The day is ending. Nothing unexpected is about to happen."*
+
+This calm matters more than you might think. Research published in the journal *Sleep* shows that children with consistent bedtime routines fall asleep faster, wake less during the night, and show better overall behaviour during the day.
+
+### Routines help the body shift into "sleep mode"
+
+Our bodies love rhythm, and children's bodies love it even more. When bedtime events happen in the same order each night, the brain learns to associate those steps with sleep.
+
+It's less about what the steps *are*, and more about the fact they're *repeated*.
+
+## 2. The Science of Winding Down
+
+Before a child can sleep, their body needs to transition out of daytime mode — and that takes time.
+
+### Cortisol vs melatonin
+
+During the day, cortisol keeps children alert. In the evening, their body naturally begins producing melatonin, the hormone that promotes sleepiness. But melatonin doesn't surge instantly. It increases gradually, and anything stimulating can interrupt that rise.
+
+The goal of a good bedtime routine is simple: **lower cortisol, protect melatonin**.
+
+### Blue light really does interfere
+
+Screens aren't evil, but they're not ideal before bed. Blue light delays melatonin, making it harder for children (and adults) to fall asleep. This doesn't mean you must banish screens hours before bedtime, but reducing screen exposure in the final 30–60 minutes can make a noticeable difference.
+
+### Calming activities help regulate the nervous system
+
+Soft lighting, gentle voices, warm baths, calm stories, predictable steps — all these help shift a child into a quieter state. Think less "strict discipline" and more "lowering the volume of their whole world."
+
+## 3. The Building Blocks of a Good Bedtime Routine
+
+You don't need a complex, Pinterest-worthy routine. In fact, simpler is better. The best routines follow three core principles:
+
+### 1. Keep the timing consistent
+
+Choose a bedtime that works for your child's age and natural sleep patterns, then aim for it most nights. You don't need to hit it perfectly — being within the same 20–30 minute window is good enough.
+
+### 2. Set up the environment
+
+The bedroom should signal sleep:
+
+- Dim lighting
+- Cooler temperatures
+- Minimal clutter
+- No loud or bright distractions
+- A cosy, predictable space
+
+If the room says "play", they'll want to play. If the room says "sleep", their body responds differently.
+
+### 3. Follow a repeatable sequence
+
+Children love steps. Something like:
+
+1. Bath or wash
+2. Pyjamas
+3. Brush teeth
+4. Calm play or gentle chat
+5. Story
+6. Lights out / cuddles
+
+The exact order doesn't matter — just keep it stable so your child recognises the rhythm.
+
+### What about stories?
+
+Stories work because they combine connection, calm, and imagination — the perfect pre-sleep cocktail. Most households already use stories, but for nights when you're overloaded or travelling, something like FairyAI can help by providing a quick, personalised story without adding more stress for you. But the story itself — whether from a book or spoken — is the key.
+
+## 4. Common Mistakes Parents Make
+
+Every parent slips into these at some point. They're easy to fix once you spot them.
+
+### Mistake 1: Letting the routine get too long
+
+A 45-minute bedtime marathon isn't sustainable. Kids get overtired, parents get frustrated, and the whole thing unravels. Aim for 20–30 minutes from "start" to "lights out."
+
+### Mistake 2: Doing exciting activities too close to bedtime
+
+Rough play, screen time, and fast-paced games spike cortisol. When that happens, falling asleep becomes a battle no routine can fix.
+
+### Mistake 3: Changing the order too often
+
+A constantly shifting routine means children never learn to relax through familiarity. Treat your routine like muscle memory — consistent, reliable, boring (in a good way).
+
+### Mistake 4: Negotiating every step
+
+Endless debates turn bedtime into a power struggle. Visual charts, verbal countdowns, and gentle certainty ("This is what we always do") reduce friction.
+
+### Mistake 5: Expecting instant results
+
+Routines work because of repetition, not because of the first night you try them. Give it a week or two before judging.
+
+## 5. Keeping It Sustainable
+
+The best routine is one you can keep up when you're tired, stressed, or dealing with everything else life throws at you. Perfection kills routines faster than anything.
+
+### Aim for consistency, not rigidity
+
+Life happens. You'll have late dinners, visitors, meltdowns, holidays, illnesses, and days that go entirely off-script. A good routine should bend without breaking.
+
+### Cut the steps you don't need
+
+If something routinely causes conflict and isn't essential, remove it. Bedtime isn't the time to introduce new responsibilities or learning tasks.
+
+### Protect the parts that matter most
+
+For most families, the non-negotiables tend to be:
+
+- Teeth brushed
+- Pyjamas on
+- A calm story
+- A predictable ending
+
+Everything else is decoration.
+
+### Give yourself grace
+
+Every parent hits the wall sometimes. A routine isn't meant to be a test — it's meant to *help*. If tonight's story is shorter because you're exhausted, that's not a failure. That's real life.
+
+## Final Thoughts
+
+A bedtime routine isn't about controlling your child. It's about creating a predictable, calming rhythm that helps their body and mind transition to sleep. Keep it simple. Keep it consistent. Keep it human.
+
+Stories, hugs, quiet voices, soft lighting — these are the things children remember. And on the nights when you need a little extra help, there are tools to support you. But at its core, a bedtime routine is built on connection, not perfection.
+    `.trim()
   }
 ];
 

@@ -496,5 +496,139 @@ And when you need a story about your child's imaginary friend defeating a candy 
 ---
 
 *FairyAI creates personalised bedtime stories for families. Download free on iOS and Android.*
+    `.trim()},{slug:"bedtime-routine-that-works",title:"How to Build a Bedtime Routine That Actually Works",description:"Practical, evidence-based advice for creating a bedtime routine that reduces stress and helps your child sleep better.",date:"2025-12-12",readTime:"6 min read",content:`
+If bedtime in your house feels like a chaotic endurance test, you're not alone. Every parent has been through the evenings where teeth brushing takes 20 minutes, pyjamas somehow disappear, someone is suddenly "starving", and the entire routine falls apart before it even begins.
+
+The good news: bedtime doesn't need to be perfect to work — it just needs to be predictable. A solid routine isn't magic, but it *is* one of the simplest, most effective tools you can use to reduce stress and help your child sleep better.
+
+This article breaks down what actually matters, why routines work, and how to build something sustainable for real family life.
+
+## 1. Why Bedtime Routines Matter
+
+A bedtime routine isn't about control or strict rules — it's about giving your child a sense of predictability at the end of the day.
+
+### Predictability reduces anxiety
+
+Children thrive on knowing what comes next. After a full day of new experiences, stimulation, and emotions they're still learning to process, a consistent evening pattern signals, *"You're safe. The day is ending. Nothing unexpected is about to happen."*
+
+This calm matters more than you might think. Research published in the journal *Sleep* shows that children with consistent bedtime routines fall asleep faster, wake less during the night, and show better overall behaviour during the day.
+
+### Routines help the body shift into "sleep mode"
+
+Our bodies love rhythm, and children's bodies love it even more. When bedtime events happen in the same order each night, the brain learns to associate those steps with sleep.
+
+It's less about what the steps *are*, and more about the fact they're *repeated*.
+
+## 2. The Science of Winding Down
+
+Before a child can sleep, their body needs to transition out of daytime mode — and that takes time.
+
+### Cortisol vs melatonin
+
+During the day, cortisol keeps children alert. In the evening, their body naturally begins producing melatonin, the hormone that promotes sleepiness. But melatonin doesn't surge instantly. It increases gradually, and anything stimulating can interrupt that rise.
+
+The goal of a good bedtime routine is simple: **lower cortisol, protect melatonin**.
+
+### Blue light really does interfere
+
+Screens aren't evil, but they're not ideal before bed. Blue light delays melatonin, making it harder for children (and adults) to fall asleep. This doesn't mean you must banish screens hours before bedtime, but reducing screen exposure in the final 30–60 minutes can make a noticeable difference.
+
+### Calming activities help regulate the nervous system
+
+Soft lighting, gentle voices, warm baths, calm stories, predictable steps — all these help shift a child into a quieter state. Think less "strict discipline" and more "lowering the volume of their whole world."
+
+## 3. The Building Blocks of a Good Bedtime Routine
+
+You don't need a complex, Pinterest-worthy routine. In fact, simpler is better. The best routines follow three core principles:
+
+### 1. Keep the timing consistent
+
+Choose a bedtime that works for your child's age and natural sleep patterns, then aim for it most nights. You don't need to hit it perfectly — being within the same 20–30 minute window is good enough.
+
+### 2. Set up the environment
+
+The bedroom should signal sleep:
+
+- Dim lighting
+- Cooler temperatures
+- Minimal clutter
+- No loud or bright distractions
+- A cosy, predictable space
+
+If the room says "play", they'll want to play. If the room says "sleep", their body responds differently.
+
+### 3. Follow a repeatable sequence
+
+Children love steps. Something like:
+
+1. Bath or wash
+2. Pyjamas
+3. Brush teeth
+4. Calm play or gentle chat
+5. Story
+6. Lights out / cuddles
+
+The exact order doesn't matter — just keep it stable so your child recognises the rhythm.
+
+### What about stories?
+
+Stories work because they combine connection, calm, and imagination — the perfect pre-sleep cocktail. Most households already use stories, but for nights when you're overloaded or travelling, something like FairyAI can help by providing a quick, personalised story without adding more stress for you. But the story itself — whether from a book or spoken — is the key.
+
+## 4. Common Mistakes Parents Make
+
+Every parent slips into these at some point. They're easy to fix once you spot them.
+
+### Mistake 1: Letting the routine get too long
+
+A 45-minute bedtime marathon isn't sustainable. Kids get overtired, parents get frustrated, and the whole thing unravels. Aim for 20–30 minutes from "start" to "lights out."
+
+### Mistake 2: Doing exciting activities too close to bedtime
+
+Rough play, screen time, and fast-paced games spike cortisol. When that happens, falling asleep becomes a battle no routine can fix.
+
+### Mistake 3: Changing the order too often
+
+A constantly shifting routine means children never learn to relax through familiarity. Treat your routine like muscle memory — consistent, reliable, boring (in a good way).
+
+### Mistake 4: Negotiating every step
+
+Endless debates turn bedtime into a power struggle. Visual charts, verbal countdowns, and gentle certainty ("This is what we always do") reduce friction.
+
+### Mistake 5: Expecting instant results
+
+Routines work because of repetition, not because of the first night you try them. Give it a week or two before judging.
+
+## 5. Keeping It Sustainable
+
+The best routine is one you can keep up when you're tired, stressed, or dealing with everything else life throws at you. Perfection kills routines faster than anything.
+
+### Aim for consistency, not rigidity
+
+Life happens. You'll have late dinners, visitors, meltdowns, holidays, illnesses, and days that go entirely off-script. A good routine should bend without breaking.
+
+### Cut the steps you don't need
+
+If something routinely causes conflict and isn't essential, remove it. Bedtime isn't the time to introduce new responsibilities or learning tasks.
+
+### Protect the parts that matter most
+
+For most families, the non-negotiables tend to be:
+
+- Teeth brushed
+- Pyjamas on
+- A calm story
+- A predictable ending
+
+Everything else is decoration.
+
+### Give yourself grace
+
+Every parent hits the wall sometimes. A routine isn't meant to be a test — it's meant to *help*. If tonight's story is shorter because you're exhausted, that's not a failure. That's real life.
+
+## Final Thoughts
+
+A bedtime routine isn't about controlling your child. It's about creating a predictable, calming rhythm that helps their body and mind transition to sleep. Keep it simple. Keep it consistent. Keep it human.
+
+Stories, hugs, quiet voices, soft lighting — these are the things children remember. And on the nights when you need a little extra help, there are tools to support you. But at its core, a bedtime routine is built on connection, not perfection.
     `.trim()}];function Sj(t){return Ep.find(e=>e.slug===t)}function Nj(){return Ep.sort((t,e)=>new Date(e.date).getTime()-new Date(t.date).getTime())}const Ej=()=>{const t=Nj();b.useEffect(()=>{window.scrollTo(0,0)},[]);const e=r=>new Date(r).toLocaleDateString("en-GB",{day:"numeric",month:"long",year:"numeric"});return a.jsxs("div",{className:"pt-16 bg-white min-h-screen",children:[a.jsx(ot,{title:"Bedtime Story Tips & Parenting Ideas | FairyAI Blog",description:"Helpful articles about bedtime routines, storytelling, and making bedtime magical for families.",canonical:"/blog"}),a.jsx("section",{className:"bg-gradient-to-br from-soft-blue-50 to-soft-green-50 py-12 md:py-16",children:a.jsxs("div",{className:"max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center",children:[a.jsx("h1",{className:"font-display text-3xl md:text-4xl lg:text-5xl font-bold text-neutral-900 mb-4",children:"The FairyAI Blog"}),a.jsx("p",{className:"text-lg md:text-xl text-neutral-600 max-w-2xl mx-auto",children:"Tips, insights, and ideas for making bedtime magical."})]})}),a.jsx("section",{className:"py-12 md:py-16",children:a.jsxs("div",{className:"max-w-4xl mx-auto px-4 sm:px-6 lg:px-8",children:[a.jsx("div",{className:"grid gap-8",children:t.map(r=>a.jsx(H,{to:`/blog/${r.slug}`,className:"group block bg-white rounded-xl border border-neutral-200 p-6 md:p-8 hover:shadow-lg hover:border-soft-blue-300 transition-all duration-300",children:a.jsxs("div",{className:"flex flex-col md:flex-row md:items-start gap-4",children:[a.jsxs("div",{className:"flex-1",children:[a.jsx("h2",{className:"font-display text-xl md:text-2xl font-bold text-neutral-900 mb-3 group-hover:text-soft-blue-600 transition-colors",children:r.title}),a.jsx("p",{className:"text-neutral-600 mb-4 line-clamp-3",children:r.description}),a.jsxs("div",{className:"flex items-center gap-4 text-sm text-neutral-500",children:[a.jsx("span",{children:e(r.date)}),a.jsx("span",{className:"w-1 h-1 bg-neutral-400 rounded-full"}),a.jsx("span",{children:r.readTime})]})]}),a.jsxs("div",{className:"flex items-center text-soft-blue-600 font-medium group-hover:text-soft-blue-700",children:[a.jsx("span",{className:"hidden md:inline",children:"Read article"}),a.jsx("svg",{className:"w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform",fill:"none",stroke:"currentColor",viewBox:"0 0 24 24",children:a.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M13 7l5 5m0 0l-5 5m5-5H6"})})]})]})},r.slug))}),t.length===0&&a.jsx("div",{className:"text-center py-12",children:a.jsx("p",{className:"text-neutral-600",children:"No blog posts yet. Check back soon!"})})]})}),a.jsx("section",{className:"py-16 md:py-24 bg-amber-50",children:a.jsxs("div",{className:"max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center",children:[a.jsx("h2",{className:"font-display text-3xl md:text-4xl font-bold mb-4 text-neutral-900",children:"Ready to Create Magical Bedtime Stories?"}),a.jsx("p",{className:"text-lg text-neutral-700 mb-8",children:"Download FairyAI and start your free trial today."}),a.jsx(qe,{variant:"gradient"})]})})]})},Tj=()=>{const{slug:t}=Ec(),e=Sj(t||"");if(b.useEffect(()=>{window.scrollTo(0,0)},[]),!e)return a.jsx(Ac,{to:"/blog",replace:!0});const r=i=>new Date(i).toLocaleDateString("en-GB",{day:"numeric",month:"long",year:"numeric"}),n=i=>{const o=i.split(`
 `),l=[];let c=!1,u=[],d="ul";const h=()=>{if(u.length>0){const f=d;l.push(a.jsx(f,{className:d==="ul"?"list-disc ml-6 space-y-2 text-neutral-700 mb-6":"list-decimal ml-6 space-y-2 text-neutral-700 mb-6",children:u.map((x,v)=>a.jsx("li",{dangerouslySetInnerHTML:{__html:p(x)}},v))},l.length)),u=[],c=!1}},p=f=>(f=f.replace(/\*\*(.+?)\*\*/g,"<strong>$1</strong>"),f=f.replace(/\*(.+?)\*/g,"<em>$1</em>"),f=f.replace(/\[(.+?)\]\((.+?)\)/g,'<a href="$2" class="text-soft-blue-600 hover:underline">$1</a>'),f);return o.forEach((f,x)=>{const v=f.trim();if(!v){h();return}if(v.startsWith("## ")){h(),l.push(a.jsx("h2",{className:"font-display text-2xl font-bold text-neutral-900 mt-10 mb-4",children:v.slice(3)},x));return}if(v.startsWith("### ")){h(),l.push(a.jsx("h3",{className:"font-display text-xl font-bold text-neutral-900 mt-8 mb-3",children:v.slice(4)},x));return}if(v==="---"){h(),l.push(a.jsx("hr",{className:"my-8 border-neutral-200"},x));return}if(v.startsWith("- ")){(!c||d!=="ul")&&(h(),c=!0,d="ul"),u.push(v.slice(2));return}if(/^\d+\.\s/.test(v)){(!c||d!=="ol")&&(h(),c=!0,d="ol"),u.push(v.replace(/^\d+\.\s/,""));return}h(),l.push(a.jsx("p",{className:"text-neutral-700 leading-relaxed mb-4",dangerouslySetInnerHTML:{__html:p(v)}},x))}),h(),l},s={"@context":"https://schema.org","@type":"Article",headline:e.title,description:e.description,datePublished:e.date,author:{"@type":"Organization",name:"FairyAI"},publisher:{"@type":"Organization",name:"FairyAI",logo:{"@type":"ImageObject",url:"https://fairyai.co.uk/images/splash-logo-transparent.png"}}};return a.jsxs("div",{className:"pt-16 bg-white min-h-screen",children:[a.jsx(ot,{title:`${e.title} | FairyAI Blog`,description:e.description,canonical:`/blog/${e.slug}`}),a.jsx(ws,{children:a.jsx("script",{type:"application/ld+json",children:JSON.stringify(s)})}),a.jsx("section",{className:"bg-gradient-to-br from-soft-blue-50 to-soft-green-50 py-12 md:py-16",children:a.jsxs("div",{className:"max-w-3xl mx-auto px-4 sm:px-6 lg:px-8",children:[a.jsxs(H,{to:"/blog",className:"inline-flex items-center text-soft-blue-600 hover:text-soft-blue-700 font-medium mb-6 transition-colors",children:[a.jsx("svg",{className:"w-5 h-5 mr-2",fill:"none",stroke:"currentColor",viewBox:"0 0 24 24",children:a.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M10 19l-7-7m0 0l7-7m-7 7h18"})}),"Back to Blog"]}),a.jsx("h1",{className:"font-display text-3xl md:text-4xl lg:text-5xl font-bold text-neutral-900 mb-4",children:e.title}),a.jsxs("div",{className:"flex items-center gap-4 text-neutral-600",children:[a.jsx("span",{children:r(e.date)}),a.jsx("span",{className:"w-1 h-1 bg-neutral-400 rounded-full"}),a.jsx("span",{children:e.readTime})]})]})}),a.jsx("article",{className:"py-12 md:py-16",children:a.jsx("div",{className:"max-w-3xl mx-auto px-4 sm:px-6 lg:px-8",children:a.jsx("div",{className:"prose prose-lg max-w-none",children:n(e.content)})})}),a.jsx("section",{className:"py-16 md:py-24 bg-amber-50",children:a.jsxs("div",{className:"max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center",children:[a.jsx("h2",{className:"font-display text-3xl md:text-4xl font-bold mb-4 text-neutral-900",children:"Ready to Create Magical Bedtime Stories?"}),a.jsx("p",{className:"text-lg text-neutral-700 mb-8",children:"Download FairyAI and start your free trial today."}),a.jsx(qe,{variant:"gradient"})]})})]})};function Cj(){const{pathname:t}=at();return b.useEffect(()=>{window.scrollTo(0,0)},[t]),null}function Aj(){const[t,e]=b.useState(!1);b.useEffect(()=>{localStorage.getItem("cookie-consent")||e(!0)},[]);const r=n=>{localStorage.setItem("cookie-consent",n),e(!1)};return a.jsxs(qx,{children:[a.jsx(rv,{}),a.jsx(Cj,{}),a.jsxs("div",{className:"min-h-screen bg-white",children:[a.jsx(sv,{}),a.jsxs(_x,{children:[a.jsx(ye,{path:"/",element:a.jsx(Nv,{})}),a.jsx(ye,{path:"/how-it-works",element:a.jsx(Ev,{})}),a.jsx(ye,{path:"/safety",element:a.jsx(Tv,{})}),a.jsx(ye,{path:"/features",element:a.jsx(Pv,{})}),a.jsx(ye,{path:"/stories",element:a.jsx(hj,{})}),a.jsx(ye,{path:"/stories/examples/:storyId",element:a.jsx(vj,{})}),a.jsx(ye,{path:"/stories/:slug",element:a.jsx(yj,{})}),a.jsx(ye,{path:"/privacy",element:a.jsx(wj,{})}),a.jsx(ye,{path:"/terms",element:a.jsx(bj,{})}),a.jsx(ye,{path:"/delete-account",element:a.jsx(jj,{})}),a.jsx(ye,{path:"/delete",element:a.jsx(_j,{})}),a.jsx(ye,{path:"/contact",element:a.jsx(kj,{})}),a.jsx(ye,{path:"/blog",element:a.jsx(Ej,{})}),a.jsx(ye,{path:"/blog/:slug",element:a.jsx(Tj,{})})]}),a.jsx(iv,{})]}),t&&a.jsx("div",{className:"fixed bottom-0 left-0 right-0 bg-slate-900 text-white p-4 shadow-2xl z-50",children:a.jsxs("div",{className:"max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4",children:[a.jsxs("p",{className:"text-sm text-center sm:text-left",children:["We use cookies to improve your experience."," ",a.jsx(H,{to:"/privacy",className:"underline hover:text-soft-blue-300",children:"Learn more"})]}),a.jsxs("div",{className:"flex gap-3",children:[a.jsx("button",{onClick:()=>r("rejected"),className:"px-5 py-2 rounded-lg font-semibold transition-colors whitespace-nowrap border border-white/30 hover:bg-white/10",children:"Necessary Only"}),a.jsx("button",{onClick:()=>r("accepted"),className:"bg-soft-blue-500 hover:bg-soft-blue-600 px-5 py-2 rounded-lg font-semibold transition-colors whitespace-nowrap",children:"Accept All"})]})]})})]})}mo.createRoot(document.getElementById("root")).render(a.jsx(dt.StrictMode,{children:a.jsx(sm,{children:a.jsx(Aj,{})})}));
