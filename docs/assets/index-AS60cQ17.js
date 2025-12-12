@@ -442,7 +442,7 @@ The key factors for healthy digital content use are:
 1. **Co-viewing/co-using**: Parent involvement transforms the experience
 2. **Age-appropriate content**: Curated, safe material matters
 3. **Balanced diet**: Digital supplements, doesn't replace, physical books
-4. **No screens before bed**: Use AI stories earlier in the evening, physical books for the final wind-down
+4. **No screens before bed**: Use AI stories earlier in the evening, physical books for the final wind-down (see our guide on [what the research actually says about screen time](/blog/screen-time-before-bed-research))
 
 ## How We Designed FairyAI With This in Mind
 
@@ -531,7 +531,7 @@ The goal of a good bedtime routine is simple: **lower cortisol, protect melatoni
 
 ### Blue light really does interfere
 
-Screens aren't evil, but they're not ideal before bed. Blue light delays melatonin, making it harder for children (and adults) to fall asleep. This doesn't mean you must banish screens hours before bedtime, but reducing screen exposure in the final 30–60 minutes can make a noticeable difference.
+Screens aren't evil, but they're not ideal before bed. Blue light delays melatonin, making it harder for children (and adults) to fall asleep. This doesn't mean you must banish screens hours before bedtime, but reducing screen exposure in the final 30–60 minutes can make a noticeable difference. (For a deeper dive, see [what the research actually says about screen time before bed](/blog/screen-time-before-bed-research).)
 
 ### Calming activities help regulate the nervous system
 
@@ -623,7 +623,7 @@ Everything else is decoration.
 
 ### Give yourself grace
 
-Every parent hits the wall sometimes. A routine isn't meant to be a test — it's meant to *help*. If tonight's story is shorter because you're exhausted, that's not a failure. That's real life.
+Every parent hits the wall sometimes. A routine isn't meant to be a test — it's meant to *help*. If tonight's story is shorter because you're exhausted, that's not a failure. That's real life. (In fact, [short stories can be just as effective](/blog/short-vs-long-bedtime-stories) as longer ones.)
 
 ## Final Thoughts
 
@@ -691,7 +691,7 @@ Sometimes a child's attachment to a particular story signals something beyond co
 
 Children often gravitate toward stories that address something they're working through emotionally. A book about a new sibling might be requested endlessly by a child anticipating (or adjusting to) a new baby. A story about being brave might comfort a child facing something scary.
 
-The repetition allows them to process the theme gradually, at their own pace, without having to articulate what they're feeling.
+The repetition allows them to process the theme gradually, at their own pace, without having to articulate what they're feeling. (For more on this, see [how stories help children process big emotions](/blog/stories-help-children-process-emotions).)
 
 ### Managing transitions
 
@@ -744,7 +744,7 @@ These might warrant a conversation with a paediatrician or child development spe
 Understanding the psychology of repetition shaped how we built FairyAI:
 
 - **Saved stories**: You can revisit favourites as many times as needed
-- **Variations on themes**: Request new stories with the same characters or settings
+- **Variations on themes**: Request new stories with the same characters or settings — perfect for [continuing story adventures](/blog/magic-of-continuing-stories)
 - **Gentle novelty**: Our stories introduce variety within familiar structures
 - **On-demand favourites**: Re-generate a beloved story whenever you want it
 
@@ -797,7 +797,7 @@ This investment is developmentally valuable: it builds empathy, narrative unders
 ### World-building helps children feel safe
 
 Serialised stories create a stable world where the rules stay the same. Children return to a familiar emotional landscape, even when the plot changes.
-This consistency helps reduce bedtime anxiety and makes the transition to sleep smoother.
+This consistency helps reduce bedtime anxiety and makes the transition to sleep smoother — an important part of any [effective bedtime routine](/blog/bedtime-routine-that-works).
 
 ## 2. Why Children Love Returning to the Same Characters
 
@@ -815,7 +815,7 @@ This frees up mental space for imagination, not confusion.
 ### It mirrors how children learn
 
 Repetition + variation = mastery.
-Continuing stories strike this balance perfectly. Same characters, new adventure. Same world, new challenge.
+Continuing stories strike this balance perfectly. Same characters, new adventure. Same world, new challenge. (This is also [why kids ask for the same story over and over](/blog/why-kids-ask-for-same-story) — repetition is how they learn.)
 
 It's exactly the learning pattern children thrive on.
 
@@ -932,7 +932,7 @@ It's not screens themselves that cause trouble — it's *activating* screens.
 
 ### Screens can displace important sleep cues
 
-A consistent bedtime routine tells the body, "It's time to wind down." When screens creep into that routine, they sometimes push out the calming activities that help children transition to sleep: baths, stories, quiet play, cuddles.
+A [consistent bedtime routine](/blog/bedtime-routine-that-works) tells the body, "It's time to wind down." When screens creep into that routine, they sometimes push out the calming activities that help children transition to sleep: baths, stories, quiet play, cuddles.
 
 The harm isn't always the screen — it's what the screen replaces.
 
@@ -1159,7 +1159,7 @@ If your baby wants to flip pages randomly, let them. If they want to chew the bo
 
 ### Keep it short
 
-A 30-second "reading session" still counts. Babies don't need long storytimes — they need frequent exposure.
+A 30-second "reading session" still counts. Babies don't need long storytimes — they need frequent exposure. (As children grow, you can explore [whether short or long stories work best](/blog/short-vs-long-bedtime-stories) for different situations.)
 
 ### Use your voice creatively
 
@@ -1182,7 +1182,7 @@ Stillness is optional.
 
 ### Reread favourite books often
 
-Repetition builds memory — and babies absolutely love it.
+Repetition builds memory — and babies absolutely love it. (This love of repetition continues as they grow — learn more about [why kids ask for the same story](/blog/why-kids-ask-for-same-story).)
 
 ## 5. Simple Ways to Build the Habit Early
 
@@ -1236,7 +1236,7 @@ This article breaks down what story length means for sleep, attention, and routi
 
 ## 1. Why Story Length Matters for Sleep
 
-Bedtime stories aren't just entertainment — they're part of a physiological wind-down process.
+Bedtime stories aren't just entertainment — they're part of a physiological wind-down process. (For the full picture, see our guide to [building a bedtime routine that works](/blog/bedtime-routine-that-works).)
 
 As children settle, their cortisol levels (the alertness hormone) drop. A calm story helps guide that shift. But if a story goes on too long, or gets too exciting too close to bedtime, it can have the opposite effect:
 
@@ -1318,7 +1318,7 @@ Some kids naturally love detail, emotion, and longer plots.
 
 ### You're building a continuing story
 
-Serialised storytelling (same characters, new adventure each night) works beautifully with longer chapters. Many parents use this as a bonding ritual.
+Serialised storytelling (same characters, new adventure each night) works beautifully with longer chapters. Many parents use this as a bonding ritual. (Learn more about [the magic of continuing stories](/blog/magic-of-continuing-stories) and why they're so engaging.)
 
 ### Your child finds the pace soothing
 
@@ -1496,7 +1496,7 @@ Stories can gently introduce themes of sadness, memory, comfort, and hope.
 
 ### Illness, moves, or disrupted routines
 
-Even when the story isn't explicitly about the issue, the predictability and closeness of storytime help provide emotional grounding.
+Even when the story isn't explicitly about the issue, the predictability and closeness of storytime help provide emotional grounding. (This is why [consistent bedtime routines](/blog/bedtime-routine-that-works) matter so much.)
 
 ### Developmental leaps and frustrations
 
@@ -1535,7 +1535,7 @@ It's to connect the dots gently and naturally.
 
 ## 6. The Comfort of Predictable Endings
 
-"Happily ever after" isn't childish — it's regulating.
+"Happily ever after" isn't childish — it's regulating. (This is also [why children ask for the same story](/blog/why-kids-ask-for-same-story) again and again — predictability feels safe.)
 
 Children need stories to resolve predictably because:
 
