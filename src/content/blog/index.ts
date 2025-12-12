@@ -270,6 +270,145 @@ A bedtime routine isn't about controlling your child. It's about creating a pred
 
 Stories, hugs, quiet voices, soft lighting — these are the things children remember. And on the nights when you need a little extra help, there are tools to support you. But at its core, a bedtime routine is built on connection, not perfection.
     `.trim()
+  },
+  {
+    slug: 'why-kids-ask-for-same-story',
+    title: 'Why Kids Ask for the Same Story Every Night (According to Child Psychology)',
+    description: "Your child's request for the same story isn't stubbornness - it's developmentally healthy. Here's why repetition matters and how to gently introduce variety.",
+    date: '2024-12-12',
+    readTime: '6 min read',
+    content: `
+## "Again! Again!"
+
+If you've ever read *The Very Hungry Caterpillar* forty-seven times in a row, you're not alone. Children's insistence on the same story, night after night, is one of the most universal parenting experiences — and one of the most baffling.
+
+Why won't they try something new? Are they stuck? Is this normal?
+
+The short answer: yes, it's completely normal. More than that, it's *good* for them. Here's what child psychology tells us about the power of repetition.
+
+## The Science Behind "Read It Again"
+
+### Predictability creates safety
+
+For young children, the world is overwhelmingly new. Every day brings unfamiliar situations, unexpected outcomes, and emotions they're still learning to name. A familiar story provides something rare: certainty.
+
+When a child knows exactly what comes next — the wolf will huff, the caterpillar will eat through the apple, the bunny will say goodnight to the moon — their nervous system relaxes. They're not bracing for surprises. They can settle into the experience.
+
+This isn't weakness or inflexibility. It's a healthy response to a world that feels unpredictable. Familiar stories are a child's way of creating an island of control in a sea of uncertainty.
+
+### Repetition builds comprehension
+
+Adults forget how much cognitive work goes into understanding a story. Children are simultaneously:
+
+- Decoding language (what do these words mean?)
+- Tracking narrative (what's happening and why?)
+- Processing emotions (how does this make me feel?)
+- Building mental images (what does this world look like?)
+
+That's a lot. And it doesn't happen in one reading.
+
+Research shows that children often need multiple exposures to fully comprehend a story. The first reading captures the basic plot. The second reveals details they missed. By the fifth or tenth, they're noticing word patterns, predicting outcomes, and making connections to their own lives.
+
+What looks like stubbornness is actually deep learning in progress.
+
+### Mastery feels good
+
+There's a reason children light up when they "read" a memorised book aloud, or correct you if you skip a word. Mastery is intrinsically rewarding.
+
+Psychologists call this *competence motivation* — the drive to understand and master our environment. When a child knows a story inside out, they experience genuine pride. They've conquered something. They're the expert.
+
+This feeling of competence builds confidence that extends beyond storytime. A child who masters a book learns, "I can understand things. I can learn things. I'm capable."
+
+## What the Research Shows
+
+Studies on early literacy consistently find that repeated readings benefit children:
+
+- **Vocabulary acquisition**: Children learn more words from books they've heard multiple times than from single readings (Biemiller, 2003)
+- **Comprehension**: Repeated exposure improves understanding of story structure and themes (Morrow, 1988)
+- **Engagement**: Children participate more actively (asking questions, making predictions) in familiar stories
+- **Emotional regulation**: Predictable narratives help children process complex feelings in a safe context
+
+One landmark study found that children needed an average of 12 exposures to a new word before truly acquiring it. A single reading simply isn't enough.
+
+## When Repetition Serves Emotional Needs
+
+Sometimes a child's attachment to a particular story signals something beyond cognitive learning.
+
+### Processing difficult themes
+
+Children often gravitate toward stories that address something they're working through emotionally. A book about a new sibling might be requested endlessly by a child anticipating (or adjusting to) a new baby. A story about being brave might comfort a child facing something scary.
+
+The repetition allows them to process the theme gradually, at their own pace, without having to articulate what they're feeling.
+
+### Managing transitions
+
+Bedtime is a transition — from wakefulness to sleep, from being with parents to being alone in the dark. That's genuinely hard. A familiar story serves as a bridge, something stable that marks the shift and makes it feel manageable.
+
+### Seeking comfort during change
+
+During periods of upheaval (new school, house move, family changes), children often regress to earlier favourites. This isn't going backward — it's seeking stability during instability.
+
+## How to Gently Introduce Variety
+
+None of this means you must read the same book forever. If you're desperate for variety, here are gentle approaches:
+
+### 1. The "one old, one new" system
+
+Read their favourite, then introduce something new. Over time, the new book may become the next favourite.
+
+### 2. Connect new to familiar
+
+"You love *The Gruffalo* — this one has a forest and a mouse too!" Finding bridges between old favourites and new options eases the transition.
+
+### 3. Let them lead the new discovery
+
+Visit a library or bookshop and let them choose something that catches their eye. Ownership increases openness.
+
+### 4. Introduce variety through similar themes
+
+If they love dinosaur stories, offer different dinosaur books rather than switching topics entirely.
+
+### 5. Use audio as a bridge
+
+Hearing a story in a different format (audiobook, podcast, or AI-generated narration) can make new content feel less risky than a completely unfamiliar book.
+
+### 6. Accept their timeline
+
+Some phases last weeks; others last months. Eventually, interests shift. Trust the process.
+
+## When to Be Concerned
+
+Typical repetition preferences are nothing to worry about. However, consider seeking guidance if:
+
+- The need for sameness causes significant distress when interrupted
+- Repetition is accompanied by other rigid behaviours affecting daily life
+- Your child shows no interest in any new content, ever, across all contexts
+
+These might warrant a conversation with a paediatrician or child development specialist. But for the vast majority of children, "again, again!" is simply part of healthy development.
+
+## What This Means for FairyAI
+
+Understanding the psychology of repetition shaped how we built FairyAI:
+
+- **Saved stories**: You can revisit favourites as many times as needed
+- **Variations on themes**: Request new stories with the same characters or settings
+- **Gentle novelty**: Our stories introduce variety within familiar structures
+- **On-demand favourites**: Re-generate a beloved story whenever you want it
+
+We don't try to force novelty. We support both repetition *and* gentle expansion.
+
+## The Bottom Line
+
+Your child's love of the same story isn't a problem to solve. It's a healthy developmental behaviour that builds comprehension, vocabulary, emotional security, and confidence.
+
+The forty-seventh reading of *Goodnight Moon* isn't stubbornness. It's your child's brain doing exactly what it's designed to do.
+
+So settle in. You've got this. And yes — you can read it again.
+
+---
+
+*FairyAI creates personalised bedtime stories for families. Download free on iOS and Android.*
+    `.trim()
   }
 ];
 
