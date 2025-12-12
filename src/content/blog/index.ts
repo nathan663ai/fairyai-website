@@ -558,6 +558,168 @@ And the smile they have when bedtime becomes the adventure itself.
 
 *FairyAI creates personalised bedtime stories for families. Download free on iOS and Android.*
     `.trim()
+  },
+  {
+    slug: 'screen-time-before-bed-research',
+    title: 'Screen Time Before Bed: What the Research Actually Says',
+    description: "The truth about screens and sleep is more nuanced than you've been told. Here's what actually matters - and why audio might be the solution.",
+    date: '2024-12-12',
+    readTime: '6 min read',
+    content: `
+If you're a parent in 2025, you've probably heard the lecture:
+**"No screens before bed — ever."**
+
+And while there *is* truth behind the advice, the conversation around screen time has become so absolute that many parents end up feeling guilty or overwhelmed instead of informed.
+
+Real life isn't a laboratory. Sometimes you're cooking dinner, juggling homework, answering emails, and yes — your child is watching something before bed. That doesn't make you a bad parent. It makes you human.
+
+So let's take a clear, honest look at what the research actually says about screen time before bed, what matters most, and how to create calmer evenings without rigid rules.
+
+## 1. What the Research Actually Shows
+
+### Blue light can delay sleep — but context matters
+
+Blue light suppresses melatonin, the hormone that helps our bodies know it's time for sleep. Studies have shown that bright screens close to bedtime can delay sleep onset.
+
+But here's the nuance rarely mentioned:
+**Blue light is only part of the problem, and often not the biggest one.**
+
+Most kids aren't lying in a dark room reading spreadsheets on a bright tablet. The bigger issue tends to be *stimulation*, not just the light.
+
+### Stimulation keeps the brain alert
+
+High-energy content — fast editing, loud sound, bright colours — keeps cortisol levels high. Cortisol is the body's alertness hormone.
+When cortisol is up, melatonin struggles to rise.
+
+It's not screens themselves that cause trouble — it's *activating* screens.
+
+### Screens can displace important sleep cues
+
+A consistent bedtime routine tells the body, "It's time to wind down." When screens creep into that routine, they sometimes push out the calming activities that help children transition to sleep: baths, stories, quiet play, cuddles.
+
+The harm isn't always the screen — it's what the screen replaces.
+
+### Children vary widely in sensitivity
+
+Some kids can watch a short cartoon and fall asleep immediately. Others lie awake buzzing with energy.
+Individual differences matter.
+
+## 2. Why Context Matters More Than the Clock
+
+Not all screen time is equal.
+A gentle documentary at 6:30pm is not the same as hyperactive cartoons at 8:20pm.
+
+When thinking about bedtime, consider these factors:
+
+### Timing
+
+Screens right up to the moment a child gets into bed are more disruptive. Screens earlier in the evening — especially before the bath/story routine — have far less impact.
+
+### Type of content
+
+Calming = slower editing, softer music, predictable pacing.
+Stimulating = rapid cuts, shouting, excitement, conflict.
+
+Five minutes of Paw Patrol is not the same as five minutes of a slow nature video.
+
+### Screen brightness
+
+A dimmed tablet in a lit room is far less of an issue than a bright screen in a pitch-black bedroom.
+
+### Your child's temperament
+
+Some children get overstimulated easily and stay wired after screens. Others genuinely don't.
+
+Context isn't a loophole — it's the reality of how children process stimuli.
+
+## 3. The Difference Between Visual Screens and Audio Content
+
+Here's the part many parents find liberating:
+
+**Audio is not the same as screen time. Not even close.**
+
+Audio stories, bedtime music, and gentle narration:
+
+- Don't emit blue light
+- Don't demand visual attention
+- Don't overstimulate the visual cortex
+- Encourage children to close their eyes
+- Promote imagery, creativity, and calm
+- Reduce bedtime resistance
+
+Audio is essentially a "screen-free screen time" — the comfort of digital content without the physiological drawbacks.
+
+This is why bedtime stories work so well in any form. Listening activates imagination, not excitement.
+
+A quick, natural mention here: FairyAI offers AI narration for any story, so children can listen with their eyes closed instead of staring at a screen. But the point stands regardless of the tool — audio is simply gentler on the brain.
+
+## 4. Practical Guidelines That Aren't All-or-Nothing
+
+Parents don't need militant rules. They need workable guidelines.
+
+### Aim to reduce screens in the final 30–60 minutes
+
+Not because screens are evil — just because winding down takes time. Kids need space for their cortisol levels to drop.
+
+### Choose calm content if screens are used in the evening
+
+Soft, slow, predictable content is far less disruptive.
+
+### Shift the bedtime routine into screen-free activities
+
+Bath → Pyjamas → Story → Cuddles → Sleep
+That pattern signals the body that night-time has arrived.
+
+### Use audio as the bridge
+
+Swap the last bit of TV for:
+
+- A story
+- A gentle podcast
+- Calming music
+- AI narration
+- White noise
+
+These trigger sleepiness instead of delaying it.
+
+### Don't panic if your child occasionally watches something before bed
+
+One late episode does not ruin a child's sleep habits forever. Patterns matter more than exceptions.
+
+## 5. When Screens Before Bed Might Actually Be Fine (And When They're Not)
+
+Let's be honest: sometimes screens help. And sometimes they really don't.
+
+### Screens are usually fine when:
+
+- The content is calm
+- The brightness is low
+- The child has time afterward to wind down
+- The environment is otherwise quiet
+- It's occasional, not daily
+
+### Screens tend to be a problem when:
+
+- They replace the bedtime routine entirely
+- The child watches right up until lights-out
+- The content is overstimulating
+- The child struggles with emotional regulation
+- Sleep problems are already present
+
+The point isn't to ban screens but to use them consciously.
+
+## Final Thoughts
+
+The science around screens and sleep is real — but it isn't a moral panic. It's information that helps parents make choices that fit their lives, not someone else's ideal.
+
+Calm evenings aren't about eliminating screens entirely. They're about protecting the wind-down process. And sometimes the easiest, gentlest solution is shifting from visual screens to audio — letting children relax, close their eyes, and drift into their imagination.
+
+Whether that audio comes from a physical book, your own voice, a podcast, or an app like FairyAI's narration feature doesn't matter. What matters is that your child is calm, cosy, and ready for sleep.
+
+---
+
+*FairyAI creates personalised bedtime stories for families. Download free on iOS and Android.*
+    `.trim()
   }
 ];
 
