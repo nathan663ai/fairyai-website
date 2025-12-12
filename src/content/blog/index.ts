@@ -896,6 +896,180 @@ And above all, remember: reading to your baby isn't about performance. It's conn
 
 *FairyAI creates personalised bedtime stories for families. Download free on iOS and Android.*
     `.trim()
+  },
+  {
+    slug: 'short-vs-long-bedtime-stories',
+    title: 'Short Bedtime Stories vs Long Ones: What Works Best?',
+    description: "There's no correct story length - it depends on your child's age, energy, and the moment. Here's when short stories win and when longer ones shine.",
+    date: '2024-12-12',
+    readTime: '6 min read',
+    content: `
+Parents often wonder: *How long should a bedtime story be?*
+Five minutes? Ten? Twenty?
+Is a short story too rushed? Is a long one too stimulating? And what if your child insists on "just one more" every single night?
+
+Here's the good news: **there's no single "correct" length.**
+Children's brains, attention spans, and energy levels vary from day to day. What matters most is matching the story to the moment — and understanding when short stories shine and when longer ones have their place.
+
+This article breaks down what story length means for sleep, attention, and routine… and why a five-minute story can be just as powerful as a twenty-minute one.
+
+## 1. Why Story Length Matters for Sleep
+
+Bedtime stories aren't just entertainment — they're part of a physiological wind-down process.
+
+As children settle, their cortisol levels (the alertness hormone) drop. A calm story helps guide that shift. But if a story goes on too long, or gets too exciting too close to bedtime, it can have the opposite effect:
+
+- Engaging plots = mental stimulation
+- Cliffhangers = emotional activation
+- High energy storytelling = delayed sleepiness
+
+This doesn't mean long stories are "bad."
+It simply means the goal of bedtime is *settling*, not *entertainment for its own sake.*
+
+Sometimes a short, gentle story is exactly what helps a child switch off.
+
+## 2. Age-Appropriate Story Lengths (Rough, Not Rigid)
+
+Here are broad guidelines — not rules — based on typical attention spans:
+
+### Ages 0–2: Very short stories (2–5 minutes)
+
+Babies and toddlers engage through rhythm, voice, and pictures more than narrative structure. Short books, repetition, and simple patterns work best.
+
+### Ages 3–5: Short to medium stories (5–10 minutes)
+
+Preschoolers can follow plot, but still benefit from concise stories. This is the golden age of "one more!"
+Short stories help avoid overtiredness.
+
+### Ages 6–8: Medium to longer stories (10–20 minutes)
+
+Children begin to enjoy more complex plots and longer scenes. Chapter books enter the picture here.
+
+### Ages 9+: Longer stories or chapters (15–30 minutes)
+
+Older children can concentrate longer and follow ongoing narratives. Bedtime stories often become shared novels or series.
+
+But again — these are not instructions.
+Some toddlers will happily sit through a long story, while some nine-year-olds will knock out after two pages.
+
+## 3. When Short Stories Win
+
+Short bedtime stories often get unfairly labelled as "lazy," especially in online parenting spaces. But research and real-life experience say otherwise: **short bedtime stories are incredibly effective.**
+
+Short stories work brilliantly when:
+
+### Your child is overtired
+
+Long stories demand focus. A child who's exhausted will disengage, interrupt, or get silly — not because they're misbehaving, but because their brain is done for the day.
+
+### It's a busy weekday
+
+Bath, pyjamas, teeth, school prep… a quick story keeps the ritual intact without extending bedtime indefinitely.
+
+### Your child is very young
+
+Toddlers often prefer short, predictable stories they can absorb easily.
+
+### Your goal is sleep, not stimulation
+
+Short, soft stories are ideal when you want to calm the mind rather than excite it.
+
+### Attention spans are low that day
+
+Tired? Hungry? Emotional?
+Short wins.
+
+A five-minute story that lands is far better than a 20-minute one no one remembers.
+
+## 4. When Longer Stories Shine
+
+Long bedtime stories have their place too — especially for older children or relaxed evenings.
+
+Longer stories work best when:
+
+### It's the weekend or you have time to enjoy it
+
+These are the nights for chapter books, worldbuilding, and stretching the story experience.
+
+### Your child thrives on narrative depth
+
+Some kids naturally love detail, emotion, and longer plots.
+
+### You're building a continuing story
+
+Serialised storytelling (same characters, new adventure each night) works beautifully with longer chapters. Many parents use this as a bonding ritual.
+
+### Your child finds the pace soothing
+
+Some kids genuinely unwind through long, gentle storytelling.
+
+Long stories aren't "better." They're just right for certain contexts.
+
+## 5. Quality Over Quantity
+
+Parents often worry about not reading "long enough," but storytelling isn't a time-based achievement.
+**It's a connection-based one.**
+
+What matters most is:
+
+- Your tone
+- Your presence
+- The emotional experience
+- The ritual
+- The consistency
+
+A five-minute story delivered with warmth and connection is far more valuable than a 20-minute story read robotically because you're exhausted.
+
+Children don't measure minutes.
+They remember moments.
+
+## 6. Match the Story Length to Your Child's Current State
+
+The best bedtime routines are responsive, not rigid. Let your child's state guide you:
+
+### If they're wide awake → slightly longer story
+
+Helps them settle and shift gears.
+
+### If they're tired or emotional → short and gentle
+
+Their brains won't take more in.
+
+### If they're energetic and playful → predictable short story
+
+Too much excitement will push bedtime later.
+
+### If they love continuing stories → medium to long
+
+Ongoing narratives thrive with a bit more space.
+
+### If bedtime is becoming a battle → shorter story, calmer tone
+
+Reset the environment, reduce stimulation.
+
+There's no failure here — just tuning into what your child needs tonight, not in theory.
+
+## A Quick Note on Story Length Tools
+
+One thing many parents appreciate about FairyAI is the ability to generate stories of different lengths — 5-minute, 10-minute, or longer continuing adventures — which makes it easier to choose a story that fits your child's energy level. But whether the story comes from an app, a book, or your own imagination, the principle is the same: match the story to the moment.
+
+## Final Thoughts
+
+Short bedtime stories aren't shortcuts. Long bedtime stories aren't superior.
+Both have their place, and both can be magical when used intentionally.
+
+At the end of the day:
+
+- Short stories calm tired minds
+- Long stories enrich curious ones
+- Bedtime stories — of any length — strengthen connection and routine
+
+The real win is not the length of the story, but the time spent together, the familiar closing of the book, and the quiet moment where the world slows down and your child feels safe enough to drift off.
+
+---
+
+*FairyAI creates personalised bedtime stories for families. Download free on iOS and Android.*
+    `.trim()
   }
 ];
 
