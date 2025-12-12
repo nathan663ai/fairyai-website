@@ -1,6 +1,7 @@
 import React from 'react';
 import SEO from '../components/SEO';
 import DownloadButtons from '../components/ui/DownloadButtons';
+import VideoPlayer from '../components/ui/VideoPlayer';
 
 const SafetyPage: React.FC = () => {
   const neverDo = [
@@ -172,8 +173,53 @@ const SafetyPage: React.FC = () => {
         </div>
       </section>
 
-      {/* Your Controls */}
+      {/* See Safety In Action - Video Demo */}
       <section className="py-16 md:py-24 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-8">
+            <div className="mb-4 flex justify-center">
+              <svg className="w-16 h-16 text-fairy-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <h2 className="font-display text-3xl md:text-4xl font-bold text-neutral-900 mb-4">
+              See Safety In Action
+            </h2>
+            <p className="text-lg text-neutral-600 max-w-2xl mx-auto">
+              Watch how FairyAI handles inappropriate requests, enforces age-appropriate content, and automatically refunds Fairy Dust when things go wrong.
+            </p>
+          </div>
+
+          <div className="max-w-2xl mx-auto">
+            <VideoPlayer
+              src="/videos/safety-demo.mp4"
+              aspectRatio="video"
+              className="rounded-xl shadow-xl"
+              controls={true}
+              comingSoonText="Safety Demo Coming Soon"
+            />
+          </div>
+
+          <div className="mt-8 grid md:grid-cols-3 gap-6 text-center">
+            <div className="bg-neutral-50 rounded-lg p-4">
+              <p className="font-semibold text-neutral-900 mb-1">Content Moderation</p>
+              <p className="text-sm text-neutral-600">See how inappropriate requests are blocked</p>
+            </div>
+            <div className="bg-neutral-50 rounded-lg p-4">
+              <p className="font-semibold text-neutral-900 mb-1">Age Filters</p>
+              <p className="text-sm text-neutral-600">Watch content adapt to age settings</p>
+            </div>
+            <div className="bg-neutral-50 rounded-lg p-4">
+              <p className="font-semibold text-neutral-900 mb-1">Auto Refunds</p>
+              <p className="text-sm text-neutral-600">Fairy Dust returned when generation fails</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Your Controls */}
+      <section className="py-16 md:py-24 bg-neutral-50">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <div className="mb-4 flex justify-center">
