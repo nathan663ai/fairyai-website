@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import SEO from '../components/SEO';
 
 const PrivacyPage: React.FC = () => {
   useEffect(() => {
@@ -7,6 +8,11 @@ const PrivacyPage: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-white pt-16">
+      <SEO
+        title="Privacy Policy - FairyAI"
+        description="FairyAI privacy policy. Learn how we protect your data, what information we collect, and your rights under UK GDPR. We never sell your data."
+        canonical="/privacy"
+      />
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-soft-blue-50 via-white to-soft-green-50 py-16 md:py-24">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">

@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { useParams, Link, Navigate } from 'react-router-dom';
+import SEO from '../components/SEO';
 import AudioPlayer from '../components/ui/AudioPlayer';
 import SongPlayer from '../components/ui/SongPlayer';
 import ImagePlaceholder from '../components/ui/ImagePlaceholder';
@@ -129,6 +130,12 @@ const StoryDetailPage: React.FC = () => {
 
   return (
     <div className="pt-16 bg-white min-h-screen">
+      <SEO
+        title={`${currentStory.title} - FairyAI Stories`}
+        description={`Listen to "${currentStory.title}" - a ${currentStory.type === 'ai' ? 'daily AI-generated' : 'classic'} bedtime story with narration and original songs in 12 languages. Free on FairyAI.`}
+        canonical={`/stories/${slug}`}
+        ogImage={currentStory.imageUrl}
+      />
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-soft-blue-50 to-soft-green-50 py-8 md:py-12">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">

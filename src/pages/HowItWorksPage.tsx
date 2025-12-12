@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import SEO from '../components/SEO';
 import VideoPlayer from '../components/ui/VideoPlayer';
 import DownloadButtons from '../components/ui/DownloadButtons';
 import Card from '../components/ui/Card';
@@ -101,6 +102,11 @@ const HowItWorksPage: React.FC = () => {
 
   return (
     <div className="pt-16 bg-white">
+      <SEO
+        title="How It Works - FairyAI"
+        description="See how FairyAI creates personalised bedtime stories in 3 simple steps. Choose characters, set the scene, and let AI create magical stories with narration and songs."
+        canonical="/how-it-works"
+      />
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-soft-blue-50 to-soft-green-50 py-8 md:py-12">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">

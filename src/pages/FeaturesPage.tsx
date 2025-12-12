@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import SEO from '../components/SEO';
+import { FAQPageSchema } from '../components/SchemaMarkup';
 import DownloadButtons from '../components/ui/DownloadButtons';
 import FAQAccordion from '../components/sections/FAQAccordion';
 import { faqs } from '../data/faqs';
@@ -93,6 +95,12 @@ const comingSoonItems = [
 const FeaturesPage: React.FC = () => {
   return (
     <div className="pt-16 bg-white">
+      <SEO
+        title="Features & Pricing - FairyAI"
+        description="Explore FairyAI features: persistent characters, continuing stories, custom songs, age-adaptive content, and 12 languages. Simple pricing from free to unlimited."
+        canonical="/features"
+      />
+      <FAQPageSchema faqs={faqs} />
       {/* Hero */}
       <section className="bg-gradient-to-br from-soft-blue-50 to-soft-green-50 py-8 md:py-12">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">

@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import SEO from '../components/SEO';
 
 const TermsPage: React.FC = () => {
   useEffect(() => {
@@ -7,6 +8,11 @@ const TermsPage: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-white pt-16">
+      <SEO
+        title="Terms of Service - FairyAI"
+        description="FairyAI terms of service. Understand your rights, content ownership, subscription terms, and usage policies for the FairyAI app."
+        canonical="/terms"
+      />
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-soft-blue-50 via-white to-soft-green-50 py-16 md:py-24">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">

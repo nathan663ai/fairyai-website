@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { Link } from 'react-router-dom';
+import { OrganizationSchema } from './components/SchemaMarkup';
 import Navigation from './components/Navigation';
 import Footer from './components/sections/Footer';
 import HomePage from './pages/HomePage';
@@ -42,6 +43,7 @@ function App() {
 
   return (
     <Router>
+      <OrganizationSchema />
       <ScrollToTop />
       <div className="min-h-screen bg-white">
         <Navigation />

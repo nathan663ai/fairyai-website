@@ -1,5 +1,7 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import SEO from '../components/SEO';
+import { FAQPageSchema } from '../components/SchemaMarkup';
 import FAQAccordion from '../components/sections/FAQAccordion';
 import { faqs } from '../data/faqs';
 import DownloadButtons from '../components/ui/DownloadButtons';
@@ -11,6 +13,12 @@ const ContactPage: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-white pt-16">
+      <SEO
+        title="Contact Us - FairyAI"
+        description="Get in touch with FairyAI. Contact our support team for help with the app, account questions, or feedback. We typically respond within 24-48 hours."
+        canonical="/contact"
+      />
+      <FAQPageSchema faqs={faqs} />
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-soft-blue-50 via-white to-soft-green-50 py-16 md:py-24">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

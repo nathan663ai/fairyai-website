@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import SEO from '../components/SEO';
 import ImagePlaceholder from '../components/ui/ImagePlaceholder';
 import DownloadButtons from '../components/ui/DownloadButtons';
 import { useStories } from '../hooks/useStories';
@@ -30,6 +31,11 @@ const StoriesPage: React.FC = () => {
 
   return (
     <div className="pt-16 bg-white min-h-screen">
+      <SEO
+        title="Example Stories - FairyAI"
+        description="Browse example bedtime stories created with FairyAI. Listen to AI-generated tales with narration and original songs in 12 languages."
+        canonical="/stories"
+      />
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-soft-blue-50 to-soft-green-50 py-12 md:py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

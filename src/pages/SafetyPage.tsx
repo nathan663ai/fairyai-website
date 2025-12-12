@@ -1,4 +1,5 @@
 import React from 'react';
+import SEO from '../components/SEO';
 import DownloadButtons from '../components/ui/DownloadButtons';
 
 const SafetyPage: React.FC = () => {
@@ -77,6 +78,11 @@ const SafetyPage: React.FC = () => {
 
   return (
     <div className="pt-16 bg-white">
+      <SEO
+        title="Child Safety - FairyAI"
+        description="FairyAI prioritises child safety with age-based content filters, no ads or trackers, encrypted data, and full parental control. Built by parents, for parents."
+        canonical="/safety"
+      />
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-soft-blue-50 to-soft-green-50 py-12 md:py-16">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
