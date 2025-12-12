@@ -1056,5 +1056,173 @@ Whether that audio comes from a physical book, your own voice, a podcast, or an 
 ---
 
 *FairyAI creates personalised bedtime stories for families. Download free on iOS and Android.*
+    `.trim()},{slug:"when-to-start-reading-to-baby",title:"When Should You Start Reading to Your Baby?",description:"You can start reading from birth - but it's never too late. Here's what babies actually get from being read to, and how to make it work in real life.",date:"2024-12-12",readTime:"6 min read",content:`
+If you're expecting a baby, or you've just welcomed one, you've probably been told that reading to them is "important." But no one tells you *when* to start — or what that even looks like when your baby can't focus, can't understand, and sometimes can't even keep their eyes open.
+
+Here's the truth:
+**You can start reading from birth — but it's never too late to begin.**
+
+Babies don't need perfect routines, special books, or structured "learning sessions." What they need is your voice, your presence, and the simple rhythm of language. Whether you start on day one or day 401, reading benefits your baby in ways that go far beyond comprehension.
+
+Let's break it down in a way that feels realistic, not overwhelming.
+
+## 1. The Surprising Benefits of Reading to Newborns
+
+It might feel strange to read a book to a tiny baby who mostly sleeps, feeds, and makes adorable snuffling noises. But newborns get far more from the experience than you'd think.
+
+### Your voice is their favourite sound
+
+Babies recognise voices they heard in the womb — especially yours. Reading offers a steady, familiar rhythm that helps them feel secure. It's not about the story; it's about your tone, warmth, and presence.
+
+### Language exposure starts immediately
+
+From the very beginning, babies are absorbing patterns of speech: tone, pitch, repetition, pauses. These are the building blocks of language, long before actual words make sense.
+
+### Reading creates bonding moments
+
+Holding your baby close while you read slows everything down. It becomes a pocket of calm in the intensity of early parenthood.
+
+### Rhythm and melody support early brain development
+
+Stories and rhymes help babies learn the musicality of language — the rise and fall of sentences. This early exposure supports future language skills, even if they have no idea what the story is about.
+
+## 2. What Babies Actually Get From Reading at Different Stages
+
+### 0–6 months: Sound, comfort, rhythm
+
+At this stage, reading is about:
+
+- Hearing your voice
+- Learning the patterns of speech
+- Feeling safe and soothed
+- Experiencing close physical contact
+
+Your baby isn't following the plot — and they don't need to.
+
+### 6–12 months: Interaction and exploration
+
+Around this age, babies start:
+
+- Reaching for books
+- Touching pages
+- Looking at pictures
+- Responding to your tone
+- Babbling along
+
+Reading becomes a sensory experience. Board books, high-contrast images, and simple rhythms work beautifully.
+
+### 1–2 years: Recognition and curiosity
+
+Toddlers may:
+
+- Point to familiar objects
+- Turn pages (usually too fast!)
+- Request the same book repeatedly
+- Fill in words they recognise
+- Imitate reading by "telling" the story back
+
+They're not reading yet — but they're building every foundation they need.
+
+## 3. It's Not About Comprehension — It's About Connection
+
+New parents often worry:
+*"Is my baby even getting anything from this?"*
+
+They absolutely are, but not in the way adults think about books.
+
+Reading to a baby is not about:
+
+- Understanding the plot
+- Learning letters
+- Following a story arc
+
+It's about:
+
+- Exposure
+- Comfort
+- Rhythm
+- Bonding
+- Language patterns
+- Predictability
+
+A five-minute reading session, even with a baby who's wriggling or staring at the light fixture, still builds early literacy — not because they grasp meaning, but because they're soaking in language.
+
+Think of reading as a habit you grow together, not a skill you need to teach.
+
+## 4. Practical Tips for Reading to Babies Who Wriggle, Grab, or Wander Off
+
+Every baby is different, and not all of them will sit serenely in your lap while you read the perfect story. This is normal. Here's how to make reading work with real babies, not imaginary calm ones.
+
+### Follow their lead
+
+If your baby wants to flip pages randomly, let them. If they want to chew the book, that's fine too. Exploration *is* learning.
+
+### Keep it short
+
+A 30-second "reading session" still counts. Babies don't need long storytimes — they need frequent exposure.
+
+### Use your voice creatively
+
+Babies love exaggerated sounds, silly noises, and animated tone changes. You're performing more than you're reading.
+
+### Let them touch the book
+
+Grabbing is part of how babies learn. Board books are your friend.
+
+### Don't force stillness
+
+Babies can move and learn at the same time. Many listen best while:
+
+- Feeding
+- Being rocked
+- Sitting in a pram
+- Lying on a playmat
+
+Stillness is optional.
+
+### Reread favourite books often
+
+Repetition builds memory — and babies absolutely love it.
+
+## 5. Simple Ways to Build the Habit Early
+
+You don't need a Pinterest-perfect routine. Start small and stay flexible.
+
+### Make stories part of daily rhythms
+
+After a bath, before naps, during feeds — reading fits naturally into lots of everyday moments.
+
+### Keep books accessible
+
+A basket of baby-safe board books in each room goes a long way.
+
+### Follow your baby's interests
+
+Do they love faces? Animals? High-contrast shapes? Feed that curiosity.
+
+### Use audio on the tired days
+
+New parent exhaustion is real, and some evenings you simply won't have the energy to read aloud. That's okay. Tools like FairyAI's narration can help keep a gentle story going while your baby listens and relaxes — no screen needed.
+
+### Celebrate the small wins
+
+A few pages here and there add up. You're building a lifelong association between books and comfort.
+
+## Final Thoughts
+
+So, when should you start reading to your baby?
+
+Whenever you can.
+The sooner the better — but also, it's never too late.
+
+Babies don't need perfect routines or elaborate storytimes. They need your voice, your closeness, and regular exposure to language. Reading is one of the simplest, most powerful ways to give them all three.
+
+Whether your baby is a newborn curled up on your chest, a wriggly six-month-old grabbing pages, or a busy toddler running around the room, every reading moment counts.
+
+And above all, remember: reading to your baby isn't about performance. It's connection. And you're already doing better than you think.
+
+---
+
+*FairyAI creates personalised bedtime stories for families. Download free on iOS and Android.*
     `.trim()}];function Sj(t){return Ep.find(e=>e.slug===t)}function Nj(){return Ep.sort((t,e)=>new Date(e.date).getTime()-new Date(t.date).getTime())}const Ej=()=>{const t=Nj();b.useEffect(()=>{window.scrollTo(0,0)},[]);const e=r=>new Date(r).toLocaleDateString("en-GB",{day:"numeric",month:"long",year:"numeric"});return a.jsxs("div",{className:"pt-16 bg-white min-h-screen",children:[a.jsx(ot,{title:"Bedtime Story Tips & Parenting Ideas | FairyAI Blog",description:"Helpful articles about bedtime routines, storytelling, and making bedtime magical for families.",canonical:"/blog"}),a.jsx("section",{className:"bg-gradient-to-br from-soft-blue-50 to-soft-green-50 py-12 md:py-16",children:a.jsxs("div",{className:"max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center",children:[a.jsx("h1",{className:"font-display text-3xl md:text-4xl lg:text-5xl font-bold text-neutral-900 mb-4",children:"The FairyAI Blog"}),a.jsx("p",{className:"text-lg md:text-xl text-neutral-600 max-w-2xl mx-auto",children:"Tips, insights, and ideas for making bedtime magical."})]})}),a.jsx("section",{className:"py-12 md:py-16",children:a.jsxs("div",{className:"max-w-4xl mx-auto px-4 sm:px-6 lg:px-8",children:[a.jsx("div",{className:"grid gap-8",children:t.map(r=>a.jsx(H,{to:`/blog/${r.slug}`,className:"group block bg-white rounded-xl border border-neutral-200 p-6 md:p-8 hover:shadow-lg hover:border-soft-blue-300 transition-all duration-300",children:a.jsxs("div",{className:"flex flex-col md:flex-row md:items-start gap-4",children:[a.jsxs("div",{className:"flex-1",children:[a.jsx("h2",{className:"font-display text-xl md:text-2xl font-bold text-neutral-900 mb-3 group-hover:text-soft-blue-600 transition-colors",children:r.title}),a.jsx("p",{className:"text-neutral-600 mb-4 line-clamp-3",children:r.description}),a.jsxs("div",{className:"flex items-center gap-4 text-sm text-neutral-500",children:[a.jsx("span",{children:e(r.date)}),a.jsx("span",{className:"w-1 h-1 bg-neutral-400 rounded-full"}),a.jsx("span",{children:r.readTime})]})]}),a.jsxs("div",{className:"flex items-center text-soft-blue-600 font-medium group-hover:text-soft-blue-700",children:[a.jsx("span",{className:"hidden md:inline",children:"Read article"}),a.jsx("svg",{className:"w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform",fill:"none",stroke:"currentColor",viewBox:"0 0 24 24",children:a.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M13 7l5 5m0 0l-5 5m5-5H6"})})]})]})},r.slug))}),t.length===0&&a.jsx("div",{className:"text-center py-12",children:a.jsx("p",{className:"text-neutral-600",children:"No blog posts yet. Check back soon!"})})]})}),a.jsx("section",{className:"py-16 md:py-24 bg-amber-50",children:a.jsxs("div",{className:"max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center",children:[a.jsx("h2",{className:"font-display text-3xl md:text-4xl font-bold mb-4 text-neutral-900",children:"Ready to Create Magical Bedtime Stories?"}),a.jsx("p",{className:"text-lg text-neutral-700 mb-8",children:"Download FairyAI and start your free trial today."}),a.jsx(qe,{variant:"gradient"})]})})]})},Tj=()=>{const{slug:t}=Ec(),e=Sj(t||"");if(b.useEffect(()=>{window.scrollTo(0,0)},[]),!e)return a.jsx(Ac,{to:"/blog",replace:!0});const r=i=>new Date(i).toLocaleDateString("en-GB",{day:"numeric",month:"long",year:"numeric"}),n=i=>{const o=i.split(`
 `),l=[];let c=!1,u=[],d="ul";const h=()=>{if(u.length>0){const f=d;l.push(a.jsx(f,{className:d==="ul"?"list-disc ml-6 space-y-2 text-neutral-700 mb-6":"list-decimal ml-6 space-y-2 text-neutral-700 mb-6",children:u.map((x,v)=>a.jsx("li",{dangerouslySetInnerHTML:{__html:p(x)}},v))},l.length)),u=[],c=!1}},p=f=>(f=f.replace(/\*\*(.+?)\*\*/g,"<strong>$1</strong>"),f=f.replace(/\*(.+?)\*/g,"<em>$1</em>"),f=f.replace(/\[(.+?)\]\((.+?)\)/g,'<a href="$2" class="text-soft-blue-600 hover:underline">$1</a>'),f);return o.forEach((f,x)=>{const v=f.trim();if(!v){h();return}if(v.startsWith("## ")){h(),l.push(a.jsx("h2",{className:"font-display text-2xl font-bold text-neutral-900 mt-10 mb-4",children:v.slice(3)},x));return}if(v.startsWith("### ")){h(),l.push(a.jsx("h3",{className:"font-display text-xl font-bold text-neutral-900 mt-8 mb-3",children:v.slice(4)},x));return}if(v==="---"){h(),l.push(a.jsx("hr",{className:"my-8 border-neutral-200"},x));return}if(v.startsWith("- ")){(!c||d!=="ul")&&(h(),c=!0,d="ul"),u.push(v.slice(2));return}if(/^\d+\.\s/.test(v)){(!c||d!=="ol")&&(h(),c=!0,d="ol"),u.push(v.replace(/^\d+\.\s/,""));return}h(),l.push(a.jsx("p",{className:"text-neutral-700 leading-relaxed mb-4",dangerouslySetInnerHTML:{__html:p(v)}},x))}),h(),l},s={"@context":"https://schema.org","@type":"Article",headline:e.title,description:e.description,datePublished:e.date,author:{"@type":"Organization",name:"FairyAI"},publisher:{"@type":"Organization",name:"FairyAI",logo:{"@type":"ImageObject",url:"https://fairyai.co.uk/images/splash-logo-transparent.png"}}};return a.jsxs("div",{className:"pt-16 bg-white min-h-screen",children:[a.jsx(ot,{title:`${e.title} | FairyAI Blog`,description:e.description,canonical:`/blog/${e.slug}`}),a.jsx(ws,{children:a.jsx("script",{type:"application/ld+json",children:JSON.stringify(s)})}),a.jsx("section",{className:"bg-gradient-to-br from-soft-blue-50 to-soft-green-50 py-12 md:py-16",children:a.jsxs("div",{className:"max-w-3xl mx-auto px-4 sm:px-6 lg:px-8",children:[a.jsxs(H,{to:"/blog",className:"inline-flex items-center text-soft-blue-600 hover:text-soft-blue-700 font-medium mb-6 transition-colors",children:[a.jsx("svg",{className:"w-5 h-5 mr-2",fill:"none",stroke:"currentColor",viewBox:"0 0 24 24",children:a.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M10 19l-7-7m0 0l7-7m-7 7h18"})}),"Back to Blog"]}),a.jsx("h1",{className:"font-display text-3xl md:text-4xl lg:text-5xl font-bold text-neutral-900 mb-4",children:e.title}),a.jsxs("div",{className:"flex items-center gap-4 text-neutral-600",children:[a.jsx("span",{children:r(e.date)}),a.jsx("span",{className:"w-1 h-1 bg-neutral-400 rounded-full"}),a.jsx("span",{children:e.readTime})]})]})}),a.jsx("article",{className:"py-12 md:py-16",children:a.jsx("div",{className:"max-w-3xl mx-auto px-4 sm:px-6 lg:px-8",children:a.jsx("div",{className:"prose prose-lg max-w-none",children:n(e.content)})})}),a.jsx("section",{className:"py-16 md:py-24 bg-amber-50",children:a.jsxs("div",{className:"max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center",children:[a.jsx("h2",{className:"font-display text-3xl md:text-4xl font-bold mb-4 text-neutral-900",children:"Ready to Create Magical Bedtime Stories?"}),a.jsx("p",{className:"text-lg text-neutral-700 mb-8",children:"Download FairyAI and start your free trial today."}),a.jsx(qe,{variant:"gradient"})]})})]})};function Cj(){const{pathname:t}=at();return b.useEffect(()=>{window.scrollTo(0,0)},[t]),null}function Aj(){const[t,e]=b.useState(!1);b.useEffect(()=>{localStorage.getItem("cookie-consent")||e(!0)},[]);const r=n=>{localStorage.setItem("cookie-consent",n),e(!1)};return a.jsxs(qx,{children:[a.jsx(rv,{}),a.jsx(Cj,{}),a.jsxs("div",{className:"min-h-screen bg-white",children:[a.jsx(sv,{}),a.jsxs(kx,{children:[a.jsx(ye,{path:"/",element:a.jsx(Nv,{})}),a.jsx(ye,{path:"/how-it-works",element:a.jsx(Ev,{})}),a.jsx(ye,{path:"/safety",element:a.jsx(Tv,{})}),a.jsx(ye,{path:"/features",element:a.jsx(Pv,{})}),a.jsx(ye,{path:"/stories",element:a.jsx(hj,{})}),a.jsx(ye,{path:"/stories/examples/:storyId",element:a.jsx(vj,{})}),a.jsx(ye,{path:"/stories/:slug",element:a.jsx(yj,{})}),a.jsx(ye,{path:"/privacy",element:a.jsx(wj,{})}),a.jsx(ye,{path:"/terms",element:a.jsx(bj,{})}),a.jsx(ye,{path:"/delete-account",element:a.jsx(jj,{})}),a.jsx(ye,{path:"/delete",element:a.jsx(kj,{})}),a.jsx(ye,{path:"/contact",element:a.jsx(_j,{})}),a.jsx(ye,{path:"/blog",element:a.jsx(Ej,{})}),a.jsx(ye,{path:"/blog/:slug",element:a.jsx(Tj,{})})]}),a.jsx(iv,{})]}),t&&a.jsx("div",{className:"fixed bottom-0 left-0 right-0 bg-slate-900 text-white p-4 shadow-2xl z-50",children:a.jsxs("div",{className:"max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4",children:[a.jsxs("p",{className:"text-sm text-center sm:text-left",children:["We use cookies to improve your experience."," ",a.jsx(H,{to:"/privacy",className:"underline hover:text-soft-blue-300",children:"Learn more"})]}),a.jsxs("div",{className:"flex gap-3",children:[a.jsx("button",{onClick:()=>r("rejected"),className:"px-5 py-2 rounded-lg font-semibold transition-colors whitespace-nowrap border border-white/30 hover:bg-white/10",children:"Necessary Only"}),a.jsx("button",{onClick:()=>r("accepted"),className:"bg-soft-blue-500 hover:bg-soft-blue-600 px-5 py-2 rounded-lg font-semibold transition-colors whitespace-nowrap",children:"Accept All"})]})]})})]})}mo.createRoot(document.getElementById("root")).render(a.jsx(dt.StrictMode,{children:a.jsx(sm,{children:a.jsx(Aj,{})})}));

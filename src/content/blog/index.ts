@@ -720,6 +720,182 @@ Whether that audio comes from a physical book, your own voice, a podcast, or an 
 
 *FairyAI creates personalised bedtime stories for families. Download free on iOS and Android.*
     `.trim()
+  },
+  {
+    slug: 'when-to-start-reading-to-baby',
+    title: 'When Should You Start Reading to Your Baby?',
+    description: "You can start reading from birth - but it's never too late. Here's what babies actually get from being read to, and how to make it work in real life.",
+    date: '2024-12-12',
+    readTime: '6 min read',
+    content: `
+If you're expecting a baby, or you've just welcomed one, you've probably been told that reading to them is "important." But no one tells you *when* to start — or what that even looks like when your baby can't focus, can't understand, and sometimes can't even keep their eyes open.
+
+Here's the truth:
+**You can start reading from birth — but it's never too late to begin.**
+
+Babies don't need perfect routines, special books, or structured "learning sessions." What they need is your voice, your presence, and the simple rhythm of language. Whether you start on day one or day 401, reading benefits your baby in ways that go far beyond comprehension.
+
+Let's break it down in a way that feels realistic, not overwhelming.
+
+## 1. The Surprising Benefits of Reading to Newborns
+
+It might feel strange to read a book to a tiny baby who mostly sleeps, feeds, and makes adorable snuffling noises. But newborns get far more from the experience than you'd think.
+
+### Your voice is their favourite sound
+
+Babies recognise voices they heard in the womb — especially yours. Reading offers a steady, familiar rhythm that helps them feel secure. It's not about the story; it's about your tone, warmth, and presence.
+
+### Language exposure starts immediately
+
+From the very beginning, babies are absorbing patterns of speech: tone, pitch, repetition, pauses. These are the building blocks of language, long before actual words make sense.
+
+### Reading creates bonding moments
+
+Holding your baby close while you read slows everything down. It becomes a pocket of calm in the intensity of early parenthood.
+
+### Rhythm and melody support early brain development
+
+Stories and rhymes help babies learn the musicality of language — the rise and fall of sentences. This early exposure supports future language skills, even if they have no idea what the story is about.
+
+## 2. What Babies Actually Get From Reading at Different Stages
+
+### 0–6 months: Sound, comfort, rhythm
+
+At this stage, reading is about:
+
+- Hearing your voice
+- Learning the patterns of speech
+- Feeling safe and soothed
+- Experiencing close physical contact
+
+Your baby isn't following the plot — and they don't need to.
+
+### 6–12 months: Interaction and exploration
+
+Around this age, babies start:
+
+- Reaching for books
+- Touching pages
+- Looking at pictures
+- Responding to your tone
+- Babbling along
+
+Reading becomes a sensory experience. Board books, high-contrast images, and simple rhythms work beautifully.
+
+### 1–2 years: Recognition and curiosity
+
+Toddlers may:
+
+- Point to familiar objects
+- Turn pages (usually too fast!)
+- Request the same book repeatedly
+- Fill in words they recognise
+- Imitate reading by "telling" the story back
+
+They're not reading yet — but they're building every foundation they need.
+
+## 3. It's Not About Comprehension — It's About Connection
+
+New parents often worry:
+*"Is my baby even getting anything from this?"*
+
+They absolutely are, but not in the way adults think about books.
+
+Reading to a baby is not about:
+
+- Understanding the plot
+- Learning letters
+- Following a story arc
+
+It's about:
+
+- Exposure
+- Comfort
+- Rhythm
+- Bonding
+- Language patterns
+- Predictability
+
+A five-minute reading session, even with a baby who's wriggling or staring at the light fixture, still builds early literacy — not because they grasp meaning, but because they're soaking in language.
+
+Think of reading as a habit you grow together, not a skill you need to teach.
+
+## 4. Practical Tips for Reading to Babies Who Wriggle, Grab, or Wander Off
+
+Every baby is different, and not all of them will sit serenely in your lap while you read the perfect story. This is normal. Here's how to make reading work with real babies, not imaginary calm ones.
+
+### Follow their lead
+
+If your baby wants to flip pages randomly, let them. If they want to chew the book, that's fine too. Exploration *is* learning.
+
+### Keep it short
+
+A 30-second "reading session" still counts. Babies don't need long storytimes — they need frequent exposure.
+
+### Use your voice creatively
+
+Babies love exaggerated sounds, silly noises, and animated tone changes. You're performing more than you're reading.
+
+### Let them touch the book
+
+Grabbing is part of how babies learn. Board books are your friend.
+
+### Don't force stillness
+
+Babies can move and learn at the same time. Many listen best while:
+
+- Feeding
+- Being rocked
+- Sitting in a pram
+- Lying on a playmat
+
+Stillness is optional.
+
+### Reread favourite books often
+
+Repetition builds memory — and babies absolutely love it.
+
+## 5. Simple Ways to Build the Habit Early
+
+You don't need a Pinterest-perfect routine. Start small and stay flexible.
+
+### Make stories part of daily rhythms
+
+After a bath, before naps, during feeds — reading fits naturally into lots of everyday moments.
+
+### Keep books accessible
+
+A basket of baby-safe board books in each room goes a long way.
+
+### Follow your baby's interests
+
+Do they love faces? Animals? High-contrast shapes? Feed that curiosity.
+
+### Use audio on the tired days
+
+New parent exhaustion is real, and some evenings you simply won't have the energy to read aloud. That's okay. Tools like FairyAI's narration can help keep a gentle story going while your baby listens and relaxes — no screen needed.
+
+### Celebrate the small wins
+
+A few pages here and there add up. You're building a lifelong association between books and comfort.
+
+## Final Thoughts
+
+So, when should you start reading to your baby?
+
+Whenever you can.
+The sooner the better — but also, it's never too late.
+
+Babies don't need perfect routines or elaborate storytimes. They need your voice, your closeness, and regular exposure to language. Reading is one of the simplest, most powerful ways to give them all three.
+
+Whether your baby is a newborn curled up on your chest, a wriggly six-month-old grabbing pages, or a busy toddler running around the room, every reading moment counts.
+
+And above all, remember: reading to your baby isn't about performance. It's connection. And you're already doing better than you think.
+
+---
+
+*FairyAI creates personalised bedtime stories for families. Download free on iOS and Android.*
+    `.trim()
   }
 ];
 
