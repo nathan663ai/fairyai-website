@@ -23,12 +23,14 @@ const SEO: React.FC<SEOProps> = ({
       {fullCanonical && <link rel="canonical" href={fullCanonical} />}
 
       {/* Open Graph */}
+      <meta property="og:type" content="website" />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:image" content={ogImage} />
       {fullCanonical && <meta property="og:url" content={fullCanonical} />}
 
       {/* Twitter */}
+      <meta name="twitter:card" content="summary_large_image" />
       <meta property="twitter:title" content={title} />
       <meta property="twitter:description" content={description} />
       <meta property="twitter:image" content={ogImage} />

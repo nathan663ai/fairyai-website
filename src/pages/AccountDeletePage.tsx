@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import SEO from '../components/SEO';
 
 const AccountDeletePage: React.FC = () => {
   useEffect(() => {
@@ -7,6 +8,11 @@ const AccountDeletePage: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-white pt-16">
+      <SEO
+        title="Delete Your Account - FairyAI"
+        description="How to delete your FairyAI account. Learn about the deletion process, 30-day grace period, and what data gets removed."
+        canonical="/delete-account"
+      />
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-soft-blue-50 via-white to-soft-green-50 py-16 md:py-24">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
