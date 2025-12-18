@@ -4,10 +4,24 @@ import { HelmetProvider } from 'react-helmet-async'
 import App from './App.tsx'
 import './index.css'
 
-ReactDOM.createRoot(document.getElementById('root')!).render(
-  <React.StrictMode>
-    <HelmetProvider>
-      <App />
-    </HelmetProvider>
-  </React.StrictMode>,
-)
+const container = document.getElementById('root')!
+
+// Use hydration if pre-rendered by react-snap, otherwise render normally
+if (container.hasChildNodes()) {
+  ReactDOM.hydrateRoot(
+    container,
+    <React.StrictMode>
+      <HelmetProvider>
+        <App />
+      </HelmetProvider>
+    </React.StrictMode>
+  )
+} else {
+  ReactDOM.createRoot(container).render(
+    <React.StrictMode>
+      <HelmetProvider>
+        <App />
+      </HelmetProvider>
+    </React.StrictMode>
+  )
+}

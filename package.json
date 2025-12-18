@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
+    "postbuild": "react-snap",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "deploy": "npm run build && cd dist && git init && git add -A && git commit -m 'Deploy to GitHub Pages' && git push -f git@github.com:USERNAME/REPO.git main:gh-pages"
@@ -29,8 +30,35 @@
     "eslint-plugin-react-hooks": "^4.6.2",
     "eslint-plugin-react-refresh": "^0.4.7",
     "postcss": "^8.4.38",
+    "react-snap": "^1.23.0",
     "tailwindcss": "^3.4.4",
     "typescript": "^5.2.2",
     "vite": "^5.3.1"
+  },
+  "reactSnap": {
+    "source": "docs",
+    "destination": "docs",
+    "include": [
+      "/",
+      "/how-it-works",
+      "/features",
+      "/stories",
+      "/safety",
+      "/privacy",
+      "/terms",
+      "/contact",
+      "/delete-account",
+      "/blog",
+      "/blog/why-physical-books-still-matter",
+      "/blog/bedtime-routine-that-works",
+      "/blog/why-kids-ask-for-same-story",
+      "/blog/magic-of-continuing-stories",
+      "/blog/screen-time-before-bed-research",
+      "/blog/when-to-start-reading-to-baby",
+      "/blog/short-vs-long-bedtime-stories",
+      "/blog/stories-help-children-process-emotions"
+    ],
+    "inlineCss": true,
+    "puppeteerArgs": ["--no-sandbox", "--disable-setuid-sandbox"]
   }
 }

@@ -9,5 +9,8 @@ export default defineConfig({
     outDir: 'docs',
     assetsDir: 'assets',
     sourcemap: false,
+    // Target older browsers for react-snap compatibility
+    // react-snap uses Puppeteer 1.x with Chromium that doesn't support optional chaining
+    target: 'es2019',
   },
 })
