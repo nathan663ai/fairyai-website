@@ -172,13 +172,18 @@ const HowItWorksPage: React.FC = () => {
               {/* Character Creation */}
               <div className="flex-shrink-0 w-80 snap-start">
                 <Card className="p-0 overflow-hidden">
-                  <VideoPlayer
-                    src="/videos/character-creation-demo.mp4"
-                    aspectRatio="portrait"
-                    className="rounded-t-lg"
-                    controls={true}
-                    comingSoonText="Character Creation Demo"
-                  />
+                  <div className="aspect-[9/16] w-full rounded-t-lg overflow-hidden">
+                    <iframe
+                      width="100%"
+                      height="100%"
+                      src="https://www.youtube.com/embed/Z9znR7MYhYs"
+                      title="Character Creation How-To"
+                      frameBorder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                      className="w-full h-full"
+                    />
+                  </div>
                   <div className="p-4">
                     <h3 className="font-display text-lg font-semibold mb-2 text-neutral-900">
                       Character Creation

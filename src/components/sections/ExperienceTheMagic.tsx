@@ -1,7 +1,6 @@
 import React, { useRef, useState, useEffect, useCallback } from 'react';
 import { Link } from 'react-router-dom';
 import { ChevronLeft, ChevronRight, Play, Pause } from 'lucide-react';
-import VideoPlayer from '../ui/VideoPlayer';
 import Card from '../ui/Card';
 
 // Story Examples Data - matches actual stories on Stories Page
@@ -280,20 +279,22 @@ const ExperienceTheMagic: React.FC = () => {
           </p>
         </div>
 
-        {/* VideoPlayer - From Old Hero */}
+        {/* Hero/Overview YouTube Video */}
         <div className="mb-12">
           <div className="flex justify-center">
             <div className="w-full max-w-md">
-              <VideoPlayer
-                src="/videos/hero-demo.mp4"
-                poster="/images/posters/hero-poster.jpg"
-                aspectRatio="portrait"
-                className="shadow-2xl"
-                autoplay={true}
-                muted={true}
-                loop={true}
-                comingSoonText="App Demo Video Coming Soon"
-              />
+              <div className="aspect-[9/16] w-full rounded-lg shadow-2xl overflow-hidden">
+                <iframe
+                  width="100%"
+                  height="100%"
+                  src="https://www.youtube.com/embed/Qx9nxuy3W80"
+                  title="FairyAI Overview"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="w-full h-full"
+                />
+              </div>
             </div>
           </div>
         </div>
