@@ -287,7 +287,7 @@ const ExperienceTheMagic: React.FC = () => {
                 <iframe
                   width="100%"
                   height="100%"
-                  src="https://www.youtube.com/embed/Qx9nxuy3W80"
+                  src="https://www.youtube.com/embed/a8u7byVpTug"
                   title="FairyAI Overview"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
