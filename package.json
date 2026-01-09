@@ -56,7 +56,11 @@
       "/blog/screen-time-before-bed-research",
       "/blog/when-to-start-reading-to-baby",
       "/blog/short-vs-long-bedtime-stories",
-      "/blog/stories-help-children-process-emotions"
+      "/blog/stories-help-children-process-emotions",
+      "/privacy.html",
+      "/our-story.html",
+      "/fairy-corner.html",
+      "/support"
     ],
     "inlineCss": true,
     "puppeteerArgs": ["--no-sandbox", "--disable-setuid-sandbox"]

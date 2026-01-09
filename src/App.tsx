@@ -63,6 +63,11 @@ function App() {
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/blog/:slug" element={<BlogPostPage />} />
+          {/* Redirects for legacy .html URLs */}
+          <Route path="/privacy.html" element={<Navigate to="/privacy" replace />} />
+          <Route path="/our-story.html" element={<Navigate to="/how-it-works" replace />} />
+          <Route path="/fairy-corner.html" element={<Navigate to="/" replace />} />
+          <Route path="/support" element={<Navigate to="/contact" replace />} />
         </Routes>
         <Footer />
       </div>
