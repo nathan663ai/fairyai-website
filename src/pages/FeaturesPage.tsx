@@ -236,7 +236,7 @@ const FeaturesPage: React.FC = () => {
               <h3 className="font-display text-xl font-semibold mb-1 text-neutral-900">Free</h3>
               <p className="text-3xl font-bold text-neutral-900 mb-4">£0</p>
               <ul className="text-sm text-neutral-700 space-y-2 mb-4 text-left">
-                <li>• 4 Fairy Dust at sign up</li>
+                <li>• Free Fairy Dust at sign up</li>
                 <li>• Fairy Corner free trial</li>
                 <li>• All features included</li>
                 <li>• No account required to try</li>
@@ -381,7 +381,7 @@ const FeaturesPage: React.FC = () => {
             Start Your Free Trial
           </h2>
           <p className="text-lg text-neutral-700 mb-8">
-            4 Fairy Dust to start + Fairy Corner free trial. No credit card required.
+            Free Fairy Dust to start + Fairy Corner trial. No credit card required.
           </p>
           <DownloadButtons variant="gradient" />
         </div>

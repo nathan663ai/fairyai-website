@@ -61,7 +61,7 @@ export const faqs: FAQ[] = [
   },
   {
     question: "Can I get a refund if I'm not satisfied?",
-    answer: "We offer a 7-day free trial (4 Fairy Dust + access to Fairy Corner) so you can try FairyAI risk-free before subscribing. If you're not satisfied with a paid subscription, contact us at support@fairyai.co.uk within 7 days of your first charge for a full refund. After that, subscription fees are non-refundable, but you can cancel anytime to prevent future charges.",
+    answer: "We offer a 7-day free trial (free Fairy Dust + access to Fairy Corner) so you can try FairyAI risk-free before subscribing. If you're not satisfied with a paid subscription, contact us at support@fairyai.co.uk within 7 days of your first charge for a full refund. After that, subscription fees are non-refundable, but you can cancel anytime to prevent future charges.",
     hasEmail: true
   }
 ];

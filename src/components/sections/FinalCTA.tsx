@@ -16,7 +16,7 @@ const FinalCTA: React.FC = () => {
         </p>
 
         <p className="text-base mb-6 text-neutral-800 font-semibold">
-          ✓ No signup needed • ✓ 4 free stories • ✓ Safe, age-appropriate content
+          ✓ No signup needed • ✓ Free to try • ✓ Safe, age-appropriate content
         </p>
 
         {/* Download Buttons */}
