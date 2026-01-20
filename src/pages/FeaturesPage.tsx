@@ -236,7 +236,7 @@ const FeaturesPage: React.FC = () => {
               <h3 className="font-display text-xl font-semibold mb-1 text-neutral-900">Free</h3>
               <p className="text-3xl font-bold text-neutral-900 mb-4">£0</p>
               <ul className="text-sm text-neutral-700 space-y-2 mb-4 text-left">
-                <li>• 6 Fairy Dust at sign up</li>
+                <li>• 4 Fairy Dust at sign up</li>
                 <li>• Fairy Corner free trial</li>
                 <li>• All features included</li>
                 <li>• No account required to try</li>
@@ -252,7 +252,7 @@ const FeaturesPage: React.FC = () => {
               <p className="text-3xl font-bold text-neutral-900 mb-1">£1.99<span className="text-lg font-normal">/mo</span></p>
               <p className="text-sm text-neutral-500 mb-4">or £19.99/year (save 17%)</p>
               <ul className="text-sm text-neutral-700 space-y-2 mb-4 text-left">
-                <li>• 15 Fairy Dust monthly</li>
+                <li>• 12 Fairy Dust monthly</li>
                 <li>• Ad-free experience</li>
                 <li>• Full Fairy Corner access</li>
               </ul>
@@ -263,7 +263,7 @@ const FeaturesPage: React.FC = () => {
               <h3 className="font-display text-xl font-semibold mb-1 text-neutral-900">Need More?</h3>
               <p className="text-sm text-neutral-600 mb-4">For families who create more</p>
               <ul className="text-sm text-neutral-700 space-y-3 text-left">
-                <li><strong>Dream Weaver</strong><br/>45 dust monthly, £4.99/mo</li>
+                <li><strong>Dream Weaver</strong><br/>40 dust monthly, £4.99/mo</li>
                 <li><strong>Story Circle</strong><br/>100 dust monthly, £9.99/mo</li>
               </ul>
               <p className="text-xs text-neutral-500 mt-4">Annual plans save 17%</p>
@@ -381,7 +381,7 @@ const FeaturesPage: React.FC = () => {
             Start Your Free Trial
           </h2>
           <p className="text-lg text-neutral-700 mb-8">
-            6 Fairy Dust to start + Fairy Corner free trial. No credit card required.
+            4 Fairy Dust to start + Fairy Corner free trial. No credit card required.
           </p>
           <DownloadButtons variant="gradient" />
         </div>

@@ -35,7 +35,7 @@ const Hero: React.FC = () => {
 
           {/* Trust Point - Centered below buttons */}
           <p className="text-sm text-white/80 font-medium text-center">
-            ✓ No sign-up required • ✓ 6 free stories
+            ✓ No sign-up required • ✓ 4 free stories
           </p>
         </div>
       </div>
