@@ -592,7 +592,7 @@ const HowItWorksPage: React.FC = () => {
             Ready to Start?
           </h2>
           <p className="text-lg text-neutral-700 mb-8">
-            6 free Fairy Dust + 7 days of Fairy Corner. No credit card required.
+            Free Fairy Dust + 7 days of Fairy Corner. No credit card required.
           </p>
           <DownloadButtons variant="gradient" />
         </div>

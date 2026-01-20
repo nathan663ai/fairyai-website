@@ -327,7 +327,7 @@ const StoryDetailPage: React.FC = () => {
             Download FairyAI and start creating personalised bedtime adventures for your family.
           </p>
           <p className="text-lg mb-8 font-semibold text-neutral-800">
-            6 free Fairy Dust • 7-day Fairy Corner trial • No credit card required
+            Free Fairy Dust • 7-day Fairy Corner trial • No credit card required
           </p>
           <DownloadButtons variant="gradient" />
         </div>
