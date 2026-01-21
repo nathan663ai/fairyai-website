@@ -26,7 +26,7 @@ const TermsPage: React.FC = () => {
       <section className="py-12 md:py-16">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <p className="text-neutral-500 text-sm mb-8 pb-6 border-b-2 border-neutral-200">
-            Last updated: 11th August 2025
+            Last updated: 12th January 2026
           </p>
 
           <div className="prose prose-neutral max-w-none">

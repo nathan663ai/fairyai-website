@@ -26,7 +26,7 @@ const PrivacyPage: React.FC = () => {
       <section className="py-12 md:py-16">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <p className="text-neutral-500 text-sm mb-8 pb-6 border-b-2 border-neutral-200">
-            Last updated: 11th August 2025
+            Last updated: 12th January 2026
           </p>
 
           <div className="prose prose-neutral max-w-none">
@@ -128,6 +128,8 @@ const PrivacyPage: React.FC = () => {
                 <li><strong className="text-neutral-900">Suno</strong> – Song generation (song prompts)</li>
                 <li><strong className="text-neutral-900">Firebase</strong> – Push notification delivery</li>
                 <li><strong className="text-neutral-900">PostHog</strong> – Anonymous analytics (feature usage, app performance)</li>
+                <li><strong className="text-neutral-900">Facebook (Meta) SDK</strong> – Advertising attribution and app analytics (device identifiers, marketing campaign effectiveness, user interaction data)</li>
+                <li><strong className="text-neutral-900">RevenueCat</strong> – Subscription and in-app purchase processing (purchase data, entitlements, subscription status)</li>
                 <li><strong className="text-neutral-900">App Store / Google Play</strong> – Payment processing</li>
               </ul>
               <p className="text-neutral-700 leading-relaxed mb-4">
