@@ -9,6 +9,246 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'personalised-bedtime-stories-childs-name',
+    title: "How to Get Your Child's Name in a Bedtime Story",
+    description: "Want your child to be the hero of their bedtime story? Here are three ways to create personalised stories with your child's name - from making them up yourself to apps that do it for you.",
+    date: '2026-01-25',
+    readTime: '5 min read',
+    content: `
+You know that moment when you swap a character's name for your child's and their whole face lights up?
+
+"Wait... that's ME in the story!"
+
+It's magic. And once you've seen it, you want to do it every night.
+
+If you're wondering how to get your child's name into a bedtime story without making one up from scratch every evening, you've got three real options.
+
+## 1. Make Up the Story Yourself
+
+This is the original method, and honestly, it's wonderful when you can do it.
+
+You tell a story where your child is the hero. You use their name, their favourite things, maybe their teddy as a sidekick. You change details on the fly based on their reactions.
+
+Kids absolutely love it.
+
+The challenge? You're tired. You've had a long day. Some nights you're running on empty and "once upon a time" is about as far as your brain gets before it gives up.
+
+When you have the energy, homemade stories are hard to beat. But it's not realistic to expect that of yourself every single night.
+
+## 2. Buy Personalised Story Books
+
+There are companies that print physical books with your child's name woven throughout the story.
+
+**The good parts:**
+- Tangible and feels special
+- Makes a lovely gift
+- Kids enjoy seeing their name in print
+
+**The limitations:**
+- Usually £15-30 per book
+- It's the same story every time
+- Once they've heard it a few times, the novelty wears off
+- Limited to whatever themes the publisher offers
+
+These work well as occasional gifts, but they don't solve the "I need a fresh story tonight" problem.
+
+## 3. Use a Personalised Story App
+
+This is the modern solution, and it's what most parents searching for this actually want.
+
+Apps like FairyAI let you create bedtime stories where your child isn't just mentioned by name - they're the main character in a brand new adventure every night.
+
+You create a character based on your child (or let them help design one), choose a theme that fits the moment, and generate a story that's never been told before.
+
+Tomorrow night? A completely different story with the same beloved character.
+
+No repeating yourself. No running out of ideas. No guilt when you're exhausted.
+
+## Why Hearing Their Name Actually Matters
+
+This isn't just a nice gimmick. There's real psychology behind it.
+
+When young children hear their own name in a story, something shifts. Their attention sharpens. They lean in. The story stops being something that happened to someone else and becomes something that's happening to *them*.
+
+For a child, their name is deeply tied to their sense of self. Hearing "and then Emma climbed the mountain" hits differently than "and then the girl climbed the mountain."
+
+It turns passive listening into active imagination. And for anxious children or those who resist bedtime, that personal connection can be the difference between fighting sleep and drifting off peacefully.
+
+## What Makes a Good Personalised Story
+
+If you're going to use an app or service, don't settle for basic name insertion. The best personalised stories let you customise:
+
+- **The character** - not just a name, but personality, appearance, what makes them *them*
+- **The theme** - bravery, kindness, handling big feelings, starting school, welcoming a sibling
+- **The tone** - gentle and calming for wind-down, or adventurous for earlier in the routine
+- **The length** - quick stories for tired nights, longer ones for weekend cuddles
+
+True personalisation means the story meets your child where they are, not just inserts their name into a template.
+
+## How FairyAI Approaches This
+
+With FairyAI, you start by creating a character. Give them your child's name, choose how they look, add a personality trait or two.
+
+That character becomes the hero of every story you generate. They go on adventures, learn lessons, face challenges, and always end up safe and calm by the final page.
+
+The difference from other apps? Your character can continue their adventures. Tonight's story can pick up where last night's left off. Children start asking "what happens next to [character name]?" instead of resisting bedtime.
+
+There's also a library of classic fairy tales (Fairy Corner) that are completely free - narrated and illustrated - so you can try it without spending anything.
+
+No ads. No data sold. Just stories designed for real bedtime routines by parents who've been there.
+
+## It's Not Either/Or
+
+Personalised story apps don't replace books. [Physical books still matter](/blog/why-physical-books-still-matter) - the weight of them, the ritual of turning pages, the familiarity of a favourite that's been read a hundred times.
+
+But personalised stories fill a different gap. They're for the nights when you need something fresh. When your child is working through a [big emotion and needs a story that speaks to it](/blog/stories-help-children-process-emotions). When you're simply too tired to invent something yourself.
+
+Think of it as another tool in your bedtime toolkit.
+
+## The Short Answer
+
+If you want your child's name in a bedtime story:
+
+- **DIY** - wonderful when you have energy, hard to sustain nightly
+- **Personalised books** - great as gifts, but same story every time
+- **Personalised story apps** - fresh stories on demand, your child as the hero
+
+Most parents who try the third option don't go back.
+
+---
+
+*FairyAI creates personalised bedtime stories where your child is the hero - new adventures every night, designed to make bedtime easier. Download free on iOS and Android.*
+    `.trim()
+  },
+  {
+    slug: 'ai-bedtime-stories-for-kids-safe',
+    title: 'AI Bedtime Stories for Kids: Are They Safe and Actually Good?',
+    description: "Wondering if AI bedtime stories are safe for your child? An honest look at the concerns, what to watch out for, and how to tell if an AI story app is built responsibly.",
+    date: '2026-01-25',
+    readTime: '7 min read',
+    content: `
+When you hear "AI for children," it's natural to pause.
+
+Is it safe? Is it appropriate? Is it just another screen thing trying to grab my child's attention? Or is there actually something useful here?
+
+If you're a parent trying to figure out whether AI bedtime stories are worth considering or worth avoiding, this is the honest answer. No hype, no scare tactics - just what you actually need to know.
+
+## The Short Answer
+
+AI bedtime stories can be safe and genuinely good for children - but only when they're designed properly, with parents in control and child safety built into every layer.
+
+Not all AI story apps are created equal. Some are thoughtful tools built by parents who understand bedtime. Others are tech demos that happen to involve children.
+
+The difference matters enormously. Here's how to tell them apart.
+
+## The Concerns Parents Have (And Why They're Valid)
+
+Let's name the worries upfront, because they're reasonable.
+
+**"What if it generates something inappropriate?"**
+This is the big one. AI can be unpredictable, and the last thing you want is something scary, confusing, or unsuitable appearing in your child's bedtime story.
+
+**"Is my child's data being collected?"**
+With so many apps monetising user data, it's fair to wonder what's happening behind the scenes - especially when children are involved.
+
+**"Does this replace real connection?"**
+Bedtime is precious. The idea of outsourcing it to a machine feels wrong to a lot of parents, and that instinct isn't misguided.
+
+**"Is this just more screen time?"**
+After a day of managing devices, the thought of adding another screen to the bedtime routine can feel like defeat.
+
+These concerns deserve real answers, not dismissal.
+
+## How Safe AI Story Apps Actually Work
+
+A well-designed AI bedtime story app isn't a chatbot talking to your child. That's an important distinction.
+
+It's a tool that helps parents generate age-appropriate stories within carefully defined boundaries. The AI creates the narrative. The parent decides when, how, and whether to use it.
+
+The child receives a story - they don't interact with the AI directly.
+
+Think of it like this: the AI is the author's assistant, working behind the scenes. The parent is still the storyteller, the voice, the presence at bedtime. The technology just removes the pressure of inventing something new from scratch every single night.
+
+## What Separates Safe Apps from Risky Ones
+
+Safety isn't about whether an app uses AI. It's about how that AI is implemented.
+
+**Content boundaries matter most.** Safe platforms restrict what the AI can generate. They define acceptable themes, filter outputs, and ensure stories follow predictable, calming arcs that end gently. Open-ended, anything-goes AI has no place in children's products.
+
+**Parents should be in control.** The adult creates the story, chooses the theme, decides the length. Children receive the result - they don't direct the AI or have conversations with it. Any app that encourages children to interact directly with AI should be approached with serious caution.
+
+**Data practices should be transparent.** Good apps don't collect child voice data, don't build profiles on children, and don't train their models on your family's interactions. They comply with child privacy regulations and are upfront about what they do and don't store.
+
+**The experience should be calming.** A bedtime story app should feel like winding down, not ramping up. If it has notifications, engagement loops, gamification, or anything designed to maximise time-on-app, it's optimised for the wrong thing.
+
+## What AI Bedtime Stories Can Actually Offer
+
+When the safety foundations are solid, AI stories offer some genuine benefits.
+
+They meet children where they are emotionally. If your child is anxious about starting school, processing a new sibling, or working through a fear of the dark, a personalised story can address that theme directly - tonight, not whenever a relevant book happens to be available. Stories are powerful tools for [helping children process big emotions](/blog/stories-help-children-process-emotions).
+
+They reduce parental burnout without reducing connection. You're still there, still reading, still cuddling. You just didn't have to invent the story from scratch after an exhausting day.
+
+They keep bedtime fresh. Children love repetition, but parents can struggle with reading the same book for the fortieth time. AI stories offer something new each night while maintaining the familiar characters and calming tone children need. (Though there's a reason [kids ask for the same story](/blog/why-kids-ask-for-same-story) - repetition has real benefits too.)
+
+They support language development and imagination - the same benefits as any storytelling, just with less pressure on you to be endlessly creative.
+
+## What AI Stories Don't Replace
+
+Let's be clear about what this isn't.
+
+AI bedtime stories don't replace [physical books](/blog/why-physical-books-still-matter). The weight of a book, the ritual of turning pages, the comfort of a battered favourite that's been read a hundred times - that still matters.
+
+They don't replace you. The story is just the vehicle. The magic happens in your voice, your presence, the warmth of the routine you've built together.
+
+They're not a babysitter. Handing a child a device and walking away isn't what these tools are for. They work best when you're involved - choosing the story, reading it aloud, being present for the experience.
+
+Think of AI stories as one tool among many. Some nights you'll read a picture book. Some nights you'll make something up. Some nights you'll use an app because you're running on empty and you need help. All of those are fine.
+
+## How to Evaluate an AI Story App
+
+If you're considering trying one, here's what to look for:
+
+Does the app put parents in control, or does it encourage children to interact directly? Parent-controlled is safer.
+
+Are there clear content guardrails, or can the AI generate anything? Restricted, child-appropriate outputs only.
+
+What's the data policy? Avoid anything vague about child data collection.
+
+Does it feel calming or stimulating? Watch for gamification, badges, streaks, or anything designed to create habits rather than support sleep.
+
+Is it made by people who understand bedtime, or by a tech company that happened to notice the children's market? Intent matters.
+
+## Where FairyAI Fits
+
+FairyAI was built by parents specifically to address these concerns.
+
+Stories are generated within strict content boundaries - calming themes, gentle endings, nothing scary or inappropriate. Parents control everything: the characters, the themes, the length. Children aren't asked questions or encouraged to interact with AI.
+
+No child data is sold or shared. The app complies with GDPR and is built around privacy from the ground up.
+
+There's a library of free classic fairy tales (Fairy Corner) with narration and illustrations, so you can try it without committing to anything.
+
+The goal was never "more screen time." It was "better bedtime moments with less parental exhaustion."
+
+## The Honest Conclusion
+
+AI bedtime stories aren't inherently dangerous, and they aren't inherently good. They're a tool - and like any tool, it depends entirely on how they're built and how they're used.
+
+If an app is designed responsibly, keeps parents in control, protects child data, and prioritises calm over engagement, it can genuinely help families.
+
+If it feels chaotic, collects data aggressively, or puts AI in direct contact with children, walk away.
+
+Trust your instincts. Check the safeguards. Stay involved.
+
+That's the real answer.
+
+---
+
+*FairyAI creates safe, personalised bedtime stories for families. Free to download on iOS and Android. Try the free Fairy Corner stories to see for yourself.*
+    `.trim()
+  },
+  {
     slug: 'why-physical-books-still-matter',
     title: 'Why Physical Books Still Matter (And How AI Stories Can Help, Not Replace Them)',
     description: "Physical books have irreplaceable benefits for children. Here's why they matter - and how AI stories can complement, not replace, your bookshelf.",
