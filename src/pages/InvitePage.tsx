@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 
 const APP_STORE_URL = 'https://apps.apple.com/app/fairyai/id6504419314';
-const PLAY_STORE_URL = 'https://play.google.com/store/apps/details?id=com.rebelai.fairyai';
+const PLAY_STORE_URL = 'https://play.google.com/store/apps/details?id=com.rebelai.fairyaiapp';
 const API_BASE_URL = 'https://api.fairyai.co.uk';
 
 type Platform = 'ios' | 'android' | 'desktop';
