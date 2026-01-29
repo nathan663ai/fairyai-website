@@ -102,11 +102,12 @@ const InvitePage: React.FC = () => {
     const detectedPlatform = detectPlatform();
     setPlatform(detectedPlatform);
 
-    // Log the click (fire and forget)
-    logReferralClick(code, detectedPlatform, navigator.userAgent);
+    // Handle the full flow: log click, then redirect
+    const handleFlow = async () => {
+      // First, log the click and wait for it to complete (or timeout)
+      await logReferralClick(code, detectedPlatform, navigator.userAgent);
 
-    // Handle redirect based on platform
-    const handleRedirect = async () => {
+      // Then redirect based on platform
       if (detectedPlatform === 'ios') {
         // Copy referral code to clipboard for iOS
         const copied = await copyToClipboard(code);
@@ -124,7 +125,7 @@ const InvitePage: React.FC = () => {
       // Desktop users stay on the page
     };
 
-    handleRedirect();
+    handleFlow();
 
     // Show fallback links after 3 seconds if redirect doesn't work
     const fallbackTimer = setTimeout(() => {
