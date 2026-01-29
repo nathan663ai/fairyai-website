@@ -2,8 +2,7 @@ import { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation, Navigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import { OrganizationSchema } from './components/SchemaMarkup';
-import Navigation from './components/Navigation';
-import Footer from './components/sections/Footer';
+import MainLayout from './components/MainLayout';
 import HomePage from './pages/HomePage';
 import HowItWorksPage from './pages/HowItWorksPage';
 import SafetyPage from './pages/SafetyPage';
@@ -17,6 +16,7 @@ import AccountDeletePage from './pages/AccountDeletePage';
 import ContactPage from './pages/ContactPage';
 import BlogPage from './pages/BlogPage';
 import BlogPostPage from './pages/BlogPostPage';
+import InvitePage from './pages/InvitePage';
 
 // Scroll to top on route change
 function ScrollToTop() {
@@ -46,9 +46,12 @@ function App() {
     <Router>
       <OrganizationSchema />
       <ScrollToTop />
-      <div className="min-h-screen bg-white">
-        <Navigation />
-        <Routes>
+      <Routes>
+        {/* Invite page - standalone without Navigation/Footer */}
+        <Route path="/invite/:code" element={<InvitePage />} />
+
+        {/* Main layout with Navigation and Footer */}
+        <Route element={<MainLayout />}>
           <Route path="/" element={<HomePage />} />
           <Route path="/how-it-works" element={<HowItWorksPage />} />
           <Route path="/safety" element={<SafetyPage />} />
@@ -68,9 +71,8 @@ function App() {
           <Route path="/our-story.html" element={<Navigate to="/how-it-works" replace />} />
           <Route path="/fairy-corner.html" element={<Navigate to="/" replace />} />
           <Route path="/support" element={<Navigate to="/contact" replace />} />
-        </Routes>
-        <Footer />
-      </div>
+        </Route>
+      </Routes>
       {showCookieNotice && (
         <div className="fixed bottom-0 left-0 right-0 bg-slate-900 text-white p-4 shadow-2xl z-50">
           <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
